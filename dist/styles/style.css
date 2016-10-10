@@ -21307,6 +21307,15 @@ strong, b {
   /*width: 1160px;*/
 }
 .alphabet__content{margin-top:20px;}.alphabet__content .list__item-pink li{padding-left:0}.alphabet__link{font-size:16px;padding-left:15px;padding-right:0}.alphabet__text:before{content:' — '}.kindof{padding-left:5px;}.kindof__title{color:#808080}.kindof__item{color:#115c89;margin-right:20px;}.kindof__item:before{content:'-'}.left-side{position:relative}
+.clinic-search__title p {
+  display: inline-block;
+}
+.clinic-search__sort {
+  margin-top: 0;
+}
+/*.clinic-search__title .more a, .clinic-search__title .more-bottom a {*/
+  /*display: none;*/
+/*}*/
 /*.answer {
   display: inline-block;
 }

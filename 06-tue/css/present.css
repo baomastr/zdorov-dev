@@ -1,0 +1,13 @@
+.clearfix:after { content: ""; display: table; clear: both; }
+
+.presentation { padding: 0 40px; display: block; }
+
+.presentation__img { padding: 10px; width: 400px; height: auto; float: left; }
+
+.presentation__img img { max-width: 100%; }
+
+.gallery { padding: 0 40px; }
+
+.gallery .fancybox { display: inline-block; width: 200px; height: auto; }
+
+.gallery .fancybox img { max-width: 100%; }

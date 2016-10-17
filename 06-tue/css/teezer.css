@@ -1,0 +1,835 @@
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+/* LOOK */
+
+body {
+    font-family: Verdana, 'Geneva CY', Helvetica, 'DejaVu Sans', Arial, sans-serif;
+    font-size:0.8em;
+    line-height:1.6em !important;
+    color:#000;
+
+    /* background: url('/media/img/mk.ru/mk_bg.gif') center repeat-y; */
+    background: url('data:image/gif;base64,R0lGODlhFgQyALMAAP////7+/v39/fn5+fz8/Pv7+/f39/r6+vb29vj4+AAAAAAAAAAAAAAAAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wOkNyZWF0ZURhdGU9IjIwMTMtMDUtMjRUMTI6MDU6NTArMDQ6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDEzLTA1LTI0VDEyOjA2OjMwKzA0OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDEzLTA1LTI0VDEyOjA2OjMwKzA0OjAwIiBkYzpmb3JtYXQ9ImltYWdlL2dpZiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpENzNGNTIwNEM0NDgxMUUyOTdDNEZEN0FBRDQ5MENDNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpENzNGNTIwNUM0NDgxMUUyOTdDNEZEN0FBRDQ5MENDNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ3M0Y1MjAyQzQ0ODExRTI5N0M0RkQ3QUFENDkwQ0M2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQ3M0Y1MjAzQzQ0ODExRTI5N0M0RkQ3QUFENDkwQ0M2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAABYEMgAABP8wSCmqILiUc4ZPhoEAZGmeaKqubOu+cCzPdG3feK7vfO//wKBwSCwaj8ikcslsOlmIUMIz4GgwBItgwp1osRoOFSR6ms/otHrNbrvf8Lh8Tq/bj1HD1GMtYLVdXV8ZGx0fISN3iouMjY6PkJGSk5SVljx5e1UHVxiAgV4WYIVjiJenqKmqq6ytrq+wsVBSVH1/FqChFaNih2WywMHCw8TFxsfIipm1nH6euLkBgwRhhgNkicna29zd3t/g4ZHLfM23FdHSooS916bi8PHy8/T19uHkm51Z0LnT1aV+3RtIsKDBgwgTMsln6xm6aP9I+cqmsKLFixgzahTH0JzDLRD/11GT6E7gxpMoU6pcyXJOx32f/IkEOLGlzZs4c+rc+eKlM34PZe5iZw0bz6NIkypdas/nOZBCLxANSJGp1atYs2qt5PRjuojtjG4dS7as2bMLaZWD2Q8U2KLv0MqdS7eu3RNdgUJ1O5Ok2LuAAwserDNvTL5DR4aNS7ix48eQBxpuG+gt1ciYM2veXGxyUMRSFcM1ybm06dOoGXneW7nvYtKpY8ueTVvJ6q+uR1etzbu3798xbodMTLPkbuDIkyufLTwqL93Lo0ufrrk56OeXqWvfzn2u9dbE/TLuTr68+aPfBeXOfr69+/cn03OxXBO+/fv4JavV9/Mw+NDF/ZXf04AEFpiMfLoAKB5sBjbo4IOpIEjBevVBaOGFGDoioTrhvXZchiCGKOIZG9Jn3IgopqgiEiVSeOKKMMYo4w0tdgjdjDjmqCNe+zWkF242srfjkESmWKOCHhap5JIZHoldhUxGKWV+Tk4F5ZRYZllelaIJqeWXYEbHZYDjhWnmmbWNueCHaLbpZnU9evTjcEje+OadeEamZpJ59ulnYHva+eeghJYVqJeFJqqoUodeueijkN7U6IuRVmppSpMKeOmmnCaUaZmdhirqPJ8yOOqpqHLzXQQAOw==') center repeat-y;
+}
+
+a:active, a:focus, img { outline: 0; }
+
+.main { /* левый (главный) столбец */
+    float:left;
+    width:76%; /* 760/1000 */
+}
+
+.right { /* правый столбец */
+    float:right;
+    width:24%; /* 240/1000 */
+}
+
+/* корректировка болоков для страниц подписки */
+
+p {
+    margin-bottom:15px;
+}
+
+a {
+    text-decoration:none;
+    color:#3776b6;
+}
+
+/* заголовки в тексте */
+
+/* тень для разных дел */
+
+table td {
+    vertical-align:top;
+}
+
+/* заголовки - ссылки */
+
+.mkh1 {
+    font-family: 'Roboto Condensed', Georgia, 'Century Schoolbook L', serif;
+    margin-bottom:20px;
+    font-weight:normal;
+    font-size:2em;
+    color:#9f2b11;
+    line-height:1.2em;
+}
+
+.mkh2 {
+    font-family: 'Roboto Condensed', Georgia, 'Century Schoolbook L', serif;
+    margin-bottom:20px;
+    font-weight:normal;
+    color:#333;
+    font-size:1.4em;
+    line-height:1.4em;
+}
+
+.mkh1 a {
+    color:#9f2b11 !important;
+}
+
+/* заголовки блоков */
+
+.mkblock {
+    color:#9f2b11;
+    margin-left:10px;
+}
+
+a.mkblock {
+    color:#616b6f;
+    float:right;
+    margin-right:10px;
+    font-family: Verdana, 'Geneva CY', Helvetica, 'DejaVu Sans', Arial, sans-serif;
+    font-size:12px;
+}
+
+a.mkblock img {
+    vertical-align:middle;
+    margin-left:3px;
+    margin-right:3px;
+    margin-bottom: 1px;
+}
+
+/* универсальные (очень хуёвые и чрезвычайно специфичные) стили для форм =================================== */
+
+
+/* табы */
+
+/* список матреириалов под стаьёй */
+
+/* социальный блок */
+
+/* banner */
+
+/* модификаторы */
+
+/* Кольцо сайтов */
+
+/* header */
+
+/* 8888888888888888888888888888888888888888 */
+
+/*
+header {
+    width:100%;
+    border-bottom:1px solid #e7e7e7;
+}
+
+header .logo {
+    position:relative;
+    float:left;
+    width:24%;
+    margin-left: 1%;
+    padding-top:10px;
+}
+
+header .logo .region_in_logo {
+    position:absolute;
+    height:16px;
+    right:0px;
+    bottom:0px;
+    padding:2px 15px 8px 20px;
+    text-align:right;
+    text-shadow: 0px 0px 2px rgba(255,255,255,1);
+    font-style:italic;
+    font-weight:bold;
+    color:#3776b6;
+    background: url('/media/img/mk.ru/logo_region_fon.png') left no-repeat;
+}
+
+header .logo .region_logo {
+    width:175px;
+    margin-left:8px;
+    margin-top: -2px;
+}
+
+header .logo .region_in_logo2 {
+    color:#3776b6;
+    margin-left:8px;
+    margin-bottom: 5px;
+    line-height:16px;
+}
+
+header .links_one {
+    float:left;
+    width:13%;
+    padding-top:10px;
+    padding-right:15px;
+    text-align:right;
+    line-height:20px;
+}
+
+header .links_two {
+    float:left;
+    width:14%;
+    padding-top:10px;
+    padding-left:15px;
+    text-align:left;
+    line-height:20px;
+    background: url('/media/img/mk.ru/mk_shadow_header.jpg') left no-repeat;
+    background-size: 17px 100%;
+}
+
+header .links_two a {
+    color:#9f2b11;
+}
+
+header #popup_login_button a {
+    color:#000;
+}
+
+header .search {
+    float:left;
+    width:20%;
+    padding-top:12px;
+    text-align:right;
+}
+
+header .search input.text {
+    background: url('/media/img/mk.ru/mk_search.gif') right no-repeat;
+    width:88%;
+    padding:2px 5px;
+    margin:0;
+    margin-right:2px;
+}
+
+header .search input.text:focus {
+    background: none;
+}
+
+header .search input.button {
+    font-size:16px;
+    padding:1px 2px 2px 2px;
+}
+
+header .social {
+    margin-top:10px;
+}
+
+header .social ul {
+    height:19px;
+    padding:0;
+}
+
+header .social li {
+    float:right;
+    height:19px;
+    width:19px;
+    margin:0;
+    padding:0 1px;
+    list-style:none;
+    background: url('/media/img/mk.ru/social_icons.png') no-repeat;
+}
+
+header .social li.facebook { background-position: 0 0px;}
+header .social li.vk { background-position: 0 -20px;}
+header .social li.gplus { background-position: 0 -40px;}
+header .social li.ok { background-position: 0 -60px;}
+header .social li.twitter { background-position: 0 -80px;}
+header .social li.ya { background-position: 0 -100px;}
+
+header .social li.vr { background-position: -7px -120px; width:5px;}
+
+header .social li.rss { background-position: 0 -140px;}
+header .social li.mobile { background-position: 0 -160px;}
+header .social li.apple { background-position: 0 -180px;}
+
+header .social li a {
+    display:block;
+    height:19px;
+    width:19px;
+}
+
+header .teaser {
+    float:left;
+    width:24%;
+    height:80px;
+    text-align:right;
+    background: url('/media/img/mk.ru/mk_shadow_header.jpg') left no-repeat;
+    background-size: 17px 100%;
+    padding-top:3px;
+    margin-left:1%;
+    overflow:hidden;
+}
+
+header .teaser .content {
+    color: #9f2b11;
+    text-align:left;
+    font-family: 'Roboto Condensed', Georgia, 'Century Schoolbook L', serif;
+    padding-left:10px;
+    padding-top:5px;
+    font-size: 1.1em;
+    line-height:140%;
+    width:230px;
+    height:80px;
+    background-position:right;
+    background-repeat:no-repeat;
+}
+header .teaser .content a {
+    color: #9f2b11;
+}
+ */
+
+
+
+
+
+
+
+/* меню главное */
+
+/* меню спецпроектов */
+
+/* меню раздела */
+
+
+/* дополнительное меню для левого длока */
+
+
+/* блоки главной с разделением тенью */
+
+
+/* комменты на картинке */
+
+/* линейка сюжетов */
+
+/* топовый сюжет */
+
+/* i-storie top */
+
+
+/* end i-storie top */
+
+/* топ матреиалов */
+
+/* темы */
+
+/* темы недели */
+
+/* свободная тема */
+
+/* свободная тема 2
+
+.free_theme2 {
+    margin: 0 5px 20px 10px;
+}
+
+.free_theme2 td {
+
+}
+
+.free_theme2 p {
+    margin:0px 10px 0 0px;
+}
+
+.free_theme2 p.description {
+    color:#616b6f;
+    font-size:11px;
+    line-height:150%;
+}
+
+.free_theme2 p a {
+    color:black;
+}
+
+.free_theme2 .author_photo {
+    float:left;
+    width:70px;
+    margin: 0px 10px 0 0;
+    border-left: 2px solid #9f2b11;
+    padding-left: 3px;
+}
+
+.free_theme2 .mkh1 {
+    color: #9f2b11;
+    font-size: 1.3em;
+    margin-bottom:10px;
+    font-weight:lighter;
+}
+
+.free_theme2 .mkh2 {
+    color: #000;
+    font-size:1.3em;
+}
+
+/*  */
+
+.free_theme3 .author_photo {
+    width:80px;
+    margin: 0px 10px 0 0;
+    border: 0 !important;
+    border-left: 2px solid #9f2b11 !important;
+    padding-left: 3px;
+}
+
+.free_theme3 .name .mkh1 {
+    margin-left:0;
+    font-weight:lighter;
+}
+
+/* сайты */
+
+/* наши сайты */
+
+/* новости */
+
+/* модификатор для новостей в листинге (в левом столбце) */
+
+/* блоги */
+
+
+/* zzz */
+
+
+
+
+
+
+/* корректировка для листинга блогов на внутренней */
+
+
+
+
+
+/* список блоггеров в левом столбце */
+
+
+/* топ блогов */
+
+
+/* топ статей в правом столбце */
+
+
+/* миниморды по темам */
+
+/* горизонтальный тематический блок */
+/* стили с "mod" чтоб менять части местами */
+
+/*
+.hor_block ul li img {
+    padding-top:2px;
+}
+*/
+
+/* видео */
+
+/* хак Mozilla */
+@-moz-document url-prefix() { }
+
+
+
+/* .time_stampBAK2 {
+    color:white;
+    position:absolute;
+    margin-top:5px;
+    background-color:rgb(55, 56, 58);
+    border:1px solid white;
+    opacity:0.8;
+    font-size:10px;
+    padding:0 3px;
+    line-height: 15px;
+    display:block;
+    -moz-box-shadow: -5px 0 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: -5px 0 5px rgba(0,0,0,0.3);
+    box-shadow: -5px 0 5px rgba(0,0,0,0.3);
+    border-right:none;
+    right:0;
+    bottom:10px;
+
+}
+
+.time_stampBACK {
+    color:black;
+    position:absolute;
+    margin-top:3px;
+    background-color:white;
+    border:1px solid silver;
+    border-left:none;
+    opacity:0.8;
+    font-size:10px;
+    padding:0 3px;
+    line-height: 15px;
+    display:block;
+    -moz-box-shadow: 5px 0 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 5px 0 5px rgba(0,0,0,0.3);
+    box-shadow: 5px 0 5px rgba(0,0,0,0.3);
+} */
+
+/* список видеороликов */
+
+
+
+/* ролики одинакогвой высоты: */
+
+
+
+/* список фоторепов */
+
+/* правый столбец */
+
+.right_block {
+    margin-bottom:20px;
+    width: 100%;
+    float: none;
+    background: url('/media/img/mk.ru/mk_shadow_r.jpg') left no-repeat;
+    background-size: 17px 100%;
+}
+
+.right_block .mkh1 {
+    color:#9f2b11;
+    font-size:1.4em;
+}
+
+/* видео в правом и левом столбце  */
+
+/* фото в правом столбце */
+
+/* свежий номер в правом для регионов */
+
+
+/* авторы (не тоьлок в правом) */
+
+.authors_list {
+    width:40%; /* для центрального столбца */
+    float:right;
+    margin-bottom:20px;
+}
+
+.authors_list_right {
+    width:100%; /* для правого столбца */
+    float:none;
+    margin-top:20px;
+}
+
+.authors_list li {
+    margin-bottom:10px;
+    padding-top:10px;
+    border-top:1px solid #e7e7e7;
+}
+
+.authors_list li:first-child {
+    padding-top:0px;
+    border-top:none;
+}
+
+.author_photo {
+    width:60px;
+}
+
+.authors_list .mkh1 {
+    margin-left:10px;
+}
+
+.authors_list p {
+    margin:0px 10px 0 0px;
+    color:#616b6f;
+}
+
+.authors_list p.description {
+    color:#616b6f;
+    font-size:11px;
+    line-height:150%;
+}
+
+.authors_list p a {
+    /*color:black;*/
+    /*font-family: 'Roboto Condensed', Georgia, 'Century Schoolbook L', serif;*/
+
+    color: #6d6d6d;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    line-height: 1.2em;
+
+    /*font-family: 'PT Sans', sans-serif;*/
+    /*font-size: 14px;*/
+    /*color: #115c89;*/
+    /*line-height: 1.4em;*/
+}
+
+.authors_list p.name {
+    margin-top:-3px;
+}
+
+.authors_list .author_photo {
+    float:left;
+    margin: 0 10px 10px 10px;
+    border:1px solid #e7e7e7;
+}
+
+.authors_list .mkh1 {
+    color: #9f2b11;
+    font-size: 1.4em;
+    margin-bottom:10px;
+}
+
+.authors_list .mkh2 {
+    /*color: #6d6d6d;*/
+    /*font-size: 14px;*/
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*font-weight: normal;*/
+    /*line-height: 1.2em;*/
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    color: #115c89;
+    line-height: 1.4em;
+}
+
+.authors_list .title {
+    font-size:1.2em;
+}
+
+.authors_list .rubr {
+    font-family: Verdana, 'Geneva CY', Helvetica, 'DejaVu Sans', Arial, sans-serif;
+    font-size: 9px;
+    color: white;
+    background-color: #9f2b11;
+    padding: 0px 5px 1px 5px;
+    margin:1px 0 5px 0;
+    text-transform: lowercase;
+    display: inline-block;
+    line-height: 11px;
+}
+
+/* коректировка для страницы всех авторов */
+
+
+/* проекты МК */
+
+
+
+/* голосование */
+
+
+/* коректировка для архива опросов */
+
+/* прессцентр */
+
+/* анекдот */
+
+/* футер ====================================== */
+
+/* .footer {
+    width:100%;
+    float:left;
+}
+
+.footer a:hover {
+    text-decoration:underline;
+} */
+
+/* инфофутер */
+
+/* видео в инфофутере */
+
+/* фото в инфофутере */
+
+/* партнёрки */
+
+/* блоки левого столбца */
+
+/* темы дня слева */
+
+
+/* по теме слева */
+
+/* по теме справа */
+
+/* сюжет слева */
+
+/* комментарии к материалу */
+
+
+
+/* выходные данные статьи */
+
+
+/* переключатель */
+
+/* список новостей на странице новости */
+
+
+/* список материалов раздела */
+
+/*
+h1.big_listing {
+    margin-bottom:12px;
+}
+*/
+
+/* пейджер */
+
+/* сюжеты */
+
+/* корректировка общего листина для сюжета */
+
+/* календарь */
+
+/* авторы */
+
+
+
+/* алфавит для авторов (левый столбец) */
+
+
+
+/* свежий номер */
+
+/* корректрировка big_listing для свежий номер */
+
+/* корректрировка big_listing для свежий номер первая полоса */
+
+/* корректрировка big_listing для списка прессконференция */
+
+/* блог */
+
+
+/* корректировка big_listing для списка записей блогов */
+
+
+/* ФОТОРЕПОРТАЖИ --------------------------------- */
+
+/* корректировка основного листинга для списка фоторепротажей */
+
+/* выходные данные фоторепортажа */
+
+/* фотоконкурсы */
+
+
+/* высплывающее окно фоторепортажа */
+
+/* хак Mozilla - положение правой листалки */
+@-moz-document url-prefix() { }
+
+/* хак IE */
+/*
+*|html .photoreport_prev {
+    vertical-align:middle;
+    display:inline;
+}
+*/
+
+
+/* последний слайд фоторепортажа */
+
+/* корректировка основного листинга для Меринова */
+
+/* Ноавя галлерея Меринова на главной */
+
+
+/* версия для печати */
+
+@media print {
+    body {
+        background:none;
+    }
+}
+
+/* для блогов  */
+
+
+/* Поиск */
+
+/* корректировка листина для поиска */
+
+/* список фоторепротражей для поисковой выдачи */
+
+/* корректировка шаблонов для поисковой выдачи */
+
+
+/* всплывающий блок выбора региона */
+
+/* всплывающий блок логина */
+
+td{
+    border-collapse: collapse;
+}
+
+/* всплывающие сообщения */
+
+/* обычный текстовый расхлоп (как в правилах фотоконкурса) */
+
+/* корректирвака под баннерные места */
+
+/* FEEL
+
+*{
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+/* */
+
+
+/*
+    Stoloto branding page
+*/
+
+/* subject banner main page */
+
+
+/* *** sport.css *** */
+
+/* brasil shedule styles */
+
+
+/* champ2014 final tables */
+
+/* transfer 2014 table */
+
+/* *** end sport.css *** */
+
+/* tests */
+/* end tests */
+
+/* *** end sport.css *** */
+
+/* *** i-updates *** */
+
+@media print {
+    .right {
+        display:none !important;
+    }
+
+    a {
+        color:inherit;
+    }
+}
+
+
+/* photo/video icons */
+
+/* hot news top */
+
+/* crush kill destroy */
+
+/* Finance informer */
+
+/* ZD vote */
+
+/* Article layout */
+
+/* Region suggest */
+
+/* Push */
+.authors_list li {
+    display: block;
+    width: 240px;
+    height: 60px;
+    overflow: hidden;
+}

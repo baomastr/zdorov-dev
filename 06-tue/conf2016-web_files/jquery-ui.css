@@ -1,0 +1,16 @@
+#calendar{
+    max-width: 900px;
+    margin: auto;
+}
+#calendar .fc-today{
+    background: red;
+}
+#calendar .fc-day{
+    transition: all .5s;
+}
+#calendar .fc-day:hover{
+    background: red;
+}
+.fc-toolbar h2 {
+    color: red;
+}

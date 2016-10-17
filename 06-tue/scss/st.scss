@@ -1,0 +1,2629 @@
+
+.st-title {
+  padding-bottom: 45px;
+  position: relative;
+}
+.st-title .cloud {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  font-family: 'OpenSans', sans-serif;
+  color: #a4b9d9;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 100;
+  border-radius: 20px;
+  -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 205px;
+  display: block;
+}
+.st-title .cloud:before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  -moz-box-shadow: 3px -4 px 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px -4px 3px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 3px -4px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 3px -4px 3px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  bottom: 30px;
+  right: -12px;
+  z-index: -2;
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(45deg);
+}
+.st-title span {
+  float: left;
+  color: #2db3e5;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: 'OpenSans', sans-serif;
+  width: 60%;
+}
+.st-title span h1 {
+  padding-bottom: 0;
+}
+.st-title a.st-back {
+  float: right;
+  color: #115c89;
+  font-size: 14px;
+  display: inline-block;
+  width: 45px;
+  position: relative;
+  padding-right: 50px;
+  margin-top: 7px;
+}
+.st-title a.st-back:after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 50px;
+  top: -10px;
+  right: 0;
+  background: url("../img/self-test-sprite.png") no-repeat -1573px 0;
+}
+.st-title a.st-back:hover {
+  text-decoration: underline;
+}
+.st-title a.st-back:hover:after {
+  background: url("../img/self-test-sprite.png") no-repeat -1501px -1px;
+}
+.st-pic__area {
+  cursor: pointer;
+  position: relative;
+}
+.st-pic__area .st-pic__circle:before {
+  position: absolute;
+  content: '';
+  width: 74px;
+  height: 77px;
+  display: none;
+  top: -21px;
+  left: -24px;
+  z-index: 500;
+  background: url("../img/st-head.png") no-repeat -1391px 4px;
+}
+.st-pic__area .st-pic__circle {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: url("../img/st-head.png") no-repeat -1320px -9px;
+  z-index: 999;
+}
+.st-pic__area:hover .st-pic__circle:before {
+  display: block;
+}
+.st-pic__area .st-pic__area-text {
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+  z-index: 100;
+  font-family: 'OpenSans', sans-serif;
+  white-space: nowrap;
+  padding-left: 30px;
+  padding-top: 5px;
+  position: relative;
+  line-height: 1em;
+}
+.st-pic__area:hover .st-pic__area-text {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 40px;
+  z-index: 100000;
+}
+.st-list {
+  width: 450px;
+  border: 1px solid #f5efe9;
+  -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #fff5eb;
+  overflow: hidden;
+  position: absolute;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+.st-list__title {
+  background: #a4b9d9;
+  padding: 5px 10px;
+  position: relative;
+  min-height: 66px;
+}
+.st-list__title-text {
+  padding-top: 13px;
+}
+.st-list__title span.st-list__img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #FFFFFF;
+  -moz-border-radius: 35px;
+  -webkit-border-radius: 35px;
+  border-radius: 35px;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+.st-list__title span.st-list__img img {
+  width: 100%;
+}
+.st-list__title p {
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 0 10px 0 0;
+  line-height: 1.2em;
+  margin-top: -1px;
+}
+.st-list__title p span {
+  font-size: 12px;
+  padding-top: 15px;
+  font-family: 'OpenSansBold', sans-serif;
+}
+.st-list__title button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("../img/st-head.png") no-repeat -337px -612px;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.st-list__title button:hover {
+  background: url("../img/st-head.png") no-repeat -394px -612px;
+}
+.st-list ul {
+  padding: 10px;
+}
+.st-list ul li {
+  padding-bottom: 10px;
+  display: list-item;
+}
+.st-list ul li a:hover {
+  background: #ee776a;
+  color: #FFFFFF;
+}
+.st-list ul li a {
+  padding: 5px 10px 5px 6%;
+  width: 92%;
+  position: relative;
+  color: #575757;
+  font-size: 14px;
+  display: block;
+}
+.st-list ul li a:hover:after {
+  position: absolute;
+  content: '';
+  display: block;
+  background: -mozlinear-gradient(right bottom, #fff5eb 0%, transparent 0%, transparent 50%, #fff5eb 50%) 0 0, -moz-linear-gradient(right top, #fff5eb 0%, #ee776a 0%, #ee776a 50%, #fff5eb 50%) 0 0;
+  background: -webkit-linear-gradient(right bottom, #fff5eb 0%, transparent 0%, transparent 50%, #fff5eb 50%) 0 0, -webkit-linear-gradient(right top, #fff5eb 0%, #ee776a 0%, #ee776a 50%, #fff5eb 50%) 0 0;
+  background: -o-linear-gradient(right bottom, #fff5eb 0%, transparent 0%, transparent 50%, #fff5eb 50%) 0 0, -o-linear-gradient(right top, #fff5eb 0%, #ee776a 0%, #ee776a 50%, #fff5eb 50%) 0 0;
+  background: linear-gradient(to right bottom, #fff5eb 0%, transparent 0%, transparent 50%, #fff5eb 50%) 0 0, linear-gradient(to right top, #fff5eb 0%, #ee776a 0%, #ee776a 50%, #fff5eb 50%) 0 0;
+  right: -20px;
+  top: 0;
+  height: 100%;
+  width: 30px;
+}
+.st-list ul li a:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 14px;
+  height: 19px;
+  top: 5px;
+  left: 5px;
+  background: url("../img/st-head.png") no-repeat -1545px -33px;
+}
+.st-list ul li a:hover:before {
+  background: url("../img/st-head.png") no-repeat -1545px 1px;
+}
+.st-list ul li a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.active .st-pic__circle:before {
+  display: block;
+}
+.active .st-pic__area-red {
+  display: block!important;
+}
+.active > .st-pic__area-text {
+  font-size: 14px;
+  top: 27px;
+  left: 60px;
+  font-weight: bold;
+}
+.st-pic {
+  position: relative;
+  width: 491px;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.st-list {
+  top: 0;
+  right: 0;
+  display: none;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.st-bxslider__wrap {
+  margin: 0 auto;
+  width: 491px;
+  position: relative;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  min-height: 491px;
+  padding-bottom: 20px;
+}
+.move {
+  margin: 0;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.st-pic__wrap {
+  position: absolute;
+  left: inherit;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.move .st-pic__wrap {
+  position: absolute;
+  left: 0;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.move .st-pic__wrap .st-pic .st-pic__item-wrap .st-list {
+  top: -60px;
+  right: -360px;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.st-bxslider__wrap .bx-wrapper .bx-controls-direction a {
+  top: 85%;
+}
+.st-bxslider__wrap .bx-wrapper .bx-controls-direction a.bx-next {
+  background: url("../img/st-sheya.png") no-repeat -332px -600px;
+  width: 45px;
+  height: 45px;
+  right: 130px;
+  -moz-transition: right 0.5s ease;
+  -webkit-transition: right 0.5s ease;
+  -o-transition: right 0.5s ease;
+  transition: right 0.5s ease;
+}
+.st-bxslider__wrap .bx-wrapper .bx-controls-direction a.bx-next:hover {
+  background: url("../img/st-sheya.png") no-repeat -534px -600px;
+  -moz-transition: right 0.5s ease;
+  -webkit-transition: right 0.5s ease;
+  -o-transition: right 0.5s ease;
+  transition: right 0.5s ease;
+}
+.st-bxslider__wrap .bx-wrapper .bx-controls-direction a.bx-prev {
+  background: url("../img/st-sheya.png") no-repeat -213px -600px;
+  width: 45px;
+  height: 45px;
+  left: 130px;
+  -moz-transition: left 0.5s ease;
+  -webkit-transition: left 0.5s ease;
+  -o-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+.st-bxslider__wrap .bx-wrapper .bx-controls-direction a.bx-prev:hover {
+  background: url("../img/st-sheya.png") no-repeat -417px -600px;
+  width: 45px;
+  height: 45px;
+  -moz-transition: left 0.5s ease;
+  -webkit-transition: left 0.5s ease;
+  -o-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+.st-bxslider__wrap .bx-wrapper .bx-viewport {
+  overflow: visible!important;
+}
+.st-rotate {
+  position: absolute;
+  bottom: 137px;
+  left: 200px;
+  color: #115c89;
+  font-size: 18px;
+  font-family: 'OpenSans', sans-serif;
+  z-index: 100;
+}
+.st-list > span {
+  display: block;
+  padding: 10px 20px 0;
+  color: #6f96d1;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.st-two-column > ul {
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  white-space: normal;
+  padding: 10px 10px 0;
+}
+.st-two-column > ul > li a {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15%;
+}
+.st-two-column > ul > li {
+  padding-top: 0 ;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.st-head__volosy {
+  position: absolute;
+  top: 65px;
+  left: 200px;
+}
+.st-head__volosy .st-pic__area-red {
+  position: absolute;
+  top: -7px;
+  left: -68px;
+  background: url("../img/st-head.png") no-repeat -1045px -11px;
+  width: 275px;
+  height: 290px;
+  z-index: 1;
+  display: none;
+}
+.st-head__volosy .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-list__volosy .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-head.png") no-repeat -1477px -100px;
+}
+.st-head__psih {
+  position: absolute;
+  top: 40px;
+  left: 300px;
+}
+.st-head__psih .st-pic__area-red {
+  position: absolute;
+  top: -25px;
+  left: -220px;
+  background: url("../img/st-head.png") no-repeat -450px -3px;
+  width: 366px;
+  height: 365px;
+  z-index: 1;
+  display: none;
+}
+.st-head__psih .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-list__psih .st-list__title span.st-list__img {
+  background: #ffffff url("../img/psihika.jpg") no-repeat 0 0;
+}
+.st-head__koja {
+  position: absolute;
+  top: 270px;
+  left: 165px;
+}
+.st-head__koja .st-pic__area-red {
+  position: absolute;
+  top: -165px;
+  left: -80px;
+  background: url("../img/st-head.png") no-repeat -2px -4px;
+  width: 190px;
+  height: 287px;
+  z-index: 1;
+  display: none;
+}
+.st-head__koja .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-list__koja .st-list__title span.st-list__img {
+  background: #ffffff url("../img/skin-face.jpg") no-repeat 0 0;
+}
+.st-head__guby {
+  position: absolute;
+  top: 330px;
+  left: 100px;
+}
+.st-head__guby .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: 6px;
+  background: url("../img/st-head.png") no-repeat -1510px -342px;
+  width: 52px;
+  height: 37px;
+  z-index: 1;
+  display: none;
+}
+.st-head__guby .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-list__guby .st-list__title span.st-list__img {
+  background: #ffffff url("../img/guby.jpg") no-repeat 0 0;
+}
+.st-head__zuby {
+  position: absolute;
+  top: 295px;
+  left: 115px;
+}
+.st-head__zuby .st-pic__area-red {
+  position: absolute;
+  top: -1px;
+  left: -6px;
+  background: url("../img/st-head.png") no-repeat -440px -361px;
+  width: 97px;
+  height: 60px;
+  z-index: 1;
+  display: none;
+}
+.st-head__zuby .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-list__zuby .st-list__title span.st-list__img {
+  background: #ffffff url("../img/zuby.jpg") no-repeat 0 0;
+}
+.st-head__rot {
+  position: absolute;
+  top: 315px;
+  left: 155px;
+}
+.st-head__rot .st-pic__area-red {
+  position: absolute;
+  top: -31px;
+  left: -48px;
+  background: url("../img/st-head.png") no-repeat -12px -352px;
+  width: 137px;
+  height: 70px;
+  z-index: 1;
+  display: none;
+}
+.st-head__rot .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-list__rot .st-list__title span.st-list__img {
+  background: #ffffff url("../img/gorlo.jpg") no-repeat 0 0;
+}
+.st-head__nos {
+  position: absolute;
+  top: 240px;
+  left: 90px;
+}
+.st-head__nos .st-pic__area .st-pic__circle ~ .st-pic__area-red {
+  position: absolute;
+  top: -35px;
+  left: -8px;
+  background: url("../img/st-head.png") no-repeat -171px -313px;
+  width: 68px;
+  height: 109px;
+  z-index: 1;
+  display: none;
+}
+.st-head__nos .st-pic__area .st-pic__circle:hover ~ .st-pic__area-red {
+  display: block;
+}
+.st-list__nos .st-list__title span.st-list__img {
+  background: #ffffff url("../img/nos.jpg") no-repeat 0 0;
+}
+.st-head__glaz {
+  position: absolute;
+  top: 225px;
+  left: 150px;
+}
+.st-head__glaz .st-pic__area-red {
+  position: absolute;
+  top: -48px;
+  left: -47px;
+  background: url("../img/st-head.png") no-repeat -298px -332px;
+  width: 92px;
+  height: 87px;
+  z-index: 1;
+  display: none;
+}
+.st-head__glaz .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-list__glaz .st-list__title span.st-list__img {
+  background: #ffffff url("../img/eye.jpg") no-repeat 0 0;
+}
+.st-head__lob {
+  position: absolute;
+  top: 130px;
+  left: 150px;
+}
+.st-head__lob .st-pic__area-red {
+  position: absolute;
+  top: -33px;
+  left: -45px;
+  background: url("../img/st-head.png") no-repeat -220px 0;
+  width: 119px;
+  height: 120px;
+  z-index: 1;
+  display: none;
+}
+.st-head__lob .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-list__lob .st-list__title span.st-list__img {
+  background: #ffffff url("../img/golova-bol.jpg") no-repeat -1px 1px;
+}
+.st-head__bol {
+  position: absolute;
+  top: 105px;
+  left: 280px;
+}
+.st-head__bol .st-pic__area-red {
+  position: absolute;
+  top: -52px;
+  left: -164px;
+  background: url("../img/st-head.png") no-repeat -26px -441px;
+  width: 316px;
+  height: 209px;
+  z-index: 1;
+  display: none;
+}
+.st-head__bol .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-list__bol .st-list__title span.st-list__img {
+  background: #ffffff url("../img/golova-bol.jpg") no-repeat -1px 1px;
+}
+.st-head__yho {
+  position: absolute;
+  top: 240px;
+  left: 300px;
+}
+.st-head__yho .st-pic__area-red {
+  position: absolute;
+  top: -40px;
+  left: -55px;
+  background: url("../img/st-head.png") no-repeat -1415px -192px;
+  width: 137px;
+  height: 99px;
+  z-index: 1;
+  display: none;
+}
+.st-head__yho .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-list__yho .st-list__title span.st-list__img {
+  background: #ffffff url("../img/ear.jpg") no-repeat 0 0;
+}
+.st-head__visok {
+  position: absolute;
+  top: 175px;
+  left: 200px;
+}
+.st-head__visok .st-pic__area-red {
+  position: absolute;
+  top: -31px;
+  left: -42px;
+  background: url("../img/st-head.png") no-repeat -267px -138px;
+  width: 137px;
+  height: 116px;
+  z-index: 1;
+  display: none;
+}
+.st-head__visok .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-list__visok .st-list__title span.st-list__img {
+  background: #ffffff url("../img/golova-visok.jpg") no-repeat 0 0;
+}
+.st-head__zatylok {
+  position: absolute;
+  top: 185px;
+  left: 325px;
+}
+.st-head__zatylok .st-pic__area-red {
+  position: absolute;
+  top: -105px;
+  left: -12px;
+  background: url("../img/st-head.png") no-repeat -910px -19px;
+  width: 96px;
+  height: 204px;
+  z-index: 1;
+  display: none;
+}
+.st-head__zatylok .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-list__zatylok .st-list__title span.st-list__img {
+  background: #ffffff url("../img/zatylok.jpg") no-repeat 0 0;
+}
+.st-head__koja-golova {
+  position: absolute;
+  top: 145px;
+  left: 250px;
+}
+.st-head__koja-golova .st-pic__area-red {
+  position: absolute;
+  top: -89px;
+  left: -117px;
+  background: url("../img/st-head.png") no-repeat -1045px -11px;
+  width: 275px;
+  height: 290px;
+  z-index: 1;
+  display: none;
+}
+.st-head__koja-golova .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-list__volosy .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-head.png") no-repeat -1478px -100px;
+}
+.st-sheya__sleva {
+  position: absolute;
+  top: 211px;
+  left: 302px;
+}
+.st-sheya__sleva .st-pic__area-red {
+  position: absolute;
+  top: -52px;
+  left: -34px;
+  background: url("../img/st-sheya.png") no-repeat -722px -262px;
+  width: 107px;
+  height: 113px;
+  z-index: 1;
+  display: none;
+}
+.st-sheya__sleva .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-sheya__sleva ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-sheya-sleva.png") no-repeat 0 0;
+}
+.st-sheya__sprava {
+  position: absolute;
+  top: 211px;
+  left: 172px;
+}
+.st-sheya__sprava .st-pic__area-red {
+  position: absolute;
+  top: -74px;
+  left: -86px;
+  background: url("../img/st-sheya.png") no-repeat -381px -290px;
+  width: 144px;
+  height: 130px;
+  z-index: 1;
+  display: none;
+}
+.st-sheya__sprava .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-sheya__sprava ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-sheya-sprava.png") no-repeat 0 0;
+}
+.st-sheya__limf {
+  position: absolute;
+  top: 121px;
+  left: 182px;
+}
+.st-sheya__limf .st-pic__area-red {
+  position: absolute;
+  top: 13px;
+  left: 6px;
+  background: url("../img/st-sheya.png") no-repeat -874px -521px;
+  width: 181px;
+  height: 91px;
+  z-index: 1;
+  display: none;
+}
+.st-sheya__limf .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-sheya__limf ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-limfo-uzel.png") no-repeat 0 0;
+}
+.st-sheya__koja {
+  position: absolute;
+  top: 251px;
+  left: 182px;
+}
+.st-sheya__koja .st-pic__area-red {
+  position: absolute;
+  top: -129px;
+  left: -61px;
+  background: url("../img/st-sheya.png") no-repeat -900px -250px;
+  width: 281px;
+  height: 191px;
+  z-index: 1;
+  display: none;
+}
+.st-sheya__koja .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-sheya__koja ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-koja-shey.png") no-repeat 0 0;
+}
+.st-sheya__kadyk {
+  position: absolute;
+  top: 194px;
+  left: 242px;
+}
+.st-sheya__kadyk .st-pic__area-red {
+  position: absolute;
+  top: -13px;
+  left: -9px;
+  background: url("../img/st-sheya.png") no-repeat -679px -198px;
+  width: 42px;
+  height: 53px;
+  z-index: 1;
+  display: none;
+}
+.st-sheya__kadyk .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-sheya__kadyk ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-kadyk.png") no-repeat 0 0;
+}
+.st-sheya__gorlo {
+  position: absolute;
+  top: 144px;
+  left: 242px;
+}
+.st-sheya__gorlo .st-pic__area-red {
+  position: absolute;
+  top: 4px;
+  left: -9px;
+  background: url("../img/st-sheya.png") no-repeat -86px -46px;
+  width: 36px;
+  height: 115px;
+  z-index: 1;
+  display: none;
+}
+.st-sheya__gorlo .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-sheya__gorlo ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-gorlo-bol.png") no-repeat 0 0;
+}
+.st-sheya-b__sleva {
+  position: absolute;
+  top: 211px;
+  left: 290px;
+}
+.st-sheya-b__sleva .st-pic__area-red {
+  position: absolute;
+  top: -87px;
+  left: -25px;
+  background: url("../img/st-sheya.png") no-repeat -738px 0;
+  width: 162px;
+  height: 212px;
+  z-index: 1;
+  display: none;
+}
+.st-sheya-b__sleva .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-sheya-b__sleva ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-sheya-sleva.png") no-repeat 0 0;
+}
+.st-sheya-b__sprava {
+  position: absolute;
+  top: 211px;
+  left: 189px;
+}
+.st-sheya-b__sprava .st-pic__area-red {
+  position: absolute;
+  top: -87px;
+  left: -112px;
+  background: url("../img/st-sheya.png") no-repeat -386px -23px;
+  width: 162px;
+  height: 212px;
+  z-index: 1;
+  display: none;
+}
+.st-sheya-b__sprava .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-sheya-b__sprava ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-sheya-sprava.png") no-repeat 0 0;
+}
+.st-sheya-b__bol {
+  position: absolute;
+  top: 180px;
+  left: 240px;
+}
+.st-sheya-b__bol .st-pic__area-red {
+  position: absolute;
+  top: -70px;
+  left: 1px;
+  background: url("../img/st-sheya.png") no-repeat -618px -23px;
+  width: 35px;
+  height: 166px;
+  z-index: 1;
+  display: none;
+}
+.st-sheya-b__bol .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-sheya-b__bol ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-myshcy-shei.png") no-repeat 0 0;
+}
+.st-sheya-b__bol-povorot {
+  position: absolute;
+  top: 250px;
+  left: 240px;
+}
+.st-sheya-b__bol-povorot .st-pic__area-red {
+  position: absolute;
+  top: -70px;
+  left: 1px;
+  background: url("../img/st-sheya.png") no-repeat -618px -23px;
+  width: 35px;
+  height: 166px;
+  z-index: 1;
+  display: none;
+}
+.st-sheya-b__bol-povorot .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-sheya-b__bol-povorot ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-golova-bol-v-shee.png") no-repeat 0 0;
+}
+.st-sheya-b__koja {
+  position: absolute;
+  top: 300px;
+  left: 240px;
+}
+.st-sheya-b__koja .st-pic__area-red {
+  position: absolute;
+  top: -174px;
+  left: -89px;
+  background: url("../img/st-sheya.png") no-repeat -164px -13px;
+  width: 212px;
+  height: 247px;
+  z-index: 1;
+  display: none;
+}
+.st-sheya-b__koja .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-sheya-b__koja ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-koja-shey.png") no-repeat 0 0;
+}
+.st-korpus__sleva-top {
+  position: absolute;
+  top: 150px;
+  left: 313px;
+}
+.st-korpus__sleva-top .st-pic__area-red {
+  position: absolute;
+  top: -41px;
+  left: -55px;
+  background: url("../img/st-korpus.png") no-repeat -400px 0;
+  width: 135px;
+  height: 122px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus__sleva-top .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus__sleva-top ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-grud-men.jpg") no-repeat 0 0;
+}
+.st-korpus__sprava-top {
+  position: absolute;
+  top: 150px;
+  left: 160px;
+}
+.st-korpus__sprava-top .st-pic__area-red {
+  position: absolute;
+  top: -43px;
+  left: -50px;
+  background: url("../img/st-korpus.png") no-repeat -229px -15px;
+  width: 133px;
+  height: 120px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus__sprava-top .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus__sprava-top ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-grud-men.jpg") no-repeat 0 0;
+}
+.st-korpus__sleva {
+  position: absolute;
+  top: 275px;
+  left: 330px;
+}
+.st-korpus__sleva .st-pic__area-red {
+  position: absolute;
+  top: -14px;
+  left: -37px;
+  background: url("../img/st-korpus.png") no-repeat -400px -149px;
+  width: 80px;
+  height: 62px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus__sleva .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus__sleva ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-pod-rebramii.jpg") no-repeat 0 0;
+}
+.st-korpus__sprava {
+  position: absolute;
+  top: 275px;
+  left: 145px;
+}
+.st-korpus__sprava .st-pic__area-red {
+  position: absolute;
+  top: -13px;
+  left: -17px;
+  background: url("../img/st-korpus.png") no-repeat -270px -182px;
+  width: 78px;
+  height: 58px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus__sprava .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus__sprava ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-pod-rebramii.jpg") no-repeat 0 0;
+}
+.st-korpus__bol-vnutry {
+  position: absolute;
+  top: 180px;
+  left: 222px;
+}
+.st-korpus__bol-vnutry .st-pic__area-red {
+  position: absolute;
+  top: -52px;
+  left: -60px;
+  background: url("../img/st-korpus.png") no-repeat -902px -4px;
+  width: 181px;
+  height: 155px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus__bol-vnutry .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus__bol-vnutry ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-koja.jpg") no-repeat 0 0;
+}
+.st-korpus__koja {
+  position: absolute;
+  top: 120px;
+  left: 240px;
+}
+.st-korpus__koja .st-pic__area-red {
+  position: absolute;
+  top: -31px;
+  left: -134px;
+  background: url("../img/st-korpus.png") no-repeat 0 -286px;
+  width: 281px;
+  height: 245px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus__koja .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus__koja ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-koja.jpg") no-repeat 0 0;
+}
+.st-korpus__m-jelezy {
+  position: absolute;
+  top: 225px;
+  left: 145px;
+}
+.st-korpus__m-jelezy .st-pic__area-red {
+  position: absolute;
+  top: -38px;
+  left: -22px;
+  background: url("../img/st-korpus.png") no-repeat -570px -21px;
+  width: 255px;
+  height: 93px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus__m-jelezy .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus__m-jelezy ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-w-grud.jpg") no-repeat 0 0;
+}
+.st-korpus__m-jelezy-m {
+  position: absolute;
+  top: 225px;
+  left: 145px;
+}
+.st-korpus__m-jelezy-m .st-pic__area-red {
+  position: absolute;
+  top: -38px;
+  left: -22px;
+  background: url("../img/st-korpus.png") no-repeat -570px -21px;
+  width: 255px;
+  height: 93px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus__m-jelezy-m .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus__m-jelezy-m ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-grud-men.jpg") no-repeat 0 0;
+}
+.st-korpus__spletenie {
+  position: absolute;
+  top: 264px;
+  left: 242px;
+}
+.st-korpus__spletenie .st-pic__area-red {
+  position: absolute;
+  top: -27px;
+  left: -27px;
+  background: url("../img/st-korpus.png") no-repeat -307px -300px;
+  width: 76px;
+  height: 89px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus__spletenie .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus__spletenie ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-center.jpg") no-repeat 0 0;
+}
+.st-korpus__serdce {
+  position: absolute;
+  top: 204px;
+  left: 292px;
+}
+.st-korpus__serdce .st-pic__area-red {
+  position: absolute;
+  top: -27px;
+  left: -27px;
+  background: url("../img/st-korpus.png") no-repeat -307px -300px;
+  width: 76px;
+  height: 89px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus__serdce .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus__serdce ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-serdce.jpg") no-repeat 0 0;
+}
+.st-korpus__dyhanie {
+  position: absolute;
+  top: 305px;
+  left: 242px;
+}
+.st-korpus__dyhanie .st-pic__area-red {
+  position: absolute;
+  top: -191px;
+  left: -105px;
+  background: url("../img/st-korpus.png") no-repeat 0 -27px;
+  width: 210px;
+  height: 233px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus__dyhanie .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus__dyhanie ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-legkie.jpg") no-repeat 0 0;
+}
+.st-korpus-b__sleva-top {
+  position: absolute;
+  top: 110px;
+  left: 303px;
+}
+.st-korpus-b__sleva-top .st-pic__area-red {
+  position: absolute;
+  top: -31px;
+  left: -55px;
+  background: url("../img/st-korpus.png") no-repeat -1145px -74px;
+  width: 150px;
+  height: 115px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus-b__sleva-top .st-pic__area:hover .st-pic__area-text {
+  padding-left: 0;
+  padding-top: 35px;
+}
+.st-korpus-b__sleva-top .st-pic__area .st-pic__area-text {
+  padding-left: 0;
+  padding-top: 30px;
+}
+.st-korpus-b__sleva-top .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus-b__sleva-top ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-lopatki.jpg") no-repeat 0 0;
+}
+.st-korpus-b__sprava-top {
+  position: absolute;
+  top: 110px;
+  left: 160px;
+}
+.st-korpus-b__sprava-top .st-pic__area-red {
+  position: absolute;
+  top: -33px;
+  left: -74px;
+  background: url("../img/st-korpus.png") no-repeat -544px -141px;
+  width: 156px;
+  height: 114px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus-b__sprava-top .st-pic__area .st-pic__area-text {
+  padding-left: 0;
+}
+.st-korpus-b__sprava-top .st-pic__area .st-pic__circle {
+  display: block;
+  position: inherit;
+}
+.st-korpus-b__sprava-top .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus-b__sprava-top ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-lopatki.jpg") no-repeat 0 0;
+}
+.st-korpus-b__sprava {
+  position: absolute;
+  top: 275px;
+  left: 280px;
+}
+.st-korpus-b__sprava .st-pic__area-red {
+  position: absolute;
+  top: -23px;
+  left: -4px;
+  background: url("../img/st-korpus.png") no-repeat -1400px -120px;
+  width: 85px;
+  height: 93px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus-b__sprava .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus-b__sprava ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpups-rebra.jpg") no-repeat 0 0;
+}
+.st-korpus-b__sleva {
+  position: absolute;
+  top: 275px;
+  left: 145px;
+}
+.st-korpus-b__sleva .st-pic__area-red {
+  position: absolute;
+  top: -13px;
+  left: -17px;
+  background: url("../img/st-korpus.png") no-repeat -680px -380px;
+  width: 100px;
+  height: 88px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus-b__sleva .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus-b__sleva ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpups-rebra.jpg") no-repeat 0 0;
+}
+.st-korpus-b__sprava-lopatka {
+  position: absolute;
+  top: 200px;
+  left: 280px;
+}
+.st-korpus-b__sprava-lopatka .st-pic__area-red {
+  position: absolute;
+  top: -64px;
+  left: -15px;
+  background: url("../img/st-korpus.png") no-repeat -463px -283px;
+  width: 105px;
+  height: 146px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus-b__sprava-lopatka .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus-b__sprava-lopatka ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-lopatki.jpg") no-repeat 0 0;
+}
+.st-korpus-b__sleva-lopatka {
+  position: absolute;
+  top: 200px;
+  left: 145px;
+}
+.st-korpus-b__sleva-lopatka .st-pic__area-red {
+  position: absolute;
+  top: -63px;
+  left: -17px;
+  background: url("../img/st-korpus.png") no-repeat -765px -150px;
+  width: 100px;
+  height: 150px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus-b__sleva-lopatka .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus-b__sleva-lopatka ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-lopatki.jpg") no-repeat 0 0;
+}
+.st-korpus-b__sprava-bottom {
+  position: absolute;
+  top: 325px;
+  left: 275px;
+}
+.st-korpus-b__sprava-bottom .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: -12px;
+  background: url("../img/st-korpus.png") no-repeat -1350px -330px;
+  width: 105px;
+  height: 73px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus-b__sprava-bottom .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus-b__sprava-bottom ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-grud-otdel.jpg") no-repeat 0 0;
+}
+.st-korpus-b__sleva-bottom {
+  position: absolute;
+  top: 325px;
+  left: 145px;
+}
+.st-korpus-b__sleva-bottom .st-pic__area-red {
+  position: absolute;
+  top: -24px;
+  left: -21px;
+  background: url("../img/st-korpus.png") no-repeat -920px -470px;
+  width: 90px;
+  height: 78px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus-b__sleva-bottom .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus-b__sleva-bottom ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-grud-otdel.jpg") no-repeat 0 0;
+}
+.st-korpus-b__m-lopatkami {
+  position: absolute;
+  top: 180px;
+  left: 242px;
+}
+.st-korpus-b__m-lopatkami .st-pic__area-red {
+  position: absolute;
+  top: -22px;
+  left: -30px;
+  background: url("../img/st-korpus.png") no-repeat -1050px -180px;
+  width: 81px;
+  height: 125px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus-b__m-lopatkami .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus-b__m-lopatkami ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-lopatki.jpg") no-repeat 0 0;
+}
+.st-korpus-b__center {
+  position: absolute;
+  top: 235px;
+  left: 242px;
+}
+.st-korpus-b__center .st-pic__area-red {
+  position: absolute;
+  top: -57px;
+  left: -29px;
+  background: url("../img/st-korpus.png") no-repeat -925px -190px;
+  width: 76px;
+  height: 192px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus-b__center .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus-b__center .st-pic__area:hover .st-pic__area-text {
+  padding-left: 0;
+  padding-top: 35px;
+}
+.st-korpus-b__center .st-pic__area .st-pic__area-text {
+  padding-left: 0;
+  padding-top: 30px;
+  margin-left: -15px;
+}
+.st-korpus-b__center ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-grud-otdel.jpg") no-repeat 0 0;
+}
+.st-korpus-b__poyacnica {
+  position: absolute;
+  top: 365px;
+  left: 242px;
+}
+.st-korpus-b__poyacnica .st-pic__area-red {
+  position: absolute;
+  top: -48px;
+  left: -96px;
+  background: url("../img/st-korpus.png") no-repeat -1130px -373px;
+  width: 196px;
+  height: 92px;
+  z-index: 1;
+  display: none;
+}
+.st-korpus-b__poyacnica .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-korpus-b__poyacnica .st-pic__area:hover .st-pic__area-text {
+  padding-left: 0;
+  padding-top: 35px;
+}
+.st-korpus-b__poyacnica .st-pic__area .st-pic__area-text {
+  padding-left: 0;
+  padding-top: 30px;
+  margin-left: -15px;
+}
+.st-korpus-b__poyacnica ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-korpus-grud-otdel.jpg") no-repeat 0 0;
+}
+.st-ruki__koja {
+  position: absolute;
+  top: 260px;
+  left: 120px;
+}
+.st-ruki__koja .st-pic__area-red {
+  position: absolute;
+  top: -164px;
+  left: -59px;
+  background: url("../img/st-ruki-nogi.png") no-repeat 0 -125px;
+  width: 294px;
+  height: 319px;
+  z-index: 1;
+  display: none;
+}
+.st-ruki__koja .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-ruki__koja ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-ruki-kist.jpg") no-repeat 0 0;
+}
+.st-ruki__paltsy {
+  position: absolute;
+  top: 120px;
+  left: 110px;
+}
+.st-ruki__paltsy .st-pic__area-red {
+  position: absolute;
+  top: -10px;
+  left: -44px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -381px -235px;
+  width: 115px;
+  height: 110px;
+  z-index: 1;
+  display: none;
+}
+.st-ruki__paltsy .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-ruki__paltsy ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-ruki-kist.jpg") no-repeat 0 0;
+}
+.st-ruki__kist {
+  position: absolute;
+  top: 200px;
+  left: 110px;
+}
+.st-ruki__kist .st-pic__area-red {
+  position: absolute;
+  top: -77px;
+  left: -45px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -283px -21px;
+  width: 115px;
+  height: 122px;
+  z-index: 1;
+  display: none;
+}
+.st-ruki__kist .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-ruki__kist ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-ruki-kist.jpg") no-repeat 0 0;
+}
+.st-ruki__predpleche {
+  position: absolute;
+  top: 300px;
+  left: 170px;
+}
+.st-ruki__predpleche .st-pic__area-red {
+  position: absolute;
+  top: -77px;
+  left: -47px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -347px -400px;
+  width: 118px;
+  height: 170px;
+  z-index: 1;
+  display: none;
+}
+.st-ruki__predpleche .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-ruki__predpleche ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-ruki-lokot.jpg") no-repeat 0 0;
+}
+.st-ruki__locot {
+  position: absolute;
+  top: 380px;
+  left: 224px;
+}
+.st-ruki__locot .st-pic__area-red {
+  position: absolute;
+  top: -23px;
+  left: -21px;
+  background: url("../img/st-ruki-nogi.png") no-repeat 0 0;
+  width: 66px;
+  height: 58px;
+  z-index: 1;
+  display: none;
+}
+.st-ruki__locot .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-ruki__locot ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-ruki-lokot.jpg") no-repeat 0 0;
+}
+.st-ruki__biceps {
+  position: absolute;
+  top: 250px;
+  left: 254px;
+}
+.st-ruki__biceps .st-pic__area-red {
+  position: absolute;
+  top: -111px;
+  left: -32px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -600px -55px;
+  width: 115px;
+  height: 215px;
+  z-index: 1;
+  display: none;
+}
+.st-ruki__biceps .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-ruki__biceps ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-ruki-lokot.jpg") no-repeat 0 0;
+}
+.st-ruki__podmyshka {
+  position: absolute;
+  top: 200px;
+  left: 320px;
+}
+.st-ruki__podmyshka .st-pic__area-red {
+  position: absolute;
+  top: -56px;
+  left: -32px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -450px 0;
+  width: 115px;
+  height: 215px;
+  z-index: 1;
+  display: none;
+}
+.st-ruki__podmyshka .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-ruki__podmyshka ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-ruki-plecho.jpg") no-repeat 0 0;
+}
+.st-ruki__plecho {
+  position: absolute;
+  top: 130px;
+  left: 283px;
+}
+.st-ruki__plecho .st-pic__area-red {
+  position: absolute;
+  top: -31px;
+  left: -65px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -541px -333px;
+  width: 144px;
+  height: 124px;
+  z-index: 1;
+  display: none;
+}
+.st-ruki__plecho .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-ruki__plecho ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-ruki-plecho.jpg") no-repeat 0 0;
+}
+.st-nogi__koja {
+  position: absolute;
+  top: 110px;
+  left: 320px;
+}
+.st-nogi__koja .st-pic__area-red {
+  position: absolute;
+  top: -52px;
+  left: -224px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -1177px -185px;
+  width: 298px;
+  height: 348px;
+  z-index: 1;
+  display: none;
+}
+.st-nogi__koja .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-nogi__koja ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-nogi-koja.jpg") no-repeat 0 0;
+}
+.st-nogi__taz {
+  position: absolute;
+  top: 73px;
+  left: 251px;
+}
+.st-nogi__taz .st-pic__area-red {
+  position: absolute;
+  top: -9px;
+  left: -15px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -1050px -96px;
+  width: 54px;
+  height: 54px;
+  z-index: 1;
+  display: none;
+}
+.st-nogi__taz .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-nogi__taz ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-nogi-taz.jpg") no-repeat 0 0;
+}
+.st-nogi__bedro {
+  position: absolute;
+  top: 153px;
+  left: 330px;
+}
+.st-nogi__bedro .st-pic__area-red {
+  position: absolute;
+  top: -66px;
+  left: -79px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -780px -132px;
+  width: 142px;
+  height: 136px;
+  z-index: 1;
+  display: none;
+}
+.st-nogi__bedro .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-nogi__bedro ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-nogi-bedro.jpg") no-repeat 0 0;
+}
+.st-nogi__stopa {
+  position: absolute;
+  top: 330px;
+  left: 255px;
+}
+.st-nogi__stopa .st-pic__area-red {
+  position: absolute;
+  top: -27px;
+  left: -12px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -956px -7px;
+  width: 53px;
+  height: 89px;
+  z-index: 1;
+  display: none;
+}
+.st-nogi__stopa .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-nogi__stopa ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-nogi-stopa.jpg") no-repeat 0 0;
+}
+.st-nogi__palcy {
+  position: absolute;
+  top: 360px;
+  left: 275px;
+}
+.st-nogi__palcy .st-pic__area-red {
+  position: absolute;
+  top: -17px;
+  left: -20px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -1138px 0;
+  width: 65px;
+  height: 85px;
+  z-index: 1;
+  display: none;
+}
+.st-nogi__palcy .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-nogi__palcy ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-nogi-paltsy.jpg") no-repeat 0 0;
+}
+.st-nogi__koleno {
+  position: absolute;
+  top: 230px;
+  left: 205px;
+}
+.st-nogi__koleno .st-pic__area-red {
+  position: absolute;
+  top: -22px;
+  left: -30px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -1179px -90px;
+  width: 82px;
+  height: 85px;
+  z-index: 1;
+  display: none;
+}
+.st-nogi__koleno .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-nogi__koleno ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-nogi-koleno.jpg") no-repeat 0 0;
+}
+.st-nogi__golen {
+  position: absolute;
+  top: 270px;
+  left: 145px;
+}
+.st-nogi__golen .st-pic__area-red {
+  position: absolute;
+  top: -33px;
+  left: -34px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -825px 0;
+  width: 95px;
+  height: 101px;
+  z-index: 1;
+  display: none;
+}
+.st-nogi__golen .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-nogi__golen ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-nogi-golen.jpg") no-repeat 0 0;
+}
+.st-nogi__lodygka {
+  position: absolute;
+  top: 330px;
+  left: 100px;
+}
+.st-nogi__lodygka .st-pic__area-red {
+  position: absolute;
+  top: -22px;
+  left: -34px;
+  background: url("../img/st-ruki-nogi.png") no-repeat -747px 0;
+  width: 80px;
+  height: 65px;
+  z-index: 1;
+  display: none;
+}
+.st-nogi__lodygka .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-nogi__lodygka ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-nogi-koja.jpg") no-repeat 0 0;
+}
+.st-pah-m__sex {
+  position: absolute;
+  top: 240px;
+  left: 227px;
+}
+.st-pah-m__sex .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: -16px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -22px -8px;
+  width: 64px;
+  height: 75px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-m__sex .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-m__sex ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-pah-sex.jpg") no-repeat 0 0;
+}
+.st-pah-m__yaichki {
+  position: absolute;
+  top: 280px;
+  left: 180px;
+}
+.st-pah-m__yaichki .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: -16px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -22px -8px;
+  width: 64px;
+  height: 75px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-m__yaichki .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-m__yaichki ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-pah-pah.jpg") no-repeat 0 0;
+}
+.st-pah-m__penis {
+  position: absolute;
+  top: 280px;
+  left: 274px;
+}
+.st-pah-m__penis .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: -16px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -22px -8px;
+  width: 64px;
+  height: 75px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-m__penis .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-m__penis ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-pah-pah.jpg") no-repeat 0 0;
+}
+.st-pah-m__mocha {
+  position: absolute;
+  top: 320px;
+  left: 227px;
+}
+.st-pah-m__mocha .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: -16px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -22px -8px;
+  width: 64px;
+  height: 75px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-m__mocha .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-m__mocha ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-pah-mocha.jpg") no-repeat 0 0;
+}
+.st-pah-j__niz {
+  position: absolute;
+  top: 180px;
+  left: 227px;
+}
+.st-pah-j__niz .st-pic__area-red {
+  position: absolute;
+  top: -40px;
+  left: -130px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -116px -8px;
+  width: 293px;
+  height: 109px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-j__niz .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-j__niz ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-pah-pah.jpg") no-repeat 0 0;
+}
+.st-pah-j__sex {
+  position: absolute;
+  top: 240px;
+  left: 274px;
+}
+.st-pah-j__sex .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: -16px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -22px -8px;
+  width: 64px;
+  height: 75px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-j__sex .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-j__sex ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-pah-sex.jpg") no-repeat 0 0;
+}
+.st-pah-j__mecychnye {
+  position: absolute;
+  top: 240px;
+  left: 180px;
+}
+.st-pah-j__mecychnye .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: -16px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -22px -8px;
+  width: 64px;
+  height: 75px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-j__mecychnye .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-j__mecychnye ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-mesyachnye.jpg") no-repeat 0 0;
+}
+.st-pah-j__guby {
+  position: absolute;
+  top: 280px;
+  left: 180px;
+}
+.st-pah-j__guby .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: -16px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -22px -8px;
+  width: 64px;
+  height: 75px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-j__guby .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-j__guby ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-pah-pah.jpg") no-repeat 0 0;
+}
+.st-pah-j__vlagaliche {
+  position: absolute;
+  top: 280px;
+  left: 274px;
+}
+.st-pah-j__vlagaliche .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: -16px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -22px -8px;
+  width: 64px;
+  height: 75px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-j__vlagaliche .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-j__vlagaliche ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-pah-pah.jpg") no-repeat 0 0;
+}
+.st-pah-j__mocha {
+  position: absolute;
+  top: 320px;
+  left: 227px;
+}
+.st-pah-j__mocha .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: -16px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -22px -8px;
+  width: 64px;
+  height: 75px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-j__mocha .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-j__mocha ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-pah-mocha.jpg") no-repeat 0 0;
+}
+.st-pah-r__organ {
+  position: absolute;
+  top: 280px;
+  left: 177px;
+}
+.st-pah-r__organ .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: -16px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -22px -8px;
+  width: 64px;
+  height: 75px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-r__organ .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-r__organ ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-pah-pah.jpg") no-repeat 0 0;
+}
+.st-pah-r__bol {
+  position: absolute;
+  top: 240px;
+  left: 227px;
+}
+.st-pah-r__bol .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: -16px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -22px -8px;
+  width: 64px;
+  height: 75px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-r__bol .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-r__bol ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-pah-pah.jpg") no-repeat 0 0;
+}
+.st-jivot__koja {
+  position: absolute;
+  top: 120px;
+  left: 230px;
+}
+.st-jivot__koja .st-pic__area-red {
+  position: absolute;
+  top: -28px;
+  left: -167px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -729px 0;
+  width: 376px;
+  height: 287px;
+  z-index: 1;
+  display: none;
+}
+.st-jivot__koja .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-jivot__koja ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-jivot-koja.jpg") no-repeat 0 0;
+}
+.st-jivot__picscha {
+  position: absolute;
+  top: 200px;
+  left: 230px;
+}
+.st-jivot__picscha .st-pic__area-red {
+  position: absolute;
+  top: -39px;
+  left: -65px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -696px -286px;
+  width: 157px;
+  height: 113px;
+  z-index: 1;
+  display: none;
+}
+.st-jivot__picscha .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-jivot__picscha ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-jeludok.jpg") no-repeat 0 0;
+}
+.st-jivot__pupok {
+  position: absolute;
+  top: 300px;
+  left: 230px;
+}
+.st-jivot__pupok .st-pic__area-red {
+  position: absolute;
+  top: -22px;
+  left: -17px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -992px -300px;
+  width: 157px;
+  height: 113px;
+  z-index: 1;
+  display: none;
+}
+.st-jivot__pupok .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-jivot__pupok ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-jivot-pupok.jpg") no-repeat 0 0;
+}
+.st-jivot__pod-rebrami-l {
+  position: absolute;
+  top: 140px;
+  left: 100px;
+}
+.st-jivot__pod-rebrami-l .st-pic__area-red {
+  position: absolute;
+  top: -26px;
+  left: -32px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -428px -458px;
+  width: 172px;
+  height: 93px;
+  z-index: 1;
+  display: none;
+}
+.st-jivot__pod-rebrami-l .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-jivot__pod-rebrami-l ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-jivot-pod-rebrami.jpg") no-repeat 0 0;
+}
+.st-jivot__pod-rebrami-r {
+  position: absolute;
+  top: 140px;
+  left: 360px;
+}
+.st-jivot__pod-rebrami-r .st-pic__area-red {
+  position: absolute;
+  top: -25px;
+  left: -141px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -687px -456px;
+  width: 172px;
+  height: 93px;
+  z-index: 1;
+  display: none;
+}
+.st-jivot__pod-rebrami-r .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-jivot__pod-rebrami-r ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-jivot-pod-rebrami.jpg") no-repeat 0 0;
+}
+.st-jivot__bok-l {
+  position: absolute;
+  top: 230px;
+  left: 130px;
+}
+.st-jivot__bok-l .st-pic__area-red {
+  position: absolute;
+  top: -71px;
+  left: -62px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -1092px -405px;
+  width: 103px;
+  height: 203px;
+  z-index: 1;
+  display: none;
+}
+.st-jivot__bok-l .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-jivot__bok-l ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-jivot-bok-sprava.jpg") no-repeat 0 0;
+}
+.st-jivot__bok-r {
+  position: absolute;
+  top: 230px;
+  left: 330px;
+}
+.st-jivot__bok-r .st-pic__area-red {
+  position: absolute;
+  top: -72px;
+  left: -9px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -1347px -403px;
+  width: 102px;
+  height: 211px;
+  z-index: 1;
+  display: none;
+}
+.st-jivot__bok-r .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-jivot__bok-r ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-jivot-bok-sleva.jpg") no-repeat 0 0;
+}
+.st-jivot__bok-niz-l {
+  position: absolute;
+  top: 315px;
+  left: 90px;
+}
+.st-jivot__bok-niz-l .st-pic__area-red {
+  position: absolute;
+  top: -31px;
+  left: -26px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -493px -179px;
+  width: 103px;
+  height: 112px;
+  z-index: 1;
+  display: none;
+}
+.st-jivot__bok-niz-l .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-jivot__bok-niz-l ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-jivot-pupok.jpg") no-repeat 0 0;
+}
+.st-jivot__bok-niz-r {
+  position: absolute;
+  top: 310px;
+  left: 360px;
+}
+.st-jivot__bok-niz-r .st-pic__area-red {
+  position: absolute;
+  top: -35px;
+  left: -40px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -529px -323px;
+  width: 102px;
+  height: 112px;
+  z-index: 1;
+  display: none;
+}
+.st-jivot__bok-niz-r .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-jivot__bok-niz-r ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-jivot-pupok.jpg") no-repeat 0 0;
+}
+.st-poyasnica__center {
+  position: absolute;
+  top: 270px;
+  left: 233px;
+}
+.st-poyasnica__center .st-pic__area-red {
+  position: absolute;
+  top: -73px;
+  left: -136px;
+  background: url("../img/st-pah-poystnica.png") no-repeat 0 -426px;
+  width: 285px;
+  height: 155px;
+  z-index: 1;
+  display: none;
+}
+.st-poyasnica__center .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-poyasnica__center ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-poays.jpg") no-repeat 0 0;
+}
+.st-poyasnica__center--top {
+  position: absolute;
+  top: 210px;
+  left: 233px;
+}
+.st-poyasnica__center--top .st-pic__area-red {
+  position: absolute;
+  top: -33px;
+  left: -136px;
+  background: url("../img/st-pah-poystnica.png") no-repeat 0 -426px;
+  width: 285px;
+  height: 155px;
+  z-index: 1;
+  display: none;
+}
+.st-poyasnica__center--top .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-poyasnica__center--top ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-poays.jpg") no-repeat 0 0;
+}
+.st-poyasnica__center--bottom {
+  position: absolute;
+  top: 330px;
+  left: 233px;
+}
+.st-poyasnica__center--bottom .st-pic__area-red {
+  position: absolute;
+  top: -113px;
+  left: -136px;
+  background: url("../img/st-pah-poystnica.png") no-repeat 0 -426px;
+  width: 285px;
+  height: 155px;
+  z-index: 1;
+  display: none;
+}
+.st-poyasnica__center--bottom .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-poyasnica__center--bottom ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-poays.jpg") no-repeat 0 0;
+}
+.st-poyasnica__bok-l {
+  position: absolute;
+  top: 280px;
+  left: 100px;
+}
+.st-poyasnica__bok-l .st-pic__area-red {
+  position: absolute;
+  top: -67px;
+  left: -16px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -591px -6px;
+  width: 123px;
+  height: 129px;
+  z-index: 1;
+  display: none;
+}
+.st-poyasnica__bok-l .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-poyasnica__bok-l ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-poays.jpg") no-repeat 0 0;
+}
+.st-poyasnica__bok-r {
+  position: absolute;
+  top: 290px;
+  left: 334px;
+}
+.st-poyasnica__bok-r .st-pic__area-red {
+  position: absolute;
+  top: -60px;
+  left: -44px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -445px -6px;
+  width: 114px;
+  height: 129px;
+  z-index: 1;
+  display: none;
+}
+.st-poyasnica__bok-r .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-poyasnica__bok-r ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-poays.jpg") no-repeat 0 0;
+}
+.contacts-left {
+  width: 49%;
+  display: inline-block;
+  float: left;
+}
+.contacts-left ul li {
+  display: list-item;
+  padding-bottom: 15px;
+  list-style: none;
+}
+.contacts-left ul li p {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 100;
+  padding: 0;
+  font-size: 14px;
+  color: #000000;
+}
+.contacts-left ul li p.contacts-title {
+  color: #00a2e8;
+  font-family: 'OpenSansBold', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+.contacts p.contacts-add {
+  color: #000000;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: 'OpenSans', sans-serif;
+}
+.contacts-map {
+  width: 49%;
+  float: right;
+}
+
+.st-pah-b__poyacnica {
+  position: absolute;
+  top: 170px;
+  left: 233px;
+}
+.st-pah-b__poyacnica .st-pic__area-red {
+  position: absolute;
+  top: -54px;
+  left: -13px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -14px -116px;
+  width: 64px;
+  height: 149px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-b__poyacnica .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-b__poyacnica ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-yagoditsy.jpg") no-repeat 0 0;
+}
+.st-pah-b__yagodica-l {
+  position: absolute;
+  top: 250px;
+  left: 120px;
+}
+.st-pah-b__yagodica-l .st-pic__area-red {
+  position: absolute;
+  top: -71px;
+  left: -44px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -81px -137px;
+  width: 162px;
+  height: 197px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-b__yagodica-l .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-b__yagodica-l ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-yagoditsy.jpg") no-repeat 0 0;
+}
+.st-pah-b__yagodica-r {
+  position: absolute;
+  top: 250px;
+  left: 334px;
+}
+.st-pah-b__yagodica-r .st-pic__area-red {
+  position: absolute;
+  top: -76px;
+  left: -81px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -289px -135px;
+  width: 162px;
+  height: 199px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-b__yagodica-r .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-b__yagodica-r ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-yagoditsy.jpg") no-repeat 0 0;
+}
+.st-pah-b__zad {
+  position: absolute;
+  top: 308px;
+  left: 233px;
+}
+.st-pah-b__zad .st-pic__area-red {
+  position: absolute;
+  top: -21px;
+  left: -16px;
+  background: url("../img/st-pah-poystnica.png") no-repeat -22px -8px;
+  width: 64px;
+  height: 75px;
+  z-index: 1;
+  display: none;
+}
+.st-pah-b__zad .st-pic__area:hover .st-pic__area-red {
+  display: block;
+}
+.st-pah-b__zad ~ .st-list .st-list__title span.st-list__img {
+  background: #ffffff url("../img/st-yagoditsy.jpg") no-repeat 0 0;
+}
+.st-last p.st-last__title,
+.st-last > h2 {
+  color: #000000;
+  font-size: 20px;
+  font-family: 'OpenSansBold', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.st-last ul li::first-letter {
+  text-transform: capitalize;
+}
+.st-last ul li {
+  display: list-item;
+  list-style: none;
+}
+.st-last__clinic {
+  border-top: 1px dashed #d1d1d1;
+  border-bottom: 1px dashed #d1d1d1;
+  padding: 20px 20px 20px 100px;
+  position: relative;
+}
+.st-last__clinic:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 59px;
+  height: 60px;
+  top: 25px;
+  left: 0;
+  background: url("../img/sprite_index.png") no-repeat -791px -2px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  -moz-box-shadow: 0 0 20px 0 #d2def1;
+  -webkit-box-shadow: 0 0 20px 0 #d2def1;
+  -o-box-shadow: 0 0 20px 0 #d2def1;
+  box-shadow: 0 0 20px 0 #d2def1;
+}
+.st-last__clinic > p {
+  font-family: 'PTSansItalic', arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 0 0 10px 0;
+}
+.st-last__clinic > ul li span:first-letter {
+  text-transform: capitalize;
+}
+.st-last__clinic > ul li {
+  padding: 0 0 30px 0;
+  position: relative;
+}
+.st-last__clinic > ul li:after {
+  content: '';
+  border-bottom: 2px dotted #575757;
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: absolute;
+  bottom: 13px;
+  left: 0;
+  z-index: 1;
+}
+.st-last__clinic > ul li a,
+.st-last__clinic > ul li span {
+  font-size: 17px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: bold;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+.st-last__clinic > ul li span {
+  float: left;
+  color: #575757;
+  font-family: 'PTSansItalic', arial, sans-serif;
+  font-weight: normal;
+  padding-right: 10px;
+  line-height: 1.2em;
+}
+.st-last__clinic > ul li a {
+  color: #005c95;
+  text-decoration: underline;
+  position: relative;
+  padding: 0 20px 3px 5px;
+  line-height: 1em;
+  float: right;
+}
+.st-last__clinic > ul li a:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 17px;
+  top: 2px;
+  right: 0;
+  background: url("../img/sprite_index.png") no-repeat -898px -39px;
+}
+.st-last__clinic > ul li a:hover {
+  text-decoration: none;
+}
+.st-last__reason {
+  border-bottom: 1px dashed #d1d1d1;
+  padding: 20px 20px 20px 100px;
+  position: relative;
+}
+.st-last__reason:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 57px;
+  height: 58px;
+  top: 25px;
+  left: 0;
+  background: url("../img/sprite_index.png") no-repeat -789px -69px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  -moz-box-shadow: 0 0 20px 0 #d2def1;
+  -webkit-box-shadow: 0 0 20px 0 #d2def1;
+  -o-box-shadow: 0 0 20px 0 #d2def1;
+  box-shadow: 0 0 20px 0 #d2def1;
+}
+.st-last__reason ul li {
+  //display: inline-block;
+  width: 100%;
+  color: #125c89;
+  font-family: 'PTSansItalic', sans-serif;
+  font-size: 17px;
+  position: relative;
+  display: block;
+  padding: 0 10px 15px 25px;
+}
+.st-last__reason ul li a {
+  color: #125c89;
+  text-decoration: underline;
+  font-family: 'PTSansItalic', sans-serif;
+  font-size: 17px;
+}
+.st-last__reason ul li:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 4px;
+  left: 5px;
+  top: 20%;
+  background-color: #e84b3d;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: 0 0 10px 0 #f1928a;
+  -webkit-box-shadow: 0 0 10px 0 #f1928a;
+  -o-box-shadow: 0 0 10px 0 #f1928a;
+  box-shadow: 0 0 10px 0 #f1928a;
+  border: 2px solid #ffffff;
+}
+.st-last__reason ul li a:hover {
+  text-decoration: none;
+}
+.st-last__attention {
+  border-bottom: 1px dashed #d1d1d1;
+  padding: 20px 20px 20px 100px;
+  position: relative;
+}
+.st-last__attention:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 58px;
+  height: 57px;
+  top: 25px;
+  left: 0;
+  background: url("../img/sprite_index.png") no-repeat -786px -148px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  -moz-box-shadow: 0 0 20px 0 #d2def1;
+  -webkit-box-shadow: 0 0 20px 0 #d2def1;
+  -o-box-shadow: 0 0 20px 0 #d2def1;
+  box-shadow: 0 0 20px 0 #d2def1;
+}
+.st-last__attention p.st-last__title,
+.st-last__attention > h2 {
+  color: #e84a3e;
+}
+.st-last__attention ul li {
+  padding-bottom: 10px;
+  font-family: 'OpenSans', sans-serif;
+  color: #575757;
+  font-size: 16px;
+}
+
+.st-last__doc {
+  padding: 20px 20px 20px 100px;
+  position: relative;
+  margin-bottom: 0;
+}
+.st-last__doc:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 59px;
+  height: 59px;
+  top: 25px;
+  left: 0;
+  background: url("../img/sprite_index.png") no-repeat -787px -215px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  -moz-box-shadow: 0 0 20px 0 #d2def1;
+  -webkit-box-shadow: 0 0 20px 0 #d2def1;
+  -o-box-shadow: 0 0 20px 0 #d2def1;
+  box-shadow: 0 0 20px 0 #d2def1;
+}
+.st-last__doc ul li {
+  padding-bottom: 10px;
+  font-family: 'OpenSans', sans-serif;
+  color: #575757;
+  font-size: 16px;
+}

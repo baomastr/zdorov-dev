@@ -1,0 +1,23 @@
+.doctor-popup__title {
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+.after-doctor-popup p {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+.popup .popup1 .form-popup .inp-div label {
+    font-family: 'OpenSansBold', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.popup .bottom-popup {
+
+}
+.popup .bottom-popup .soglas {
+    font-family: 'PTSansItalic', sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+}

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html><head lang="ru">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>ЗдоровОнлайн - медицинский портал, форум, энциклопедия, болезни, клиники, врачи Москвы</title>
+	<meta name="description" content="Медицинский портал о здоровье и диагностике - zdorov.online">
+				
+
+	<!--<link rel="stylesheet" type="text/css" href="main_files/style.css">-->
+	<link rel="stylesheet" type="text/css" href="dist/main.css">
+	<meta name="viewport" content="width=1250">
+	<meta name="MobileOptimized" content="1250">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>	
+	    <div class="bg-body">
+			        <header>
+            <div class="clearfix">
+                <a href="http://zdorov.online/" class="header-logo">
+                    <img src="main_files/logo.png" title="Zdorov.Online">
+                    <span>Энциклопедия здоровой жизни</span>
+                </a>
+				                <div class="header-search">
+                    <form action="/search/">
+                        <input name="q" placeholder="Например: Хронический неатрофический гастрит" type="search">
+                        <input value="" type="submit">
+                    </form>
+                </div>
+				<!--noindex-->
+				<div class="panel">
+					
+					<div class="panel__enter">
+							<a href="http://zdorov.online/auth/?back=/">Вход</a> / <a href="http://zdorov.online/reg/?back=/">Регистрация</a>
+					</div>
+									</div>
+				<!--/noindex-->
+            </div>
+            <div class="header-main_menu">
+                <ul class="main_menu-item">
+					<li class="main_menu-list"><a href="http://zdorov.online/selftest/j/">Самодиагностика</a></li>				
+					<li class="main_menu-list"><a href="http://zdorov.online/articles/">Статьи</a>					
+					</li><li class="main_menu-list"><a href="http://zdorov.online/clinics/">Клиники</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/vrach/">Врачи</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/bolezni/">Болезни</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/forum/">Форум</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/qa/">Вопросы врачу</a></li>
+                    
+                </ul>
+            </div>
+            <div>
+                <button class="btn-menu-find">Меню</button>
+            </div>
+        </header>
+		<!-- end header-->
+			<div class="diagnostic-wrap clearfix">
+                <article class="diagnostic" style="display:none; border: 0px;height: 519px;">
+
+					<a href="http://zdorov.online/selftest/" style="border:0px;"><img src="main_files/banner_selftest.jpg"></a>
+                        <div class="diagnostic__button" style="background-color: #17608c;margin: -98px 626px;border-radius: 21px;width: 225px;position: absolute;">
+                            <a href="http://zdorov.online/selftest/" style="border:0px;">Пройти самодиагностику</a>
+                        </div>
+                </article>
+                <!--right sidebar-->
+                <div class="right-sidebar" style="display:none">
+                    <article class="about">
+                        <div class="about__wrap">
+                            <section class="about_contents" style="margin-top: 35px;">
+                                <div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+                                <ul>
+                                    <li class="about_contents--pills">
+                                        <a href="http://zdorov.online/bolezni/"><span>Более 400 болезней</span>
+                                            Причины, проявления, лечение и профилактика
+                                        </a>
+                                    </li>
+                                    <li class="about_contents--clinic">
+                                        <a href="http://zdorov.online/clinics/"><span>Рейтинг клиник</span>
+                                            Достоверная информация о качестве лечения на основе посещения клиник
+                                        </a>
+                                    </li>
+                                    <li class="about_contents--node">
+                                        <a href="http://zdorov.online/vrach/"><span>Запись к врачу</span>
+                                            Очень легко к нужному врачу
+                                        </a>
+                                    </li>
+                                    <li class="about_contents--question">
+                                        <a href="http://zdorov.online/qa/"><span>Задать вопрос</span>
+                                            Бесплатные консультации врачей
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+
+<h1 class="main_header">Бесплатная диагностика здоровья</h1>
+	<div class="diagnostic__steps">
+		<a class="selftestbox-link" href="http://zdorov.online/selftest/">
+			<ul class="steplist">
+				<li class="steplist__item">
+					<div class="steplist__item_inline">
+						<i class="steplist__item-step step1"></i>
+					</div>
+					<div class="steplist__item_inline">
+						<h2 class="steplist__item_title">1 шаг</h2>
+						<p class="steplist__item_text">Выбор пола и области боли на теле</p>
+					</div>
+				</li>
+
+				<li class="steplist__item">
+					<div class="steplist__item_inline">
+						<i class="steplist__item-step step2"></i>
+					</div>
+					<div class="steplist__item_inline">
+						<h2 class="steplist__item_title">2 шаг</h2>
+						<p class="steplist__item_text">Выбор симптома из 10- <br> ти самых частых</p>
+					</div>
+				</li>
+
+				<li class="steplist__item">
+					<div class="steplist__item_inline">
+						<i class="steplist__item-step step3"></i>
+					</div>
+					<div class="steplist__item_inline">
+						<h2 class="steplist__item_title">3 шаг</h2>
+						<p class="steplist__item_text">Получение заключения: что это может <br> быть, рекомендуемая диагностика, врач <br> и серьёзность</p>
+					</div>
+				</li>
+			</ul>
+		</a>
+		<div class="diagnostic__go"><a href="http://zdorov.online/selftest/" class="diagnostic__go_btn">Пройти самодиагностику сейчас</a>
+		</div>
+	</div>
+	<div class="ourproject">
+		<h3 class="ourproject__title">На нашем проекте</h3>
+		<ul class="ourproject__list">
+			<li class="ourproject__list_item">
+				<span class="ourproject__list_item-img ourproject__list_item-img--1"></span><br>
+				<a href="http://zdorov.online/qa/" class="ourproject__list_item-link">Задать вопрос</a>
+				<p class="ourproject__list_item-text">Бесплатные консультации врачей</p>
+			</li>
+			<li class="ourproject__list_item">
+				<span class="ourproject__list_item-img ourproject__list_item-img--2"></span><br>
+				<a href="http://zdorov.online/clinics/" class="ourproject__list_item-link">Рейтинг клиник</a>
+				<p class="ourproject__list_item-text">Достоверная информация о качестве лечения на основе посещения клиник</p>
+			</li>
+			<li class="ourproject__list_item">
+				<span class="ourproject__list_item-img ourproject__list_item-img--3"></span><br>
+				<a href="http://zdorov.online/vrach/" class="ourproject__list_item-link">Запись к врачу</a>
+				<p class="ourproject__list_item-text">Очень легко к нужному врачу</p>
+			</li>
+			<li class="ourproject__list_item">
+				<span class="ourproject__list_item-img ourproject__list_item-img--4"></span><br>
+				<a href="http://zdorov.online/bolezni/" class="ourproject__list_item-link">Более 400 болезней</a>
+				<p class="ourproject__list_item-text">Причины, проявления, лечение и профилактика</p>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="main_diagnostics_list">
+<div class="main_docs_list">
+<span>Запись на прием к врачу</span>
+<ul>
+											
+												<li><a href="http://zdorov.online/vrach/akusher-ginekolog/">Акушер - гинеколог</a></li>
+												<li><a href="http://zdorov.online/vrach/algolog/">Алголог</a></li>
+												<li><a href="http://zdorov.online/vrach/allergolog/">Аллерголог</a></li>									
+												<li><a href="http://zdorov.online/vrach/androlog/">Андролог</a></li>
+                                                                                                <li><a href="http://zdorov.online/vrach/angiolog/">Ангиолог</a></li>
+												<li><a href="http://zdorov.online/vrach/artrolog/">Артролог</a></li>
+												<li><a href="http://zdorov.online/vrach/bakteriolog/">Бактериолог</a></li>
+												<li><a href="http://zdorov.online/vrach/dermatolog-venerolog/">Дерматолог - венеролог</a></li>
+												<li><a href="http://zdorov.online/vrach/vertebrolog/">Вертебролог</a></li>
+												<li><a href="http://zdorov.online/vrach/virusolog/">Вирусолог</a></li>
+												<li><a href="http://zdorov.online/vrach/lfk/">Врач ЛФК</a></li>
+												<li><a href="http://zdorov.online/vrach/genetik/">Генетик</a></li>
+												<li><a href="http://zdorov.online/vrach/gastroenterolog/">Гастроэнтеролог</a></li>
+												<li><a href="http://zdorov.online/vrach/gematolog/">Гематолог</a></li>
+												<li><a href="http://zdorov.online/vrach/gerontolog/">Геронтолог</a></li>
+												<li><a href="http://zdorov.online/vrach/ginekolog/">Гинеколог</a></li>
+												<li><a href="http://zdorov.online/vrach/girudolog/">Гирудолог</a></li>
+												<li><a href="http://zdorov.online/vrach/gomeopat/">Гомеопат</a></li>
+												<li><a href="http://zdorov.online/vrach/kosmetolog-dermatolog/">Дерматолог - косметолог</a></li>
+												<li><a href="http://zdorov.online/vrach/onkodermatolog/">Онкодерматолог</a></li>
+												<li><a href="http://zdorov.online/vrach/defektolog/">Дефектолог</a></li>
+												<li><a href="http://zdorov.online/vrach/dietolog/">Диетолог</a></li>
+												<li><a href="http://zdorov.online/vrach/immunolog/">Иммунолог</a></li>
+												<li><a href="http://zdorov.online/vrach/infekcionist/">Инфекционист</a></li>
+												<li><a href="http://zdorov.online/vrach/kardiolog/">Кардиолог</a></li>
+												<li><a href="http://zdorov.online/vrach/kardiohirurg/">Кардиохирург</a></li>
+												<li><a href="http://zdorov.online/vrach/kosmetolog/">Косметолог</a></li>
+												<li><a href="http://zdorov.online/vrach/logoped/">Логопед</a></li>
+												<li><a href="http://zdorov.online/vrach/lor-otolaringolog/">ЛОР</a></li>
+												<li><a href="http://zdorov.online/vrach/mammolog/">Маммолог</a></li>
+												<li><a href="http://zdorov.online/vrach/onkolog-mammolog/">Онколог - маммолог</a></li>
+												<li><a href="http://zdorov.online/vrach/manualnyy-terapevt/">Мануальный терапевт</a></li>
+												<li><a href="http://zdorov.online/vrach/narkolog/">Нарколог</a></li>
+												<li><a href="http://zdorov.online/vrach/nevrolog/">Невролог</a></li>
+												<li><a href="http://zdorov.online/vrach/neyrohirurg/">Нейрохирург</a></li>
+												<li><a href="http://zdorov.online/vrach/neonatolog/">Неонатолог</a></li>
+												<li><a href="http://zdorov.online/vrach/nefrolog/">Нефролог</a></li>
+                                                                                                <li><a href="http://zdorov.online/vrach/otorinolaringolog/">Оториноларинголог</a></li>
+												<li><a href="http://zdorov.online/vrach/onkolog/">Онколог</a></li>
+												<li><a href="http://zdorov.online/vrach/travmatolog-ortoped/">Травматолог-ортопед</a></li>
+												<li><a href="http://zdorov.online/vrach/oftalmolog/">Офтальмолог</a></li>
+												<li><a href="http://zdorov.online/vrach/parazitolog/">Паразитолог</a></li>
+												<li><a href="http://zdorov.online/vrach/pediatr/">Педиатр</a></li>
+												<li><a href="http://zdorov.online/vrach/plasticheskiy-hirurg/">Пластический хирург</a></li>
+												<li><a href="http://zdorov.online/vrach/psikhiatr/">Психиатр</a></li>
+												<li><a href="http://zdorov.online/vrach/psikholog/">Психолог</a></li>
+												<li><a href="http://zdorov.online/vrach/psikhoterapevt/">Психотерапевт</a></li>
+												<li><a href="http://zdorov.online/vrach/pulmonolog/">Пульмонолог</a></li>
+												<li><a href="http://zdorov.online/vrach/revmatolog/">Ревматолог</a></li>
+												<li><a href="http://zdorov.online/vrach/seksolog/">Сексолог</a></li>
+												<li><a href="http://zdorov.online/vrach/somnolog/">Сомнолог</a></li>
+												<li><a href="http://zdorov.online/vrach/stomatolog/">Стоматолог</a></li>
+												<li><a href="http://zdorov.online/vrach/stomatolog-ortodont/">Стоматолог-ортодонт</a></li>
+												<li><a href="http://zdorov.online/vrach/surdolog/">Сурдолог</a></li>
+												<li><a href="http://zdorov.online/vrach/terapevt/">Терапевт</a></li>
+												<li><a href="http://zdorov.online/vrach/transfuziolog/">Трансфузиолог</a></li>
+												<li><a href="http://zdorov.online/vrach/trikholog/">Трихолог</a></li>
+												<li><a href="http://zdorov.online/vrach/urolog/">Уролог</a></li>
+												<li><a href="http://zdorov.online/vrach/flebolog/">Флеболог</a></li>
+												<li><a href="http://zdorov.online/vrach/fizioterapevt/">Физиотерапевт</a></li>
+												<li><a href="http://zdorov.online/vrach/hirurg/">Хирург</a></li>
+												<li><a href="http://zdorov.online/vrach/endokrinolog/">Эндокринолог</a></li>												
+												<li><a href="http://zdorov.online/vrach/ftiziator/">Фтизиатор</a></li>
+						                        </ul>
+</div>
+<span>Запись на диагностику</span>
+<ul>
+					<li><a href="http://zdorov.online/artroskopiya/">Артроскопия</a></li>
+					<li><a href="http://zdorov.online/bronhoskopiya/">Бронхоскопия</a></li>
+          <li><a href="http://zdorov.online/biopsiya/">Биопсия</a></li>									
+					<li><a href="http://zdorov.online/veloergometriya/">Велоэргометрия</a></li>
+          <li><a href="http://zdorov.online/kolonoskopiya/virtualnaya/">Виртуальная колоноскопия</a></li>
+					<li><a href="http://zdorov.online/gisteroskopiya/">Гистероскопия</a></li>
+          <li><a href="http://zdorov.online/gastroskopiya/">Гастроскопия</a></li>
+					<li><a href="http://zdorov.online/dupleksnoe-skanirovanie/">Дуплексное сканирование</a></li>
+          <li><a href="http://zdorov.online/densitometriya/">Денситометрия</a></li>
+					<li><a href="http://zdorov.online/rentgen-v-moskve/irrigografiya/">Ирригография</a></li>
+          <li><a href="http://zdorov.online/irrigoskopiya-v-moskve/">Ирригоскопия</a></li>
+					<li><a href="http://zdorov.online/kt/">Компьютерная томография (КТ)</a></li>
+          <li><a href="http://zdorov.online/kolonoskopiya/">Колоноскопия</a></li>
+          <li><a href="http://zdorov.online/kolposkopiya/">Кольпоскопия</a></li>
+          <li><a href="http://zdorov.online/ktg/">КТГ</a></li>
+					<li><a href="http://zdorov.online/mrt-v-moskve/">МРТ (магнитно-резонансная <br>томография)</a></li>
+					<li><a href="http://zdorov.online/mskt/">МСКТ (мультиспиральная <br>компьютерная томография)</a></li>
+          <li><a href="http://zdorov.online/mammografiya-v-moskve/">Маммография</a></li>
+					<li><a href="http://zdorov.online/rentgen-v-moskve/">Рентген</a></li>
+          <li><a href="http://zdorov.online/rektoromanoskopiya/">Ректороманоскопия</a></li>
+				  <li><a href="http://zdorov.online/reg-v-moskve/">Реоэнцефалография (РЭГ)</a></li>
+          <li><a href="http://zdorov.online/spermogramma/">Спермограмма</a></li>										
+					<li><a href="http://zdorov.online/uzi/">УЗИ</a></li>
+<li><a href="http://zdorov.online/uzi/pri-beremennosti/">УЗИ при беременности</a></li>
+<li><a href="http://zdorov.online/uzi/3d/">УЗИ 3Д</a></li>
+<li><a href="http://zdorov.online/uzi/4d/">УЗИ 4Д</a></li>
+          <li><a href="http://zdorov.online/rentgen-v-moskve/urografiya/">Урография</a></li>					
+					<li><a href="http://zdorov.online/fgds/">ФГДС</a></li>	
+          <li><a href="http://zdorov.online/fluorografiya-v-moskve/">Флюорография</a></li>						
+					<li><a href="http://zdorov.online/holterovskoe-manitorirovanie/">Холтеровское мониторирование</a></li>									
+					<li><a href="http://zdorov.online/cistoskopiya/">Цистоскопия</a></li>
+          <li><a href="http://zdorov.online/rentgen-v-moskve/cistoskopiya/">Цистография</a></li>				
+          <li><a href="http://zdorov.online/ekg/">ЭКГ</a></li>
+          <li><a href="http://zdorov.online/eeg/">ЭЭГ</a></li>
+          <li><a href="http://zdorov.online/eho-kg/">ЭХО КГ</a></li>
+          <li><a href="http://zdorov.online/ehoencifalografiya/">Эхоэнцефалография</a></li>
+					<li><a href="http://zdorov.online/efgds/">ЭФГДС</a></li>
+          <li><a href="http://zdorov.online/egds/">ЭГДС</a></li>
+          <li><a href="http://zdorov.online/elektromiografiya/">Электромиография</a></li>
+          <li><a href="http://zdorov.online/emg/">ЭМГ</a></li>         
+		</ul>
+</div>
+<article class="about__us">
+ <section class="about__us-info">
+<p class="title_h1 title_h1-right">
+	 Основная цель портала
+</p>
+<div class="about__us-red clearfix">
+	<div class="about__us-red-img">
+ <img src="main_files/about-2.png">
+	</div>
+	<ol>
+		<li>
+		<p>
+			 Сэкономить ваше время на поиск врача или диагностики, а также клиник по лечению ВСЕХ возможных заболеваний.
+		</p>
+		<p>
+			 Мы составляем рейтинг врачей клиник на основе реальных отзывов их пациентов!
+		</p>
+ </li>
+		<li>
+		<p>
+			 Дать ответы на ваши вопросы про здоровье.<br>Вы можете быть здоровы 
+онлайн! Не отходя от компьютера, вы получите исчерпывающую информацию о 
+своем здоровье и советы по его улучшению.
+		</p>
+ </li>
+	</ol>
+</div>
+ </section> <section class="about__us-info">
+<p class="title_h1 title_h1-center">
+	 Что интересненького?
+</p>
+<div class="about__us-bonus">
+	<p>
+		 «Бонусы» - вы получаете бонусы, записавшись к врачу или клинику на прием через наш портал. <br>
+		 При этом цена приема полностью соответствует цене в самой клинике. А 
+благодаря накопившимся баллам, вы получаете возможность бесплатно 
+посетить врача, получить подписку на издания <a href="http://mk.ru/" target="_blank"><span class="about__us-bonus-link">"Московского комсомольца"</span></a> (наш информационный партнер) или приятные подарки <br>
+		 (бытовую технику, электронику, товары для дома и красоты).
+	</p>
+	<ul>
+		<li class="about__us-bonus--note">
+			<span><!--не удалять--></span>
+		<p>
+			 «Бонусы» <br>
+			 за запись на <br>
+			 прием
+		</p>
+ </li>
+		<li class="about__us-bonus--bonus">
+			<span><!--не удалять--></span>
+		<p>
+			 Накопительная <br>
+			 система
+		</p>
+ </li>
+		<li class="about__us-bonus--present">
+			<span><!--не удалять--></span>
+		<p>
+			 Приятные <br>
+			 подарки
+		</p>
+ </li>
+	</ul>
+</div>
+ </section> <section class="about__us-info about__us-st">
+<p class="title_h1">
+	 Самодиагностика
+</p>
+<div class="about__us-st-img">
+ <img src="main_files/about-st.jpg">
+</div>
+<div class="about__us-st-text">
+	<p>
+		 «Самодиагностика»- это программа, позволяющая ответить на вопрос "Почему у меня болит...?".
+	</p>
+	<p>
+		 Нужно нажать всего 3 кнопки, выбрав свою проблему из списка, и вам будет показано все самое необходимое для ее решения:<br>
+	</p>
+	<ul>
+		<li>какую диагностику пройти, </li>
+		<li>какие заболевания у вас могут быть</li>
+		<li>насколько это серьезно</li>
+		<li>какой врач поможет</li>
+	</ul>
+	<p>
+ <br>
+	</p>
+</div>
+ </section> <section class="about__us-info">
+<div class="about__us-blue">
+	<div class="about__us-blue-img">
+ <img src="main_files/about-3.png">
+	</div>
+	<p>
+		 Самодиагностику составлял коллектив профессоров и кандидатов 
+медицинских наук. Над программой работало более 30 заслуженных врачей 
+России разных специализаций.
+	</p>
+	<p>
+		 Пройдя самодиагностику, вам не нужно будет обязательно посещать врача
+ перед диагностикой. Можете прийти к нему уже сразу со снимками и 
+результатами анализов.
+	</p>
+</div>
+ </section> </article>
+					<div class="article-topic">
+    <article class="article-inside">
+        <div class="article-slider-wrap">
+            <div class="article-topic__title"><span>СТАТЬИ ПО ТЕМЕ</span></div>
+            <div class="article">
+                <div class="swiper-wrapper">
+					<script type="text/javascript">
+						var ref = document.referrer;
+						var loc = location.href;
+						var goalParams = {'url': loc, 'referrer' : ref};
+						function goalCallback () {
+							console.log(goalParams);
+						}
+					</script>									
+											<div class="article-item-inner swiper-slide">
+													<div class="article-item-inner--img"><img src="main_files/bf51621e21edbcb9d087bed19441e9d2.jpg"></div>
+							<a class="article-goal" onclick="yaCounter38207825.reachGoal('OTHER_ARTICLES', goalParams, goalCallback); return true;" href="http://zdorov.online/novosti/vsya-pravda-o-tom-otkuda-beretsya-lishniy-ves/"><span>Вся правда о том откуда берется лишний вес</span></a>
+							<p>Иногда бывает так, что избавиться от лишних 
+килограммов не помогают ни интенсивные 
+тре...</p>
+							<a onclick="yaCounter38207825.reachGoal('OTHER_ARTICLES', goalParams, goalCallback); return true;" href="http://zdorov.online/novosti/vsya-pravda-o-tom-otkuda-beretsya-lishniy-ves/">Дальше</a>
+						</div>
+											<div class="article-item-inner swiper-slide">
+													<div class="article-item-inner--img"><img src="main_files/fde2054eea3cb03613e17fcd233dfdab.jpg"></div>
+							<a class="article-goal" onclick="yaCounter38207825.reachGoal('OTHER_ARTICLES', goalParams, goalCallback); return true;" href="http://zdorov.online/articles/tusklye-volosy/"><span>Тусклые волосы</span></a>
+							<p>Китайские красавицы не знали проблем с 
+волосами, так как никогда не сушили их феном. 
+Н...</p>
+							<a onclick="yaCounter38207825.reachGoal('OTHER_ARTICLES', goalParams, goalCallback); return true;" href="http://zdorov.online/articles/tusklye-volosy/">Дальше</a>
+						</div>
+											<div class="article-item-inner swiper-slide">
+													<div class="article-item-inner--img"><img src="main_files/e38c07ac045f712f1265befd45fab4be.jpg"></div>
+							<a class="article-goal" onclick="yaCounter38207825.reachGoal('OTHER_ARTICLES', goalParams, goalCallback); return true;" href="http://zdorov.online/bolezni/mastopatiya/disgormonalnaya/"><span>Дисгормональная мастопатия</span></a>
+							<p>Опухоли молочных желез являются самыми 
+распространенными онкологическими заболеваниями 
+...</p>
+							<a onclick="yaCounter38207825.reachGoal('OTHER_ARTICLES', goalParams, goalCallback); return true;" href="http://zdorov.online/bolezni/mastopatiya/disgormonalnaya/">Дальше</a>
+						</div>
+											<div class="article-item-inner swiper-slide">
+													<div class="article-item-inner--img"><img src="main_files/1f938f2035a309116ec3fa8a7419f363.jpg"></div>
+							<a class="article-goal" onclick="yaCounter38207825.reachGoal('OTHER_ARTICLES', goalParams, goalCallback); return true;" href="http://zdorov.online/novosti/olivkovoe-maslo-protiv-slivochnogo-voyna-proigrana/"><span>Оливковое масло против сливочного:война проиграна?</span></a>
+							<p>Сливочное масло в последние годы чуть ли 
+не полностью дискредитировали. Мол де в 
+нем п...</p>
+							<a onclick="yaCounter38207825.reachGoal('OTHER_ARTICLES', goalParams, goalCallback); return true;" href="http://zdorov.online/novosti/olivkovoe-maslo-protiv-slivochnogo-voyna-proigrana/">Дальше</a>
+						</div>
+											<div class="article-item-inner swiper-slide">
+													<div class="article-item-inner--img"><img src="main_files/736488b69044d1b6f5630116f583ae72.jpg"></div>
+							<a class="article-goal" onclick="yaCounter38207825.reachGoal('OTHER_ARTICLES', goalParams, goalCallback); return true;" href="http://zdorov.online/bolezni/pyatochnaya-shpora/shpora-na-pyatke/"><span>Шпора на пятке</span></a>
+							<p>Шпора на пятке представляет собой костное 
+разрастание, возникающее на поверхности 
+пято...</p>
+							<a onclick="yaCounter38207825.reachGoal('OTHER_ARTICLES', goalParams, goalCallback); return true;" href="http://zdorov.online/bolezni/pyatochnaya-shpora/shpora-na-pyatke/">Дальше</a>
+						</div>
+					                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </article>
+</div>
+					
+        <!-- end content -->
+        <!--footer -->
+        </div>
+			        <footer class="clearfix">
+            <div class="footer-content">
+                <div class="footer-content__right-side">
+                    <a href="http://zdorov.online/">
+                        <img src="main_files/logo.png" title="Zdorov.online">
+                    </a>
+                </div>
+                <div class="footer-content__article">
+                    <a href="http://zdorov.online/articles/">Статьи</a>
+                    <a href="http://zdorov.online/vrach/">Врачи </a> 
+                    <a href="http://zdorov.online/clinics/kliniki-po-diagnostike/">Диагностика</a>
+                    <a href="http://zdorov.online/novosti/">Новости</a>
+                    <div class="menu-footer__list">
+                        <ul>
+                            <li><a href="http://zdorov.online/adv/">Реклама на портале</a></li>
+                            <li><a href="http://zdorov.online/dlya-klinik/">Для клиник</a></li>
+                            <li><a href="http://zdorov.online/about/">О проекте</a></li>
+                            <li><a href="http://zdorov.online/contacts/">Контакты</a></li>
+                            <li><a href="http://zdorov.online/term/">Пользовательское соглашение</a></li>
+                            <!--noindex--><li><a href="http://zdorov.online/term/" rel="nofollow">Партнерская программа</a></li><!--/noindex-->
+                        </ul>
+                    </div>
+                </div>
+                <!--<div class="footer-content__mail">
+                    <div class="footer-content__mail--wrap clearfix">
+                        <form action="">
+                            <div class="footer-content__mail-title"><span> Ваша подписка</span></div>
+                            <div class="footer-mail-btn">
+                                <input type="email" placeholder="Ваш e-mail адрес">
+                                <input type="submit" value="">
+                            </div>
+                        </form>
+                    </div>
+                </div>-->
+                <div class="menu-footer-document">
+
+                    <div class="copiryght">
+                        <p>Copyright © <q>zdorov.online</q> 2015-2016. Все права защищены.</p>
+                        <p>При использовании материалов гиперссылка на zdorov.online обязательна.</p>
+                    </div>
+                    <div class="copiryght_mk">
+                        <p>Проект создан совместно с издательским домом</p>
+                        <p>"Московский комсомолец"</p>
+                    </div>					
+				<div class="footer-content__right-side mk">
+					<a href="http://mk.ru/" target="_blank"><img src="main_files/logo-mk-index.png"></a>
+				</div>					
+                </div>
+            </div>
+        </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80579042-1', 'auto');
+  ga('send', 'pageview');
+
+</script>		
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter38207825 = new Ya.Metrika({ id:38207825, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/38207825" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->    </div>
+    <script src="main_files/jquery.js"></script>
+	<script src="main_files/app.js" type="text/javascript" charset="utf-8"></script>
+ </body></html>
+<!--<script src="/js/disableselection.js"></script>-->

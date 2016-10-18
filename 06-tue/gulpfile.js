@@ -28,7 +28,7 @@ gulp.task('uncss', function () {
                 'http://zdorov.online/auth/', 
                 'http://zdorov.online/reg/', 
                 'http://zdorov.online/search/',
-                
+
                 'http://www.zdorov.online/vrach/akusher/',
                 'http://www.zdorov.online/vrach/allergolog/',
                 'http://www.zdorov.online/vrach/angiolog/',
@@ -161,7 +161,7 @@ gulp.task('uncss', function () {
                 // 'http://www.zdorov.online/selftest/j/grudnaya_kletka/otek-ili-pokrasnenie-grudi/',
                 // 'http://www.zdorov.online/selftest/j/grudnaya_kletka/kozha-grudi-stala-morshchinistoy/',
                 // 'http://www.zdorov.online/selftest/j/grudnaya_kletka/vydelenie-zhidkosti-iz-soska/',
-                'http://www.zdorov.online/selftest/j/jivot/',
+                'http://www.zdorov.online/selftest/j/jivot/','http://zdorov.online/selftest/j/sheya/','http://dima.zdorov.online/selftest/j/sheya-b/',
                 'http://www.zdorov.online/selftest/j/jivot/vzdutie-zhivota-kishechnaya-dispepsiya-m/',
                 // 'http://www.zdorov.online/selftest/j/jivot/krov-v-stule-m/',
                 // 'http://www.zdorov.online/selftest/j/jivot/ponosy4246/',

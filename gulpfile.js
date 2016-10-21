@@ -28,7 +28,7 @@ gulp.task('connect',function(){
   connect.server({
     root: './dist',
     livereload: true,
-    port: 1337
+    port: 1338
     })
   });
 
@@ -58,4 +58,4 @@ gulp.task('watch',function(){
   watch('dist/*.').pipe(connect.reload());
   });
 
-gulp.task('default',['connect','jade', 'sprite', 'stylus','watch']); 
+gulp.task('default',['connect','jade', 'sprite', 'stylus','watch']);

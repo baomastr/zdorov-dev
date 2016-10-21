@@ -21315,7 +21315,7 @@ strong, b {
   vertical-align: top;
   line-height: 1.2em;
   margin-bottom: 5px;
-  
+
 }
 .kindof__item:hover {
   text-decoration: underline;
@@ -21357,4 +21357,46 @@ strong, b {
 }
 .clinic__rightside .well-doc__item-img img {
   height: 100px;
+}
+.st-list ul li span:hover {
+  background: #ee776a;
+  color: #FFFFFF;
+}
+.st-list ul li span {
+  padding: 5px 10px 5px 6%;
+  width: 92%;
+  position: relative;
+  color: #575757;
+  font-size: 14px;
+  display: block;
+}
+.st-list ul li span:hover:after {
+  position: absolute;
+  content: '';
+  display: block;
+  background: -mozlinear-gradient(right bottom, #fff5eb 0%, transparent 0%, transparent 50%, #fff5eb 50%) 0 0, -moz-linear-gradient(right top, #fff5eb 0%, #ee776a 0%, #ee776a 50%, #fff5eb 50%) 0 0;
+  background: -webkit-linear-gradient(right bottom, #fff5eb 0%, transparent 0%, transparent 50%, #fff5eb 50%) 0 0, -webkit-linear-gradient(right top, #fff5eb 0%, #ee776a 0%, #ee776a 50%, #fff5eb 50%) 0 0;
+  background: -o-linear-gradient(right bottom, #fff5eb 0%, transparent 0%, transparent 50%, #fff5eb 50%) 0 0, -o-linear-gradient(right top, #fff5eb 0%, #ee776a 0%, #ee776a 50%, #fff5eb 50%) 0 0;
+  background: linear-gradient(to right bottom, #fff5eb 0%, transparent 0%, transparent 50%, #fff5eb 50%) 0 0, linear-gradient(to right top, #fff5eb 0%, #ee776a 0%, #ee776a 50%, #fff5eb 50%) 0 0;
+  right: -20px;
+  top: 0;
+  height: 100%;
+  width: 30px;
+}
+.st-list ul li span:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 14px;
+  height: 19px;
+  top: 5px;
+  left: 5px;
+  background: url("../img/st-head.png") no-repeat -1545px -33px;
+}
+.st-list ul li span:hover:before {
+  background: url("../img/st-head.png") no-repeat -1545px 1px;
+}
+.st-list ul li span:hover {
+  color: #FFFFFF;
+  text-decoration: none;
 }

@@ -1,0 +1,143 @@
+#main-demo-body {
+    margin: 30px auto 100px;
+    width: 600px
+}
+#main-demo-body * {
+    /*box-sizing: border-box;*/
+}
+.demo-widget {
+    margin: 0 auto 30px
+}
+.demo-widget .demo-widget-header {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #115c89;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    background-color: #f4f9fc;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0.5px 0.9px 5px rgba(36, 36, 36, 0.28);
+}
+.demo-widget-header__img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100px;
+    height: auto;
+}
+.demo-widget-header__title {
+    max-width: 70%;
+    display: inline-block;
+    padding-left: 30px;
+}
+.demo-widget .demo-widget-body {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05)
+}
+.demo-widget .demo-widget-body .form-group:last-of-type {
+    margin: 0
+}
+#chatbot-message p:nth-child(2n+1) {
+    /*float: right;*/
+    padding: 10px;
+    /*background-color: #d3ebff;*/
+    border-radius: 4px;
+    box-shadow: 0.5px 0.9px 5px rgba(36, 36, 36, 0.28);
+
+}
+#chatbot-message p:nth-child(2n) {
+    /*float: left;*/
+    padding: 10px;
+    background-color: #f4f9fc;
+    border-radius: 4px;
+    box-shadow: 0.5px 0.9px 5px rgba(36, 36, 36, 0.28);
+}
+#chatbot #chatbot-message {
+    padding: 0;
+    height: 250px;
+    margin: 0;
+    font-size: 12px;
+    overflow: hidden;
+    overflow-y: auto
+}
+#chatbot #chatbot-message p {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 12px;
+    margin: 10px;
+    display: inline-block;
+    color: #3f3f3f;
+}
+#chatbot #chatbot-message p:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#chatbot #chatbot-message p.from-bot {
+    /*color: #0af;*/
+    background-color: #f4f9fc;
+}
+#chatbot #chatbot-message p.from-user {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    float: right;
+    background-color: #d3ebff;
+    /*color: #0af*/
+}
+#chatbot #chatbot-message p.from-bot .user {
+    /*color: #0af*/
+}
+#chatbot #chatbot-message p:nth-child(even) {
+    /*background-color: #d3ebff;*/
+}
+#chatbot #chatbot-message .user {
+    font-weight: bold;
+    color: #333
+}
+#chatbot #chatbot-message .message.writing{
+    font-style: italic;
+    color: #bfbfbf
+}
+#chatbot #chatbot-message .message .glyphicon {
+    font-size: 10px
+}
+#chatbot .input-group-btn .btn {
+    border-left: 0
+}
+.input-group {
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    box-shadow: inset 2px 4px 10px 1px rgba(0, 0, 0, 0.24);
+    padding: 13px;
+}
+.input-group > * {
+    display: inline-block;
+    vertical-align: top;
+}
+.input-group input {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px;
+    /*width: 80%;*/
+    width: 484px;
+    height: 33px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.input-group .input-group-btn {
+    padding-top: 5px;
+    width: 65px;
+}
+.input-group .input-group-btn input {
+    border: 0;
+    background: transparent url(../img/submit-chat.png) no-repeat center center;
+    width: 43px;
+    height: 33px;
+    display: block;
+    cursor: pointer;
+    float: right;
+}
+/*передать массив (парсить) блоков*/

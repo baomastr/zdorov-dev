@@ -1,0 +1,66 @@
+.filters
+  display: block
+  border: 1px solid lightgray
+  margin-top: 20px
+  *
+    box-sizing border-box
+  &__wrap
+    margin: 0
+  &__title
+    display: inline-block
+    width: 100%
+
+  &__form
+    text-align: center
+    &-row
+      padding: 10px
+      display: inline-block
+      width: 100%
+      //margin: 10px 0
+      &--title
+        border-bottom: 1px solid lightgray
+  input
+    &[type="text"]
+      width: 100%
+      font-size: 16px
+      padding: 5px;
+      -webkit-border-radius:3px
+      -moz-border-radius:3px
+      border-radius:3px
+  button[type="submit"]
+    width: 100%
+    padding: 10px 20px
+    color: #555
+    font-size: 16px
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-user-select: none;
+    background: -webkit-linear-gradient(#fafafa,#f4f4f4 40%,#e5e5e5);
+    border: 1px solid #AAA;
+    cursor pointer
+  select
+    width: 100%
+    -moz-appearance:none;
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url(../img/select-arrow-down.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    color: #555;
+    font-size: inherit;
+    //margin: 20px;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    //width: 300px;
+    &:disabled
+      background-image: none
+      background-color: #fff
+      cursor not-allowed

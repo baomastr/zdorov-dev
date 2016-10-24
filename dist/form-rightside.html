@@ -6,12 +6,12 @@
 	<script type="text/javascript" src="http://zdorov.online/js/jquery-1.11.3.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="http://zdorov.online/css/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="http://zdorov.online/css/jquery.fancybox.css">
-	<link rel="stylesheet" type="text/css" href="styles/jquery.bxslider.css">
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<!--<link rel="stylesheet" type="text/css" href="styles/jquery.bxslider.css">-->
+	<!--<link rel="stylesheet" type="text/css" href="styles/style.css">-->
 	<link rel="stylesheet" type="text/css" href="http://zdorov.online/css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/klinics-new.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/form-rightside.css">-->
 	<script type="text/javascript" src="http://zdorov.online/js/jquery.fancybox.pack.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<!--<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>-->
 	<meta name="viewport" content="width=1250">
 	<meta name="MobileOptimized" content="1250">
 </head>
@@ -944,6 +944,144 @@
 						&lt;!&ndash; _________________________AdFox Asynchronous code END___________________________ &ndash;&gt;
 					</div>
 				</div>-->
+				<article class="filters">
+					<div class="filters__wrap">
+						<form action="" class="filters__form">
+							<div class="filters__form-row filters__form-row--title">
+								<span class="filters__title">
+									Врач
+								</span>
+							</div>
+							<div class="filters__form-row">
+								<select name="" id="">
+									<option value="">Специализация</option>
+									<option value="">Специализация 1</option>
+									<option value="">Специализация 2</option>
+								</select>
+							</div>
+							<div class="filters__form-row">
+								<select name="" id="">
+									<option value="">Метро</option>
+									<option value="">Метро 1</option>
+									<option value="">Метро 2</option>
+								</select>
+							</div>
+							<div class="filters__form-row">
+								<select name="" id="">
+									<option value="">Детский/взрослый</option>
+									<option value="">Детский</option>
+									<option value="">Взрослый</option>
+								</select>
+							</div>
+							<div class="filters__form-row">
+								<input type="text" placeholder="Поиск по фио врача">
+							</div>
+							<div class="filters__form-row">
+								<input type="checkbox" name="" id="withOtzyv">
+								<label for="withOtzyv">Только с отзывами</label>
+							</div>
+							<div class="filters__form-row">
+								<select name="" id="">
+									<option value="">Сортировка</option>
+									<option value="">Сортировка &#11014;</option>
+									<option value="">Сортировка &#11015;</option>
+								</select>
+							</div>
+							<div class="filters__form-row">
+								<button type="submit" value="Найти">Найти</button>
+							</div>
+						</form>
+
+					</div>
+				</article>
+				<article class="filters">
+
+					<div class="filters__wrap">
+						<form action="" class="filters__form">
+							<div class="filters__form-row filters__form-row--title">
+								<span class="filters__title">
+									Клиника
+								</span>
+							</div>
+							<div class="filters__form-row">
+								<select name="" id="" onchange="loadDiagnoctic(this)">
+									<option value="">Вид исследований</option>
+									<option value="">Вид исследований 1</option>
+									<option value="">Вид исследований 2</option>
+								</select>
+							</div>
+							<div class="filters__form-row">
+								<select name="diagnoctic" id="" disabled="disabled">
+									<option value="">Вид диагностики</option>
+									<option value="">Вид диагностики 1</option>
+									<option value="">Вид диагностики 2</option>
+								</select>
+							</div>
+							<div class="filters__form-row">
+								<select name="" id="">
+									<option value="">Метро</option>
+									<option value="">Метро 1</option>
+									<option value="">Метро 2</option>
+								</select>
+							</div>
+							<div class="filters__form-row">
+								<select name="" id="">
+									<option value="">Детский/взрослый</option>
+									<option value="">Детский</option>
+									<option value="">Взрослый</option>
+								</select>
+							</div>
+							<div class="filters__form-row">
+								<input type="text" placeholder="Поиск по названию">
+							</div>
+
+							<div class="filters__form-row">
+								<select name="" id="">
+									<option value="">Сортировка</option>
+									<option value="">Сортировка &#11014;</option>
+									<option value="">Сортировка &#11015;</option>
+								</select>
+							</div>
+							<div class="filters__form-row">
+								<button type="submit" value="Найти">Найти</button>
+							</div>
+						</form>
+						<script>
+							function loadDiagnoctic(select)
+							{
+								var diagnocticSelect = $('select[name="diagnoctic"]');
+
+								/*// послыаем AJAX запрос, который вернёт список диагностик для выбранного вида исследований
+								$.getJSON('index.php', {action:'getDiagnoctic', issledovanie:select.value}, function(diagnocticList){
+									diagnocticSelect.html(''); // очищаем список диагностик
+
+									// заполняем список диагностик новыми пришедшими данными
+									$.each(diagnocticList, function(i){
+										diagnocticSelect.append('<option value="' + i + '">' + this + '</option>');
+									});
+								});*/
+
+								diagnocticSelect.prop('disabled', false);
+							}
+						</script>
+					</div>
+				</article>
+				<article class="banner-right">
+					<a class="banner-right__wrap" href="#" title="#">
+						<img class="banner-right__img" src="animation-null.gif" alt="#"/>
+						<div class="banner-right__inner">
+							<span class="banner-right__title">
+								Lorem ipsum dolor sit <br> <b>amet</b>
+							</span>
+							<span class="banner-right__text">
+								earum error laborum, magnam necessitatibus nobis
+							</span>
+							<span class="banner-right__btn">
+								Lorem ipsum dolor sit amet dolor sit amet
+							</span>
+						</div>
+					</a>
+				</article>
 				<div>
 
 				</div>

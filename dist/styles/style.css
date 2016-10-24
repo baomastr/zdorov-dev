@@ -21428,4 +21428,5 @@ strong, b {
 .offer__text-link:hover {
   color: #e67e22;
 }
-.banner-right__wrap{position:relative;height:400px;display:block}.banner-right__inner{position:absolute;top:0;padding:20px;text-align:center;color:#fff;font-size:20px;font-family:'OpenSans',sans-serif;height:400px;box-sizing:border-box}.banner-right__title{display:inline-block;margin-bottom:80px}.banner-right__text{display:inline-block;margin-top:80px}.banner-right__btn{font-size:14px;font-family:'PTSansItalic',sans-serif;position:absolute;bottom:20px;right:19px;display:block;width:200px;height:45px}
+/*24-10*/
+.banner-right{margin-top:15px;position:relative;}.banner-right__wrap{height:400px;display:block}.banner-right__inner{position:absolute;top:0;padding:20px;text-align:center;font-size:20px;font-family:'OpenSans',sans-serif;height:400px;box-sizing:border-box}.banner-right__title{display:inline-block;color:#fff;margin-bottom:80px;}.banner-right__title b{font-size:24px}.banner-right__text{display:inline-block;color:#fff;margin-top:50px}.banner-right__btn{font-size:14px;color:#fff;font-family:'PTSansItalic',sans-serif;position:absolute;bottom:20px;right:19px;display:block;width:200px;height:45px}

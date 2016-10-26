@@ -4,7 +4,8 @@ var gulp = require ('gulp'),
   jade = require ('gulp-jade'),
   stylus = require ('gulp-stylus'),
   nib = require('nib'),
-  spritesmith = require('gulp.spritesmith');
+  spritesmith = require('gulp.spritesmith'),
+  autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sprite', function() {
   var spriteData = 
@@ -59,3 +60,12 @@ gulp.task('watch',function(){
   });
 
 gulp.task('default',['connect','jade', 'sprite', 'stylus','watch']);
+
+gulp.task('prefix', function() {
+    gulp.src('dist/css/style.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist'))
+});

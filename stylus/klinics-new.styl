@@ -3,7 +3,7 @@
     position: relative
     font-size: 0
   &-top__wrap
-    margin-bottom: 20px
+    //margin-bottom: 20px
     .clinic
       &__logo
         max-width: 200px
@@ -13,12 +13,15 @@
           &-caption
             display: inline-block
             //text-align: center
-            max-width: 620px
+            width: 620px
             padding-left: 20px
+            vertical-align: top;
         &__address
-          margin-left: 30px
+          margin-left: 0
           width: 300px
           display: inline-block
+          float: right
+          margin-right: 50px
           & > a
             text-decoration underline
             color: grey
@@ -26,7 +29,7 @@
       &__filial
         display: inline-block
         width: 200px
-        margin-left: 220px;
+        margin-left: 0;
         & > a
           font-family: 'OpenSansBold', sans-serif;
           color: #115c89;

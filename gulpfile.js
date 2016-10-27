@@ -52,20 +52,22 @@ gulp.task('stylus', function(){
     .pipe(connect.reload())
   });
 
-gulp.task('watch',function(){
-  gulp.watch('stylus/*.styl',['stylus']);
-  gulp.watch('jade/*.jade',['jade']);
-  gulp.watch('assets/images/sprite/*.*',['sprite']);
-  watch('dist/*.').pipe(connect.reload());
-  });
-
-gulp.task('default',['connect','jade', 'sprite', 'stylus','watch']);
-
 gulp.task('prefix', function() {
-    gulp.src('dist/css/style.css')
+    gulp.src('dist/css/*.css')
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist/postcss'))
 });
+
+gulp.task('watch',function(){
+  gulp.watch('stylus/*.styl',['stylus']);
+  gulp.watch('jade/*.jade',['jade']);
+  gulp.watch('dist/css/*.css',['prefix']);
+  gulp.watch('assets/images/sprite/*.*',['sprite']);
+  watch('dist/*.').pipe(connect.reload());
+});
+
+gulp.task('default',['connect','jade', 'sprite', 'stylus', 'prefix', 'watch']);
+

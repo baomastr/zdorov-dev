@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Болезни и их лечение</title>
+	<script type="text/javascript" src="http://zdorov.online/js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://zdorov.online/css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="http://zdorov.online/css/jquery.fancybox.css">
+	<!--<link rel="stylesheet" type="text/css" href="styles/style.css">-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="http://zdorov.online/js/jquery.fancybox.pack.js"></script>
+	<meta name="viewport" content="width=1250">
+	<meta name="MobileOptimized" content="1250">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body clearfix">
+		<header>
+			<div class="clearfix">
+				<a href="http://zdorov.online/" class="header-logo">
+					<img src="img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<div class="header-search">
+					<form action="http://zdorov.online/search/">
+						<input type="search" name="q" placeholder="Например: Хронический геморрой" value="">
+						<input type="submit" value="">
+					</form>
+				</div>
+				<!--noindex-->
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="http://zdorov.online/auth/">Вход</a>
+						/
+						<a href="http://zdorov.online/reg/">Регистрация</a>
+					</div>
+				</div>
+				<!--/noindex-->
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list">
+						<a href="http://zdorov.online/selftest/j/">Самодиагностика</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="http://zdorov.online/articles/">Статьи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="http://zdorov.online/clinics/">Клиники</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="http://zdorov.online/vrach/">Врачи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="http://zdorov.online/bolezni/">Болезни</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="http://zdorov.online/forum/">Форум</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="http://zdorov.online/qa/">Вопросы врачу</a>
+					</li>
+
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>
+		<!-- end header-->
+		<main>
+			<div class="main-clinic">
+				<div class="main-clinic-ava">
+					<div class="clinic-avatar">
+						<div class="clinic-avatar__img">
+							<img height="165" width="200" src="http://mimedia.ru/uploads/things/logo-dayfive-black.jpg" alt="" title="Сеть медицинских центров &quot;Открытая клиника&quot;">
+						</div>
+						<div class="clinic-avatar__rating">
+							<!--span title=''>Рейтинг</span-->
+							<div class="rating" style="width:190px;background: #ffffff url(&quot;/img/rating.png&quot;) repeat-x 0 2px;" title="">
+								<ul style="width:15px;">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+						<div class="clinic-avatar__review">
+							85 отзывов
+						</div>
+					</div>
+				</div>
+
+				<div class="main-clinic-about">
+					<div class="clinic-about main-clinic--inner  border-none">
+						<div class="clinic-about__content">
+							<div class="clinic-about__content-title main-clinic__title clinic-about__content-caption">
+								Сеть медицинских центров "Открытая клиника"
+							</div>
+							<div class="clinic-about__content-title main-clinic__title clinic-about__content-caption">
+								Открытая клиника — сеть московских клиник, которая объединяет под одной крышей лучших врачей, современное
+								оборудование и высочайший уровень сервиса.
+							</div>
+						</div>
+						<div class="clinic-time clinic-time--main-clinic">
+							<!--<span class="clinic-time__tel  clinic-time__number--main-clinic"><a href="#x">Показать номер</a></span>-->
+							<span class="clinic-time__tel  clinic-time__tel--main-clinic" style="display: block;"><a href="tel:+7(499)110-63-78">
+								+7(499)110-63-78
+							</a></span>
+							<a onclick="bookFormShow(0, '616');" class="clinic-time-btn book" actdocid="" actdetails="" clinic="Сеть медицинских центров &quot;Открытая клиника&quot;" cliid="">
+								Записаться
+							</a>
+						</div>
+					</div>
+					<div class="main-clinic-list">
+						<ul>
+							<li class="main-clinic-list--active">О клинике</li>
+							<li>
+								<a href="/clinics/filial/set-meditsinskikh-tsentrov-quototkrytaya-klinikaquot/docs/">Врачи</a>
+							</li>
+							<li>
+								<a href="/clinics/filial/set-meditsinskikh-tsentrov-quototkrytaya-klinikaquot/price/">Услуги и цены</a>
+							</li>
+							<li>
+								<a href="/clinics/filial/set-meditsinskikh-tsentrov-quototkrytaya-klinikaquot/actions/">Акции</a>
+							</li>
+							<li>
+								<a href="/clinics/filial/set-meditsinskikh-tsentrov-quototkrytaya-klinikaquot/review/">Отзывы</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="/js/alex.js"></script>
+			<div id="formContainer">
+
+				<style>
+
+					.popup {
+						width: 655px;
+						height: 553px;
+						background-color: #fff;
+						position: fixed;
+						margin-left: calc(50% - 422.5px);
+						display: block;
+						top: 5%;
+					}
+
+					.popup .top-desc .top-greyblock {
+						width: 655px;
+						height: 120px;
+						background-color: #eee;
+					}
+
+					.popup .top-desc .top-greyblock .photo-doctor-popup {
+						width: 130px;
+						height: 120px;
+						float: left;
+					}
+
+					.popup .top-desc .top-greyblock .photo-doctor-popup img {
+						max-height: 120px;
+						overflow: hidden;
+					}
+
+					.popup .top-desc .top-greyblock .after-doctor-popup {
+						text-align: left;
+						height: 120px;
+						float: left;
+					}
+
+					.popup .top-desc .top-greyblock .after-doctor-popup h3 {
+						color: #333;
+						padding-top: 13px;
+						font-size: 28px;
+						padding-bottom: 10px;
+					}
+
+					.popup .top-desc .top-greyblock .after-doctor-popup p {
+						padding-bottom: 0;
+						letter-spacing: normal;
+						font-family: 'OpenSans', sans-serif;
+						font-size: 14px;
+						line-height: 1.4em !important;
+					}
+
+					.popup .top-desc .top-greyblock .after-doctor-popup .doctor-popup__title {
+						font-family: 'OpenSansBold', sans-serif;
+						font-size: 18px !important;
+						font-weight: 100;
+						padding-top: 10px;
+					}
+
+					.popup .top-desc .top-greyblock .after-doctor-popup p span {
+						color: #115c89;
+						font-family: PTSansItalic, arial, sans-serif;
+						letter-spacing: 0px;
+					}
+
+					.popup .bottom-popup {
+						border-top: 1px solid #999;
+						margin-top: 0px;
+						padding: 20px 0;
+					}
+
+					.popup .bottom-popup p {
+						color: #c5c5c5;
+						text-align: center;
+						font-size: 15px;
+						padding-bottom: 0;
+						font-family: PTSansItalic, arial, sans-serif;
+						line-height: 22px;
+					}
+
+					.popup .bottom-popup .soglas {
+						color: #115c89;
+						cursor: pointer;
+					}
+
+					.popup .popup1 {
+						padding-bottom: 0;
+					}
+
+					.popup .popup1 > p {
+						text-align: center;
+						padding-top: 10px;
+						letter-spacing: normal;
+						font-family: 'OpenSans', sans-serif;
+						font-size: 14px;
+					}
+
+					.popup .popup1 .form-popup {
+						margin-top: 0;
+					}
+
+					.popup .floats-popup {
+						width: 655px;
+						height: 180px;
+					}
+
+					.popup .popup1 .form-popup .inp-div {
+						width: 283px;
+						float: left;
+						height: 83px;
+						margin-left: 20px;
+					}
+
+					.popup .popup1 .form-popup .inp-div input,
+					.popup .popup1 .form-popup .inp-div select {
+						width: 280px;
+						height: 38px;
+						border: 1px solid #d6d6d6;
+						background-color: #fff;
+						text-indent: 60px;
+					}
+
+					.popup .popup1 .form-popup .inp-div select:invalid {
+						color: #999;
+					}
+
+					.popup .popup1 .form-popup .inp-div select option {
+						color: #000;
+					}
+
+					.popup .popup1 .form-popup .inp-div:nth-child(2) input {
+						background: url(/img/icon-4.jpg) no-repeat left center;
+					}
+
+					.popup .popup1 .form-popup .inp-div:nth-child(3) input {
+						background: url(/img/icon-2.jpg) no-repeat left center;
+					}
+
+					/*.popup .popup1 .form-popup .inp-div:nth-child(4) input {*/
+					/*background: url(/img/icon-4.jpg) no-repeat left center;*/
+					/*}*/
+
+					.popup .popup1 .form-popup .sub-div {
+						margin-top: -11px;
+						width: 100%;
+						float: left;
+						text-align: center;
+					}
+
+					.popup .popup1 .form-popup .sub-div input {
+						border: none;
+						width: 290px;
+						margin: auto;
+						display: block;
+					}
+
+					.popup .popup1 .form-popup .sub-div button {
+						border: none;
+						width: 290px;
+						margin: auto;
+						display: block;
+						height: 40px;
+						color: #fff;
+						text-align: center;
+						line-height: 40px;
+						font-size: 18px;
+					}
+
+					.popup .popup1 .form-popup .inp-div label {
+						color: #333;
+						font-size: 18px;
+						font-family: ptSansBoldItalic, arial, sans-serif;
+					}
+
+					.popup .popup2 {
+						overflow: hidden;
+						padding-bottom: 35px;
+						height: 440px;
+					}
+
+					.popup .popup2 .flexslider {
+						height: 345px;
+						width: 510px;
+						margin: auto;
+						margin-top: 30px;
+						border: none;
+						box-shadow: none;
+					}
+
+					.popup .popup2 .flexslider > ul {
+						list-style-type: none;
+						margin-left: 0;
+
+					}
+
+					.popup2 {
+						overflow: hidden;
+						padding-bottom: 35px;
+						height: 401px;
+						background: #fff;
+					}
+
+					.popup .popup2 .flexslider > ul > li {
+						width: 99px !important;
+						background: #115c89;
+						text-align: center;
+						margin: 1px;
+						float: left;
+					}
+
+					.popup .popup2 .flexslider li .date-popup {
+						background: #fff;
+						color: #000;
+						border: 1px solid #d6d6d6;
+						border-bottom: 0px;
+					}
+
+					.popup .popup2 .flexslider li .date-popup p {
+						text-align: center;
+						height: 60px;
+					}
+
+					.popup .popup2 .flexslider li .time-popup {
+						background: #fff;
+						max-height: 289px;
+						overflow: hidden;
+					}
+
+					.popup .popup2 .flexslider li .time-popup p {
+						color: #fff;
+						text-align: center;
+						height: 35px;
+						line-height: 35px;
+						margin-top: 1px;
+						padding-bottom: 0px;
+						background: #115c89;
+						cursor: pointer;
+					}
+
+					.popup .popup2 .flexslider li .time-popup .grey-p {
+						background: #e7e7e7;
+						cursor: default;
+					}
+
+					.popup .popup2 .flexslider li .time-popup p.green-p {
+						background: #115c89;
+					}
+
+					.popup .popup2 .flexslider li p.red-p {
+						background: #ed3d3d;
+						cursor: default;
+						margin-top: 0px;
+						border-top: 1px solid #ed3d3d;
+						color: #fff;
+					}
+
+					.popup .popup2 .flexslider li .time-popup p.green-p:hover {
+						background: #18b707;
+					}
+
+					.popup .popup2 .flexslider li .time-popup p.active-green {
+						background: #18b707;
+					}
+
+					.popup .popup2 .flexslider .flex-control-nav {
+						display: none;
+					}
+
+					.form-title {
+						padding-left: 20px;
+					}
+
+					.form-title__text {
+						font-family: "Open Sans", Arial, Helvetica, sans-serif;
+						color: #115c89;
+						/*font-size: 18px;*/
+						font-size: 27px;
+						font-weight: 600;
+						padding: 20px 0;
+					}
+
+					.flex-direction-nav li {
+						float: none !important;
+						display: block !important;
+					}
+
+					.flex-direction-nav .prev {
+						width: 30px;
+						height: 60px;
+						background: url(/img/left-arrow.jpg) no-repeat center center;
+						margin-left: -40px;
+					}
+
+					.flex-direction-nav .next {
+						width: 30px;
+						height: 60px;
+						background: url(/img/right-arrow.jpg) no-repeat center center;
+						margin-left: 493px;
+					}
+
+					.left-bg-popup {
+						background: #fff;
+						height: 405px;
+						width: 72px;
+						position: absolute;
+						left: 0px;
+						margin-top: -344px;
+					}
+
+					.right-bg-popup {
+						background: #fff;
+						height: 405px;
+						width: 79px;
+						position: absolute;
+						right: 0px;
+						margin-top: -345px;
+					}
+
+					.choose-time {
+						cursor: pointer;
+						color: #115b89;
+						padding-bottom: 0px;
+						line-height: 20px;
+						margin-top: -52px;
+						position: relative;
+						height: 52px;
+						width: 382px;
+					}
+
+					.choose-time p {
+						border-bottom: 1px dashed #115b89;
+						text-align: right;
+						position: relative;
+						top: 15px;
+						font-family: ptSansBold, arial, sans-serif;
+						font-size: 14px;
+						display: inline-block;
+						line-height: 20px;
+						margin-left: 220px;
+						padding-bottom: 0px;
+					}
+
+					.inp-div input[placeholder] {
+						font-size: 12px;
+					}
+
+					.time-final {
+						position: absolute;
+						margin-left: 72px;
+						font-size: 20px;
+						font-family: ptSansBold, arial, sans-serif;
+						margin-top: 15px;
+					}
+
+					.time-final p {
+						font-size: 20px;
+						font-family: ptSansBold, arial, sans-serif;
+						margin-top: 10px;
+					}
+
+					.time-final-but {
+						width: 140px;
+						height: 35px;
+						line-height: 35px;
+						text-align: center;
+						color: #fff;
+						background: #115c89;
+						margin-top: 24px;
+						margin-left: 434px;
+						cursor: pointer;
+						position: absolute;
+					}
+
+					.time-inp {
+						font-size: 16px;
+					}
+
+					.popup3 {
+						padding-bottom: 70px;
+					}
+
+					.popup3 .name-popup3 {
+						width: 460px;
+						height: 51px;
+						background-color: #aadfff;
+						margin: auto;
+						margin-top: 20px;
+						display: none;
+					}
+
+					.popup3 .name-popup3 p {
+						font-size: 30px;
+						text-indent: 10px;
+						font-family: PTSansItalic, arial, sans-serif;
+						padding-bottom: 0px;
+						line-height: 51px;
+					}
+
+					.popup3 .entercode {
+						margin: auto;
+						width: 500px;
+						padding-bottom: 10px;
+					}
+
+					.popup3 .entercode h4 {
+						color: #333;
+						font-family: ptSansBoldItalic, arial, sans-serif;
+						font-size: 18px;
+						margin-top: 0;
+					}
+
+					.popup3 .entercode {
+						margin: auto;
+						width: 460px;
+					}
+
+					.popup3 .entercode #codesms {
+						width: 460px;
+						height: 48px;
+						border: 1px solid #d6d6d6;
+						background-color: #fff;
+						text-indent: 60px;
+						background: url(/img/icon-5.jpg) no-repeat left center;
+						margin-top: -5px;
+					}
+
+					.popup3 .entercode input[type="submit"] {
+						width: 180px;
+						margin: auto;
+						border: 0px;
+						margin-top: 20px;
+					}
+
+					.popup3 .p-pop3 {
+						position: relative;
+						height: 0;
+						color: #7e7e7e;
+						bottom: 55px;
+						left: 200px;
+						margin-top: 0;
+						padding: 0;
+						text-align: left;
+						max-width: 250px;
+					}
+
+					.close-popup {
+						position: absolute;
+						top: 15px;
+						right: 10px;
+						width: 35px;
+						height: 35px;
+						cursor: pointer;
+						background: url(/img/sprite_index.png) -465px -742px no-repeat;
+					}
+
+					.input-error-popup {
+						border: 1px solid #f00;
+						box-shadow: 0px 0px 10px #f00;
+					}
+
+					.popup .popup2 .flexslider li .better {
+						overflow-y: scroll;
+					}
+
+					.green-p-plus {
+						opacity: 0;
+						visibility: hidden;
+						display: none;
+					}
+
+					.better-green-p-active {
+						opacity: 1;
+						visibility: visible;
+						display: block;
+					}
+
+					.passive-better {
+						opacity: 0;
+						visibility: hidden;
+						display: none;
+					}
+
+					#selectQw {
+						position: relative;
+					}
+
+					.pop-up {
+						z-index: 5000;
+						display: none;
+					}
+
+					.block-pop-up {
+						display: block;
+					}
+
+					.qw-select2 > .select2-container .select2-choice {
+						width: 289px;
+						height: 35px;
+						position: relative;
+						top: 5px;
+						background: url(/img/icon-1.jpg) no-repeat left center;
+					}
+
+					.inp-div input {
+						width: 360px;
+						height: 35px;
+						position: relative;
+						top: 5px;
+						background: url(/img/icon-2.jpg) no-repeat left center;
+					}
+
+					.qw-select2 {
+						float: left;
+					}
+
+					.clinic-time-butn, .clinic-btn {
+						max-width: 300px;
+						padding: 8px;
+						/*background-color: #115c89;*/
+						color: #fff;
+						font-size: 18px;
+						text-align: center;
+						cursor: pointer;
+						background-color: #6ca92a;
+						background-image: linear-gradient(to top, #6ca92a 0%, #a6d547 100%);
+						border: 1px solid #70ac2c;
+						border-radius: 5px;
+					}
+
+					.clinic-time-butn:hover, .clinic-btn:hover {
+						background-color: #e84b3d;
+						/*text-decoration: none;*/
+					}
+
+					.clinic-time-butn {
+						margin: 29px auto;
+					}
+
+					.clinic-btn {
+						max-width: 150px;
+						margin-top: 20px;
+						cursor: pointer;
+						text-align: center;
+					}
+
+					.flexslider ul.flex-direction-nav li a {
+						display: block;
+						position: absolute;
+						top: 25%;
+						margin-top: 33.5px;
+						z-index: 10;
+						cursor: pointer;
+						text-indent: -9999px;
+						opacity: 1;
+						-webkit-transition: all .3s ease;
+					}
+
+					.flexslider ul.flex-direction-nav li {
+						background: transparent !important;
+						font-size: 0;
+						color: transparent;
+					}
+
+					.close-popup {
+
+					}
+
+					.doctor-popup__title {
+						font-family: 'OpenSansBold', sans-serif;
+						font-size: 18px;
+						font-weight: 100;
+					}
+
+					.after-doctor-popup p {
+						font-family: 'OpenSans', sans-serif;
+						font-size: 14px;
+						line-height: 1.4em;
+					}
+
+					.popup .popup1 .form-popup .inp-div label {
+						font-family: 'OpenSansBold', sans-serif;
+						font-weight: normal;
+						font-size: 14px;
+					}
+
+					.popup .bottom-popup {
+
+					}
+
+					.popup .bottom-popup .soglas {
+						font-family: 'PTSansItalic', sans-serif;
+						font-size: 14px;
+						line-height: 1.4em;
+					}
+				</style>
+
+				<div class="pop-up fpopup" id="pop-up__order">
+					<form action="/algo/bookForm.php" name="popup-form" id="popup-form" target="_blank">
+						<input name="docid" type="hidden" value="">
+						<input name="cliid" type="hidden" value="">
+						<input name="actdocid" type="hidden" value="">
+						<input name="actdetails" type="hidden" value="">
+						<input name="serviceId" type="hidden" value="">
+						<input name="serviceName" type="hidden" value="">
+						<input name="dtime" type="hidden" value="">
+						<input name="pageurl" type="hidden" value="/clinics/filial/set-meditsinskikh-tsentrov-quototkrytaya-klinikaquot/">
+						<div class="popup">
+							<div class="close-popup">
+
+							</div>
+							<div class="form-title">
+								<p class="form-title__text">Онлайн-запись к врачу</p>
+							</div>
+							<div class="top-desc">
+
+								<div class="top-greyblock">
+									<div class="photo-doctor-popup">
+										<img id="f_photo" src="" alt="">
+									</div>
+									<div class="after-doctor-popup">
+										<p class="doctor-popup__title"></p>
+										<div id="doctxt"></div>
+										<div id="acttxt"></div>
+										<div id="docacttxt"></div>
+										<div id="servtxt"></div>
+									</div>
+								</div>
+							</div>
+							<div class="popup1">
+								<p>Мы позвоним в течении 30 минут для выбора подходящего времени приёма</p>
+								<div class="form-popup">
+
+									<div class="floats-popup">
+
+										<div class="inp-div">
+											<label for="">Введите ваше имя</label>
+											<input type="text" name="fio" placeholder="Контактное лицо" id="fio-popup" required="" value="">
+										</div>
+
+										<div class="inp-div">
+											<label for="">Введите ваш номер телефона</label>
+											<input type="text" name="tel" placeholder="+7 ( ____ ) ____-___-___" id="phone-popup" required="" value="">
+											<input type="hidden" name="timephp" value="918273912">
+										</div>
+										<div class="inp-div">
+											<label for="">Введите ваш e-mail</label>
+											<input type="email" name="email" placeholder="e-mail" id="email-popup" required="" value="">
+										</div>
+										<div class="inp-div">
+											<div class="clinic-time-butn but sms_f">записаться онлайн</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="popup3" style="display: none;">
+								<div class="name-popup3">
+									<p>Юля</p>
+								</div>
+								<div class="entercode">
+									<h4>Введите код, полученные по СМС:</h4>
+									<div class="entercode">
+										<input type="text" placeholder="Код из смс" name="sms" id="codesms">
+										<div class="clinic-btn but book_f">Отправить</div>
+									</div>
+									<p class="p-pop3"></p>
+								</div>
+							</div>
+
+							<div class="bottom-popup">
+								<p>Дополнительная информация</p>
+								<p>тел.: 8 (499) 110 63 39</p>
+								<p class="soglas">
+									<a href="http://zdorov.online/term/" target="_blank">Пользовательское соглашение</a>
+								</p>
+							</div>
+
+						</div>
+					</form>
+				</div>
+
+
+				<script type="text/javascript">
+					var sendflag = true;
+					function check() {
+						var fio = $('input[name=fio]').val();
+						var tel = $('input[name=tel]').val();
+						var email = $('input[id=email-popup]').val();
+						var flag = true;
+						if (fio == '') {
+							$('input[name=fio]').css('border', '1px solid red');
+							flag = false;
+						}
+						if (tel == '') {
+							$('input[name=tel]').css('border', '1px solid red');
+							flag = false;
+						}
+						if (email == '') {
+							$('input[name=email]').css('border', '1px solid red');
+							flag = false;
+						}
+						if (flag)
+							return true;
+						else
+							return false;
+					}
+					$(document).ready(function () {
+
+						$("#phone-popup").mask("+7 (999) 999 - 99 - 99");
+
+						$(".popup3").hide();
+
+						$(".choose-time").click(function () {
+							if ($("#select2-chosen-2").text() == "Выберите клинику") {
+								$(".qw-select2 .select-qw a").addClass("input-error-popup");
+
+
+							} else {
+								$(".popup1").hide();
+								$(".popup2").show();
+								$(".qw-select2 a").removeClass("input-error-popup");
+							}
+						});
+
+						$(".sms_f").click(function () {
+							if (check()) {
+								var phone = $("#phone-popup").val();
+								$('.name-popup3').html('<p>' + $('input[name=fio]').val() + '</p>');
+								$.post('/algo/processing/sms.php', {'phone': phone}, function (resp) {
+									$(".sms_f").removeClass('sms_f');
+									var r = JSON.parse(resp);
+									if (r.status == 'ok') {
+										$(".popup1").hide();
+										$(".popup2").hide();
+										$(".popup3").show();
+									}
+									else {
+										alert(r.msg);
+										$(".close-popup").click();
+									}
+								});
+							}
+						});
+
+						$(".book_f").click(function () {
+							var that = $(this);
+							if (sendflag === true) {
+								that.removeClass('book_f');
+								$('.p-pop3').html("<div style='position:relative;'><img style='position:absolute;top:-120px;left:-190px;' src='/img/util/loading-07.gif' /></div>");
+								var data = $('form').serialize();
+								$.post('/algo/processing/bookForm.php', {'data': data}, function (resp) {
+									var r = JSON.parse(resp);
+									$('.p-pop3').text(r.msg);
+									if (r.status == 'ok') {
+										sendflag = false;
+										setTimeout(function () {
+											$(".pop-up").fadeOut(300);
+											//$(".popup1").show();
+											$(".popup2").hide();
+											$(".popup3").hide();
+										}, 3000);
+									}
+									else {
+										that.addClass('book_f');
+										$('input[name=sms]').val('');
+									}
+								});
+							}
+						});
+
+						$(".close-popup").click(function () {
+							$(".pop-up").fadeOut(300);
+							$(".popup1").show();
+							$(".popup2").hide();
+							$(".popup3").hide();
+						});
+
+						$('#pop-up__order').click(function (e) {
+							if (e.target.id != 'pop-up__order') {
+								return false;
+							}
+							$(this).fadeOut(500);
+						});
+					});
+				</script>
+			</div>
+			<div class="crumbs">
+				<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="/">
+							<span itemprop="name">Главная</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="/clinics/">
+							<span itemprop="name">Клиники</span>
+						</a>
+						<meta itemprop="position" content="2">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<span itemprop="name">Сеть медицинских центров "Открытая клиника"</span>
+						<meta itemprop="position" content="3">
+					</li>
+				</ul>
+			</div>
+			<div class="clinic-services clearfix">
+				<div class="clinic-services__inner">
+					<div class="clinic-main-about clearfix">
+						<div class="clinic-main-about__text">
+							<h1>Филиалы клиники</h1>
+							<div class="clinic-about clinic-info metod__analis_title">
+								<div class="filial__wrap">
+									<div class="clinic-about__content-title main-clinic__title clinic-about__content-caption">
+										<a href="/clinics/mejdunarodnii-hirurgicheskii-centr/">Медико-Хирургический Центр на Пресне</a>
+									</div>
+									<div title="365 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Улица 1905 года
+									</div>
+									<div title="1164 м." class="clinic-about__metro main-clinic-about__metro metro_line_koltsevaya">
+										Краснопресненская
+									</div>
+									<div title="1412 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Баррикадная
+									</div>
+
+									<div class="clinic-about__address"><span>г. Москва, ул. 1905 года, д.7, с.1</span></div>
+									<div class="clinic-about__clock">Будни 8:00 - 21:00
+																	 Сб 9:00 - 21:00 Вс 9:00 - 21:00
+									</div>
+								</div>
+								<div class="filial__wrap_img">
+
+									<img src="http://mimedia.ru/uploads/things/logo-dayfive-black.jpg" alt="" title="Сеть медицинских центров &quot;Открытая клиника&quot;">
+
+								</div>
+								<div class="clearfix"></div>
+
+							</div>
+							<div class="clinic-about clinic-info metod__analis_title">
+								<div class="filial__wrap">
+									<div class="clinic-about__content-title main-clinic__title clinic-about__content-caption">
+										<a href="/clinics/mejdunarodnii-hirurgicheskii-centr/">Медико-Хирургический Центр на Пресне</a>
+									</div>
+									<div title="365 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Улица 1905 года
+									</div>
+									<div title="1164 м." class="clinic-about__metro main-clinic-about__metro metro_line_koltsevaya">
+										Краснопресненская
+									</div>
+									<div title="1412 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Баррикадная
+									</div>
+									<div title="365 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Улица 1905 года
+									</div>
+									<div title="1164 м." class="clinic-about__metro main-clinic-about__metro metro_line_koltsevaya">
+										Краснопресненская
+									</div>
+									<div title="1412 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Баррикадная
+									</div>
+
+									<div class="clinic-about__address"><span>г. Москва, ул. 1905 года, д.7, с.1</span></div>
+									<div class="clinic-about__clock">Будни 8:00 - 21:00
+																	 Сб 9:00 - 21:00 Вс 9:00 - 21:00
+									</div>
+								</div>
+								<div class="filial__wrap_img">
+
+									<img src="http://mimedia.ru/uploads/things/logo-dayfive-black.jpg" alt="" title="Сеть медицинских центров &quot;Открытая клиника&quot;">
+
+								</div>
+								<div class="clearfix"></div>
+
+							</div>
+							<div class="clinic-about clinic-info metod__analis_title">
+								<div class="filial__wrap">
+									<div class="clinic-about__content-title main-clinic__title clinic-about__content-caption">
+										<a href="/clinics/mejdunarodnii-hirurgicheskii-centr/">Медико-Хирургический Центр на Пресне Медико-Хирургический Центр на Пресне Медико-Хирургический Центр на Пресне Медико-Хирургический Центр на Пресне</a>
+									</div>
+									<div title="365 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Улица 1905 года
+									</div>
+									<div title="1164 м." class="clinic-about__metro main-clinic-about__metro metro_line_koltsevaya">
+										Краснопресненская
+									</div>
+									<div title="1412 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Баррикадная
+									</div>
+
+									<div class="clinic-about__address"><span>г. Москва, ул. 1905 года, д.7, с.1</span></div>
+									<div class="clinic-about__clock">Будни 8:00 - 21:00
+																	 Сб 9:00 - 21:00 Вс 9:00 - 21:00
+									</div>
+								</div>
+								<div class="filial__wrap_img">
+
+									<img src="http://mimedia.ru/uploads/things/logo-dayfive-black.jpg" alt="" title="Сеть медицинских центров &quot;Открытая клиника&quot;">
+
+								</div>
+								<div class="clearfix"></div>
+
+							</div>
+							<div class="clinic-about clinic-info metod__analis_title">
+								<div class="filial__wrap">
+									<div class="clinic-about__content-title main-clinic__title clinic-about__content-caption">
+										<a href="/clinics/mejdunarodnii-hirurgicheskii-centr/">Медико-Хирургический Центр на Пресне</a>
+									</div>
+									<div title="365 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Улица 1905 года
+									</div>
+									<div title="1164 м." class="clinic-about__metro main-clinic-about__metro metro_line_koltsevaya">
+										Краснопресненская
+									</div>
+									<div title="1412 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Баррикадная
+									</div>
+
+									<div class="clinic-about__address"><span>г. Москва, ул. 1905 года, д.7, с.1</span></div>
+									<div class="clinic-about__clock">Будни 8:00 - 21:00
+																	 Сб 9:00 - 21:00 Вс 9:00 - 21:00
+									</div>
+								</div>
+								<div class="filial__wrap_img">
+
+									<img src="http://mimedia.ru/uploads/things/logo-dayfive-black.jpg" alt="" title="Сеть медицинских центров &quot;Открытая клиника&quot;">
+
+								</div>
+								<div class="clearfix"></div>
+
+							</div>
+							<div class="clinic-about clinic-info metod__analis_title">
+								<div class="filial__wrap">
+									<div class="clinic-about__content-title main-clinic__title clinic-about__content-caption">
+										<a href="/clinics/mejdunarodnii-hirurgicheskii-centr/">Медико-Хирургический Центр на Пресне</a>
+									</div>
+									<div title="365 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Улица 1905 года
+									</div>
+									<div title="1164 м." class="clinic-about__metro main-clinic-about__metro metro_line_koltsevaya">
+										Краснопресненская
+									</div>
+									<div title="1412 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Баррикадная
+									</div>
+
+									<div class="clinic-about__address"><span>г. Москва, ул. 1905 года, д.7, с.1 г. Москва, ул. 1905 года, д.7, с.1 г. Москва, ул. 1905 года, д.7, с.1</span></div>
+									<div class="clinic-about__clock">Будни 8:00 - 21:00
+																	 Сб 9:00 - 21:00 Вс 9:00 - 21:00
+									</div>
+								</div>
+								<div class="filial__wrap_img">
+
+									<img src="http://mimedia.ru/uploads/things/logo-dayfive-black.jpg" alt="" title="Сеть медицинских центров &quot;Открытая клиника&quot;">
+
+								</div>
+								<div class="clearfix"></div>
+
+							</div>
+							<div class="clinic-about clinic-info metod__analis_title">
+								<div class="filial__wrap">
+									<div class="clinic-about__content-title main-clinic__title clinic-about__content-caption">
+										<a href="/clinics/mejdunarodnii-hirurgicheskii-centr/">Медико-Хирургический Центр на Пресне</a>
+									</div>
+									<div title="365 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Улица 1905 года
+									</div>
+									<div title="1164 м." class="clinic-about__metro main-clinic-about__metro metro_line_koltsevaya">
+										Краснопресненская
+									</div>
+									<div title="1412 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">
+										Баррикадная
+									</div>
+
+									<div class="clinic-about__address"><span>г. Москва, ул. 1905 года, д.7, с.1</span></div>
+									<div class="clinic-about__clock">Будни 8:00 - 21:00
+																	 Сб 9:00 - 21:00 Вс 9:00 - 21:00
+									</div>
+								</div>
+								<div class="filial__wrap_img">
+
+									<img src="http://mimedia.ru/uploads/things/logo-dayfive-black.jpg" alt="" title="Сеть медицинских центров &quot;Открытая клиника&quot;">
+
+								</div>
+								<div class="clearfix"></div>
+
+							</div>
+						</div>
+					</div>
+					<div class="clinic-main-about__map">
+						<h2>Все клиники на карте</h2>
+						<script src="http://api-maps.yandex.ru/2.0/?load=package.full&amp;lang=ru-RU" type="text/javascript"></script>
+						<script type="text/javascript">
+							// Как только будет загружен API и готов DOM, выполняем инициализацию
+							ymaps.ready(init);
+
+							function init() {
+								// Создание экземпляра карты и его привязка к контейнеру с
+								// заданным id ("map")
+								var myMap = new ymaps.Map('map', {
+									// При инициализации карты, обязательно нужно указать
+									// ее центр и коэффициент масштабирования
+									center: [55.761441, 37.558733],
+									zoom: 11
+								});
+								myPlacemark616 = new ymaps.Placemark([55.761441, 37.558733], {
+									name: 'Пресненский медико-реабилитационный центр',
+									address: 'г. Москва, ул. 1905 года, д.7, стр.1',
+									websayt: 'Улица 1905 года, Краснопресненская, Баррикадная'
+
+								}),
+										myPlacemark621 = new ymaps.Placemark([55.72633, 37.479537], {
+											name: 'Лечебно-диагностический центр Кутузовский',
+											address: 'г. Москва, ул. Давыдковская, д. 5',
+											websayt: 'Славянский бульвар, Пионерская, Филёвский парк'
+
+										}),
+										myPlacemark611 = new ymaps.Placemark([55.739382, 37.404932], {
+											name: 'Кунцевский медико-реабилитационный центр',
+											address: 'г. Москва, ул. Партизанская, д. 41',
+											websayt: 'Молодёжная, Крылатское, Кунцевская'
+
+										}),
+										myPlacemark61887 = new ymaps.Placemark([55.761441, 37.558733], {
+											name: 'Медико-Хирургический Центр на Пресне',
+											address: 'г. Москва, ул. 1905 года, д.7, с.1',
+											websayt: 'Улица 1905 года, Краснопресненская, Баррикадная'
+
+										}),
+
+
+										// Создаем коллекцию, в которую будем добавлять метки
+										myCollection = new ymaps.GeoObjectCollection();
+
+								//Добавляем метки в коллекцию геообъектов.
+								myCollection
+										.add(myPlacemark616)
+										.add(myPlacemark621)
+										.add(myPlacemark611)
+										.add(myPlacemark61887)
+
+
+								// Создаем шаблон для отображения контента балуна
+								var myBalloonLayout = ymaps.templateLayoutFactory.createClass(
+										'<h3>$[properties.name]</h3>' +
+										'<p><strong>Адрес:</strong> $[properties.address]</p>' +
+										'<p><strong>Ближайшее метро:</strong> $[properties.websayt]</p>'
+								);
+
+								// Помещаем созданный шаблон в хранилище шаблонов. Теперь наш шаблон доступен по ключу 'my#theaterlayout'.
+								ymaps.layout.storage.add('my#theaterlayout', myBalloonLayout);
+
+								// Задаем наш шаблон для балунов геобъектов коллекции.
+								myCollection.options.set({
+									balloonContentBodyLayout: 'my#theaterlayout',
+									// Максимальная ширина балуна в пикселах
+									balloonMaxWidth: 300
+								});
+
+								// Добавляем коллекцию геообъектов на карту.
+								myMap.geoObjects.add(myCollection);
+
+
+							}
+						</script>
+					</div>
+
+				</div>
+				<div class="clinic-services__offer">
+					<article class="offer__right-sbar">
+						<div class="bx-wrapper" style="max-width: 100%;">
+							<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 385px;">
+								<ul class="bxslider-right" style="width: 615%; position: relative; transition-duration: 1.5s; transform: translate3d(-461.188px, 0px, 0px);">
+									<li style="float: left; list-style: none; position: relative; width: 226px;" class="bx-clone">
+										<div class="offer__right-sbar-wrap">
+											<div class="offer__right-sbar-title">СПЕЦПРЕДЛОЖЕНИЯ</div>
+											<div class="offer__right-sbar-img">
+												<img src="http://zdorov.online/upload/resize_cache/iblock/881/150_150_2/88182e27f963cbcc51fa291a4b6e04a5.jpg">
+											</div>
+											<div class="offer__right-sbar-offer">После МРТ скидка 50%</div>
+											<p>Для посетителей нашего сайта скидка на первичную консультацию невролога или ортопеда после
+											   МРТ...</p>
+											<div class="clinic-about">
+												<div title="1001 м." class="clinic-about__metro main-clinic-about__metro metro_line_arbatsko-pokrovskaya">
+													Молодёжная
+												</div>
+											</div>
+											<div class="diagnostic__button--right-sbar">
+												<a href="/clinics/kuntsevskiy_tsentr_open_clinics/actions/posle-mrt-skidka-50/">Посмотреть
+												</a>
+											</div>
+										</div>
+									</li>
+									<li style="float: left; list-style: none; position: relative; width: 226px;">
+										<div class="offer__right-sbar-wrap">
+											<div class="offer__right-sbar-title">СПЕЦПРЕДЛОЖЕНИЯ</div>
+											<div class="offer__right-sbar-img">
+												<img src="http://zdorov.online/upload/resize_cache/iblock/5c1/150_150_2/5c194e85ccc9cc426aa07f2757437d00.jpg">
+											</div>
+											<div class="offer__right-sbar-offer">Акция №3 по кардиологии</div>
+											<p>Акция действует с 12.02.2016 до 31 октября 2016</p>
+											<div class="clinic-about">
+												<div title="1001 м." class="clinic-about__metro main-clinic-about__metro metro_line_lyublinsko-dmitrovskaya">
+													Чкаловская
+												</div>
+											</div>
+											<div class="diagnostic__button--right-sbar">
+												<a href="/clinics/mnogoprofilnyy-meditsinskiy-tsentr-delta-klinik/actions/aktsiya-3-po-kardiologii/">
+													Посмотреть
+												</a>
+											</div>
+										</div>
+									</li>
+									<li style="float: left; list-style: none; position: relative; width: 226px;">
+										<div class="offer__right-sbar-wrap">
+											<div class="offer__right-sbar-title">СПЕЦПРЕДЛОЖЕНИЯ</div>
+											<div class="offer__right-sbar-img">
+												<img src="http://zdorov.online/upload/resize_cache/iblock/9c8/150_150_2/9c8b5d939ae0fe28cb00ab11dbe12ae5.jpg">
+											</div>
+											<div class="offer__right-sbar-offer">Диагностика фиброзно-кистозной болезни (мастопатии)</div>
+											<p>Акция действует с 11 Февраля 2016 г.</p>
+											<div class="clinic-about">
+												<div title="1001 м." class="clinic-about__metro main-clinic-about__metro metro_line_lyublinsko-dmitrovskaya">
+													Чкаловская
+												</div>
+											</div>
+											<div class="diagnostic__button--right-sbar">
+												<a href="/clinics/mnogoprofilnyy-meditsinskiy-tsentr-delta-klinik/actions/diagnostika-fibrozno-kistoznoy-bolezni-mastopatii/">
+													Посмотреть
+												</a>
+											</div>
+										</div>
+									</li>
+									<li style="float: left; list-style: none; position: relative; width: 226px;">
+										<div class="offer__right-sbar-wrap">
+											<div class="offer__right-sbar-title">СПЕЦПРЕДЛОЖЕНИЯ</div>
+											<div class="offer__right-sbar-img">
+												<img src="http://zdorov.online/upload/resize_cache/iblock/5fa/150_150_2/5fae1f84cab86fc05e1bc7a7e4451188.jpg">
+											</div>
+											<div class="offer__right-sbar-offer">МРТ открытого типа за 2500 рублей только до 10 июля!</div>
+											<p>До 10 июля МРТ открытого типа за 2 500 рублей! Чувствуйте себя уверенно и будьте спокойны.
+											   Подробнее об акции внутри...<br>
+											</p>
+											<div class="clinic-about">
+												<div title="1001 м." class="clinic-about__metro main-clinic-about__metro metro_line_arbatsko-pokrovskaya">
+													Молодёжная
+												</div>
+											</div>
+											<div class="diagnostic__button--right-sbar">
+												<a href="/clinics/kuntsevskiy_tsentr_open_clinics/actions/mrt-otkrytogo-tipa-za-2500-rubley-tolko-do-10-aprelya/">
+													Посмотреть
+												</a>
+											</div>
+										</div>
+									</li>
+									<li style="float: left; list-style: none; position: relative; width: 226px;">
+										<div class="offer__right-sbar-wrap">
+											<div class="offer__right-sbar-title">СПЕЦПРЕДЛОЖЕНИЯ</div>
+											<div class="offer__right-sbar-img">
+												<img src="http://zdorov.online/upload/resize_cache/iblock/881/150_150_2/88182e27f963cbcc51fa291a4b6e04a5.jpg">
+											</div>
+											<div class="offer__right-sbar-offer">После МРТ скидка 50%</div>
+											<p>Для посетителей нашего сайта скидка на первичную консультацию невролога или ортопеда после
+											   МРТ...</p>
+											<div class="clinic-about">
+												<div title="1001 м." class="clinic-about__metro main-clinic-about__metro metro_line_arbatsko-pokrovskaya">
+													Молодёжная
+												</div>
+											</div>
+											<div class="diagnostic__button--right-sbar">
+												<a href="/clinics/kuntsevskiy_tsentr_open_clinics/actions/posle-mrt-skidka-50/">Посмотреть
+												</a>
+											</div>
+										</div>
+									</li>
+									<li style="float: left; list-style: none; position: relative; width: 226px;" class="bx-clone">
+										<div class="offer__right-sbar-wrap">
+											<div class="offer__right-sbar-title">СПЕЦПРЕДЛОЖЕНИЯ</div>
+											<div class="offer__right-sbar-img">
+												<img src="http://zdorov.online/upload/resize_cache/iblock/5c1/150_150_2/5c194e85ccc9cc426aa07f2757437d00.jpg">
+											</div>
+											<div class="offer__right-sbar-offer">Акция №3 по кардиологии</div>
+											<p>Акция действует с 12.02.2016 до 31 октября 2016</p>
+											<div class="clinic-about">
+												<div title="1001 м." class="clinic-about__metro main-clinic-about__metro metro_line_lyublinsko-dmitrovskaya">
+													Чкаловская
+												</div>
+											</div>
+											<div class="diagnostic__button--right-sbar">
+												<a href="/clinics/mnogoprofilnyy-meditsinskiy-tsentr-delta-klinik/actions/aktsiya-3-po-kardiologii/">
+													Посмотреть
+												</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="bx-controls bx-has-pager bx-has-controls-direction">
+								<div class="bx-pager bx-default-pager">
+									<div class="bx-pager-item">
+										<a href="" data-slide-index="0" class="bx-pager-link">1</a>
+									</div>
+									<div class="bx-pager-item">
+										<a href="" data-slide-index="1" class="bx-pager-link active">2</a>
+									</div>
+									<div class="bx-pager-item">
+										<a href="" data-slide-index="2" class="bx-pager-link">3</a>
+									</div>
+									<div class="bx-pager-item">
+										<a href="" data-slide-index="3" class="bx-pager-link">4</a>
+									</div>
+								</div>
+								<div class="bx-controls-direction">
+									<a class="bx-prev" href="">Prev</a>
+									<a class="bx-next" href="">Next</a>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+
+			<br>
+		</main>
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<a href="http://zdorov.online/">
+					<img src="img/logo.png" title="Zdorov.online">
+				</a>
+			</div>
+			<div class="footer-content__article">
+				<a href="http://zdorov.online/articles/">Статьи</a>
+				<a href="http://zdorov.online/vrach/">Врачи</a>
+				<a href="http://zdorov.online/clinics/kliniki-po-diagnostike/">Диагностика</a>
+				<a href="http://zdorov.online/novosti/">Новости</a>
+				<div class="menu-footer__list">
+					<ul>
+						<li>
+							<a href="http://zdorov.online/adv/">Реклама на портале</a>
+						</li>
+						<li>
+							<a href="http://zdorov.online/dlya-klinik/">Для клиник</a>
+						</li>
+						<li>
+							<a href="http://zdorov.online/about/">О проекте</a>
+						</li>
+						<li>
+							<a href="http://zdorov.online/contacts/">Контакты</a>
+						</li>
+						<li>
+							<a href="http://zdorov.online/term/">Пользовательское соглашение</a>
+						</li>
+						<!--noindex-->
+						<li>
+							<a target="_blank" href="http://partners.zdorov.online/">Партнерская программа</a>
+						</li><!--/noindex-->
+					</ul>
+				</div>
+			</div>
+
+			<div class="menu-footer-document">
+
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2016. Все права защищены.
+						<a href="http://zdorov.online/karta-saita/">Карта сайта</a>
+					</p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем.</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left:50px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="http://mk.ru/" target="_blank"><img src="img/logo-mk-index.png"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="http://zdorov.online/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://zdorov.online/js/jquery.fancybox.js"></script>
+	<script src="http://zdorov.online/js/app.min.js"></script>
+	<script src="http://zdorov.online/js/jquery.flexslider-min.js"></script>
+	<script src="http://zdorov.online/js/jquery.maskedinput.min.js"></script>
+
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: false,
+			slidesPerView: 'auto',
+			centeredSlides: false,
+			grabCursor: false,
+			loop: false
+		});
+		var swiperDoc = new Swiper('.swiperDoc', {
+			scrollbar: '.swiper-scrollbarDoc',
+			scrollbarHide: false,
+			slidesPerView: 'auto',
+			centeredSlides: false,
+			grabCursor: false,
+			loop: false
+		});
+
+		$('.select-qw').select2();
+
+		$('.select-metro').select2();
+
+		$('.select').select2();
+
+		$(document).ready(function () {
+			$('.bxslider-expert').bxSlider({
+				auto: true,
+				speed: 1500
+			});
+		});
+		$('div.rating-js').rating();
+
+		var swiper = new Swiper('.swipper-news-inner', {
+			pagination: '.news-inner-pagination',
+			paginationClickable: true,
+			slidesPerView: 2,
+			scrollbarHide: true,
+			centeredSlides: false,
+			grabCursor: false,
+			loop: true
+
+		});
+		$(document).ready(function () {
+			$('#patient-info').validate({
+				rules: {
+					password: {
+						rangelength: [4, 8]
+					},
+					confirm_password: {
+						equalTo: '#password'
+					}
+
+				},
+				messages: {
+					password: {
+						rangelength: "Пароль должен содержать от 4 до 8 символов"
+					},
+					confirm_password: {
+						required: "Подтвердите пароль",
+						equalTo: "Пароли не совпадают"
+					}
+				}
+			});
+		});
+		$(document).ready(function () {
+			$('#reg-user__form').validate({
+				rules: {
+					name: {
+						required: true
+					},
+					email: {
+						required: true
+					},
+					password: {
+						required: true,
+						rangelength: [4, 8]
+					},
+					confirm_password: {
+						equalTo: '#password'
+					}
+
+				},
+				messages: {
+					name: {
+						required: "Поле не заполнено"
+					},
+					email: {
+						required: "Поле не заполнено"
+					},
+					password: {
+						required: "Вы не ввели пароль",
+						rangelength: "Пароль должен содержать от 4 до 8 символов"
+					},
+					confirm_password: {
+						required: "Подтвердите пароль",
+						equalTo: "Пароли не совпадают"
+					}
+				}
+			});
+		});
+		$(document).ready(function () {
+			$('.bxslider-body').bxSlider({
+				mode: 'fade',
+				adaptiveHeight: true,
+				infiniteLoop: true
+			});
+			$('.bxslider-right').bxSlider({
+				auto: true,
+				speed: 1500
+			});
+		});
+	</script>
+</div>
+</body>
+</html>

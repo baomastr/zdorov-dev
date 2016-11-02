@@ -1,3 +1,4 @@
+@import nib
 /*.well-doc__item-name p.well-doc__item-name-blue!*new variables*!*/
 /*!
 Chosen, a Select Box Enhancer for jQuery and Prototype
@@ -1443,7 +1444,35 @@ input[type=submit] {
 .btn-menu-find:hover {
   opacity: 0.8;
 }
-
+.diagnostic__button--right-sbar {
+  background-color: #d64882;
+  position: relative;
+  height: 40px;
+  width: 174px;
+  margin: 0 auto;
+}
+.diagnostic__button--right-sbar a {
+  position: absolute;
+  width: 146px;
+  display: block;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: 'PTSansItalic', sans-serif;
+  font-size: 18px;
+  left: 3px;
+  top: 3px;
+  line-height: 1.8em;
+  cursor: pointer;
+}
+.diagnostic__button--right-sbar a:hover {
+  text-decoration: none;
+}
+.diagnostic__button--right-sbar:hover {
+  background-color: #115c89;
+}
+.diagnostic__button--right-sbar:hover a {
+  border-color: #115c89;
+}
 .btn-doc-info {
   padding: 10px 37px;
   color: #ffffff;
@@ -1524,6 +1553,19 @@ input[type=submit] {
 
 .question-doc__form-btn:hover {
   background-color: #e74c3c;
+}
+.symptom__button {
+  white-space: nowrap;
+}
+.symptom__button span {
+  font-family: 'PTSansItalic', sans-serif;
+  font-size: 24px;
+  color: #000000;
+  font-weight: 400;
+  padding: 0 7%;
+}
+.symptom__button .diagnostic__button {
+  display: inline-block;
 }
 .open-review-btn a {
   display: block;
@@ -3452,9 +3494,9 @@ li a {
   width: 100%;
 }
 
-.doc-address .doc-item {
+/*.doc-address .doc-item {
   cursor: pointer;
-}
+}*/
 
 .doc-address .doc-item:hover .doc-item__about {
   bottom: 0;
@@ -5481,6 +5523,7 @@ li a {
 
 .main-clinic__title {
   padding-bottom: 10px;
+  font-weight: 800;
 }
 
 .main-clinic-about {
@@ -6673,6 +6716,158 @@ p.js-height-img {
 
 .record-btn:hover {
   opacity: 0.8;
+}
+
+.record-form .med-section {
+  float: left;
+}
+.record-form .med-section > .qw-select {
+  float: left;
+}
+.record-form .med-section .qw-select label {
+  padding-bottom: 10px;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 14px;
+}
+.record-form .med-section .qw-select label > span {
+  color: #e84b3d;
+}
+.record-form__qw--wrap {
+  width: 50%;
+  float: left;
+}
+.record-form__qw--wrap > .textQW {
+  font-family: 'OpenSans', sans-serif;
+  color: 14px;
+  width: 96%;
+  height: 24px;
+  resize: none;
+  overflow: hidden;
+  border: 1px solid #d4d4d4;
+  padding: 8px 2%;
+  margin-bottom: 20px;
+}
+.record-form__qw,
+.record-form__qw-note {
+  padding-bottom: 10px;
+}
+.record-form__qw-text {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 14px;
+  color: #535353;
+  float: left;
+}
+.record-form__qw-text > span {
+  color: #e84b3d;
+}
+.record-form__qw-symbol {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 14px;
+  color: #535353;
+  float: right;
+}
+.record-form__captcha {
+  float: right;
+}
+.record-form__captcha > img {
+  height: 42px;
+}
+.record-form__captcha #captcha_word {
+  vertical-align: top;
+  height: 42px;
+  width: 189px;
+  border: 1px solid #d4d4d4;
+  padding-left: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-left: 10px;
+}
+.record-form > .textNote {
+  font-family: 'OpenSans', sans-serif;
+  color: #6d6d6d;
+  width: 96%;
+  height: 50px;
+  resize: none;
+  overflow: hidden;
+  border: 1px solid #d4d4d4;
+  padding: 8px 2%;
+  margin-bottom: 10px;
+}
+.record-form__qw-note + textarea {
+  margin-bottom: 0;
+}
+.record-form__file {
+  float: right;
+}
+.record-form__file input {
+  cursor: pointer;
+}
+.record-form__file > .upload_photo-QW {
+  width: 170px;
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+  line-height: 1.8em;
+  text-align: right;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 16px;
+  color: #d64882;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.record-form__file > .upload_photo-QW > input[type=file] {
+  width: 170px;
+  height: 40px;
+  opacity: 0;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.record-form__submit {
+  padding: 20px 0;
+}
+.record-form__submit-btn {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  padding: 2px;
+  margin-bottom: 20px;
+  background-color: #d64882;
+  cursor: pointer;
+  float: right;
+}
+.record-form__submit-btn > input {
+  width: 185px;
+  font-family: 'PTSansItalic', arial, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #d64882;
+  cursor: pointer;
+  padding: 5px 0;
+  border: 1px solid #f76da6;
+}
+.record-form__submit-btn:hover {
+  opacity: 0.8;
+}
+.record-form__agree {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 14px;
+  color: #6d6d6d;
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+.record-form__note {
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+}
+.record-form__note > span {
+  color: #e84b3d;
 }
 
 .enter-title {
@@ -11100,7 +11295,7 @@ p.js-height-img {
   font-size: 17px;
   position: relative;
   display: inline-block;
-  padding: 0 10px 15px 25px;
+  padding: 0 30px 15px 25px;
 }
 
 .st-last__reason ul li a {
@@ -13835,7 +14030,7 @@ p.doctor-popup__title {
 }
 
 .clinic-services h1 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 800;
 }
 
@@ -13847,6 +14042,7 @@ p.doctor-popup__title {
 .well-doc__item-price-btn {
   text-align: center;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .well-doc__item-price-btn-link {
@@ -16309,7 +16505,7 @@ span.forum-page-current {
 .swiper-wrapper .doc-item.clinclist {
   width: 31.8%;
   border: 3px solid #ededed;
-  cursor: pointer;
+  //cursor: pointer;
   padding: 0;
   margin-right: 10px;
 }
@@ -16327,6 +16523,7 @@ span.forum-page-current {
 }
 
 .swiper-wrapper .doc-item.clinclist .well-doc__item-price-btn {
+
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -16413,6 +16610,7 @@ span.forum-page-current {
   font-family: "PT Sans";
   font-size: 22px;
   font-weight: 700;
+  display: inline-block;
 }
 
 .maintitle__bottom_last {
@@ -16528,9 +16726,44 @@ span.forum-page-current {
   content: '3';
 }
 
+.metod:nth-child(5) {
+  margin-top: 20px;
+}
+
+.metod:nth-child(5) .metod__analis_title:before {
+  content: '4';
+}
+
+.metod:nth-child(6) {
+  margin-top: 20px;
+}
+
+.metod:nth-child(6) .metod__analis_title:before {
+  content: '5';
+}
+
+.metod:nth-child(7) {
+  margin-top: 20px;
+}
+
+.metod:nth-child(7) .metod__analis_title:before {
+  content: '6';
+}
+
+.metod:nth-child(8) {
+  margin-top: 20px;
+}
+
+.metod:nth-child(8) .metod__analis_title:before {
+  content: '7';
+}
+
 .metod__analis {
-  width: 29%;
+  //width: 29%;
+  width: 320px;
+  //margin-right: 20px;
   display: inline-block;
+  padding-right: 10px
 }
 
 .metod__analis_title {
@@ -16538,6 +16771,8 @@ span.forum-page-current {
   font-size: 16px;
   font-family: 'OpenSansBold', sans-serif;
   font-weight: normal;
+  display: inline-block
+  padding-left: 40px;
 }
 
 .metod__analis_title:before {
@@ -16554,13 +16789,14 @@ span.forum-page-current {
   border: solid 2px #91c53f;
   padding-left: 6px;
   font-size: 14px;
-  margin-right: 5px;
+  margin-right: 15px;
   line-height: 21px;
   background-color: #91c53f;
+  margin-left: -40px
 }
 
 .metod__analis_about {
-  padding-left: 30px;
+  padding-left: 40px;
   line-height: 1.2em;
   font-size: 14px;
 }
@@ -16593,6 +16829,7 @@ span.forum-page-current {
   border: 1px solid #e6e6e6;
   padding: 10px;
   margin-right: 10px;
+  width: 152px;
 }
 
 .metod__klinik_list_item:last-child {
@@ -16626,6 +16863,7 @@ span.forum-page-current {
   padding: 0;
   font-size: 13px;
   line-height: 1.3em;
+  white-space: normal;
 }
 
 .analis-klinik__price {
@@ -16708,9 +16946,9 @@ span.forum-page-current {
   cursor: auto;
 }
 
-.st-last__reason ul li {
-  display: block;
-}
+//.st-last__reason ul li {
+//  display: block;
+//}
 
 .cc .mc-nocomments {
   display: none;
@@ -17112,17 +17350,26 @@ strong, b {
   padding: 0
 }
 
-.clinic__logo {
-  width: 50%;
-  display: inline-block;
-  text-align: center;
-}
+//.clinic__logo {
+//  width: 50%;
+//  display: inline-block;
+//  text-align: center;
+//}
+//
+//.clinic__logo img {
+//  display: inline-block;
+//  //max-height: 74px;
+//  max-width: 100%
+//}
 
-.clinic__logo img {
-  display: inline-block;
-  max-height: 74px;
-  max-width: 100%
-}
+.clinic
+  &__logo
+    max-width: 200px
+    height: 100px
+    display: inline-block;
+    img
+      max-height: 100px
+      max-width: 100%;
 
 .clinic__rightside {
   float: right;
@@ -17241,7 +17488,7 @@ strong, b {
 
 /*24-10*/
 .banner-right {
-  margin-top: 15px;
+  margin-top: -40px;
   position: relative;
 }
 
@@ -17274,7 +17521,7 @@ strong, b {
 .banner-right__text {
   display: inline-block;
   color: #fff;
-  margin-top: 30px
+  margin-top: 50px
 }
 
 .banner-right__btn {
@@ -17407,20 +17654,21 @@ p.listDoc__note {
   &-top__wrap
     //margin-bottom: 20px
     .clinic
-      &__logo
-        max-width: 200px
-        max-height: 150px
-        img
-          max-height: 150px
+      //&__logo
+      //  max-width: 200px
+      //  max-height: 150px
+      //  img
+      //    max-height: 150px
       &-about
         &__content
           &-caption
             display: inline-block
             //text-align: center
-            width: 620px
+            width: 660px
             padding-left: 20px
             vertical-align: top;
-            padding-top: 30px
+            padding-top: 20px
+            padding-bottom: 10px
         &__address
           margin-left: 0;
           width: 365px;
@@ -17464,3 +17712,55 @@ p.listDoc__note {
           float: right
           width: 50%
           margin-right: 10px
+
+.clinic-services__inner
+  .clinic-about
+    border: 0;
+    width: 100%
+    max-width: 100%
+    &:nth-child(3)
+      &:before
+        content: '2';
+    &:nth-child(4)
+      &:before
+        content: '3';
+    &:nth-child(5)
+      &:before
+        content: '4';
+    &:nth-child(6)
+      &:before
+        content: '5';
+    &:nth-child(7)
+      &:before
+        content: '6';
+
+  .clinic-info:after
+    margin-top: 15px;
+    margin-bottom: 15px;
+  .metod__analis_title:before
+    vertical-align: top
+  .clinic-about__address
+    margin-left: 0
+.filial__wrap
+  display: inline-block
+  vertical-align: top;
+  max-width: 650px;
+  &_img
+    display: inline-block
+    vertical-align: top;
+    float: right
+    img
+      height: 100px
+
+.maintitle
+  .list__exclam
+    display: inline-block;
+    margin-left: 10px
+    li
+      color: #1a5a9c;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      //font-family: 'PTSansBold', sans-serif;
+      font-family: "PT Sans";
+      font-weight: 700;

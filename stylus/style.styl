@@ -14002,7 +14002,20 @@ p.doctor-popup__title {
   text-align: left;
   white-space: normal;
 }
-
+.clinic-info.spec {
+  border: 2px dashed green;
+  margin-bottom: 25px;
+  //padding-bottom: 25px;
+}
+.spec.clinic-info--listDoc .clinic-time {
+  padding-top: 0
+}
+.spec.clinic-info:after {
+  display: none
+}
+.spec .clinic-about--listDoc .clinic-time__tel.clinic-time__tel--main-clinic {
+  padding-bottom: 0
+}
 .clinic-time__or {
   font-family: 'OpenSans', sans-serif;
   font-size: 14px;
@@ -14011,21 +14024,20 @@ p.doctor-popup__title {
   display: block;
   text-align: center;
 }
-
 .clinic-time__choise {
   display: inline-block;
-  width: 120px;
-  padding-top: 10px;
+  width: 90px;
+  //padding-top: 10px;
 }
 
 .clinic-time__willhelp {
   font-family: 'OpenSansBold', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   color: #00BE3E;
   display: block;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 10px;
 }
 
@@ -16010,6 +16022,16 @@ span.forum-page-current {
   text-align: center;
   background-color: #d64882;
 }
+.bonus__promo {
+  background-color: #6ca92a;
+  background-image: linear-gradient(to top, #6ca92a 0%, #a6d547 100%);
+  border: 1px solid #70ac2c;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: white;
+  white-space: nowrap;
+}
+
 .reg-user__note a {
   font-family: 'PTSansItalic', sans-serif;
   font-weight: 100;
@@ -16607,7 +16629,7 @@ span.forum-page-current {
 .maintitle__bottom {
   text-align: center;
   color: #df4c40;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
   display: inline-block;
@@ -16615,7 +16637,7 @@ span.forum-page-current {
 
 .maintitle__bottom_last {
   color: #1a5a9c;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: initial;
@@ -16907,6 +16929,7 @@ span.forum-page-current {
 
 .st-last .doc-more {
   margin-right: 20px;
+  text-align: center
 }
 
 .st-last .doc-more a {
@@ -16919,6 +16942,9 @@ span.forum-page-current {
   color: #fff;
   font-size: 14px;
   font-weight: normal;
+  display: inline-block;
+  width: auto
+  padding: 10px 20px
 }
 
 .st-main__wrap .bx-controls.bx-has-pager.bx-has-controls-direction {
@@ -16954,15 +16980,7 @@ span.forum-page-current {
   display: none;
 }
 
-.bonus__promo {
-  background-color: #6ca92a;
-  background-image: linear-gradient(to top, #6ca92a 0%, #a6d547 100%);
-  border: 1px solid #70ac2c;
-  border-radius: 5px;
-  padding: 5px 15px;
-  color: white;
-  white-space: nowrap;
-}
+
 
 .bonus__form {
   /*padding: 20px 0;*/
@@ -17147,7 +17165,7 @@ strong, b {
 .clinics__wrapper {
   border: 1px solid #ececec;
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
-  padding-top: 30px;
+  //padding-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -17281,6 +17299,10 @@ strong, b {
   max-height: 100px
 }
 
+.clinic__leftside-top .clinic-time {
+  padding-top: 20px
+}
+
 .clinic__leftside-center {
   text-align: center;
   height: 250px;
@@ -17375,6 +17397,7 @@ strong, b {
   float: right;
   display: inline-block;
   width: 48%
+  padding-top: 20px
 }
 
 .clinic-time-btn {
@@ -17649,6 +17672,7 @@ p.listDoc__note {
   &__wrapper
     position: relative
     font-size: 0
+
     &.clinics-new.clearfix
       padding-top: 0
   &-top__wrap
@@ -17762,5 +17786,276 @@ p.listDoc__note {
       text-transform: uppercase;
       text-decoration: underline;
       //font-family: 'PTSansBold', sans-serif;
-      font-family: "PT Sans";
+      font-family: "PT Sans", sans-serif;
       font-weight: 700;
+
+
+.headimg
+  width: 100%
+  margin-bottom: 40px
+  img
+    width: 100%
+
+.discount
+  &__row
+    text-align: center
+    margin-bottom: 10px
+  &__input
+    display: inline-block
+    text-align: center
+    width: 300px;
+    height: 50px;
+    background-color: #f8f8f8;
+    border: 2px solid #cad6de;
+    color: #8f8f8f;
+    font-size: 18px;
+    &--btn
+      background-color: #115c89;
+      color: #fff
+      font-family: 'OpenSans',sans-serif;
+      font-size: 18px;
+      width: 309px;
+
+.choose
+  width: 100%
+  background: url("/img/choose-bg.png") center top no-repeat
+  //width: 1120px;
+  height: 174px;
+  margin-top: 30px
+  padding-top: 65px
+  &__inner
+    margin: 0 auto
+    padding: 0 80px
+  &__btn
+    display: inline-block
+    vertical-align middle
+    text-align: center
+    font-family: 'PTSansItalic',arial,sans-serif;
+    &:first-child
+      margin-right: 159px
+    a
+      display: inline-block
+      color: white;
+      font-size: 24px;
+      width: 400px;
+      height: 60px;
+      line-height: 60px
+      background-image: linear-gradient(to top, #6ca92a 0%, #a6d547 100%);
+      border: 1px solid #70ac2c;
+      border-radius: 5px;
+
+.clinic-avatar__rating,
+.clinics__wrapper
+  .rating {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 85px;
+    height: 14px;
+    background: url(http://mrtdiagnostics.ru//img/star-rating.png) left top repeat-x;
+    vertical-align: baseline;
+  }
+  .rating-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: url(http://mrtdiagnostics.ru//img/star-rating.png) left bottom repeat-x;
+    -webkit-transition: width 0.2s;
+    -moz-transition: width 0.2s;
+    -ms-transition: width 0.2s;
+    -o-transition: width 0.2s;
+    transition: width 0.2s;
+  }
+
+.ratebox
+  position: relative
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  border: 1px solid gainsboro;
+  margin-top: 30px
+  *
+    box-sizing: border-box
+  &:before
+    content: '';
+    background: url(../img/place.png) left top no-repeat
+    display: block
+    width: 36px
+    height: 40px
+    position: absolute
+    top: -3px
+    left: 0
+  &__place
+    width: 36px
+    position: absolute
+    top: 0
+    left: 0
+    text-align: center
+    span
+      display: inline-block
+      color: white;
+      font-size: 14px;
+      line-height: 18px;
+  &__left
+    width: 185px;
+    display: inline-block
+  &__right
+    display: inline-block
+    vertical-align: top
+  &__bottom
+    border-top: 1px solid gainsboro;
+  .clinic-about__address
+    margin-left: 0
+    margin-top: 10px
+.about-wrap
+  padding: 25px
+  width: 500px;
+  height: 185px
+  display: inline-block
+  .clinic-about-text
+    line-height: 1.2em
+    height: 50px;
+    overflow: hidden;
+  .doc__price
+    margin-top: 20px
+
+.last-wrap
+  display: inline-block
+  width: 70px;
+  text-align: center
+  vertical-align: top
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  .clinic-avatar__review
+    float: none;
+    text-align: center
+    font-family: 'OpenSans',sans-serif;
+    margin-top: 10px
+    span
+      text-decoration: underline
+
+.top-rate
+  .mark
+    border: solid 3px #15a639;
+    color: #15a639;
+  .clinic-avatar__review
+    color: #15a639;
+.worst-rate
+  .mark
+    border: 3px solid #e74c3c;
+    color: #e74c3c;
+  .clinic-avatar__review
+    color: #e74c3c;
+
+.mark
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  vertical-align: top
+  span
+    //display: inline-block
+    font-size: 30px;
+    line-height: 65px;
+    font-family: 'OpenSansBold',sans-serif;
+.clinic-logo
+  display: inline-block
+  width: 185px;
+  height: 185px;
+  &--border
+    border-right: 1px solid gainsboro;
+  img
+    max-width: 100%;
+    display: inline-block
+    padding-top: 16%;
+.quality
+  display: inline-block
+  width: 185px;
+  border-right: 1px solid gainsboro;
+  &__list
+    text-align: right
+    &-item
+      font-family: 'OpenSansBold',sans-serif;
+      font-size: 14px;
+      width: 100%
+      span
+        font-family: 'OpenSansBold',sans-serif;
+        display: inline-block
+        margin-left: 5px
+      &--gray
+        padding: 15px
+        background-color: #f8f8f8;
+        border-top: 1px solid gainsboro;
+
+.photos
+  display: block
+  height: 150px;
+  float: right;
+  width: 673px;
+  overflow: hidden;
+  &__item
+    font-size: 0
+    margin: 0
+    padding: 0
+    float: left;
+    width: 33.3%
+    border-left: 1px solid gainsboro;
+    img
+      height: 150px
+      width: auto
+.green
+  color: #15a639;
+
+.best-filials
+  width: 100%
+  border-bottom: 1px solid gainsboro;
+  *
+    box-sizing: border-box
+  &__title
+    text-align: center
+    display: inline-block
+    width: 100%
+    background-color: #f6f6f6;
+    color: #282828;
+    font-family: 'OpenSansBold',sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    border-bottom: 1px solid gainsboro;
+    &--worst
+      background-color: #e74c3c;
+  &__list-item
+    //display: inline-block
+    float: left
+    width: 33.3%
+    text-align: right
+    border-left: 1px solid gainsboro;
+    &--worst
+      background-color: #e74c3c;
+    &-wrap
+      padding: 20px
+    &:last-child
+      border-right: 1px solid gainsboro;
+
+
+.ratemenu
+  width: 100%
+  background-color: #f6f6f6;
+  padding: 10px
+  border-bottom: 1px solid #f0f0f0;
+  &__title
+    display: inline-block
+    color: #e74c3c;
+    font-family: 'OpenSansBold',sans-serif;
+    font-size: 14px;
+    text-transform: uppercase
+  &__list
+    display: inline-block
+    &-item
+      padding-right: 5px;
+      display: inline-block
+      font-family: 'PTSansItalic',sans-serif;
+      border-right: 1px solid gainsboro;
+      &:last-child
+        border: none;

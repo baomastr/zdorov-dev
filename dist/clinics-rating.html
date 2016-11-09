@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Рейтинг клиник</title>
+	<script type="text/javascript" src="http://zdorov.online/js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://zdorov.online/css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="http://zdorov.online/css/jquery.fancybox.css">
+	<!--<link rel="stylesheet" type="text/css" href="styles/style.css">-->
+	<link rel="stylesheet" type="text/css" href="http://zdorov.online/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="http://zdorov.online/js/jquery.fancybox.pack.js"></script>
+	<meta name="viewport" content="width=1250">
+	<meta name="MobileOptimized" content="1250">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body clearfix">
+		<header>
+			<div class="clearfix">
+				<a href="http://zdorov.online/" class="header-logo">
+					<img src="img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<div class="header-search">
+					<form action="http://zdorov.online/search/">
+						<input type="search" name="q" placeholder="Например: Хронический геморрой" value="">
+						<input type="submit" value="">
+					</form>
+				</div>
+				<!--noindex-->
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="http://zdorov.online/auth/">Вход</a> / <a href="http://zdorov.online/reg/">Регистрация</a>
+					</div>
+				</div>
+				<!--/noindex-->
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list"><a href="http://zdorov.online/selftest/j/">Самодиагностика</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/articles/">Статьи</a>
+					</li><li class="main_menu-list"><a href="http://zdorov.online/clinics/">Клиники</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/vrach/">Врачи</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/bolezni/">Болезни</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/forum/">Форум</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/qa/">Вопросы врачу</a></li>
+
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>
+		<!-- end header-->
+		<main>
+			<div class="ratemenu">
+				<div class="ratemenu__title">
+					Рейтинги клиник:
+				</div>
+				<ul class="ratemenu__list">
+					<li class="ratemenu__list-item">
+						<a href="">10 лучших клиник Москвы</a>
+					</li>
+					<li class="ratemenu__list-item">
+						<a href="">10 худших клиник Москвы</a>
+					</li>
+				</ul>
+
+			</div>
+			<div class="crumbs">
+				<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="http://zdorov.online/">
+							<span itemprop="name">Главная</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<span itemprop="name">Болезни и их лечение</span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+			<div class=" left-side-library left-side">
+				<div class="ratebox">
+					<div class="ratebox__place">
+						<span>10</span>
+					</div>
+					<div class="ratebox__left">
+						<div class="clinic-logo clinic-logo--border">
+							<img src="http://zdorov.online/upload/iblock/6ba/6baa9ab24d1a22408fb5c87449d62437.png" alt="">
+						</div>
+
+					</div>
+					<div class="ratebox__right">
+						<div class="about-wrap">
+							<div class="clinic-about__content-caption">
+								<a href="">Многопрофильный медицинский центр "Дельта клиник"</a>
+							</div>
+							<p class="clinic-about-text">
+								ММЦ «Дельтаклиник» является обладателем Европейского знака качества!<br>
+								Дельтаклиник работает ежедневно с 8.00 до 21.00 ч. , без выходных и праздничных дней
+								ММЦ «Дельтаклиник» является обладателем Европейского знака качества!<br>
+								Дельтаклиник работает ежедневно с 8.00 до 21.00 ч. , без выходных и праздничных дней
+							</p>
+							<div class="doc__price" style='height:25px;'>
+								<div style='font-size:14px;font-weight:900;font-family:OpenSansBold,sans-serif;'>
+									<div style="float:left;">Цена приема: &nbsp;</span></div>
+									<div class="bg-grey" style='float:left;color:#115c89;'>
+										12225 руб.
+									</div>
+									<div style='float:left;margin-left:10px;color:#115c89;'>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="last-wrap top-rate">
+							<div class="mark mark--green">
+								<span class="mark__inner">10</span>
+							</div>
+							<div class="clinic-avatar__review">
+								<br> <span>3 отзыва</span>            </div>
+						</div>
+					</div>
+					<div class="ratebox__bottom">
+						<div class="quality">
+							<ul class="quality__list">
+								<li class="quality__list-item quality__list-item--gray">Цена/качество:<span class="green">10</span></li>
+								<li class="quality__list-item quality__list-item--gray">Врачи:<span class="green">9</span></li>
+								<li class="quality__list-item quality__list-item--gray">Чистота, сервис:<span class="green">9</span></li>
+							</ul>
+						</div>
+						<div class="photos clearfix">
+							<div class="photos__item">
+								<img src="http://zdorov.online/upload/resize_cache/iblock/cb4/411_255_2/cb481230f4fb2c6e0678d3f7b1d7f65b.jpg" alt="">
+							</div>
+							<div class="photos__item">
+								<img src="http://zdorov.online/upload/resize_cache/iblock/cb4/411_255_2/cb481230f4fb2c6e0678d3f7b1d7f65b.jpg" alt="">
+							</div>
+							<div class="photos__item">
+								<img src="http://zdorov.online/upload/resize_cache/iblock/cb4/411_255_2/cb481230f4fb2c6e0678d3f7b1d7f65b.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ratebox">
+					<div class="ratebox__place">
+						<span>100</span>
+					</div>
+					<div class="ratebox__left">
+						<div class="clinic-logo clinic-logo--border">
+							<img src="http://zdorov.online/upload/iblock/6ba/6baa9ab24d1a22408fb5c87449d62437.png" alt="">
+						</div>
+
+					</div>
+					<div class="ratebox__right">
+						<div class="about-wrap">
+							<div class="clinic-about__content-caption">
+								<a href="">Многопрофильный медицинский центр "Дельта клиник"</a>
+							</div>
+							<div class="clinic-about__address"><a target="_blank" href="/clinics/evropeyskiy-meditsinskiy-tsentr-ems-na-shchepkina/">г. Москва, ул. Щепкина, д. 35</a></div>
+						</div>
+						<div class="last-wrap worst-rate">
+							<div class="mark mark--green">
+								<span class="mark__inner">4</span>
+							</div>
+							<div class="clinic-avatar__review">
+								<br> <span>3 отзыва</span>            </div>
+						</div>
+					</div>
+				</div>
+				<div class="best-filials">
+					<div class="best-filials__list clearfix">
+						<div class="best-filials__list-item clearfix">
+							<span class="best-filials__title">Лучшие филиалы</span>
+							<div class="best-filials__list-item-wrap">
+								<div class="clinic-about__content-caption">
+									<a href="">Многопрофильный медицинский центр "Дельта клиник"</a>
+								</div>
+								<ul class="quality__list">
+									<li class="quality__list-item">Врачи:<span class="green">9</span></li>
+									<li class="quality__list-item">Цена/качество:<span class="green">10</span></li>
+									<li class="quality__list-item">Чистота, сервис:<span class="green">9</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="best-filials__list-item clearfix">
+							<span class="best-filials__title best-filials__title--worst">Худший филиал</span>
+							<div class="best-filials__list-item-wrap">
+								<div class="clinic-about__content-caption">
+									<a href="">Многопрофильный медицинский центр "Дельта клиник"</a>
+								</div>
+								<ul class="quality__list">
+									<li class="quality__list-item">Врачи:<span>9</span></li>
+									<li class="quality__list-item">Цена/качество:<span>10</span></li>
+									<li class="quality__list-item">Чистота, сервис:<span>9</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="best-filials__list-item clearfix">
+							<span class="best-filials__title">Лучшие филиалы</span>
+							<div class="best-filials__list-item-wrap">
+								<div class="clinic-about__content-caption">
+									<a href="">Многопрофильный медицинский центр "Дельта клиник"</a>
+								</div>
+								<ul class="quality__list">
+									<li class="quality__list-item">Врачи:<span class="green">9</span></li>
+									<li class="quality__list-item">Цена/качество:<span class="green">10</span></li>
+									<li class="quality__list-item">Чистота, сервис:<span class="green">9</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ratebox">
+					<div class="ratebox__place">
+						<span>100</span>
+					</div>
+					<div class="ratebox__left">
+						<div class="clinic-logo">
+							<img src="http://zdorov.online/upload/iblock/6ba/6baa9ab24d1a22408fb5c87449d62437.png" alt="">
+						</div>
+
+					</div>
+					<div class="ratebox__right">
+						<div class="about-wrap">
+							<div class="clinic-about__content-caption">
+								<a href="">Многопрофильный медицинский центр "Дельта клиник"</a>
+							</div>
+							<p class="clinic-about-text">
+								ММЦ «Дельтаклиник» является обладателем Европейского знака качества!<br>
+							</p>
+							<div class="doc__price" style='height:25px;'>
+								<div style='font-size:14px;font-weight:900;font-family:OpenSansBold,sans-serif;'>
+									<div style="float:left;">Цена приема: &nbsp;</span></div>
+									<div class="bg-grey" style='float:left;color:#115c89;'>
+										12225 руб.
+									</div>
+									<div style='float:left;margin-left:10px;color:#115c89;'>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="last-wrap worst-rate">
+							<div class="mark mark--green">
+								<span class="mark__inner">4</span>
+							</div>
+							<div class="clinic-avatar__review">
+								<br> <span>3 отзыва</span>            </div>
+						</div>
+					</div>
+				</div>
+				<div class="best-filials">
+					<span class="best-filials__title">Лучшие филиалы</span>
+					<div class="best-filials__list clearfix">
+						<div class="best-filials__list-item clearfix">
+							<div class="best-filials__list-item-wrap">
+								<div class="clinic-about__content-caption">
+									<a href="">Многопрофильный медицинский центр "Дельта клиник"</a>
+								</div>
+								<ul class="quality__list">
+									<li class="quality__list-item">Врачи:<span class="green">9</span></li>
+									<li class="quality__list-item">Цена/качество:<span class="green">10</span></li>
+									<li class="quality__list-item">Чистота, сервис:<span class="green">9</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="best-filials__list-item clearfix">
+							<div class="best-filials__list-item-wrap">
+								<div class="clinic-about__content-caption">
+									<a href="">Многопрофильный медицинский центр "Дельта клиник"</a>
+								</div>
+								<ul class="quality__list">
+									<li class="quality__list-item">Врачи:<span class="green">9</span></li>
+									<li class="quality__list-item">Цена/качество:<span class="green">10</span></li>
+									<li class="quality__list-item">Чистота, сервис:<span class="green">9</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="best-filials__list-item clearfix">
+							<div class="best-filials__list-item-wrap">
+								<div class="clinic-about__content-caption">
+									<a href="">Многопрофильный медицинский центр "Дельта клиник"</a>
+								</div>
+								<ul class="quality__list">
+									<li class="quality__list-item">Врачи:<span class="green">9</span></li>
+									<li class="quality__list-item">Цена/качество:<span class="green">10</span></li>
+									<li class="quality__list-item">Чистота, сервис:<span class="green">9</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--right sidebar-->
+			<div class="right-sidebar clearfix">
+				<div style="display: none;">
+				</div>
+
+				﻿
+
+
+
+
+
+				<div id="rdocs">
+
+					<article class="list-right-sb-search">
+						<div class="list-right-sb-search--wrap">
+							<div class="list-right-sb-search__title">Специальности</div>
+						</div>
+						<ul style="padding-bottom: 15px;">
+							<li><a href="http://zdorov.online/vrach/akusher/">Акушер</a></li>
+							<li><a href="http://zdorov.online/vrach/akusher-ginekolog/">Акушер - гинеколог</a></li>
+							<li><a href="http://zdorov.online/vrach/algolog/">Алголог</a></li>
+							<li><a href="http://zdorov.online/vrach/allergolog/">Аллерголог</a></li>
+							<li><a href="http://zdorov.online/vrach/allergolog-immunolog/">Аллерголог-иммунолог</a></li>
+							<li><a href="http://zdorov.online/vrach/angiolog/">Ангиолог</a></li>
+							<li><a href="http://zdorov.online/vrach/androlog/">Андролог</a></li>
+							<li><a href="http://zdorov.online/vrach/bakteriolog/">Бактериолог</a></li>
+							<li><a href="http://zdorov.online/vrach/venerolog/">Венеролог</a></li>
+							<li><a href="http://zdorov.online/vrach/vertebrolog/">Вертебролог</a></li>
+							<li><a href="http://zdorov.online/vrach/virusolog-immunolog/">Вирусолог-иммунолог</a></li>
+							<li><a href="http://zdorov.online/vrach/lfk/">Врач ЛФК</a></li>
+							<li><a href="http://zdorov.online/vrach/gastroenterolog/">Гастроэнтеролог</a></li>
+							<li><a href="http://zdorov.online/vrach/gematolog/">Гематолог</a></li>
+							<li><a href="http://zdorov.online/vrach/genetik/">Генетик</a></li>
+							<li><a href="http://zdorov.online/vrach/gepatolog/">Гепатолог</a></li>
+							<li><a href="http://zdorov.online/vrach/ginekolog/">Гинеколог</a></li>
+							<li><a href="http://zdorov.online/vrach/girudolog/">Гирудотерапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/gomeopat/">Гомеопат</a></li>
+							<li><a href="http://zdorov.online/vrach/dermatovenerolog/">Дерматовенеролог</a></li>
+							<li><a href="http://zdorov.online/vrach/dermatolog/">Дерматолог</a></li>
+							<li><a href="http://zdorov.online/vrach/dermatolog-venerolog/">Дерматолог-венеролог</a></li>
+							<li><a href="http://zdorov.online/vrach/kosmetolog-dermatolog/">Дерматолог-косметолог</a>
+							</li>
+							<li><a href="http://zdorov.online/vrach/diabetolog/">Диабетолог</a></li>
+							<li><a href="http://zdorov.online/vrach/dietolog/">Диетолог</a></li>
+							<li><a href="http://zdorov.online/vrach/immunolog/">Иммунолог</a></li>
+							<li><a href="http://zdorov.online/vrach/infekcionist/">Инфекционист</a></li>
+							<li><a href="http://zdorov.online/vrach/kardiolog/">Кардиолог</a></li>
+							<li><a href="http://zdorov.online/vrach/kardiohirurg/">Кардиохирург</a></li>
+							<li><a href="http://zdorov.online/vrach/kosmetolog/">Косметолог</a></li>
+							<li><a href="http://zdorov.online/vrach/lor-otolaringolog/">ЛОР</a></li>
+							<li><a href="http://zdorov.online/vrach/logoped/">Логопед</a></li>
+							<li><a href="http://zdorov.online/vrach/mammolog/">Маммолог</a></li>
+							<li><a href="http://zdorov.online/vrach/manualnyy-terapevt/">Мануальный терапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/massazhist/">Массажист</a></li>
+							<li><a href="http://zdorov.online/vrach/narkolog/">Нарколог</a></li>
+							<li><a href="http://zdorov.online/vrach/nevrolog/">Невролог</a></li>
+							<li><a href="http://zdorov.online/vrach/neyrohirurg/">Нейрохирург</a></li>
+							<li><a href="http://zdorov.online/vrach/neonatolog/">Неонатолог</a></li>
+							<li><a href="http://zdorov.online/vrach/nefrolog/">Нефролог</a></li>
+							<li><a href="http://zdorov.online/vrach/onkodermatolog/">Онкодерматолог</a></li>
+							<li><a href="http://zdorov.online/vrach/onkolog/">Онколог</a></li>
+							<li><a href="http://zdorov.online/vrach/onkolog-mammolog/">Онколог маммолог</a></li>
+							<li><a href="http://zdorov.online/vrach/ortoped/">Ортопед</a></li>
+							<li><a href="http://zdorov.online/vrach/osteopat/">Остеопат</a></li>
+							<li><a href="http://zdorov.online/vrach/otolaringolog/">Отоларинголог</a></li>
+							<li><a href="http://zdorov.online/vrach/oftalmolog/">Офтальмолог</a></li>
+							<li><a href="http://zdorov.online/vrach/parodontolog/">Пародонтолог</a></li>
+							<li><a href="http://zdorov.online/vrach/pediatr/">Педиатр</a></li>
+							<li><a href="http://zdorov.online/vrach/plasticheskiy-hirurg/">Пластический хирург</a></li>
+							<li><a href="http://zdorov.online/vrach/proktolog/">Проктолог</a></li>
+							<li><a href="http://zdorov.online/vrach/psikhiatr/">Психиатр</a></li>
+							<li><a href="http://zdorov.online/vrach/psikholog/">Психолог</a></li>
+							<li><a href="http://zdorov.online/vrach/psikhoterapevt/">Психотерапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/pulmonolog/">Пульмонолог</a></li>
+							<li><a href="http://zdorov.online/vrach/revmatolog/">Ревматолог</a></li>
+							<li><a href="http://zdorov.online/vrach/refleksoterapevt/">Рефлексотерапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/seksolog/">Сексолог</a></li>
+							<li><a href="http://zdorov.online/vrach/somnolog/">Сомнолог</a></li>
+							<li><a href="http://zdorov.online/vrach/sosudistii-hirurg/">Сосудистый хирург</a></li>
+							<li><a href="http://zdorov.online/vrach/stomatolog/">Стоматолог</a></li>
+							<li><a href="http://zdorov.online/vrach/stomatolog-ortodont/">Стоматолог-ортодонт</a></li>
+							<li><a href="http://zdorov.online/vrach/stomatolog-terapevt/">Стоматолог-терапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/stomatolog-hirurg/">Стоматолог-хирург</a></li>
+							<li><a href="http://zdorov.online/vrach/surdolog/">Сурдолог</a></li>
+							<li><a href="http://zdorov.online/vrach/terapevt/">Терапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/travmatolog/">Травматолог</a></li>
+							<li><a href="http://zdorov.online/vrach/travmatolog-ortoped/">Травматолог-ортопед</a></li>
+							<li><a href="http://zdorov.online/vrach/transfuziolog/">Трансфузиолог</a></li>
+							<li><a href="http://zdorov.online/vrach/trikholog/">Трихолог</a></li>
+							<li><a href="http://zdorov.online/vrach/urolog/">Уролог</a></li>
+							<li><a href="http://zdorov.online/vrach/urolog-androlog/">Уролог-андролог</a></li>
+							<li><a href="http://zdorov.online/vrach/fizioterapevt/">Физиотерапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/flebolog/">Флеболог</a></li>
+							<li><a href="http://zdorov.online/vrach/ftiziator/">Фтизиатр</a></li>
+							<li><a href="http://zdorov.online/vrach/hirurg/">Хирург</a></li>
+							<li><a href="http://zdorov.online/vrach/hirurg-proktolog/">Хирург проктолог</a></li>
+							<li><a href="http://zdorov.online/vrach/hirurg-flebolog/">Хирург флеболог</a></li>
+							<li><a href="http://zdorov.online/vrach/endokrinolog/">Эндокринолог</a></li>
+						</ul>
+					</article>
+				</div>
+				<article class="about">
+					<div class="about__wrap">
+						<section class="about_contents">
+							<div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+							<ul>
+								<li class="about_contents--pills">
+									<a href="http://zdorov.online/bolezni/"><span>Более 400 болезней</span>
+										Причины, проявления, лечение и профилактика</a></li>
+								<li class="about_contents--clinic">
+									<a href="http://zdorov.online/clinics/"><span>Рейтинг клиник</span>
+										Достоверная информация о качестве лечения на основе посещения клиник</a></li>
+								<li class="about_contents--node">
+									<a href="http://zdorov.online/vrach/"><span>Запись к врачу</span>
+										Очень легко к нужному врачу</a></li>
+								<li class="about_contents--question">
+									<a href="http://zdorov.online/qa/"><span>Задать вопрос</span>
+										Бесплатные консультации врачей</a></li>
+							</ul>
+						</section>
+					</div>
+				</article>
+				<!--<div style="width:240px;">
+					<div style="margin-top:20px;">
+						&lt;!&ndash;AdFox START&ndash;&gt;
+						&lt;!&ndash;il7pro&ndash;&gt;
+						&lt;!&ndash;Площадка: zdorov.online / * / *&ndash;&gt;
+						&lt;!&ndash;Тип баннера: 240x200 баннер справа&ndash;&gt;
+						&lt;!&ndash;Расположение: <середина страницы>&ndash;&gt;
+						&lt;!&ndash; ________________________AdFox Asynchronous code START__________________________ &ndash;&gt;
+						<script type="text/javascript">
+							&lt;!&ndash;
+							if (typeof(pr) == 'undefined') {
+								var pr = Math.floor(Math.random() * 4294967295) + 1;
+							}
+							if (typeof(document.referrer) != 'undefined') {
+								if (typeof(afReferrer) == 'undefined') {
+									afReferrer = encodeURIComponent(document.referrer);
+								}
+							} else {
+								afReferrer = '';
+							}
+							var addate = new Date();
+
+
+							var dl = encodeURIComponent(document.location);
+							var pr1 = Math.floor(Math.random() * 4294967295) + 1;
+
+							document.write('<div id="AdFox_banner_' + pr1 + '"><\/div>');
+							document.write('<div style="visibility:hidden; position:absolute;"><iframe id="AdFox_iframe_' + pr1 + '" width=1 height=1 marginwidth=0 marginheight=0 scrolling=no frameborder=0><\/iframe><\/div>');
+
+							AdFox_getCodeScript(1, pr1, '//ads.adfox.ru/249601/prepareCode?pp=h&amp;ps=citq&amp;p2=fkpj&amp;pct=a&amp;plp=a&amp;pli=a&amp;pop=a&amp;pr=' + pr + '&amp;pt=b&amp;pd=' + addate.getDate() + '&amp;pw=' + addate.getDay() + '&amp;pv=' + addate.getHours() + '&amp;prr=' + afReferrer + '&amp;puid1=&amp;puid2=&amp;puid3=&amp;puid4=&amp;puid5=&amp;puid6=&amp;puid7=&amp;puid8=&amp;puid9=&amp;puid10=&amp;puid11=&amp;puid12=&amp;puid13=&amp;puid14=&amp;puid15=&amp;puid16=&amp;puid17=&amp;puid18=&amp;puid19=&amp;puid20=&amp;puid21=&amp;puid22=&amp;puid23=&amp;puid24=&amp;puid25=&amp;puid26=&amp;puid27=&amp;puid28=&amp;puid29=&amp;puid30=&amp;puid31=&amp;puid32=&amp;puid33=&amp;puid34=&amp;puid35=&amp;puid36=&amp;puid37=&amp;puid38=&amp;puid39=&amp;puid40=&amp;puid41=&amp;puid42=&amp;puid43=&amp;puid44=&amp;puid45=&amp;puid46=&amp;puid47=&amp;puid48=&amp;puid49=&amp;puid50=&amp;puid51=&amp;puid52=&amp;puid53=&amp;puid54=&amp;puid55=&amp;puid56=&amp;puid57=&amp;puid58=&amp;puid59=&amp;puid60=&amp;puid61=&amp;puid62=&amp;puid63=&amp;dl=' + dl + '&amp;pr1=' + pr1);
+							// &ndash;&gt;
+						</script>
+						<div id="AdFox_banner_3366613031"></div>
+						<div style="visibility:hidden; position:absolute;">
+							<iframe id="AdFox_iframe_3366613031" width="1" height="1" marginwidth="0" marginheight="0"
+									scrolling="no" frameborder="0"
+									src="./Болезни и их лечение_files/saved_resource.html"></iframe>
+						</div>
+						&lt;!&ndash; _________________________AdFox Asynchronous code END___________________________ &ndash;&gt;
+					</div>
+					<div style="margin-top:20px;">
+						&lt;!&ndash;AdFox START&ndash;&gt;
+						&lt;!&ndash;il7pro&ndash;&gt;
+						&lt;!&ndash;Площадка: zdorov.online / * / *&ndash;&gt;
+						&lt;!&ndash;Тип баннера: Тизер&ndash;&gt;
+						&lt;!&ndash;Расположение: <середина страницы>&ndash;&gt;
+						&lt;!&ndash; ________________________AdFox Asynchronous code START__________________________ &ndash;&gt;
+						<script type="text/javascript">
+							&lt;!&ndash;
+							if (typeof(pr) == 'undefined') {
+								var pr = Math.floor(Math.random() * 4294967295) + 1;
+							}
+							if (typeof(document.referrer) != 'undefined') {
+								if (typeof(afReferrer) == 'undefined') {
+									afReferrer = encodeURIComponent(document.referrer);
+								}
+							} else {
+								afReferrer = '';
+							}
+							var addate = new Date();
+
+
+							var dl = encodeURIComponent(document.location);
+							var pr1 = Math.floor(Math.random() * 4294967295) + 1;
+
+							document.write('<div id="AdFox_banner_' + pr1 + '"><\/div>');
+							document.write('<div style="visibility:hidden; position:absolute;"><iframe id="AdFox_iframe_' + pr1 + '" width=1 height=1 marginwidth=0 marginheight=0 scrolling=no frameborder=0><\/iframe><\/div>');
+
+							AdFox_getCodeScript(1, pr1, '//ads.adfox.ru/249601/prepareCode?pp=h&amp;ps=citq&amp;p2=flcz&amp;pct=b&amp;plp=a&amp;pli=a&amp;pop=a&amp;pr=' + pr + '&amp;pt=b&amp;pd=' + addate.getDate() + '&amp;pw=' + addate.getDay() + '&amp;pv=' + addate.getHours() + '&amp;prr=' + afReferrer + '&amp;puid1=&amp;puid2=&amp;puid3=&amp;puid4=&amp;puid5=&amp;puid6=&amp;puid7=&amp;puid8=&amp;puid9=&amp;puid10=&amp;puid11=&amp;puid12=&amp;puid13=&amp;puid14=&amp;puid15=&amp;puid16=&amp;puid17=&amp;puid18=&amp;puid19=&amp;puid20=&amp;puid21=&amp;puid22=&amp;puid23=&amp;puid24=&amp;puid25=&amp;puid26=&amp;puid27=&amp;puid28=&amp;puid29=&amp;puid30=&amp;puid31=&amp;puid32=&amp;puid33=&amp;puid34=&amp;puid35=&amp;puid36=&amp;puid37=&amp;puid38=&amp;puid39=&amp;puid40=&amp;puid41=&amp;puid42=&amp;puid43=&amp;puid44=&amp;puid45=&amp;puid46=&amp;puid47=&amp;puid48=&amp;puid49=&amp;puid50=&amp;puid51=&amp;puid52=&amp;puid53=&amp;puid54=&amp;puid55=&amp;puid56=&amp;puid57=&amp;puid58=&amp;puid59=&amp;puid60=&amp;puid61=&amp;puid62=&amp;puid63=&amp;dl=' + dl + '&amp;pr1=' + pr1);
+							// &ndash;&gt;
+						</script>
+						<div id="AdFox_banner_2468407016"></div>
+						<div style="visibility:hidden; position:absolute;">
+							<iframe id="AdFox_iframe_2468407016" width="1" height="1" marginwidth="0" marginheight="0"
+									scrolling="no" frameborder="0"
+									src="./Болезни и их лечение_files/saved_resource(1).html"></iframe>
+						</div>
+						&lt;!&ndash; _________________________AdFox Asynchronous code END___________________________ &ndash;&gt;
+					</div>
+					<div style="margin-top:20px;">
+						&lt;!&ndash;AdFox START&ndash;&gt;
+						&lt;!&ndash;il7pro&ndash;&gt;
+						&lt;!&ndash;Площадка: zdorov.online / * / *&ndash;&gt;
+						&lt;!&ndash;Тип баннера: Тизер&ndash;&gt;
+						&lt;!&ndash;Расположение: <середина страницы>&ndash;&gt;
+						&lt;!&ndash; ________________________AdFox Asynchronous code START__________________________ &ndash;&gt;
+						<script type="text/javascript">
+							&lt;!&ndash;
+							if (typeof(pr) == 'undefined') {
+								var pr = Math.floor(Math.random() * 4294967295) + 1;
+							}
+							if (typeof(document.referrer) != 'undefined') {
+								if (typeof(afReferrer) == 'undefined') {
+									afReferrer = encodeURIComponent(document.referrer);
+								}
+							} else {
+								afReferrer = '';
+							}
+							var addate = new Date();
+
+
+							var dl = encodeURIComponent(document.location);
+							var pr1 = Math.floor(Math.random() * 4294967295) + 1;
+
+							document.write('<div id="AdFox_banner_' + pr1 + '"><\/div>');
+							document.write('<div style="visibility:hidden; position:absolute;"><iframe id="AdFox_iframe_' + pr1 + '" width=1 height=1 marginwidth=0 marginheight=0 scrolling=no frameborder=0><\/iframe><\/div>');
+
+							AdFox_getCodeScript(1, pr1, '//ads.adfox.ru/249601/prepareCode?pp=h&amp;ps=citq&amp;p2=flcz&amp;pct=b&amp;plp=a&amp;pli=a&amp;pop=a&amp;pr=' + pr + '&amp;pt=b&amp;pd=' + addate.getDate() + '&amp;pw=' + addate.getDay() + '&amp;pv=' + addate.getHours() + '&amp;prr=' + afReferrer + '&amp;puid1=&amp;puid2=&amp;puid3=&amp;puid4=&amp;puid5=&amp;puid6=&amp;puid7=&amp;puid8=&amp;puid9=&amp;puid10=&amp;puid11=&amp;puid12=&amp;puid13=&amp;puid14=&amp;puid15=&amp;puid16=&amp;puid17=&amp;puid18=&amp;puid19=&amp;puid20=&amp;puid21=&amp;puid22=&amp;puid23=&amp;puid24=&amp;puid25=&amp;puid26=&amp;puid27=&amp;puid28=&amp;puid29=&amp;puid30=&amp;puid31=&amp;puid32=&amp;puid33=&amp;puid34=&amp;puid35=&amp;puid36=&amp;puid37=&amp;puid38=&amp;puid39=&amp;puid40=&amp;puid41=&amp;puid42=&amp;puid43=&amp;puid44=&amp;puid45=&amp;puid46=&amp;puid47=&amp;puid48=&amp;puid49=&amp;puid50=&amp;puid51=&amp;puid52=&amp;puid53=&amp;puid54=&amp;puid55=&amp;puid56=&amp;puid57=&amp;puid58=&amp;puid59=&amp;puid60=&amp;puid61=&amp;puid62=&amp;puid63=&amp;dl=' + dl + '&amp;pr1=' + pr1);
+							// &ndash;&gt;
+						</script>
+						<div id="AdFox_banner_525203105"></div>
+						<div style="visibility:hidden; position:absolute;">
+							<iframe id="AdFox_iframe_525203105" width="1" height="1" marginwidth="0" marginheight="0"
+									scrolling="no" frameborder="0"
+									src="./Болезни и их лечение_files/saved_resource(2).html"></iframe>
+						</div>
+						&lt;!&ndash; _________________________AdFox Asynchronous code END___________________________ &ndash;&gt;
+					</div>
+					<div style="margin-top:20px;">
+						&lt;!&ndash;AdFox START&ndash;&gt;
+						&lt;!&ndash;il7pro&ndash;&gt;
+						&lt;!&ndash;Площадка: zdorov.online / * / *&ndash;&gt;
+						&lt;!&ndash;Тип баннера: Тизер&ndash;&gt;
+						&lt;!&ndash;Расположение: <середина страницы>&ndash;&gt;
+						&lt;!&ndash; ________________________AdFox Asynchronous code START__________________________ &ndash;&gt;
+						<script type="text/javascript">
+							&lt;!&ndash;
+							if (typeof(pr) == 'undefined') {
+								var pr = Math.floor(Math.random() * 4294967295) + 1;
+							}
+							if (typeof(document.referrer) != 'undefined') {
+								if (typeof(afReferrer) == 'undefined') {
+									afReferrer = encodeURIComponent(document.referrer);
+								}
+							} else {
+								afReferrer = '';
+							}
+							var addate = new Date();
+
+
+							var dl = encodeURIComponent(document.location);
+							var pr1 = Math.floor(Math.random() * 4294967295) + 1;
+
+							document.write('<div id="AdFox_banner_' + pr1 + '"><\/div>');
+							document.write('<div style="visibility:hidden; position:absolute;"><iframe id="AdFox_iframe_' + pr1 + '" width=1 height=1 marginwidth=0 marginheight=0 scrolling=no frameborder=0><\/iframe><\/div>');
+
+							AdFox_getCodeScript(1, pr1, '//ads.adfox.ru/249601/prepareCode?pp=h&amp;ps=citq&amp;p2=flcz&amp;pct=b&amp;plp=a&amp;pli=a&amp;pop=a&amp;pr=' + pr + '&amp;pt=b&amp;pd=' + addate.getDate() + '&amp;pw=' + addate.getDay() + '&amp;pv=' + addate.getHours() + '&amp;prr=' + afReferrer + '&amp;puid1=&amp;puid2=&amp;puid3=&amp;puid4=&amp;puid5=&amp;puid6=&amp;puid7=&amp;puid8=&amp;puid9=&amp;puid10=&amp;puid11=&amp;puid12=&amp;puid13=&amp;puid14=&amp;puid15=&amp;puid16=&amp;puid17=&amp;puid18=&amp;puid19=&amp;puid20=&amp;puid21=&amp;puid22=&amp;puid23=&amp;puid24=&amp;puid25=&amp;puid26=&amp;puid27=&amp;puid28=&amp;puid29=&amp;puid30=&amp;puid31=&amp;puid32=&amp;puid33=&amp;puid34=&amp;puid35=&amp;puid36=&amp;puid37=&amp;puid38=&amp;puid39=&amp;puid40=&amp;puid41=&amp;puid42=&amp;puid43=&amp;puid44=&amp;puid45=&amp;puid46=&amp;puid47=&amp;puid48=&amp;puid49=&amp;puid50=&amp;puid51=&amp;puid52=&amp;puid53=&amp;puid54=&amp;puid55=&amp;puid56=&amp;puid57=&amp;puid58=&amp;puid59=&amp;puid60=&amp;puid61=&amp;puid62=&amp;puid63=&amp;dl=' + dl + '&amp;pr1=' + pr1);
+							// &ndash;&gt;
+						</script>
+						<div id="AdFox_banner_426264"></div>
+						<div style="visibility:hidden; position:absolute;">
+							<iframe id="AdFox_iframe_426264" width="1" height="1" marginwidth="0" marginheight="0"
+									scrolling="no" frameborder="0"
+									src="./Болезни и их лечение_files/saved_resource(3).html"></iframe>
+						</div>
+						&lt;!&ndash; _________________________AdFox Asynchronous code END___________________________ &ndash;&gt;
+					</div>
+				</div>-->
+				<div>
+
+				</div>
+			</div>
+		</main>
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<a href="http://zdorov.online/">
+					<img src="img/logo.png" title="Zdorov.online">
+				</a>
+			</div>
+			<div class="footer-content__article">
+				<a href="http://zdorov.online/articles/">Статьи</a>
+				<a href="http://zdorov.online/vrach/">Врачи </a>
+				<a href="http://zdorov.online/clinics/kliniki-po-diagnostike/">Диагностика</a>
+				<a href="http://zdorov.online/novosti/">Новости</a>
+				<div class="menu-footer__list">
+					<ul>
+						<li><a href="http://zdorov.online/adv/">Реклама на портале</a></li>
+						<li><a href="http://zdorov.online/dlya-klinik/">Для клиник</a></li>
+						<li><a href="http://zdorov.online/about/">О проекте</a></li>
+						<li><a href="http://zdorov.online/contacts/">Контакты</a></li>
+						<li><a href="http://zdorov.online/term/">Пользовательское соглашение</a></li>
+						<!--noindex--><li><a target="_blank" href="http://partners.zdorov.online/">Партнерская программа</a></li><!--/noindex-->
+					</ul>
+				</div>
+			</div>
+
+			<div class="menu-footer-document">
+
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2016. Все права защищены. <a href="http://zdorov.online/karta-saita/">Карта сайта</a></p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем.</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left:50px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="http://mk.ru/" target="_blank"><img src="img/logo-mk-index.png"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="http://zdorov.online/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://zdorov.online/js/jquery.fancybox.js"></script>
+	<script src="http://zdorov.online/js/app.min.js"></script>
+	<script src="http://zdorov.online/js/jquery.flexslider-min.js"></script>
+	<script src="http://zdorov.online/js/jquery.maskedinput.min.js"></script>
+
+
+</div>
+</body>
+</html>

@@ -1889,7 +1889,11 @@ li a {
   font-size: 12px;
   color: #6d6d6d;
 }
-
+.coast {
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin: 15px 0;
+}
 .banner__coast-table {
   padding-bottom: 20px;
 }
@@ -3512,7 +3516,7 @@ li a {
   padding: 10px 0;
   border: 3px solid #d64882;
   margin: 30px auto;
-  width: 250px;
+  width: 300px;
   white-space: nowrap;
   text-align: center;
   background-color: #ffffff;
@@ -7466,7 +7470,7 @@ p.js-height-img {
 .rating ul {
   display: table;
   background-color: #ffffff;
-  width: 96px;
+  //width: 96px;
   letter-spacing: -1em;
   text-align: left;
 }
@@ -11873,7 +11877,7 @@ p.js-height-img {
 
 .well-doc__item-name {
   overflow: hidden;
-  padding-top: 10px;
+  padding-top: 7px;
   float: right;
   width: 135px;
 }
@@ -11884,7 +11888,7 @@ p.js-height-img {
   font-weight: normal;
   color: #acacac;
   line-height: 1.2em;
-  padding-bottom: 5px;
+  padding-bottom: 0;
 }
 
 .well-doc__item-name p.well-doc__item-name-blue a {
@@ -17200,6 +17204,7 @@ strong, b {
 .clinics__wrapper .clinic-about__content {
   margin-bottom: 10px;
   padding-right: 20px;
+  padding-top: 20px
   width: auto
 }
 
@@ -17334,9 +17339,9 @@ strong, b {
   text-transform: uppercase;
 }
 
-.clinic__leftside-bottom .bottom-item--link:hover span {
-  text-decoration: underline
-}
+//.clinic__leftside-bottom .bottom-item--link:hover span {
+//  text-decoration: underline
+//}
 
 .clinic__leftside-bottom .rate {
   width: 28%;
@@ -17397,7 +17402,7 @@ strong, b {
   float: right;
   display: inline-block;
   width: 48%
-  padding-top: 20px
+  //padding-top: 20px
 }
 
 .clinic-time-btn {
@@ -17740,7 +17745,7 @@ p.listDoc__note {
 .clinic-services__inner
   .clinic-about
     border: 0;
-    width: 100%
+    width: 95%
     max-width: 100%
     &:nth-child(3)
       &:before
@@ -17773,6 +17778,7 @@ p.listDoc__note {
     display: inline-block
     vertical-align: top;
     float: right
+    padding-right: 20px
     img
       height: 100px
 
@@ -17852,7 +17858,7 @@ p.listDoc__note {
     display: inline-block;
     width: 85px;
     height: 14px;
-    background: url(http://mrtdiagnostics.ru//img/star-rating.png) left top repeat-x;
+    background: url(/img/star-rating.png) left top repeat-x;
     vertical-align: baseline;
   }
   .rating-value {
@@ -17861,7 +17867,7 @@ p.listDoc__note {
     left: 0;
     width: 0;
     height: 100%;
-    background: url(http://mrtdiagnostics.ru//img/star-rating.png) left bottom repeat-x;
+    background: url(/img/star-rating.png) left bottom repeat-x;
     -webkit-transition: width 0.2s;
     -moz-transition: width 0.2s;
     -ms-transition: width 0.2s;
@@ -17892,15 +17898,16 @@ p.listDoc__note {
     left: 0
     text-align: center
     span
-      display: inline-block
+      display: inline-block;
       color: white;
       font-size: 14px;
       line-height: 18px;
   &__left
-    width: 185px;
-    display: inline-block
+    //width: 185px;
+    height: 185px
+    //display: inline-block
   &__right
-    display: inline-block
+    //display: inline-block
     vertical-align: top
   &__bottom
     border-top: 1px solid gainsboro;
@@ -17912,6 +17919,9 @@ p.listDoc__note {
   width: 500px;
   height: 185px
   display: inline-block
+  position: absolute;
+  top: 0;
+  left: 190px;
   .clinic-about-text
     line-height: 1.2em
     height: 50px;
@@ -17921,13 +17931,14 @@ p.listDoc__note {
 
 .last-wrap
   display: inline-block
-  width: 70px;
+  width: 100px;
   text-align: center
   vertical-align: top
   position: absolute;
   right: 25px;
   top: 25px;
   .clinic-avatar__review
+    display: inline-block
     float: none;
     text-align: center
     font-family: 'OpenSans',sans-serif;
@@ -17941,6 +17952,7 @@ p.listDoc__note {
     color: #15a639;
   .clinic-avatar__review
     color: #15a639;
+
 .worst-rate
   .mark
     border: 3px solid #e74c3c;
@@ -17949,6 +17961,7 @@ p.listDoc__note {
     color: #e74c3c;
 
 .mark
+  display: inline-block
   width: 70px;
   height: 70px;
   -webkit-border-radius: 50%;
@@ -17964,12 +17977,17 @@ p.listDoc__note {
   display: inline-block
   width: 185px;
   height: 185px;
+  border-right: 1px solid gainsboro;
   &--border
-    border-right: 1px solid gainsboro;
+    //border-right: 1px solid gainsboro;
   img
-    max-width: 100%;
+    //width: 100%;
+    //height: 100%
     display: inline-block
-    padding-top: 16%;
+    width: 95%;
+    height: 95%;
+    margin: 3%;
+    //padding-top: 16%;
 .quality
   display: inline-block
   width: 185px;
@@ -18010,9 +18028,10 @@ p.listDoc__note {
 
 .best-filials
   width: 100%
-  border-bottom: 1px solid gainsboro;
-  *
-    box-sizing: border-box
+  //border-bottom: 1px solid gainsboro;
+  border-top: 1px solid gainsboro;
+  //*
+  //  box-sizing: border-box
   &__title
     text-align: center
     display: inline-block
@@ -18028,19 +18047,20 @@ p.listDoc__note {
   &__list-item
     //display: inline-block
     float: left
-    width: 33.3%
+    width: 286px;
     text-align: right
     border-left: 1px solid gainsboro;
     &--worst
       background-color: #e74c3c;
     &-wrap
       padding: 20px
-    &:last-child
-      border-right: 1px solid gainsboro;
-
+    &:first-child
+      border-left: none;
+  .clinic-about__content-caption
+    height: 80px;
 
 .ratemenu
-  width: 100%
+  width: 1108px
   background-color: #f6f6f6;
   padding: 10px
   border-bottom: 1px solid #f0f0f0;
@@ -18059,3 +18079,101 @@ p.listDoc__note {
       border-right: 1px solid gainsboro;
       &:last-child
         border: none;
+
+.fancy-form
+  width: 400px
+  text-align: center
+  input
+    width: 300px
+    height: 30px
+    margin: 10px
+    display: inline-block
+    font-size: 14px;
+    border: 1px solid #70ac2c;
+    &:focus,
+    &:active
+      border: 1px solid #70ac2c;
+    &[type="submit"]
+      box-sizing: content-box;
+      background-image: linear-gradient(to top, #6ca92a 0%, #a6d547 100%);
+      width: 310px;
+      color:white;
+    &[type="email"]
+      padding: 5px 10px
+
+#rate-preloader {
+  z-index: 999;
+  position: absolute;
+  width: 860px;
+  height: 100%;
+  background: #fff url('//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif') no-repeat center 100px;
+}
+
+.action-form
+  border: 2px solid #d9e7ee;
+  padding: 30px
+  position: relative
+  &__header
+    position: absolute
+    width: 189px;
+    height: 29px;
+    background-color: white;
+    text-align: center
+    top: -10px
+    left: calc(50% - 95px);
+    //&:after
+    //  display: inline-block
+    //  content: ''
+    //  width: 100%;
+    //  height: 2px
+    //  background-color: #cad2d8;
+    & > svg
+      position: absolute;
+      left: calc(50% - 72px);
+      top: 25px;
+      //path
+      //  background-color: #cad2d8;
+    //  polyline
+    //    background: #FF0000;
+    & > span
+      color: #0f77ad;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+  &__title
+    text-align: center
+    margin: 20px
+    &-text
+      font-size: 30px;
+      color: #51616b;
+      display: inline-block
+      &--sm
+        font-size: 18px;
+  &__row
+    margin-bottom: 30px
+    //& + .action-form__row
+    //  margin-top: 30px
+    position: relative
+    input
+      border none
+      border-bottom 2px solid #d9e7ee
+      width: 515px;
+      font-size: 18px;
+      line-height: 34px;
+      & + input
+        margin-left: 22px
+      &[type='submit']
+        background-color: #115c89;
+        color white
+        font-family: 'PTSansItalic', sans-serif;
+        border none
+        //height: 40px;
+        //line-height: 24px;
+  &__capcha
+    position: absolute
+    width: 99px;
+    height: 40px;
+    border: 2px solid #d9e7ee;
+    bottom: 62px;
+    left: 444px;
+    background-color: white;

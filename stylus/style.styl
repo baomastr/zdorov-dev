@@ -2284,11 +2284,59 @@ li a {
   padding: 0 50px;
 }
 
-.share__SN {
+.about__SN ul li a {
   display: inline-block;
-  text-align: right;
-  float: right;
+  width: 40px;
+  height: 40px;
+  background-color: #f5f5f5;
+  margin: 10px 5.83px 20px 0;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  border: none;
+  padding: 0;
 }
+.about__SN > ul {
+  white-space: nowrap;
+}
+.about__SN ul li:last-child a {
+  margin-right: 0;
+}
+.about__SN--vk a {
+  background: url("../img/sprite_index.png") no-repeat -1176px 7px;
+}
+.about__SN--f a {
+  background: url("../img/sprite_index.png") no-repeat -1241px 7px;
+}
+.about__SN--tw a {
+  background: url("../img/sprite_index.png") no-repeat -1301px 7px;
+}
+.about__SN--ok a {
+  background: url("../img/sprite_index.png") no-repeat -1365px 7px;
+}
+.about__SN--g a {
+  background: url("../img/sprite_index.png") no-repeat -1426px 7px;
+}
+.about__SN ul li a:hover {
+  opacity: 0.7;
+}
+.share {
+  display: inline-block;
+  vertical-align: top;
+}
+.share__SN
+  display: inline-block;
+  text-align: center;
+  //float: right;
+  //margin-top: 20px
+  .about__title
+    margin-bottom: 10px
+    color: #000;
+    white-space: nowrap;
+    font-family: OpenSans,sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
 
 .share__SN ul li a {
   display: inline-block;
@@ -2299,57 +2347,46 @@ li a {
   font-size: 0;
   border: none;
   padding: 0;
-  margin: 0 10px 0 0;
+  margin: 0;
   vertical-align: top;
   cursor: pointer;
 }
-
 .share__SN ul li:last-child a {
   margin-right: 0;
 }
-
 .share__SN--vk a {
   background: url("../img/sprite_index.png") no-repeat -1176px 7px;
 }
-
 .share__SN--f a {
   background: url("../img/sprite_index.png") no-repeat -1241px 7px;
 }
-
 .share__SN--tw a {
   background: url("../img/sprite_index.png") no-repeat -1301px 7px;
 }
-
 .share__SN--ok a {
   background: url("../img/sprite_index.png") no-repeat -1365px 7px;
 }
-
 .share__SN--g a {
   background: url("../img/sprite_index.png") no-repeat -1426px 7px;
 }
-
 .share__SN--Lj a {
   background: url("../img/sprite_index.png") no-repeat -429px 6px;
 }
-
 .share__SN--vk:hover a {
   background: url("../img/sprite_index.png") no-repeat -1209px -26px;
   background-color: #e74c3c;
   opacity: 1;
 }
-
 .share__SN--f:hover a {
   background: url("../img/sprite_index.png") no-repeat -1274px -26px;
   background-color: #e74c3c;
   opacity: 1;
 }
-
 .share__SN--tw:hover a {
   background: url("../img/sprite_index.png") no-repeat -1334px -26px;
   background-color: #e74c3c;
   opacity: 1;
 }
-
 .share__SN--ok:hover a {
   background: url("../img/sprite_index.png") no-repeat -1398px -26px;
   background-color: #e74c3c;
@@ -2357,7 +2394,6 @@ li a {
   color: transparent;
   font-size: 0;
 }
-
 .share__SN--g:hover a {
   background: url("../img/sprite_index.png") no-repeat -1459px -26px;
   background-color: #e74c3c;
@@ -2365,7 +2401,6 @@ li a {
   color: transparent;
   font-size: 0;
 }
-
 .share__SN--Lj:hover a {
   background: url("../img/sprite_index.png") no-repeat -477px 6px;
   background-color: #e74c3c;
@@ -2373,13 +2408,6 @@ li a {
   color: transparent;
   font-size: 0;
 }
-
-.share__SN ul li a {
-  background-color: transparent;
-  color: transparent;
-  font-size: 0;
-}
-
 .share__SN ul li a {
   background-color: transparent;
   color: transparent;
@@ -18184,3 +18212,101 @@ p.listDoc__note {
     bottom: 62px;
     left: 444px;
     background-color: white;
+
+/*.therapy
+  &__item
+    white-space nowrap
+    //display: block
+    //width: 100%
+    //position: relative
+    //height: 30px;
+    margin-bottom: 10px
+    width: 100%
+    !*display: table*!
+    &-title
+      !*width: 0*!
+      white-space: nowrap
+      //z-index: 1;
+      //background-color: #fff
+      //position: absolute
+      //left: 0
+      //bottom: -3px;
+      ////float: left
+      //display: inline-block
+      color: #115c89;
+      font-size: 26px;
+      !*display: table-cell*!
+    &-name
+      !*width: 0*!
+      white-space: nowrap
+      !*display: table-cell*!
+      //z-index: 1;
+      //background-color: #fff
+      //position: absolute
+      //left: 0
+      ////float: left
+      //padding-left: 30px
+      //display: inline-block
+      color: #115c89;
+      font-size: 22px
+    &-count
+      !*width: 0*!
+      white-space: nowrap
+      !*display: table-cell*!
+      //padding-top: 5px
+      //z-index: 1;
+      //background-color: #fff
+      //position: absolute
+      //right: 0
+      //display: inline-block
+      //float: right
+    &-dot
+      //display: table-cell
+      width: 100%
+      //border-bottom:1px dotted black
+//overflow:hidden
+      //&:after
+      //  content:'..............................................................................'
+      //position: absolute
+      //bottom: 0*/
+.therapy
+  &__item
+    display: block
+    overflow: hidden
+    position: relative
+    &--title
+      margin-bottom: 10px
+      margin-top: 10px
+    //& > *
+    //  inline-block
+    &-title
+      font-family: 'OpenSans',sans-serif;
+      line-height: 35px
+      float:left;
+      color: #115c89;
+      font-size: 26px;
+      padding-right: 5px
+    &-name
+      font-family: 'OpenSans',sans-serif;
+      line-height: 35px
+      padding-left: 30px
+      float:left;
+      color: #115c89;
+      font-size: 18px
+      padding-right: 5px
+    &-count
+      font-family: 'OpenSans',sans-serif;
+      position: absolute;
+      right: 0;
+      bottom: 5px;
+      background: #fff;
+      color gray
+      padding-left: 5px
+      font-size: 15px
+    &-dot
+      padding-top: 10px
+      overflow hidden
+      &:after
+        content:'. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ';
+        white-space:nowrap;
+        color: lightgray

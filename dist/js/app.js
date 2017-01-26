@@ -8914,12 +8914,12 @@ $(document).ready(function() {
  * 
  * Released on: October 10, 2015
  */
-(function () {
+/*(function () {
     'use strict';
     var $;
-    /*===========================
+    /!*===========================
     Swiper
-    ===========================*/
+    ===========================*!/
     var Swiper = function (container, params) {
         if (!(this instanceof Swiper)) return new Swiper(container, params);
 
@@ -9069,7 +9069,7 @@ $(document).ready(function() {
             paginationBulletMessage: 'Go to slide {{index}}',
             // Callbacks
             runCallbacksOnInit: true
-            /*
+            /!*
             Callbacks:
             onInit: function (swiper)
             onDestroy: function (swiper)
@@ -9095,7 +9095,7 @@ $(document).ready(function() {
             onAutoplayStop: function (swiper),
             onLazyImageLoad: function (swiper, slide, image)
             onLazyImageReady: function (swiper, slide, image)
-            */
+            *!/
         
         };
         var initialVirtualTranslate = params && params.virtualTranslate;
@@ -9122,9 +9122,9 @@ $(document).ready(function() {
         
         // Classname
         s.classNames = [];
-        /*=========================
+        /!*=========================
           Dom Library and plugins
-          ===========================*/
+          ===========================*!/
         if (typeof $ !== 'undefined' && typeof Dom7 !== 'undefined'){
             $ = Dom7;
         }  
@@ -9140,9 +9140,9 @@ $(document).ready(function() {
         // Export it to Swiper instance
         s.$ = $;
         
-        /*=========================
+        /!*=========================
           Preparation - Define Container, Wrapper and Pagination
-          ===========================*/
+          ===========================*!/
         s.container = $(container);
         if (s.container.length === 0) return;
         if (s.container.length > 1) {
@@ -9257,9 +9257,9 @@ $(document).ready(function() {
         // Velocity
         s.velocity = 0;
         
-        /*=========================
+        /!*=========================
           Locks, unlocks
-          ===========================*/
+          ===========================*!/
         s.lockSwipeToNext = function () {
             s.params.allowSwipeToNext = false;
         };
@@ -9279,24 +9279,24 @@ $(document).ready(function() {
             s.params.allowSwipeToNext = s.params.allowSwipeToPrev = true;
         };
         
-        /*=========================
+        /!*=========================
           Round helper
-          ===========================*/
+          ===========================*!/
         function round(a) {
             return Math.floor(a);
         }  
-        /*=========================
+        /!*=========================
           Set grab cursor
-          ===========================*/
+          ===========================*!/
         if (s.params.grabCursor) {
             s.container[0].style.cursor = 'move';
             s.container[0].style.cursor = '-webkit-grab';
             s.container[0].style.cursor = '-moz-grab';
             s.container[0].style.cursor = 'grab';
         }
-        /*=========================
+        /!*=========================
           Update on Images Ready
-          ===========================*/
+          ===========================*!/
         s.imagesToLoad = [];
         s.imagesLoaded = 0;
         
@@ -9339,9 +9339,9 @@ $(document).ready(function() {
             }
         };
         
-        /*=========================
+        /!*=========================
           Autoplay
-          ===========================*/
+          ===========================*!/
         s.autoplayTimeoutId = undefined;
         s.autoplaying = false;
         s.autoplayPaused = false;
@@ -9402,18 +9402,18 @@ $(document).ready(function() {
                 });
             }
         };
-        /*=========================
+        /!*=========================
           Min/Max Translate
-          ===========================*/
+          ===========================*!/
         s.minTranslate = function () {
             return (-s.snapGrid[0]);
         };
         s.maxTranslate = function () {
             return (-s.snapGrid[s.snapGrid.length - 1]);
         };
-        /*=========================
+        /!*=========================
           Slider/slides sizes
-          ===========================*/
+          ===========================*!/
         s.updateContainerSize = function () {
             var width, height;
             if (typeof s.params.width !== 'undefined') {
@@ -9614,9 +9614,9 @@ $(document).ready(function() {
             }
         };
         
-        /*=========================
+        /!*=========================
           Slider/slides progress
-          ===========================*/
+          ===========================*!/
         s.updateSlidesProgress = function (translate) {
             if (typeof translate === 'undefined') {
                 translate = s.translate || 0;
@@ -9706,9 +9706,9 @@ $(document).ready(function() {
             s.updateClasses();
         };
         
-        /*=========================
+        /!*=========================
           Classes
-          ===========================*/
+          ===========================*!/
         s.updateClasses = function () {
             s.slides.removeClass(s.params.slideActiveClass + ' ' + s.params.slideNextClass + ' ' + s.params.slidePrevClass);
             var activeSlide = s.slides.eq(s.activeIndex);
@@ -9771,9 +9771,9 @@ $(document).ready(function() {
             }
         };
         
-        /*=========================
+        /!*=========================
           Pagination
-          ===========================*/
+          ===========================*!/
         s.updatePagination = function () {
             if (!s.params.pagination) return;
             if (s.paginationContainer && s.paginationContainer.length > 0) {
@@ -9794,9 +9794,9 @@ $(document).ready(function() {
                 }
             }
         };
-        /*=========================
+        /!*=========================
           Common update method
-          ===========================*/
+          ===========================*!/
         s.update = function (updateTranslate) {
             s.updateContainerSize();
             s.updateSlidesSize();
@@ -9835,9 +9835,9 @@ $(document).ready(function() {
             }
         };
         
-        /*=========================
+        /!*=========================
           Resize Handler
-          ===========================*/
+          ===========================*!/
         s.onResize = function (forceUpdatePagination) {
             // Disable locks on resize
             var allowSwipeToPrev = s.params.allowSwipeToPrev;
@@ -9873,9 +9873,9 @@ $(document).ready(function() {
             s.params.allowSwipeToNext = allowSwipeToNext;
         };
         
-        /*=========================
+        /!*=========================
           Events
-          ===========================*/
+          ===========================*!/
         
         //Define Touch Events
         var desktopEvents = ['mousedown', 'mousemove', 'mouseup'];
@@ -9946,9 +9946,9 @@ $(document).ready(function() {
             s.initEvents(true);
         };
         
-        /*=========================
+        /!*=========================
           Handle Clicks
-          ===========================*/
+          ===========================*!/
         // Prevent Clicks
         s.allowClick = true;
         s.preventClicks = function (e) {
@@ -9978,9 +9978,9 @@ $(document).ready(function() {
             s.slideTo(index);
         };
         
-        /*=========================
+        /!*=========================
           Handle Touches
-          ===========================*/
+          ===========================*!/
         function findElementInEvent(e, selector) {
             var el = $(e.target);
             if (!el.is(selector)) {
@@ -10536,9 +10536,9 @@ $(document).ready(function() {
                 }
             }
         };
-        /*=========================
+        /!*=========================
           Transitions
-          ===========================*/
+          ===========================*!/
         s._slideTo = function (slideIndex, speed) {
             return s.slideTo(slideIndex, speed, true, true);
         };
@@ -10665,9 +10665,9 @@ $(document).ready(function() {
             return s.slideTo(s.activeIndex, speed, runCallbacks);
         };
         
-        /*=========================
+        /!*=========================
           Translate/transition helpers
-          ===========================*/
+          ===========================*!/
         s.setWrapperTransition = function (duration, byController) {
             s.wrapper.transition(duration);
             if (s.params.effect !== 'slide' && s.effects[s.params.effect]) {
@@ -10782,9 +10782,9 @@ $(document).ready(function() {
             return s.getTranslate(s.wrapper[0], axis);
         };
         
-        /*=========================
+        /!*=========================
           Observer
-          ===========================*/
+          ===========================*!/
         s.observers = [];
         function initObserver(target, options) {
             options = options || {};
@@ -10825,9 +10825,9 @@ $(document).ready(function() {
             }
             s.observers = [];
         };
-        /*=========================
+        /!*=========================
           Loop
-          ===========================*/
+          ===========================*!/
         // Create looped slides
         s.createLoop = function () {
             // Remove duplicated slides
@@ -10876,9 +10876,9 @@ $(document).ready(function() {
                 s.slideTo(newIndex, 0, false, true);
             }
         };
-        /*=========================
+        /!*=========================
           Append/Prepend/Remove Slides
-          ===========================*/
+          ===========================*!/
         s.appendSlide = function (slides) {
             if (s.params.loop) {
                 s.destroyLoop();
@@ -10966,9 +10966,9 @@ $(document).ready(function() {
         };
         
 
-        /*=========================
+        /!*=========================
           Effects
-          ===========================*/
+          ===========================*!/
         s.effects = {
             fade: {
                 setTranslate: function () {
@@ -11180,9 +11180,9 @@ $(document).ready(function() {
             }
         };
 
-        /*=========================
+        /!*=========================
           Images Lazy Loading
-          ===========================*/
+          ===========================*!/
         s.lazy = {
             initialImageLoaded: false,
             loadImageInSlide: function (index, loadInDuplicate) {
@@ -11292,9 +11292,9 @@ $(document).ready(function() {
         };
         
 
-        /*=========================
+        /!*=========================
           Scrollbar
-          ===========================*/
+          ===========================*!/
         s.scrollbar = {
             isTouched: false,
             setDragPosition: function (e) {
@@ -11471,9 +11471,9 @@ $(document).ready(function() {
             }
         };
 
-        /*=========================
+        /!*=========================
           Controller
-          ===========================*/
+          ===========================*!/
         s.controller = {
             LinearSpline: function (x, y) {
                 this.x = x;
@@ -11588,9 +11588,9 @@ $(document).ready(function() {
             }
         };
 
-        /*=========================
+        /!*=========================
           Hash Navigation
-          ===========================*/
+          ===========================*!/
         s.hashnav = {
             init: function () {
                 if (!s.params.hashnav) return;
@@ -11613,9 +11613,9 @@ $(document).ready(function() {
             }
         };
 
-        /*=========================
+        /!*=========================
           Keyboard Control
-          ===========================*/
+          ===========================*!/
         function handleKeyboard(e) {
             if (e.originalEvent) e = e.originalEvent; //jquery fix
             var kc = e.keyCode || e.charCode;
@@ -11689,9 +11689,9 @@ $(document).ready(function() {
         };
         
 
-        /*=========================
+        /!*=========================
           Mousewheel Control
-          ===========================*/
+          ===========================*!/
         s.mousewheel = {
             event: false,
             lastScrollTime: (new window.Date()).getTime()
@@ -11808,9 +11808,9 @@ $(document).ready(function() {
             return true;
         };
 
-        /*=========================
+        /!*=========================
           Parallax
-          ===========================*/
+          ===========================*!/
         function setParallaxTransform(el, progress) {
             el = $(el);
             var p, pX, pY;
@@ -11872,9 +11872,9 @@ $(document).ready(function() {
         };
         
 
-        /*=========================
+        /!*=========================
           Plugins API. Collect all and init all plugins
-          ===========================*/
+          ===========================*!/
         s._plugins = [];
         for (var plugin in s.plugins) {
             var p = s.plugins[plugin](s, s.params[plugin]);
@@ -11889,9 +11889,9 @@ $(document).ready(function() {
             }
         };
 
-        /*=========================
+        /!*=========================
           Events/Callbacks/Plugins Emitter
-          ===========================*/
+          ===========================*!/
         function normalizeEventName (eventName) {
             if (eventName.indexOf('on') !== 0) {
                 if (eventName[0] !== eventName[0].toUpperCase()) {
@@ -12043,9 +12043,9 @@ $(document).ready(function() {
         };
         
 
-        /*=========================
+        /!*=========================
           Init/Destroy
-          ===========================*/
+          ===========================*!/
         s.init = function () {
             if (s.params.loop) s.createLoop();
             s.updateContainerSize();
@@ -12184,9 +12184,9 @@ $(document).ready(function() {
     };
     
 
-    /*==================================================
+    /!*==================================================
         Prototype
-    ====================================================*/
+    ====================================================*!/
     Swiper.prototype = {
         isSafari: (function () {
             var ua = navigator.userAgent.toLowerCase();
@@ -12196,16 +12196,16 @@ $(document).ready(function() {
         isArray: function (arr) {
             return Object.prototype.toString.apply(arr) === '[object Array]';
         },
-        /*==================================================
+        /!*==================================================
         Browser
-        ====================================================*/
+        ====================================================*!/
         browser: {
             ie: window.navigator.pointerEnabled || window.navigator.msPointerEnabled,
             ieTouch: (window.navigator.msPointerEnabled && window.navigator.msMaxTouchPoints > 1) || (window.navigator.pointerEnabled && window.navigator.maxTouchPoints > 1)
         },
-        /*==================================================
+        /!*==================================================
         Devices
-        ====================================================*/
+        ====================================================*!/
         device: (function () {
             var ua = navigator.userAgent;
             var android = ua.match(/(Android);?[\s\/]+([\d.]+)?/);
@@ -12217,9 +12217,9 @@ $(document).ready(function() {
                 android: android
             };
         })(),
-        /*==================================================
+        /!*==================================================
         Feature Detection
-        ====================================================*/
+        ====================================================*!/
         support: {
             touch : (window.Modernizr && Modernizr.touch === true) || (function () {
                 return !!(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
@@ -12242,16 +12242,16 @@ $(document).ready(function() {
                 return ('MutationObserver' in window || 'WebkitMutationObserver' in window);
             })()
         },
-        /*==================================================
+        /!*==================================================
         Plugins
-        ====================================================*/
+        ====================================================*!/
         plugins: {}
     };
     
 
-    /*===========================
+    /!*===========================
      Get Dom libraries
-     ===========================*/
+     ===========================*!/
     var swiperDomPlugins = ['jQuery', 'Zepto', 'Dom7'];
     for (var i = 0; i < swiperDomPlugins.length; i++) {
     	if (window[swiperDomPlugins[i]]) {
@@ -12267,9 +12267,9 @@ $(document).ready(function() {
     	domLib = Dom7;
     }
 
-    /*===========================
+    /!*===========================
     Add .swiper plugin from Dom libraries
-    ===========================*/
+    ===========================*!/
     function addLibraryPlugin(lib) {
         lib.fn.swiper = function (params) {
             var firstInstance;
@@ -12287,7 +12287,7 @@ $(document).ready(function() {
                 var events = ['webkitTransitionEnd', 'transitionend', 'oTransitionEnd', 'MSTransitionEnd', 'msTransitionEnd'],
                     i, j, dom = this;
                 function fireCallBack(e) {
-                    /*jshint validthis:true */
+                    /!*jshint validthis:true *!/
                     if (e.target !== this) return;
                     callback.call(this, e);
                     for (i = 0; i < events.length; i++) {
@@ -12326,11 +12326,11 @@ $(document).ready(function() {
     }
 
     window.Swiper = Swiper;
-})();
+})();*/
 /*===========================
 Swiper AMD Export
 ===========================*/
-if (typeof(module) !== 'undefined')
+/*if (typeof(module) !== 'undefined')
 {
     module.exports = window.Swiper;
 }
@@ -12339,7 +12339,7 @@ else if (typeof define === 'function' && define.amd) {
         'use strict';
         return window.Swiper;
     });
-}
+}*/
 function autoWidthSelfTsest() {
     var widthST = 680;
     var bodyWidthST = $('html').width();
@@ -13606,7 +13606,7 @@ $(document).click( function(event){
 
 
 /* window width add slider*/
-function autoWidth() {
+/*function autoWidth() {
     var width = 1200;
     var bodyWidth = $('html').width();
     if (bodyWidth <= width) {
@@ -13621,7 +13621,7 @@ $(function () {
 });
 $(window).resize(function () {
     autoWidth();
-});
+});*/
 
 
 $(document).ready(function() {
@@ -14093,4 +14093,123 @@ $(document).ready(function() {
 
         }
     });
+});
+$(document).ready(function () {
+  $(".js-regaliya--light", this).each(function () {
+    var s = $(this).height();
+    s > 80 && ($(this).after('<p class="more-text"><span class="js-more-text">...</span></p>'), $(this).addClass("js-regaliya-heght"), $("p.more-text").on("click", function (s) {
+      $(this).siblings("span").removeClass("js-regaliya-heght"), $(this).remove()
+    }))
+  })
+});
+
+/*var swiper = new Swiper('.swiper-container', {
+  scrollbar: '.swiper-scrollbar',
+  scrollbarHide: false,
+  slidesPerView: 'auto',
+  centeredSlides: false,
+  grabCursor: false,
+  loop: false
+});
+var swiperDoc = new Swiper('.swiperDoc', {
+  scrollbar: '.swiper-scrollbarDoc',
+  scrollbarHide: false,
+  slidesPerView: 'auto',
+  centeredSlides: false,
+  grabCursor: false,
+  loop: false
+});*/
+
+$('.select-qw').select2();
+
+$('.select-metro').select2();
+
+$('.select').select2();
+
+$(document).ready(function () {
+  $('.bxslider-expert').bxSlider({
+    auto: true,
+    speed: 1500
+  });
+});
+$('div.rating-js').rating();
+
+/*var swiper = new Swiper('.swipper-news-inner', {
+  pagination: '.news-inner-pagination',
+  paginationClickable: true,
+  slidesPerView: 2,
+  scrollbarHide: true,
+  centeredSlides: false,
+  grabCursor: false,
+  loop: true
+
+});*/
+$(document).ready(function () {
+  $('#patient-info').validate({
+    rules: {
+      password: {
+        rangelength: [4, 8]
+      },
+      confirm_password: {
+        equalTo: '#password'
+      }
+
+    },
+    messages: {
+      password: {
+        rangelength: "Пароль должен содержать от 4 до 8 символов"
+      },
+      confirm_password: {
+        required: "Подтвердите пароль",
+        equalTo: "Пароли не совпадают"
+      }
+    }
+  });
+});
+$(document).ready(function () {
+  $('#reg-user__form').validate({
+    rules: {
+      name: {
+        required: true
+      },
+      email: {
+        required: true
+      },
+      password: {
+        required: true,
+        rangelength: [4, 8]
+      },
+      confirm_password: {
+        equalTo: '#password'
+      }
+
+    },
+    messages: {
+      name: {
+        required: "Поле не заполнено"
+      },
+      email: {
+        required: "Поле не заполнено"
+      },
+      password: {
+        required: "Вы не ввели пароль",
+        rangelength: "Пароль должен содержать от 4 до 8 символов"
+      },
+      confirm_password: {
+        required: "Подтвердите пароль",
+        equalTo: "Пароли не совпадают"
+      }
+    }
+  });
+});
+$(document).ready(function () {
+  $('.bxslider-body').bxSlider({
+    mode: 'fade',
+    adaptiveHeight: true,
+    infiniteLoop: true
+  });
+  $('.bxslider-right').bxSlider({
+    auto: true,
+    speed: 1500
+  });
 });

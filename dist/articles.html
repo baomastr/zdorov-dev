@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Болезни и их лечение</title>
+	<script type="text/javascript" src="http://zdorov.online/js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://zdorov.online/css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="http://zdorov.online/css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script type="text/javascript" src="http://zdorov.online/js/jquery.fancybox.pack.js"></script>
+	<meta name="viewport" content="width=1250">
+	<meta name="MobileOptimized" content="1250">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body">
+		<header>
+			<div class="clearfix header-top">
+				<div class="header-top__item menu-burger header-top__btn visible-xs">
+					<a id="nav-icon3" class="visible-xs">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				<a href="/" class="header-logo header-top__item">
+					<img src="http://zdorov.online/img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<a class="header-top__item menu-search header-top__btn visible-xs">
+					<img src="mob/search.png" alt="">
+				</a>
+
+				<style>
+					.search_block {
+						position: relative;
+					}
+
+					.search_block .search_tips {
+						display: none;
+						position: absolute;
+						top: 50px;
+						left: 280px;
+						background-color: #fff;
+						width: 497px;
+						border: 1px solid #ccc;
+					'
+					}
+
+					.search_block .search_tips .tips {
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+
+					.search_block .search_tips .tips_kato {
+						padding: 4px 8px;
+						background-color: #87CEFA;
+						color: #fff;
+
+					}
+
+					.search_block .search_tips .tips:hover {
+						background-color: #ccc;
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+				</style>
+				<div class="search_block">
+					<div class="header-search">
+						<form action="/search/">
+							<input autocomplete="off" type="search" name="q" placeholder="Например: С какой стороны аппендицит у женщин?" value="">
+							<input type="submit" value="">
+						</form>
+					</div>
+				</div>
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="/auth/">Вход</a>
+						/
+						<a href="/reg/" class="go_to_reg">Регистрация</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list">
+						<a href="/selftest/j/">Самодиагностика</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/articles/">Статьи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/clinics/">Клиники</a>
+						<ul class="main-submenu">
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-lecheniyu/" class="main-submenu__link">
+									По лечению
+								</a>
+							</li>
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-diagnostike/" class="main-submenu__link">
+									По диагностике
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main_menu-list">
+						<a href="/vrach/">Врачи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/bolezni/">Болезни</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/forum/">Форум</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/qa/">Вопросы врачу</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>
+		<!-- end header-->
+		<main>
+			<div class="ratemenu">
+				<div class="ratemenu__title">
+					Рейтинги клиник:
+				</div>
+				<ul class="ratemenu__list">
+					<li class="ratemenu__list-item">
+						<a href="/clinics/reyting-khoroshikh-klinik/">10 лучших клиник Москвы</a>
+					</li>
+				</ul>
+			</div>
+			<div class="crumbs">
+				<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="/">
+							<span itemprop="name">Главная</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<span itemprop="name">Статьи</span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+			<div class=" left-side-library left-side">
+				<div class="note-list">
+					<div class="note__text library-article question__tabs-btn">
+						<div class="library__title">Статьи</div>
+						<div class="back-article">
+							<div class="qw-select">
+								<label>Раздел медицины</label>
+								<div class="select2-container select-qw" id="s2id_selectQw">
+									<a href="javascript:void(0)" class="select2-choice" tabindex="-1">
+										<span class="select2-chosen" id="select2-chosen-1">Выбрать раздел</span><abbr class="select2-search-choice-close"></abbr>
+										<span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a>
+									<label for="s2id_autogen1" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1" id="s2id_autogen1">
+									<div class="select2-drop select2-display-none select2-with-searchbox">
+										<div class="select2-search"><label for="s2id_autogen1_search" class="select2-offscreen"></label>
+											<input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-1" id="s2id_autogen1_search" placeholder="">
+										</div>
+										<ul class="select2-results" role="listbox" id="select2-results-1"></ul>
+									</div>
+								</div>
+								<select class="select-qw" id="selectQw" required="required" tabindex="-1" title="" style="display: none;">
+									<option value="">Выбрать раздел</option>
+									<option value="diabetologia">Диабетология</option>
+									<option value="psihoterapija">Психотерапия</option>
+									<option value="osteopatiya">Остеопатия</option>
+									<option value="endoskopiya">Эндоскопия</option>
+									<option value="gepatologiya">Гепатология</option>
+									<option value="ftiziatriya">Фтизиатрия</option>
+									<option value="refleksoterapia">Рефлексотерапия</option>
+									<option value="massaj">Массаж</option>
+									<option value="surdologija">Сурдология</option>
+									<option value="revmatologija">Ревматология</option>
+									<option value="lFK">ЛФК</option>
+									<option value="jendokrinologija">Эндокринология</option>
+									<option value="eko">Эко</option>
+									<option value="hirurgija">Хирургия</option>
+									<option value="flebologija">Флебология</option>
+									<option value="urologija">Урология</option>
+									<option value="trihologija">Трихология</option>
+									<option value="transfuziologija">Трансфузиология</option>
+									<option value="travmatologija">Травматология</option>
+									<option value="terapevticheskie-uslugi">Терапевтические услуги</option>
+									<option value="stomatologija">Стоматология</option>
+									<option value="somnologija">Сомнология</option>
+									<option value="seksologija">Сексология</option>
+									<option value="pulmonologija">Пульмонология</option>
+									<option value="psihologija">Психология</option>
+									<option value="psihiatrija">Психиатрия</option>
+									<option value="plasticheskaja-hirurgija">Пластическая хирургия</option>
+									<option value="pediatrija">Педиатрия</option>
+									<option value="parazitologija">Паразитология</option>
+									<option value="oftalmologija">Офтальмология</option>
+									<option value="otorinolaringologija">Оториноларингология</option>
+									<option value="ortopedija">Ортопедия</option>
+									<option value="onkologija">Онкология</option>
+									<option value="nefrologija">Нефрология</option>
+									<option value="neonatologija">Неонатология</option>
+									<option value="nejrohirurgija">Нейрохирургия</option>
+									<option value="nevrologija">Неврология</option>
+									<option value="narkologija">Наркология</option>
+									<option value="medicinskie-spravki">Медицинские справки</option>
+									<option value="mammologija">Маммология</option>
+									<option value="manualnaja-terapija">Мануальная терапия</option>
+									<option value="fizioterapija">Физиотерапия</option>
+									<option value="logopedija">Логопедия</option>
+									<option value="kosmetologija">Косметология</option>
+									<option value="koloproktologija">Колопроктология</option>
+									<option value="kardiohirurgija">Кардиохирургия</option>
+									<option value="kardiologija">Кардиология</option>
+									<option value="infekcionisty">Инфектология</option>
+									<option value="immunologija">Иммунология</option>
+									<option value="dietologija">Диетология</option>
+									<option value="diagnostika">Диагностика</option>
+									<option value="defektologija">Дефектология</option>
+									<option value="dermatologija">Дерматология</option>
+									<option value="gomeopatija">Гомеопатия</option>
+									<option value="girudologija">Гирудотерапия</option>
+									<option value="ginekologija">Гинекология</option>
+									<option value="gerontologija">Геронтология</option>
+									<option value="genetika">Генетика</option>
+									<option value="gematologija">Гематология</option>
+									<option value="gastrojenterologija">Гастроэнтерология</option>
+									<option value="virusologija">Вирусология</option>
+									<option value="vertebrologija">Вертебрология</option>
+									<option value="venerologija">Венерология</option>
+									<option value="vakcinacija">Вакцинация</option>
+									<option value="balneolechenie">Бальнеолечение</option>
+									<option value="bakteriologija">Бактериология</option>
+									<option value="artrologija">Артрология</option>
+									<option value="andrologija">Андрология</option>
+									<option value="angiologija">Ангиология</option>
+									<option value="allergologija">Аллергология</option>
+								</select></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="statya ">
+					<ul>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/801/200_0_2/80133f432a13ffb371288f8285c184ba.jpg" alt="Отрицательный тест, нет месячных" title="Отрицательный тест, нет месячных">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/otritsatelnyy-test-net-mesyachnykh/"><p class="statya-item__title">Отрицательный тест,
+																													  нет месячных</p></a>
+								<span></span>
+								<p>Наиболее частой гинекологической проблемой
+								   является нарушение женского цикла, особенно
+								   отсутствие менструации — аменорея</p>
+								<a href="/articles/otritsatelnyy-test-net-mesyachnykh/#mc-container" class="statya-item__comment">Один
+																																  комментарий
+								</a>
+								<a href="/articles/otritsatelnyy-test-net-mesyachnykh/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/d07/200_0_2/d070f6766e7e15f2588dd0178fa6c982.jpg" alt="Отсутствие месячных" title="Отсутствие месячных">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/otsutstvie-mesyachnykh/"><p class="statya-item__title">Отсутствие месячных</p></a>
+								<span></span>
+								<p>Задержка менструации — очевидное проявление
+								   беременности на ранних сроках</p>
+								<a href="/articles/otsutstvie-mesyachnykh/#mc-container" class="statya-item__comment">Нет комментариев</a>
+								<a href="/articles/otsutstvie-mesyachnykh/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/963/200_0_2/9630f8e0abb37e71907276535741f1ea.jpg" alt="Болят ноги при месячных: что делать?" title="Болят ноги при месячных: что делать?">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/bolyat-nogi-pri-mesyachnykh-chto-delat/"><p class="statya-item__title">Болят ноги при
+																														  месячных: что
+																														  делать?</p></a>
+								<span></span>
+								<p>Болезненные ощущения в ногах испытывают
+								   многие люди</p>
+								<a href="/articles/bolyat-nogi-pri-mesyachnykh-chto-delat/#mc-container" class="statya-item__comment">Нет
+																																	  комментариев
+								</a>
+								<a href="/articles/bolyat-nogi-pri-mesyachnykh-chto-delat/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/c4d/200_0_2/c4de9585668797069616e37e57772796.jpg" alt="Болит поясница при месячных: что делать?" title="Болит поясница при месячных: что делать?">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/bolit-poyasnitsa-pri-mesyachnykh-chto-delat/"><p class="statya-item__title">Болит
+																															   поясница при
+																															   месячных: что
+																															   делать?</p>
+								</a>
+								<span></span>
+								<p>Боли в области поясницы во время месячных
+								   принято считать нормальным явлением</p>
+								<a href="/articles/bolit-poyasnitsa-pri-mesyachnykh-chto-delat/#mc-container" class="statya-item__comment">
+									Один комментарий
+								</a>
+								<a href="/articles/bolit-poyasnitsa-pri-mesyachnykh-chto-delat/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/9ad/200_0_2/9ad05f408adc1987c6be3dd86697635e.jpg" alt="Болит голова во время месячных: что делать?" title="Болит голова во время месячных: что делать?">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/bolit-golova-vo-vremya-mesyachnykh-chto-delat/"><p class="statya-item__title">Болит
+																																 голова во
+																																 время
+																																 месячных:
+																																 что
+																																 делать?</p>
+								</a>
+								<span></span>
+								<p>Практически каждая женщина сталкивается
+								   с рядом неприятных ощущений во время менструации</p>
+								<a href="/articles/bolit-golova-vo-vremya-mesyachnykh-chto-delat/#mc-container" class="statya-item__comment">
+									Один комментарий
+								</a>
+								<a href="/articles/bolit-golova-vo-vremya-mesyachnykh-chto-delat/" class="statya-item__btn-more">Подробнее
+								</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/eb7/200_0_2/eb724e486357833f1bdf94b461dcbbc6.jpg" alt="Болит грудь во время месячных: что делать?" title="Болит грудь во время месячных: что делать?">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/bolit-grud-vo-vremya-mesyachnykh-chto-delat/"><p class="statya-item__title">Болит грудь
+																															   во время
+																															   месячных: что
+																															   делать?</p>
+								</a>
+								<span></span>
+								<p>Многие представительницы прекрасного
+								   пола отмечают резкие изменения, происходящие
+								   в их организме перед наступлением менструации</p>
+								<a href="/articles/bolit-grud-vo-vremya-mesyachnykh-chto-delat/#mc-container" class="statya-item__comment">
+									Один комментарий
+								</a>
+								<a href="/articles/bolit-grud-vo-vremya-mesyachnykh-chto-delat/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/412/200_0_2/412e2624a91019f9fb7e44b7f37241c2.jpg" alt="После родов нет месячных: что делать?" title="После родов нет месячных: что делать?">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/posle-rodov-net-mesyachnykh-chto-delat/"><p class="statya-item__title">После родов нет
+																														  месячных: что
+																														  делать?</p></a>
+								<span></span>
+								<p>Беременность и дальнейшие роды — процессы,
+								   после которых жизнь женщины меняется кардинальным
+								   образом</p>
+								<a href="/articles/posle-rodov-net-mesyachnykh-chto-delat/#mc-container" class="statya-item__comment">Нет
+																																	  комментариев
+								</a>
+								<a href="/articles/posle-rodov-net-mesyachnykh-chto-delat/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/b01/200_0_2/b016d1ee3cdc0609d9fccdc5d9853665.jpeg" alt="Боли во время месячных" title="Боли во время месячных">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/boli-vo-vremya-mesyachnykh/"><p class="statya-item__title">Боли во время месячных</p></a>
+								<span></span>
+								<p>Менструации — это естественный процесс,
+								   который помогает женскому организму обновиться</p>
+								<a href="/articles/boli-vo-vremya-mesyachnykh/#mc-container" class="statya-item__comment">2 комментария</a>
+								<a href="/articles/boli-vo-vremya-mesyachnykh/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/d90/200_0_2/d900715e4dbe6aa08656cb4a55c5c6b5.jpg" alt="Нерегулярные месячные" title="Нерегулярные месячные">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/neregulyarnye-mesyachnye/"><p class="statya-item__title">Нерегулярные месячные</p></a>
+								<span></span>
+								<p>Проблема нерегулярных месячных знакома
+								   многим женщинам детородного возраста</p>
+								<a href="/articles/neregulyarnye-mesyachnye/#mc-container" class="statya-item__comment">Нет комментариев</a>
+								<a href="/articles/neregulyarnye-mesyachnye/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/b48/200_0_2/b48e953793c491f7f555c8cfa8539b79.jpg" alt="Кровянистые выделения после месячных" title="Кровянистые выделения после месячных">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/krovyanistye-vydeleniya-posle-mesyachnykh/"><p class="statya-item__title">Кровянистые
+																															 выделения после
+																															 месячных</p>
+								</a>
+								<span></span>
+								<p>Организм женщины устроен таким образом,
+								   что репродуктивная система находится в
+								   постоянном процессе самообновления</p>
+								<a href="/articles/krovyanistye-vydeleniya-posle-mesyachnykh/#mc-container" class="statya-item__comment">Нет
+																																		 комментариев
+								</a>
+								<a href="/articles/krovyanistye-vydeleniya-posle-mesyachnykh/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/3e0/200_0_2/3e0ebaa719906cec35b0e6b17f21725e.jpeg" alt="Коричневые выделения после месячных" title="Коричневые выделения после месячных">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/korichnevye-vydeleniya-posle-mesyachnykh/"><p class="statya-item__title">Коричневые
+																															выделения после
+																															месячных</p></a>
+								<span></span>
+								<p>Здоровье женщины напрямую связано с особенностями
+								   ее менструального цикла</p>
+								<a href="/articles/korichnevye-vydeleniya-posle-mesyachnykh/#mc-container" class="statya-item__comment">Нет
+																																		комментариев
+								</a>
+								<a href="/articles/korichnevye-vydeleniya-posle-mesyachnykh/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/6a3/200_0_2/6a3c41078610b938fd4b8d537bd7c610.jpg" alt="Прозрачные выделения перед месячными" title="Прозрачные выделения перед месячными">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/prozrachnye-vydeleniya-pered-mesyachnymi/"><p class="statya-item__title">Прозрачные
+																															выделения перед
+																															месячными</p>
+								</a>
+								<span></span>
+								<p>Вытекание слизистой жидкости из вагины
+								   в период менструации — это естественно</p>
+								<a href="/articles/prozrachnye-vydeleniya-pered-mesyachnymi/#mc-container" class="statya-item__comment">Нет
+																																		комментариев
+								</a>
+								<a href="/articles/prozrachnye-vydeleniya-pered-mesyachnymi/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/9fa/200_0_2/9fa57f430baa4abfac54ce1e49cd7666.jpg" alt="Коричневые выделения перед месячными" title="Коричневые выделения перед месячными">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/korichnevye-vydeleniya-pered-mesyachnymi/"><p class="statya-item__title">Коричневые
+																															выделения перед
+																															месячными</p>
+								</a>
+								<span></span>
+								<p>Устройство репродуктивной системы женского
+								   организма предполагает постоянное наличие
+								   секреторных веществ</p>
+								<a href="/articles/korichnevye-vydeleniya-pered-mesyachnymi/#mc-container" class="statya-item__comment">Нет
+																																		комментариев
+								</a>
+								<a href="/articles/korichnevye-vydeleniya-pered-mesyachnymi/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/039/200_0_2/0395658c2cefb42b339989d92fdea2a7.jpg" alt="Розовые выделения перед месячными" title="Розовые выделения перед месячными">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/rozovye-vydeleniya-pered-mesyachnymi/"><p class="statya-item__title">Розовые выделения
+																														перед месячными</p>
+								</a>
+								<span></span>
+								<p>При нормальной работе организма жидкость,
+								   вытекающая из влагалища женщины, имеет
+								   прозрачный либо беловатый оттенок</p>
+								<a href="/articles/rozovye-vydeleniya-pered-mesyachnymi/#mc-container" class="statya-item__comment">Нет
+																																	комментариев
+								</a>
+								<a href="/articles/rozovye-vydeleniya-pered-mesyachnymi/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/ed9/200_0_2/ed9707cf02616acaa4c784c5dd291fdb.jpg" alt="Белые выделения перед месячными" title="Белые выделения перед месячными">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/belye-vydeleniya-pered-mesyachnymi/"><p class="statya-item__title">Белые выделения перед
+																													  месячными</p></a>
+								<span></span>
+								<p>Для начала менструального цикла характерно
+								   выделение специфического секрета, который
+								   является нормой, если имеет прозрачный
+								   или полупрозрачный цвет, не имеет запаха</p>
+								<a href="/articles/belye-vydeleniya-pered-mesyachnymi/#mc-container" class="statya-item__comment">Нет
+																																  комментариев
+								</a>
+								<a href="/articles/belye-vydeleniya-pered-mesyachnymi/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/195/200_0_2/195f53e9d2fe48523a774c4fba4e58fd.jpg" alt="Желтые выделения перед месячными" title="Желтые выделения перед месячными">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/zheltye-vydeleniya-pered-mesyachnymi/"><p class="statya-item__title">Желтые выделения
+																														перед месячными</p>
+								</a>
+								<span></span>
+								<p>Критерием для оценки женского здоровья
+								   служит менструальный цикл, который должен
+								   быть регулярным и не очень болезненным</p>
+								<a href="/articles/zheltye-vydeleniya-pered-mesyachnymi/#mc-container" class="statya-item__comment">Нет
+																																	комментариев
+								</a>
+								<a href="/articles/zheltye-vydeleniya-pered-mesyachnymi/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/2a0/200_0_2/2a0f98f94b1fd47257c762b30f8289ed.jpg" alt="Выделения перед месячными" title="Выделения перед месячными">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/vydeleniya-pered-mesyachnymi/"><p class="statya-item__title">Выделения перед
+																												месячными</p></a>
+								<span></span>
+								<p>Менструальный цикл играет важную роль
+								   для женского здоровья и отвечает за нормальную
+								   работу репродуктивной системы</p>
+								<a href="/articles/vydeleniya-pered-mesyachnymi/#mc-container" class="statya-item__comment">Нет
+																															комментариев
+								</a>
+								<a href="/articles/vydeleniya-pered-mesyachnymi/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/3aa/200_0_2/3aa18fc8028a88379d3111f256a6f4e5.jpg" alt="Болит ухо, что делать?" title="Болит ухо, что делать?">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/bolit-ukho-chto-delat/"><p class="statya-item__title">Болит ухо, что делать?</p></a>
+								<span></span>
+								<p>Детей и взрослых время от времени беспокоят
+								   боли в ушах</p>
+								<a href="/articles/bolit-ukho-chto-delat/#mc-container" class="statya-item__comment">3 комментария</a>
+								<a href="/articles/bolit-ukho-chto-delat/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/409/200_0_2/4090d15c540c6d9ccf47370a4844d789.jpg" alt="Кровь из ушей" title="Кровь из ушей">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/krov-iz-ushey/"><p class="statya-item__title">Кровь из ушей</p></a>
+								<span></span>
+								<p>Любые выделения из ушей являются следствием
+								   наличия патологий в органах слуха</p>
+								<a href="/articles/krov-iz-ushey/#mc-container" class="statya-item__comment">Нет комментариев</a>
+								<a href="/articles/krov-iz-ushey/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/99c/200_0_2/99c1aaeb77fc9ecbdb99019f7a0af43c.jpg" alt="При простуде закладывает уши" title="При простуде закладывает уши">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/pri-prostude-zakladyvaet-ushi/"><p class="statya-item__title">При простуде закладывает
+																												 уши</p></a>
+								<span></span>
+								<p>Заложенность ушей, как правило, сопровождается
+								   тяжестью в голове и снижением остроты слуха</p>
+								<a href="/articles/pri-prostude-zakladyvaet-ushi/#mc-container" class="statya-item__comment">3 комментария
+								</a>
+								<a href="/articles/pri-prostude-zakladyvaet-ushi/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/d00/200_0_2/d00b4fcc903a00da8e5714ac0a9c88a1.jpg" alt="Болят уши и голова" title="Болят уши и голова">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/bolyat-ushi-i-golova/"><p class="statya-item__title">Болят уши и голова</p></a>
+								<span></span>
+								<p>Длительная головная боль и дискомфорт
+								   в ушах являются следствием нарушений работы
+								   функциональных систем организма</p>
+								<a href="/articles/bolyat-ushi-i-golova/#mc-container" class="statya-item__comment">Нет комментариев</a>
+								<a href="/articles/bolyat-ushi-i-golova/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/f4a/200_0_2/f4a691da4b25081073c87539aba266ea.jpg" alt="Шум в ушах и голове" title="Шум в ушах и голове">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/shum-v-ushakh-i-golove/"><p class="statya-item__title">Шум в ушах и голове</p></a>
+								<span></span>
+								<p>Сигнализировать о наличии патологий слуховой
+								   или эндокринной системы, сердца, сосудов
+								   или головного мозга может продолжительный
+								   шум в ушах и голове</p>
+								<a href="/articles/shum-v-ushakh-i-golove/#mc-container" class="statya-item__comment">3 комментария</a>
+								<a href="/articles/shum-v-ushakh-i-golove/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/f79/200_0_2/f79e4b794c9f209f39ab15a059410687.jpg" alt="Снижение слуха" title="Снижение слуха">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/snizhenie-slukha/"><p class="statya-item__title">Снижение слуха</p></a>
+								<span></span>
+								<p>Отит — далеко не единственное заболевание,
+								   которое вызывает проблемы с восприятием
+								   звуков</p>
+								<a href="/articles/snizhenie-slukha/#mc-container" class="statya-item__comment">Один комментарий</a>
+								<a href="/articles/snizhenie-slukha/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/79b/200_0_2/79bc68feb01dbe8198940e01a7dec40c.jpg" alt="Потеря слуха" title="Потеря слуха">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/poterya-slukha/"><p class="statya-item__title">Потеря слуха</p></a>
+								<span></span>
+								<p>Более 300 миллионов человек по всему миру
+								   сегодня страдают от инвалидизирующей потери
+								   слуха</p>
+								<a href="/articles/poterya-slukha/#mc-container" class="statya-item__comment">Нет комментариев</a>
+								<a href="/articles/poterya-slukha/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/ae6/200_0_2/ae6f7e8b6974a8db9eb508f1fca6148f.jpg" alt="Потеря слуха на одно ухо" title="Потеря слуха на одно ухо">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/poterya-slukha-na-odno-ukho/"><p class="statya-item__title">Потеря слуха на одно ухо</p>
+								</a>
+								<span></span>
+								<p>Заболевания, генетическая предрасположенность
+								   и пожилой возраст — главные причины, вызывающие
+								   проблемы со слухом</p>
+								<a href="/articles/poterya-slukha-na-odno-ukho/#mc-container" class="statya-item__comment">Нет
+																														   комментариев
+								</a>
+								<a href="/articles/poterya-slukha-na-odno-ukho/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/446/200_0_2/4466d6612b1b3679649ed0bac5ec32ca.jpg" alt="Грипп: закладывает уши" title="Грипп: закладывает уши">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/gripp-zakladyvaet-ushi/"><p class="statya-item__title">Грипп: закладывает уши</p></a>
+								<span></span>
+								<p>В связи с ослаблением иммунитета и развитием
+								   воспалительных процессов простудные заболевания
+								   или грипп могут дать осложнения на уши</p>
+								<a href="/articles/gripp-zakladyvaet-ushi/#mc-container" class="statya-item__comment">Один комментарий</a>
+								<a href="/articles/gripp-zakladyvaet-ushi/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/26b/200_0_2/26b6f3d489493b28675dfa9732be6d39.jpg" alt="Стреляет ухо, чем лечить?" title="Стреляет ухо, чем лечить?">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/strelyaet-ukho-chem-lechit/"><p class="statya-item__title">Стреляет ухо, чем лечить?</p>
+								</a>
+								<span></span>
+								<p>Боль в ушах сопровождает простудные и воспалительные
+								   процессы, инфекционные заболевания и многие
+								   другие отклонения в работе организма человека</p>
+								<a href="/articles/strelyaet-ukho-chem-lechit/#mc-container" class="statya-item__comment">Один комментарий
+								</a>
+								<a href="/articles/strelyaet-ukho-chem-lechit/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/023/200_0_2/0234b0994a1c1d5e139bbe8ef5dc3ff2.jpg" alt="Болит ухо и температура" title="Болит ухо и температура">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/bolit-ukho-i-temperatura/"><p class="statya-item__title">Болит ухо и температура</p></a>
+								<span></span>
+								<p>Основными причинами, из-за которых появляется
+								   боль в ушах, являются воспалительные и инфекционные
+								   заболевания органов слуха и соседних отделов,
+								   поражения нервной системы, опухолевые процессы,
+								   а также патологии сосудов</p>
+								<a href="/articles/bolit-ukho-i-temperatura/#mc-container" class="statya-item__comment">2 комментария</a>
+								<a href="/articles/bolit-ukho-i-temperatura/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/abf/200_0_2/abff85624a979ddd20607e220ef67a28.jpg" alt="Боль в висках и ушах" title="Боль в висках и ушах">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/bol-v-viskakh-i-ushakh/"><p class="statya-item__title">Боль в висках и ушах</p></a>
+								<span></span>
+								<p>Частая головная боль, локализирующаяся
+								   в висках, дискомфорт в ухе — явный признак
+								   наличия патологий, связанных с работой
+								   кровеносных сосудов</p>
+								<a href="/articles/bol-v-viskakh-i-ushakh/#mc-container" class="statya-item__comment">Нет комментариев</a>
+								<a href="/articles/bol-v-viskakh-i-ushakh/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="statya-item__img">
+								<img src="/upload/resize_cache/iblock/1a0/200_0_2/1a020abb62b25ffc37fc11ad79b46ef1.jpg" alt="Гной в ушах" title="Гной в ушах">
+							</div>
+							<div class="statya-item__text">
+								<a href="/articles/gnoy-v-ushakh/"><p class="statya-item__title">Гной в ушах</p></a>
+								<span></span>
+								<p>Носоглотка соединяется со средним ухом
+								   евстахиевой трубой, что позволяет регулировать
+								   и выравнивать внутреннее давление</p>
+								<a href="/articles/gnoy-v-ushakh/#mc-container" class="statya-item__comment">Нет комментариев</a>
+								<a href="/articles/gnoy-v-ushakh/" class="statya-item__btn-more">Подробнее</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--<div class="bx_pagination_bottom">-->
+
+				<!--	<div class="bx_pagination_section_one">-->
+				<!--		<div class="bx_pg_section pg_pagination_num">-->
+				<div class="pagination-qw clearfix">
+					<ul>
+						<li class="l-arrow">Предыдущая страница</li>
+						<li class="active" title="Текущая страница">1</li>
+						<li>
+							<a href="/articles/page2/" title="Страница 2">2</a>
+						</li>
+						<li>
+							<a href="/articles/page3/" title="Страница 3">3</a>
+						</li>
+						<li>
+							<a href="/articles/page4/" title="Страница 4">4</a>
+						</li>
+						<li>
+							<a href="/articles/page5/" title="Страница 5">5</a>
+						</li>
+						<li>
+							<a href="/articles/page15/" title="Страница 15">...</a>
+						</li>
+						<li>
+							<a href="/articles/page25/" title="Страница 25">25</a>
+						</li>
+						<li>
+							<a href="/articles/page26/" title="Страница 26">26</a>
+						</li>
+						<li class="r-arrow">
+							<a href="/articles/page2/" title="Следующая страница">Следующая страница</a>
+						</li>
+					</ul>
+				</div>
+				<!--		</div>-->
+				<!--	</div>-->
+				<!--</div>--></div>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$('#selectQw').change(function () {
+						var branch = $(this).val()
+						var end = (branch != '') ? branch + '/' : '';
+						location.assign('http://zdorov.online/articles/' + end);
+					});
+					$.post("/include/right_links_docs.php", {"cnt": "30", 'cp': '/articles/'}, function (resp) {
+						$('#rdocs').html(resp);
+					});
+				});
+			</script>
+			<script type="text/javascript">
+				cackle_widget = window.cackle_widget || [];
+				cackle_widget.push({widget: 'CommentCount', id: 44945});
+				(function () {
+					var mc = document.createElement('script');
+					mc.type = 'text/javascript';
+					mc.async = true;
+					mc.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cackle.me/widget.js';
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(mc, s.nextSibling);
+				})();
+			</script>
+
+
+			<!--right sidebar-->
+			<div class="right-sidebar clearfix">
+				<div id="rpolis"></div>
+				<div id="rfilter"></div>
+				<div style="display: none;">
+
+				</div>
+				&#65279;
+
+
+				<div id="rdocs">
+
+					<article class="list-right-sb-search">
+						<div class="list-right-sb-search--wrap">
+							<div class="list-right-sb-search__title">Специальности</div>
+						</div>
+						<ul style="padding-bottom: 15px;">
+							<li>
+								<a class="rdocs" href="/vrach/akusher/">Акушер</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/akusher-ginekolog/">Акушер - гинеколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/allergolog/">Аллерголог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/allergolog-immunolog/">Аллерголог-иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/angiolog/">Ангиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/androlog/">Андролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/artrolog/">Артролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/venerolog/">Венеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/vertebrolog/">Вертебролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/virusolog/">Вирусолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/virusolog-immunolog/">Вирусолог-иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/lfk/">Врач ЛФК</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gastroenterolog/">Гастроэнтеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gematolog/">Гематолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/genetik/">Генетик</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gepatolog/">Гепатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ginekolog/">Гинеколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/girudolog/">Гирудотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gomeopat/">Гомеопат</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatovenerolog/">Дерматовенеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatolog/">Дерматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatolog-venerolog/">Дерматолог-венеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kosmetolog-dermatolog/">Дерматолог-косметолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/defektolog/">Дефектолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/diabetolog/">Диабетолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dietolog/">Диетолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/immunolog/">Иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/infekcionist/">Инфекционист</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kardiolog/">Кардиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kardiohirurg/">Кардиохирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kosmetolog/">Косметолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/lor-otolaringolog/">ЛОР</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/logoped/">Логопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/logoped-defektolog/">Логопед дефектолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/mammolog/">Маммолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/manualnyy-terapevt/">Мануальный терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/massazhist/">Массажист</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/narkolog/">Нарколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/nevrolog/">Невролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/neyrohirurg/">Нейрохирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/neonatolog/">Неонатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/nefrolog/">Нефролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkodermatolog/">Онкодерматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkolog/">Онколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkolog-mammolog/">Онколог маммолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ortoped/">Ортопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/osteopat/">Остеопат</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/otolaringolog/">Отоларинголог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/oftalmolog/">Офтальмолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/parodontolog/">Пародонтолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/pediatr/">Педиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/plasticheskiy-hirurg/">Пластический хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/proktolog/">Проктолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikhiatr/">Психиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikholog/">Психолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikhoterapevt/">Психотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/pulmonolog/">Пульмонолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/revmatolog/">Ревматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/refleksoterapevt/">Рефлексотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/seksolog/">Сексолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/seksopatolog/">Сексопатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/somnolog/">Сомнолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/sosudistii-hirurg/">Сосудистый хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog/">Стоматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-ortodont/">Стоматолог-ортодонт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-terapevt/">Стоматолог-терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-hirurg/">Стоматолог-хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/surdolog/">Сурдолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/terapevt/">Терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/travmatolog/">Травматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/travmatolog-ortoped/">Травматолог-ортопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/transfuziolog/">Трансфузиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/trikholog/">Трихолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/urolog/">Уролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/urolog-androlog/">Уролог-андролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/fizioterapevt/">Физиотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/flebolog/">Флеболог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ftiziator/">Фтизиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg/">Хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg-proktolog/">Хирург проктолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg-flebolog/">Хирург флеболог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/endokrinolog/">Эндокринолог</a>
+							</li>
+						</ul>
+					</article>
+					<script>
+						$(document).ready(function () {
+							$(".rdocs").click(function () {
+								dataLayer.push({
+									'event': 'autoEvent',
+									'eventCategory': 'Статьи',
+									'eventAction': 'Специальности в правом блоке',
+									'eventLabel': '/articles/',
+									'yandexEvent': ''
+								});
+							});
+						});
+					</script>
+				</div>
+				<article class="about">
+					<div class="about__wrap">
+						<!--<section class="about__SN">
+							<div class="about__title">ПРИСОЕДИНЯЙТЕСЬ К НАМ В СОЦСЕТЯХ:</div>
+							<ul>
+								<li class="about__SN--vk"><a href="#x">Вконтакте</a></li>
+								<li class="about__SN--f"><a href="#x">Facebook</a></li>
+								<li class="about__SN--tw"><a href="#x">Tweeter</a></li>
+								<li class="about__SN--ok"><a href="#x">Одноклассники</a></li>
+								<li class="about__SN--g"><a href="#x">GooglPlus</a> </li>
+							</ul>
+						</section>-->
+						<section class="about_contents">
+							<div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+							<ul>
+								<li class="about_contents--pills">
+									<!--noindex-->
+									<a href="/bolezni/"><span>Более 400 болезней</span>
+										Причины, проявления, лечение и профилактика
+									</a><!--/noindex--></li>
+								<li class="about_contents--clinic">
+									<!--noindex-->
+									<a href="/clinics/"><span>Рейтинг клиник</span>
+										Достоверная информация о качестве лечения на основе посещения клиник
+									</a><!--/noindex--></li>
+								<li class="about_contents--node">
+									<!--noindex-->
+									<a href="/vrach/"><span>Запись к врачу</span>
+										Очень легко к нужному врачу
+									</a><!--/noindex--></li>
+								<li class="about_contents--question">
+									<!--noindex-->
+									<a href="/qa/"><span>Задать вопрос</span>
+										Бесплатные консультации врачей
+									</a><!--/noindex--></li>
+							</ul>
+						</section>
+					</div>
+				</article>
+				<div id="right_socadd"></div>
+				<div style="width:240px;">
+				</div>
+				<div>
+
+				</div>
+			</div>
+		</main>
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<img src="http://zdorov.online/img/logo.png" title="Zdorov.online">
+			</div>
+			<div class="footer-content__article hidden-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Лучшие врачи Москвы</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Вся диагностика Москвы</a>
+				<a href="/novosti/">Новости</a>
+				<div class="menu-footer__list hidden-xs">
+					<ul>
+						<!--noindex-->
+						<li>
+							<a href="/adv/">Реклама на портале</a>
+						</li>
+						<li>
+							<a href="/dlya-klinik/">Для клиник</a>
+						</li>
+						<li>
+							<a href="/about/">О проекте</a>
+						</li><!--/noindex-->
+						<li>
+							<a href="/contacts/">Контакты</a>
+						</li>
+						<!--noindex-->
+						<li>
+							<a href="/term/">Соглашение с порталом</a>
+						</li><!--/noindex-->
+						<!--noindex-->
+						<li>
+							<a target="_blank" href="http://partners.zdorov.online/">Партнерам</a>
+						</li><!--/noindex-->
+					</ul>
+				</div>
+			</div>
+			<div class="footer-content__article mobile visible-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Врачи</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Клиники</a>
+				<a href="/novosti/">Новости</a>
+			</div>
+
+			<div class="menu-footer-document hidden-xs">
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2017. Все права защищены.
+						<a href="/karta-saita/">Карта сайта</a>
+					</p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем. 16+</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left: 86px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="http://zdorov.online/img/logo-mk-index.png"></a>
+				</div>
+			</div>
+			<div class="footer-content__right-side mk visible-xs">
+				Информационный партнер портала
+				<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="http://zdorov.online/img/logo-mk-index.png"></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="http://zdorov.online/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://zdorov.online/js/jquery.fancybox.js"></script>
+	<script src="http://zdorov.online/js/app.min.js"></script>
+	<script src="http://zdorov.online/js/jquery.flexslider-min.js"></script>
+	<script src="http://zdorov.online/js/jquery.maskedinput.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#nav-icon3').click(function () {
+				$(this).toggleClass('open');
+				$('.header-main_menu').toggleClass('open');
+			});
+		});
+	</script>
+</div>
+</body>
+</html>

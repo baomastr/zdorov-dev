@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Болезни и их лечение</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<!--<meta name="viewport" content="width=1250">-->
+	<!--<meta name="MobileOptimized" content="1250">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body">
+		<header>
+			<div class="clearfix header-top">
+				<div class="header-top__item menu-burger header-top__btn visible-xs">
+					<a id="nav-icon3" class="visible-xs">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				<a href="/" class="header-logo header-top__item">
+					<img src="http://zdorov.online/img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<a class="header-top__item menu-search header-top__btn visible-xs">
+					<img src="mob/search.png" alt="">
+				</a>
+				<style>
+					.search_block {
+						position: relative;
+					}
+
+					.search_block .search_tips {
+						display: none;
+						position: absolute;
+						top: 50px;
+						left: 280px;
+						background-color: #fff;
+						width: 497px;
+						border: 1px solid #ccc;
+					'
+					}
+
+					.search_block .search_tips .tips {
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+
+					.search_block .search_tips .tips_kato {
+						padding: 4px 8px;
+						background-color: #87CEFA;
+						color: #fff;
+
+					}
+
+					.search_block .search_tips .tips:hover {
+						background-color: #ccc;
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+				</style>
+				<div class="search_block">
+					<div class="header-search">
+						<form action="/search/">
+							<input autocomplete="off" type="search" name="q" placeholder="Например: С какой стороны аппендицит у женщин?" value="">
+							<input type="submit" value="">
+						</form>
+					</div>
+				</div>
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="/auth/">Вход</a>
+						/
+						<a href="/reg/" class="go_to_reg">Регистрация</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list">
+						<a href="/selftest/j/">Самодиагностика</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/articles/">Статьи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/clinics/">Клиники</a>
+						<ul class="main-submenu">
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-lecheniyu/" class="main-submenu__link">
+									По лечению
+								</a>
+							</li>
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-diagnostike/" class="main-submenu__link">
+									По диагностике
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main_menu-list">
+						<a href="/vrach/">Врачи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/bolezni/">Болезни</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/forum/">Форум</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/qa/">Вопросы врачу</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>
+		<!-- end header-->
+		<main>
+			<div class="ratemenu">
+				<div class="ratemenu__title">
+					Рейтинги клиник:
+				</div>
+				<ul class="ratemenu__list">
+					<li class="ratemenu__list-item">
+						<a href="/clinics/reyting-khoroshikh-klinik/">10 лучших клиник Москвы</a>
+					</li>
+				</ul>
+			</div>
+			<div class="crumbs"><ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+				<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a itemprop="item" href="/">
+						<span itemprop="name">Главная</span>
+					</a>
+					<meta itemprop="position" content="1">
+				</li>
+				<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<span itemprop="name">Болезни и их лечение</span>
+					<meta itemprop="position" content="2">
+				</li></ul><div style="clear:both"></div></div>
+			<h1>Болезни и их лечение</h1>
+			<div class=" left-side-library left-side">
+				<div class="top alphabet-title clearfix">
+					<a href="/bolezni/a/">а</a>
+					<a href="/bolezni/b/">б</a>
+					<a href="/bolezni/v/">в</a>
+					<a href="/bolezni/g/">г</a>
+					<a href="/bolezni/d/">д</a>
+					<a href="/bolezni/e/">е</a>
+					<a href="/bolezni/zh/">ж</a>
+					<a href="/bolezni/z/">з</a>
+					<a href="/bolezni/i/">и</a>
+					<a href="/bolezni/k/">к</a>
+					<a href="/bolezni/l/">л</a>
+					<a href="/bolezni/m/">м</a>
+					<a href="/bolezni/n/">н</a>
+					<a href="/bolezni/o/">о</a>
+					<a href="/bolezni/p/">п</a>
+					<a href="/bolezni/r/">р</a>
+					<a href="/bolezni/s/">с</a>
+					<a href="/bolezni/t/">т</a>
+					<a href="/bolezni/u/">у</a>
+					<a href="/bolezni/f/">ф</a>
+					<a href="/bolezni/kh/">х</a>
+					<a href="/bolezni/ts/">ц</a>
+					<a href="/bolezni/ch/">ч</a>
+					<a href="/bolezni/sch/">щ</a>
+					<a href="/bolezni/sh/">ш</a>
+					<a href="/bolezni/ae/">э</a>
+					<a href="/bolezni/yu/">ю</a>
+					<a href="/bolezni/ya/">я</a>
+					<div class="search">
+						<div class="search--wrap">
+							<form action="/search/">
+								<input type="search" name="q" placeholder="найти болезнь">
+								<input type="hidden" name="s" value="bolezni">
+								<input type="submit" value="">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="alphabet">
+					<div class="alphabet__title-letter">А</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/abstsess/">Абсцесс (гнойный нарыв)</a></li>
+								<li><a href="/bolezni/akne/">Акне</a></li>
+								<li><a href="/bolezni/allergiya/">Аллергия</a></li>
+								<li><a href="/bolezni/alopetsiya/">Алопеция</a></li>
+								<li><a href="/bolezni/amebiaz/">Амебиаз</a></li>
+								<li><a href="/bolezni/amenoreya/">Аменорея</a></li>
+								<li><a href="/bolezni/anafilaksiya/">Анафилаксия</a></li>
+								<li><a href="/bolezni/angina/">Ангина</a></li>
+								<li><a href="/bolezni/anevrizma/">Аневризма</a></li>
+								<li><a href="/bolezni/anemiya/">Анемия</a></li>
+								<li><a href="/bolezni/anoreksiya/">Анорексия</a></li>
+								<li><a href="/bolezni/appenditsit/">Аппендицит</a></li>
+								<li><a href="/bolezni/arteriit/">Артериит</a></li>
+								<li><a href="/bolezni/artrit/">Артрит</a></li>
+								<li><a href="/bolezni/artroz/">Артроз</a></li>
+								<li><a href="/bolezni/asteniya/">Астения</a></li>
+								<li><a href="/bolezni/atsidoz/">Ацидоз</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Б</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/balanopostit/">Баланопостит</a></li>
+								<li><a href="/bolezni/bartolinit/">Бартолинит</a></li>
+								<li><a href="/bolezni/belaya-goryachka/">Белая горячка</a></li>
+								<li><a href="/bolezni/bessonnitsa/">Бессонница</a></li>
+								<li><a href="/bolezni/bolezn-addisona/">Болезнь Аддисона</a></li>
+								<li><a href="/bolezni/bolezn-altsgeymera/">Болезнь Альцгеймера</a></li>
+								<li><a href="/bolezni/bolezn-bekhtereva/">Болезнь Бехтерева</a></li>
+								<li><a href="/bolezni/bolezn-vilsona-konovalova/">Болезнь Вильсона-Коновалова</a></li>
+								<li><a href="/bolezni/bolezn-greyvsa-diffuznyy-toksicheskiy-zob/">Болезнь Грейвса (диффузный токсический зоб)</a></li>
+								<li><a href="/bolezni/bolezn-kashina-beka-urovskaya-bolezn/">Болезнь Кашина-Бека (уровская болезнь)</a></li>
+								<li><a href="/bolezni/bolezn-krona/">Болезнь Крона</a></li>
+								<li><a href="/bolezni/bolezn-layma-kleshchevoy-borrelioz/">Болезнь Лайма (клещевой боррелиоз)</a></li>
+								<li><a href="/bolezni/bolezn-menera/">Болезнь Меньера</a></li>
+								<li><a href="/bolezni/bolezn-parkinsona/">Болезнь Паркинсона</a></li>
+								<li><a href="/bolezni/bolezn-pedzheta-kostey/">Болезнь Педжета костей</a></li>
+								<li><a href="/bolezni/bolezn-peyroni-lechenie-i-simptomy/">Болезнь Пейрони</a></li>
+								<li><a href="/bolezni/bolezn-reyno/">Болезнь Рейно</a></li>
+								<li><a href="/bolezni/bolezn-sheyermana-mau/">Болезнь Шейермана Мау</a></li>
+								<li><a href="/bolezni/brakhialgiya/">Брахиалгия</a></li>
+								<li><a href="/bolezni/bronkhit/">Бронхит</a></li>
+								<li><a href="/bolezni/brutsellez/">Бруцеллез</a></li>
+								<li><a href="/bolezni/bursit/">Бурсит</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">В</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/vaginit/">Вагинит</a></li>
+								<li><a href="/bolezni/vaginoz/">Вагиноз</a></li>
+								<li><a href="/bolezni/valgusnaya-deformatsiya-stopy/">Вальгусная деформация стопы</a></li>
+								<li><a href="/bolezni/varikoz/">Варикоз вен</a></li>
+								<li><a href="/bolezni/varikotsele/">Варикоцеле</a></li>
+								<li><a href="/bolezni/vezikulit/">Везикулит</a></li>
+								<li><a href="/bolezni/vich-infektsiya/">ВИЧ-инфекция</a></li>
+								<li><a href="/bolezni/vodyanka/">Водянка</a></li>
+								<li><a href="/bolezni/vulvovaginit/">Вульвовагинит</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Г</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/gaimorit/">Гайморит</a></li>
+								<li><a href="/bolezni/gastrit/">Гастрит желудка</a></li>
+								<li><a href="/bolezni/gemorroy/">Геморрой</a></li>
+								<li><a href="/bolezni/gepatit/">Гепатит</a></li>
+								<li><a href="/bolezni/gerpes-zoster-virus/">Герпес зостер (вирус)</a></li>
+								<li><a href="/bolezni/gigroma/">Гигрома</a></li>
+								<li><a href="/bolezni/gipergidroz/">Гипергидроз</a></li>
+								<li><a href="/bolezni/gipertireoz/">Гипертиреоз</a></li>
+								<li><a href="/bolezni/gryzha/">Грыжа</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Д</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/divertikulit/">Дивертикулит</a></li>
+								<li><a href="/bolezni/dismorfofobiya/">Дисморфофобия</a></li>
+								<li><a href="/bolezni/difteriya/">Дифтерия</a></li>
+								<li><a href="/bolezni/dorsalgiya/">Дорсалгия</a></li>
+								<li><a href="/bolezni/dorsopatiya/">Дорсопатия</a></li>
+								<li><a href="/bolezni/detskiy-tserebralnyy-paralich/">ДЦП</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Ж</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/giperplaziya/">Железистая гиперплазия эндометрия</a></li>
+								<li><a href="/bolezni/zheltuha/">Желтуха</a></li>
+								<li><a href="/bolezni/zheludochkovaya-takhikardiya/">Желудочковая тахикардия</a></li>
+								<li><a href="/bolezni/zhelchekamennaya-bolezn-zhkb/">Желчекаменная болезнь (ЖКБ)</a></li>
+								<li><a href="/bolezni/zhelchnokamennaya-bolezn/">Желчнокаменная болезнь</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">З</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/zaikanie/">Заикание</a></li>
+								<li><a href="/bolezni/zigomatitsit/">Зигоматицит</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">И</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/idiotizm/">Идиотизм</a></li>
+								<li><a href="/bolezni/imbetsilnost/">Имбецильность</a></li>
+								<li><a href="/bolezni/insult/">Инсульт</a></li>
+								<li><a href="/bolezni/infarkt-miokarda/">Инфаркт миокарда</a></li>
+								<li><a href="/bolezni/isteriya/">Истерия</a></li>
+								<li><a href="/bolezni/ishias/">Ишиас</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">К</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/kavernit/">Кавернит</a></li>
+								<li><a href="/bolezni/kista/">Киста</a></li>
+								<li><a href="/bolezni/kifoz/">Кифоз</a></li>
+								<li><a href="/bolezni/kifoskolioz/">Кифосколиоз</a></li>
+								<li><a href="/bolezni/koklyush/">Коклюш</a></li>
+								<li><a href="/bolezni/koksartroz/">Коксартроз</a></li>
+								<li><a href="/bolezni/koktsigodiniya/">Кокцигодиния</a></li>
+								<li><a href="/bolezni/kollikulit/">Колликулит</a></li>
+								<li><a href="/bolezni/kseroz-prichiny-i-lechenie/">Ксероз</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Л</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/labirintit/">Лабиринтит</a></li>
+								<li><a href="/bolezni/laringit/">Ларингит</a></li>
+								<li><a href="/bolezni/leykoz/">Лейкоз</a></li>
+								<li><a href="/bolezni/vulvit/">Лечение вульвита</a></li>
+								<li><a href="/bolezni/limfadenit/">Лимфаденит</a></li>
+								<li><a href="/bolezni/limfoma-khodzhkina/">Лимфома Ходжкина</a></li>
+								<li><a href="/bolezni/lordoz/">Лордоз позвоночника</a></li>
+								<li><a href="/bolezni/lyumbago/">Люмбаго</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">М</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/mastit/">Мастит</a></li>
+								<li><a href="/bolezni/mastopatiya/">Мастопатия</a></li>
+								<li><a href="/bolezni/meningit/">Менингит</a></li>
+								<li><a href="/bolezni/migren/">Мигрень</a></li>
+								<li><a href="/bolezni/mikoz/">Микоз</a></li>
+								<li><a href="/bolezni/miozit/">Миозит</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Н</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/narkolepsiya/">Нарколепсия</a></li>
+								<li><a href="/bolezni/nevralgiya/">Невралгия</a></li>
+								<li><a href="/bolezni/nevrasteniya/">Неврастения</a></li>
+								<li><a href="/bolezni/nevroz/">Невроз</a></li>
+								<li><a href="/bolezni/nervnyy-tik/">Нервный тик</a></li>
+								<li><a href="/bolezni/novoobrazovaniya/">Новообразования</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">О</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/ozena/">Озена</a></li>
+								<li><a href="/bolezni/onikhogrifoz/">Онихогрифоз</a></li>
+								<li><a href="/bolezni/onikhoreksis/">Онихорексис</a></li>
+								<li><a href="/bolezni/orkhit-simptomy-i-lechenie/">Орхит</a></li>
+								<li><a href="/bolezni/osteoporoz/">Остеопороз</a></li>
+								<li><a href="/bolezni/osteohondroz/">Остеохондроз</a></li>
+								<li><a href="/bolezni/ostiofollikulit/">Остиофолликулит</a></li>
+								<li><a href="/bolezni/borodavki/">От чего появляются бородавки?</a></li>
+								<li><a href="/bolezni/otit/">Отит</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">П</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/perelomy-kostey/">Переломы костей</a></li>
+								<li><a href="/bolezni/periartrit/">Периартрит</a></li>
+								<li><a href="/bolezni/polip/">Полипы</a></li>
+								<li><a href="/bolezni/protruziya/">Протрузия</a></li>
+								<li><a href="/bolezni/psikhoz/">Психоз</a></li>
+								<li><a href="/bolezni/pyatochnaya-shpora/">Пяточная шпора</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Р</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/radikulit/">Радикулит</a></li>
+								<li><a href="/bolezni/razryv-svyazok/">Разрыв связок</a></li>
+								<li><a href="/bolezni/rak-limfouzlov/">Рак лимфоузлов</a></li>
+								<li><a href="/bolezni/rak-limfouzlov-na-shee/">Рак лимфоузлов на шее</a></li>
+								<li><a href="/bolezni/rastyazhenie-svyazok/">Растяжение связок</a></li>
+								<li><a href="/bolezni/rinit/">Ринит</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">С</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/sakroileit/">Сакроилеит</a></li>
+								<li><a href="/bolezni/sakharnyy-diabet/">Сахарный диабет</a></li>
+								<li><a href="/bolezni/sindrom-menera/">Синдром Меньера</a></li>
+								<li><a href="/bolezni/sinusit/">Синусит</a></li>
+								<li><a href="/bolezni/sifilis/">Сифилис</a></li>
+								<li><a href="/bolezni/skolioz/">Сколиоз</a></li>
+								<li><a href="/bolezni/spid/">СПИД</a></li>
+								<li><a href="/bolezni/spondilez/">Спондилез</a></li>
+								<li><a href="/bolezni/spondilit-pozvonochnika/">Спондилит позвоночника</a></li>
+								<li><a href="/bolezni/stomatit/">Стоматит</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Т</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/toksoplazmoz/">Токсоплазмоз</a></li>
+								<li><a href="/bolezni/tonzillit/">Тонзиллит</a></li>
+								<li><a href="/bolezni/tremor/">Тремор </a></li>
+								<li><a href="/bolezni/troficheskaya-yazva/">Трофическая язва</a></li>
+								<li><a href="/bolezni/tuberkulez/">Туберкулез</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">У</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/uremiya/">Уремия</a></li>
+								<li><a href="/bolezni/ureterotsele/">Уретероцеле</a></li>
+								<li><a href="/bolezni/uretrit/">Уретрит</a></li>
+								<li><a href="/bolezni/uretrorragiya/">Уретроррагия</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Ф</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/fibroz/">Фиброз</a></li>
+								<li><a href="/bolezni/fibroma/">Фиброма</a></li>
+								<li><a href="/bolezni/fibromialgiya/">Фибромиалгия</a></li>
+								<li><a href="/bolezni/fimoz/">Фимоз</a></li>
+								<li><a href="/bolezni/follikulit/">Фолликулит</a></li>
+								<li><a href="/bolezni/frontit/">Фронтит</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Х</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/khalyazion/">Халязион</a></li>
+								<li><a href="/bolezni/khlamidioz/">Хламидиоз (урогенитальный)</a></li>
+								<li><a href="/bolezni/kholangit/">Холангит</a></li>
+								<li><a href="/bolezni/kholer/">Холера</a></li>
+								<li><a href="/bolezni/kholetsistit/">Холецистит</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Ц</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/tseliakiya/">Целиакия</a></li>
+								<li><a href="/bolezni/tservikalgiya/">Цервикалгия</a></li>
+								<li><a href="/bolezni/tsinga/">Цинга</a></li>
+								<li><a href="/bolezni/tsirroz-pecheni/">Цирроз печени</a></li>
+								<li><a href="/bolezni/tsistit/">Цистит</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Ч</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/chesotka/">Чесотка</a></li>
+								<li><a href="/bolezni/chikhanie/">Чихание</a></li>
+								<li><a href="/bolezni/chuma-u-cheloveka/">Чума </a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Ш</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/shigellez/">Шигеллез</a></li>
+								<li><a href="/bolezni/shizofreniya/">Шизофрения</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Э</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/ezofagit/">Эзофагит</a></li>
+								<li><a href="/bolezni/eklampsiya-pri-beremennosti/">Эклампсия при беременности</a></li>
+								<li><a href="/bolezni/endometrit/">Эндометрит</a></li>
+								<li><a href="/bolezni/epikondilit/">Эпикондилит</a></li>
+								<li><a href="/bolezni/epilepsiya/">Эпилепсия</a></li>
+								<li><a href="/bolezni/erektilnaya-disfunktsiya/">Эректильная дисфункция</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alphabet__title-letter">Я</div>
+					<div class="alphabet-letter--wrap">
+						<div class="alphabet-letter">
+							<ul>
+								<li><a href="/bolezni/yazva/">Язва</a></li>
+								<li><a href="/bolezni/yazva-12-perstnoy-kishki/">Язва 12-перстной кишки</a></li>
+								<li><a href="/bolezni/yazva-zheludka/">Язва желудка</a></li>
+								<li><a href="/bolezni/yazvy-na-nogah/">Язва на ногах </a></li>
+								<li><a href="/bolezni/yashchur-u-cheloveka/">Ящур у человека</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="bottom alphabet-title clearfix">
+					<a href="/bolezni/a/">а</a>
+					<a href="/bolezni/b/">б</a>
+					<a href="/bolezni/v/">в</a>
+					<a href="/bolezni/g/">г</a>
+					<a href="/bolezni/d/">д</a>
+					<a href="/bolezni/e/">е</a>
+					<a href="/bolezni/zh/">ж</a>
+					<a href="/bolezni/z/">з</a>
+					<a href="/bolezni/i/">и</a>
+					<a href="/bolezni/k/">к</a>
+					<a href="/bolezni/l/">л</a>
+					<a href="/bolezni/m/">м</a>
+					<a href="/bolezni/n/">н</a>
+					<a href="/bolezni/o/">о</a>
+					<a href="/bolezni/p/">п</a>
+					<a href="/bolezni/r/">р</a>
+					<a href="/bolezni/s/">с</a>
+					<a href="/bolezni/t/">т</a>
+					<a href="/bolezni/u/">у</a>
+					<a href="/bolezni/f/">ф</a>
+					<a href="/bolezni/kh/">х</a>
+					<a href="/bolezni/ts/">ц</a>
+					<a href="/bolezni/ch/">ч</a>
+					<a href="/bolezni/sch/">щ</a>
+					<a href="/bolezni/sh/">ш</a>
+					<a href="/bolezni/ae/">э</a>
+					<a href="/bolezni/yu/">ю</a>
+					<a href="/bolezni/ya/">я</a>
+					<div class="search">
+						<div class="search--wrap">
+							<form action="/search/">
+								<input type="search" name="q" placeholder="найти болезнь">
+								<input type="hidden" name="s" value="bolezni">
+								<input type="submit" value="">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				$(document).ready(function(){
+					$.post("/include/right_links_docs.php", {"cnt":"30", 'cp':'/bolezni/'}, function(resp){
+						$('#rdocs').html(resp);
+					});
+				});
+			</script>
+
+
+			<!--right sidebar-->
+			<div class="right-sidebar clearfix">
+				<div id="rpolis"></div>
+				<div id="rfilter"></div>
+				<div style="display: none;">
+
+				</div>
+				&#65279;
+
+
+
+
+
+
+
+				<div id="rdocs">
+
+					<article class="list-right-sb-search">
+						<div class="list-right-sb-search--wrap">
+							<div class="list-right-sb-search__title">Специальности</div>
+						</div>
+						<ul style="padding-bottom: 15px;">
+							<li><a class="rdocs" href="/vrach/akusher/">Акушер</a></li>
+							<li><a class="rdocs" href="/vrach/akusher-ginekolog/">Акушер - гинеколог</a></li>
+							<li><a class="rdocs" href="/vrach/allergolog/">Аллерголог</a></li>
+							<li><a class="rdocs" href="/vrach/allergolog-immunolog/">Аллерголог-иммунолог</a></li>
+							<li><a class="rdocs" href="/vrach/angiolog/">Ангиолог</a></li>
+							<li><a class="rdocs" href="/vrach/androlog/">Андролог</a></li>
+							<li><a class="rdocs" href="/vrach/artrolog/">Артролог</a></li>
+							<li><a class="rdocs" href="/vrach/venerolog/">Венеролог</a></li>
+							<li><a class="rdocs" href="/vrach/vertebrolog/">Вертебролог</a></li>
+							<li><a class="rdocs" href="/vrach/virusolog/">Вирусолог</a></li>
+							<li><a class="rdocs" href="/vrach/virusolog-immunolog/">Вирусолог-иммунолог</a></li>
+							<li><a class="rdocs" href="/vrach/lfk/">Врач ЛФК</a></li>
+							<li><a class="rdocs" href="/vrach/gastroenterolog/">Гастроэнтеролог</a></li>
+							<li><a class="rdocs" href="/vrach/gematolog/">Гематолог</a></li>
+							<li><a class="rdocs" href="/vrach/genetik/">Генетик</a></li>
+							<li><a class="rdocs" href="/vrach/gepatolog/">Гепатолог</a></li>
+							<li><a class="rdocs" href="/vrach/ginekolog/">Гинеколог</a></li>
+							<li><a class="rdocs" href="/vrach/girudolog/">Гирудотерапевт</a></li>
+							<li><a class="rdocs" href="/vrach/gomeopat/">Гомеопат</a></li>
+							<li><a class="rdocs" href="/vrach/dermatovenerolog/">Дерматовенеролог</a></li>
+							<li><a class="rdocs" href="/vrach/dermatolog/">Дерматолог</a></li>
+							<li><a class="rdocs" href="/vrach/dermatolog-venerolog/">Дерматолог-венеролог</a></li>
+							<li><a class="rdocs" href="/vrach/kosmetolog-dermatolog/">Дерматолог-косметолог</a></li>
+							<li><a class="rdocs" href="/vrach/defektolog/">Дефектолог</a></li>
+							<li><a class="rdocs" href="/vrach/diabetolog/">Диабетолог</a></li>
+							<li><a class="rdocs" href="/vrach/dietolog/">Диетолог</a></li>
+							<li><a class="rdocs" href="/vrach/immunolog/">Иммунолог</a></li>
+							<li><a class="rdocs" href="/vrach/infekcionist/">Инфекционист</a></li>
+							<li><a class="rdocs" href="/vrach/kardiolog/">Кардиолог</a></li>
+							<li><a class="rdocs" href="/vrach/kardiohirurg/">Кардиохирург</a></li>
+							<li><a class="rdocs" href="/vrach/kosmetolog/">Косметолог</a></li>
+							<li><a class="rdocs" href="/vrach/lor-otolaringolog/">ЛОР</a></li>
+							<li><a class="rdocs" href="/vrach/logoped/">Логопед</a></li>
+							<li><a class="rdocs" href="/vrach/logoped-defektolog/">Логопед дефектолог</a></li>
+							<li><a class="rdocs" href="/vrach/mammolog/">Маммолог</a></li>
+							<li><a class="rdocs" href="/vrach/manualnyy-terapevt/">Мануальный терапевт</a></li>
+							<li><a class="rdocs" href="/vrach/massazhist/">Массажист</a></li>
+							<li><a class="rdocs" href="/vrach/narkolog/">Нарколог</a></li>
+							<li><a class="rdocs" href="/vrach/nevrolog/">Невролог</a></li>
+							<li><a class="rdocs" href="/vrach/neyrohirurg/">Нейрохирург</a></li>
+							<li><a class="rdocs" href="/vrach/neonatolog/">Неонатолог</a></li>
+							<li><a class="rdocs" href="/vrach/nefrolog/">Нефролог</a></li>
+							<li><a class="rdocs" href="/vrach/onkodermatolog/">Онкодерматолог</a></li>
+							<li><a class="rdocs" href="/vrach/onkolog/">Онколог</a></li>
+							<li><a class="rdocs" href="/vrach/onkolog-mammolog/">Онколог маммолог</a></li>
+							<li><a class="rdocs" href="/vrach/ortoped/">Ортопед</a></li>
+							<li><a class="rdocs" href="/vrach/osteopat/">Остеопат</a></li>
+							<li><a class="rdocs" href="/vrach/otolaringolog/">Отоларинголог</a></li>
+							<li><a class="rdocs" href="/vrach/oftalmolog/">Офтальмолог</a></li>
+							<li><a class="rdocs" href="/vrach/parodontolog/">Пародонтолог</a></li>
+							<li><a class="rdocs" href="/vrach/pediatr/">Педиатр</a></li>
+							<li><a class="rdocs" href="/vrach/plasticheskiy-hirurg/">Пластический хирург</a></li>
+							<li><a class="rdocs" href="/vrach/proktolog/">Проктолог</a></li>
+							<li><a class="rdocs" href="/vrach/psikhiatr/">Психиатр</a></li>
+							<li><a class="rdocs" href="/vrach/psikholog/">Психолог</a></li>
+							<li><a class="rdocs" href="/vrach/psikhoterapevt/">Психотерапевт</a></li>
+							<li><a class="rdocs" href="/vrach/pulmonolog/">Пульмонолог</a></li>
+							<li><a class="rdocs" href="/vrach/revmatolog/">Ревматолог</a></li>
+							<li><a class="rdocs" href="/vrach/refleksoterapevt/">Рефлексотерапевт</a></li>
+							<li><a class="rdocs" href="/vrach/seksolog/">Сексолог</a></li>
+							<li><a class="rdocs" href="/vrach/seksopatolog/">Сексопатолог</a></li>
+							<li><a class="rdocs" href="/vrach/somnolog/">Сомнолог</a></li>
+							<li><a class="rdocs" href="/vrach/sosudistii-hirurg/">Сосудистый хирург</a></li>
+							<li><a class="rdocs" href="/vrach/stomatolog/">Стоматолог</a></li>
+							<li><a class="rdocs" href="/vrach/stomatolog-ortodont/">Стоматолог-ортодонт</a></li>
+							<li><a class="rdocs" href="/vrach/stomatolog-terapevt/">Стоматолог-терапевт</a></li>
+							<li><a class="rdocs" href="/vrach/stomatolog-hirurg/">Стоматолог-хирург</a></li>
+							<li><a class="rdocs" href="/vrach/surdolog/">Сурдолог</a></li>
+							<li><a class="rdocs" href="/vrach/terapevt/">Терапевт</a></li>
+							<li><a class="rdocs" href="/vrach/travmatolog/">Травматолог</a></li>
+							<li><a class="rdocs" href="/vrach/travmatolog-ortoped/">Травматолог-ортопед</a></li>
+							<li><a class="rdocs" href="/vrach/transfuziolog/">Трансфузиолог</a></li>
+							<li><a class="rdocs" href="/vrach/trikholog/">Трихолог</a></li>
+							<li><a class="rdocs" href="/vrach/urolog/">Уролог</a></li>
+							<li><a class="rdocs" href="/vrach/urolog-androlog/">Уролог-андролог</a></li>
+							<li><a class="rdocs" href="/vrach/fizioterapevt/">Физиотерапевт</a></li>
+							<li><a class="rdocs" href="/vrach/flebolog/">Флеболог</a></li>
+							<li><a class="rdocs" href="/vrach/ftiziator/">Фтизиатр</a></li>
+							<li><a class="rdocs" href="/vrach/hirurg/">Хирург</a></li>
+							<li><a class="rdocs" href="/vrach/hirurg-proktolog/">Хирург проктолог</a></li>
+							<li><a class="rdocs" href="/vrach/hirurg-flebolog/">Хирург флеболог</a></li>
+							<li><a class="rdocs" href="/vrach/endokrinolog/">Эндокринолог</a></li>
+						</ul>
+					</article>
+					<script>
+						$(document).ready(function() {
+						});
+					</script>
+				</div>
+				<article class="about">
+					<div class="about__wrap">
+						<!--<section class="about__SN">
+							<div class="about__title">ПРИСОЕДИНЯЙТЕСЬ К НАМ В СОЦСЕТЯХ:</div>
+							<ul>
+								<li class="about__SN--vk"><a href="#x">Вконтакте</a></li>
+								<li class="about__SN--f"><a href="#x">Facebook</a></li>
+								<li class="about__SN--tw"><a href="#x">Tweeter</a></li>
+								<li class="about__SN--ok"><a href="#x">Одноклассники</a></li>
+								<li class="about__SN--g"><a href="#x">GooglPlus</a> </li>
+							</ul>
+						</section>-->
+						<section class="about_contents">
+							<div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+							<ul>
+								<li class="about_contents--pills">
+									<!--noindex--><a href="/bolezni/"><span>Более 400 болезней</span>
+									Причины, проявления, лечение и профилактика</a><!--/noindex--></li>
+								<li class="about_contents--clinic">
+									<!--noindex--><a href="/clinics/"><span>Рейтинг клиник</span>
+									Достоверная информация о качестве лечения на основе посещения клиник</a><!--/noindex--></li>
+								<li class="about_contents--node">
+									<!--noindex--><a href="/vrach/"><span>Запись к врачу</span>
+									Очень легко к нужному врачу</a><!--/noindex--></li>
+								<li class="about_contents--question">
+									<!--noindex--><a href="/qa/"><span>Задать вопрос</span>
+									Бесплатные консультации врачей</a><!--/noindex--></li>
+							</ul>
+						</section>
+					</div>
+				</article>
+				<div id="right_socadd"></div>
+				<div style="width:240px;">
+				</div>
+				<div>
+
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</main>
+
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<div class="clearfix"></div>
+	<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<img src="img/logo.png" title="Zdorov.online">
+			</div>
+			<div class="footer-content__article hidden-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Лучшие врачи Москвы</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Вся диагностика Москвы</a>
+				<a href="/novosti/">Новости</a>
+				<div class="menu-footer__list hidden-xs">
+					<ul>
+						<!--noindex-->
+						<li>
+							<a href="/adv/">Реклама на портале</a>
+						</li>
+						<li>
+							<a href="/dlya-klinik/">Для клиник</a>
+						</li>
+						<li>
+							<a href="/about/">О проекте</a>
+						</li><!--/noindex-->
+						<li>
+							<a href="/contacts/">Контакты</a>
+						</li>
+						<!--noindex-->
+						<li>
+							<a href="/term/">Соглашение с порталом</a>
+						</li><!--/noindex-->
+						<!--noindex-->
+						<li>
+							<a target="_blank" href="http://partners.zdorov.online/">Партнерам</a>
+						</li><!--/noindex-->
+					</ul>
+				</div>
+			</div>
+			<div class="footer-content__article mobile visible-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Врачи</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Клиники</a>
+				<a href="/novosti/">Новости</a>
+			</div>
+
+			<div class="menu-footer-document hidden-xs">
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2017. Все права защищены.
+						<a href="/karta-saita/">Карта сайта</a>
+					</p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем. 16+</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left: 86px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+				</div>
+			</div>
+			<div class="footer-content__right-side mk visible-xs">
+				Информационный партнер портала
+				<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script src="js/app.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#nav-icon3').click(function () {
+				$(this).toggleClass('open');
+				$('.header-main_menu').toggleClass('open');
+			});
+		});
+	</script>
+</div>
+</body>
+</html>

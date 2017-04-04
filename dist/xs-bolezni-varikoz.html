@@ -1,0 +1,2298 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Болезни и их лечение</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<!--<meta name="viewport" content="width=1250">-->
+	<!--<meta name="MobileOptimized" content="1250">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body">
+		<header>
+			<div class="clearfix header-top">
+				<div class="header-top__item menu-burger header-top__btn visible-xs">
+					<a id="nav-icon3" class="visible-xs">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				<a href="/" class="header-logo header-top__item">
+					<img src="http://zdorov.online/img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<a class="header-top__item menu-search header-top__btn visible-xs">
+					<img src="mob/search.png" alt="">
+				</a>
+				<style>
+					.search_block {
+						position: relative;
+					}
+
+					.search_block .search_tips {
+						display: none;
+						position: absolute;
+						top: 50px;
+						left: 280px;
+						background-color: #fff;
+						width: 497px;
+						border: 1px solid #ccc;
+					'
+					}
+
+					.search_block .search_tips .tips {
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+
+					.search_block .search_tips .tips_kato {
+						padding: 4px 8px;
+						background-color: #87CEFA;
+						color: #fff;
+
+					}
+
+					.search_block .search_tips .tips:hover {
+						background-color: #ccc;
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+				</style>
+				<div class="search_block">
+					<div class="header-search">
+						<form action="/search/">
+							<input autocomplete="off" type="search" name="q" placeholder="Например: С какой стороны аппендицит у женщин?" value="">
+							<input type="submit" value="">
+						</form>
+					</div>
+				</div>
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="/auth/">Вход</a>
+						/
+						<a href="/reg/" class="go_to_reg">Регистрация</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list">
+						<a href="/selftest/j/">Самодиагностика</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/articles/">Статьи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/clinics/">Клиники</a>
+						<ul class="main-submenu">
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-lecheniyu/" class="main-submenu__link">
+									По лечению
+								</a>
+							</li>
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-diagnostike/" class="main-submenu__link">
+									По диагностике
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main_menu-list">
+						<a href="/vrach/">Врачи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/bolezni/">Болезни</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/forum/">Форум</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/qa/">Вопросы врачу</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>
+		<!-- end header-->
+		<main>
+			<div class="ratemenu">
+				<div class="ratemenu__title">
+					Рейтинги клиник:
+				</div>
+				<ul class="ratemenu__list">
+					<li class="ratemenu__list-item">
+						<a href="/clinics/reyting-khoroshikh-klinik/">10 лучших клиник Москвы</a>
+					</li>
+				</ul>
+			</div>
+			<div class="crumbs">
+				<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="/">
+							<span itemprop="name">Главная</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<span itemprop="name">Болезни и их лечение</span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+
+			<div class="left-side">
+				<div class="note-list">
+					<div class="note__text note__text--auto">
+						<h1 itemprop="term">Варикоз вен</h1>
+						<meta itemprop="category" content="Болезни">
+						<div class="disease-img">
+							<img itemprop="photo" src="https://zdorov.online/upload/resize_cache/iblock/96c/860_500_1/96cdf144768bf593c971f1beff4bcbd7.jpg" alt="Фото" title="Варикоз вен">
+						</div>
+						<div class="letter" itemprop="content"><p> Варикоз — необратимое расширение и удлинение вен нижних конечностей.
+																   Стенка кровеносного сосуда истончается, образуются «узлы». Болезнь
+																   известна на протяжении нескольких тысячелетий, однако до сих пор нет
+																   лекарственных препаратов или нехирургических методов, которые могли бы
+																   восстановить функциональность вен. Сегодня проблема крайне
+																   распространена, согласно статистике, чаще ею страдают женщины. Средний
+																   возраст, в котором обнаруживают патологическое состояние сосудов, — 25-40
+																   лет. Заболевание связано преимущественно с сидячей работой, малоактивным
+																   образом жизни. </p>
+
+							<h2>Симптомы варикоза</h2>
+							<p>Одним из первых признаков проблемы является отечность ног к концу рабочего дня. При продолжительном стоянии
+							   или сидении может появиться ощущение распирания, тяжести в икрах. На начальной стадии симптомы вовсе проходят
+							   или существенно уменьшаются после сна или при ходьбе. Позже пациент начинает чувствовать:</p>
+							<div class="list two-column">
+								<ul class="list__check">
+									<li> боли в икроножных мышцах;</li>
+									<li> судороги ночью;</li>
+									<li> жар в ногах.</li>
+								</ul>
+							</div>
+
+							<p>Визуально отмечаются мелкие телеангиэктазии синего и красного цвета. Становятся заметны темно-синие
+							   внутрикожные вены. И затем расширяются подкожные сосуды, приобретающие вид гроздей перезревшего винограда.
+							   Если заболевание не лечится, пациент игнорирует обращение к специалисту, есть риск развития экземы. </p>
+
+							<p>Существует международная систематизация варикоза CEAP, предполагающая 6 этапов. Каждый из них имеет
+							   специфические симптомы варикоза:</p>
+							<div class="list two-column">
+								<ul class="list__item-pink">
+									<li> Стадия 0. Бессимптомное течение или же появление отечности, боли, при этом диагностика расширение
+										 не подтверждает.
+									</li>
+									<li> Стадия 1. Сосудистая сетка, тяжесть в ногах, ночные судороги.</li>
+									<li> Стадия 2.Увеличенные вены, «узелки» голубого цвета, увеличивающиеся после сидения, стояния.</li>
+									<li> Стадия 3. Регулярная отечность, способная сходить после сна.</li>
+									<li> Стадия 4. Трофические процессы в тканях ног, кожные воспаления, изменение оттенка.</li>
+									<li> Стадия 5. Заживающие трофические язвы.</li>
+									<li> Стадия 6. Активно действующие, тяжело поддающиеся лечению язвы.</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div itemprop="references" style="width:1px; height:1px; display:block; overflow:hidden;">Лит.: Большая медицинская
+																											  энциклопедия г. 1956
+					</div>
+				</div>
+				<div class="border-gradient">
+					<div class="border-gradient__left"></div>
+					<div class="border-gradient__circle"></div>
+					<div class="border-gradient__right"></div>
+				</div>
+				<div class="note-list">
+					<div class="note__text note__text--auto">
+						<div class="reason">
+							<div class="reason__img-left" style="z-index: 1000; top: 155px;">
+								<img src="https://zdorov.online/upload/resize_cache/iblock/835/360_290_2/8351e1280f0cbf92ff12355e1e35deca.jpg" alt="Фото" title="Причины болезни">
+							</div>
+							<div class="js-reason-p-h">
+								<h2>Причины болезни</h2>
+								<p>По мнению специалистов, основные причины варикоза кроются в генетической предрасположенности, врожденной
+								   слабости сосудов. Однако далеко не всегда слабые стенки вен растягиваются, приобретая патологический вид.
+								   Начало и скорость прогрессирования болезни плотно связаны с провоцирующими факторами. Патологические
+								   изменения вызывают:</p></div>
+							<div class="reason__list reason__list--left ">
+								<ul>
+									<li> лишний вес;</li>
+									<li> чрезмерные физические нагрузки, включая подъем тяжестей;</li>
+									<li> вредные привычки, в особенности курение и употребление алкоголя;</li>
+									<li> статические нагрузки на ноги;</li>
+									<li> малоподвижный образ жизни.</li>
+								</ul>
+							</div>
+
+							<p class="bg-white pad-top">У женщин варикоз вен нередко развивается на фоне гормонального сбоя. Вызвать
+														проблемы с венами способна некорректно подобранная контрацепция. Нередко сосуды
+														нижних конечностей, малого таза расширяются в период беременности. Довольно высокий
+														риск нарушения работы венозных клапанов при хронических запорах. </p>
+
+							<p class="bg-white">Часто симптомы этого необратимого процесса наблюдаются у людей, которым каждый день
+												приходится проводить на ногах. Подвержены расширению вен продавцы, парикмахеры, врачи. К
+												тому же нарушения нормального функционирования кровеносных сосудов возможны у пожилых
+												пациентов в силу общего ухудшения состояния здоровья. </p>
+
+						</div>
+					</div>
+				</div>
+				<div>
+					<div>
+						<div class="doctor">
+							<div class="doctor">
+								<h3>Какой врач устранит причины варикоза?</h3>
+								<p>
+									В предотвращении дальнейшей потери эластичности вен, образования тромбов важную роль играет ранняя
+									диагностика. При первых симптомах следует обратиться к:
+								</p>
+								<div class="doctor__list">
+									<div class="doctor-title-pink">
+										флебологу
+									</div>
+									<p>
+										Врачу важно получить объективную картину состояния пациента. Для этого он:
+									</p>
+									<img width="330" alt="Варикоз-картинка врача" src="https://zdorov.online/upload/medialibrary/18c/18cfbdaf54884b2163782a322bb5a87c.jpg" height="220" title="Варикоз-картинка врача">
+									<div class="doctor__list-item clearfix">
+										<ol>
+											<li> опрашивает пациента на предмет жалоб;</li>
+											<li>проводит осмотр;</li>
+											<li> анализирует образ жизни, особенности работы;</li>
+											<li> изучает острые и хронические болезни в анамнезе.</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+							<p>
+								Врач обязательно назначает инструментальную диагностику. Золотым стандартом считается УЗДС. Оно объединяет
+								преимущества стандартного УЗИ и допплеровского исследования. С помощью ультразвукового дуплексного
+								сканирования изучают:
+							</p>
+							<div class="list two-column">
+								<ul class="list__check">
+									<li> скорость кровотока;</li>
+									<li> диаметр вены;</li>
+									<li> работу клапанов;</li>
+									<li> состояние стенок сосудов.</li>
+								</ul>
+							</div>
+							<p>
+								Если проходить такое обследование в профилактических целях, то врач заметит варикоз, симптомы которого еще
+								не начали активно беспокоить пациента.
+							</p>
+							<p>
+								Когда клиническая картина явно выражена и диагноз подтверждается при визуальном осмотре, то проведение
+								Допплера нецелесообразно. Необходимо сразу отправляться на УЗДС. Диагностическая процедура неинвазивная и
+								безболезненная, предварительной подготовки не требует.
+							</p></div>
+					</div>
+					<div class="doctor__list-pic">
+						<p></p>
+					</div>
+				</div>
+
+				<span class="head4">Лучшие флебологи Москвы</span>
+				<div class="well-doc__list swiperDoc">
+					<!--noindex-->
+					<ul class="swiper-wrapper">
+
+						<li class="swiper-slide">
+							<div class="well-doc__item art">
+								<div class="well-doc__item-price">
+									<div class="well-doc__item-name-wrap clearfix">
+										<div class="well-doc__item-img">
+											<img src="https://zdorov.online/upload/iblock/2b8/2b82f1fb2d43bf4a35ff7500fc106f23.jpg">
+											<div class="well-doc__item-rating clearfix">
+												<p class="well-doc__item-rating--pink"><span>12</span>отзывов</p>
+												<p class="well-doc__item-rating--blue"><span>10<span>.00</span></span>рейтинг</p>
+											</div>
+										</div>
+										<div class="well-doc__item-name">
+											<p class="well-doc__item-name-blue">
+												<a style="color:#115c89;padding:0;" href="/vrach/bisekov-salamat-khamitovich/">Бисеков<br>Саламат
+												</a>
+											</p>
+											<p>Флеболог</p>
+											<p>Стаж: 5 лет</p>
+											<p style="font-family:sans-serif;color: green; margin-top: 10px;">
+												Цена приема: <br>
+									<span style="font-weight: 800;">
+										2000									</span>
+												руб.
+											</p>
+										</div>
+									</div>
+
+								</div>
+								<div class="well-doc__item-address clinic-about">
+									<div class="well-doc__item-price-btn" style="position:relative">
+										<a onclick="bookFormTimeShow('110533');" href="#x" class="well-doc__item-price-btn-link book doc1 bookFormTime" docid="110533" doc="Бисеков<br />Саламат">
+											Записаться онлайн
+										</a>
+									</div>
+									<span class="clinic-about__metro metro_line_kaluzhsko-rizhskaya">ВДНХ</span>
+									<!--<div class="clinic-about__address"><a href="/vrach//"></a></div>-->
+									<div>
+										<span class="clinic-time__number--main-clinic clinic-time__tel phone_show_more_clinics" data-namethis="Бисеков Саламат" style="text-align:left;"><a>
+											Показать номер
+										</a></span>
+                        <span class="clinic-time__tel  clinic-time__tel--main-clinic click_phone_number" data-namethis="Бисеков Саламат">
+							<a href="tel:+7(499)553-06-21">
+								+7(499)553-06-21
+							</a>
+						</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="swiper-slide">
+							<div class="well-doc__item art">
+								<div class="well-doc__item-price">
+									<div class="well-doc__item-name-wrap clearfix">
+										<div class="well-doc__item-img">
+											<img src="https://zdorov.online/upload/iblock/a96/a9677f282f51afd487adefb2749a8d2c.jpeg">
+											<div class="well-doc__item-rating clearfix">
+												<p class="well-doc__item-rating--pink"><span>13</span>отзывов</p>
+												<p class="well-doc__item-rating--blue"><span>9<span>.85</span></span>рейтинг</p>
+											</div>
+										</div>
+										<div class="well-doc__item-name">
+											<p class="well-doc__item-name-blue">
+												<a style="color:#115c89;padding:0;" href="/vrach/ovchinnikov-dmitriy-alekseevich/">
+													Овчинников<br>Дмитрий
+												</a>
+											</p>
+											<p>Флеболог</p>
+											<p>Стаж: 22 лет</p>
+											<p style="font-family:sans-serif;color: green; margin-top: 10px;">
+												Цена приема: <br>
+									<span style="font-weight: 800;">
+										1450									</span>
+												руб.
+											</p>
+										</div>
+									</div>
+
+								</div>
+								<div class="well-doc__item-address clinic-about">
+									<div class="well-doc__item-price-btn" style="position:relative">
+										<a onclick="bookFormTimeShow('111146');" href="#x" class="well-doc__item-price-btn-link book doc1 bookFormTime" docid="111146" doc="Овчинников<br />Дмитрий">
+											Записаться онлайн
+										</a>
+									</div>
+									<span class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Молодёжная</span>
+									<!--<div class="clinic-about__address"><a href="/vrach//"></a></div>-->
+									<div>
+										<span class="clinic-time__number--main-clinic clinic-time__tel phone_show_more_clinics" data-namethis="Овчинников Дмитрий" style="text-align:left;"><a>
+											Показать номер
+										</a></span>
+                        <span class="clinic-time__tel  clinic-time__tel--main-clinic click_phone_number" data-namethis="Овчинников Дмитрий">
+							<a href="tel:+7(499)110-83-96">
+								+7(499)110-83-96
+							</a>
+						</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="swiper-slide">
+							<div class="well-doc__item art">
+								<div class="well-doc__item-price">
+									<div class="well-doc__item-name-wrap clearfix">
+										<div class="well-doc__item-img">
+											<img src="https://zdorov.online/upload/iblock/bbf/bbf3473356fda45bd136299522fc6de5.jpg">
+											<div class="well-doc__item-rating clearfix">
+												<p class="well-doc__item-rating--pink"><span>12</span>отзывов</p>
+												<p class="well-doc__item-rating--blue"><span>9<span>.58</span></span>рейтинг</p>
+											</div>
+										</div>
+										<div class="well-doc__item-name">
+											<p class="well-doc__item-name-blue">
+												<a style="color:#115c89;padding:0;" href="/vrach/zanibekov-murat-magomedovich/">
+													Занибеков<br>Мурат
+												</a>
+											</p>
+											<p>Флеболог</p>
+											<p>Стаж: 7 лет</p>
+											<p style="font-family:sans-serif;color: green; margin-top: 10px;">
+												Цена приема: <br>
+									<span style="font-weight: 800;">
+										1450									</span>
+												руб.
+											</p>
+										</div>
+									</div>
+
+								</div>
+								<div class="well-doc__item-address clinic-about">
+									<div class="well-doc__item-price-btn" style="position:relative">
+										<a onclick="bookFormTimeShow('112447');" href="#x" class="well-doc__item-price-btn-link book doc1 bookFormTime" docid="112447" doc="Занибеков<br />Мурат">
+											Записаться онлайн
+										</a>
+									</div>
+									<span class="clinic-about__metro metro_line_tagansko-krasnopresnenskaya">Текстильщики</span>
+									<!--<div class="clinic-about__address"><a href="/vrach//"></a></div>-->
+									<div>
+										<span class="clinic-time__number--main-clinic clinic-time__tel phone_show_more_clinics" data-namethis="Занибеков Мурат" style="text-align:left;"><a>
+											Показать номер
+										</a></span>
+                        <span class="clinic-time__tel  clinic-time__tel--main-clinic click_phone_number" data-namethis="Занибеков Мурат">
+							<a href="tel:+7(499)110-83-96">
+								+7(499)110-83-96
+							</a>
+						</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul><!--/noindex-->
+					<div class="swiper-scrollbarDoc"></div>
+				</div>
+				<div class="doc-more mnogo_doc">
+					<a href="/vrach/flebolog/">Показать всех флебологов Москвы</a>
+				</div>
+
+				<script>
+					function or_click() {
+						var order = '';
+						if (order != 'desc')
+							location.assign(location.protocol + '//' + location.host + location.pathname + '?rating=desc');
+						else
+							location.assign(location.protocol + '//' + location.host + location.pathname + '?rating=asc');
+					}
+					function pr_click() {
+						var order = '';
+						if (order != 'asc')
+							location.assign(location.protocol + '//' + location.host + location.pathname + '?price=asc');
+						else
+							location.assign(location.protocol + '//' + location.host + location.pathname + '?price=desc');
+					}
+					$(document).ready(function () {
+						$('.book').mouseenter(function () {
+							goalParams.doctor = $(this).attr('doc');
+						});
+						$('select[name=selectBranch]').change(function () {
+							var sel = $(this).val();
+							if (sel == 'all')
+								window.location.assign("http://zdorov.online/vrach/")
+							else
+								window.location.assign("http://zdorov.online/vrach/" + sel + "/")
+						});
+
+						$('.book').click(function () {
+							setTimeout(function () {
+								$('#pop-up').fadeIn(500);
+							}, 100);
+							var doc = $(this).attr('doc');
+							var docid = $(this).attr('docid');
+							$('input[name=docname]').val(doc);
+							$('input[name=docnamed]').val(doc);
+							$('input[name=docid]').val(docid);
+							$('input[name=name]').val('');
+							$('input[name=email]').val('');
+							$('input[name=phone]').val('');
+						});
+						$('#bookClinic').click(function () {
+							var data = $('form[name=comment_form]').serialize();
+							$.post('/algo/cpu/book_doctor.php', {data: data}, function (resp) {
+								var r = JSON.parse(resp);
+								if (r.status == 'error')
+									alert(r.msg);
+								else if (r.status == 'ok') {
+									alert(r.msgd);
+									$('#pop-up').fadeOut(500);
+									$('textarea').val('');
+									$('input[name=email]').val('');
+									$('input[name=name]').val('');
+								}
+							});
+						});
+						$('.btn_close').click(function () {
+							$('#pop-up').fadeOut(500);
+						});
+						$('#metroFind').click(function () {
+							var metro = '';
+							var i = 0;
+							$(".select-metro option:selected").each(function () {
+								if (i != 0)
+									metro += ',';
+								metro += $(this).val();
+								i++;
+							});
+							//var json = JSON.stringify(metro);
+							window.location.assign("http://zdorov.online" + "" + "?metro=" + metro)
+						});
+					});
+				</script>
+				<script src="/js/alex.js?qsws=1490708662"></script>
+				<div id="formContainer">
+
+					<div class="pop-up fpopup" id="pop-up__order">
+						<form action="/algo/bookForm.php" name="popup-form" id="popup-form" target="_blank">
+							<input name="docid" type="hidden" value="">
+							<input name="cliid" type="hidden" value="">
+							<input name="actdocid" type="hidden" value="">
+							<input name="actdetails" type="hidden" value="">
+							<input name="serviceId" type="hidden" value="">
+							<input name="serviceName" type="hidden" value="">
+							<input name="dtime" type="hidden" value="">
+							<input name="treat" type="hidden" value="">
+							<input name="pageurl" type="hidden" value="/bolezni/varikoz/">
+							<div class="popup">
+								<div class="close-popup">
+
+								</div>
+								<div class="form-title">
+									<p class="form-title__text">Онлайн-запись к врачу</p>
+								</div>
+								<div class="top-desc">
+
+									<div class="top-greyblock">
+										<div class="photo-doctor-popup">
+											<img id="f_photo" src="" alt="">
+										</div>
+										<div class="after-doctor-popup">
+											<p class="doctor-popup__title"></p>
+											<div id="doctxt"></div>
+											<div id="acttxt"></div>
+											<div id="docacttxt"></div>
+											<div id="servtxt"></div>
+										</div>
+									</div>
+								</div>
+								<div class="popup1">
+									<p>Мы позвоним в течении 30 минут для выбора подходящего времени приёма</p>
+									<div class="form-popup">
+
+										<div class="floats-popup">
+
+											<div class="inp-div">
+												<label for="">Введите ваше имя</label>
+												<input type="text" name="fio" placeholder="Контактное лицо" id="fio-popup" required="" value="">
+											</div>
+
+											<div class="inp-div">
+												<label for="">Введите ваш номер телефона</label>
+												<input type="text" name="tel" placeholder="+7 ( ____ ) ____-___-___" id="phone-popup" required="" value="">
+												<input type="hidden" name="timephp" value="918273912">
+											</div>
+											<div class="inp-div">
+												<label for="">Введите ваш e-mail</label>
+												<input type="email" name="email" placeholder="e-mail" id="email-popup" required="" value="">
+											</div>
+											<div class="inp-div">
+												<div class="clinic-time-butn but sms_f doc2">записаться онлайн</div>
+												<div style="display:none;" class="clinic-time-butn but sms_f clinic2">записаться онлайн
+												</div>
+											</div>
+											<div class="inp-div">
+												<div id="resp_info" style="margin-top:30px;"></div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="popup3" style="display: none;">
+									<div class="name-popup3">
+										<p></p>
+									</div>
+									<div class="entercode">
+										<div id="sms_win" style="display:none;">
+											<p style="padding-top:5px; padding-bottom:5px;">Введите код, полученный по СМС:</p>
+											<div class="entercode">
+												<input type="text" placeholder="Код из смс" name="sms" id="codesms">
+												<div type="doc" class="clinic-btn but book_f doc3">Отправить</div>
+												<div type="clinic" style="display:none;" class="clinic-btn but book_f clinic3">Отправить
+												</div>
+											</div>
+										</div>
+										<p class="p-pop3"></p>
+									</div>
+								</div>
+								<div class="doc4"></div>
+								<div class="clinic4"></div>
+
+								<div class="bottom-popup">
+									<p>Дополнительная информация</p>
+									<p>тел.: 8 (499) 110 63 39</p>
+									<p class="soglas"><!--noindex-->
+										<a href="http://zdorov.online/term/" target="_blank">Пользовательское соглашение</a><!--/noindex-->
+									</p>
+								</div>
+
+							</div>
+						</form>
+					</div>
+
+					<!--script src="/js/alex.js?222=1"></script-->
+					<script>
+						$(document).ready(function () {
+
+							var sendflag = true;
+
+							function check() {
+								var fio = $('input[name=fio]').val();
+								var tel = $('input[name=tel]').val();
+								var email = $('input[id=email-popup]').val();
+								var flag = true;
+								if (fio == '') {
+									$('input[name=fio]').css('border', '1px solid red');
+									flag = false;
+								}
+								if (tel == '') {
+									$('input[name=tel]').css('border', '1px solid red');
+									flag = false;
+								}
+								if (email == '') {
+									$('input[name=email]').css('border', '1px solid red');
+									flag = false;
+								}
+								if (flag)
+									return true;
+								else
+									return false;
+							}
+
+							$("#phone-popup").mask("+7 (999) 999 - 99 - 99");
+
+							$(".popup3").hide();
+
+							$(".choose-time").click(function () {
+								if ($("#select2-chosen-2").text() == "Выберите клинику") {
+									$(".qw-select2 .select-qw a").addClass("input-error-popup");
+
+
+								} else {
+									$(".popup1").hide();
+									$(".popup2").show();
+									$(".qw-select2 a").removeClass("input-error-popup");
+								}
+							});
+
+							$(".sms_f").click(function () {
+								//console.log($(this).attr("class"));
+
+								//$('.p-pop3').fadeOut(0);
+								if (check()) {
+									//$(".popup1").hide();
+									// $(".popup2").hide();
+									//$(".popup3").show();
+									$(".book_f").click();
+									$(".sms_f").removeClass('sms_f');
+									// var phone = $("#phone-popup").val();
+									// $('.name-popup3').html('<p>' + $('input[name=fio]').val() + '</p>');
+									// $.post('/algo/processing/sms.php',{'phone':phone},function(resp){
+									// $(".sms_f").removeClass('sms_f');
+									// var r = JSON.parse(resp);
+									// if(r.status == 'ok')
+									// {
+									// $(".popup1").hide();
+									// $(".popup2").hide();
+									// $(".popup3").show();
+									// }
+									// else
+									// {
+									// alert(r.msg);
+									// $(".close-popup").click();
+									// }
+									// });
+								}
+							});
+
+							$(".book_f").click(function () {
+								var that = $(this);
+								var type = that.attr('type');
+								if (sendflag === true) {
+									that.removeClass('book_f');
+									$('#resp_info').html("<div style='position:relative;'><img style='position:absolute;top:-120px;left:-190px;' src='/img/util/loading-07.gif' /></div>");
+									//$('.p-pop3').html("<div style='position:relative;'><img style='position:absolute;top:-120px;left:-190px;' src='/img/util/loading-07.gif' /></div>");
+									var data = $('form[name=popup-form]').serialize();
+									console.log(data, 'qqq');
+									$.post('/algo/processing/bookForm.php', {'data': data}, function (resp) {
+										var r = JSON.parse(resp);
+										//$('.bottom-popup').addClass('success');
+										$('#resp_info').html(r.msg);
+										$('#resp_info').fadeIn(0);
+										if (r.status == 'ok') {
+											sendflag = false;
+											if (type == 'clinic')
+												$(".clinic4").click();
+											else
+												$(".doc4").click();
+
+											setTimeout(function () {
+												$('#resp_info').html('');
+												$(".pop-up").fadeOut(300);
+												//$(".popup1").show();
+												$(".popup2").hide();
+												$(".popup3").hide();
+											}, 3000);
+										}
+										else {
+											that.addClass('book_f');
+											//$('input[name=sms]').val('');
+											$('#resp_info').html(r.msg);
+											$('#resp_info').fadeIn(0);
+										}
+									});
+								}
+							});
+
+							$(".close-popup").click(function () {
+								$(".pop-up").fadeOut(300);
+								$(".popup1").show();
+								$(".popup2").hide();
+								$(".popup3").hide();
+							});
+
+							$('#pop-up__order').click(function (e) {
+								if (e.target.id != 'pop-up__order') {
+									return false;
+								}
+								$(this).fadeOut(500);
+							});
+						});
+					</script>
+				</div>
+				<div id="formTimeContainer">
+					<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+					<script type="text/javascript" src="https://zdorov.online/js/jquery-ui.min.js"></script>
+					<div class="popup-appointment__wrapper" style="display:none;">
+						<style>
+							/*.app-form__time-box{padding: 10px 0;}*/
+							/*.app-header{margin-bottom:0px;}*/
+							.cli_block_pnt {
+								position: relative;
+								border: 1px solid #ccc;
+								margin-bottom: 5px;
+								border-radius: 3px;
+							}
+
+							.cli_block_pnt .clinic_left {
+								cursor: pointer;
+								padding: 5px;
+								margin-left: 100px;
+							}
+
+						</style>
+						<div class="popup-appointment">
+							<div class="close-popup"></div>
+							<div class="popup-appointment__inner">
+								<div class="popup-appointment__leftside static">
+									<div class="app-header">
+					<span class="app-header__title">
+						Вы записываетесь к:
+					</span>
+									</div>
+									<div class="app-main">
+										<div class="app-row app-doc">
+											<div class="app-doc__img">
+												<img width="120" height="170" id="docavatar" src="" alt="">
+											</div>
+											<div class="app-doc__name">
+							<span class="app-header__title docfio">
+								Осипенко
+								Янина
+								Юрьевна
+							</span>
+											</div>
+										</div>
+										<div class="app-doc__about">
+											<p class="app-text docspec">Нарколог</p>
+											<hr>
+											<div id="cliinfo">
+												<p class="app-text cliname"></p>
+												<p class="app-text cliaddress"></p>
+												<div class="clinic-about" style="border:0">
+													<span class="clinic-about__metro" style="margin: 0;padding-bottom: 0;"><span id="metroname"></span> <span class="metro_distance"></span></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="app-footer">
+										<span class="app-text">Первичный приём - </span> <span class="app-price"></span>
+									</div>
+									<div class="app-footer bdatefooter" style="display:none;">
+										<span class="app-day">Дата:</span> <span class="app-date">17.03.2017</span>
+										<br>
+										<span class="app-time_l">Время:</span> <span class="app-time">16:30</span>
+									</div>
+								</div>
+								<div class="popup-appointment__rightside steps">
+									<div class="app-header">
+					<span id="s1" class="app-header__title app-header__title--blue">
+
+					</span>
+					<span id="s2" class="app-header__title">
+
+					</span>
+									</div>
+									<div class="app-main rmain" style="">
+										<form name="bookTime" class="app-form" id="doc-appointment">
+											<input name="docid" type="hidden" value="">
+											<input name="dtime" type="hidden" value="">
+											<input name="cliid" type="hidden" value="">
+											<!--First step start-->
+											<div id="step123">
+												<div class="app-form__row date_time_holder">
+													<span class="app-form__label">Дата записи</span>&nbsp;<span id="info" style="color:#f00;"></span>
+													<div class="app-form__date">
+														<input name="dtpicker2" type="text" class="app-form__date-picker hasDatepicker" id="app-datepicker">
+													</div>
+												</div>
+												<div class="app-form__row">
+													<div id="timetable">
+														<span class="app-form__label">Время записи</span>
+														<div id="time-preloader" style="display: none;"></div>
+														<div class="app-form__time">
+
+														</div>
+													</div>
+													<!--First step end-->
+
+													<!--Second step start-->
+													<div id="step2" style="display:none;">
+														<div class="app-form__row app-form__row--double">
+															<label class="app-form__half">
+																<span class="app-form__label">Введите ваше имя</span>
+																<input value="" name="fio2" type="text" class="app-form__input" placeholder="Контактное лицо">
+															</label>
+															<label class="app-form__row">
+																<span class="app-form__label">Введите ваш e-mail</span>
+																<input type="text" class="app-form__input" name="email2" placeholder="Введите ваш e-mail" value="">
+															</label>
+														</div>
+														<div class="app-form__row app-form__row--double">
+															<label class="app-form__half">
+																<span class="app-form__label">Введите ваш номер телефона</span>
+																<input type="text" class="app-form__input" name="tel2" placeholder="+7 ( ____ ) ____-___-___" id="phone-popup2" value="" style="width: 210px;margin-right: 20px;float: left;">
+
+															</label>
+															<!--button class="bbtn app-btn__link" style="display:block;">Получить код</button>
+															</div>
+															Секретный код придет на ваш телефон в течение 20 секунд-->
+														</div>
+														<!--Second step end-->
+														<!--Third step start-->
+														<div id="step3" style="display:none;">
+															<div class="app-form__row">
+																<!--<span class="app-form__input app-form__input&#45;&#45;disabled">Ксения</span>-->
+															</div>
+															<label class="app-form__row">
+																<span class="app-form__label">Введите код, полученный по СМС:</span>
+																<input name="sms" type="text" class="app-form__input" placeholder="Код из СМС" required="">
+															</label>
+															<div class="app-form__row" style="position:relative;">
+																<!--div id='cartoon' style='display:none;position:absolute;top:-120px;left:-260px;'><img src='/img/util/loading-07.gif' /></div-->
+																<span class="app-form__success" style="display:none;">Ваша заявка принята. Оператор свяжется с вами в течение 15 минут для уточнения деталей приёма и подтверждения записи.</span>
+																<span class="app-form__nosuccess" style="display:none;color:#f00;"></span>
+															</div>
+														</div>
+														<!--Third step end-->
+													</div>
+												</div>
+											</div>
+											<div id="cliinfo_right">
+
+											</div>
+										</form>
+										<div class="step4"></div>
+										<div class="app-footer">
+											<div class="app-footer__inner">
+												<div class="app-tel">
+													<span class="app-tel__num">Тел. для справок: 8 (499) 110 63 39</span>
+													<br>
+													<a href="" class="app-tel__assign">Пользовательское соглашение</a>
+												</div>
+												<div class="app-btn" style="position:relative;">
+													<button class="bbtn app-btn__link step0">Выбрать</button>
+													<button class="bbtn app-btn__link step1" style="display:none;">Записаться</button>
+													<button class="bbtn app-btn__link step2" style="display:none;">Записаться</button>
+													<button class="bbtn app-btn__link step3" style="display:none;">Записаться</button>
+													<div id="cartoon" style="display:none;position:absolute;top:-90px;left:-270px;">
+														<img src="/img/util/loading-07.gif"></div>
+												</div>
+											</div>
+
+
+										</div>
+
+										<div id="clichoose">
+
+										</div>
+									</div>
+								</div>
+
+								<script>
+
+									jQuery(document).ready(function ($) {
+										$(window).load(function () {
+											setTimeout(function () {
+												$('#time-preloader').fadeOut('slow', function () {
+												});
+											}, 1000);
+										});
+									});
+
+									function check() {
+										var fio = $('input[name=fio2]').val();
+										var tel = $('input[name=tel2]').val();
+										var email = $('input[name=email2]').val();
+										var dtpicker = $('input[name=dtpicker2]').val();
+										//console.log(email);
+										var flag = true;
+										if (fio == '') {
+											$('input[name=fio2]').css('border', '1px solid red');
+											flag = false;
+										}
+										if (dtpicker == '') {
+											$('input[name=dtpicker2]').css('border', '1px solid red');
+											flag = false;
+										}
+										if (tel == '') {
+											$('input[name=tel2]').css('border', '1px solid red');
+											flag = false;
+										}
+										if (email == '') {
+											$('input[name=email2]').css('border', '1px solid red');
+											flag = false;
+										}
+										if (flag)
+											return true;
+										else
+											return false;
+									}
+									function choose_btime(tm) {
+										var tmp = $('#app-datepicker').val();
+										tmp = tmp.split(' ');
+										$('#app-datepicker, input[name=dtime]').val(tmp[0] + ' ' + tm);
+										$('.app-date').text(tmp[0]);
+										$('.app-time').text(tm);
+										$('.bdatefooter').fadeIn(0);
+										$('input[name=dtime]').val(tmp[0] + ' ' + tm);
+										//$('.step1').click();
+									}
+									$('.app-form__time-box').click(function () {
+										$(this).toggleClass('active')
+									});
+									$(document).ready(function () {
+
+										$('form[name=bookTime]').submit(function (event) {
+											event.preventDefault();
+										});
+										// $( function() {
+										// $( "#app-datepicker" ).datepicker();
+										// } );
+										$("#phone-popup2").mask("+7 (999) 999 - 99 - 99");
+										$('.close-popup').click(function () {
+											$('.popup-appointment__wrapper').hide();
+										});
+										$('.step0').click(function () {
+											$('#cliinfo_right').hide();
+											$('#step123').fadeIn(300);
+											$('.bbtn').hide();
+											if ($('#timetable').css('display') == 'none')
+												$('.step3').fadeIn(300);
+											else
+												$('.step1').fadeIn(300);
+											if ($('.step1').hasClass('no_ttable')) {
+												$('#s1').text('');
+												$('#s2').text('Оставьте контактные данные');
+											}
+											else {
+												$('#s1').text('');
+												$('#s2').text('Выберите дату и время');
+											}
+										});
+										$('.step1').click(function () {
+											console.log('.step1 clicked');
+											if ($(this).hasClass('no_ttable'))
+												$('.step2').click();
+											else {
+												var cli_id = $('input[name=cliid]').val();
+												console.log(dates[cli_id].length);
+												var dateTime = (dates[cli_id].length > 0) ? /\d\d-\d\d-\d\d\d\d \d\d:\d\d/ : /\d\d-\d\d-\d\d\d\d/;
+												var book_dtime = $('#app-datepicker').val();
+												if (dateTime.test(book_dtime)) {
+													$('#app-datepicker').attr('disabled', "disabled");
+													$('#timetable').hide();
+													$('#step2').fadeIn(300);
+													$('.date_time_holder').css('display', 'none');
+													$('.bbtn').hide();
+													$('.step3').fadeIn(300);
+													$('#s1').text('');
+													$('#s2').text('Оставьте контактные данные');
+												}
+												else {
+													$('#info').text('Пожалуйста выберите время записи');
+													$('#info').fadeIn(300);
+													setTimeout(function () {
+														$('#info').hide();
+													}, 3000);
+												}
+											}
+										});
+
+										$('.step3').click(function () {
+											if (check()) {
+												console.log('.step3 clicked');
+												$('#cartoon').fadeIn(300);
+												var data = $('form[name=bookTime]').serialize();
+												$.post('/algo/processing/bookForm.php', {'data': data}, function (resp) {
+													var r = JSON.parse(resp);
+													if (r.status == 'ok') {
+														$('#cartoon').hide();
+														$(".step4").click();
+														$('#cliinfo_right').html(r.msg);
+														$('#cliinfo_right').fadeIn(0);
+														$(".step3").hide();
+														$('#step2').hide();
+														$('#s1').text('');
+														$('#s2').text('Успешно записались');
+														// $('.app-form__success').fadeIn(300);
+														// setTimeout(function(){
+														// $(".close-popup").click();
+														// },3000);
+													}
+													else {
+														$('#cartoon').hide();
+														switch (r.tgt) {
+															case  'email':
+																$('input[name=email2]').css('border', '1px solid #f00');
+																break;
+
+															case  'phone':
+																$('input[name=tel2]').css('border', '1px solid #f00');
+																break;
+
+															default:
+																break;
+
+														}
+														//alert(r.msg);
+														//$('#cartoon').fadeOut(0);
+														// $('.app-form__nosuccess').html(r.msg).hide();
+														// setTimeout(function(){
+														// $(".app-form__nosuccess").hide();
+														// },3000);
+													}
+												});
+											}
+										});
+										$('.step4').click(function () {
+											//console.log('.step4 clicked');
+										});
+										$('input').keyup(function () {
+											if ($(this).val() != '')
+												$(this).css('border', '1px solid #d3d3d3');
+										});
+										console.log(location);
+									});
+
+								</script>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!--div class="doc-more">
+						<a href="/docs/">Показать еще врачей</a>
+					</div-->
+					<div class="note-list">
+						<div class="note__text  list-disease note__text--auto">
+							<h3>Принципы лечения болезни</h3>
+							<p>Консервативная терапия не позволяет устранить уже присутствующее расширение кровеносных сосудов. Если вена
+							   потеряла здоровую форму, то гели и мази ей не вернут прежнюю эластичность и размеры. Однако флеботропные
+							   препараты необходимы, чтобы предупредить дальнейшее прогрессирование заболевания. Положительный эффект
+							   достигается с помощью:</p>
+							<div class="list two-column">
+								<ul class="list__item-pink">
+									<li> охлаждающих мазей;</li>
+									<li> контрастного душа;</li>
+									<li> прохладных ванночек для ног.</li>
+								</ul>
+							</div>
+
+							<p>Избавиться от расширения вен можно только хирургическим путем. Предусмотрены процедуры:</p>
+							<div class="list two-column">
+								<ul class="list__check">
+									<li> склеивания;</li>
+									<li> запаивания;</li>
+									<li> удаления.</li>
+								</ul>
+							</div>
+
+							<p>При обнаружении симптомов варикоза и его клинических проявлений нередко назначают склеротерапию. Метод
+							   предусматривает введение в пораженные сосуды специальных препаратов, которые склеивают стенки и закрывают
+							   просвет вены. </p>
+
+							<p>Хирургическое лечение не отменяет приема медикаментозных препаратов. Среди них:</p>
+							<div class="list two-column">
+								<ul class="list__item-pink">
+									<li>кроворазжижающие;</li>
+									<li> обезболивающие;</li>
+									<li> противовоспалительные;</li>
+									<li> витаминные комплексы.</li>
+								</ul>
+							</div>
+
+							<p>Показано специальное питание, включающее продукты с низким содержанием холестерина. Важно высокое содержание
+							   белка, а также витаминов и минералов, благотворно воздействующих на укрепление стенок сосудов. Рацион
+							   обогащается:</p>
+							<div class="list two-column">
+								<ul class="list__check">
+									<li> морепродуктами;</li>
+									<li> овощами;</li>
+									<li> кисломолочными продуктами;</li>
+									<li> фруктами.</li>
+								</ul>
+							</div>
+
+							<p>Ограничивают употребление маринадов, кофе, бульонов и алкоголя. Важно снизить количество потребляемых
+							   копченостей. </p>
+
+						</div>
+					</div>
+					<div class="seo_text note">
+						<div class="text-article text-article--center">
+							<h4>Чем опасен варикоз на ногах?</h4>
+							<p>
+								Осложнения при расширении вен наблюдаются довольно часто. Основные последствия болезни:
+							</p>
+							<div class="list two-column">
+								<ul class="list__item-pink">
+									<li> флебит;</li>
+									<li> тромбофлебит;</li>
+									<li> тромбоз;</li>
+									<li> тромбоэмболия легочной артерии.</li>
+								</ul>
+							</div>
+							<p>
+								Флебит — воспалительный процесс, локализующийся в стенках вен. Является одним из наиболее распространенных
+								осложнений. Обычно затрагивает одну из вен, расположенную под поверхностью кожи. О воспалении
+								свидетельствуют:
+							</p>
+							<div class="list two-column">
+								<ul class="list__check">
+									<li> тупая ноющая боль;</li>
+									<li> уплотнение вдоль пораженного сосуда, болезненное при пальпации;</li>
+									<li> покраснение кожи, местное повышение температуры.</li>
+								</ul>
+							</div>
+							<p>
+								Есть риск прорыва пораженного участка кровеносного суда, кровотечения. При флебите красноту могут сменить
+								коричневые пятна.
+							</p>
+							<p>
+								Тромбофлебит ставится, если в воспаленных венах обнаружены тромбы. Это закономерное последствие запущенного
+								флебита. При таком осложненном варикозе вен наблюдаются:
+							</p>
+							<div class="list two-column">
+								<ul class="list__item-pink">
+									<li> потеря аппетита;</li>
+									<li> общая слабость;</li>
+									<li> озноб;</li>
+									<li> отечность ног;</li>
+									<li> повышение общей температуры.</li>
+								</ul>
+							</div>
+							<p>
+								Тромбы в венах ног редко отрываются. Если же это случается, то попадание сгустка в ствол легочной артерии
+								способно привести к смерти.
+							</p>
+							<p>
+								Тромбоз — попадание сгустка крови в глубокие вены. Признаки варикоза, осложненного данным заболеванием,
+								крайне сложно распознать самостоятельно и даже с помощью современных диагностических методов. Если тромбоз
+								возник в толще икроножных мышц, то возможны:
+							</p>
+							<div class="list two-column">
+								<ul class="list__check">
+									<li> болезненность;</li>
+									<li> внезапная отечность лодыжки;</li>
+									<li> чувство расширения мышцы.</li>
+								</ul>
+							</div>
+							<p>
+								Есть случаи, когда тромбоз поражает одну ногу, а пациент жалуется на дискомфорт в другой конечности.
+							</p>
+							<p>
+								Данное осложнение гораздо опаснее тромбофлебита. Лечение тромбоза направлено преимущественно на недопущение
+								продвижения сгустков крови по направлению к сердцу.
+							</p>
+							<p>
+								Когда осложнен варикоз, симптомы его могут проявляться молочными и синими отеками. Последний вид значительно
+								опаснее. Он является следствием застоя крови, что приводит к гипоксии тканей ног. Без срочных адекватных мер
+								процесс распространяется на всю ногу, кожа становится холодной, натягивается, чернеет. Возникают
+								трофические, часто незаживающие, язвы.
+							</p>
+							<h4>Профилактика варикоза</h4>
+							<p>
+								Очень важно замедлить развитие заболевания, не допустить поражения здоровых вен. Для этого пациенту
+								назначают:
+							</p>
+							<div class="list two-column">
+								<ul class="list__item-pink">
+									<li>ношение индивидуально подобранных эластичных чулок;</li>
+									<li> бинтование страдающих участков;</li>
+									<li> применение специальных мазей;</li>
+									<li> корректное питание.</li>
+								</ul>
+							</div>
+							<img width="299" alt="Эластичные чулки-картинка" src="https://zdorov.online/upload/medialibrary/e77/e7704903b0066069138b07ef4821a935.jpg" height="360" title="Эластичные чулки-картинка" style="float: right; margin-top: 10 px; padding-left:10px;">
+							<p>
+								Следует следить за весом, поскольку чрезмерная масса тела значительно ухудшает состояние кровеносных
+								сосудов. Бороться с лишними килограммами необходимо под контролем специалиста, нельзя сидеть на строгих
+								диетах.
+							</p>
+							<p>
+								На второй и третьей стадии варикоза вполне полезны физические упражнения. Подобрать оптимальный вид спорта
+								нужно вместе с флебологом. Доктор расскажет об обязательных ограничениях в силовых нагрузках, чтобы не
+								навредить венам.
+							</p>
+							<p>
+								Профилактика варикоза предусматривает четкое соблюдение режима работы и отдыха. Категорически не допускается
+								ежедневное продолжительное стояние или сидение. В противном случае вред от такого образа жизни может свести
+								на нет все мероприятия, направленные на замедление процесса расширения вен, потери их эластичности. Следует
+								регулярно использовать профилактический трикотаж, который создает необходимый каркас вокруг кровеносных
+								сосудов. Особенно он полезен в период беременности, включая первые 3 месяца.
+							</p>
+							<h4>Как предотвратить варикоз на ногах?</h4>
+							<p>
+								Поскольку варикозное расширение вен считается генетически обусловленным заболеванием, то уделять внимание
+								состоянию сосудов важно с юного возраста. Положительный эффект достигается:
+							</p>
+							<div class="list two-column">
+								<ul class="list__check">
+									<li>регулярными умеренными физическими нагрузками;</li>
+									<li> контрастным душем;</li>
+									<li> ношением правильно подобранной обуви и одежды.</li>
+								</ul>
+							</div>
+							<p>
+								Чтобы избежать болезни, рекомендуется с ранних лет поддерживать нормальный вес, больше ходить пешком. Не
+								лишними будут посещения бассейна, плавание в открытых водоемах. Если нет навыков плавания, то полезным будет
+								просто стояние в воде. Она оказывает давление в 60-70 мм рт. ст. Это необходимо для предотвращения застойных
+								процессов в венах. Хороший результат дает поднятие ног лежа. Рекомендуется принимать такую легкую позу
+								каждый вечер перед сном.
+							</p>
+							<h4>Препараты-венотоники</h4>
+							<p>
+								Нормализация кровенаполнения вен достигается за счет применения венотоников. Они показаны при венозной
+								недостаточности, которая сопровождается нарушением кровообращения в страдающем участке. Назначают препараты
+								преимущественно на ранних стадиях патологии в качестве поддерживающей терапии. Венотоники необходимы для:
+							</p>
+							<div class="list two-column">
+								<ul class="list__item-pink">
+									<li> купирования симптомов варикоза (болезненности, отечности, тяжести);</li>
+									<li> профилактики на субклинических стадиях;</li>
+									<li> предотвращения осложнений.</li>
+								</ul>
+							</div>
+							<p>
+								Препараты повышают тонус сосудов, улучшают кровообращение в прилегающих тканях. Также они необходимы для
+								предотвращения образования тромбов.
+							</p>
+							<p>
+								Сегодня распространены венотоники растительного происхождения. У них минимальный перечень противопоказаний.
+								Лекарства хорошо переносятся больными, имеют поливалентное действие с лимфотропным эффектом. Согласно
+								химической природе главных действующих компонентов, выделяют такие группы препаратов:
+							</p>
+							<div class="list two-column">
+								<ul class="list__check">
+									<li> на основе флавоноидов;</li>
+									<li> содержащие троксерутин;</li>
+									<li> на основе пентоксифиллина;</li>
+									<li> из лекарственного сырья.</li>
+								</ul>
+							</div>
+							<p>
+								Профилактика варикоза, а также лечение болезни предусматривают прием индивидуально подобранных флебологом
+								венотоников.
+							</p></div>
+					</div>
+					<!--<div class="advice-folk__wrap">
+<div class="note-list">-->
+					<div class="advice-folk__wrap">
+						<h4>Народные методы</h4>
+						<p>
+							Существуют нетрадиционные способы, позволяющие облегчить проявления варикозного расширения вен. К ним можно
+							прибегать, не отказываясь от стандартной терапии. Среди распространенных средств:
+						</p>
+						<ul class="advice-item">
+							<li>
+								<span class="item__img"> <img width="60" alt="Каштаны-картинка" src="https://zdorov.online/upload/medialibrary/9fd/9fdc376ecbb043300502ce530b8984c2.jpg" height="60" title="Каштаны-картинка"> </span>
+								<div class="item__text">
+									<span class="item__text-tit">Конский каштан. </span>
+									<p>
+										Горсть плодов очищают от кожуры, настаивают на 200 мл водки 14 дней в темном месте в банке из
+										непрозрачного стекла. Принимают по 30 капель 3 раза в день после еды.
+									</p>
+								</div>
+							</li>
+							<li>
+								<span class="item__img"> <img width="60" alt="Уксус-картинка" src="https://zdorov.online/upload/medialibrary/ff8/ff8a50594d18f851b88864becd4af9d0.jpg" height="60" title="Уксус-картинка"> </span>
+								<div class="item__text">
+									<span class="item__text-tit">Яблочный уксус. </span>
+									<p>
+										Смоченную тряпочку или марлю прикладывают к сосудистой сеточке каждый вечер на 15-20 минут.
+									</p>
+								</div>
+							</li>
+							<li>
+								<span class="item__img"> <img width="60" alt="Мазь-картинка" src="https://zdorov.online/upload/medialibrary/bcf/bcfd8cc25839f09bba4a1d38dde5dd7b.jpg" height="60" title="Мазь-картинка"> </span>
+								<div class="item__text">
+									<span class="item__text-tit">Мазь. </span>
+									<p>
+										Пчелиный воск, прополис, оливковое масло смешивают в пропорции 2:1:1. Втирают в голени утром и
+										вечером.
+									</p>
+								</div>
+							</li>
+							<li>
+								<span class="item__img"> <img width="60" alt="Мускатный орех-картинка" src="https://zdorov.online/upload/medialibrary/12c/12c7224b4a1e899d61b7b51ffea0cb2c.jpeg" height="60" title="Мускатный орех-картинка"> </span>
+								<div class="item__text">
+									<span class="item__text-tit">Мускатные орехи.</span>
+									<p>
+										Несколько плодов измельчают в муку, заливают стаканом кипятка. Выпивают утром натощак, добавив ложку
+										меда.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<br>                            <!--</div>
+						</div>-->
+
+					<div class="seo_text note">
+						<div class="text-article text-article--center">
+						</div>
+					</div>
+					<div class="self-test">
+						<div class="self-test__question">Обсудите вашу проблему на форуме или задайте бесплатно вопрос врачу!</div>
+						<div class="self-test__button">
+							<!--noindex-->
+							<div class="diagnostic__button--disease obsudit_forum">
+								<a href="/forum/">Обсудить на форуме</a>
+							</div>
+							<span class="self-test__disease-text">или</span>
+							<div class="diagnostic__button--disease knopka_qa_down">
+								<a href="/qa/">Задать вопрос врачу</a>
+							</div><!--/noindex-->
+						</div>
+					</div>
+					<div class="button-share__SN clearfix">
+						<span>Поделиться c друзьями.</span>
+						<section class="share__SN">
+							<ul>
+								<li class="share__SN--vk">
+									<a onclick="return Share.vkontakte('http://zdorov.online/bolezni/varikoz/','Варикоз вен','http://zdorov.online/upload/iblock/96c/96cdf144768bf593c971f1beff4bcbd7.jpg',' Варикоз — необратимое расширение и удлинение вен нижних конечностей. Стенка кровеносного сосуда истончается, образуются «узлы». Болезнь известна на протяжении нескольких тысячелетий, однако до сих пор нет лекарственных препаратов или нехирургических');">
+										Вконтакте
+									</a>
+								</li>
+								<li class="share__SN--f">
+									<a onclick="return Share.facebook();">Facebook</a>
+								</li>
+								<li class="share__SN--tw">
+									<a onclick="return Share.twitter('http://zdorov.online/bolezni/varikoz/','Варикоз вен','http://zdorov.online/upload/iblock/96c/96cdf144768bf593c971f1beff4bcbd7.jpg',' Варикоз — необратимое расширение и удлинение вен нижних конечностей. Стенка кровеносного сосуда истончается, образуются «узлы». Болезнь известна на протяжении нескольких тысячелетий, однако до сих пор нет лекарственных препаратов или нехирургических')">
+										Tweeter
+									</a>
+								</li>
+								<li class="share__SN--ok">
+									<a onclick="return Share.odnoklassniki('http://zdorov.online/bolezni/varikoz/','Варикоз вен','http://zdorov.online/upload/iblock/96c/96cdf144768bf593c971f1beff4bcbd7.jpg',' Варикоз — необратимое расширение и удлинение вен нижних конечностей. Стенка кровеносного сосуда истончается, образуются «узлы». Болезнь известна на протяжении нескольких тысячелетий, однако до сих пор нет лекарственных препаратов или нехирургических');">
+										Одноклассники
+									</a>
+								</li>
+								<li class="share__SN--g">
+									<a onclick="return Share.google('http://zdorov.online/bolezni/varikoz/','Варикоз вен','http://zdorov.online/upload/iblock/96c/96cdf144768bf593c971f1beff4bcbd7.jpg',' Варикоз — необратимое расширение и удлинение вен нижних конечностей. Стенка кровеносного сосуда истончается, образуются «узлы». Болезнь известна на протяжении нескольких тысячелетий, однако до сих пор нет лекарственных препаратов или нехирургических');">
+										GooglPlus
+									</a>
+								</li>
+								<li class="share__SN--Lj">
+									<a onclick="return Share.livejornal('http://zdorov.online/bolezni/varikoz/','Варикоз вен','http://zdorov.online/upload/iblock/96c/96cdf144768bf593c971f1beff4bcbd7.jpg',' Варикоз — необратимое расширение и удлинение вен нижних конечностей. Стенка кровеносного сосуда истончается, образуются «узлы». Болезнь известна на протяжении нескольких тысячелетий, однако до сих пор нет лекарственных препаратов или нехирургических');">
+										LiveJournal
+									</a>
+								</li>
+							</ul>
+						</section>
+					</div>
+					<div class="forum clearfix">
+						<div id="mc-container">
+							<div class="cc mc-c">
+								<div class="mc-head">
+									<ul>
+										<li>
+											<div class="mc-comment-star">
+												<span class="mc-star" title="Оцените пост"><span class="mcicon-star" data-orgcls="mcicon-star" data-star="1"></span><span class="mcicon-star" data-orgcls="mcicon-star" data-star="2"></span><span class="mcicon-star" data-orgcls="mcicon-star" data-star="3"></span><span class="mcicon-star" data-orgcls="mcicon-star" data-star="4"></span><span class="mcicon-star" data-orgcls="mcicon-star" data-star="5"></span></span>
+												<span itemscope="" itemtype="http://schema.org/Product" title="Рейтинг поста 5 - 1 голос"><meta itemprop="name" content="Варикоз: симптомы, причины и профилактика варикоза вен. Чем опасен варикоз на ногах?"><meta itemprop="url" content="https://zdorov.online/bolezni/varikoz/"><span class="mc-star-count" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating"><span itemprop="ratingValue">5</span> / <span itemprop="ratingCount">1</span></span></span>
+											</div>
+										</li>
+										<li class="mc-user-menu" style="display:none">
+											<a class="mc-menu-toggle" href="#"><span class="mc-username"></span>
+												<span class="mcicon-bars"></span></a>
+											<ul class="mc-dropdown-menu" style="display:none">
+												<li>
+													<a href="#" class="mc-user-prof">Мой профиль</a>
+												</li>
+												<li>
+													<a href="#" class="mc-user-edit">Редактировать профиль</a>
+												</li>
+												<li>
+													<a href="#" class="mc-logout">Выход</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="mc-form">
+									<div class="mc-postbox">
+										<div class="mc-avatar-cnt">
+											<div class="mc-avatar-wrap">
+												<img src="https://cackle.me/widget/img/anonym2.png" class="mc-avatar" onerror="if(this.src!='https://cackle.me/widget/img/anonym2.png')this.src='https://cackle.me/widget/img/anonym2.png';">
+											</div>
+										</div>
+										<div class="mc-text-cnt">
+											<div class="mc-text-wrap">
+												<div class="mc-textarea-wrap">
+													<textarea class="mc-textarea" placeholder="Оставьте свой комментарий..." style="overflow-x: hidden !important; overflow-y: hidden; word-wrap: break-word !important; height: 33px;"></textarea>
+													<div class="mc-attach-cnt">
+														<a href="#" class="mc-attach-toggle"><span class="mcicon-paper-clip"></span></a>
+														<ul class="mc-dropdown-menu" style="display:none">
+															<li>
+																<a href="#" class="mc-attachlink"><span class="mcicon-link"></span>
+																	Загрузить из интернета
+																</a>
+																<div class="mc-attachlinkbox" style="display:none">
+																	<textarea class="mc-attachlink-textarea" placeholder="Ссылка на изображение, видео (YouTube, Vimeo)"></textarea>
+																	<button class="mc-btn2 mc-btn2-sm mc-btn2-bck mc-attachlink-btn">
+																		Добавить изображение
+																	</button>
+																</div>
+															</li>
+															<li>
+																<a href="#" class="mc-attachimg"><span class="mcicon-camera"></span>
+																	Загрузить изображение
+																</a>
+																<input type="file" tabindex="-1" accept="image/*" style="display:none!important">
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mc-auth-cnt">
+											<div class="mc-authbox">
+												<div class="mc-grid">
+													<div class="mc-auth-social mc-grid-lg">
+														<div class="mc-h6">Войдите через социальную сеть</div>
+														<div class="mc-authsoc">
+															<a href="#" class="mc-auth-btn" data-provider="facebook" title="Facebook">
+																<div class="mc-facebook"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="twitter" title="Twitter">
+																<div class="mc-twitter"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="googleplus" title="Google+">
+																<div class="mc-googleplus"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="vkontakte" title="Вконтакте">
+																<div class="mc-vkontakte"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="odnoklassniki" title="OK">
+																<div class="mc-odnoklassniki"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="mymailru" title="Мой Мир">
+																<div class="mc-mymailru"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="yandex" title="Яндекс">
+																<div class="mc-yandex"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="tumblr" title="Tumblr">
+																<div class="mc-tumblr"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="live" title="Live">
+																<div class="mc-live"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="linkedin" title="Linkedin">
+																<div class="mc-linkedin"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="instagram" title="Instagram">
+																<div class="mc-instagram"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="soundcloud" title="Soundcloud">
+																<div class="mc-soundcloud"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="foursquare" title="Foursquare">
+																<div class="mc-foursquare"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="yammer" title="Yammer">
+																<div class="mc-yammer"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="500px" title="500px">
+																<div class="mc-500px"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="stackoverflow" title="Stackoverflow">
+																<div class="mc-stackoverflow"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="dropbox" title="Dropbox">
+																<div class="mc-dropbox"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="yahoo" title="Yahoo">
+																<div class="mc-yahoo"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="livejournal" title="Живой Журнал">
+																<div class="mc-livejournal"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="wordpress" title="WordPress">
+																<div class="mc-wordpress"></div>
+															</a>
+															<a href="#" class="mc-auth-btn" data-provider="cackle" title="Cackle">
+																<div class="mc-cackle"></div>
+															</a>
+														</div>
+													</div>
+													<div class="mc-auth-anonym mc-grid-lg">
+														<div class="mc-h6">или анонимно</div>
+														<div class="mc-p">
+															<a href="//gravatar.com" class="mc-avatar-wrap" target="_blank" title="Так будет отображаться ваш аватар в комментариях. Кликните, если хотите его изменить.">
+																<img src="https://cackle.me/widget/img/anonym2.png" class="mc-anonym-avatar">
+															</a>
+															<input type="text" class="mc-anonym-name" placeholder="Ваше имя"></div>
+														<div class="mc-hide">
+															<div class="mc-p">
+																<input type="text" class="mc-anonym-email" placeholder="Email"></div>
+															<div class="mc-captcha"></div>
+															<div class="mc-p">
+																<button class="mc-btn2 mc-btn2-sm mc-btn2-bck mc-anonym-login">Войти как
+																															   гость
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mc-submit-cnt">
+											<div class="mc-submit-left">
+												<div class="mc-social-xpost">
+													<input type="checkbox" rel="button" class="mc-social-xpost-checkbox">разрешить
+																														 публиковать
+																														 в<span class="mc-social-xpost-icon"></span>
+												</div>
+											</div>
+											<button class="mc-btn2 mc-submit">Комментировать</button>
+										</div>
+										<div class="mc-clear"></div>
+									</div>
+								</div>
+								<div class="mc-menu mc-grid">
+									<div class="mc-grid-xs6">
+										<a href="#" class="mc-sort-toggle"><span class="mc-sort-label">Новые</span>
+											<span class="mc-comment-count">(2)</span> <span class="mcicon-sort"></span></a>
+										<ul class="mc-sort mc-dropdown-menu" style="display:none">
+											<li class="mc-active">
+												<a href="#" data-sort="desc">Новые <span class="mcicon-ok"></span></a>
+											</li>
+											<li>
+												<a href="#" data-sort="best">Лучшие <span class="mcicon-ok"></span></a>
+											</li>
+											<li>
+												<a href="#" data-sort="asc">Ранее <span class="mcicon-ok"></span></a>
+											</li>
+										</ul>
+										<ul class="mc-sort mc-nav" style="">
+											<li class="mc-active">
+												<a href="#" data-sort="desc">Новые
+													<span class="mc-comment-count">(2)</span><span class="mc-sort-hover"></span></a>
+											</li>
+											<li>
+												<a href="#" data-sort="best">Лучшие
+													<span class="mc-comment-count">(2)</span><span class="mc-sort-hover"></span></a>
+											</li>
+											<li>
+												<a href="#" data-sort="asc">Ранее
+													<span class="mc-comment-count">(2)</span><span class="mc-sort-hover"></span></a>
+											</li>
+										</ul>
+									</div>
+									<div class="mc-grid-xs4">
+										<ul class="mc-nav mc-useract">
+											<li class="mc-subscr-email" style="display:none">
+												<div class="mc-subscr-input-wrap"><input type="text" placeholder="example@mail.com"></div>
+											</li>
+											<li>
+												<a href="#" class="mc-subscr-toggle"><span class="mcicon-envelope"></span>
+													<span class="mc-navlabel">Подписаться</span></a>
+											</li>
+											<li class="mc-share-cnt">
+												<a href="#" class="mc-share-toggle"><span class="mcicon-share-alt"></span>
+													<span class="mc-navlabel">Поделиться</span></a>
+												<ul class="mc-dropdown-menu" style="display:none">
+													<li>
+														<ul class="mc-share-menu">
+															<li><span class="mc-social mc-twitter" data-social="twitter"></span></li>
+															<li><span class="mc-social mc-facebook" data-social="facebook"></span></li>
+															<li><span class="mc-social mc-googleplus" data-social="googleplus"></span></li>
+															<li><span class="mc-social mc-vkontakte" data-social="vkontakte"></span></li>
+															<li><span class="mc-social mc-odnoklassniki" data-social="odnoklassniki"></span>
+															</li>
+															<li><span class="mc-social mc-mymailru" data-social="mymailru"></span></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<button class="mc-rt" style="display:none">Новые комментарии (<span class="mc-rt-count"></span>)</button>
+								<div class="mc-comments">
+									<div class="mc-comment" id="cc-62610229" data-author-id="6547166" itemtype="http://schema.org/Comment" itemscope="itemscope">
+										<div class="mc-comment-wrap mc-comment-approved">
+											<div class="mc-comment-light"></div>
+											<div class="mc-comment-user">
+												<a href="javascript:void(0)" class="mc-comment-author">
+													<div class="mc-avatar-wrap">
+														<img src="https://graph.facebook.com/v2.5/227140824339418/picture" class="mc-avatar" onerror="if(this.src!='https://cackle.me/widget/img/anonym2.png')this.src='https://cackle.me/widget/img/anonym2.png';">
+													</div>
+													<div class="mc-social-wrap">
+														<div class="mc-social mc-facebook" style="display:none"></div>
+													</div>
+												</a>
+											</div>
+											<div class="mc-comment-info">
+												<div class="mc-comment-head">
+													<a href="https://www.facebook.com/app_scoped_user_id/227140824339418/" class="mc-comment-username" data-author-id="6547166" target="_blank">
+														<span itemprop="author">Елена Янковская</span></a>
+													<meta itemprop="dateCreated" content="2016-12-20T11:40:59">
+													<a href="https://zdorov.online/bolezni/varikoz/#cc-62610229" class="mc-comment-time" timestamp="1482223259062">
+														2016.12.20 11:40
+													</a>
+												</div>
+												<div class="mc-comment-body">
+													<div class="mc-comment-inner" data-msg="Познавательная статья, написана доступным языком, узнала как делать профилактику, так как заметила симптомы этой болезни" data-media="">
+														<div class="mc-comment-msgcnt">
+															<div class="mc-comment-msg" itemprop="text">Познавательная статья, написана
+																										доступным языком, узнала как делать
+																										профилактику, так как заметила
+																										симптомы этой болезни
+															</div>
+														</div>
+														<a class="mc-comment-seemore" style="display:none">показать больше</a>
+													</div>
+												</div>
+												<div class="mc-comment-footer">
+													<a class="mc-comment-reply" data-id="62610229" href="#">Ответить</a>
+													<a class="mc-comment-edit" data-id="62610229" href="#" style="display:none">
+														<span class="mcicon-edit"></span> <span class="mc-commentlabel">Редактировать</span>
+													</a>
+													<a class="mc-comment-remove" data-id="62610229" href="#" style="display:none">
+														<span class="mcicon-trash"></span> <span class="mc-commentlabel">Удалить</span></a>
+													<div class="mc-comment-vote">
+														<a href="#" class="mc-comment-dislike mcicon-thumbs-down" data-vote="-1" data-id="62610229"></a>
+														<a href="#" class="mc-comment-like mcicon-thumbs-up" data-vote="1" data-id="62610229"></a>
+														<span class="mc-comment-rating mc-comment-" title="Рейтинг комментария">0</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mc-comment-menu">
+											<a href="#" class="mc-comment-url mcicon-link" data-url="https://zdorov.online/bolezni/varikoz/#cc-62610229" title="Ссылка на комментарий"></a>
+											<a href="#" class="mc-comment-share mcicon-share-alt" title="Поделиться"></a>
+											<a href="#" class="mc-comment-menu-toggle mcicon-bars"></a>
+											<ul class="mc-dropdown-menu" style="display:none">
+												<li>
+													<a href="#" data-act="spam" data-id="62610229">Это спам</a>
+													<a href="#" data-act="complaint" data-id="62610229">Пожаловаться</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="mc-comment" id="cc-61676948" data-author-id="6812555" itemtype="http://schema.org/Comment" itemscope="itemscope">
+										<div class="mc-comment-wrap mc-comment-approved">
+											<div class="mc-comment-light"></div>
+											<div class="mc-comment-user">
+												<a href="javascript:void(0)" class="mc-comment-author">
+													<div class="mc-avatar-wrap">
+														<img src="https://i512.mycdn.me/image?id=836539845072&amp;bid=836539845072&amp;t=33&amp;plc=API&amp;viewToken=K7WBVdRXA0l8sBdIFfEoyw&amp;aid=4990720&amp;tkn=*J2ycTeav2_2lR8LUCkNsiLspwKE" class="mc-avatar" onerror="if(this.src!='https://cackle.me/widget/img/anonym2.png')this.src='https://cackle.me/widget/img/anonym2.png';">
+													</div>
+													<div class="mc-social-wrap">
+														<div class="mc-social mc-odnoklassniki" style="display:none"></div>
+													</div>
+												</a>
+											</div>
+											<div class="mc-comment-info">
+												<div class="mc-comment-head">
+													<a href="http://www.odnoklassniki.ru/profile/527739208912" class="mc-comment-username" data-author-id="6812555" target="_blank">
+														<span itemprop="author">ЮЛИЯ НАТАЛЬИНА</span></a>
+													<meta itemprop="dateCreated" content="2016-11-21T21:53:49">
+													<a href="https://zdorov.online/bolezni/varikoz/#cc-61676948" class="mc-comment-time" timestamp="1479754429712">
+														2016.11.21 21:53
+													</a>
+												</div>
+												<div class="mc-comment-body">
+													<div class="mc-comment-inner" data-msg="Интересно, а у нас в городе есть хороший флеболог? И проводят ли инструментальную диагностику?" data-media="">
+														<div class="mc-comment-msgcnt">
+															<div class="mc-comment-msg" itemprop="text">Интересно, а у нас в городе есть
+																										хороший флеболог? И проводят ли
+																										инструментальную диагностику?
+															</div>
+														</div>
+														<a class="mc-comment-seemore" style="display:none">показать больше</a>
+													</div>
+												</div>
+												<div class="mc-comment-footer">
+													<a class="mc-comment-reply" data-id="61676948" href="#">Ответить</a>
+													<a class="mc-comment-edit" data-id="61676948" href="#" style="display:none">
+														<span class="mcicon-edit"></span> <span class="mc-commentlabel">Редактировать</span>
+													</a>
+													<a class="mc-comment-remove" data-id="61676948" href="#" style="display:none">
+														<span class="mcicon-trash"></span> <span class="mc-commentlabel">Удалить</span></a>
+													<div class="mc-comment-vote">
+														<a href="#" class="mc-comment-dislike mcicon-thumbs-down" data-vote="-1" data-id="61676948"></a>
+														<a href="#" class="mc-comment-like mcicon-thumbs-up" data-vote="1" data-id="61676948"></a>
+														<span class="mc-comment-rating mc-comment-" title="Рейтинг комментария">0</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mc-comment-menu">
+											<a href="#" class="mc-comment-url mcicon-link" data-url="https://zdorov.online/bolezni/varikoz/#cc-61676948" title="Ссылка на комментарий"></a>
+											<a href="#" class="mc-comment-share mcicon-share-alt" title="Поделиться"></a>
+											<a href="#" class="mc-comment-menu-toggle mcicon-bars"></a>
+											<ul class="mc-dropdown-menu" style="display:none">
+												<li>
+													<a href="#" data-act="spam" data-id="61676948">Это спам</a>
+													<a href="#" data-act="complaint" data-id="61676948">Пожаловаться</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="mc-pagination" style="display:none">
+									<button class="mc-btn2 mc-btn2-bck mc-comment-next" data-page="0">Следующие комментарии</button>
+								</div>
+							</div>
+						</div>
+						<script type="text/javascript">
+							cackle_widget = window.cackle_widget || [];
+							cackle_widget.push({widget: 'Comment', id: 44945, chanWithoutParams: true});
+							(function () {
+								var mc = document.createElement('script');
+								mc.type = 'text/javascript';
+								mc.async = true;
+								mc.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cackle.me/widget.js';
+								var s = document.getElementsByTagName('script')[0];
+								s.parentNode.insertBefore(mc, s.nextSibling);
+							})();
+						</script>
+					</div>
+					<div class="article-topic">
+						<article class="article-inside">
+							<div class="article-slider-wrap">
+								<div class="article-topic__title"><span>СТАТЬИ ПО ТЕМЕ</span></div>
+								<div class="article swiper-container">
+									<div class="swiper-wrapper" style="position:relative;">
+										<div style="position:absolute">
+
+										</div>
+										<script type="text/javascript">
+											var ref = document.referrer;
+											var loc = location.href;
+											var goalParams = {'url': loc, 'referrer': ref};
+											function goalCallback() {
+												console.log(goalParams);
+											}
+										</script>
+										<div id="article1" class="article-item-inner swiper-slide">
+											<div class="article-item-inner--img" onclick="location.assign('/conf2016/');">
+												<img src="https://zdorov.online/upload/resize_cache/iblock/cff/230_230_2/cff9d102fce6b10d26bb8572898d04d0.png">
+											</div>
+											<a class="article-goal" href="/conf2016/"><span>Официальная презентация "Здоров Онлайн"</span>
+											</a>
+											<p onclick="location.assign('/conf2016/');">Уже более 10 лет Интернет стал основным
+																						источником медицинской информации и услуг
+																						в СШ...</p>
+										</div>
+										<div id="article2" class="article-item-inner swiper-slide">
+											<div class="article-item-inner--img" onclick="location.assign('/bolezni/varikoz/varikoz-malogo-taza/');">
+												<img src="https://zdorov.online/upload/resize_cache/iblock/bc2/230_230_2/bc2d1f5d92a652fc428b0cee31ed9838.jpg">
+											</div>
+											<a class="article-goal" href="/bolezni/varikoz/varikoz-malogo-taza/">
+												<span>Варикоз малого таза</span></a>
+											<p onclick="location.assign('/bolezni/varikoz/varikoz-malogo-taza/');">Расширение вен у женщин
+																												   ассоциируется
+																												   с болями в ногах и
+																												   проявлением под кожей
+																												   синих с...</p>
+										</div>
+										<div id="article3" class="article-item-inner swiper-slide">
+											<div class="article-item-inner--img" onclick="location.assign('/articles/lechenie-otechnosti-nog-u-pozhilykh-lyudey/');">
+												<img src="https://zdorov.online/upload/resize_cache/iblock/4ba/230_230_2/4baf698b7a649811cff22c158c62068d.jpg">
+											</div>
+											<a class="article-goal" href="/articles/lechenie-otechnosti-nog-u-pozhilykh-lyudey/"><span>Лечение отечности ног у пожилых людей</span>
+											</a>
+											<p onclick="location.assign('/articles/lechenie-otechnosti-nog-u-pozhilykh-lyudey/');">Старение
+																																   организма
+																																   приводит
+																																   к
+																																   проблемам
+																																   с обменом
+																																   веществ,
+																																   работой
+																																   внутренних
+																																   органов
+																																   ...</p>
+										</div>
+										<div id="article4" class="article-item-inner swiper-slide">
+											<div class="article-item-inner--img" onclick="location.assign('/bolezni/varikoz/varikoz-polovykh-gub/');">
+												<img src="https://zdorov.online/upload/resize_cache/iblock/87d/230_230_2/87de6b3d3e50f189277b70ca994bd567.jpg">
+											</div>
+											<a class="article-goal" href="/bolezni/varikoz/varikoz-polovykh-gub/">
+												<span>Варикоз половых губ</span></a>
+											<p onclick="location.assign('/bolezni/varikoz/varikoz-polovykh-gub/');">Еще со времен древности
+																													люди страдают от
+																													такого заболевания, как
+																													варикоз. Первые
+																													упоми...</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-scrollbar"></div>
+							</div>
+						</article>
+					</div>
+
+				</div>
+			</div>
+			<script>
+				$(document).ready(function () {
+					$.post("/include/right_links_docs.php", {"cnt": "30", 'cp': '/bolezni/'}, function (resp) {
+						$('#rdocs').html(resp);
+					});
+				});
+			</script>
+
+
+			<!--right sidebar-->
+			<div class="right-sidebar clearfix">
+				<div id="rpolis"></div>
+				<div id="rfilter"></div>
+				<div style="display: none;">
+
+				</div>
+				&#65279;
+
+
+				<div id="rdocs">
+
+					<article class="list-right-sb-search">
+						<div class="list-right-sb-search--wrap">
+							<div class="list-right-sb-search__title">Специальности</div>
+						</div>
+						<ul style="padding-bottom: 15px;">
+							<li>
+								<a class="rdocs" href="/vrach/akusher/">Акушер</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/akusher-ginekolog/">Акушер - гинеколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/allergolog/">Аллерголог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/allergolog-immunolog/">Аллерголог-иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/angiolog/">Ангиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/androlog/">Андролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/artrolog/">Артролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/venerolog/">Венеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/vertebrolog/">Вертебролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/virusolog/">Вирусолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/virusolog-immunolog/">Вирусолог-иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/lfk/">Врач ЛФК</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gastroenterolog/">Гастроэнтеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gematolog/">Гематолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/genetik/">Генетик</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gepatolog/">Гепатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ginekolog/">Гинеколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/girudolog/">Гирудотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gomeopat/">Гомеопат</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatovenerolog/">Дерматовенеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatolog/">Дерматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatolog-venerolog/">Дерматолог-венеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kosmetolog-dermatolog/">Дерматолог-косметолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/defektolog/">Дефектолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/diabetolog/">Диабетолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dietolog/">Диетолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/immunolog/">Иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/infekcionist/">Инфекционист</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kardiolog/">Кардиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kardiohirurg/">Кардиохирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kosmetolog/">Косметолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/lor-otolaringolog/">ЛОР</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/logoped/">Логопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/logoped-defektolog/">Логопед дефектолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/mammolog/">Маммолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/manualnyy-terapevt/">Мануальный терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/massazhist/">Массажист</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/narkolog/">Нарколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/nevrolog/">Невролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/neyrohirurg/">Нейрохирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/neonatolog/">Неонатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/nefrolog/">Нефролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkodermatolog/">Онкодерматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkolog/">Онколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkolog-mammolog/">Онколог маммолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ortoped/">Ортопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/osteopat/">Остеопат</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/otolaringolog/">Отоларинголог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/oftalmolog/">Офтальмолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/parodontolog/">Пародонтолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/pediatr/">Педиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/plasticheskiy-hirurg/">Пластический хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/proktolog/">Проктолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikhiatr/">Психиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikholog/">Психолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikhoterapevt/">Психотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/pulmonolog/">Пульмонолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/revmatolog/">Ревматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/refleksoterapevt/">Рефлексотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/seksolog/">Сексолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/seksopatolog/">Сексопатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/somnolog/">Сомнолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/sosudistii-hirurg/">Сосудистый хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog/">Стоматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-ortodont/">Стоматолог-ортодонт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-terapevt/">Стоматолог-терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-hirurg/">Стоматолог-хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/surdolog/">Сурдолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/terapevt/">Терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/travmatolog/">Травматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/travmatolog-ortoped/">Травматолог-ортопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/transfuziolog/">Трансфузиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/trikholog/">Трихолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/urolog/">Уролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/urolog-androlog/">Уролог-андролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/fizioterapevt/">Физиотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/flebolog/">Флеболог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ftiziator/">Фтизиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg/">Хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg-proktolog/">Хирург проктолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg-flebolog/">Хирург флеболог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/endokrinolog/">Эндокринолог</a>
+							</li>
+						</ul>
+					</article>
+					<script>
+						$(document).ready(function () {
+						});
+					</script>
+				</div>
+				<article class="about">
+					<div class="about__wrap">
+						<!--<section class="about__SN">
+							<div class="about__title">ПРИСОЕДИНЯЙТЕСЬ К НАМ В СОЦСЕТЯХ:</div>
+							<ul>
+								<li class="about__SN--vk"><a href="#x">Вконтакте</a></li>
+								<li class="about__SN--f"><a href="#x">Facebook</a></li>
+								<li class="about__SN--tw"><a href="#x">Tweeter</a></li>
+								<li class="about__SN--ok"><a href="#x">Одноклассники</a></li>
+								<li class="about__SN--g"><a href="#x">GooglPlus</a> </li>
+							</ul>
+						</section>-->
+						<section class="about_contents">
+							<div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+							<ul>
+								<li class="about_contents--pills">
+									<!--noindex-->
+									<a href="/bolezni/"><span>Более 400 болезней</span>
+										Причины, проявления, лечение и профилактика
+									</a><!--/noindex--></li>
+								<li class="about_contents--clinic">
+									<!--noindex-->
+									<a href="/clinics/"><span>Рейтинг клиник</span>
+										Достоверная информация о качестве лечения на основе посещения клиник
+									</a><!--/noindex--></li>
+								<li class="about_contents--node">
+									<!--noindex-->
+									<a href="/vrach/"><span>Запись к врачу</span>
+										Очень легко к нужному врачу
+									</a><!--/noindex--></li>
+								<li class="about_contents--question">
+									<!--noindex-->
+									<a href="/qa/"><span>Задать вопрос</span>
+										Бесплатные консультации врачей
+									</a><!--/noindex--></li>
+							</ul>
+						</section>
+					</div>
+				</article>
+				<div id="right_socadd"></div>
+				<div style="width:240px;">
+				</div>
+				<div>
+
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</main>
+
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<div class="clearfix"></div>
+	<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<img src="img/logo.png" title="Zdorov.online">
+			</div>
+			<div class="footer-content__article hidden-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Лучшие врачи Москвы</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Вся диагностика Москвы</a>
+				<a href="/novosti/">Новости</a>
+				<div class="menu-footer__list hidden-xs">
+					<ul>
+						<!--noindex-->
+						<li>
+							<a href="/adv/">Реклама на портале</a>
+						</li>
+						<li>
+							<a href="/dlya-klinik/">Для клиник</a>
+						</li>
+						<li>
+							<a href="/about/">О проекте</a>
+						</li><!--/noindex-->
+						<li>
+							<a href="/contacts/">Контакты</a>
+						</li>
+						<!--noindex-->
+						<li>
+							<a href="/term/">Соглашение с порталом</a>
+						</li><!--/noindex-->
+						<!--noindex-->
+						<li>
+							<a target="_blank" href="http://partners.zdorov.online/">Партнерам</a>
+						</li><!--/noindex-->
+					</ul>
+				</div>
+			</div>
+			<div class="footer-content__article mobile visible-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Врачи</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Клиники</a>
+				<a href="/novosti/">Новости</a>
+			</div>
+
+			<div class="menu-footer-document hidden-xs">
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2017. Все права защищены.
+						<a href="/karta-saita/">Карта сайта</a>
+					</p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем. 16+</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left: 86px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+				</div>
+			</div>
+			<div class="footer-content__right-side mk visible-xs">
+				Информационный партнер портала
+				<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script src="js/app.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#nav-icon3').click(function () {
+				$(this).toggleClass('open');
+				$('.header-main_menu').toggleClass('open');
+			});
+			$('.swiper-wrapper').bxSlider({
+
+			});
+		});
+	</script>
+</div>
+</body>
+</html>

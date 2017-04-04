@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Болезни и их лечение</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<!--<meta name="viewport" content="width=1250">-->
+	<!--<meta name="MobileOptimized" content="1250">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body">
+		<header>
+			<div class="clearfix header-top">
+				<div class="header-top__item menu-burger header-top__btn visible-xs">
+					<a id="nav-icon3" class="visible-xs">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				<a href="/" class="header-logo header-top__item">
+					<img src="http://zdorov.online/img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<a class="header-top__item menu-search header-top__btn visible-xs">
+					<img src="mob/search.png" alt="">
+				</a>
+				<style>
+					.search_block {
+						position: relative;
+					}
+
+					.search_block .search_tips {
+						display: none;
+						position: absolute;
+						top: 50px;
+						left: 280px;
+						background-color: #fff;
+						width: 497px;
+						border: 1px solid #ccc;
+					'
+					}
+
+					.search_block .search_tips .tips {
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+
+					.search_block .search_tips .tips_kato {
+						padding: 4px 8px;
+						background-color: #87CEFA;
+						color: #fff;
+
+					}
+
+					.search_block .search_tips .tips:hover {
+						background-color: #ccc;
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+				</style>
+				<div class="search_block">
+					<div class="header-search">
+						<form action="/search/">
+							<input autocomplete="off" type="search" name="q" placeholder="Например: С какой стороны аппендицит у женщин?" value="">
+							<input type="submit" value="">
+						</form>
+					</div>
+				</div>
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="/auth/">Вход</a>
+						/
+						<a href="/reg/" class="go_to_reg">Регистрация</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list">
+						<a href="/selftest/j/">Самодиагностика</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/articles/">Статьи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/clinics/">Клиники</a>
+						<ul class="main-submenu">
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-lecheniyu/" class="main-submenu__link">
+									По лечению
+								</a>
+							</li>
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-diagnostike/" class="main-submenu__link">
+									По диагностике
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main_menu-list">
+						<a href="/vrach/">Врачи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/bolezni/">Болезни</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/forum/">Форум</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/qa/">Вопросы врачу</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>
+		<!-- end header-->
+		<main>
+			<div class="ratemenu">
+				<div class="ratemenu__title">
+					Рейтинги клиник:
+				</div>
+				<ul class="ratemenu__list">
+					<li class="ratemenu__list-item">
+						<a href="/clinics/reyting-khoroshikh-klinik/">10 лучших клиник Москвы</a>
+					</li>
+				</ul>
+			</div>
+
+			<style>.right-sidebar {display:none;}</style>
+
+
+			<div class="main-clinic">
+				<div class="main-clinic-ava">
+					<div class="clinic-avatar">
+						<div class="clinic-avatar__img">
+							<img height="135" src="https://zdorov.online/upload/iblock/148/148206cc31911c4a059dd86a81d6d782.jpg" alt="Центр МРТ диагностики &quot;МедСевен&quot;" title="Центр МРТ диагностики &quot;МедСевен&quot;">
+						</div>
+						<div class="clinic-avatar__rating">
+							<span title="9.57"></span>
+							<div class="rating" data-value="4.785">
+								<div class="rating-value" style="width: 81.345px;"></div>
+							</div>
+							<div class="clinic-avatar__review">
+								37 отзывов            </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="main-clinic-about">
+					<div class="clinic-about main-clinic--inner  border-none">
+						<div class="clinic-about__content main-clinic-about__content">
+							<div class="clinic-about__content-title main-clinic__title">Центр МРТ диагностики "МедСевен"</div>
+							<div title="365 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">Улица 1905 года <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">365 м)</span></div>
+							<div title="1164 м." class="clinic-about__metro main-clinic-about__metro metro_line_koltsevaya">Краснопресненская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1164 м)</span></div>
+
+							<div class="clinic-about__address"><span>г. Москва, ул. 1905 года, д.7, стр.1</span><a class="link_with_clinic" target="_blank" href="https://moskvia.ru">https://moskvia.ru</a></div>
+							<div class="clinic-about__clock" style="position:relative;">
+								Будни: 09:00-24:00, Сб: 00:00-24:00, Вс: 00:00-21:00									</div>
+						</div>
+						<div class="clinic-time clinic-time--main-clinic">
+							<!--<span class="clinic-time__tel  clinic-time__number--main-clinic"><a href="#x">Показать номер</a></span>-->
+							<div>
+								<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Центр МРТ диагностики &quot;МедСевен&quot;" style="text-align:left;"><a>Показать номер</a></span>
+				<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Центр МРТ диагностики &quot;МедСевен&quot;">
+					<a href="tel:+7(499)110-63-78">+7(499)110-63-78</a>
+
+				</span>
+							</div>
+							<a onclick="bookFormShow(0, '594');" actdocid="" actdetails="" clinic="Центр МРТ диагностики &quot;МедСевен&quot;" cliid="594" class="clinic-time-btn header_boobook book clinic1">Записаться</a>
+						</div>
+					</div>
+					<div class="main-clinic-list">
+						<ul>
+							<li class="main-clinic-list--active">О клинике</li>				<li><a href="/clinics/tsentr_mrt_medseven/docs/" class="clinic_detail_vrach">Врачи</a></li>				<li><a href="/clinics/tsentr_mrt_medseven/price/" class="clinic_detail_service">Услуги и цены</a></li>
+							<li><a href="/clinics/tsentr_mrt_medseven/actions/" class="clinic_detail_action">Акции</a></li>				<li><a href="/clinics/tsentr_mrt_medseven/review/" class="clinic_detail_review">Отзывы</a></li>            </ul>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="/js/rating.js"></script>
+			<script type="text/javascript" src="/js/alex.js"></script>
+			<div id="formContainer">
+
+				<div class="pop-up fpopup" id="pop-up__order">
+					<form action="/algo/bookForm.php" name="popup-form" id="popup-form" target="_blank">
+						<input name="docid" type="hidden" value="">
+						<input name="cliid" type="hidden" value="">
+						<input name="actdocid" type="hidden" value="">
+						<input name="actdetails" type="hidden" value="">
+						<input name="serviceId" type="hidden" value="">
+						<input name="serviceName" type="hidden" value="">
+						<input name="dtime" type="hidden" value="">
+						<input name="treat" type="hidden" value="">
+						<input name="pageurl" type="hidden" value="/clinics/tsentr_mrt_medseven/">
+						<div class="popup">
+							<div class="close-popup">
+
+							</div>
+							<div class="form-title">
+								<p class="form-title__text">Онлайн-запись к врачу</p>
+							</div>
+							<div class="top-desc">
+
+								<div class="top-greyblock">
+									<div class="photo-doctor-popup">
+										<img id="f_photo" src="" alt="">
+									</div>
+									<div class="after-doctor-popup">
+										<p class="doctor-popup__title"></p>
+										<div id="doctxt"></div>
+										<div id="acttxt"></div>
+										<div id="docacttxt"></div>
+										<div id="servtxt"></div>
+									</div>
+								</div>
+							</div>
+							<div class="popup1">
+								<p>Мы позвоним в течении 30 минут для выбора подходящего времени приёма</p>
+								<div class="form-popup">
+
+									<div class="floats-popup">
+
+										<div class="inp-div">
+											<label for="">Введите ваше имя</label>
+											<input type="text" name="fio" placeholder="Контактное лицо" id="fio-popup" required="" value="">
+										</div>
+
+										<div class="inp-div">
+											<label for="">Введите ваш номер телефона</label>
+											<input type="text" name="tel" placeholder="+7 ( ____ ) ____-___-___" id="phone-popup" required="" value="">
+											<input type="hidden" name="timephp" value="918273912">
+										</div>
+										<div class="inp-div">
+											<label for="">Введите ваш e-mail</label>
+											<input type="email" name="email" placeholder="e-mail" id="email-popup" required="" value="">
+										</div>
+										<div class="inp-div">
+											<div dtype="doc" class="clinic-time-butn but book_f  doc3">записаться онлайн</div>
+											<div dtype="clinic" style="display:none;" class="clinic-time-butn but book_f  clinic3">записаться онлайн</div>
+										</div>
+										<div class="inp-div">
+											<div id="resp_info" style="margin-top:30px;"></div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="popup3" style="display: none;">
+								<div class="name-popup3">
+									<p></p>
+								</div>
+								<div class="entercode">
+									<div id="sms_win" style="display:none;">
+										<p style="padding-top:5px; padding-bottom:5px;">Введите код, полученный по СМС:</p>
+										<div class="entercode">
+											<input type="text" placeholder="Код из смс" name="sms" id="codesms">
+											<div type="doc" class="clinic-btn but book_f doc3">Отправить</div>
+											<div type="clinic" style="display:none;" class="clinic-btn but book_f clinic3">Отправить</div>
+										</div>
+									</div>
+									<p class="p-pop3"></p>
+								</div>
+							</div>
+							<div class="doc4"></div>
+							<div class="clinic4"></div>
+
+							<div class="bottom-popup">
+								<p>Дополнительная информация</p>
+								<p>тел.: 8 (499) 110 63 39</p>
+								<p class="soglas"><!--noindex--><a href="http://zdorov.online/term/" target="_blank">Пользовательское соглашение</a><!--/noindex--></p>
+							</div>
+
+						</div>
+					</form>
+				</div>
+
+				<!--script src="/js/alex.js?222=1"></script-->
+				<script>
+					$(document).ready(function () {
+
+						var sendflag = true;
+						function check()
+						{
+							var fio = $('input[name=fio]').val();
+							var tel = $('input[name=tel]').val();
+							var email = $('input[id=email-popup]').val();
+							var flag = true;
+							if(fio == '')
+							{
+								$('input[name=fio]').css('border', '1px solid red');
+								flag = false;
+							}
+							if(tel == '')
+							{
+								$('input[name=tel]').css('border', '1px solid red');
+								flag = false;
+							}
+							if(email == '')
+							{
+								$('input[name=email]').css('border', '1px solid red');
+								flag = false;
+							}
+							if(flag)
+								return true;
+							else
+								return false;
+						}
+
+						$("#phone-popup").mask("+7 (999) 999 - 99 - 99");
+
+						$(".popup3").hide();
+
+						$(".choose-time").click(function () {
+							if ($("#select2-chosen-2").text() == "Выберите клинику") {
+								$(".qw-select2 .select-qw a").addClass("input-error-popup");
+
+
+							} else {
+								$(".popup1").hide();
+								$(".popup2").show();
+								$(".qw-select2 a").removeClass("input-error-popup");
+							}
+						});
+
+						$(".sms_f").click(function () {
+							//console.log($(this).attr("class"));
+
+							//$('.p-pop3').fadeOut(0);
+							if(check())
+							{
+								//$(".popup1").hide();
+								// $(".popup2").hide();
+								//$(".popup3").show();
+								$(".book_f").click();
+								$(".sms_f").removeClass('sms_f');
+								// var phone = $("#phone-popup").val();
+								// $('.name-popup3').html('<p>' + $('input[name=fio]').val() + '</p>');
+								// $.post('/algo/processing/sms.php',{'phone':phone},function(resp){
+								// $(".sms_f").removeClass('sms_f');
+								// var r = JSON.parse(resp);
+								// if(r.status == 'ok')
+								// {
+								// $(".popup1").hide();
+								// $(".popup2").hide();
+								// $(".popup3").show();
+								// }
+								// else
+								// {
+								// alert(r.msg);
+								// $(".close-popup").click();
+								// }
+								// });
+							}
+						});
+
+						$(".book_f").click(function(){
+							if(check())
+							{
+								var that = $(this);
+								var type = that.attr('dtype');
+								if(sendflag === true)
+								{
+									that.removeClass('book_f');
+									$('#resp_info').html("<div style='position:relative;'><img style='position:absolute;top:-120px;left:-190px;' src='/img/util/loading-07.gif' /></div>");
+									//$('.p-pop3').html("<div style='position:relative;'><img style='position:absolute;top:-120px;left:-190px;' src='/img/util/loading-07.gif' /></div>");
+									var data = $('form[name=popup-form]').serialize();
+
+									$.post('/algo/processing/bookForm.php',{'data':data},function(resp){
+										var r = JSON.parse(resp);
+										//$('.bottom-popup').addClass('success');
+										$('#resp_info').html(r.msg);
+										$('#resp_info').fadeIn(0);
+										if(r.status == 'ok')
+										{
+											sendflag = false;
+											if(type == 'clinic')
+												$(".clinic4").click();
+											else
+												$(".doc4").click();
+
+											setTimeout(function(){
+												$('#resp_info').html('');
+												$(".pop-up").fadeOut(300);
+												//$(".popup1").show();
+												$(".popup2").hide();
+												$(".popup3").hide();
+											}, 3000);
+										}
+										else
+										{
+											that.addClass('book_f');
+											//$('input[name=sms]').val('');
+											$('#resp_info').html(r.msg);
+											$('#resp_info').fadeIn(0);
+										}
+									});
+								}
+							}
+						});
+
+						$(".close-popup").click(function () {
+							$(".pop-up").fadeOut(300);
+							$(".popup1").fadeIn(300);
+							$(".popup2").fadeOut(300);
+							$(".popup3").fadeOut(300);
+						});
+
+						$('#pop-up__order').click(function(e){
+							if (e.target.id != 'pop-up__order'){return false;}
+							$(this).fadeOut(500);
+						});
+					});
+				</script>
+			</div>
+			<!--div class="main-clinic">
+				<div class="main-clinic-ava">
+					<div class="clinic-avatar">
+						<div class="clinic-avatar__img">
+																	<img src="https://zdorov.online/upload/iblock/148/148206cc31911c4a059dd86a81d6d782.jpg" alt="Центр МРТ диагностики &quot;МедСевен&quot;" title="Центр МРТ диагностики &quot;МедСевен&quot;">
+						</div>
+						<div class="clinic-avatar__rating">
+							<span title='9.57'>Рейтинг</span>
+							<div class="rating">
+								<ul>
+																											<li></li>
+																											<li></li>
+																											<li></li>
+																											<li></li>
+																											<li></li>
+																											<li></li>
+																											<li></li>
+																											<li></li>
+																											<li></li>
+																										</ul>
+							</div>
+						</div>
+						<div class="clinic-avatar__review">
+						   37 отзывов                            </div>
+					</div>
+				</div>
+
+				<div class="main-clinic-about">
+					<div class="clinic-about main-clinic--inner  border-none">
+						<div class="clinic-about__content main-clinic-about__content">
+							<div class="clinic-about__content-title main-clinic__title">Центр МРТ диагностики &quot;МедСевен&quot;</div>
+																<div title='365 м.' class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">Улица 1905 года</div>
+																<div title='1164 м.' class="clinic-about__metro main-clinic-about__metro metro_line_koltsevaya">Краснопресненская</div>
+																<div title='1412 м.' class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">Баррикадная</div>
+
+							<div class="clinic-about__address"><span>г. Москва, ул. 1905 года, д.7, стр.1</span></div>
+							<div class="clinic-about__clock">Будни 09:00-24:00
+							Сб 00:00-24:00 Вс 00:00-21:00</div>
+						</div>
+						<div class="clinic-time clinic-time--main-clinic">
+							<span class="clinic-time__tel  clinic-time__number--main-clinic"><a href="#x">Показать номер</a></span>
+							<span class="clinic-time__tel  clinic-time__tel--main-clinic"><a href="tel:+7(499)110-63-78">+7(499)110-63-78</a><br/><span class="hello_zdorov">скажите, что узнали о клинике на Здоров.Онлайн</span></span>
+							<a class="clinic-time-btn book" clinic='Центр МРТ диагностики &quot;МедСевен&quot;' cliid='594' class="clinic-time-btn book clinic1 header_boobook">Записаться</a>
+						</div>
+					</div>
+					<div class="main-clinic-list">
+						<ul>
+							<li class="main-clinic-list--active">О клинике</li>
+							<li><a href="/clinics/tsentr_mrt_medseven/docs/">Врачи</a></li>
+							<li><a href="/clinics/tsentr_mrt_medseven/price/">Услуги и цены</a></li>
+							<li><a href="/clinics/tsentr_mrt_medseven/actions/">Акции</a></li>
+							<li><a href="/clinics/tsentr_mrt_medseven/review/">Отзывы</a></li>
+						</ul>
+					</div>
+				</div>
+			</div-->
+
+			<div class="crumbs">
+				<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="/">
+							<span itemprop="name">Главная</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="/clinics/">
+							<span itemprop="name">Клиники</span>
+						</a>
+						<meta itemprop="position" content="2">
+					</li>
+
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="/clinics/tsentr_mrt_medseven/">
+							<span itemprop="name">Центр МРТ диагностики "МедСевен"</span>
+						</a>
+						<meta itemprop="position" content="3">
+					</li>
+
+
+				</ul>
+			</div>
+			<div class="clinic-services clearfix">
+				<div class="main-clinic-list visible-xs">
+					<ul>
+						<li class="main-clinic-list--active">О клинике</li>				<li><a href="/clinics/tsentr_mrt_medseven/docs/" class="clinic_detail_vrach">Врачи</a></li>				<li><a href="/clinics/tsentr_mrt_medseven/price/" class="clinic_detail_service">Услуги и цены</a></li>
+						<li><a href="/clinics/tsentr_mrt_medseven/actions/" class="clinic_detail_action">Акции</a></li>				<li><a href="/clinics/tsentr_mrt_medseven/review/" class="clinic_detail_review">Отзывы</a></li>            </ul>
+				</div>
+				<div class="clinic-services__inner">
+					<div class="clinic-main-about clearfix">
+						<div class="clinics__wrapper-xs visible-xs">
+							<div class="clinic__logo">
+								<img src="https://zdorov.online/upload/iblock/fdb/fdb1a65c835608974831b12bf4a4989f.png" alt="">
+								<div class="rate-xs">
+									<span class="rate-xs__text">рейтинг</span>
+									<span class="rate-xs__num">8.0</span>
+								</div>
+							</div>
+							<div class="clinic-about">
+								<a target="_blank" href="/clinics/evropeyskiy-meditsinskiy-tsentr-ems-na-shchepkina/">
+									<div class="clinic-about__content-caption">Европейский Медицинский центр ЕМС на Щепкина</div>
+								</a>
+								<span class="metro_distance">Аллерголог</span>
+								<p>цена услуги от 2500</p>
+								<div title="расстояние: 338 метров" class="clinic-about__metro metro_line_koltsevaya">Проспект Мира
+									<span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">338 м)</span>
+								</div>
+								<div title="расстояние: 888 метров" class="clinic-about__metro metro_line_lyublinsko-dmitrovskaya">Достоевская
+									<span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">888 м)</span>
+								</div>
+
+								<div>
+							<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Европейский Медицинский центр ЕМС на Щепкина">
+								<a href="tel:">+7(499)110-16-78</a>
+							</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="clinic-main-about__text">
+
+							<div class="clinic-main-about__img" style="visibility: visible;">
+								<div class="bx-wrapper" style="max-width: 265px; margin: 0px auto;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 204px;"><div class="clinic-main-about__img-slider" style="width: 815%; position: relative; transition-duration: 3s; transform: translate3d(-550px, 0px, 0px);"><img src="https://zdorov.online/upload/resize_cache/iblock/4cb/265_204_2/4cb93c08953356deb44695864563ce60.jpg" style="float: left; list-style: none; position: relative; width: 265px; margin-right: 10px;" class="bx-clone">
+									<img src="https://zdorov.online/upload/resize_cache/iblock/751/265_204_2/751f09545762d9f6ffc3db5064f3fbc9.jpg" style="float: left; list-style: none; position: relative; width: 265px; margin-right: 10px;">
+									<img src="https://zdorov.online/upload/resize_cache/iblock/251/265_204_2/251d6177d2a92acccc05df827eacf3c9.jpg" style="float: left; list-style: none; position: relative; width: 265px; margin-right: 10px;">
+									<img src="https://zdorov.online/upload/resize_cache/iblock/ef1/265_204_2/ef12a29760c1f80f764ed6355c124295.jpg" style="float: left; list-style: none; position: relative; width: 265px; margin-right: 10px;">
+									<img src="https://zdorov.online/upload/resize_cache/iblock/667/265_204_2/6676ef2c56f1643765bb0eb0ab0604d0.jpg" style="float: left; list-style: none; position: relative; width: 265px; margin-right: 10px;">
+									<img src="https://zdorov.online/upload/resize_cache/iblock/48a/265_204_2/48ac5f009cb86c7ed900471d11b6cc5f.jpg" style="float: left; list-style: none; position: relative; width: 265px; margin-right: 10px;">
+									<img src="https://zdorov.online/upload/resize_cache/iblock/4cb/265_204_2/4cb93c08953356deb44695864563ce60.jpg" style="float: left; list-style: none; position: relative; width: 265px; margin-right: 10px;">
+									<img src="https://zdorov.online/upload/resize_cache/iblock/751/265_204_2/751f09545762d9f6ffc3db5064f3fbc9.jpg" style="float: left; list-style: none; position: relative; width: 265px; margin-right: 10px;" class="bx-clone"></div></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+							</div>
+							<h1>Центр МРТ диагностики "МедСевен": описание</h1> <p></p><p>Специализированный центр МРТ диагностики. Проводит магнитно-резонансную томографию взрослых и детей от 7 лет. Расположен в 2 минутах ходьбы от м.ул. 1905 года.</p><p></p>
+						</div>
+					</div>
+
+					<div class="clinic-main-about__map">
+						<h2>Карта проезда:</h2>
+						<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+						<script type="text/javascript">
+							/*var myMap;*/
+							ymaps.ready(init); // Ожидание загрузки API с сервера Яндекса
+							function init() {
+								var myMap = new ymaps.Map("map", {
+											center: ['55.761441', '37.558733'],
+											zoom: '13',controls: ['zoomControl', 'searchControl']
+										}, {
+											searchControlProvider: 'yandex#search'
+										}),
+
+								// С						оздаем геообъект с типом геометрии "Точка".
+										myGeoObject = new ymaps.GeoObject({
+											// Описание геометрии.
+											geometry: {
+												type: "Point",
+												coordinates: ['55.761441', '37.558733']
+											},
+											// Свойства.
+											properties: {
+												// Контент метки.
+												iconContent: 'г. Москва, ул. 1905 года, д.7, стр.1',
+												hintContent: ''
+											}
+										}, {
+											// Опции.
+											// Иконка метки будет растягиваться под размер ее содержимого.
+											preset: 'islands#blackStretchyIcon',
+											// Метку можно перемещать.
+											draggable: false
+										});
+								myMap.geoObjects
+										.add(new ymaps.Placemark(['55.761441', '37.558733'], {
+											balloonContent: 'г. Москва, ул. 1905 года, д.7, стр.1'
+										}))
+							}
+						</script>
+					</div>
+					<div id="map" class="doc-information-map"><ymaps class="ymaps-2-1-48-map" style="width: 846px; height: 285px;"><ymaps class="ymaps-2-1-48-map ymaps-2-1-48-i-ua_js_yes ymaps-2-1-48-map-bg-ru ymaps-2-1-48-islets_map-lang-ru" style="width: 846px; height: 285px;"><ymaps class="ymaps-2-1-48-inner-panes"><ymaps class="ymaps-2-1-48-events-pane ymaps-2-1-48-user-selection-none" unselectable="on" style="height: 100%; width: 100%; top: 0px; left: 0px; position: absolute; z-index: 2500; cursor: url(&quot;https://api-maps.yandex.ru/2.1.48/./build/release/images/util_cursor_storage_grab.cur&quot;) 16 16, url(&quot;https://api-maps.yandex.ru/2.1.48/./build/release/images/util_cursor_storage_grab.cur&quot;), move;"></ymaps><ymaps class="ymaps-2-1-48-ground-pane" style="top: 0px; left: 0px; position: absolute; transition-duration: 0ms; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 501;"><ymaps style="position: absolute; z-index: 150;"><canvas height="541" width="1102" style="position: absolute; width: 1102px; height: 541px; left: -128px; top: -128px;"></canvas></ymaps></ymaps><ymaps class="ymaps-2-1-48-copyrights-pane" style="height: 0px; bottom: 5px; right: 3px; top: auto; left: 10px; position: absolute; z-index: 5002;"><ymaps><ymaps class="ymaps-2-1-48-copyright ymaps-2-1-48-copyright_logo_no"><ymaps class="ymaps-2-1-48-copyright__fog">…</ymaps><ymaps class="ymaps-2-1-48-copyright__wrap"><ymaps class="ymaps-2-1-48-copyright__layout"><ymaps class="ymaps-2-1-48-copyright__content-cell"><ymaps class="ymaps-2-1-48-copyright__content"><ymaps class="ymaps-2-1-48-copyright__text">© Яндекс</ymaps><ymaps class="ymaps-2-1-48-copyright__agreement">&nbsp;<a class="ymaps-2-1-48-copyright__link" target="_blank" href="http://yandex.ru/legal/maps_termsofuse/">Условия использования</a></ymaps></ymaps></ymaps><ymaps class="ymaps-2-1-48-copyright__logo-cell"><a class="ymaps-2-1-48-copyright__logo" href="" target="_blank"></a></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps class="ymaps-2-1-48-map-copyrights-promo" style="bottom: -4px; position: absolute;"><iframe src="https://api-maps.yandex.ru/services/inception/?lang=ru_RU&amp;iframe_id=2925&amp;url=%2Fmap&amp;api_version=2.1.48&amp;mode=release&amp;referer_host=zdorov.online" width="114" height="29" scrolling="no" frameborder="0" style="overflow: hidden;"></iframe></ymaps></ymaps><ymaps class="ymaps-2-1-48-controls-pane" style="width: 100%; top: 0px; left: 0px; position: absolute; z-index: 4503;"><ymaps class="ymaps-2-1-48-controls__toolbar" style="margin-top: 10px;"><ymaps class="ymaps-2-1-48-controls__toolbar_left"><ymaps class="ymaps-2-1-48-controls__control_toolbar" style="margin-right: 0px; margin-left: 10px;"><ymaps><ymaps class="ymaps-2-1-48-searchbox"><ymaps id="id_149095260562478672985"><ymaps><ymaps class="ymaps-2-1-48-search ymaps-2-1-48-search_layout_normal ymaps-2-1-48-searchbox__normal-layout"><ymaps id="id_149095260562478672986"><ymaps><ymaps class="ymaps-2-1-48-searchbox__input-cell"><ymaps class="ymaps-2-1-48-searchbox-input"><ymaps class="ymaps-2-1-48-searchbox-input__icon"></ymaps><input class="ymaps-2-1-48-searchbox-input__input" placeholder="Адрес или объект" autocomplete="off"><ymaps class="ymaps-2-1-48-searchbox-input__clear-button"></ymaps></ymaps><ymaps class="ymaps-2-1-48-searchbox-list-button"></ymaps></ymaps><ymaps class="ymaps-2-1-48-searchbox__button-cell"><ymaps class="ymaps-2-1-48-searchbox-button ymaps-2-1-48-_pin_right ymaps-2-1-48-user-selection-none" unselectable="on"><ymaps class="ymaps-2-1-48-searchbox-button-text">Найти</ymaps></ymaps></ymaps></ymaps></ymaps><ymaps id="id_149095260562478672987"><ymaps><ymaps class="ymaps-2-1-48-islets_serp-popup ymaps-2-1-48-islets__hidden"><ymaps class="ymaps-2-1-48-islets_serp-popup__tail"></ymaps><ymaps class="ymaps-2-1-48-islets_serp" style="max-height: 200px;"><ymaps id="id_149095260562478672988"><ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps style="z-index: 40000; display: block; position: absolute; width: 251px; top: 29px; left: 10px;"></ymaps></ymaps></ymaps><ymaps class="ymaps-2-1-48-controls__toolbar_right"></ymaps></ymaps><ymaps class="ymaps-2-1-48-controls__bottom" style="top: 285px;"></ymaps><ymaps class="ymaps-2-1-48-controls__control" style="margin-right: 0px; margin-left: 0px; bottom: auto; top: 108px; right: auto; left: 10px;"><ymaps><ymaps class="ymaps-2-1-48-zoom" style="height: 5px"><ymaps class="ymaps-2-1-48-zoom__plus ymaps-2-1-48-zoom__button ymaps-2-1-48-float-button ymaps-2-1-48-user-selection-none" unselectable="on"><ymaps class="ymaps-2-1-48-zoom__icon ymaps-2-1-48-float-button-icon"></ymaps></ymaps><ymaps class="ymaps-2-1-48-zoom__minus ymaps-2-1-48-zoom__button ymaps-2-1-48-float-button ymaps-2-1-48-user-selection-none" unselectable="on"><ymaps class="ymaps-2-1-48-zoom__icon ymaps-2-1-48-float-button-icon"></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps class="ymaps-2-1-48-places-pane" style="top: 0px; left: 0px; position: absolute; transition-duration: 0ms; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 2004;"><ymaps class="ymaps-2-1-48-placemark-overlay ymaps-2-1-48-user-selection-none" unselectable="on" style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 423px; top: 142px;"><ymaps class="ymaps-2-1-48-svg-icon ymaps_https___api_maps_yandex_ru_2_1_48_707497524059islands_icon___1E98FF_34x41_1490952609422" style="position: absolute; width: 34px; height: 41px; left: -11px; top: -38px;"><ymaps class="ymaps-2-1-48-svg-icon-content" style="font: 13px Arial, sans-serif; position: absolute; text-align: center;left: 5px;top: 6px;width: 16px;height: 16px;"><ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></div>
+				</div>
+				<div class="clinic-services__offer">
+					<article class="offer__right-sbar">
+						<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 385px;"><ul class="bxslider-right" style="width: 515%; position: relative; transition-duration: 1.5s; transform: translate3d(-691.781px, 0px, 0px);"><li style="float: left; list-style: none; position: relative; width: 226px;" class="bx-clone">
+							<div class="offer__right-sbar-wrap">
+								<div class="offer__right-sbar-title">СПЕЦПРЕДЛОЖЕНИЯ</div>
+								<div class="offer__right-sbar-img">
+									<img src="https://zdorov.online/upload/resize_cache/iblock/832/150_150_2/832e9c7ba82182d9fb759c7e172f4ea4.png">
+								</div>
+								<div class="offer__right-sbar-offer">Скидка 25% на МРТ 1,5 Тесла</div>
+								<p>Только в наших центрах действует скидка 25% на МРТ 1,5 Тесла.Спешите записаться! Наши квалифицированные врачи помогут вам найти&nbsp;&nbsp;и устранить недуги...</p>
+								<div class="clinic-about">
+									<div title="1001 м." class="clinic-about__metro main-clinic-about__metro metro_line_arbatsko-pokrovskaya">Молодёжная</div>
+								</div>
+								<div class="diagnostic__button--right-sbar">
+									<a href="/clinics/kuntsevskiy_tsentr_open_clinics/actions/skidka-25-na-mrt-1-5-tesla/">Посмотреть</a>
+								</div>
+							</div>
+						</li>
+							<li style="float: left; list-style: none; position: relative; width: 226px;">
+								<div class="offer__right-sbar-wrap">
+									<div class="offer__right-sbar-title">СПЕЦПРЕДЛОЖЕНИЯ</div>
+									<div class="offer__right-sbar-img">
+										<img src="https://zdorov.online/upload/resize_cache/iblock/492/150_150_2/49218603f7aa1de2eff42aa191eebe1a.jpg">
+									</div>
+									<div class="offer__right-sbar-offer">Скидка 15%  на швейцарские имплантаты!</div>
+									<p>нужны импланты? только у нас в центре скидка 15%  на швейцарские имплантаты до 15 июля! Предложение ограничено!...</p>
+									<div class="clinic-about">
+										<div title="1001 м." class="clinic-about__metro main-clinic-about__metro metro_line_arbatsko-pokrovskaya">Славянский бульвар</div>
+									</div>
+									<div class="diagnostic__button--right-sbar">
+										<a href="/clinics/lechebno_diagnosticheskiy_tsentr_kutuzovskiy/actions/skidka-15-na-shveytsarskie-implantaty/">Посмотреть</a>
+									</div>
+								</div>
+							</li>
+							<li style="float: left; list-style: none; position: relative; width: 226px;">
+								<div class="offer__right-sbar-wrap">
+									<div class="offer__right-sbar-title">СПЕЦПРЕДЛОЖЕНИЯ</div>
+									<div class="offer__right-sbar-img">
+										<img src="https://zdorov.online/upload/resize_cache/iblock/93f/150_150_2/93f6277499d1f4dc28da6001580589a4.jpg">
+									</div>
+									<div class="offer__right-sbar-offer">Специальная цена на все исследования МРТ</div>
+									<p>Предложение ограничено! пройдите МРТ и получите консультацию очень выгодно для...</p>
+									<div class="clinic-about">
+										<div title="1001 м." class="clinic-about__metro main-clinic-about__metro metro_line_tagansko-krasnopresnenskaya">Улица 1905 года</div>
+									</div>
+									<div class="diagnostic__button--right-sbar">
+										<a href="/clinics/tsentr_mrt_medseven/actions/spetsialnaya-tsena-na-vse-issledovaniya-mrt/">Посмотреть</a>
+									</div>
+								</div>
+							</li>
+							<li style="float: left; list-style: none; position: relative; width: 226px;">
+								<div class="offer__right-sbar-wrap">
+									<div class="offer__right-sbar-title">СПЕЦПРЕДЛОЖЕНИЯ</div>
+									<div class="offer__right-sbar-img">
+										<img src="https://zdorov.online/upload/resize_cache/iblock/832/150_150_2/832e9c7ba82182d9fb759c7e172f4ea4.png">
+									</div>
+									<div class="offer__right-sbar-offer">Скидка 25% на МРТ 1,5 Тесла</div>
+									<p>Только в наших центрах действует скидка 25% на МРТ 1,5 Тесла.Спешите записаться! Наши квалифицированные врачи помогут вам найти&nbsp;&nbsp;и устранить недуги...</p>
+									<div class="clinic-about">
+										<div title="1001 м." class="clinic-about__metro main-clinic-about__metro metro_line_arbatsko-pokrovskaya">Молодёжная</div>
+									</div>
+									<div class="diagnostic__button--right-sbar">
+										<a href="/clinics/kuntsevskiy_tsentr_open_clinics/actions/skidka-25-na-mrt-1-5-tesla/">Посмотреть</a>
+									</div>
+								</div>
+							</li>
+							<li style="float: left; list-style: none; position: relative; width: 226px;" class="bx-clone">
+								<div class="offer__right-sbar-wrap">
+									<div class="offer__right-sbar-title">СПЕЦПРЕДЛОЖЕНИЯ</div>
+									<div class="offer__right-sbar-img">
+										<img src="https://zdorov.online/upload/resize_cache/iblock/492/150_150_2/49218603f7aa1de2eff42aa191eebe1a.jpg">
+									</div>
+									<div class="offer__right-sbar-offer">Скидка 15%  на швейцарские имплантаты!</div>
+									<p>нужны импланты? только у нас в центре скидка 15%  на швейцарские имплантаты до 15 июля! Предложение ограничено!...</p>
+									<div class="clinic-about">
+										<div title="1001 м." class="clinic-about__metro main-clinic-about__metro metro_line_arbatsko-pokrovskaya">Славянский бульвар</div>
+									</div>
+									<div class="diagnostic__button--right-sbar">
+										<a href="/clinics/lechebno_diagnosticheskiy_tsentr_kutuzovskiy/actions/skidka-15-na-shveytsarskie-implantaty/">Посмотреть</a>
+									</div>
+								</div>
+							</li></ul></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link active">3</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+					</article>					</div>
+			</div>
+
+			<div class="clinic-main-about__map">
+				<h3>Клиники рядом:</h3>
+				<div class="other_clinics_beside">
+					<div>
+						<div class="clinic-avatar" style="float:left;">
+							<a href="/clinics/mejdunarodnii-hirurgicheskii-centr/">
+								<div class="clinic-avatar__img">
+									<img height="145" src="https://zdorov.online/upload/iblock/e76/e765ee3044a2d50fdbcfecce5320ef33.png" alt="Медико-Хирургический Центр на Пресне" title="Медико-Хирургический Центр на Пресне">
+								</div>
+							</a>
+							<div class="clinic-avatar__rating">
+								<span title="4.79">Рейтинг</span>
+								<!--<div class="rating">
+									<ul>
+																														<li></li>
+																													</ul>
+								</div>-->
+								<div class="rating" data-value="4.79">
+									<div class="rating-value" style="width: 81.43px;"></div>
+								</div>
+							</div>
+							0  метров							</div>
+
+					</div>
+					<div>
+						<div class="clinic-avatar" style="float:left;">
+							<a href="/clinics/medtsentrservis-na-ulitse-1905-goda/">
+								<div class="clinic-avatar__img">
+									<img height="145" src="https://zdorov.online/upload/iblock/dff/dff529f9b2578e418014524d041db7a6.png" alt="&quot;МедЦентрСервис&quot; на улице 1905 года" title="&quot;МедЦентрСервис&quot; на улице 1905 года">
+								</div>
+							</a>
+							<div class="clinic-avatar__rating">
+								<span title="4.5">Рейтинг</span>
+								<!--<div class="rating">
+									<ul>
+																														<li></li>
+																													</ul>
+								</div>-->
+								<div class="rating" data-value="4.5">
+									<div class="rating-value" style="width: 76.5px;"></div>
+								</div>
+							</div>
+							654  метра							</div>
+
+					</div>
+					<div>
+						<div class="clinic-avatar" style="float:left;">
+							<a href="/clinics/evropeyskiy-meditsinskiy-tsentr-ems-na-spiridonevskom-pereulke/">
+								<div class="clinic-avatar__img">
+									<img height="145" src="https://zdorov.online/upload/iblock/c2c/c2c1b80f0b51edf88af22879df67d431.jpg" alt="Европейский Медицинский центр ЕМС на Спиридоньевском переулке" title="Европейский Медицинский центр ЕМС на Спиридоньевском переулке">
+								</div>
+							</a>
+							<div class="clinic-avatar__rating">
+								<span title="4.64">Рейтинг</span>
+								<!--<div class="rating">
+									<ul>
+																														<li></li>
+																													</ul>
+								</div>-->
+								<div class="rating" data-value="4.64">
+									<div class="rating-value" style="width: 78.88px;"></div>
+								</div>
+							</div>
+							2 158  метров							</div>
+
+					</div>
+					<div>
+						<div class="clinic-avatar" style="float:left;">
+							<a href="/clinics/klinika-medlayn-servis-na-polezhaevskoy/">
+								<div class="clinic-avatar__img">
+									<img height="145" src="https://zdorov.online/upload/iblock/8ca/8ca6723db06500d73260ef4b00413a43.png" alt="Клиника &quot;Медлайн-Сервис&quot; на Полежаевской" title="Клиника &quot;Медлайн-Сервис&quot; на Полежаевской">
+								</div>
+							</a>
+							<div class="clinic-avatar__rating">
+								<span title="4.63">Рейтинг</span>
+								<!--<div class="rating">
+									<ul>
+																														<li></li>
+																													</ul>
+								</div>-->
+								<div class="rating" data-value="4.63">
+									<div class="rating-value" style="width: 78.71px;"></div>
+								</div>
+							</div>
+							2 549  метров							</div>
+
+					</div>
+					<div>
+						<div class="clinic-avatar" style="float:left;">
+							<a href="/clinics/mnogoprofilnyy_meditsinskiy_tsentr_stolitsa_na_arbate/">
+								<div class="clinic-avatar__img">
+									<img height="145" src="https://zdorov.online/upload/iblock/2dd/2dd3fe41a8b46c03c238e70484534d5b.jpg" alt="Многопрофильный медицинский центр «Столица» на Арбате" title="Многопрофильный медицинский центр «Столица» на Арбате">
+								</div>
+							</a>
+							<div class="clinic-avatar__rating">
+								<span title="3.77">Рейтинг</span>
+								<!--<div class="rating">
+									<ul>
+																														<li></li>
+																													</ul>
+								</div>-->
+								<div class="rating" data-value="3.77">
+									<div class="rating-value" style="width: 64.09px;"></div>
+								</div>
+							</div>
+							2 618  метров							</div>
+
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="/js/rating.js"></script>
+
+			<script type="text/javascript">
+
+				// var ref = document.referrer;
+				// var loc = location.href;
+				// var goalParams = {'url':loc, 'referrer':ref, 'clinic':'Центр МРТ диагностики "МедСевен"'};
+				// function goalCallback () {
+				// console.log(goalParams);
+				// }
+				// $(document).ready(function(){
+				// $('.book').click(function(){
+				// var cliid = $(this).attr('cliid');
+				// $.post("/algo/processing/form.php", {"cliid":cliid}, function(resp){
+				// $('#formContainer').html(resp);
+				// setTimeout(function(){
+				// $(".pop-up").fadeIn(500);
+				// $(".pop-up").addClass("block-pop-up");
+				// }, 100);
+				// });
+				// });
+				// });
+			</script>
+
+
+			<br>
+
+			<!--right sidebar-->
+			<div class="right-sidebar clearfix">
+				<div id="rpolis"></div>
+				<div id="rfilter"></div>
+				<div style="display: none;">
+
+				</div>
+				&#65279;
+
+
+
+
+
+
+
+				<div id="rdocs"></div>
+				<article class="about">
+					<div class="about__wrap">
+						<!--<section class="about__SN">
+							<div class="about__title">ПРИСОЕДИНЯЙТЕСЬ К НАМ В СОЦСЕТЯХ:</div>
+							<ul>
+								<li class="about__SN--vk"><a href="#x">Вконтакте</a></li>
+								<li class="about__SN--f"><a href="#x">Facebook</a></li>
+								<li class="about__SN--tw"><a href="#x">Tweeter</a></li>
+								<li class="about__SN--ok"><a href="#x">Одноклассники</a></li>
+								<li class="about__SN--g"><a href="#x">GooglPlus</a> </li>
+							</ul>
+						</section>-->
+						<section class="about_contents">
+							<div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+							<ul>
+								<li class="about_contents--pills">
+									<!--noindex--><a href="/bolezni/"><span>Более 400 болезней</span>
+									Причины, проявления, лечение и профилактика</a><!--/noindex--></li>
+								<li class="about_contents--clinic">
+									<!--noindex--><a href="/clinics/"><span>Рейтинг клиник</span>
+									Достоверная информация о качестве лечения на основе посещения клиник</a><!--/noindex--></li>
+								<li class="about_contents--node">
+									<!--noindex--><a href="/vrach/"><span>Запись к врачу</span>
+									Очень легко к нужному врачу</a><!--/noindex--></li>
+								<li class="about_contents--question">
+									<!--noindex--><a href="/qa/"><span>Задать вопрос</span>
+									Бесплатные консультации врачей</a><!--/noindex--></li>
+							</ul>
+						</section>
+					</div>
+				</article>
+				<div id="right_socadd"></div>
+				<div style="width:240px;">
+				</div>
+				<div>
+
+				</div>
+			</div>
+		</main>
+
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<div class="clearfix"></div>
+	<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<img src="img/logo.png" title="Zdorov.online">
+			</div>
+			<div class="footer-content__article hidden-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Лучшие врачи Москвы</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Вся диагностика Москвы</a>
+				<a href="/novosti/">Новости</a>
+				<div class="menu-footer__list hidden-xs">
+					<ul>
+						<!--noindex-->
+						<li>
+							<a href="/adv/">Реклама на портале</a>
+						</li>
+						<li>
+							<a href="/dlya-klinik/">Для клиник</a>
+						</li>
+						<li>
+							<a href="/about/">О проекте</a>
+						</li><!--/noindex-->
+						<li>
+							<a href="/contacts/">Контакты</a>
+						</li>
+						<!--noindex-->
+						<li>
+							<a href="/term/">Соглашение с порталом</a>
+						</li><!--/noindex-->
+						<!--noindex-->
+						<li>
+							<a target="_blank" href="http://partners.zdorov.online/">Партнерам</a>
+						</li><!--/noindex-->
+					</ul>
+				</div>
+			</div>
+			<div class="footer-content__article mobile visible-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Врачи</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Клиники</a>
+				<a href="/novosti/">Новости</a>
+			</div>
+
+			<div class="menu-footer-document hidden-xs">
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2017. Все права защищены.
+						<a href="/karta-saita/">Карта сайта</a>
+					</p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем. 16+</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left: 86px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+				</div>
+			</div>
+			<div class="footer-content__right-side mk visible-xs">
+				Информационный партнер портала
+				<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script src="js/app.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#nav-icon3').click(function () {
+				$(this).toggleClass('open');
+				$('.header-main_menu').toggleClass('open');
+			});
+		});
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Болезни и их лечение</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<!--<meta name="viewport" content="width=1250">-->
+	<!--<meta name="MobileOptimized" content="1250">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body">
+		<header>
+			<div class="clearfix header-top">
+				<div class="header-top__item menu-burger header-top__btn visible-xs">
+					<a id="nav-icon3" class="visible-xs">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				<a href="/" class="header-logo header-top__item">
+					<img src="http://zdorov.online/img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<a class="header-top__item menu-search header-top__btn visible-xs">
+					<img src="mob/search.png" alt="">
+				</a>
+				<style>
+					.search_block {
+						position: relative;
+					}
+
+					.search_block .search_tips {
+						display: none;
+						position: absolute;
+						top: 50px;
+						left: 280px;
+						background-color: #fff;
+						width: 497px;
+						border: 1px solid #ccc;
+					'
+					}
+
+					.search_block .search_tips .tips {
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+
+					.search_block .search_tips .tips_kato {
+						padding: 4px 8px;
+						background-color: #87CEFA;
+						color: #fff;
+
+					}
+
+					.search_block .search_tips .tips:hover {
+						background-color: #ccc;
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+				</style>
+				<div class="search_block">
+					<div class="header-search">
+						<form action="/search/">
+							<input autocomplete="off" type="search" name="q" placeholder="Например: С какой стороны аппендицит у женщин?" value="">
+							<input type="submit" value="">
+						</form>
+					</div>
+				</div>
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="/auth/">Вход</a>
+						/
+						<a href="/reg/" class="go_to_reg">Регистрация</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list">
+						<a href="/selftest/j/">Самодиагностика</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/articles/">Статьи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/clinics/">Клиники</a>
+						<ul class="main-submenu">
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-lecheniyu/" class="main-submenu__link">
+									По лечению
+								</a>
+							</li>
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-diagnostike/" class="main-submenu__link">
+									По диагностике
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main_menu-list">
+						<a href="/vrach/">Врачи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/bolezni/">Болезни</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/forum/">Форум</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/qa/">Вопросы врачу</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>
+		<!-- end header-->
+		<main>
+			<div class="ratemenu">
+				<div class="ratemenu__title">
+					Рейтинги клиник:
+				</div>
+				<ul class="ratemenu__list">
+					<li class="ratemenu__list-item">
+						<a href="/clinics/reyting-khoroshikh-klinik/">10 лучших клиник Москвы</a>
+					</li>
+				</ul>
+			</div>
+			<div class="crumbs">
+				<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="/">
+							<span itemprop="name">Главная</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<span itemprop="name">Болезни и их лечение</span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+
+			<div class="left-side clinic_main_front">
+				<div class="pagination">
+					<ul>
+						<li class="l-arrow inactive-l-arrow">
+							<a rel="prev">назад</a>
+						</li>
+						<li>
+							<a class="active" title="Текущая страница">1</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=2" title="Страница 2">2</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=3" title="Страница 3">3</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=4" title="Страница 4">4</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=5" title="Страница 5">5</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=6" title="Страница 6">6</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=7" title="Страница 7">7</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=8" title="Страница 8">8</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=9" title="Страница 9">9</a>
+						</li>
+						<li class="r-arrow ">
+							<a href="/clinics/?page=2" title="Страница 2" rel="next">вперед</a>
+						</li>
+					</ul>
+				</div>
+				<br class="hidden-xs">
+				<div class="clinics__wrapper clinics-new clearfix">
+					<div class="clinics-top__wrap clearfix">
+						<div class="clinic__logo">
+							<img src="https://zdorov.online/upload/iblock/fdb/fdb1a65c835608974831b12bf4a4989f.png" alt="">
+						</div>
+
+						<div class="clinic-about__content-caption">
+							<a target="_blank" href="/clinics/filial/evropeyskiy-meditsinskiy-tsentr-ems/">Европейский Медицинский центр
+																										   ЕМС
+							</a>
+							<br>
+							<br>
+							<div class="clinic__filial">
+								4 филиала по Москве
+							</div>
+							<div class="clinic-about__address">
+								<a target="_blank" href="/clinics/filial/evropeyskiy-meditsinskiy-tsentr-ems/">Все клиники сети</a>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__leftside">
+						<div class="clinic__leftside-top">
+						</div>
+						<div class="clinic__leftside-center">
+							<img src="https://zdorov.online/upload/resize_cache/iblock/26a/411_255_2/26aa078602ec59f164ee1ebe4efd1f31.jpg" alt="">
+						</div>
+						<div class="clinic__leftside-bottom">
+							<div class="bottom-item bottom-item--link rate">
+								<span title="Рейтинг - 4.5">рейтинг</span>
+								<div class="rating" data-value="4.5">
+									<div class="rating-value" style="width: 76.5px;"></div>
+								</div>
+							</div>
+							<a href="/clinics/filial/evropeyskiy-meditsinskiy-tsentr-ems/review/" class="bottom-item bottom-item--link review">
+					<span>
+						отзывы
+					</span>
+								<div class="clinic-avatar__review">
+									1407
+								</div>
+							</a>
+							<div class="bottom-item time">
+								<div class="timetable">
+									<div class="timetable__row">
+										<span class="timetable__span">Будни</span>
+										<span class="timetable__span-hour">00:00-24:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Суббота</span>
+										<span class="timetable__span-hour">00:00-24:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Воскресенье</span>
+										<span class="timetable__span-hour">00:00-24:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__rightside">
+						<div class="clinic-about clinic-about__content clearfix" style="min-width:300px;">
+							<p class="clinic-about-text">
+								Европейский Медицинский Центр – это развивающаяся медицинская компания, основу деятельности которой
+								составляет предоставление в России высокотехнологичных медицинских услуг.
+							</p>
+						</div>
+						<div class="clinics__doclist">
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/369/3698efcfd5447059a9f448e3d03b188d.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>33</span>отзыва </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.27</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/aa6/aa6389d7d8ad4e9a6965922ccb1a2484.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>28</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.71</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/3ad/3adce36410c5ac05d9a41886115cf411.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>27</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.67</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/94f/94f661e0ac635fb6a9d751d08f6c461b.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>23</span>отзыва </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.35</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="clinic-time clearfix">
+                                                            <span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Европейский Медицинский центр ЕМС"><a>
+																Показать
+																номер
+															</a></span>
+                                <span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Европейский Медицинский центр ЕМС">
+						<a href="tel:+7(499)110-16-78">
+							+7(499)110-16-78
+						</a>
+						<br>
+					</span>
+
+							</div>
+							<a onclick="bookFormShow('', '157846');" class="clinic-time-btn book clinic1 front_clinic_list_book clearfix">
+								Записаться
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="clinics__wrapper clinics-new clearfix">
+					<div class="clinics-top__wrap clearfix">
+						<div class="clinic__logo">
+							<img src="https://zdorov.online/upload/iblock/28b/28b7f7e1a4b67387eddf878cabbd5e4b.png" alt="">
+						</div>
+
+						<div class="clinic-about__content-caption">
+							<a target="_blank" href="/clinics/filial/set-meditsinskikh-tsentrov-quotsmklinikaquot/">Сеть медицинских центров
+																													"СМ-Клиника"
+							</a>
+							<br>
+							<br>
+							<div class="clinic__filial">
+								9 филиалов по Москве
+							</div>
+							<div class="clinic-about__address">
+								<a target="_blank" href="/clinics/filial/set-meditsinskikh-tsentrov-quotsmklinikaquot/">Все клиники сети</a>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__leftside">
+						<div class="clinic__leftside-top">
+						</div>
+						<div class="clinic__leftside-center">
+							<img src="https://zdorov.online/upload/resize_cache/iblock/b27/411_255_2/b2787b9ab959d7f18ded73c4f2bfa5c4.jpg" alt="">
+						</div>
+						<div class="clinic__leftside-bottom">
+							<div class="bottom-item bottom-item--link rate">
+								<span title="Рейтинг - 4.3333333333333">рейтинг</span>
+								<div class="rating" data-value="4.3333333333333">
+									<div class="rating-value" style="width: 73.6667px;"></div>
+								</div>
+							</div>
+							<a href="/clinics/filial/set-meditsinskikh-tsentrov-quotsmklinikaquot/review/" class="bottom-item bottom-item--link review">
+					<span>
+						отзывы
+					</span>
+								<div class="clinic-avatar__review">
+									7401
+								</div>
+							</a>
+							<div class="bottom-item time">
+								<div class="timetable">
+									<div class="timetable__row">
+										<span class="timetable__span">Будни</span>
+										<span class="timetable__span-hour">08:00-21:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Суббота</span>
+										<span class="timetable__span-hour">09:00-21:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Воскресенье</span>
+										<span class="timetable__span-hour">09:00-21:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__rightside">
+						<div class="clinic-about clinic-about__content clearfix" style="min-width:300px;">
+							<p class="clinic-about-text">
+								Многопрофильный медицинский центр «СМ-Клиника» на 2-м Сыромятническом переулке ориентирован на
+								предоставление широкого спектра медицинских лечебно-диагностических услуг для пациентов от 18 лет.
+							</p>
+						</div>
+						<div class="clinics__doclist">
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/9e3/9e3dceada43d12b29bc8751d98536dc4.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>133</span>отзыва </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.50</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/111/111a314a0756fcae3fc08e541616e8b4.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>107</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.37</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/9e5/9e595749f2a977ddbe85b99c63eb0c3b.png">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>98</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.15</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/65e/65e3021552b85270d3e8c20188a4535f.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>94</span>отзыва </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.15</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="clinic-time clearfix">
+                                                            <span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Сеть медицинских центров &quot;СМ-Клиника&quot;"><a>
+																Показать
+																номер
+															</a></span>
+                                <span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Сеть медицинских центров &quot;СМ-Клиника&quot;">
+						<a href="tel:+7(499)110-83-96">
+							+7(499)110-83-96
+						</a>
+						<br>
+					</span>
+
+							</div>
+							<a onclick="bookFormShow('', '170799');" class="clinic-time-btn book clinic1 front_clinic_list_book clearfix">
+								Записаться
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="clinics__wrapper clinics-new clearfix">
+					<div class="clinics-top__wrap clearfix">
+						<div class="clinic__logo">
+							<img src="https://zdorov.online/upload/iblock/bdd/bdda83584e138583f294d3b1b1f247f7.png" alt="">
+						</div>
+
+						<div class="clinic-about__content-caption">
+							<a target="_blank" href="/clinics/filial/set-meditsinskikh-tsentrov-quototkrytaya-klinikaquot/">Сеть медицинских
+																															центров
+																															"Открытая
+																															клиника"
+							</a>
+							<br>
+							<br>
+							<div class="clinic__filial">
+								5 филиалов по Москве
+							</div>
+							<div class="clinic-about__address">
+								<a target="_blank" href="/clinics/filial/set-meditsinskikh-tsentrov-quototkrytaya-klinikaquot/">Все клиники
+																																сети
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__leftside">
+						<div class="clinic__leftside-top">
+						</div>
+						<div class="clinic__leftside-center">
+							<img src="https://zdorov.online/upload/resize_cache/iblock/c9e/411_255_2/c9e15a101f0d0bd21a909865fcb7bb38.jpg" alt="">
+						</div>
+						<div class="clinic__leftside-bottom">
+							<div class="bottom-item bottom-item--link rate">
+								<span title="Рейтинг - 4.5">рейтинг</span>
+								<div class="rating" data-value="4.5">
+									<div class="rating-value" style="width: 76.5px;"></div>
+								</div>
+							</div>
+							<a href="/clinics/filial/set-meditsinskikh-tsentrov-quototkrytaya-klinikaquot/review/" class="bottom-item bottom-item--link review">
+					<span>
+						отзывы
+					</span>
+								<div class="clinic-avatar__review">
+									1270
+								</div>
+							</a>
+							<div class="bottom-item time">
+								<div class="timetable">
+									<div class="timetable__row">
+										<span class="timetable__span">Будни</span>
+										<span class="timetable__span-hour">08:00-20:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Суббота</span>
+										<span class="timetable__span-hour">09:00-19:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Воскресенье</span>
+										<span class="timetable__span-hour">09:00-19:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__rightside">
+						<div class="clinic-about clinic-about__content clearfix" style="min-width:300px;">
+							<p class="clinic-about-text">
+								Мы специально создали такие условия в “Детском центре”, где родители смогли бы не беспокоиться за качество
+								медицинских услуг, а дети с рождения начали бы доверять “людям в белых халатах”.
+							</p>
+						</div>
+						<div class="clinics__doclist">
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/64a/64a8b375a61c6746f58603aca39b5a66.png">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>65</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.51</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/8c2/8c2c1632ebf69f9cbc0f532e05e77b94.png">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>64</span>отзыва </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.55</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/562/562010736563cf7dadf2094edefaf5e3.png">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>57</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.39</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/572/572a820307bd433180f1efe66396a913.png">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>54</span>отзыва </p>
+									<p class="well-doc__item-rating--blue">
+										<span>8                                            <span>.80</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="clinic-time clearfix">
+                                                            <span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Сеть медицинских центров &quot;Открытая клиника&quot;"><a>
+																Показать
+																номер
+															</a></span>
+                                <span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Сеть медицинских центров &quot;Открытая клиника&quot;">
+						<a href="tel:+7(499)110-63-78 ">
+							+7(499)110-63-78
+						</a>
+						<br>
+					</span>
+
+							</div>
+							<a onclick="bookFormShow('', '611');" class="clinic-time-btn book clinic1 front_clinic_list_book clearfix">
+								Записаться
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="clinics__wrapper clinics-new clearfix">
+					<div class="clinics-top__wrap clearfix">
+						<div class="clinic__logo">
+							<img src="https://zdorov.online/upload/iblock/345/3458a63396c08243d77e7d4d98bd21ee.png" alt="">
+						</div>
+
+						<div class="clinic-about__content-caption">
+							<a target="_blank" href="/clinics/filial/set-klinik-quotmedlaynservisquot/">Сеть клиник "Медлайн-Сервис"</a>
+							<br>
+							<br>
+							<div class="clinic__filial">
+								9 филиалов по Москве
+							</div>
+							<div class="clinic-about__address">
+								<a target="_blank" href="/clinics/filial/set-klinik-quotmedlaynservisquot/">Все клиники сети</a>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__leftside">
+						<div class="clinic__leftside-top">
+						</div>
+						<div class="clinic__leftside-center">
+							<img src="https://zdorov.online/upload/resize_cache/iblock/f19/411_255_2/f1954b13f7b01a1991981e18628eef9d.jpg" alt="">
+						</div>
+						<div class="clinic__leftside-bottom">
+							<div class="bottom-item bottom-item--link rate">
+								<span title="Рейтинг - 4.4444444444444">рейтинг</span>
+								<div class="rating" data-value="4.4444444444444">
+									<div class="rating-value" style="width: 75.5556px;"></div>
+								</div>
+							</div>
+							<a href="/clinics/filial/set-klinik-quotmedlaynservisquot/review/" class="bottom-item bottom-item--link review">
+					<span>
+						отзывы
+					</span>
+								<div class="clinic-avatar__review">
+									491
+								</div>
+							</a>
+							<div class="bottom-item time">
+								<div class="timetable">
+									<div class="timetable__row">
+										<span class="timetable__span">Будни</span>
+										<span class="timetable__span-hour">08:00-20:30</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Суббота</span>
+										<span class="timetable__span-hour">09:00-20:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Воскресенье</span>
+										<span class="timetable__span-hour">10:00-19:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__rightside">
+						<div class="clinic-about clinic-about__content clearfix" style="min-width:300px;">
+							<p class="clinic-about-text">
+								Более чем за 15 лет работы мы накопили обширный опыт диагностики и лечения различных заболеваний, собрали
+								команду квалифицированных врачей. Сегодня наша сеть включает уже 9 семейных клиник в Москве.
+							</p>
+						</div>
+						<div class="clinics__doclist">
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/852/8526a16cdc9a3672a30fc17c734dbc0d.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>240</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.33</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/f19/f19971fd8af8b26bb32d8c6e3089fb7b.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>18</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.61</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/4ae/4ae7ca2332affd15a048777f16a8bd43.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>16</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.56</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/c37/c371cccaeb6d7598d22c4077af079046.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>15</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.47</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="clinic-time clearfix">
+                                                            <span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Сеть клиник &quot;Медлайн-Сервис&quot;"><a>
+																Показать
+																номер
+															</a></span>
+                                <span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Сеть клиник &quot;Медлайн-Сервис&quot;">
+						<a href="tel:+7(499)110-81-43">
+							+7(499)110-81-43
+						</a>
+						<br>
+					</span>
+
+							</div>
+							<a onclick="bookFormShow('', '164456');" class="clinic-time-btn book clinic1 front_clinic_list_book clearfix">
+								Записаться
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="clinics__wrapper clinics-new clearfix">
+					<div class="clinics-top__wrap clearfix">
+						<div class="clinic__logo">
+							<img src="https://zdorov.online/upload/iblock/cf1/cf126c2cb42cea46b87d7981c72667eb.png" alt="">
+						</div>
+
+						<div class="clinic-about__content-caption">
+							<a target="_blank" href="/clinics/filial/set-meditsinskikh-tsentrov-quotmedokquot/">Сеть медицинских центров
+																												"МедОК"
+							</a>
+							<br>
+							<br>
+							<div class="clinic__filial">
+								19 филиалов по Москве
+							</div>
+							<div class="clinic-about__address">
+								<a target="_blank" href="/clinics/filial/set-meditsinskikh-tsentrov-quotmedokquot/">Все клиники сети</a>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__leftside">
+						<div class="clinic__leftside-top">
+						</div>
+						<div class="clinic__leftside-center">
+							<img src="https://zdorov.online/upload/resize_cache/iblock/5b0/411_255_2/5b0a3b2dbaa929531b46f4faaf3287ed.jpg" alt="">
+						</div>
+						<div class="clinic__leftside-bottom">
+							<div class="bottom-item bottom-item--link rate">
+								<span title="Рейтинг - 4.2894736842105">рейтинг</span>
+								<div class="rating" data-value="4.2894736842105">
+									<div class="rating-value" style="width: 72.9211px;"></div>
+								</div>
+							</div>
+							<a href="/clinics/filial/set-meditsinskikh-tsentrov-quotmedokquot/review/" class="bottom-item bottom-item--link review">
+					<span>
+						отзывы
+					</span>
+								<div class="clinic-avatar__review">
+									330
+								</div>
+							</a>
+							<div class="bottom-item time">
+								<div class="timetable">
+									<div class="timetable__row">
+										<span class="timetable__span">Будни</span>
+										<span class="timetable__span-hour"> 7:00-21:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Суббота</span>
+										<span class="timetable__span-hour">8:00-20:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Воскресенье</span>
+										<span class="timetable__span-hour">8:00-20:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__rightside">
+						<div class="clinic-about clinic-about__content clearfix" style="min-width:300px;">
+							<p class="clinic-about-text">
+								Наша главная цель&nbsp;— не&nbsp;только диагностировать заболевание и&nbsp;вылечить&nbsp;его, а&nbsp;объяснить
+								пациенту, что с&nbsp;ним происходит. Медок вам в&nbsp;этом поможет.
+							</p>
+						</div>
+						<div class="clinics__doclist">
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/3d3/3d332e9a8ce52167abd0af96b5d4acd6.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>16</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.25</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/443/443b97fccfe7abb496f009e4be6cb001.jpeg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>15</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.27</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/b05/b0568d156a2774569c0a0feaa21ec1f1.jpeg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>10</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.70</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/e23/e23b357b35e7075f093f276394efb301.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>9</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.44</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="clinic-time clearfix">
+                                                            <span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Сеть медицинских центров &quot;МедОК&quot;"><a>
+																Показать
+																номер
+															</a></span>
+                                <span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Сеть медицинских центров &quot;МедОК&quot;">
+						<a href="tel:+7(499)638-24-62">
+							+7(499)638-24-62
+						</a>
+						<br>
+					</span>
+
+							</div>
+							<a onclick="bookFormShow('', '153995');" class="clinic-time-btn book clinic1 front_clinic_list_book clearfix">
+								Записаться
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="clinics__wrapper clinics-new clearfix">
+					<div class="clinics-top__wrap clearfix">
+						<div class="clinic__logo">
+							<img src="https://zdorov.online/upload/iblock/7bc/7bc1d18635920f64d1ddfa8cf1dc3231.png" alt="">
+						</div>
+
+						<div class="clinic-about__content-caption">
+							<a target="_blank" href="/clinics/filial/set-moskovskikh-klinik-quotmedtsentrservisquot/">Сеть московских клиник
+																													  "МедЦентрСервис"
+							</a>
+							<br>
+							<br>
+							<div class="clinic__filial">
+								15 филиалов по Москве
+							</div>
+							<div class="clinic-about__address">
+								<a target="_blank" href="/clinics/filial/set-moskovskikh-klinik-quotmedtsentrservisquot/">Все клиники сети
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__leftside">
+						<div class="clinic__leftside-top">
+						</div>
+						<div class="clinic__leftside-center">
+							<img src="https://zdorov.online/upload/resize_cache/iblock/4aa/411_255_2/4aa97193755b248f996a541531b1bccf.jpg" alt="">
+						</div>
+						<div class="clinic__leftside-bottom">
+							<div class="bottom-item bottom-item--link rate">
+								<span title="Рейтинг - 4.2666666666667">рейтинг</span>
+								<div class="rating" data-value="4.2666666666667">
+									<div class="rating-value" style="width: 72.5333px;"></div>
+								</div>
+							</div>
+							<a href="/clinics/filial/set-moskovskikh-klinik-quotmedtsentrservisquot/review/" class="bottom-item bottom-item--link review">
+					<span>
+						отзывы
+					</span>
+								<div class="clinic-avatar__review">
+									2335
+								</div>
+							</a>
+							<div class="bottom-item time">
+								<div class="timetable">
+									<div class="timetable__row">
+										<span class="timetable__span">Будни</span>
+										<span class="timetable__span-hour">00:00-24:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Суббота</span>
+										<span class="timetable__span-hour">00:00-24:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Воскресенье</span>
+										<span class="timetable__span-hour">00:00-24:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__rightside">
+						<div class="clinic-about clinic-about__content clearfix" style="min-width:300px;">
+							<p class="clinic-about-text">
+								15 многофункциональных клиник, Мы почти 20 лет работаем в сфере оказания медицинских услуг и наши основные
+								направления — гинекология и урология.
+							</p>
+						</div>
+						<div class="clinics__doclist">
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/012/012fb633a06099b49643b8e9a783de48.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>142</span>отзыва </p>
+									<p class="well-doc__item-rating--blue">
+										<span>8                                            <span>.33</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/34a/34a38e3ecf7b0036a820a53e64a996e5.png">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>133</span>отзыва </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.45</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/5be/5be1a8642a6c9e2ca62be28e82b60c55.png">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>77</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.81</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/766/7665a82b977d0f29b404d0a6ae197f04.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>60</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>7                                            <span>.80</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="clinic-time clearfix">
+                                                            <span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Сеть московских клиник &quot;МедЦентрСервис&quot;"><a>
+																Показать
+																номер
+															</a></span>
+                                <span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Сеть московских клиник &quot;МедЦентрСервис&quot;">
+						<a href="tel:+7(499)110-23-58">
+							+7(499)110-23-58
+						</a>
+						<br>
+					</span>
+
+							</div>
+							<a onclick="bookFormShow('', '145807');" class="clinic-time-btn book clinic1 front_clinic_list_book clearfix">
+								Записаться
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="clinics__wrapper clinics-new clearfix">
+					<div class="clinics-top__wrap clearfix">
+						<div class="clinic__logo">
+							<img src="https://zdorov.online/upload/iblock/ea6/ea69df2a79afa80be7d08585b42371bd.png" alt="">
+						</div>
+
+						<div class="clinic-about__content-caption">
+							<a target="_blank" href="/clinics/filial/mnogoprofilnye-tsentry-quotmedkvadratquot/">Многопрофильные центры
+																												 "Медквадрат"
+							</a>
+							<br>
+							<br>
+							<div class="clinic__filial">
+								2 филиала по Москве
+							</div>
+							<div class="clinic-about__address">
+								<a target="_blank" href="/clinics/filial/mnogoprofilnye-tsentry-quotmedkvadratquot/">Все клиники сети</a>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__leftside">
+						<div class="clinic__leftside-top">
+						</div>
+						<div class="clinic__leftside-center">
+							<img src="https://zdorov.online/upload/iblock/f87/f87a3e3e13c988ce7143ff8c735b2e0c.jpg" alt="">
+						</div>
+						<div class="clinic__leftside-bottom">
+							<div class="bottom-item bottom-item--link rate">
+								<span title="Рейтинг - 4.5">рейтинг</span>
+								<div class="rating" data-value="4.5">
+									<div class="rating-value" style="width: 76.5px;"></div>
+								</div>
+							</div>
+							<a href="/clinics/filial/mnogoprofilnye-tsentry-quotmedkvadratquot/review/" class="bottom-item bottom-item--link review">
+					<span>
+						отзывы
+					</span>
+								<div class="clinic-avatar__review">
+									811
+								</div>
+							</a>
+							<div class="bottom-item time">
+								<div class="timetable">
+									<div class="timetable__row">
+										<span class="timetable__span">Будни</span>
+										<span class="timetable__span-hour">8:00-21:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Суббота</span>
+										<span class="timetable__span-hour">09:00-18:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Воскресенье</span>
+										<span class="timetable__span-hour">10:00-16:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__rightside">
+						<div class="clinic-about clinic-about__content clearfix" style="min-width:300px;">
+							<p class="clinic-about-text">
+								Команда Медквадрат - это целеустремленные единомышленники, задачей которых является оказание медицинских
+								услуг на высшем профессиональном уровне.
+							</p>
+						</div>
+						<div class="clinics__doclist">
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/d6a/d6a63f302854bbbae7f0dd27c919cc6d.png">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>81</span>отзыв </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.25</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/750/750e4155bd470f26d9d70c682d7bbdb3.png">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>63</span>отзыва </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.43</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/b75/b75472b49862d8dc4fa30191187e15d6.jpeg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>56</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.14</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/3c8/3c8689221e5e559fc34e79e36f27834b.png">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>35</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.66</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="clinic-time clearfix">
+                                                            <span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Многопрофильные центры &quot;Медквадрат&quot;"><a>
+																Показать
+																номер
+															</a></span>
+                                <span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Многопрофильные центры &quot;Медквадрат&quot;">
+						<a href="tel:+7(499)110-69-84">
+							+7(499)110-69-84
+						</a>
+						<br>
+					</span>
+
+							</div>
+							<a onclick="bookFormShow('', '153922');" class="clinic-time-btn book clinic1 front_clinic_list_book clearfix">
+								Записаться
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="clinics__wrapper clinics-new clearfix">
+					<div class="clinics-top__wrap clearfix">
+						<div class="clinic__logo">
+							<img src="https://zdorov.online/upload/iblock/82b/82b9b084ac405be7577e94ce64c21647.png" alt="">
+						</div>
+
+						<div class="clinic-about__content-caption">
+							<a target="_blank" href="/clinics/meditsinskiy-tsentr-guta-klinik/">Медицинский центр "Гута клиник"</a>
+							<br>
+							<br>
+							<div class="clinic__filial">
+							</div>
+							<div class="clinic-about__address">
+								<a target="_blank" href="/clinics/meditsinskiy-tsentr-guta-klinik/">г. Москва улица Фадеева, дом 2</a>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__leftside">
+						<div class="clinic__leftside-top">
+						</div>
+						<div class="clinic__leftside-center">
+							<img src="https://zdorov.online/upload/resize_cache/iblock/e2c/411_255_2/e2cc86ea2aa1e8f1deab5310e8804a0d.jpg" alt="">
+						</div>
+						<div class="clinic__leftside-bottom">
+							<div class="bottom-item bottom-item--link rate">
+								<span title="Рейтинг - 4.495">рейтинг</span>
+								<div class="rating" data-value="4.495">
+									<div class="rating-value" style="width: 76.415px;"></div>
+								</div>
+							</div>
+							<a href="/clinics/meditsinskiy-tsentr-guta-klinik/review/" class="bottom-item bottom-item--link review">
+					<span>
+						отзывы
+					</span>
+								<div class="clinic-avatar__review">
+									123
+								</div>
+							</a>
+							<div class="bottom-item time">
+								<div class="timetable">
+									<div class="timetable__row">
+										<span class="timetable__span">Будни</span>
+										<span class="timetable__span-hour">8:00-21:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Суббота</span>
+										<span class="timetable__span-hour">9:00-17:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Воскресенье</span>
+										<span class="timetable__span-hour">9:00-17:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__rightside">
+						<div class="clinic-about clinic-about__content clearfix" style="min-width:300px;">
+							<p class="clinic-about-text">
+								О МЕДИЦИНСКОМ ЦЕНТРЕ «ГУТА-КЛИНИК»<br>
+								<br>
+								Медицинский центр «ГУТА-КЛИНИК» образован в 1998 году и входит в состав многопрофильной
+								инвестиционно-промышленной корпорации«ГУТА-ГРУПП». За более чем 15-летний опыт своей работы «ГУТА-КЛИНИК»
+								прошла путь от узкоспециализированной клиники лечения головокружения и расстройств равновесия до
+								многопрофильного медицинского учреждения международного класса с поликлиническими отделениями для взрослых и
+								детей и комфортабельным хирургическим стационаром, имеющими возможность диагностики и лечения более чем 60
+								видам медицинской деятельности. Оказана помощь 80 000 пациентам, проведено более 5 000 операций высокой
+								категории сложности.
+							</p>
+						</div>
+						<div class="clinics__doclist">
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/d19/d190ad470208e89df6d74f93d68e7d2f.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>16</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.00</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/299/2999831b0e41484b103dac9d132296b3.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>12</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.08</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/a74/a74ffcbba704f0cd498ce68125a607c8.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>11</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.45</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="well-doc__item-img">
+								<img src="https://zdorov.online/upload/iblock/b4f/b4fb54e7f1d40e954d820400d5e42dea.jpg">
+								<div class="well-doc__item-rating clearfix">
+									<p class="well-doc__item-rating--pink">
+										<span>8</span>отзывов </p>
+									<p class="well-doc__item-rating--blue">
+										<span>9                                            <span>.63</span></span>рейтинг</p>
+								</div>
+							</div>
+							<div class="clinic-time clearfix">
+                                                            <span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Медицинский центр &quot;Гута клиник&quot;"><a>
+																Показать
+																номер
+															</a></span>
+                                <span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Медицинский центр &quot;Гута клиник&quot;">
+						<a href="tel:+7(499)110-74-25">
+							+7(499)110-74-25
+						</a>
+						<br>
+					</span>
+
+							</div>
+							<a onclick="bookFormShow('', '164132');" class="clinic-time-btn book clinic1 front_clinic_list_book clearfix">
+								Записаться
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="clinics__wrapper clinics-new clearfix">
+					<div class="clinics-top__wrap clearfix">
+						<div class="clinic__logo">
+							<img src="https://zdorov.online/upload/iblock/fdd/fdd11f34585cb3d6dc78e1ad8a748239.png" alt="">
+						</div>
+
+						<div class="clinic-about__content-caption">
+							<a target="_blank" href="/clinics/filial/diagnosticheskie-tsentry-quotmedskan-rfquot/">Диагностические центры
+																												   "Медскан РФ"
+							</a>
+							<br>
+							<br>
+							<div class="clinic__filial">
+								4 филиала по Москве
+							</div>
+							<div class="clinic-about__address">
+								<a target="_blank" href="/clinics/filial/diagnosticheskie-tsentry-quotmedskan-rfquot/">Все клиники сети</a>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__leftside">
+						<div class="clinic__leftside-top">
+						</div>
+						<div class="clinic__leftside-center">
+							<img src="https://zdorov.online/upload/resize_cache/iblock/5ea/411_255_2/5ea0f17d8827ceeb984cc888b330e543.jpg" alt="">
+						</div>
+						<div class="clinic__leftside-bottom">
+							<div class="bottom-item bottom-item--link rate">
+								<span title="Рейтинг - 4.25">рейтинг</span>
+								<div class="rating" data-value="4.25">
+									<div class="rating-value" style="width: 72.25px;"></div>
+								</div>
+							</div>
+							<a href="/clinics/filial/diagnosticheskie-tsentry-quotmedskan-rfquot/review/" class="bottom-item bottom-item--link review">
+					<span>
+						отзывы
+					</span>
+								<div class="clinic-avatar__review">
+									41
+								</div>
+							</a>
+							<div class="bottom-item time">
+								<div class="timetable">
+									<div class="timetable__row">
+										<span class="timetable__span">Будни</span>
+										<span class="timetable__span-hour">8:00-21:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Суббота</span>
+										<span class="timetable__span-hour">8:00-21:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Воскресенье</span>
+										<span class="timetable__span-hour">8:00-21:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__rightside">
+						<div class="clinic-about clinic-about__content clearfix" style="min-width:300px;">
+							<p class="clinic-about-text">
+								Располагая самым современных оборудованием и слаженной командой профессионалов экстра-класса, мы всегда
+								добиваемся поставленных перед собой задач.
+							</p>
+						</div>
+						<div class="clinics__doclist">
+							<div class="clinic-time clearfix">
+                                                            <span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Диагностические центры &quot;Медскан РФ&quot;"><a>
+																Показать
+																номер
+															</a></span>
+                                <span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Диагностические центры &quot;Медскан РФ&quot;">
+						<a href="tel:+7(499)110-34-81">
+							+7(499)110-34-81
+						</a>
+						<br>
+					</span>
+
+							</div>
+							<a onclick="bookFormShow('', '148425');" class="clinic-time-btn book clinic1 front_clinic_list_book clearfix">
+								Записаться
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="clinics__wrapper clinics-new clearfix">
+					<div class="clinics-top__wrap clearfix">
+						<div class="clinic__logo">
+							<img src="https://zdorov.online/upload/iblock/42f/42ff8652110bd52e324d09076853320c.png" alt="">
+						</div>
+
+						<div class="clinic-about__content-caption">
+							<a target="_blank" href="/clinics/tsentr_mrt_medseven/">Центр МРТ диагностики "МедСевен"</a>
+							<br>
+							<br>
+							<div class="clinic__filial">
+							</div>
+							<div class="clinic-about__address">
+								<a target="_blank" href="/clinics/tsentr_mrt_medseven/">г. Москва, ул. 1905 года, д.7, стр.1</a>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__leftside">
+						<div class="clinic__leftside-top">
+						</div>
+						<div class="clinic__leftside-center">
+							<img src="https://zdorov.online/upload/resize_cache/iblock/751/411_255_2/751f09545762d9f6ffc3db5064f3fbc9.jpg" alt="">
+						</div>
+						<div class="clinic__leftside-bottom">
+							<div class="bottom-item bottom-item--link rate">
+								<span title="Рейтинг - 4.785">рейтинг</span>
+								<div class="rating" data-value="4.785">
+									<div class="rating-value" style="width: 81.345px;"></div>
+								</div>
+							</div>
+							<a href="/clinics/tsentr_mrt_medseven/review/" class="bottom-item bottom-item--link review">
+					<span>
+						отзывы
+					</span>
+								<div class="clinic-avatar__review">
+									37
+								</div>
+							</a>
+							<div class="bottom-item time">
+								<div class="timetable">
+									<div class="timetable__row">
+										<span class="timetable__span">Будни</span>
+										<span class="timetable__span-hour">09:00-24:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Суббота</span>
+										<span class="timetable__span-hour">00:00-24:00</span>
+									</div>
+									<div class="timetable__row">
+										<span class="timetable__span">Воскресенье</span>
+										<span class="timetable__span-hour">00:00-21:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic__rightside">
+						<div class="clinic-about clinic-about__content clearfix" style="min-width:300px;">
+							<p class="clinic-about-text">
+							</p>
+							<p>Специализированный центр МРТ диагностики. Проводит магнитно-резонансную томографию взрослых и детей от 7 лет.
+							   Расположен в 2 минутах ходьбы от м.ул. 1905 года.</p>
+							<p></p>
+						</div>
+						<div class="clinics__doclist">
+							<div class="clinic-time clearfix">
+                                                            <span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Центр МРТ диагностики &quot;МедСевен&quot;"><a>
+																Показать
+																номер
+															</a></span>
+                                <span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Центр МРТ диагностики &quot;МедСевен&quot;">
+						<a href="tel:+7(499)110-63-78">
+							+7(499)110-63-78
+						</a>
+						<br>
+					</span>
+
+							</div>
+							<a onclick="bookFormShow('', '594');" class="clinic-time-btn book clinic1 front_clinic_list_book clearfix">
+								Записаться
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+					<ul>
+						<li class="l-arrow inactive-l-arrow">
+							<a rel="prev">назад</a>
+						</li>
+						<li>
+							<a class="active" title="Текущая страница">1</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=2" title="Страница 2">2</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=3" title="Страница 3">3</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=4" title="Страница 4">4</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=5" title="Страница 5">5</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=6" title="Страница 6">6</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=7" title="Страница 7">7</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=8" title="Страница 8">8</a>
+						</li>
+						<li>
+							<a href="/clinics/?page=9" title="Страница 9">9</a>
+						</li>
+						<li class="r-arrow ">
+							<a href="/clinics/?page=2" title="Страница 2" rel="next">вперед</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="clinics__map-xs" style="height:70vh;">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A522ee09feccfab1bc2abf5bd590f369ddad8cdececef5d4dc60d3e21a61e5d71&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
+				<div class="clinics__wrapper-xs visible-xs">
+					<div class="clinic__logo">
+						<img src="https://zdorov.online/upload/iblock/fdb/fdb1a65c835608974831b12bf4a4989f.png" alt="">
+						<div class="rate-xs">
+							<span class="rate-xs__text">рейтинг</span>
+							<span class="rate-xs__num">8.0</span>
+						</div>
+					</div>
+					<div class="clinic-about">
+						<a target="_blank" href="/clinics/evropeyskiy-meditsinskiy-tsentr-ems-na-shchepkina/">
+							<div class="clinic-about__content-caption">Европейский Медицинский центр ЕМС на Щепкина</div>
+						</a>
+						<span class="metro_distance">Аллерголог</span>
+						<p>цена услуги от 2500</p>
+						<div title="расстояние: 338 метров" class="clinic-about__metro metro_line_koltsevaya">Проспект Мира
+							<span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">338 м)</span>
+						</div>
+						<div title="расстояние: 888 метров" class="clinic-about__metro metro_line_lyublinsko-dmitrovskaya">Достоевская
+							<span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">888 м)</span>
+						</div>
+
+						<div>
+							<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Европейский Медицинский центр ЕМС на Щепкина">
+								<a href="tel:">+7(499)110-16-78</a>
+							</span>
+						</div>
+
+					</div>
+				</div>
+				<div class="clinics__wrapper-xs visible-xs">
+					<div class="clinic__logo">
+						<img src="https://zdorov.online/upload/iblock/fdb/fdb1a65c835608974831b12bf4a4989f.png" alt="">
+						<div class="rate-xs">
+							<span class="rate-xs__text">рейтинг</span>
+							<span class="rate-xs__num">8.0</span>
+						</div>
+					</div>
+					<div class="clinic-about">
+						<a target="_blank" href="/clinics/evropeyskiy-meditsinskiy-tsentr-ems-na-shchepkina/">
+							<div class="clinic-about__content-caption">Европейский Медицинский центр ЕМС на Щепкина</div>
+						</a>
+						<span class="metro_distance">Аллерголог</span>
+						<p>цена услуги от 2500</p>
+						<div title="расстояние: 338 метров" class="clinic-about__metro metro_line_koltsevaya">Проспект Мира
+							<span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">338 м)</span>
+						</div>
+						<div title="расстояние: 888 метров" class="clinic-about__metro metro_line_lyublinsko-dmitrovskaya">Достоевская
+							<span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">888 м)</span>
+						</div>
+
+						<div>
+							<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Европейский Медицинский центр ЕМС на Щепкина">
+								<a href="tel:">+7(499)110-16-78</a>
+							</span>
+						</div>
+
+					</div>
+				</div>
+				<div class="clinics__wrapper-xs visible-xs">
+					<div class="clinic__logo">
+						<img src="https://zdorov.online/upload/iblock/fdb/fdb1a65c835608974831b12bf4a4989f.png" alt="">
+						<div class="rate-xs">
+							<span class="rate-xs__text">рейтинг</span>
+							<span class="rate-xs__num">8.0</span>
+						</div>
+					</div>
+					<div class="clinic-about">
+						<a target="_blank" href="/clinics/evropeyskiy-meditsinskiy-tsentr-ems-na-shchepkina/">
+							<div class="clinic-about__content-caption">Европейский Медицинский центр ЕМС на Щепкина</div>
+						</a>
+						<span class="metro_distance">Аллерголог</span>
+						<p>цена услуги от 2500</p>
+						<div title="расстояние: 338 метров" class="clinic-about__metro metro_line_koltsevaya">Проспект Мира
+							<span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">338 м)</span>
+						</div>
+						<div title="расстояние: 888 метров" class="clinic-about__metro metro_line_lyublinsko-dmitrovskaya">Достоевская
+							<span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">888 м)</span>
+						</div>
+
+						<div>
+							<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Европейский Медицинский центр ЕМС на Щепкина">
+								<a href="tel:">+7(499)110-16-78</a>
+							</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<script>
+				$(document).ready(function () {
+					$.post("/include/right_links_docs.php", {"cnt": "30", 'cp': '/bolezni/'}, function (resp) {
+						$('#rdocs').html(resp);
+					});
+				});
+			</script>
+
+			<!--right sidebar-->
+			<div class="right-sidebar clearfix">
+				<div id="rpolis"></div>
+				<div id="rfilter"></div>
+				<div style="display: none;">
+
+				</div>
+				&#65279;
+
+
+				<div id="rdocs">
+
+					<article class="list-right-sb-search">
+						<div class="list-right-sb-search--wrap">
+							<div class="list-right-sb-search__title">Специальности</div>
+						</div>
+						<ul style="padding-bottom: 15px;">
+							<li>
+								<a class="rdocs" href="/vrach/akusher/">Акушер</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/akusher-ginekolog/">Акушер - гинеколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/allergolog/">Аллерголог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/allergolog-immunolog/">Аллерголог-иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/angiolog/">Ангиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/androlog/">Андролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/artrolog/">Артролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/venerolog/">Венеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/vertebrolog/">Вертебролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/virusolog/">Вирусолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/virusolog-immunolog/">Вирусолог-иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/lfk/">Врач ЛФК</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gastroenterolog/">Гастроэнтеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gematolog/">Гематолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/genetik/">Генетик</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gepatolog/">Гепатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ginekolog/">Гинеколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/girudolog/">Гирудотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gomeopat/">Гомеопат</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatovenerolog/">Дерматовенеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatolog/">Дерматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatolog-venerolog/">Дерматолог-венеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kosmetolog-dermatolog/">Дерматолог-косметолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/defektolog/">Дефектолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/diabetolog/">Диабетолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dietolog/">Диетолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/immunolog/">Иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/infekcionist/">Инфекционист</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kardiolog/">Кардиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kardiohirurg/">Кардиохирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kosmetolog/">Косметолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/lor-otolaringolog/">ЛОР</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/logoped/">Логопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/logoped-defektolog/">Логопед дефектолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/mammolog/">Маммолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/manualnyy-terapevt/">Мануальный терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/massazhist/">Массажист</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/narkolog/">Нарколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/nevrolog/">Невролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/neyrohirurg/">Нейрохирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/neonatolog/">Неонатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/nefrolog/">Нефролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkodermatolog/">Онкодерматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkolog/">Онколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkolog-mammolog/">Онколог маммолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ortoped/">Ортопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/osteopat/">Остеопат</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/otolaringolog/">Отоларинголог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/oftalmolog/">Офтальмолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/parodontolog/">Пародонтолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/pediatr/">Педиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/plasticheskiy-hirurg/">Пластический хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/proktolog/">Проктолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikhiatr/">Психиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikholog/">Психолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikhoterapevt/">Психотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/pulmonolog/">Пульмонолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/revmatolog/">Ревматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/refleksoterapevt/">Рефлексотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/seksolog/">Сексолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/seksopatolog/">Сексопатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/somnolog/">Сомнолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/sosudistii-hirurg/">Сосудистый хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog/">Стоматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-ortodont/">Стоматолог-ортодонт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-terapevt/">Стоматолог-терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-hirurg/">Стоматолог-хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/surdolog/">Сурдолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/terapevt/">Терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/travmatolog/">Травматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/travmatolog-ortoped/">Травматолог-ортопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/transfuziolog/">Трансфузиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/trikholog/">Трихолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/urolog/">Уролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/urolog-androlog/">Уролог-андролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/fizioterapevt/">Физиотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/flebolog/">Флеболог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ftiziator/">Фтизиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg/">Хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg-proktolog/">Хирург проктолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg-flebolog/">Хирург флеболог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/endokrinolog/">Эндокринолог</a>
+							</li>
+						</ul>
+					</article>
+					<script>
+						$(document).ready(function () {
+						});
+					</script>
+				</div>
+				<article class="about">
+					<div class="about__wrap">
+						<!--<section class="about__SN">
+							<div class="about__title">ПРИСОЕДИНЯЙТЕСЬ К НАМ В СОЦСЕТЯХ:</div>
+							<ul>
+								<li class="about__SN--vk"><a href="#x">Вконтакте</a></li>
+								<li class="about__SN--f"><a href="#x">Facebook</a></li>
+								<li class="about__SN--tw"><a href="#x">Tweeter</a></li>
+								<li class="about__SN--ok"><a href="#x">Одноклассники</a></li>
+								<li class="about__SN--g"><a href="#x">GooglPlus</a> </li>
+							</ul>
+						</section>-->
+						<section class="about_contents">
+							<div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+							<ul>
+								<li class="about_contents--pills">
+									<!--noindex-->
+									<a href="/bolezni/"><span>Более 400 болезней</span>
+										Причины, проявления, лечение и профилактика
+									</a><!--/noindex--></li>
+								<li class="about_contents--clinic">
+									<!--noindex-->
+									<a href="/clinics/"><span>Рейтинг клиник</span>
+										Достоверная информация о качестве лечения на основе посещения клиник
+									</a><!--/noindex--></li>
+								<li class="about_contents--node">
+									<!--noindex-->
+									<a href="/vrach/"><span>Запись к врачу</span>
+										Очень легко к нужному врачу
+									</a><!--/noindex--></li>
+								<li class="about_contents--question">
+									<!--noindex-->
+									<a href="/qa/"><span>Задать вопрос</span>
+										Бесплатные консультации врачей
+									</a><!--/noindex--></li>
+							</ul>
+						</section>
+					</div>
+				</article>
+				<div id="right_socadd"></div>
+				<div style="width:240px;">
+				</div>
+				<div>
+
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</main>
+
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<div class="clearfix"></div>
+	<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<img src="img/logo.png" title="Zdorov.online">
+			</div>
+			<div class="footer-content__article hidden-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Лучшие врачи Москвы</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Вся диагностика Москвы</a>
+				<a href="/novosti/">Новости</a>
+				<div class="menu-footer__list hidden-xs">
+					<ul>
+						<!--noindex-->
+						<li>
+							<a href="/adv/">Реклама на портале</a>
+						</li>
+						<li>
+							<a href="/dlya-klinik/">Для клиник</a>
+						</li>
+						<li>
+							<a href="/about/">О проекте</a>
+						</li><!--/noindex-->
+						<li>
+							<a href="/contacts/">Контакты</a>
+						</li>
+						<!--noindex-->
+						<li>
+							<a href="/term/">Соглашение с порталом</a>
+						</li><!--/noindex-->
+						<!--noindex-->
+						<li>
+							<a target="_blank" href="http://partners.zdorov.online/">Партнерам</a>
+						</li><!--/noindex-->
+					</ul>
+				</div>
+			</div>
+			<div class="footer-content__article mobile visible-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Врачи</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Клиники</a>
+				<a href="/novosti/">Новости</a>
+			</div>
+
+			<div class="menu-footer-document hidden-xs">
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2017. Все права защищены.
+						<a href="/karta-saita/">Карта сайта</a>
+					</p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем. 16+</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left: 86px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+				</div>
+			</div>
+			<div class="footer-content__right-side mk visible-xs">
+				Информационный партнер портала
+				<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script src="js/app.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#nav-icon3').click(function () {
+				$(this).toggleClass('open');
+				$('.header-main_menu').toggleClass('open');
+			});
+		});
+	</script>
+</div>
+</body>
+</html>

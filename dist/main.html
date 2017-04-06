@@ -31,9 +31,12 @@
 					<img src="https://zdorov.online/img/logo.png" title="Zdorov.Online">
 					<span>Энциклопедия здоровой жизни</span>
 				</a>
-				<a class="header-top__item menu-search header-top__btn visible-xs">
-					<img src="mob/search.png" alt="">
-				</a>
+				<form class="headerSearch visible-xs">
+					<input type="search" class="headerSearch__input">
+				</form>
+				<!--<a class="header-top__item menu-search header-top__btn visible-xs">-->
+					<!--<img src="mob/search.png" alt="">-->
+				<!--</a>-->
 
 				<style>
 					.search_block {
@@ -94,8 +97,8 @@
 					<li class="main_menu-list">
 						<a href="/articles/">Статьи</a>
 					</li>
-					<li class="main_menu-list">
-						<a href="/clinics/">Клиники</a>
+					<li class="main_menu-list" id="sub">
+						<a>Клиники</a>
 						<ul class="main-submenu">
 							<li class="main-submenu__item">
 								<a href="https://zdorov.online/clinics/kliniki-po-lecheniyu/" class="main-submenu__link">
@@ -463,6 +466,7 @@
 						</select>
 					</div>
 				</div>
+				<div class="hr"></div>
 			</div>
 			<span class="hidden-xs">Для детей</span>
 			<ul class="hidden-xs">
@@ -684,6 +688,8 @@
 				</div>
 			</div>
 
+
+
 			<span class="hidden-xs">Для беременных</span>
 			<ul class="hidden-xs">
 				<li>
@@ -722,16 +728,37 @@
 			</ul>
 		</div>
 		<div class="visible-xs bg-pink">
-			Не смогли
-			определиться - позвоните
-			8(499)-110-63-39
+			<div class="title upper">
+				Не смогли
+				<br>
+				определиться - позвоните
+			</div>
+			<!--<br>-->
+			<a href="tel:84991106339" class="tel blue">8(499)-110-63-39</a>
+			<br>
 
-			Лечение и реабелитация
-
-			ЛФК
-			Мануальная терапия
-			Массаж
-			Остеопатия Иглорефлексотерапия Физиотерапия
+		</div>
+		<div class="bg-blue pad-all">
+			<div class="title blue tac">
+				Лечение и реабелитация
+			</div>
+			<ul class="mainlist tal">
+				<li class="mainlist__item">
+					<a class="mainlist__item-link" href="">ЛФК</a>
+				</li>
+				<li class="mainlist__item">
+					<a class="mainlist__item-link" href="">Мануальная терапия</a>
+				</li>
+				<li class="mainlist__item">
+					<a class="mainlist__item-link" href="">Массаж</a>
+				</li>
+				<li class="mainlist__item">
+					<a class="mainlist__item-link" href="">Остеопатия Иглорефлексотерапия</a>
+				</li>
+				<li class="mainlist__item">
+					<a class="mainlist__item-link" href="">Физиотерапия</a>
+				</li>
+			</ul>
 		</div>
 		<article class="about__us hidden-xs">
 			<section class="about__us-info">
@@ -1003,7 +1030,17 @@
 				$(this).toggleClass('open');
 				$('.header-main_menu').toggleClass('open');
 			});
+			$('#sub').click(function () {
+				$(this).toggleClass('open');
+				$('.main-submenu').toggleClass('open');
+				$(this).find('a')
+			});
+//			$('.menu-search').click(function () {
+//				$('.headerSearch').toggleClass('open');
+//			})
 		});
+
+
 	</script>
 </div>
 </body>

@@ -824,8 +824,16 @@
 				$(this).toggleClass('open');
 				$('.header-main_menu').toggleClass('open');
 			});
+			$('.alphabet__title-letter').click(function () {
+				if($(this).next().height() < 1){
+					$(this).next().css('max-height', '100%'); //set max height
+				}else{
+					$(this).next().css('max-height', '0'); //delete attribute
+				}
+			})
 		});
 	</script>
+
 </div>
 </body>
 </html>

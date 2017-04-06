@@ -16,7 +16,6 @@
     width: 100%
     max-width: 414px
 
-  //padding-bottom: 210px
   .wrapper
     padding-bottom: 220px
 
@@ -41,7 +40,6 @@
   .self-test
   .button-share__SN
   .forum
-
   .clinics__wrapper
   .doc-information-map__wrap
   .doc-information__review
@@ -56,7 +54,6 @@
     display: none
     &.open
       display: block
-      //position: relative;
       width: 100%;
       top: 51px;
       position: fixed;
@@ -83,8 +80,6 @@
     padding: 0
     z-index: 99;
 
-  //.main-submenu
-  //  display: none
   .main-submenu
     overflow-y: hidden;
     display: block
@@ -97,7 +92,6 @@
       position: initial
     &__item
       margin: 0
-    //border-top 1px solid #bcd6e5;
     &__link
       background: #fff !important;
       padding: 20px !important;
@@ -110,70 +104,39 @@
     &:after
       content: '+'
       display: inline-block;
-      //position: absolute;
-      //right: 20px;
-      //top: 15px;
       margin-left: 20px
       transition: .3s all
-      //font-size: 10px;
-      //vertical-align: middle;
+
 
   #sub.open > a:after
     transform: rotate(180deg);
-    //transition: all .5s;
     content: '−'
 
-
-  //mob/search.png
   .headerSearch
-    //display: none
-    //transition: all .5s;
-    //position: absolute
 
-    //&.open
-    //  display: block
-    //  position: absolute;
     background: #fff;
-    //width: calc(100% - 100px);
-    //height: 50px;
-    //box-sizing: border-box;
-    //top: 0;
-    //right: 0
 
     &__input
       box-sizing: border-box;
       &[type=search]
         position: absolute
-        //height: 50px;
         box-sizing: border-box;
         top: -2px;
         right: 0
-        //-webkit-appearance: textfield;
-        //-webkit-box-sizing: content-box;
         font-family: inherit;
         font-size: 100%;
-        //box-sizing: border-box;
         background: #fff url(../mob/search.png) no-repeat 14px center;
         border-left: solid 1px #115c89;
-        //border-bottom: solid 1px #115c89;
-        //-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-        //-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-        //box-shadow: 0 0 5px rgba(109,207,246,.5); /* Эффект свечения */
-        //box-shadow: 0px 1px 0px 0px rgba(17,92,137,1);
         padding: 15px
         height: 52px
         width: 55px; /* Ширина по умолчанию */
         color: transparent
-        //-webkit-transition: all .5s;
-        //-moz-transition: all .5s;
         transition: all .5s;
         &:focus
           color: black
           width: calc(100% - 50px); /* Ширина при наличии фокуса ввода */
           background-color: #fff;
           border-color: #6dcff6;
-          //-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-          //-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
           box-shadow: 0 0 5px rgba(109, 207, 246, .5); /* Эффект свечения */
           padding-left: 50px
 
@@ -181,16 +144,8 @@
       &::-webkit-search-cancel-button
         display: none;
 
-  //border:2px solid lightgray
-  //width: 100%
-  //height: 50px
-  //box-sizing: border-box
-  //font-size: 20px
-  //padding: 10px
-
   .main_menu-item
     position: absolute;
-    //top: -50px;
     white-space normal
     width: 100%
     border-bottom 1px solid #115c89
@@ -207,9 +162,6 @@
         background-color: #fff;
       &:nth-child(2)
         background-color: #fff;
-        //-moz-box-sizing: border-box;
-        //-o-box-sizing: border-box;
-        //box-sizing: border-box;
         height: auto
       &:nth-child(3) > a
         background-color: #fff;
@@ -273,11 +225,9 @@
 
   .header-top
     border-bottom: 1px solid #115c89
-    //display: flex;
     text-align: center;
-    //justify-content: space-between;
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100%;
     background: white;
     z-index: 999999;
@@ -297,12 +247,7 @@
     background-color: #115c89
     float: left
 
-  //margin-left: 15px;
-  //.menu-search
-  //  float: right
-  //  border-left: 1px solid #115c89
   .footer-content__article.mobile
-    //margin-left: 0
     margin 30px 0
     a
       padding-right: 0
@@ -314,18 +259,10 @@
     width: 30px;
     height: 25px;
     position: relative;
-    //margin: 50px auto;
-    //-webkit-transform: rotate(0deg);
-    //-moz-transform: rotate(0deg);
-    //-o-transform: rotate(0deg);
     transform: rotate(0deg);
-    //-webkit-transition: .5s ease-in-out;
-    //-moz-transition: .5s ease-in-out;
-    //-o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
     margin: auto;
-
 
   #nav-icon3 span
     display: block;
@@ -336,55 +273,35 @@
     border-radius: 9px;
     opacity: 1;
     left: 0;
-    //-webkit-transform: rotate(0deg);
-    //-moz-transform: rotate(0deg);
-    //-o-transform: rotate(0deg);
     transform: rotate(0deg);
-    //-webkit-transition: .25s ease-in-out;
-    //-moz-transition: .25s ease-in-out;
-    //-o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
-
 
   /* Icon 3 */
 
   #nav-icon3 span:nth-child(1)
-    top: 0px;
-
+    top: 0;
 
   #nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3)
     top: 10px;
 
-
   #nav-icon3 span:nth-child(4)
     top: 20px;
 
-
   #nav-icon3.open span:nth-child(1)
     top: 18px;
-    width: 0%;
+    width: 0;
     left: 50%;
 
-
   #nav-icon3.open span:nth-child(2)
-    //-webkit-transform: rotate(45deg);
-    //-moz-transform: rotate(45deg);
-    //-o-transform: rotate(45deg);
     transform: rotate(45deg);
 
-
   #nav-icon3.open span:nth-child(3)
-    //-webkit-transform: rotate(-45deg);
-    //-moz-transform: rotate(-45deg);
-    //-o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-
 
   #nav-icon3.open span:nth-child(4)
     top: 18px;
-    width: 0%;
+    width: 0;
     left: 50%;
-
 
   .main-select
     width: 100%
@@ -393,7 +310,6 @@
     &__holder
       width: 100%
       border: 1px solid #cad6de;
-      //background-color: white;
       background: #fff url(../mob/select.png) 96% center no-repeat
     &__item
       background: transparent
@@ -469,7 +385,6 @@
     margin-top: 20px
     width: 150px;
 
-
   .left-side
     float: none
     width: 100%
@@ -500,7 +415,7 @@
     background-color: transparent
 
   .reason__img-left
-    height: auto!important
+    height: auto !important
     position: initial;
     float: none;
     width: 100%;
@@ -512,7 +427,7 @@
   .reason__list--left
     position: relative;
     box-sizing: border-box;
-    padding: 0px 40px;
+    padding: 0 40px;
     padding-right: 0;
     max-width: 100%;
 
@@ -548,7 +463,6 @@
 
   .advice-item > li
     white-space normal
-    //text-align: center;
     height: auto
     padding: 20px 0;
     &:hover
@@ -571,7 +485,6 @@
       & > p
         padding: 0
     .item__text-tit
-      //margin-bottom: 20px
       display: inline-block;
     .item__img
       width: 30%;
@@ -587,9 +500,9 @@
     img
       margin-top: -20%;
       width: 100%
+
   .article-item-inner a
     padding: 0
-
 
   .text-article > p
   .text-article > h4
@@ -625,7 +538,6 @@
   .clinic-time
     float: none
 
-  //.listDoc__clinic-item
   .listDoc__clinic-item ul li span.bg-grey
   p.listDoc__note
   .clinic-info--listDoc .clinic-time .clinic-time-btn
@@ -636,7 +548,6 @@
   .review-doc-page
     display: none
 
-  //.clinic-time
   .clinic-info--listDoc .clinic-time
     padding-top: 0
     width: auto
@@ -688,6 +599,7 @@
 
   .clinic-about p
     padding-bottom: 0
+
   .clinics__wrapper-xs
     font-size: 0
     border-bottom: 1px solid #d6d6d6;
@@ -711,7 +623,7 @@
       .clinic__logo img
         padding: 0
       .clinic-about__content-caption
-        font-family: 'OpenSans',sans-serif;
+        font-family: 'OpenSans', sans-serif;
         padding: 0
       .clinics-bottom-xs
         position: relative
@@ -726,9 +638,6 @@
       .click_phone_number
         padding-bottom: 10px
 
-
-
-
   .clinic-about
     vertical-align: top;
     border: none
@@ -739,8 +648,7 @@
       display: inline-block;
       width: auto;
       vertical-align: middle;
-      padding: 0px 15px;
-
+      padding: 0 15px;
 
   .clinic__logo
     width: 30%
@@ -755,11 +663,7 @@
     max-width: 100%;
     padding: 20px 0;
 
-  //position: absolute;
-  //top: 20%;
   .rate-xs
-    //position: absolute
-    //bottom: -20px
     background-color: #f2f2f2;
     text-align: center
     width: 100%
@@ -775,8 +679,6 @@
       text-transform: uppercase;
       color: #353535;
       box-sizing border-box
-      //height: 30px
-      //padding-right: 5px
       padding: 3px
     &__num
       display: inline-block
@@ -797,6 +699,7 @@
 
   .library-article
     width: 100%
+
   .back-article
     display: none
 
@@ -809,7 +712,6 @@
     padding-top: 20px
 
   .fixed-bottom-xs
-    //height: 50px
     background: #fff
     position fixed
     bottom: 0
@@ -819,9 +721,6 @@
     font-size: 0
     padding: 5px 0
     box-sizing: border-box;
-    //&__item
-    //  display: inline-block
-    //  width: 50%
     .clinic-time-btn
       width: 49%;
       text-align: center;
@@ -845,6 +744,7 @@
   .clinic-info.spec
     padding-bottom: 10px
     margin-bottom: 10px
+
   /*doc inside*/
   .doc-information
     padding: 20px
@@ -871,15 +771,15 @@
 
   .doc-information .clinic-about li
     margin-top: 10px
+
   .doc-information .clinic-about li > .bg-grey > a > span
-    max-width:100%
+    max-width: 100%
     font-size: 14px
 
   .info-content__title
     padding: 0 20px
-    //& > span
-    //  color: #115c89;
-    
+
+
   .table-info-doc-xs
     .row
       display: block
@@ -889,7 +789,7 @@
       font-size: 14px
     .cell-title
       font-size: 14px
-      font-family: 'OpenSansBold',sans-serif;
+      font-family: 'OpenSansBold', sans-serif;
     .js-regaliya-heght-xs
       overflow: hidden;
       display: block
@@ -901,6 +801,7 @@
     .more-text
       text-align: center;
       padding-bottom: 0
+
   .js-regaliya-xs.js-regaliya-heght-xs
     transition: max-height 0.25s ease-in;
 
@@ -909,8 +810,10 @@
 
   .main_diagnostics_list span
     padding-bottom: 0
+
   .pad-all
     padding: 20px
+
   .doctor-title-pink
     margin-left: 20px;
 
@@ -935,38 +838,31 @@
     visibility: visible
     padding: 0
     float none
-    //margin-bottom: 80px;
     .bx-wrapper .bx-controls-direction a
       width: 50px;
       height: 50px;
       background-color: white;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.28);
-      //top: 110%
       border-radius 50%
       &.bx-prev
-        //left: 20%
-        background: rgba(255,255,255,0.4) url(../mob/doc-prev.png) center no-repeat
+        background: rgba(255, 255, 255, 0.4) url(../mob/doc-prev.png) center no-repeat
       &.bx-next
-        //right: 20%
-        background: rgba(255,255,255,0.4) url(../mob/doc-next.png) center no-repeat
+        background: rgba(255, 255, 255, 0.4) url(../mob/doc-next.png) center no-repeat
 
   .bx-wrapper
     margin: auto
 
   .legend-down
-    display: none!important
+    display: none !important
 
   .clinic-main-about
     .clinics__wrapper-xs
       border-top: 1px solid #d6d6d6
-    .clinics-bottom-xs
-      //margin-top: 10px
+
 
   .clinic-services__inner
     width: 100%
     float: none;
-    //.clinics__wrapper-xs
-    //  margin-bottom: 20px
     .clinic-about__content-caption
       padding-top: 20px
 
@@ -975,33 +871,18 @@
     text-align: center
     padding: 10px 0;
     border-top: 1px solid #d6d6d6;
-    //margin-top: 10px
     span
       display: inline-block
       font-size: 18px;
-      //color: #115c89;
       padding: 0 10px;
     img
       display: inline-block
       width: 10px
+
   .main-clinic-list
     position: initial
     width: 100%
     display: none
-
-  //.main-clinic-list > ul
-  //  white-space: normal;
-  //  box-sizing border-box
-  //  border-left: 2px solid #62acd9;
-  //  li
-  //    border-bottom: 2px solid #62acd9;
-  //    border-right: none
-  //    margin: 0
-  //    //display: block
-  //    width: 100%
-  //
-  //.main-clinic-list > ul li:last-child
-  //  width: 100%
 
   .clinic-main-about__text
     padding: 10px
@@ -1027,8 +908,6 @@
     box-sizing: border-box;
     overflow: hidden;
 
-  //height: 200vh;
-
   .st-pic
     width: 100%;
     box-sizing: border-box;
@@ -1045,9 +924,6 @@
   .move .st-pic__wrap .st-pic .st-pic__item-wrap .st-list
     margin-left: 85px;
 
-  //  top: 100%;
-  //  left: 0;
-  //
   .st-list
     width: 100%
     position: initial
@@ -1069,13 +945,7 @@
   .well-doc__item-name
     padding-top: 15px
 
-  //.well-doc__item-name-wrap
-  //  width: 70%
-  //  margin: auto
-
-  //.well-doc__list
   .bx-wrapper
-    //margin: 0 auto 80px;
     .bx-controls-direction a
       width: 50px;
       height: 50px;
@@ -1084,40 +954,19 @@
       top: 30%
       border-radius 50%
       &.bx-prev
-        //left: 30%
-        background: rgba(255,255,255,0.4) url(../mob/doc-prev.png) center no-repeat
+        background: rgba(255, 255, 255, 0.4) url(../mob/doc-prev.png) center no-repeat
       &.bx-next
-        //right: 30%
-        background: rgba(255,255,255,0.4) url(../mob/doc-next.png) center no-repeat
+        background: rgba(255, 255, 255, 0.4) url(../mob/doc-next.png) center no-repeat
 
   .head4
     display: block
     text-align: center;
     margin: auto
 
-  //.move .st-pic__wrap
-  //  margin-bottom: 50px
-  //  position: initial;
-  //  left: 0;
-
-  //.move
-  //  margin: 0;
-  //  -moz-transition: all 0.5s ease;
-  //  -webkit-transition: all 0.5s ease;
-  //  -o-transition: all 0.5s ease;
-  //  transition: all 0.5s ease;
-  //
-
   .move .st-pic__wrap
     position: relative;
     left: -85px;
     margin-bottom: 50px
-
-
-  //.move .st-pic__wrap .st-pic .st-pic__item-wrap .st-list
-  //  top: -60px;
-  //  right: 0;
-  //
 
   .article-inside .swiper-slide
   .article
@@ -1125,3 +974,118 @@
 
   .bx-wrapper img
     margin: auto
+
+  .alphabet-letter--wrap
+    max-height 0
+    overflow hidden
+
+  .alphabet-letter
+    padding: 0 10px
+
+  .alphabet__title-letter
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+  .order-xs
+    width: 100%
+    position: fixed
+    top: 0
+    height: 100vh
+    background: white
+    z-index: 999999;
+    &__top
+      box-sizing: border-box;
+      padding: 15px
+      background-color: #f6f6f6;
+      position: relative
+    &__title
+      color: #333;
+      font-size: 24px;
+    &__close
+      position: absolute
+      top: 15px
+      right: 15px
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(68, 68, 68, 0.8);
+      background: rgba(255,255,255,0.8) url("../mob/xs-close.png") center no-repeat
+      border-radius 50%
+    &__bottom
+      padding: 15px
+    &__input
+      display: block
+      box-sizing: border-box;
+      width: 100%
+      padding: 15px
+      border: 1px solid #d6d6d6;
+      margin: 20px 0
+      font-size: 16px
+      &:focus
+        border: 1px solid #d6d6d6;
+    &__submit
+      border:none
+      color: white
+      font-size: 18px;
+      background-color: #4fa044;
+      padding: 10px 30px
+      margin: auto
+      display: block;
+      margin-top: 30px
+    &__hr
+      border-top 1px solid #dbdbdb
+      border-bottom 1px solid #dbdbdb
+      margin: 20px 0
+      padding: 1px 0
+    &__doc
+      font-size: 0
+      &-img
+        vertical-align: middle;
+        display: inline-block
+        width: 28%
+        box-shadow: 0 8px 20px rgba(122, 120, 119, 0.3);
+        overflow hidden
+        height: 105px
+        img
+          max-width: 100%
+      &-info
+        display: inline-block
+        width: 65%
+        margin-left: 7%
+        vertical-align: middle;
+      &-name
+        font-size: 18px;
+        color: #333;
+        font-family: 'OpenSansBold',sans-serif;
+      &-prof
+        font-size: 16px;
+        color: #115c89;
+        margin-top: 5px
+        margin-bottom: 10px
+      &-price
+        display: inline-block
+        font-family: 'OpenSansBold',sans-serif;
+        font-size: 18px;
+        color: green
+        background: white
+        padding: 5px 10px
+        border: 1px solid #d6d6d6;
+        border-radius: 3px;
+
+  .analis-klinik
+    margin-bottom: 10px
+  .metod__klinik
+    width: 100%
+  .metod__klinik_list
+    text-align: center;
+    white-space normal
+    li:last-child
+      display: block
+  .metod__klinik_more
+    width: auto
+    padding-top: 20px
+
+  .bx-controls-direction
+    .disabled
+      display: none

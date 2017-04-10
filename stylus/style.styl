@@ -3413,12 +3413,13 @@ li a {
 
 .list-right-sb-search li {
   display: block;
+
 }
 
 .list-right-sb-search li a {
   font-family: 'PTSansItalic', sans-serif;
   font-size: 14px;
-  color: #00be3e;
+  color: #115c89;
   display: block;
   line-height: 1.4em;
   position: relative;
@@ -3433,7 +3434,7 @@ li a {
   height: 8px;
   top: 17px;
   left: 0;
-  background-color: #d64882;
+  background-color: #00be3e;
   margin-right: 10px;
 }
 
@@ -16365,6 +16366,7 @@ span.forum-page-current {
   display: inline-block;
   width: auto;
   border: none;
+  font-size: 14px
 }
 
 .result-clinic.listClinic .clinic-time-btn:hover {
@@ -16378,7 +16380,7 @@ span.forum-page-current {
 .result-clinic.listClinic .bg-grey {
   display: inline-block;
   background-color: #f8f8f8;
-  padding: 10px 15px;
+  padding: 2px 8px;
   bottom: 0;
 }
 
@@ -16408,7 +16410,7 @@ span.forum-page-current {
 .result-clinic.listClinic .row .cell span {
   font-family: OpenSansBold, sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 13px;
   background-color: #f8f8f8;
   vertical-align: top;
   white-space: normal;
@@ -16416,10 +16418,16 @@ span.forum-page-current {
 
 .result-clinic.listClinic .clinic-avatar {
   width: 205px;
+  border-right: 2px dashed lightgray;
+}
+.result-clinic.listClinic .clinic-info {
+  border: 2px dashed lightgray;
+  margin-bottom: 5px
 }
 
 .result-clinic.listClinic .clinic-info:after {
-  margin-top: 15px;
+  display: none;
+  //margin-top: 15px;
 }
 
 .result-clinic.listClinic .clinic-price__sum.cell > span {
@@ -16434,10 +16442,15 @@ span.forum-page-current {
 .result-clinic.listClinic .clinic-time .timetable {
   display: none;
 }
+.result-clinic.listClinic .clinic-avatar__img a {
 
+}
 .result-clinic.listClinic .clinic-avatar__img img {
-  width: 190px;
-  height: auto;
+  //width: 190px;
+  width: auto
+  height: 160px;
+  display: block;
+  margin: auto;
 }
 
 /*STYLE-CLINIC_LIST end*/

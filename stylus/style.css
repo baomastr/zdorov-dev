@@ -14323,6 +14323,11 @@ span.forum-page-current {
 /*STYLE-CLINIC_LIST*/
 .result-clinic.listClinic .clinic-about__wrap {
   position: relative;
+  border-left: 2px dashed #d3d3d3;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .result-clinic.listClinic .clinic-about {
   border: none;
@@ -14365,13 +14370,16 @@ span.forum-page-current {
   bottom: 0;
 }
 .result-clinic.listClinic .clinic-price {
-  width: 620px;
+  width: 610px;
   display: block;
 }
 .result-clinic.listClinic .clinic-price__btn {
   display: inline-block;
   width: auto;
   float: right;
+}
+.result-clinic.listClinic .clinic-avatar__rating {
+  margin-bottom: 10px;
 }
 .result-clinic.listClinic .row {
   border: none;
@@ -14386,14 +14394,14 @@ span.forum-page-current {
 .result-clinic.listClinic .row .cell span {
   font-family: OpenSansBold, sans-serif;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 14px;
   background-color: #f8f8f8;
   vertical-align: top;
   white-space: normal;
+  line-height: 16px;
 }
 .result-clinic.listClinic .clinic-avatar {
   width: 205px;
-  border-right: 2px dashed #d3d3d3;
 }
 .result-clinic.listClinic .clinic-info {
   border: 2px dashed #d3d3d3;

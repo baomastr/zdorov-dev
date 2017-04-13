@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Болезни и их лечение</title>
+	<script type="text/javascript" src="https://zdorov.online/js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://zdorov.online/css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="https://zdorov.online/css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://zdorov.online/js/jquery.fancybox.pack.js"></script>
+	<meta name="viewport" content="width=1250">
+	<meta name="MobileOptimized" content="1250">
+</head>
+<body>
+<style>
+	.right-sidebar {
+		display: none;
+	}
+	.left-side {
+		width: 100%;
+	}
+</style>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body clearfix">
+		<header>
+			<div class="clearfix">
+				<a href="https://zdorov.online/" class="header-logo">
+					<img src="img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<div class="header-search">
+					<form action="https://zdorov.online/search/">
+						<input type="search" name="q" placeholder="Например: Хронический геморрой" value="">
+						<input type="submit" value="">
+					</form>
+				</div>
+				<!--noindex-->
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="https://zdorov.online/auth/">Вход</a> / <a href="https://zdorov.online/reg/">Регистрация</a>
+					</div>
+				</div>
+				<!--/noindex-->
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list"><a href="https://zdorov.online/selftest/j/">Самодиагностика</a></li>
+					<li class="main_menu-list"><a href="https://zdorov.online/articles/">Статьи</a>
+					</li><li class="main_menu-list"><a href="https://zdorov.online/clinics/">Клиники</a></li>
+					<li class="main_menu-list"><a href="https://zdorov.online/vrach/">Врачи</a></li>
+					<li class="main_menu-list"><a href="https://zdorov.online/bolezni/">Болезни</a></li>
+					<li class="main_menu-list"><a href="https://zdorov.online/forum/">Форум</a></li>
+					<li class="main_menu-list"><a href="https://zdorov.online/qa/">Вопросы врачу</a></li>
+
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>
+		<!-- end header-->
+		<main>
+			<div class="crumbs">
+				<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="https://zdorov.online/">
+							<span itemprop="name">Главная</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<span itemprop="name">Болезни и их лечение</span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+			<div class=" left-side-library left-side">
+				<div class="c-st-last">
+					<div class="c-step1 rel">
+						<div class="c-st-last__step-title">
+							Шаг 1. Определили синдром
+						</div>
+						<div class="l-greybox">
+							<div class="c-step1__img-container">
+								<img src="" alt="">
+							</div>
+							<div class="c-step1__text">
+								«Нарушение ясности сознания, ориентировки в месте»
+							</div>
+						</div>
+						<div class="c-step1__line"></div>
+					</div>
+
+					<!--<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="110" height="240" onload="init(evt)" onmousemove="drag(evt)" onmouseup="deselect()">-->
+
+						<!--<style>-->
+							<!--text{-->
+								<!--font-size: 12px;-->
+								<!--font-family: monospace;-->
+							<!--}-->
+							<!--.variable{-->
+								<!--font-weight: bold;-->
+							<!--}-->
+							<!--.background{-->
+								<!--fill: none;-->
+								<!--/*stroke: #444;*/-->
+								<!--/*stroke-width: 1;*/-->
+								<!--/*stroke-dasharray: 5, 5;*/-->
+							<!--}-->
+							<!--.control_line{-->
+								<!--stroke: #28f;-->
+								<!--stroke-width: 0.5;-->
+							<!--}-->
+							<!--/*.point1{-->
+								<!--fill: #28A86B;-->
+							<!--}*/-->
+							<!--/*.point2{-->
+								<!--fill: #6495ED;-->
+							<!--}-->
+							<!--.point3{-->
+								<!--fill: #FF7878;-->
+							<!--}*/-->
+							<!--/*.point4{-->
+								<!--fill: #8D5FD3;-->
+							<!--}*/-->
+							<!--#example_shape{-->
+								<!--fill: none;-->
+								<!--stroke: #111;-->
+								<!--stroke-width: 0.8;-->
+							<!--}-->
+							<!--.control_point{-->
+								<!--fill: #FFF;-->
+								<!--opacity: 0;-->
+								<!--stroke: #888;-->
+								<!--stroke-width: 2;-->
+								<!--cursor: pointer;-->
+							<!--}-->
+							<!--.control_point:hover{-->
+								<!--opacity: 0.5;-->
+							<!--}-->
+							<!--.invisible{-->
+								<!--pointer-events: none;-->
+							<!--}-->
+						<!--</style>-->
+
+						<!--<script type="text/ecmascript">-->
+							<!--var svgDoc;-->
+							<!--var selectedPoint = 0;-->
+							<!--var dx = 0;-->
+							<!--var dy = 0;-->
+
+							<!--var example_shape;-->
+							<!--var text_variables;-->
+							<!--var control_lines;-->
+							<!--var coords = [0, 0, 100, 100, 150, 20, 180, 150, 280, 100];-->
+
+							<!--function init(evt) {-->
+								<!--if ( window.svgDocument == null ) {-->
+									<!--svgDoc = evt.target.ownerDocument;-->
+								<!--}-->
+								<!--example_shape = svgDoc.getElementById('example_shape');-->
+								<!--controls_lines = [svgDoc.getElementById('control_line1'),-->
+									<!--svgDoc.getElementById('control_line2')] ;-->
+								<!--text_variables = [];-->
+								<!--for (var i=1; i&lt;=4; i++){-->
+									<!--text_variables.push(svgDoc.getElementById('variable'+i));-->
+								<!--}-->
+							<!--};-->
+
+							<!--function selectElement(evt, point){-->
+								<!--selectedPoint = point;-->
+								<!--control_point = evt.target.parentNode;-->
+								<!--dx = coords[selectedPoint*2] - evt.clientX;-->
+								<!--dy = coords[selectedPoint*2 + 1] - evt.clientY;-->
+							<!--};-->
+
+							<!--function drag(evt){-->
+								<!--if (selectedPoint === 0) { return; }-->
+
+								<!--var x = evt.clientX + dx;-->
+								<!--var y = evt.clientY + dy;-->
+								<!--coords[selectedPoint*2] = x;-->
+								<!--coords[selectedPoint*2 + 1] = y;-->
+
+								<!--var d = "M";-->
+								<!--for (var i=2; i&lt;coords.length; i+=2){-->
+									<!--if (i === 4) { d += "C"; }-->
+									<!--d += " " + coords[i] + " " + coords[i+1];-->
+								<!--}-->
+								<!--example_shape.setAttributeNS(null, "d", d);-->
+								<!--control_point.setAttributeNS(null, "transform", "translate(" + x + "," + y + ")");-->
+								<!--text_variables[selectedPoint-1].firstChild.data = x + "," + y;-->
+
+								<!--// Control lines-->
+								<!--var n = Math.floor(selectedPoint/3);-->
+								<!--var i = (selectedPoint % 2) + 1;-->
+								<!--controls_lines[n].setAttributeNS(null, "x"+i, x);-->
+								<!--controls_lines[n].setAttributeNS(null, "y"+i, y);-->
+
+							<!--};-->
+
+							<!--function deselect(){-->
+								<!--selectedPoint = 0;-->
+							<!--}-->
+
+						<!--</script>-->
+
+						<!--<g class="invisible">-->
+							<!--<rect class="background" x="0.5" y="0.5" width="499" height="239"></rect>-->
+							<!--<path id="example_shape" d="M 6 171C 56 125 58 159 99 107"></path>-->
+
+
+						<!--</g>-->
+
+						<!--<g transform="translate(6,171)">-->
+							<!--<circle class="control_point" cx="0" cy="0" r="10" onmousedown="selectElement(evt, 1)"></circle>-->
+							<!--<circle class="point1 invisible" cx="0" cy="0" r="3"></circle>-->
+						<!--</g>-->
+
+						<!--<g transform="translate(56,125)">-->
+							<!--<circle class="control_point" cx="0" cy="0" r="10" onmousedown="selectElement(evt, 2)"></circle>-->
+							<!--<circle class="point2 invisible" cx="0" cy="0" r="3"></circle>-->
+						<!--</g>-->
+
+						<!--<g transform="translate(58,159)">-->
+							<!--<circle class="control_point" cx="0" cy="0" r="10" onmousedown="selectElement(evt, 3)"></circle>-->
+							<!--<circle class="point3 invisible" cx="0" cy="0" r="3"></circle>-->
+						<!--</g>-->
+
+						<!--<g transform="translate(99,107)">-->
+							<!--<circle class="control_point" cx="0" cy="0" r="10" onmousedown="selectElement(evt, 4)"></circle>-->
+							<!--<circle class="point4 invisible" cx="0" cy="0" r="3"></circle>-->
+						<!--</g>-->
+
+						<!--&lt;!&ndash;<text x="40" y="230">-->
+							<!--<tspan>&lt;path</tspan>-->
+							<!--<tspan>d="</tspan><tspan class="point1 variable">M<tspan id="variable1">106,122</tspan></tspan>-->
+							<!--C<tspan class="point2 variable" id="variable2">159,87</tspan>-->
+							<!--<tspan class="point3 variable" id="variable3">163,175</tspan>-->
+							<!--<tspan class="point4 variable" id="variable4">205,150</tspan>-->
+							<!--<tspan>" /&gt;</tspan>-->
+						<!--</text>&ndash;&gt;-->
+
+					<!--</svg>-->
+
+					<!--<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="500" height="240" onload="init(evt)" onmousemove="drag(evt)" onmouseup="deselect()">
+
+						<style>
+							text{
+								font-size: 12px;
+								font-family: monospace;
+							}
+							.variable{
+								font-weight: bold;
+							}
+							.background{
+								fill: none;
+								/*stroke: #444;*/
+								/*stroke-width: 1;*/
+								/*stroke-dasharray: 5, 5;*/
+							}
+							.control_line{
+								stroke: #28f;
+								stroke-width: 0.5;
+							}
+							/*.point1{
+								fill: #28A86B;
+							}*/
+							/*.point2{
+								fill: #6495ED;
+							}
+							.point3{
+								fill: #FF7878;
+							}*/
+							/*.point4{
+								fill: #8D5FD3;
+							}*/
+							#example_shape{
+								fill: none;
+								stroke: #111;
+								stroke-width: 0.8;
+							}
+							.control_point{
+								fill: #FFF;
+								opacity: 0;
+								stroke: #888;
+								stroke-width: 2;
+								cursor: pointer;
+							}
+							.control_point:hover{
+								opacity: 0.5;
+							}
+							.invisible{
+								pointer-events: none;
+							}
+						</style>
+
+						<script type="text/ecmascript"><![CDATA[
+						var svgDoc;
+						var selectedPoint = 0;
+						var dx = 0;
+						var dy = 0;
+
+						var example_shape;
+						var text_variables;
+						var control_lines;
+						var coords = [0, 0, 100, 100, 150, 20, 180, 150, 280, 100];
+
+						function init(evt) {
+							if ( window.svgDocument == null ) {
+								svgDoc = evt.target.ownerDocument;
+							}
+							example_shape = svgDoc.getElementById('example_shape');
+							controls_lines = [svgDoc.getElementById('control_line1'),
+								svgDoc.getElementById('control_line2')] ;
+							text_variables = [];
+							for (var i=1; i<=4; i++){
+								text_variables.push(svgDoc.getElementById('variable'+i));
+							}
+						};
+
+						function selectElement(evt, point){
+							selectedPoint = point;
+							control_point = evt.target.parentNode;
+							dx = coords[selectedPoint*2] - evt.clientX;
+							dy = coords[selectedPoint*2 + 1] - evt.clientY;
+						};
+
+						function drag(evt){
+							if (selectedPoint === 0) { return; }
+
+							var x = evt.clientX + dx;
+							var y = evt.clientY + dy;
+							coords[selectedPoint*2] = x;
+							coords[selectedPoint*2 + 1] = y;
+
+							var d = "M";
+							for (var i=2; i<coords.length; i+=2){
+								if (i === 4) { d += "C"; }
+								d += " " + coords[i] + " " + coords[i+1];
+							}
+							example_shape.setAttributeNS(null, "d", d);
+							control_point.setAttributeNS(null, "transform", "translate(" + x + "," + y + ")");
+							text_variables[selectedPoint-1].firstChild.data = x + "," + y;
+
+							// Control lines
+							var n = Math.floor(selectedPoint/3);
+							var i = (selectedPoint % 2) + 1;
+							controls_lines[n].setAttributeNS(null, "x"+i, x);
+							controls_lines[n].setAttributeNS(null, "y"+i, y);
+
+						};
+
+						function deselect(){
+							selectedPoint = 0;
+						}
+
+						]]> </script>
+
+						<g class="invisible">
+							<rect class="background" x="0.5" y="0.5" width="499" height="239"/>
+							<path id="example_shape" d="M 106 122C 159 87 163 175 205 150"/>
+							&lt;!&ndash;<line class="control_line" id="control_line1" x1="159" y1="87" x2="106" y2="122"/>
+							<line class="control_line" id="control_line2" x1="205" y1="150" x2="163" y2="175"/>&ndash;&gt;
+						</g>
+
+						<g transform="translate(106,122)">
+							<circle class="control_point" cx="0" cy="0" r="10" onmousedown="selectElement(evt, 1)"/>
+							<circle class="point1 invisible" cx="0" cy="0" r="3"/>
+						</g>
+
+						<g transform="translate(159,87)">
+							<circle class="control_point" cx="0" cy="0" r="10" onmousedown="selectElement(evt, 2)"/>
+							<circle class="point2 invisible" cx="0" cy="0" r="3"/>
+						</g>
+
+						<g transform="translate(163,175)">
+							<circle class="control_point" cx="0" cy="0" r="10" onmousedown="selectElement(evt, 3)"/>
+							<circle class="point3 invisible" cx="0" cy="0" r="3"/>
+						</g>
+
+						<g transform="translate(205,150)">
+							<circle class="control_point" cx="0" cy="0" r="10" onmousedown="selectElement(evt, 4)"/>
+							<circle class="point4 invisible" cx="0" cy="0" r="3"/>
+						</g>
+
+						&lt;!&ndash;<text x="40" y="230">
+							<tspan>&lt;path</tspan>
+							<tspan>d="</tspan><tspan class="point1 variable">M<tspan id="variable1">106,122</tspan></tspan>
+							C<tspan class="point2 variable" id="variable2">159,87</tspan>
+							<tspan class="point3 variable" id="variable3">163,175</tspan>
+							<tspan class="point4 variable" id="variable4">205,150</tspan>
+							<tspan>" /&gt;</tspan>
+						</text>&ndash;&gt;
+
+					</svg>-->
+
+					<div class="c-step2 rel">
+						<div class="c-st-last__step-title">
+							Шаг 2. Определили синдром
+						</div>
+						<div class="l-greybox">
+							<div class="c-step2-list">
+								<div class="c-step2-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur at consequatur culpa cum dicta, doloremque est ex illum libero nam nemo numquam omnis quisquam sed sunt velit veritatis voluptatibus.
+								</div>
+								<div class="c-step2-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</div>
+								<div class="c-step2-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</div>
+								<div class="c-step2-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</div>
+								<div class="c-step2-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</div>
+							</div>
+						</div>
+						<div class="c-step2__line"></div>
+					</div>
+					<div class="c-step3 rel">
+						<div class="c-st-last__step-title">
+							Шаг 3. Определили синдром
+						</div>
+						<div class="l-bordered">
+							<div class="c-step3-list">
+								<div class="c-step3-list__item is-disable c-step3-list__item--green">Срочное обследование</div>
+								<div class="c-step3-list__item is-disable c-step3-list__item--yellow">Срочное обследование</div>
+								<div class="c-step3-list__item c-step3-list__item--red">Срочное обследование</div>
+							</div>
+						</div>
+						<div class="c-step3__line"></div>
+					</div>
+					<div class="c-step4 rel">
+						<div class="c-st-last__step-title">
+							Шаг 4. Определили синдром
+						</div>
+						<div class="l-bordered">
+							<div class="c-tabs-doc">
+								<div class="c-tabs-doc__item is-active">Специальность</div>
+								<div class="c-tabs-doc__item">Специальность</div>
+								<div class="c-tabs-doc__item">Специальность</div>
+							</div>
+							<div class="outside">
+								<div id="slider-prev"></div>  <div id="slider-next"></div>
+							</div>
+							<div class="well-doc__list swiperDoc">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<div class="well-doc__item art">
+											<div class="well-doc__item-price">
+												<div class="well-doc__item-name-wrap clearfix">
+													<div class="well-doc__item-img">
+														<img src="https://zdorov.online/upload/iblock/c72/c720067bb507b7e8955aaf2048f307d1.jpg">
+														<div class="well-doc__item-rating clearfix">
+															<p class="well-doc__item-rating--pink"><span>36</span>отзывов</p>
+															<p class="well-doc__item-rating--blue"><span>9<span>.50</span></span>рейтинг</p>
+														</div>
+													</div>
+													<div class="well-doc__item-name">
+														<p class="well-doc__item-name-blue">													<a style="color:#115c89;padding:0;" href="/vrach/kheyrbeyk-aksam-alievich/">Хейрбейк Аксам</a>
+														</p>
+														<p>Хирург</p>
+														<p>Стаж: 31 год</p>
+														<p style="font-family:sans-serif;color: green; margin-top: 10px;">Цена приема: <br> <span>1000 руб.</span></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="well-doc__item-address clinic-about">
+												<div class="well-doc__item-price-btn" style="cursor:pointer;">
+													<a onclick="bookFormTimeShow('153327');" docid="153327" class="well-doc__item-price-btn-link statya-item__btn-more doc1 bookFormTime">Записаться онлайн</a>
+												</div>
+												<span class="clinic-about__metro metro_line_lyublinsko-dmitrovskaya">Чкаловская</span>
+												<div class="clinic-about__address"><a href="/vrach/kheyrbeyk-aksam-alievich/">г. Москва, Наставнический переулок, д.6</a></div>
+											</div>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="well-doc__item art">
+											<div class="well-doc__item-price">
+												<div class="well-doc__item-name-wrap clearfix">
+													<div class="well-doc__item-img">
+														<img src="https://zdorov.online/upload/iblock/704/704992b94cb76df24a6134fdadd8660f.jpeg">
+														<div class="well-doc__item-rating clearfix">
+															<p class="well-doc__item-rating--pink"><span>8</span>отзывов</p>
+															<p class="well-doc__item-rating--blue"><span>9<span>.63</span></span>рейтинг</p>
+														</div>
+													</div>
+													<div class="well-doc__item-name">
+														<p class="well-doc__item-name-blue">													<a style="color:#115c89;padding:0;" href="/vrach/klipina-tatyana-yurevna/">Клипина Татьяна</a>
+														</p>
+														<p>Хирург</p>
+														<p>Стаж: 17 лет</p>
+														<p style="font-family:sans-serif;color: green; margin-top: 10px;">Цена приема: <br> <span>1450 руб.</span></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="well-doc__item-address clinic-about">
+												<div class="well-doc__item-price-btn" style="cursor:pointer;">
+													<a onclick="bookFormTimeShow('110232');" docid="110232" class="well-doc__item-price-btn-link statya-item__btn-more doc1 bookFormTime">Записаться онлайн</a>
+												</div>
+												<span class="clinic-about__metro metro_line_lyublinsko-dmitrovskaya">Чкаловская</span>
+												<div class="clinic-about__address"><a href="/vrach/klipina-tatyana-yurevna/">г. Москва, 2-й Сыромятнический пер. д. 11</a></div>
+											</div>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="well-doc__item art">
+											<div class="well-doc__item-price">
+												<div class="well-doc__item-name-wrap clearfix">
+													<div class="well-doc__item-img">
+														<img src="https://zdorov.online/upload/iblock/f92/f927db47229d3635a62a3c9833d2444a.png">
+														<div class="well-doc__item-rating clearfix">
+															<p class="well-doc__item-rating--pink"><span>28</span>отзывов</p>
+															<p class="well-doc__item-rating--blue"><span>9<span>.11</span></span>рейтинг</p>
+														</div>
+													</div>
+													<div class="well-doc__item-name">
+														<p class="well-doc__item-name-blue">													<a style="color:#115c89;padding:0;" href="/vrach/sergeyko-anatoliy-anatolevich/">Сергейко Анатолий</a>
+														</p>
+														<p>Хирург</p>
+														<p>Стаж: 20 лет</p>
+														<p style="font-family:sans-serif;color: green; margin-top: 10px;">Цена приема: <br> <span>1700 руб.</span></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="well-doc__item-address clinic-about">
+												<div class="well-doc__item-price-btn" style="cursor:pointer;">
+													<a onclick="bookFormTimeShow('110252');" docid="110252" class="well-doc__item-price-btn-link statya-item__btn-more doc1 bookFormTime">Записаться онлайн</a>
+												</div>
+												<span class="clinic-about__metro metro_line_kalininsko-solntsevskaya">Марксистская</span>
+												<div class="clinic-about__address"><a href="/vrach/sergeyko-anatoliy-anatolevich/">Москва, ул. Александра Солженицына, д. 5, стр. 1</a></div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!--<div class="c-docslide">
+								<div class="c-docslide__item"></div>
+								<div class="c-docslide__item"></div>
+								<div class="c-docslide__item"></div>
+							</div>-->
+							<div class="c-step4__btn c-button--pink">
+								Показать всех неврологов Москвы
+							</div>
+						</div>
+					</div>
+					<div class="c-step5 rel">
+						<div class="c-st-last__step-title">
+							Шаг 5. Определили синдром
+						</div>
+						<div class="l-greybox">
+							<div class="c-step5-list">
+								<div class="c-step5-list__item price">
+									<span class="price__text">Мрт головного мозга головного мозга </span><span class="price__sum"> от 3500 руб</span></div>
+								<div class="c-step5-list__item price">
+									<span class="price__text">Мрт головного мозга </span><span class="price__sum"> от 3500 руб</span></div>
+								<div class="c-step5-list__item price">
+									<span class="price__text">Мрт головного мозга </span><span class="price__sum"> от 3500 руб</span></div>
+								<div class="c-step5-list__item price">
+									<span class="price__text">Мрт головного мозга </span><span class="price__sum"> от 3500 руб</span></div>
+								<div class="c-step5-list__item price">
+									<span class="price__text">Мрт головного мозга </span><span class="price__sum"> от 3500 руб</span></div>
+								<div class="c-step5-list__item price">
+									<span class="price__text">Мрт головного мозга </span><span class="price__sum"> от 3500 руб</span></div>
+							</div>
+						</div>
+						<div class="c-step5__btn c-button--green">Получить результат
+																  самодиагностики на почту</div>
+					</div>
+				</div>
+			</div>
+			<!--right sidebar-->
+			<div class="right-sidebar clearfix">
+				<div style="display: none;">
+				</div>
+
+				﻿
+
+
+
+
+
+				<div id="rdocs">
+
+					<article class="list-right-sb-search">
+						<div class="list-right-sb-search--wrap">
+							<div class="list-right-sb-search__title">Специальности</div>
+						</div>
+						<ul style="padding-bottom: 15px;">
+							<li><a href="https://zdorov.online/vrach/akusher/">Акушер</a></li>
+							<li><a href="https://zdorov.online/vrach/akusher-ginekolog/">Акушер - гинеколог</a></li>
+							<li><a href="https://zdorov.online/vrach/algolog/">Алголог</a></li>
+							<li><a href="https://zdorov.online/vrach/allergolog/">Аллерголог</a></li>
+							<li><a href="https://zdorov.online/vrach/allergolog-immunolog/">Аллерголог-иммунолог</a></li>
+							<li><a href="https://zdorov.online/vrach/angiolog/">Ангиолог</a></li>
+							<li><a href="https://zdorov.online/vrach/androlog/">Андролог</a></li>
+							<li><a href="https://zdorov.online/vrach/bakteriolog/">Бактериолог</a></li>
+							<li><a href="https://zdorov.online/vrach/venerolog/">Венеролог</a></li>
+							<li><a href="https://zdorov.online/vrach/vertebrolog/">Вертебролог</a></li>
+							<li><a href="https://zdorov.online/vrach/virusolog-immunolog/">Вирусолог-иммунолог</a></li>
+							<li><a href="https://zdorov.online/vrach/lfk/">Врач ЛФК</a></li>
+							<li><a href="https://zdorov.online/vrach/gastroenterolog/">Гастроэнтеролог</a></li>
+							<li><a href="https://zdorov.online/vrach/gematolog/">Гематолог</a></li>
+							<li><a href="https://zdorov.online/vrach/genetik/">Генетик</a></li>
+							<li><a href="https://zdorov.online/vrach/gepatolog/">Гепатолог</a></li>
+							<li><a href="https://zdorov.online/vrach/ginekolog/">Гинеколог</a></li>
+							<li><a href="https://zdorov.online/vrach/girudolog/">Гирудотерапевт</a></li>
+							<li><a href="https://zdorov.online/vrach/gomeopat/">Гомеопат</a></li>
+							<li><a href="https://zdorov.online/vrach/dermatovenerolog/">Дерматовенеролог</a></li>
+							<li><a href="https://zdorov.online/vrach/dermatolog/">Дерматолог</a></li>
+							<li><a href="https://zdorov.online/vrach/dermatolog-venerolog/">Дерматолог-венеролог</a></li>
+							<li><a href="https://zdorov.online/vrach/kosmetolog-dermatolog/">Дерматолог-косметолог</a>
+							</li>
+							<li><a href="https://zdorov.online/vrach/diabetolog/">Диабетолог</a></li>
+							<li><a href="https://zdorov.online/vrach/dietolog/">Диетолог</a></li>
+							<li><a href="https://zdorov.online/vrach/immunolog/">Иммунолог</a></li>
+							<li><a href="https://zdorov.online/vrach/infekcionist/">Инфекционист</a></li>
+							<li><a href="https://zdorov.online/vrach/kardiolog/">Кардиолог</a></li>
+							<li><a href="https://zdorov.online/vrach/kardiohirurg/">Кардиохирург</a></li>
+							<li><a href="https://zdorov.online/vrach/kosmetolog/">Косметолог</a></li>
+							<li><a href="https://zdorov.online/vrach/lor-otolaringolog/">ЛОР</a></li>
+							<li><a href="https://zdorov.online/vrach/logoped/">Логопед</a></li>
+							<li><a href="https://zdorov.online/vrach/mammolog/">Маммолог</a></li>
+							<li><a href="https://zdorov.online/vrach/manualnyy-terapevt/">Мануальный терапевт</a></li>
+							<li><a href="https://zdorov.online/vrach/massazhist/">Массажист</a></li>
+							<li><a href="https://zdorov.online/vrach/narkolog/">Нарколог</a></li>
+							<li><a href="https://zdorov.online/vrach/nevrolog/">Невролог</a></li>
+							<li><a href="https://zdorov.online/vrach/neyrohirurg/">Нейрохирург</a></li>
+							<li><a href="https://zdorov.online/vrach/neonatolog/">Неонатолог</a></li>
+							<li><a href="https://zdorov.online/vrach/nefrolog/">Нефролог</a></li>
+							<li><a href="https://zdorov.online/vrach/onkodermatolog/">Онкодерматолог</a></li>
+							<li><a href="https://zdorov.online/vrach/onkolog/">Онколог</a></li>
+							<li><a href="https://zdorov.online/vrach/onkolog-mammolog/">Онколог маммолог</a></li>
+							<li><a href="https://zdorov.online/vrach/ortoped/">Ортопед</a></li>
+							<li><a href="https://zdorov.online/vrach/osteopat/">Остеопат</a></li>
+							<li><a href="https://zdorov.online/vrach/otolaringolog/">Отоларинголог</a></li>
+							<li><a href="https://zdorov.online/vrach/oftalmolog/">Офтальмолог</a></li>
+							<li><a href="https://zdorov.online/vrach/parodontolog/">Пародонтолог</a></li>
+							<li><a href="https://zdorov.online/vrach/pediatr/">Педиатр</a></li>
+							<li><a href="https://zdorov.online/vrach/plasticheskiy-hirurg/">Пластический хирург</a></li>
+							<li><a href="https://zdorov.online/vrach/proktolog/">Проктолог</a></li>
+							<li><a href="https://zdorov.online/vrach/psikhiatr/">Психиатр</a></li>
+							<li><a href="https://zdorov.online/vrach/psikholog/">Психолог</a></li>
+							<li><a href="https://zdorov.online/vrach/psikhoterapevt/">Психотерапевт</a></li>
+							<li><a href="https://zdorov.online/vrach/pulmonolog/">Пульмонолог</a></li>
+							<li><a href="https://zdorov.online/vrach/revmatolog/">Ревматолог</a></li>
+							<li><a href="https://zdorov.online/vrach/refleksoterapevt/">Рефлексотерапевт</a></li>
+							<li><a href="https://zdorov.online/vrach/seksolog/">Сексолог</a></li>
+							<li><a href="https://zdorov.online/vrach/somnolog/">Сомнолог</a></li>
+							<li><a href="https://zdorov.online/vrach/sosudistii-hirurg/">Сосудистый хирург</a></li>
+							<li><a href="https://zdorov.online/vrach/stomatolog/">Стоматолог</a></li>
+							<li><a href="https://zdorov.online/vrach/stomatolog-ortodont/">Стоматолог-ортодонт</a></li>
+							<li><a href="https://zdorov.online/vrach/stomatolog-terapevt/">Стоматолог-терапевт</a></li>
+							<li><a href="https://zdorov.online/vrach/stomatolog-hirurg/">Стоматолог-хирург</a></li>
+							<li><a href="https://zdorov.online/vrach/surdolog/">Сурдолог</a></li>
+							<li><a href="https://zdorov.online/vrach/terapevt/">Терапевт</a></li>
+							<li><a href="https://zdorov.online/vrach/travmatolog/">Травматолог</a></li>
+							<li><a href="https://zdorov.online/vrach/travmatolog-ortoped/">Травматолог-ортопед</a></li>
+							<li><a href="https://zdorov.online/vrach/transfuziolog/">Трансфузиолог</a></li>
+							<li><a href="https://zdorov.online/vrach/trikholog/">Трихолог</a></li>
+							<li><a href="https://zdorov.online/vrach/urolog/">Уролог</a></li>
+							<li><a href="https://zdorov.online/vrach/urolog-androlog/">Уролог-андролог</a></li>
+							<li><a href="https://zdorov.online/vrach/fizioterapevt/">Физиотерапевт</a></li>
+							<li><a href="https://zdorov.online/vrach/flebolog/">Флеболог</a></li>
+							<li><a href="https://zdorov.online/vrach/ftiziator/">Фтизиатр</a></li>
+							<li><a href="https://zdorov.online/vrach/hirurg/">Хирург</a></li>
+							<li><a href="https://zdorov.online/vrach/hirurg-proktolog/">Хирург проктолог</a></li>
+							<li><a href="https://zdorov.online/vrach/hirurg-flebolog/">Хирург флеболог</a></li>
+							<li><a href="https://zdorov.online/vrach/endokrinolog/">Эндокринолог</a></li>
+						</ul>
+					</article>
+				</div>
+				<article class="about">
+					<div class="about__wrap">
+						<section class="about_contents">
+							<div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+							<ul>
+								<li class="about_contents--pills">
+									<a href="https://zdorov.online/bolezni/"><span>Более 400 болезней</span>
+										Причины, проявления, лечение и профилактика</a></li>
+								<li class="about_contents--clinic">
+									<a href="https://zdorov.online/clinics/"><span>Рейтинг клиник</span>
+										Достоверная информация о качестве лечения на основе посещения клиник</a></li>
+								<li class="about_contents--node">
+									<a href="https://zdorov.online/vrach/"><span>Запись к врачу</span>
+										Очень легко к нужному врачу</a></li>
+								<li class="about_contents--question">
+									<a href="https://zdorov.online/qa/"><span>Задать вопрос</span>
+										Бесплатные консультации врачей</a></li>
+							</ul>
+						</section>
+					</div>
+				</article>
+				<div>
+
+				</div>
+			</div>
+		</main>
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<a href="https://zdorov.online/">
+					<img src="img/logo.png" title="Zdorov.online">
+				</a>
+			</div>
+			<div class="footer-content__article">
+				<a href="https://zdorov.online/articles/">Статьи</a>
+				<a href="https://zdorov.online/vrach/">Врачи </a>
+				<a href="https://zdorov.online/clinics/kliniki-po-diagnostike/">Диагностика</a>
+				<a href="https://zdorov.online/novosti/">Новости</a>
+				<div class="menu-footer__list">
+					<ul>
+						<li><a href="https://zdorov.online/adv/">Реклама на портале</a></li>
+						<li><a href="https://zdorov.online/dlya-klinik/">Для клиник</a></li>
+						<li><a href="https://zdorov.online/about/">О проекте</a></li>
+						<li><a href="https://zdorov.online/contacts/">Контакты</a></li>
+						<li><a href="https://zdorov.online/term/">Пользовательское соглашение</a></li>
+						<!--noindex--><li><a target="_blank" href="http://partners.zdorov.online/">Партнерская программа</a></li><!--/noindex-->
+					</ul>
+				</div>
+			</div>
+
+			<div class="menu-footer-document">
+
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2016. Все права защищены. <a href="https://zdorov.online/karta-saita/">Карта сайта</a></p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем.</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left:50px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="http://mk.ru/" target="_blank"><img src="img/logo-mk-index.png"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="https://zdorov.online/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://zdorov.online/js/jquery.fancybox.js"></script>
+	<script src="https://zdorov.online/js/app.min.js"></script>
+	<script src="https://zdorov.online/js/jquery.flexslider-min.js"></script>
+	<script src="https://zdorov.online/js/jquery.maskedinput.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script>
+		$('.swiper-wrapper').bxSlider({
+			slideWidth: 276,
+			minSlides: 2,
+			maxSlides: 3,
+			slideMargin: 13,
+			nextSelector: '#slider-next',
+			prevSelector: '#slider-prev',
+			nextText: '',
+			prevText: ''
+		});
+	</script>
+</div>
+</body>
+</html>

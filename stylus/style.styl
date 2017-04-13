@@ -16990,7 +16990,8 @@ span.forum-page-current {
 }
 
 .search-diagn-wrap, .search-diagn-wrap span, .search-diagn-wrap a, .metro-wrap {
-  vertical-align: middle;
+  vertical-align: baseline;
+  line-height: 26px;
 }
 
 .answer__info p {
@@ -19405,3 +19406,353 @@ search_block{
   border: none;
   margin: auto;
   font-size: 16px
+
+
+.c-st-last
+  padding-top: 50px
+  &__step-title
+    color: #df4c40;
+    font-family: 'PTSansItalic',sans-serif;
+    font-size: 18px;
+    padding: 10px 0
+
+.l-greybox
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 20px
+  box-sizing: border-box
+
+.l-bordered
+  border: 3px solid #ededed;
+  border-radius: 5px;
+  padding: 20px
+  box-sizing: border-box
+
+.c-step1
+  width: 300px;
+  float: left
+  &:after
+    display: inline-block;
+    content: "• ";
+    color: #ededed;
+    border: 3px solid #ededed;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 15px;
+    font-size: 16px;
+    background-color: white;
+    position: absolute;
+    top: 198px
+    right: -10px;
+  &__line
+    width: 112px
+    height: 62px
+    position: absolute
+    right: -110px;
+    top: 148px;
+    background: url(../img/line1.png) center no-repeat
+  &__text
+    text-align: center
+    font-size: 17px;
+  &__img-container
+    width: 160px
+    height: 160px
+    border-radius 50%
+    overflow:hidden
+    margin: 0 auto 20px;
+    img
+      max-width:100%
+
+.c-step2
+  width: 714px;
+  float: right
+  margin-bottom: 90px
+  &:before
+    display: inline-block;
+    content: "• ";
+    color: #ededed;
+    border: 3px solid #ededed;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 15px;
+    font-size: 16px;
+    background-color: white;
+    position: absolute;
+    top: 140px;
+    left: -10px;
+  &:after
+    display: inline-block;
+    content: "• ";
+    color: #ededed;
+    border: 3px solid #ededed;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 15px;
+    font-size: 16px;
+    background-color: white;
+    position: absolute;
+    left: 355px;
+    bottom: -10px;
+  &__line
+    width: 4px
+    height: 112px
+    position: absolute
+    left: 363px
+    bottom: -123px;
+    background: url(../img/line2.png) center no-repeat
+  &-list
+    &__item
+      padding-left: 20px;
+      position: relative
+      &:before
+        position: absolute
+        left: 0;
+        top: 4px;
+        content ''
+        display: inline-block
+        width: 10px;
+        height: 15px;
+        background: url(../img/step2li.png) center no-repeat
+        vertical-align: text-top
+        margin-right: 10px
+      & + &
+        margin-top: 10px
+
+.c-step3
+  width: 714px;
+  float:right
+  margin-bottom: 60px
+  &:before
+    display: inline-block;
+    content: "• ";
+    color: #ededed;
+    border: 3px solid #ededed;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 15px;
+    font-size: 16px;
+    background-color: white;
+    position: absolute;
+    left: 355px;
+    top: 35px;
+  &:after
+    display: inline-block;
+    content: "• ";
+    color: #ededed;
+    border: 3px solid #ededed;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 15px;
+    font-size: 16px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+  &__line
+    width: 470px
+    height: 261px
+    position: absolute
+    left: -49px;
+    bottom: -263px;
+    background: url(../img/line3.png) center no-repeat
+
+  &-list
+    display: flex
+    justify-content space-between
+    align-items center
+    &__item
+      font-family: 'PTSansBold',sans-serif;
+      position: relative
+      display: inline-block
+      padding: 15px
+      padding-left: 60px
+      background-color: #f8f8f8;
+      border-radius: 5px;
+      box-sizing:border-box
+      width: 200px
+      text-transform uppercase
+      &:before
+        display: inline-block
+        content: ''
+        width: 36px
+        height: 50px
+        position: absolute
+        left: 15px
+        top: 10px
+      &.is-disable
+        opacity 0.3
+        &:after
+          content: ''
+          display: block
+          width: 100%
+          height: 100%
+          position: absolute
+          top: 0
+          left: 0
+          background: grey
+          opacity: .7;
+          border-radius: 5px;
+      &--green
+        &:before
+          background: url(../img/step3-1.png)
+      &--yellow
+        &:before
+          background: url(../img/step3-2.png)
+      &--red
+        &:before
+          background: url(../img/step3-3.png)
+
+
+.c-step4
+  float: left
+  width: 714px;
+  &:before
+    display: inline-block;
+    content: "• ";
+    color: #ededed;
+    border: 3px solid #ededed;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 15px;
+    font-size: 16px;
+    background-color: white;
+    position: absolute;
+    left: 350px;
+    top: 35px;
+  &__btn
+    width: 84%
+    text-align: center
+    padding: 10px 40px
+    font-size: 14px;
+    margin-top: 20px
+    cursor: pointer
+    box-sizing: border-box
+  .well-doc__list
+    position: relative
+    &:after
+      content: ''
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 15%;
+      z-index: 10;
+      //background-image: linear-gradient(to left, white 10%, transparent 100%);
+      background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 100%);
+    .bx-wrapper
+      margin: 0
+      .bx-controls-direction a
+        top: -10%
+
+.c-tabs-doc
+  display: flex
+  justify-content flex-start
+  align-items center
+  margin-bottom: 20px
+  &__item
+    border: 3px solid #ededed;
+    border-radius: 22px;
+    padding: 5px 10px
+    cursor: pointer
+    & + &
+      margin-left: 10px
+    &.is-active
+      background-color: #ededed;
+
+.outside
+  position: absolute;
+  right: 30px;
+  top: 75px;
+
+#slider
+  &-next
+    display: inline-block
+    a
+      display:inline-block
+      background: url(../img/right-arrow.png)
+      width: 25px
+      height: 17px
+  &-prev
+    margin-right: 20px;
+    display: inline-block
+    a
+      display: inline-block
+      width: 25px
+      height: 17px
+      background: url(../img/left-arrow.png)
+
+
+.c-step5
+  float: right
+  width: 300px;
+  &:before
+    display: inline-block;
+    content: "• ";
+    color: #ededed;
+    border: 3px solid #ededed;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 15px;
+    font-size: 16px;
+    background-color: white;
+    position: absolute;
+    top: 180px;
+    left: -10px;
+  &-list
+    &__item
+      padding: 10px 0
+      & + &
+        border-top 1px solid lightgray
+  &__btn
+    width: 100%
+    text-align: center
+    padding: 10px 40px
+    font-size: 13px;
+    margin-top: 20px
+    text-transform: uppercase
+    cursor: pointer
+    box-sizing: border-box
+.price
+  &__text
+    display: inline-block;
+    width: 65%
+  &__sum
+    display: inline-block;
+    width: 35%
+    font-family: 'PTSansItalic',sans-serif;
+
+.c-button
+  &--green
+    color:white
+    background-image: linear-gradient(to top, #6ca92a 0%, #a6d547 100%);
+    border: 1px solid #70ac2c;
+    border-radius: 5px;
+  &--pink
+    color:white
+    background-image: linear-gradient(to top, #e66e93 0%, #ed8bad 100%);
+    border: 1px solid #d64882;
+    border-radius: 5px;
+
+.rel
+  position: relative

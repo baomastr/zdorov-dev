@@ -3,7 +3,15 @@
 .visible-xs
   display: none
 
+.result-clinic.result-doc .clinic-avatar
+  width: 200px;
+  margin-right: 12px;
+
 @media only screen and (max-width: 414px)
+
+  .result-clinic.result-doc .clinic-avatar
+    width: 35%;
+    margin-right: 2%;
 
   .hidden-xs
     display: none !important
@@ -125,7 +133,7 @@
         right: 0
         font-family: inherit;
         font-size: 100%;
-        background: #fff url(../mob/search.png) no-repeat 14px center;
+        background: #fff url(/img/mob/search.png) no-repeat 14px center;
         border-left: solid 1px #115c89;
         padding: 15px
         height: 52px
@@ -310,7 +318,7 @@
     &__holder
       width: 100%
       border: 1px solid #cad6de;
-      background: #fff url(../mob/select.png) 96% center no-repeat
+      background: #fff url(/img/mob/select.png) 96% center no-repeat
     &__item
       background: transparent
       height: 42px;
@@ -845,9 +853,9 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.28);
       border-radius 50%
       &.bx-prev
-        background: rgba(255, 255, 255, 0.4) url(../mob/doc-prev.png) center no-repeat
+        background: rgba(255, 255, 255, 0.4) url(/img/mob/doc-prev.png) center no-repeat
       &.bx-next
-        background: rgba(255, 255, 255, 0.4) url(../mob/doc-next.png) center no-repeat
+        background: rgba(255, 255, 255, 0.4) url(/img/mob/doc-next.png) center no-repeat
 
   .bx-wrapper
     margin: auto
@@ -954,9 +962,9 @@
       top: 30%
       border-radius 50%
       &.bx-prev
-        background: rgba(255, 255, 255, 0.4) url(../mob/doc-prev.png) center no-repeat
+        background: rgba(255, 255, 255, 0.4) url(/img/mob/doc-prev.png) center no-repeat
       &.bx-next
-        background: rgba(255, 255, 255, 0.4) url(../mob/doc-next.png) center no-repeat
+        background: rgba(255, 255, 255, 0.4) url(/img/mob/doc-next.png) center no-repeat
 
   .head4
     display: block
@@ -1010,7 +1018,7 @@
       height: 40px;
       background-color: white;
       box-shadow: 0 0 10px rgba(68, 68, 68, 0.8);
-      background: rgba(255,255,255,0.8) url("../mob/xs-close.png") center no-repeat
+      background: rgba(255,255,255,0.8) url("/img/mob/xs-close.png") center no-repeat
       border-radius 50%
     &__bottom
       padding: 15px

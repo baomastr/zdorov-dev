@@ -42,7 +42,7 @@
   .steplist
   .ourproject
   .back-articl
-  .pagination-qw
+  //.pagination-qw
   .alphabet-title
   .border-gradient
   .self-test
@@ -53,7 +53,20 @@
   .doc-information__review
   .how-to
   .phone_show_more_clinics
+  #formTimeContainer
     display: none
+
+  .pagination-qw
+    margin-top: 20px
+    .l-arrow
+    .r-arrow
+      display: none
+    .active
+      padding: 4px 10px;
+
+  .pagination-qw li
+  .pagination-qw li a
+    font-size: 20px
 
   .pagination
     text-align: center
@@ -86,7 +99,7 @@
 
   .header-main_menu
     padding: 0
-    z-index: 99;
+    z-index: 999;
 
   .main-submenu
     overflow-y: hidden;
@@ -140,6 +153,7 @@
         width: 55px; /* Ширина по умолчанию */
         color: transparent
         transition: all .5s;
+        border-radius: 0;
         &:focus
           color: black
           width: calc(100% - 50px); /* Ширина при наличии фокуса ввода */
@@ -512,17 +526,39 @@
   .article-item-inner a
     padding: 0
 
-  .text-article > p
-  .text-article > h4
-  .text-article > .list
-  .note__text
-  .doctor > p
-  .doctor > .list
-  .doctor > h3
-  .doctor__list > p
-  .doctor__list > p
+  .articles-wrapper
+  //.text-article > p
+  //.text-article > h4
+  //.text-article > .list
+  //.note__text
+  //.text-article
+  //.doctor
+  //.doctor__list
+  //.doctor > p
+  //.doctor > .list
+  //.doctor > h3
+  //.doctor__list > p
+  //.doctor__list > p
     padding: 0 20px
     box-sizing border-box
+
+  .text-img-float-right
+    float:none
+
+  .doc-more a
+    font-size: 11px
+
+  .table-coast
+
+    td
+      &:nth-child(2)
+      &:nth-child(3)
+        display: none
+
+    th
+      &:nth-child(2)
+      &:nth-child(3)
+        display: none
 
   .doctor__list > p
   .two-column
@@ -707,6 +743,7 @@
 
   .library-article
     width: 100%
+    box-sizing: border-box;
 
   .back-article
     display: none
@@ -1097,3 +1134,25 @@
   .bx-controls-direction
     .disabled
       display: none
+
+  .result-clinic
+    padding: 0
+  .result-clinic.listClinic .clinic-price
+    width: 100%
+  .result-clinic.listClinic .clinic-info
+    border:none
+    padding: 0
+    margin: 0
+  .result-clinic.listClinic .clinic-avatar
+    width: 30%
+    border-right: 1px solid lightgray
+    border-bottom: 1px solid lightgray
+  .result-clinic.listClinic .clinic-avatar__img img
+    max-width: 100%
+    height: auto;
+  .result-clinic.listClinic .clinic-about__wrap
+    border: none
+    padding: 0
+  .result-clinic.listClinic .clinic-avatar__rating
+    display: none
+

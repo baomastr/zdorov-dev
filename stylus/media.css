@@ -39,7 +39,6 @@
   .steplist,
   .ourproject,
   .back-articl,
-  .pagination-qw,
   .alphabet-title,
   .border-gradient,
   .self-test,
@@ -49,8 +48,23 @@
   .doc-information-map__wrap,
   .doc-information__review,
   .how-to,
-  .phone_show_more_clinics {
+  .phone_show_more_clinics,
+  #formTimeContainer {
     display: none;
+  }
+  .pagination-qw {
+    margin-top: 20px;
+  }
+  .pagination-qw .l-arrow,
+  .pagination-qw .r-arrow {
+    display: none;
+  }
+  .pagination-qw .active {
+    padding: 4px 10px;
+  }
+  .pagination-qw li,
+  .pagination-qw li a {
+    font-size: 20px;
   }
   .pagination {
     text-align: center;
@@ -87,7 +101,7 @@
   }
   .header-main_menu {
     padding: 0;
-    z-index: 99;
+    z-index: 999;
   }
   .main-submenu {
     overflow-y: hidden;
@@ -172,6 +186,7 @@
     -o-transition: all 0.5s;
     -ms-transition: all 0.5s;
     transition: all 0.5s;
+    border-radius: 0;
   }
   .headerSearch__input[type=search]:focus {
     color: #000;
@@ -616,18 +631,25 @@
   .article-item-inner a {
     padding: 0;
   }
-  .text-article > p,
-  .text-article > h4,
-  .text-article > .list,
-  .note__text,
-  .doctor > p,
-  .doctor > .list,
-  .doctor > h3,
-  .doctor__list > p {
+  .articles-wrapper {
     padding: 0 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  .text-img-float-right {
+    float: none;
+  }
+  .doc-more a {
+    font-size: 11px;
+  }
+  .table-coast td:nth-child(2),
+  .table-coast td:nth-child(3) {
+    display: none;
+  }
+  .table-coast th:nth-child(2),
+  .table-coast th:nth-child(3) {
+    display: none;
   }
   .doctor__list > p,
   .two-column {
@@ -847,6 +869,9 @@
   }
   .library-article {
     width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
   .back-article {
     display: none;
@@ -1289,6 +1314,33 @@
     padding-top: 20px;
   }
   .bx-controls-direction .disabled {
+    display: none;
+  }
+  .result-clinic {
+    padding: 0;
+  }
+  .result-clinic.listClinic .clinic-price {
+    width: 100%;
+  }
+  .result-clinic.listClinic .clinic-info {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .result-clinic.listClinic .clinic-avatar {
+    width: 30%;
+    border-right: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+  }
+  .result-clinic.listClinic .clinic-avatar__img img {
+    max-width: 100%;
+    height: auto;
+  }
+  .result-clinic.listClinic .clinic-about__wrap {
+    border: none;
+    padding: 0;
+  }
+  .result-clinic.listClinic .clinic-avatar__rating {
     display: none;
   }
 }

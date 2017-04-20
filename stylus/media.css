@@ -680,7 +680,6 @@
   .phone_show,
   .clinic-time__choise,
   .clinic-time__willhelp,
-  .result-number__choose,
   .review-doc-page {
     display: none;
   }
@@ -959,6 +958,9 @@
   }
   .info-content__title {
     padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
   .table-info-doc-xs .row {
     display: block;

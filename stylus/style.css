@@ -15879,7 +15879,7 @@ p.listDoc__note {
   height: 80px;
 }
 .ratemenu {
-  width: 1108px;
+  width: 1106px;
   background-color: #f6f6f6;
   padding: 10px;
   border-bottom: 1px solid #f0f0f0;
@@ -17705,6 +17705,7 @@ search_block {
 }
 .c-step5-list__item {
   padding: 10px 0;
+  font-size: 13px;
 }
 .c-step5-list__item + .c-step5-list__item {
   border-top: 1px solid #d3d3d3;
@@ -17755,4 +17756,8 @@ search_block {
 }
 .c-button--pink a {
   color: #fff;
+}
+.pseudolink {
+  color: #00f;
+  cursor: pointer;
 }

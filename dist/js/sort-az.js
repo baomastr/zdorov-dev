@@ -7,15 +7,15 @@ jQuery(document).ready(function($) {
     });
 
     var $elements = $('.ratebox');
-    var $target = $('.left-side');
+    var $target = $('.ratebox-wrapper');
 
     $elements.sort(function (a, b) {
 
-        var testA = $(a).find($('.mark__inner'));
-        var testB = $(b).find($('.mark__inner'));
+        var testA = $(b).find($('.mark__inner'));
+        var testB = $(a).find($('.mark__inner'));
 
-        var $ratingB = testA[0].innerText;
-        var $ratingA = testB[0].innerText;
+        var $ratingA = testA[0].innerText;
+        var $ratingB = testB[0].innerText;
 
         if ($ratingA < $ratingB) {
             return 1;

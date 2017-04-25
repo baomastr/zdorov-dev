@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
     });
 
     var $elements = $('.ratebox');
-    var $target = $('.left-side');
+    var $target = $('.ratebox-wrapper');
 
     $elements.sort(function (a, b) {
 

@@ -19855,7 +19855,7 @@ search_block{
     content: '';
     //position: absolute;
     width: 1px;
-    height: 92%;
+    height: 94%;
     background-color: #ff669c;
     //top: 4%;
     //left: 80px;
@@ -19932,7 +19932,7 @@ search_block{
 
 .c-list-reasons
   margin: 20px 0;
-  max-width: 60%;
+  max-width: 55%;
   &__hidden
     display: none
     margin-top: 10px
@@ -19949,10 +19949,22 @@ search_block{
     color #7494d1
     margin-top: 10px
     font-family: 'PTSans',arial,sans-serif;
+    &:after
+      content: '';
+      border: solid #7494d1;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(-135deg);
+      vertical-align: sub;
+      margin-left: 6px;
+
 
   &__item
     display: block
     margin-bottom: 10px;
+    color: #747474;
+    font-size: 16px;
     a
       padding: 0
       cursor: pointer
@@ -19961,6 +19973,7 @@ search_block{
       vertical-align: middle
       //padding-left: 10px
       position: relative
+      text-decoration: underline
       &:first-letter
         text-transform: capitalize;
       &:before
@@ -19973,6 +19986,8 @@ search_block{
         position: absolute;
         left: -20px;
         top: 10px;
+      &:hover
+        text-decoration: none
 
 
 
@@ -19980,6 +19995,7 @@ search_block{
   position: relative
   padding: 50px
   padding-left: 140px;
+  padding-bottom: 0;
   &__right
     display: inline-block;
     position: absolute;
@@ -20042,6 +20058,7 @@ search_block{
       box-shadow 0 0 4.7px 0.3px rgba(0, 0, 0, 0.08)
       border-radius: 50%;
       size 43px
+      z-index: 9;
       &.bx-prev
         background: #fff url(../img/st/stdoc-prev.png) center no-repeat
         left: -30px;
@@ -20064,6 +20081,8 @@ search_block{
   //  margin-left: 2%;
   &__about
     padding: 10px;
+    height: 140px;
+
   &__name
     font-family: 'PTSansBold',sans-serif;
   &__contact
@@ -20071,8 +20090,16 @@ search_block{
     background: #fff
     color #7494d1
     font-size 12px
+    .clinic-time__tel--main-clinic a
+      padding: 0
+      font-size: 16px
+    .clinic-time__tel
+      margin-bottom: 0!important
+
   &__img
     &-wrap
+      height: 190px;
+      overflow: hidden;
       img
         max-width: 100%
   &__info
@@ -20134,10 +20161,16 @@ search_block{
   padding-top: 20px
   text-align: center
   & > input
+    border: 1px solid lightgray
+    width: 220px
     padding: 10px
     display: inline-block
     box-sizing: border-box
     vertical-align: middle;
+    &:focus
+      border: 1px solid lightgray
+    &:active
+      border: 1px solid lightgray
   .btn-doc-info
     vertical-align: middle;
     padding: 8px 25px;
@@ -20149,6 +20182,15 @@ search_block{
     background-image linear-gradient(to top, #5e7cb4 0%, #7e9cd4 100%)
     font-family: 'PTSans',arial,sans-serif;
   .pop-up__title
+    position: relative
+    padding-bottom: 15px
+    &:before
+      content: ''
+      display: block
+      width: 33px
+      height: 24px
+      background: url(/img/st/mail.png) center no-repeat
+      margin: 10px auto;
     & > span
       color: black
       text-align: center
@@ -20163,9 +20205,108 @@ search_block{
     &.is-opened
       max-height: auto
       overflow: visible
+
   &__btn
     cursor: pointer
     display: inline-block
     font-family: 'PTSans',arial,sans-serif;
     font-size: 16px
     color #7494d1
+    &:after
+      content: '';
+      border: solid #7494d1;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      margin-left: 6px;
+      transform: rotate(45deg);
+      vertical-align: baseline;
+
+
+.popup-onestep
+  position: relative
+  background: #ffffff
+  border-radius 20px
+  width: 400px
+  margin: auto
+  margin-top: 7%;
+  &__wrapper
+    position: fixed
+    width: 100%
+    height: 100vh
+    top: 0
+    left: 0
+    z-index: 999;
+    background-color: rgba(0,0,0,0.5);
+  &__header
+    padding: 20px
+    justify-content: space-between
+  &__title
+    font-size 24px
+    color #115c89
+  &__body
+    padding: 20px
+    background-color #f8f8f8
+  &__photo
+    width: 25%
+    border-radius: 50%
+    overflow: hidden
+    margin-right: 10px
+    size 90px
+    img
+      max-width: 100%
+  &__info
+    width: 260px
+  &__form
+    padding: 20px
+    &-input
+      font-size: 14px
+      width: 100%;
+      padding: 15px 10px;
+      box-sizing: border-box;
+      border: 1px solid lightgray;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      margin-top: 20px
+      &:first-child
+        margin-top: 0
+      &:focus
+        border: 1px solid lightgray;
+      &:active
+        border: 1px solid lightgray;
+      &--submit
+        color: white
+        background-color #5eaf54
+        border: none
+        font-size: 16px
+  .close-popup
+    top: 5px;
+    right: 15px;
+
+.doc
+  &__name
+    color #115c89
+    font-size 15px
+    margin-bottom: 10px
+  &__text
+    font-size 13px
+    color #6d6d6d
+  &__table
+    margin-top: 10px
+    &-row
+      width: 100%
+    &-left
+      font-family: 'PTSansBold',sans-serif;
+      font-size 13px
+      width: 40%
+      color #6d6d6d
+    &-right
+      font-size: 13px;
+      width: 60%
+      .green
+        font-size: 13px
+        font-family: 'PTSansBold',sans-serif;
+
+
+.flex
+  display: flex

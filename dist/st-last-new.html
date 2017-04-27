@@ -7,9 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="https://zdorov.online/css/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="https://zdorov.online/css/jquery.fancybox.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
 	<script type="text/javascript" src="https://zdorov.online/js/jquery.fancybox.pack.js"></script>
-	<meta name="viewport" content="width=1250">
-	<meta name="MobileOptimized" content="1250">
+	<!--<meta name="viewport" content="width=1250">-->
+	<!--<meta name="MobileOptimized" content="1250">-->
 </head>
 <body>
 <style>
@@ -553,50 +554,16 @@
 
 	<script type="text/javascript" src="https://zdorov.online/js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="https://zdorov.online/js/jquery.fancybox.js"></script>
-	<script src="https://zdorov.online/js/app.min.js"></script>
+
 	<!--<script src="https://zdorov.online/js/jquery.flexslider-min.js"></script>-->
 	<script src="https://zdorov.online/js/jquery.maskedinput.min.js"></script>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="https://zdorov.online/js/app.min.js"></script>
+	<script src="js/mob.js"></script>
+
 	<script>
-
-		$(document).ready(function () {
-			var onScroll = function(e) {
-				var container = $('.scrollspy'),
-						circle = $('.scrollspy__circle'),
-						anchor = $('.scrollspy__anchor'),
-						height = container.outerHeight(),
-						fromTop = circle.offset().top,
-						anchorFromTop = anchor.offset().top;
-
-//			console.log(height);
-//			console.log(fromTop);
-//			console.log(anchorFromTop);
-
-
-				if (anchorFromTop > (height + 50)) {
-					circle.addClass('is-static');
-
-				} else {
-					circle.removeClass('is-static');
-				}
-			};
-
-			$(window).on('scroll', onScroll);
-
-			$('.js-selftest-docslider').bxSlider({
-				controls: true,
-				hideControlOnEnd: true,
-				pager: false,
-				adaptiveHeight: true,
-				minSlides: 5,
-				maxSlides: 5,
-				slideWidth: 190,
-				slideMargin: 20
-			});
-		});
-
 
 	</script>
 </div>

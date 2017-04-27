@@ -19,6 +19,37 @@ $(document).ready(function () {
             });
         }
 
+
+        var onScroll = function(e) {
+            var container = $('.scrollspy'),
+                circle = $('.scrollspy__circle'),
+                anchor = $('.scrollspy__anchor'),
+                height = container.outerHeight(),
+                fromTop = circle.offset().top,
+                anchorFromTop = anchor.offset().top;
+
+            if (anchorFromTop > (height + 50)) {
+                circle.addClass('is-static');
+
+            } else {
+                circle.removeClass('is-static');
+            }
+        };
+
+        $(window).on('scroll', onScroll);
+
+        $('.js-selftest-docslider').bxSlider({
+            controls: true,
+            hideControlOnEnd: true,
+            pager: false,
+            adaptiveHeight: true,
+            minSlides: 5,
+            maxSlides: 5,
+            slideWidth: 190,
+            slideMargin: 20
+        });
+
+
     } else {
         // Портретная ориентация
         console.log('Портретная ориентация');
@@ -79,13 +110,6 @@ $(document).ready(function () {
                     $(this).attr('onclick', "bookFormAdaptiveShow('" + docId + "');")
                 }
             );
-
-            // var docId = $(this).attr('docid');
-            // cons(docId)
-            // console.log(docId);
-            // $('.bookFormTime').removeClass("bookFormTime")
-            //     .addClass("bookFormMob");
-            // $('.bookFormTime').attr('onclick', '')
         }
 
         $('.st-list__title').click(function() {
@@ -131,6 +155,17 @@ $(document).ready(function () {
              });*/
             $('.swiper-wrapper').bxSlider({});
         }
+
+        $('.js-selftest-docslider').bxSlider({
+            controls: true,
+            hideControlOnEnd: true,
+            pager: false,
+            adaptiveHeight: true,
+            minSlides: 1,
+            maxSlides: 1,
+            slideWidth: 190
+            // slideMargin: 20
+        });
     }
 
     // Прослушка события изменения ориентации

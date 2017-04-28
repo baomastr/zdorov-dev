@@ -6,48 +6,89 @@ $(document).ready(function () {
         // Горизонтальная ориентация
         console.log('Горизонтальная ориентация');
 
-        if ($('.c-st-last').length){
-            $('.swiper-wrapper').bxSlider({
-                slideWidth: 276,
-                minSlides: 2,
-                maxSlides: 3,
-                slideMargin: 13,
-                nextSelector: '#slider-next',
-                prevSelector: '#slider-prev',
-                nextText: '',
-                prevText: ''
-            });
-        }
+        // if ($('.c-st-last').length){
+        //     $('.swiper-wrapper').bxSlider({
+        //         slideWidth: 276,
+        //         minSlides: 2,
+        //         maxSlides: 3,
+        //         slideMargin: 13,
+        //         nextSelector: '#slider-next',
+        //         prevSelector: '#slider-prev',
+        //         nextText: '',
+        //         prevText: ''
+        //     });
+        // }
 
 
-        var onScroll = function(e) {
-            var container = $('.scrollspy'),
-                circle = $('.scrollspy__circle'),
-                anchor = $('.scrollspy__anchor'),
-                height = container.outerHeight(),
-                fromTop = circle.offset().top,
-                anchorFromTop = anchor.offset().top;
+        // var onScroll = function(e) {
+        //     var container = $('.scrollspy'),
+        //         circle = $('.scrollspy__circle'),
+        //         anchor = $('.scrollspy__anchor'),
+        //         height = container.outerHeight(),
+        //         fromTop = circle.offset().top,
+        //         anchorFromTop = anchor.offset().top;
+        //
+        //     if (anchorFromTop > (height + 50)) {
+        //         circle.addClass('is-static');
+        //
+        //     } else {
+        //         circle.removeClass('is-static');
+        //     }
+        // };
+        //
+        // $(window).on('scroll', onScroll);
 
-            if (anchorFromTop > (height + 50)) {
-                circle.addClass('is-static');
 
-            } else {
-                circle.removeClass('is-static');
-            }
-        };
+        // function loaddoc(doc, i)
+        // {
+        //     $('#slider-prev').html('');
+        //     $('#slider-next').html('');
+        //     $('.c-tabs-doc__item').removeClass('is-active');
+        //     $('.it' + i).addClass('is-active');
+        //     $.post("/algo/processing/docs_on_selftest.php", {"doc":doc}, function(resp){
+        //         $('#aj_docs').html(resp);
+        //         //$('#pj_i').text(i);
+        //     });
+        // }
+        //
+        // function loaddoc2(doc, i)
+        // {
+        //     $('#slider-prev').html('');
+        //     $('#slider-next').html('');
+        //     $('.c-tabs-doc__item').removeClass('is-active');
+        //     $('.it' + i).addClass('is-active');
+        //     $.post("/algo/processing/docs_on_selftest2.php", {"doc":doc}, function(resp){
+        //         $('#aj_docs2').html(resp);
+        //         //$('#pj_i').text(i);
+        //     });
+        // }
 
-        $(window).on('scroll', onScroll);
 
-        $('.js-selftest-docslider').bxSlider({
-            controls: true,
-            hideControlOnEnd: true,
-            pager: false,
-            adaptiveHeight: true,
-            minSlides: 5,
-            maxSlides: 5,
-            slideWidth: 190,
-            slideMargin: 20
-        });
+        // $('.l-rel__right').html('<?=$arResult['all_link']?>');
+        //
+        // $('.js-selftest-docslider').bxSlider({
+        //     controls: true,
+        //     hideControlOnEnd: true,
+        //     pager: false,
+        //     adaptiveHeight: true,
+        //     minSlides: 5,
+        //     maxSlides: 5,
+        //     slideWidth: 190,
+        //     slideMargin: 20
+        // });
+
+
+
+        // $('.js-selftest-docslider').bxSlider({
+        //     // controls: true,
+        //     hideControlOnEnd: true,
+        //     pager: false,
+        //     adaptiveHeight: true,
+        //     minSlides: 5,
+        //     maxSlides: 5,
+        //     slideWidth: 190,
+        //     slideMargin: 20
+        // });
 
 
     } else {
@@ -131,18 +172,19 @@ $(document).ready(function () {
             $('.FormAdaptiveContainer .order-xs').show();
         });*/
 
-        if ($('.c-st-last').length){
-            $('.swiper-wrapper').bxSlider({
-                // slideWidth: 276,
-                minSlides: 1,
-                maxSlides: 1,
-                // slideMargin: 13,
-                nextSelector: '#slider-next',
-                prevSelector: '#slider-prev',
-                nextText: '',
-                prevText: ''
-            });
-        } else {
+        // if ($('.c-st-last').length){
+        //     $('.swiper-wrapper').bxSlider({
+        //         // slideWidth: 276,
+        //         minSlides: 1,
+        //         maxSlides: 1,
+        //         // slideMargin: 13,
+        //         nextSelector: '#slider-next',
+        //         prevSelector: '#slider-prev',
+        //         nextText: '',
+        //         prevText: ''
+        //     });
+        // } else {
+
             /*$('.swiper-wrapper').bxSlider({
              // slideWidth: 276,
              minSlides: 1,
@@ -153,19 +195,20 @@ $(document).ready(function () {
              // nextText: '',
              // prevText: ''
              });*/
-            $('.swiper-wrapper').bxSlider({});
-        }
+            
+        $('.swiper-wrapper').bxSlider({});
+        // }
 
-        $('.js-selftest-docslider').bxSlider({
-            controls: true,
-            hideControlOnEnd: true,
-            pager: false,
-            adaptiveHeight: true,
-            minSlides: 1,
-            maxSlides: 1,
-            slideWidth: 190
-            // slideMargin: 20
-        });
+        // $('.js-selftest-docslider').bxSlider({
+        //     // controls: true,
+        //     hideControlOnEnd: true,
+        //     pager: false,
+        //     adaptiveHeight: true,
+        //     minSlides: 1,
+        //     maxSlides: 1,
+        //     slideWidth: 190
+        //     // slideMargin: 20
+        // });
     }
 
     // Прослушка события изменения ориентации

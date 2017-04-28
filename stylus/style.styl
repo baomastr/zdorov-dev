@@ -19563,13 +19563,13 @@ search_block{
     font-size: 16px;
     background-color: white;
     position: absolute;
-    left: 50%;
+    left: 292px;
     bottom: -10px;
   &__line
     width: 470px
     height: 261px
     position: absolute
-    left: -49px;
+    left: -112px;
     bottom: -263px;
     background: url(/img/line3.png) center no-repeat
 
@@ -19638,7 +19638,7 @@ search_block{
     font-size: 16px;
     background-color: white;
     position: absolute;
-    left: 350px;
+    left: 286px;
     top: 35px;
   &__btn
     width: 84%
@@ -19656,7 +19656,7 @@ search_block{
       top: 0;
       right: 0;
       height: 100%;
-      width: 15%;
+      width: 14%;
       z-index: 10;
       //background-image: linear-gradient(to left, white 10%, transparent 100%);
       background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 100%);
@@ -19706,6 +19706,10 @@ search_block{
 
 
 
+  .well-doc__item-price
+    height: 170px
+  .well-doc__item-address.clinic-about
+    height: 165px
 
 .c-tabs-doc
   display: flex
@@ -19728,7 +19732,6 @@ search_block{
   position: absolute;
   right: 30px;
   top: 75px;
-
 
 
 
@@ -19965,6 +19968,17 @@ search_block{
     margin-bottom: 10px;
     color: #747474;
     font-size: 16px;
+    position: relative
+    &:before
+      content: ''
+      display: inline-block
+      size 6px
+      background-color #f97ca4
+      border-radius: 50%
+      vertical-align: middle
+      position: absolute;
+      left: -20px;
+      top: 10px;
     a
       padding: 0
       cursor: pointer
@@ -19972,23 +19986,15 @@ search_block{
       padding: 0
       vertical-align: middle
       //padding-left: 10px
-      position: relative
-      text-decoration: underline
+
+      //text-decoration: underline
+      border-bottom: 1px dashed gray;
       &:first-letter
         text-transform: capitalize;
-      &:before
-        content: ''
-        display: inline-block
-        size 6px
-        background-color #f97ca4
-        border-radius: 50%
-        vertical-align: middle
-        position: absolute;
-        left: -20px;
-        top: 10px;
-      &:hover
-        text-decoration: none
 
+      &:hover
+        border: 0
+        text-decoration: none
 
 
 .l-rel
@@ -20000,7 +20006,7 @@ search_block{
     display: inline-block;
     position: absolute;
     right: 0;
-    top: 50%;
+    bottom: 6%;
     a
       color #7494d1
       font-family: 'PTSansBold',sans-serif;
@@ -20090,10 +20096,12 @@ search_block{
     background: #fff
     color #7494d1
     font-size 12px
+    height: 75px;
     .clinic-time__tel--main-clinic a
       padding: 0
       font-size: 16px
     .clinic-time__tel
+      height: 20px
       margin-bottom: 0!important
 
   &__img
@@ -20142,6 +20150,11 @@ search_block{
     border: none;
     .clinic-about__metro
       padding-bottom: 0
+      margin-right: 0
+      padding-left: 10px
+      &:before
+        position: initial
+        vertical-align: baseline
 
 .l-attentionlist
   margin-top: 20px
@@ -20167,6 +20180,8 @@ search_block{
     display: inline-block
     box-sizing: border-box
     vertical-align: middle;
+    height: 36px;
+    border-radius: 5px;
     &:focus
       border: 1px solid lightgray
     &:active
@@ -20229,7 +20244,8 @@ search_block{
   border-radius 20px
   width: 400px
   margin: auto
-  margin-top: 7%;
+  margin-top: 8vh;
+  overflow: hidden;
   &__wrapper
     position: fixed
     width: 100%
@@ -20239,7 +20255,7 @@ search_block{
     z-index: 999;
     background-color: rgba(0,0,0,0.5);
   &__header
-    padding: 20px
+    padding: 10px 20px;
     justify-content: space-between
   &__title
     font-size 24px
@@ -20254,12 +20270,14 @@ search_block{
     margin-right: 10px
     size 90px
     img
-      max-width: 100%
+      //max-width: 100%
+      max-height:100%
   &__info
     width: 260px
   &__form
     padding: 20px
     &-input
+      height: 40px;
       font-size: 14px
       width: 100%;
       padding: 15px 10px;
@@ -20268,6 +20286,10 @@ search_block{
       -webkit-border-radius: 3px;
       border-radius: 3px;
       margin-top: 20px
+      &.select2-container
+        position: relative
+        &:after
+          content: ''
       &:first-child
         margin-top: 0
       &:focus
@@ -20279,6 +20301,14 @@ search_block{
         background-color #5eaf54
         border: none
         font-size: 16px
+  &__response
+    padding-right: 20px
+    padding-left: 40%;
+    padding-bottom: 50px;
+    padding-top: 0
+    background: url(/img/popup-onestep__response.png) -20px 0 no-repeat
+    .popup-onestep__title
+      margin-bottom: 20px
   .close-popup
     top: 5px;
     right: 15px;
@@ -20307,6 +20337,8 @@ search_block{
         font-size: 13px
         font-family: 'PTSansBold',sans-serif;
 
+.tac
+  text-align: center
 
 .flex
   display: flex

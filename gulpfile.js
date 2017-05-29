@@ -6,6 +6,13 @@ var gulp = require ('gulp'),
   nib = require('nib'),
   spritesmith = require('gulp.spritesmith'),
   autoprefixer = require('gulp-autoprefixer');
+var uglify = require('gulp-uglifyjs');
+
+gulp.task('js', function() {
+    gulp.src('dist/js/app.min.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/jsmin'))
+});
 
 gulp.task('sprite', function() {
   var spriteData = 

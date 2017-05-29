@@ -1,9 +1,69 @@
 var dates = [];
 var ttable;
+
+function bookOneStepShow(docid, cliid=false, sid = '', price = '') 
+{
+	$('.docspec').text('');
+	$('.docprice').text('');
+	$('.doc_avatar').attr("src",'/img/nophoto.png');
+	$('.docfio').text('');
+	$('.respok').fadeOut(0);
+	$('.noresp').fadeIn(0);
+	$('.docclinic').html('');
+	
+	$('.popup-onestep__wrapper').fadeIn(100);
+	
+	if(cliid != false)
+	{
+		$.post("/algo/processing/bookFormBootstrap.php", {'cliid':cliid}, function(resp){
+			var r = JSON.parse(resp);
+			$('.price_holder').fadeOut(0);
+			$('.cli_block').fadeOut(0);
+			$('select[name=cli_list_select]').fadeOut(0);
+			$('.ossbm').attr('cliid', r.cliid);
+			$('.doc_avatar').attr("src",r.cli.avatar);
+			$('.docfio').text(r.cli.name);
+			$('.docmetro').text(r.cli.faddress.metro[0].name);
+			$('.docaddress').text(r.cli.faddress.address);
+			$('.ossbm').addClass('cli2');
+			$('.ossbm').removeClass('doc2');
+			$('.ossbm').addClass('cli2_1step');
+			$('.ossbm').removeClass('doc2_1step');
+			if(sid != '')
+			{		
+				$('#servtxt').text(sid);
+				if(price != '')
+					$('#servprice').text(price + ' руб.');
+			}
+		});
+	} 
+	else
+	{
+		$.post("/algo/processing/bookFormTimeBootstrap.php", {'docid':docid}, function(resp){
+			var r = JSON.parse(resp);
+			$('.price_holder').fadeIn(0);
+			$('.ossbm').addClass('doc2');
+			$('.ossbm').removeClass('cli2');
+			$('.ossbm').addClass('doc2_1step');
+			$('.ossbm').removeClass('cli2_1step');
+			$('.cli_block').fadeIn(0);
+			$('select[name=cli_list_select]').fadeIn(0);
+			$('.docspec').text(r.doc.spec);
+			$('.docprice').text(r.doc.price);
+			$('.docaddress').text(r.doc.address[0].address);
+			$('.docmetro').text(r.doc.address[0].metro[0].name);
+			$('.ossbm').attr('docid', r.doc.eid);
+			$('.doc_avatar').attr("src",r.doc.avatar);
+			$('.docfio').text(r.doc.name);
+			$('.docclinic').html(r.doc.cli_list); 
+			
+			console.log(r.doc);
+		});
+	}
+}
+
 function bookFormAdaptiveShow(docid, cliid=false) 
 {
-	
-	//console.log('asd');
 	$('.docspec').text('');
 	$('.docprice').text('');
 	$('#doc_avatar').attr("src",'/img/nophoto.png');
@@ -18,11 +78,14 @@ function bookFormAdaptiveShow(docid, cliid=false)
 	{
 		$.post("/algo/processing/bookFormBootstrap.php", {'cliid':cliid}, function(resp){
 			var r = JSON.parse(resp);
+			console.log(r);
 			$('.docspec').text(r.doc.spec);
 			$('.docprice').text(r.doc.price);
 			$('.order-xs__submit').attr('cliid', r.cliid);
 			$('#doc_avatar').attr("src",r.cli.avatar);
 			$('.docfio').text(r.cli.name);
+			$('.ossbm').addClass('cli2_adaptive');
+			$('.ossbm').removeClass('doc2_adaptive'); 
 		
 		});
 	}
@@ -36,6 +99,8 @@ function bookFormAdaptiveShow(docid, cliid=false)
 			$('.order-xs__submit').attr('docid', r.doc.eid);
 			$('#doc_avatar').attr("src",r.doc.avatar);
 			$('.docfio').text(r.doc.name);
+			$('.ossbm').addClass('doc2_adaptive');
+			$('.ossbm').removeClass('cli2_adaptive'); 
 		
 		});
 	}
@@ -119,7 +184,6 @@ function bookFormTimeShow(docid)
 				});
 			}
 		});
-		//console.log(ttable);
 		
 	});
 	
@@ -132,7 +196,7 @@ function clinic_select(eid)
 		clidates = dates[eid];
 		table = ttable[eid];
 	},100);
-	//console.log(clidates);
+
 	
 	$('#step2, #step3, .step2, .step3').fadeOut(0);
 	// $('#s1').text('Шаг 1');
@@ -297,10 +361,8 @@ function bookFormShow(docid, cliid = false, sid = '', price = '', actname = '')
 		}
 		if(r.actname !== undefined)
 		{
-			console.log(r.actname);
 			$('#acttxt').text(r.actname); 
 		}
-		//console.log(resp);
 	});
 }
 Sharen = {
@@ -370,7 +432,13 @@ $(document).ready(function(){
 	$('input[name=q]').keydown(function(){
 		$('.search_tips').fadeOut(300);
 	});
-	
+	$('a').each(function(){
+		var that = $(this);
+		if(that.hasClass('bookFormMob') && that.hasClass('doc_1step'))
+			that.removeClass('doc_1step').addClass('doc_adaptive'); 
+		if(!that.hasClass('bookOneStep') && that.hasClass('cli_1step'))
+			that.removeClass('cli_1step').addClass('cli_adaptive'); 
+	});
 });
 function click_tip(tip)
 {

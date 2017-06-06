@@ -4496,7 +4496,7 @@ $(document).ready(function () {
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
 //! license : MIT
 //! momentjs.com
-!function (a, b) {
+/*!function (a, b) {
     "object" == typeof exports && "undefined" != typeof module ? module.exports = b() : "function" == typeof define && define.amd ? define(b) : a.moment = b()
 }
 (this, function () {
@@ -5656,19 +5656,19 @@ $(document).ready(function () {
 // to utilize falling through the cases.
         switch (a = J(a)) {
             case"year":
-                this.month(0);/* falls through */
+                this.month(0);/!* falls through *!/
             case"quarter":
             case"month":
-                this.date(1);/* falls through */
+                this.date(1);/!* falls through *!/
             case"week":
             case"isoWeek":
             case"day":
             case"date":
-                this.hours(0);/* falls through */
+                this.hours(0);/!* falls through *!/
             case"hour":
-                this.minutes(0);/* falls through */
+                this.minutes(0);/!* falls through *!/
             case"minute":
-                this.seconds(0);/* falls through */
+                this.seconds(0);/!* falls through *!/
             case"second":
                 this.milliseconds(0)
         }
@@ -6277,13 +6277,13 @@ $(document).ready(function () {
         return Jd(b) ? "viru " + a : "virun " + a
     }
 
-    /**
+    /!**
      * Returns true if the word before the given number loses the '-n' ending.
      * e.g. 'an 10 Deeg' but 'a 5 Deeg'
      *
      * @param number {integer}
      * @returns {boolean}
-     */
+     *!/
     function Jd(a) {
         if (a = parseInt(a, 10), isNaN(a))return !1;
         if (0 > a)
@@ -6327,9 +6327,9 @@ $(document).ready(function () {
         return 1 === a ? e + Ld(a, b, c[0], d) : b ? e + (Md(a) ? Nd(c)[1] : Nd(c)[0]) : d ? e + Nd(c)[1] : e + (Md(a) ? Nd(c)[1] : Nd(c)[2])
     }
 
-    /**
+    /!**
      * @param withoutSuffix boolean true = a length of time; false = before/after a period of time.
-     */
+     *!/
     function Pd(a, b, c) {
         return c ? b % 10 === 1 && b % 100 !== 11 ? a[2] : a[3] : b % 10 === 1 && b % 100 !== 11 ? a[0] : a[1]
     }
@@ -12586,7 +12586,7 @@ $(document).ready(function () {
         }
     }), kg);
     return sh.locale("en"), sh
-});
+});*/
 /*
  Copyright 2012 Igor Vaynberg
 

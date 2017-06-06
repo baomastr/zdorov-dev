@@ -1304,7 +1304,7 @@ $(document).ready(function () {
  * Released under the MIT license - http://opensource.org/licenses/MIT
  */
 
-;(function ($) {
+/*;(function ($) {
 
     var plugin = {};
 
@@ -1407,23 +1407,23 @@ $(document).ready(function () {
         var el = this;
         plugin.el = this;
 
-        /**
+        /!**
          * Makes slideshow responsive
-         */
+         *!/
         // first get the original window dimens (thanks alot IE)
         var windowWidth = $(window).width();
         var windowHeight = $(window).height();
 
 
-        /**
+        /!**
          * ===================================================================================
          * = PRIVATE FUNCTIONS
          * ===================================================================================
-         */
+         *!/
 
-        /**
+        /!**
          * Initializes namespace settings to be used throughout plugin
-         */
+         *!/
         var init = function () {
             // merge user-supplied options with the defaults
             slider.settings = $.extend({}, defaults, options);
@@ -1481,9 +1481,9 @@ $(document).ready(function () {
             setup();
         }
 
-        /**
+        /!**
          * Performs all DOM and CSS modifications
-         */
+         *!/
         var setup = function () {
             // wrap el in a wrapper
             el.wrap('<div class="' + slider.settings.wrapperClass + '"><div class="bx-viewport"></div></div>');
@@ -1590,9 +1590,9 @@ $(document).ready(function () {
             });
         }
 
-        /**
+        /!**
          * Start the slider
-         */
+         *!/
         var start = function () {
             // if infinite loop, prepare additional slides
             if (slider.settings.infiniteLoop && slider.settings.mode != 'fade' && !slider.settings.ticker) {
@@ -1629,9 +1629,9 @@ $(document).ready(function () {
             if (slider.settings.touchEnabled && !slider.settings.ticker) initTouch();
         }
 
-        /**
+        /!**
          * Returns the calculated height of the viewport, used to determine either adaptiveHeight or the maxHeight value
-         */
+         *!/
         var getViewportHeight = function () {
             var height = 0;
             // first determine which children (slides) should be used in our height calculation
@@ -1686,9 +1686,9 @@ $(document).ready(function () {
             return height;
         }
 
-        /**
+        /!**
          * Returns the calculated width to be used for the outer wrapper / viewport
-         */
+         *!/
         var getViewportMaxWidth = function () {
             var width = '100%';
             if (slider.settings.slideWidth > 0) {
@@ -1701,9 +1701,9 @@ $(document).ready(function () {
             return width;
         }
 
-        /**
+        /!**
          * Returns the calculated width to be applied to each slide
-         */
+         *!/
         var getSlideWidth = function () {
             // start with any user-supplied slide width
             var newElWidth = slider.settings.slideWidth;
@@ -1725,9 +1725,9 @@ $(document).ready(function () {
             return newElWidth;
         }
 
-        /**
+        /!**
          * Returns the number of slides currently visible in the viewport (includes partially visible slides)
-         */
+         *!/
         var getNumberSlidesShowing = function () {
             var slidesShowing = 1;
             if (slider.settings.mode == 'horizontal' && slider.settings.slideWidth > 0) {
@@ -1750,9 +1750,9 @@ $(document).ready(function () {
             return slidesShowing;
         }
 
-        /**
+        /!**
          * Returns the number of pages (one full viewport of slides is one "page")
-         */
+         *!/
         var getPagerQty = function () {
             var pagerQty = 0;
             // if moveSlides is specified by the user
@@ -1777,9 +1777,9 @@ $(document).ready(function () {
             return pagerQty;
         }
 
-        /**
+        /!**
          * Returns the number of indivual slides by which to shift the slider
-         */
+         *!/
         var getMoveBy = function () {
             // if moveSlides was set by the user and moveSlides is less than number of slides showing
             if (slider.settings.moveSlides > 0 && slider.settings.moveSlides <= getNumberSlidesShowing()) {
@@ -1789,9 +1789,9 @@ $(document).ready(function () {
             return getNumberSlidesShowing();
         }
 
-        /**
+        /!**
          * Sets the slider's (el) left or top position
-         */
+         *!/
         var setSlidePosition = function () {
             // if last slide, not infinite loop, and number of children is larger than specified maxSlides
             if (slider.children.length > slider.settings.maxSlides && slider.active.last && !slider.settings.infiniteLoop) {
@@ -1822,7 +1822,7 @@ $(document).ready(function () {
             }
         }
 
-        /**
+        /!**
          * Sets the el's animating property position (which in turn will sometimes animate el).
          * If using CSS, sets the transform property. If not using CSS, sets the top / left property.
          *
@@ -1837,7 +1837,7 @@ $(document).ready(function () {
          *
          * @param params (array) optional
          *  - an optional parameter containing any variables that need to be passed in
-         */
+         *!/
         var setPositionProperty = function (value, type, duration, params) {
             // use CSS transform
             if (slider.usingCSS) {
@@ -1890,9 +1890,9 @@ $(document).ready(function () {
             }
         }
 
-        /**
+        /!**
          * Populates the pager with proper amount of pages
-         */
+         *!/
         var populatePager = function () {
             var pagerHtml = '';
             var pagerQty = getPagerQty();
@@ -1916,9 +1916,9 @@ $(document).ready(function () {
             slider.pagerEl.html(pagerHtml);
         }
 
-        /**
+        /!**
          * Appends the pager to the controls element
-         */
+         *!/
         var appendPager = function () {
             if (!slider.settings.pagerCustom) {
                 // create the pager DOM element
@@ -1939,9 +1939,9 @@ $(document).ready(function () {
             slider.pagerEl.on('click', 'a', clickPagerBind);
         }
 
-        /**
+        /!**
          * Appends prev / next controls to the controls element
-         */
+         *!/
         var appendControls = function () {
             slider.controls.next = $('<a class="bx-next" href="">' + slider.settings.nextText + '</a>');
             slider.controls.prev = $('<a class="bx-prev" href="">' + slider.settings.prevText + '</a>');
@@ -1967,9 +1967,9 @@ $(document).ready(function () {
             }
         }
 
-        /**
+        /!**
          * Appends start / stop auto controls to the controls element
-         */
+         *!/
         var appendControlsAuto = function () {
             slider.controls.start = $('<div class="bx-controls-auto-item"><a class="bx-start" href="">' + slider.settings.startText + '</a></div>');
             slider.controls.stop = $('<div class="bx-controls-auto-item"><a class="bx-stop" href="">' + slider.settings.stopText + '</a></div>');
@@ -1996,9 +1996,9 @@ $(document).ready(function () {
             updateAutoControls(slider.settings.autoStart ? 'stop' : 'start');
         }
 
-        /**
+        /!**
          * Appends image captions to the DOM
-         */
+         *!/
         var appendCaptions = function () {
             // cycle through each child
             slider.children.each(function (index) {
@@ -2011,12 +2011,12 @@ $(document).ready(function () {
             });
         }
 
-        /**
+        /!**
          * Click next binding
          *
          * @param e (event)
          *  - DOM event object
-         */
+         *!/
         var clickNextBind = function (e) {
             // if auto show is running, stop it
             if (slider.settings.auto) el.stopAuto();
@@ -2027,12 +2027,12 @@ $(document).ready(function () {
             $('.st-list').fadeOut(100);
         }
 
-        /**
+        /!**
          * Click prev binding
          *
          * @param e (event)
          *  - DOM event object
-         */
+         *!/
         var clickPrevBind = function (e) {
             // if auto show is running, stop it
             if (slider.settings.auto) el.stopAuto();
@@ -2043,34 +2043,34 @@ $(document).ready(function () {
             $('.st-list').fadeOut(100);
         }
 
-        /**
+        /!**
          * Click start binding
          *
          * @param e (event)
          *  - DOM event object
-         */
+         *!/
         var clickStartBind = function (e) {
             el.startAuto();
             e.preventDefault();
         }
 
-        /**
+        /!**
          * Click stop binding
          *
          * @param e (event)
          *  - DOM event object
-         */
+         *!/
         var clickStopBind = function (e) {
             el.stopAuto();
             e.preventDefault();
         }
 
-        /**
+        /!**
          * Click pager binding
          *
          * @param e (event)
          *  - DOM event object
-         */
+         *!/
         var clickPagerBind = function (e) {
             // if auto show is running, stop it
             if (slider.settings.auto) el.stopAuto();
@@ -2083,12 +2083,12 @@ $(document).ready(function () {
             }
         }
 
-        /**
+        /!**
          * Updates the pager links with an active class
          *
          * @param slideIndex (int)
          *  - index of slide to make active
-         */
+         *!/
         var updatePagerActive = function (slideIndex) {
             // if "short" pager type
             var len = slider.children.length; // nb of children
@@ -2107,9 +2107,9 @@ $(document).ready(function () {
             });
         }
 
-        /**
+        /!**
          * Performs needed actions after a slide transition
-         */
+         *!/
         var updateAfterSlideTransition = function () {
             // if infinte loop is true
             if (slider.settings.infiniteLoop) {
@@ -2140,12 +2140,12 @@ $(document).ready(function () {
             slider.settings.onSlideAfter(slider.children.eq(slider.active.index), slider.oldIndex, slider.active.index);
         }
 
-        /**
+        /!**
          * Updates the auto controls state (either active, or combined switch)
          *
          * @param state (string) "start", "stop"
          *  - the new state of the auto show
-         */
+         *!/
         var updateAutoControls = function (state) {
             // if autoControlsCombine is true, replace the current control with the new state
             if (slider.settings.autoControlsCombine) {
@@ -2157,9 +2157,9 @@ $(document).ready(function () {
             }
         }
 
-        /**
+        /!**
          * Updates the direction controls (checks if either should be hidden)
-         */
+         *!/
         var updateDirectionControls = function () {
             if (getPagerQty() == 1) {
                 slider.controls.prev.addClass('disabled');
@@ -2181,9 +2181,9 @@ $(document).ready(function () {
             }
         }
 
-        /**
+        /!**
          * Initialzes the auto process
-         */
+         *!/
         var initAuto = function () {
             // if autoDelay was supplied, launch the auto show using a setTimeout() call
             if (slider.settings.autoDelay > 0) {
@@ -2215,9 +2215,9 @@ $(document).ready(function () {
             }
         }
 
-        /**
+        /!**
          * Initialzes the ticker process
-         */
+         *!/
         var initTicker = function () {
             var startPosition = 0;
             // if autoDirection is "next", append a clone of the entire slider
@@ -2258,9 +2258,9 @@ $(document).ready(function () {
             tickerLoop();
         }
 
-        /**
+        /!**
          * Runs a continuous loop, news ticker-style
-         */
+         *!/
         var tickerLoop = function (resumeSpeed) {
             speed = resumeSpeed ? resumeSpeed : slider.settings.speed;
             var position = {left: 0, top: 0};
@@ -2278,9 +2278,9 @@ $(document).ready(function () {
             setPositionProperty(animateProperty, 'ticker', speed, params);
         }
 
-        /**
+        /!**
          * Initializes touch events
-         */
+         *!/
         var initTouch = function () {
             // initialize object to contain all touch values
             slider.touch = {
@@ -2290,12 +2290,12 @@ $(document).ready(function () {
             slider.viewport.bind('touchstart', onTouchStart);
         }
 
-        /**
+        /!**
          * Event handler for "touchstart"
          *
          * @param e (event)
          *  - DOM event object
-         */
+         *!/
         var onTouchStart = function (e) {
             if (slider.working) {
                 e.preventDefault();
@@ -2313,12 +2313,12 @@ $(document).ready(function () {
             }
         }
 
-        /**
+        /!**
          * Event handler for "touchmove"
          *
          * @param e (event)
          *  - DOM event object
-         */
+         *!/
         var onTouchMove = function (e) {
             var orig = e.originalEvent;
             // if scrolling on y axis, do not prevent default
@@ -2346,12 +2346,12 @@ $(document).ready(function () {
             }
         }
 
-        /**
+        /!**
          * Event handler for "touchend"
          *
          * @param e (event)
          *  - DOM event object
-         */
+         *!/
         var onTouchEnd = function (e) {
             slider.viewport.unbind('touchmove', onTouchMove);
             var orig = e.originalEvent;
@@ -2394,9 +2394,9 @@ $(document).ready(function () {
             slider.viewport.unbind('touchend', onTouchEnd);
         }
 
-        /**
+        /!**
          * Window resize event callback
-         */
+         *!/
         var resizeWindow = function (e) {
             // don't do anything if slider isn't initialized.
             if (!slider.initialized) return;
@@ -2417,13 +2417,13 @@ $(document).ready(function () {
             }
         }
 
-        /**
+        /!**
          * ===================================================================================
          * = PUBLIC FUNCTIONS
          * ===================================================================================
-         */
+         *!/
 
-        /**
+        /!**
          * Performs slide transition to the specified slide
          *
          * @param slideIndex (int)
@@ -2431,7 +2431,7 @@ $(document).ready(function () {
          *
          * @param direction (string)
          *  - INTERNAL USE ONLY - the direction of travel ("prev" / "next")
-         */
+         *!/
         el.goToSlide = function (slideIndex, direction) {
             // if plugin is currently in motion, ignore request
             if (slider.working || slider.active.index == slideIndex) return;
@@ -2513,10 +2513,10 @@ $(document).ready(function () {
                     position = slider.children.eq(requestEl).position();
                 }
 
-                /* If the position doesn't exist
+                /!* If the position doesn't exist
                  * (e.g. if you destroy the slider on a next click),
                  * it doesn't throw an error.
-                 */
+                 *!/
                 if ("undefined" !== typeof(position)) {
                     var value = slider.settings.mode == 'horizontal' ? -(position.left - moveBy) : -position.top;
                     // plugin values to be animated
@@ -2525,9 +2525,9 @@ $(document).ready(function () {
             }
         }
 
-        /**
+        /!**
          * Transitions to the next slide in the show
-         */
+         *!/
         el.goToNextSlide = function () {
             // if infiniteLoop is false and last page is showing, disregard call
             if (!slider.settings.infiniteLoop && slider.active.last) return;
@@ -2535,9 +2535,9 @@ $(document).ready(function () {
             el.goToSlide(pagerIndex, 'next');
         }
 
-        /**
+        /!**
          * Transitions to the prev slide in the show
-         */
+         *!/
         el.goToPrevSlide = function () {
             // if infiniteLoop is false and last page is showing, disregard call
             if (!slider.settings.infiniteLoop && slider.active.index == 0) return;
@@ -2545,12 +2545,12 @@ $(document).ready(function () {
             el.goToSlide(pagerIndex, 'prev');
         }
 
-        /**
+        /!**
          * Starts the auto show
          *
          * @param preventControlUpdate (boolean)
          *  - if true, auto controls state will not be updated
-         */
+         *!/
         el.startAuto = function (preventControlUpdate) {
             // if an interval already exists, disregard call
             if (slider.interval) return;
@@ -2562,12 +2562,12 @@ $(document).ready(function () {
             if (slider.settings.autoControls && preventControlUpdate != true) updateAutoControls('stop');
         }
 
-        /**
+        /!**
          * Stops the auto show
          *
          * @param preventControlUpdate (boolean)
          *  - if true, auto controls state will not be updated
-         */
+         *!/
         el.stopAuto = function (preventControlUpdate) {
             // if no interval exists, disregard call
             if (!slider.interval) return;
@@ -2578,30 +2578,30 @@ $(document).ready(function () {
             if (slider.settings.autoControls && preventControlUpdate != true) updateAutoControls('start');
         }
 
-        /**
+        /!**
          * Returns current slide index (zero-based)
-         */
+         *!/
         el.getCurrentSlide = function () {
             return slider.active.index;
         }
 
-        /**
+        /!**
          * Returns current slide element
-         */
+         *!/
         el.getCurrentSlideElement = function () {
             return slider.children.eq(slider.active.index);
         }
 
-        /**
+        /!**
          * Returns number of slides in show
-         */
+         *!/
         el.getSlideCount = function () {
             return slider.children.length;
         }
 
-        /**
+        /!**
          * Update all dynamic slider elements
-         */
+         *!/
         el.redrawSlider = function () {
             // resize all children in ratio to new screen size
             slider.children.add(el.find('.bx-clone')).width(getSlideWidth());
@@ -2621,9 +2621,9 @@ $(document).ready(function () {
             }
         }
 
-        /**
+        /!**
          * Destroy the current instance of the slider (revert everything back to original state)
-         */
+         *!/
         el.destroySlider = function () {
             // don't do anything if slider has already been destroyed
             if (!slider.initialized) return;
@@ -2644,9 +2644,9 @@ $(document).ready(function () {
             if (slider.settings.responsive) $(window).unbind('resize', resizeWindow);
         }
 
-        /**
+        /!**
          * Reload the slider (revert all DOM changes, and re-initialize)
-         */
+         *!/
         el.reloadSlider = function (settings) {
             if (settings != undefined) options = settings;
             el.destroySlider();
@@ -2659,7 +2659,7 @@ $(document).ready(function () {
         return this;
     }
 
-})(jQuery);
+})(jQuery);*/
 
 /*
  jQuery Masked Input Plugin
@@ -2669,7 +2669,8 @@ $(document).ready(function () {
  */
 !function (factory) {
     "function" == typeof define && define.amd ? define(["jquery"], factory) : factory("object" == typeof exports ? require("jquery") : jQuery);
-}(function ($) {
+}
+(function ($) {
     var caretTimeoutId, ua = navigator.userAgent, iPhone = /iphone/i.test(ua), chrome = /chrome/i.test(ua), android = /android/i.test(ua);
     $.mask = {
         definitions: {
@@ -3137,7 +3138,8 @@ $(document).ready(function () {
     } else {
         factory(jQuery);
     }
-}(function ($) {
+}
+(function ($) {
 
     $.extend($.fn, {
         // http://jqueryvalidation.org/validate/
@@ -4496,7 +4498,8 @@ $(document).ready(function () {
 //! momentjs.com
 !function (a, b) {
     "object" == typeof exports && "undefined" != typeof module ? module.exports = b() : "function" == typeof define && define.amd ? define(b) : a.moment = b()
-}(this, function () {
+}
+(this, function () {
     "use strict";
     function a() {
         return je.apply(null, arguments)
@@ -17349,12 +17352,12 @@ $(document).ready(function () {
  *
  * Released on: October 10, 2015
  */
-(function () {
+/*(function () {
     'use strict';
     var $;
-    /*===========================
+    /!*===========================
      Swiper
-     ===========================*/
+     ===========================*!/
     var Swiper = function (container, params) {
         if (!(this instanceof Swiper)) return new Swiper(container, params);
 
@@ -17504,7 +17507,7 @@ $(document).ready(function () {
             paginationBulletMessage: 'Go to slide {{index}}',
             // Callbacks
             runCallbacksOnInit: true
-            /*
+            /!*
              Callbacks:
              onInit: function (swiper)
              onDestroy: function (swiper)
@@ -17530,7 +17533,7 @@ $(document).ready(function () {
              onAutoplayStop: function (swiper),
              onLazyImageLoad: function (swiper, slide, image)
              onLazyImageReady: function (swiper, slide, image)
-             */
+             *!/
 
         };
         var initialVirtualTranslate = params && params.virtualTranslate;
@@ -17557,9 +17560,9 @@ $(document).ready(function () {
 
         // Classname
         s.classNames = [];
-        /*=========================
+        /!*=========================
          Dom Library and plugins
-         ===========================*/
+         ===========================*!/
         if (typeof $ !== 'undefined' && typeof Dom7 !== 'undefined') {
             $ = Dom7;
         }
@@ -17575,9 +17578,9 @@ $(document).ready(function () {
         // Export it to Swiper instance
         s.$ = $;
 
-        /*=========================
+        /!*=========================
          Preparation - Define Container, Wrapper and Pagination
-         ===========================*/
+         ===========================*!/
         s.container = $(container);
         if (s.container.length === 0) return;
         if (s.container.length > 1) {
@@ -17692,9 +17695,9 @@ $(document).ready(function () {
         // Velocity
         s.velocity = 0;
 
-        /*=========================
+        /!*=========================
          Locks, unlocks
-         ===========================*/
+         ===========================*!/
         s.lockSwipeToNext = function () {
             s.params.allowSwipeToNext = false;
         };
@@ -17714,25 +17717,25 @@ $(document).ready(function () {
             s.params.allowSwipeToNext = s.params.allowSwipeToPrev = true;
         };
 
-        /*=========================
+        /!*=========================
          Round helper
-         ===========================*/
+         ===========================*!/
         function round(a) {
             return Math.floor(a);
         }
 
-        /*=========================
+        /!*=========================
          Set grab cursor
-         ===========================*/
+         ===========================*!/
         if (s.params.grabCursor) {
             s.container[0].style.cursor = 'move';
             s.container[0].style.cursor = '-webkit-grab';
             s.container[0].style.cursor = '-moz-grab';
             s.container[0].style.cursor = 'grab';
         }
-        /*=========================
+        /!*=========================
          Update on Images Ready
-         ===========================*/
+         ===========================*!/
         s.imagesToLoad = [];
         s.imagesLoaded = 0;
 
@@ -17778,9 +17781,9 @@ $(document).ready(function () {
             }
         };
 
-        /*=========================
+        /!*=========================
          Autoplay
-         ===========================*/
+         ===========================*!/
         s.autoplayTimeoutId = undefined;
         s.autoplaying = false;
         s.autoplayPaused = false;
@@ -17842,18 +17845,18 @@ $(document).ready(function () {
                 });
             }
         };
-        /*=========================
+        /!*=========================
          Min/Max Translate
-         ===========================*/
+         ===========================*!/
         s.minTranslate = function () {
             return (-s.snapGrid[0]);
         };
         s.maxTranslate = function () {
             return (-s.snapGrid[s.snapGrid.length - 1]);
         };
-        /*=========================
+        /!*=========================
          Slider/slides sizes
-         ===========================*/
+         ===========================*!/
         s.updateContainerSize = function () {
             var width, height;
             if (typeof s.params.width !== 'undefined') {
@@ -18054,9 +18057,9 @@ $(document).ready(function () {
             }
         };
 
-        /*=========================
+        /!*=========================
          Slider/slides progress
-         ===========================*/
+         ===========================*!/
         s.updateSlidesProgress = function (translate) {
             if (typeof translate === 'undefined') {
                 translate = s.translate || 0;
@@ -18146,9 +18149,9 @@ $(document).ready(function () {
             s.updateClasses();
         };
 
-        /*=========================
+        /!*=========================
          Classes
-         ===========================*/
+         ===========================*!/
         s.updateClasses = function () {
             s.slides.removeClass(s.params.slideActiveClass + ' ' + s.params.slideNextClass + ' ' + s.params.slidePrevClass);
             var activeSlide = s.slides.eq(s.activeIndex);
@@ -18211,9 +18214,9 @@ $(document).ready(function () {
             }
         };
 
-        /*=========================
+        /!*=========================
          Pagination
-         ===========================*/
+         ===========================*!/
         s.updatePagination = function () {
             if (!s.params.pagination) return;
             if (s.paginationContainer && s.paginationContainer.length > 0) {
@@ -18234,9 +18237,9 @@ $(document).ready(function () {
                 }
             }
         };
-        /*=========================
+        /!*=========================
          Common update method
-         ===========================*/
+         ===========================*!/
         s.update = function (updateTranslate) {
             s.updateContainerSize();
             s.updateSlidesSize();
@@ -18276,9 +18279,9 @@ $(document).ready(function () {
             }
         };
 
-        /*=========================
+        /!*=========================
          Resize Handler
-         ===========================*/
+         ===========================*!/
         s.onResize = function (forceUpdatePagination) {
             // Disable locks on resize
             var allowSwipeToPrev = s.params.allowSwipeToPrev;
@@ -18314,9 +18317,9 @@ $(document).ready(function () {
             s.params.allowSwipeToNext = allowSwipeToNext;
         };
 
-        /*=========================
+        /!*=========================
          Events
-         ===========================*/
+         ===========================*!/
 
         //Define Touch Events
         var desktopEvents = ['mousedown', 'mousemove', 'mouseup'];
@@ -18387,9 +18390,9 @@ $(document).ready(function () {
             s.initEvents(true);
         };
 
-        /*=========================
+        /!*=========================
          Handle Clicks
-         ===========================*/
+         ===========================*!/
         // Prevent Clicks
         s.allowClick = true;
         s.preventClicks = function (e) {
@@ -18419,9 +18422,9 @@ $(document).ready(function () {
             s.slideTo(index);
         };
 
-        /*=========================
+        /!*=========================
          Handle Touches
-         ===========================*/
+         ===========================*!/
         function findElementInEvent(e, selector) {
             var el = $(e.target);
             if (!el.is(selector)) {
@@ -18978,9 +18981,9 @@ $(document).ready(function () {
                 }
             }
         };
-        /*=========================
+        /!*=========================
          Transitions
-         ===========================*/
+         ===========================*!/
         s._slideTo = function (slideIndex, speed) {
             return s.slideTo(slideIndex, speed, true, true);
         };
@@ -19107,9 +19110,9 @@ $(document).ready(function () {
             return s.slideTo(s.activeIndex, speed, runCallbacks);
         };
 
-        /*=========================
+        /!*=========================
          Translate/transition helpers
-         ===========================*/
+         ===========================*!/
         s.setWrapperTransition = function (duration, byController) {
             s.wrapper.transition(duration);
             if (s.params.effect !== 'slide' && s.effects[s.params.effect]) {
@@ -19224,9 +19227,9 @@ $(document).ready(function () {
             return s.getTranslate(s.wrapper[0], axis);
         };
 
-        /*=========================
+        /!*=========================
          Observer
-         ===========================*/
+         ===========================*!/
         s.observers = [];
         function initObserver(target, options) {
             options = options || {};
@@ -19268,9 +19271,9 @@ $(document).ready(function () {
             }
             s.observers = [];
         };
-        /*=========================
+        /!*=========================
          Loop
-         ===========================*/
+         ===========================*!/
         // Create looped slides
         s.createLoop = function () {
             // Remove duplicated slides
@@ -19319,9 +19322,9 @@ $(document).ready(function () {
                 s.slideTo(newIndex, 0, false, true);
             }
         };
-        /*=========================
+        /!*=========================
          Append/Prepend/Remove Slides
-         ===========================*/
+         ===========================*!/
         s.appendSlide = function (slides) {
             if (s.params.loop) {
                 s.destroyLoop();
@@ -19409,9 +19412,9 @@ $(document).ready(function () {
         };
 
 
-        /*=========================
+        /!*=========================
          Effects
-         ===========================*/
+         ===========================*!/
         s.effects = {
             fade: {
                 setTranslate: function () {
@@ -19623,9 +19626,9 @@ $(document).ready(function () {
             }
         };
 
-        /*=========================
+        /!*=========================
          Images Lazy Loading
-         ===========================*/
+         ===========================*!/
         s.lazy = {
             initialImageLoaded: false,
             loadImageInSlide: function (index, loadInDuplicate) {
@@ -19735,9 +19738,9 @@ $(document).ready(function () {
         };
 
 
-        /*=========================
+        /!*=========================
          Scrollbar
-         ===========================*/
+         ===========================*!/
         s.scrollbar = {
             isTouched: false,
             setDragPosition: function (e) {
@@ -19914,9 +19917,9 @@ $(document).ready(function () {
             }
         };
 
-        /*=========================
+        /!*=========================
          Controller
-         ===========================*/
+         ===========================*!/
         s.controller = {
             LinearSpline: function (x, y) {
                 this.x = x;
@@ -20035,9 +20038,9 @@ $(document).ready(function () {
             }
         };
 
-        /*=========================
+        /!*=========================
          Hash Navigation
-         ===========================*/
+         ===========================*!/
         s.hashnav = {
             init: function () {
                 if (!s.params.hashnav) return;
@@ -20060,9 +20063,9 @@ $(document).ready(function () {
             }
         };
 
-        /*=========================
+        /!*=========================
          Keyboard Control
-         ===========================*/
+         ===========================*!/
         function handleKeyboard(e) {
             if (e.originalEvent) e = e.originalEvent; //jquery fix
             var kc = e.keyCode || e.charCode;
@@ -20137,9 +20140,9 @@ $(document).ready(function () {
         };
 
 
-        /*=========================
+        /!*=========================
          Mousewheel Control
-         ===========================*/
+         ===========================*!/
         s.mousewheel = {
             event: false,
             lastScrollTime: (new window.Date()).getTime()
@@ -20258,9 +20261,9 @@ $(document).ready(function () {
             return true;
         };
 
-        /*=========================
+        /!*=========================
          Parallax
-         ===========================*/
+         ===========================*!/
         function setParallaxTransform(el, progress) {
             el = $(el);
             var p, pX, pY;
@@ -20323,9 +20326,9 @@ $(document).ready(function () {
         };
 
 
-        /*=========================
+        /!*=========================
          Plugins API. Collect all and init all plugins
-         ===========================*/
+         ===========================*!/
         s._plugins = [];
         for (var plugin in s.plugins) {
             var p = s.plugins[plugin](s, s.params[plugin]);
@@ -20340,9 +20343,9 @@ $(document).ready(function () {
             }
         };
 
-        /*=========================
+        /!*=========================
          Events/Callbacks/Plugins Emitter
-         ===========================*/
+         ===========================*!/
         function normalizeEventName(eventName) {
             if (eventName.indexOf('on') !== 0) {
                 if (eventName[0] !== eventName[0].toUpperCase()) {
@@ -20493,9 +20496,9 @@ $(document).ready(function () {
         };
 
 
-        /*=========================
+        /!*=========================
          Init/Destroy
-         ===========================*/
+         ===========================*!/
         s.init = function () {
             if (s.params.loop) s.createLoop();
             s.updateContainerSize();
@@ -20633,9 +20636,9 @@ $(document).ready(function () {
     };
 
 
-    /*==================================================
+    /!*==================================================
      Prototype
-     ====================================================*/
+     ====================================================*!/
     Swiper.prototype = {
         isSafari: (function () {
             var ua = navigator.userAgent.toLowerCase();
@@ -20645,16 +20648,16 @@ $(document).ready(function () {
         isArray: function (arr) {
             return Object.prototype.toString.apply(arr) === '[object Array]';
         },
-        /*==================================================
+        /!*==================================================
          Browser
-         ====================================================*/
+         ====================================================*!/
         browser: {
             ie: window.navigator.pointerEnabled || window.navigator.msPointerEnabled,
             ieTouch: (window.navigator.msPointerEnabled && window.navigator.msMaxTouchPoints > 1) || (window.navigator.pointerEnabled && window.navigator.maxTouchPoints > 1)
         },
-        /*==================================================
+        /!*==================================================
          Devices
-         ====================================================*/
+         ====================================================*!/
         device: (function () {
             var ua = navigator.userAgent;
             var android = ua.match(/(Android);?[\s\/]+([\d.]+)?/);
@@ -20666,9 +20669,9 @@ $(document).ready(function () {
                 android: android
             };
         })(),
-        /*==================================================
+        /!*==================================================
          Feature Detection
-         ====================================================*/
+         ====================================================*!/
         support: {
             touch: (window.Modernizr && Modernizr.touch === true) || (function () {
                 return !!(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
@@ -20691,16 +20694,16 @@ $(document).ready(function () {
                 return ('MutationObserver' in window || 'WebkitMutationObserver' in window);
             })()
         },
-        /*==================================================
+        /!*==================================================
          Plugins
-         ====================================================*/
+         ====================================================*!/
         plugins: {}
     };
 
 
-    /*===========================
+    /!*===========================
      Get Dom libraries
-     ===========================*/
+     ===========================*!/
     var swiperDomPlugins = ['jQuery', 'Zepto', 'Dom7'];
     for (var i = 0; i < swiperDomPlugins.length; i++) {
         if (window[swiperDomPlugins[i]]) {
@@ -20716,9 +20719,9 @@ $(document).ready(function () {
         domLib = Dom7;
     }
 
-    /*===========================
+    /!*===========================
      Add .swiper plugin from Dom libraries
-     ===========================*/
+     ===========================*!/
     function addLibraryPlugin(lib) {
         lib.fn.swiper = function (params) {
             var firstInstance;
@@ -20737,7 +20740,7 @@ $(document).ready(function () {
                     i, j, dom = this;
 
                 function fireCallBack(e) {
-                    /*jshint validthis:true */
+                    /!*jshint validthis:true *!/
                     if (e.target !== this) return;
                     callback.call(this, e);
                     for (i = 0; i < events.length; i++) {
@@ -20777,11 +20780,11 @@ $(document).ready(function () {
     }
 
     window.Swiper = Swiper;
-})();
+})();*/
 /*===========================
  Swiper AMD Export
  ===========================*/
-if (typeof(module) !== 'undefined') {
+/*if (typeof(module) !== 'undefined') {
     module.exports = window.Swiper;
 }
 else if (typeof define === 'function' && define.amd) {
@@ -20789,7 +20792,8 @@ else if (typeof define === 'function' && define.amd) {
         'use strict';
         return window.Swiper;
     });
-}
+}*/
+
 function autoWidthSelfTsest() {
     var widthST = 680;
     var bodyWidthST = $('html').width();
@@ -20819,6 +20823,7 @@ function autoWidthSelfTsest() {
         }).eq(0).addClass("active-baby");
     }
 }
+
 function autoWidthSymptom() {
     var widthSm = 925;
     var bodyWidthSm = $('html').width();
@@ -20845,23 +20850,26 @@ function autoWidthSymptom() {
         });
     }
 }
+
 $(function () {
     autoWidthSymptom();
 });
+
 $(function () {
     autoWidthSelfTsest();
 });
+
 $(window).resize(function () {
     autoWidthSelfTsest();
 });
 
 $(".tab_item").not(":first").hide();
+
 $(".wrapper .tab").show().click(function () {
     var ind = $(this).index();
     $(".wrapper .tab").removeClass("active-done").eq(ind).addClass("active-done");
     $(".tab_item").hide().eq(ind).fadeIn()
 }).eq(0).addClass("active-done");
-
 
 $(".tab_item-test").not(":first").hide();
 $(".self-test__wrap .tab-test").show().click(function () {
@@ -20877,16 +20885,15 @@ $(".wrapper-qw .tab-qw").show().click(function () {
     $(".tab_item-qw").hide().eq(ind).fadeIn()
 }).eq(0).addClass("active-qw");
 
-
 $('#online').click(function () {
     $('#online').css('display', 'none');
     $('#offline').css('display', 'block');
 });
+
 $('#offline').click(function () {
     $('#online').css('display', 'block');
     $('#offline').css('display', 'none');
 });
-
 
 $('[id*=leave-reviews]').click(function (e) {
     e.preventDefault();
@@ -21254,7 +21261,6 @@ $('.path-body__link--taz-systav').mouseover(function () {
 /*end symptom legs*/
 
 
-
 /*symptom hand*/
 
 $('.path-body__img--shoulder').mouseover(function () {
@@ -21348,7 +21354,6 @@ $('.path-body__link--neck-left-side').mouseover(function () {
 
 /*symptom chest*/
 
-
 $('.path-body__img--chest-skin').mouseover(function () {
     $('.path-body__link--chest-skin').addClass('active-list-link ');
 }).mouseout(function () {
@@ -21434,8 +21439,6 @@ $('.path-body__link--chest-blade-bone').mouseover(function () {
 
 
 /* symptom small pelvis */
-
-
 $('.path-body__img--small-pelvis-penis').mouseover(function () {
     $('.path-body__link--small-pelvis-penis').addClass('active-list-link ');
 }).mouseout(function () {
@@ -22061,7 +22064,6 @@ $(window).resize(function () {
     autoWidth();
 });
 
-
 $(document).ready(function () {
     $('.harmonica-menu-js a').click(function () {
         $(this).next('.harmonica-menu-js-hidden').slideToggle();
@@ -22105,13 +22107,14 @@ $('.more-bottom').click(function () {
     }
 });
 
-
+/*показать номер телефона*/
 $(function () {
     $('.clinic-time__number--main-clinic').click(function () {
         $(this).siblings('.clinic-time__tel--main-clinic').css("display", "block");
         $(this).hide();
     });
 });
+
 $(function () {
     $('.clicktext').toggle(function () {
         $(this).siblings('.article-text-hide').addClass('article-text-show').removeClass('article-text-hide');
@@ -22122,7 +22125,7 @@ $(function () {
     });
 });
 
-
+/*Подробнее*/
 $(function () {
     $('.rev').on('click', '.open', function () {
         var hBlock = $(this).siblings('.sub');
@@ -22130,6 +22133,7 @@ $(function () {
         hBlock.toggleClass('hide');
     });
 });
+
 $(function () {
     $('.left-side').on('click', '.record-btn', function () {
         var hBlock = $(this).siblings('.record-form');
@@ -22137,6 +22141,7 @@ $(function () {
         $(this).toggleClass('hiden');
     });
 });
+
 $(function () {
     $('.left-side').on('click', '.answer-doc-btn', function () {
         var hBlock = $(this).siblings('.answer-doc__wrap');
@@ -22153,6 +22158,17 @@ $(function () {
         $(this).toggleClass('hide');
     });
 });
+
+
+$('.js-more-text').on('click', function () {
+    $(this).parents('div.cell').find('.js-lechenie').css('height', '100%');
+    $(this).parents('p.more-text').remove();
+});
+$('.js-open-info').on('click', function () {
+    $(this).siblings('div.js-hide-info').css('display', 'block');
+});
+
+
 
 
 $('.textQW').keyup(function () {
@@ -22287,6 +22303,7 @@ Sharen = {
         }
     });
 })();
+
 (function () {
     jQuery('#spterm-s').on('input', function () {
         if (jQuery('#spterm-s').val() != term) {
@@ -22396,8 +22413,6 @@ $(function () {
         return false;
     });
 });
-
-
 /* end of form by vopros-otvet*/
 
 /*add form to comment by vopros-otvet*/
@@ -22448,13 +22463,6 @@ $('body').on('click', '.like', function (e) {
 /*end like by vopros-otvet*/
 
 
-$('.js-more-text').on('click', function () {
-    $(this).parents('div.cell').find('.js-lechenie').css('height', '100%');
-    $(this).parents('p.more-text').remove();
-});
-$('.js-open-info').on('click', function () {
-    $(this).siblings('div.js-hide-info').css('display', 'block');
-});
 
 
 $(document).ready(function () {
@@ -22506,6 +22514,7 @@ $(document).ready(function () {
     });
 });
 
+
 $(document).ready(function () {
     //console.log($('.js-regaliya').height());
     $('.js-regaliya', this).each(function () {
@@ -22522,4 +22531,182 @@ $(document).ready(function () {
 
         }
     });
+});
+
+$('.select-qw').select2();
+
+$('.select-metro').select2({ maximumSelectionSize: 1 });
+
+$('.popup-onestep__form-input.docclinic').select2({ maximumSelectionSize: 1 });
+
+$(document).ready(function () {
+    $('.select').select2({});
+    console.log('select');
+});
+
+$(document).ready(function () {
+    $('.bxslider-expert').bxSlider({
+        auto: true,
+        speed: 1500
+    });
+});
+$('div.rating-js').rating();
+
+$(document).ready(function () {
+    $('#patient-info').validate({
+        rules: {
+            password: {
+                rangelength: [4, 8]
+            },
+            confirm_password: {
+                equalTo: '#password'
+            }
+
+        },
+        messages: {
+            password: {
+                rangelength: "Пароль должен содержать от 4 до 8 символов"
+            },
+            confirm_password: {
+                required: "Подтвердите пароль",
+                equalTo: "Пароли не совпадают"
+            }
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('#reg-user__form').validate({
+        rules: {
+            name: {
+                required: true
+            },
+            email: {
+                required: true
+            },
+            password: {
+                required: true,
+                rangelength: [4, 8]
+            },
+            confirm_password: {
+                equalTo: '#password'
+            }
+
+        },
+        messages: {
+            name: {
+                required: "Поле не заполнено"
+            },
+            email: {
+                required: "Поле не заполнено"
+            },
+            password: {
+                required: "Вы не ввели пароль",
+                rangelength: "Пароль должен содержать от 4 до 8 символов"
+            },
+            confirm_password: {
+                required: "Подтвердите пароль",
+                equalTo: "Пароли не совпадают"
+            }
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('.bxslider-body').bxSlider({
+        mode: 'fade',
+        adaptiveHeight: true,
+        infiniteLoop: true
+    });
+    $('.bxslider-right').bxSlider({
+        auto: true,
+        speed: 1500
+    });
+});
+
+$(document).ready(function () {
+
+    if ( $('.banner_hny_action').length ){
+
+        var StickyBanner = function(node){
+            var doc = $(document),
+                fixed = false,
+                anchor = node.find('.banner-anchor'),
+                content = node.find('.banner-content');
+
+            var onScroll = function(e){
+                var docTop = doc.scrollTop(),
+                    anchorTop = anchor.offset().top;
+
+                /*console.log('scroll', docTop, anchorTop);*/
+                if(docTop > anchorTop){
+                    if(!fixed){
+                        // anchor.height(content.outerHeight());
+                        content.addClass('fixed');
+                        fixed = true;
+                    }
+                }  else   {
+                    if(fixed){
+                        anchor.height(0);
+                        content.removeClass('fixed');
+                        fixed = false;
+                    }
+                }
+            };
+
+            $(window).on('scroll', onScroll);
+        };
+
+        var demo = new StickyBanner($('.banner_hny_action'));
+    };
+
+});
+
+// phone number toggle
+$(".clinic-time__number--main-clinic").click(function(){
+    $(this).siblings().toggle();
+    $(this).hide();
+});
+
+
+// docslider in clinics preload
+$(window).on('load', function () {
+    var $preloader = $('.p_prldr'),
+        $svg_anm = $preloader.find('.svg_anm');
+    $svg_anm.fadeOut();
+    $preloader.delay(500).fadeOut('slow');
+});
+
+
+/// .popup-appointment клик по талонам и календарь
+$(document).ready(function () {
+    if($('.popup-appointment').length){
+        $('.app-form__time-box').click(function (e) {
+            e.preventDefault();
+            $('.app-form__time-box').removeClass('active');
+            $(this).addClass('active');
+        });
+        $( function() {
+            $( "#app-datepicker" ).datepicker();
+        } );
+    }
+});
+
+
+$(document).ready(function () {
+    if ($('.clinic-main-about__img-slider').length) {
+        $('.clinic-main-about__img-slider').bxSlider({
+            adaptiveHeight: true,
+            slideWidth: 265,
+            slideMargin: 10,
+            pager: false,
+            controls: true,
+            auto: true,
+            speed: 1000,
+            hideControlOnEnd: true,
+            onSliderLoad: function () {
+                $(".clinic-main-about__img").css("visibility", "visible");
+            }
+        });
+    }
 });

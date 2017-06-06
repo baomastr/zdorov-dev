@@ -1540,6 +1540,7 @@ input[type=submit] {
   background-image: linear-gradient(to top, #6ca92a 0%, #a6d547 100%);
   border: 1px solid #70ac2c;
   border-radius: 5px;
+  width: 97%
 }
 
 //.clinic-info--listDoc .clinic-time a.clinic-time-btn:hover {
@@ -1649,7 +1650,7 @@ input[type=submit] {
   vertical-align: top;
   text-align: center;
   height: 30px;
-  padding: 13px 31px 0;
+  padding: 13px 30.6px 0;
   line-height: 1;
   word-spacing: normal;
   text-decoration: none;
@@ -2995,13 +2996,17 @@ li a {
 
 .doctor-title-pink {
   font-family: 'PT Sans', sans-serif;
-  font-weight: 600;
+  //font-weight: 600;
   font-weight: 400;
   font-size: 18px;
   color: #e74c3c;
   text-transform: uppercase;
   position: relative;
   padding: 20px 0 10px 15px;
+}
+
+.doctor-title-pink a{
+  color: #e74c3c;
 }
 
 .doctor-title-pink::before {
@@ -6735,6 +6740,7 @@ li a {
 .clinic-info--listDoc .clinic-about__content-caption {
   margin-top: 0;
   padding-bottom: 21px;
+  padding-top: 10px
 }
 
 /*.clinic-info--listDoc .clinic-time__tel {*/
@@ -14607,6 +14613,7 @@ p.doctor-popup__title {
 }
 .spec.clinic-info--listDoc .clinic-time {
   padding-top: 0
+  margin-top: 25px;
 }
 .spec.clinic-info:after {
   display: none
@@ -19146,6 +19153,8 @@ p.listDoc__note {
 }
 li .phone_show_more_clinics a
   color: #0a4db5!important
+  font-family: 'PT Sans',sans-serif;
+  border-bottom: 1px dashed #0a4db5;
 
 .clinic-main-about__img {
   visibility: hidden;
@@ -20174,8 +20183,9 @@ search_block{
       outline: 0 none;
       border: 0;
       width: 100%;
-      -webkit-appearance: none;
-      -webkit-border-radius: 0;
+      appearance: none
+      //-webkit-appearance: none;
+      border-radius: 0;
       background: #fff;
       cursor: pointer;
       height: 37px;

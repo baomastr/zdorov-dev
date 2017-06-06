@@ -9,7 +9,7 @@ var gulp = require ('gulp'),
 var uglify = require('gulp-uglifyjs');
 
 gulp.task('js', function() {
-    gulp.src('dist/js/app.js')
+    gulp.src('dist/js/selftest.js')
         .pipe(uglify())
         .pipe(gulp.dest('dist/jsmin'))
 });

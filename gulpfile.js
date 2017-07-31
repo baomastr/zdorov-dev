@@ -10,7 +10,7 @@ var gulp = require ('gulp'),
 var rename = require("gulp-rename");
 
 gulp.task('js', function() {
-    gulp.src('dist/js/selftest.js')
+    gulp.src('dist/js/app.js')
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('dist/jsmin'))
@@ -64,10 +64,10 @@ gulp.task('stylus', function(){
 gulp.task('watch',function(){
   gulp.watch('stylus/*.styl',['stylus']);
   gulp.watch('jade/*.jade',['jade']);
+    gulp.watch('js/*.js',['js']);
   // gulp.watch('dist/css/*.css',['prefix']);
   gulp.watch('assets/images/sprite/*.*',['sprite']);
   watch('dist/*.').pipe(connect.reload());
 });
 
-gulp.task('default',['connect','jade', 'sprite', 'stylus', 'watch']);
-
+gulp.task('default',['connect', 'jade', 'js', 'sprite', 'stylus', 'watch']);

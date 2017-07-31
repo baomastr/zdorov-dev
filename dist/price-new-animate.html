@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Болезни и их лечение</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://zdorov.online/css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="http://zdorov.online/css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="http://zdorov.online/js/jquery.fancybox.pack.js"></script>
+	<meta name="viewport" content="width=1250">
+	<meta name="MobileOptimized" content="1250">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body clearfix">
+		<header>
+			<div class="clearfix">
+				<a href="http://zdorov.online/" class="header-logo">
+					<img src="img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<div class="header-search">
+					<form action="http://zdorov.online/search/">
+						<input type="search" name="q" placeholder="Например: Хронический геморрой" value="">
+						<input type="submit" value="">
+					</form>
+				</div>
+				<!--noindex-->
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="http://zdorov.online/auth/">Вход</a> / <a href="http://zdorov.online/reg/">Регистрация</a>
+					</div>
+				</div>
+				<!--/noindex-->
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list"><a href="http://zdorov.online/selftest/j/">Самодиагностика</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/articles/">Статьи</a>
+					</li><li class="main_menu-list"><a href="http://zdorov.online/clinics/">Клиники</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/vrach/">Врачи</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/bolezni/">Болезни</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/forum/">Форум</a></li>
+					<li class="main_menu-list"><a href="http://zdorov.online/qa/">Вопросы врачу</a></li>
+
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>
+		<!-- end header-->
+		<main>
+			<div class="crumbs">
+				<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="http://zdorov.online/">
+							<span itemprop="name">Главная</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<span itemprop="name">Болезни и их лечение</span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+			<div class="left-side">
+				<div class="clinics__map-xs visible-xs" id="map" style="height:60vh;"></div>
+				<div class="result-clinic listClinic">
+					<!--Clinics Begin-->
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/tsentr_mrt_medseven/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/148/148206cc31911c4a059dd86a81d6d782.jpg"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/tsentr_mrt_medseven/"><div class="clinic-about__content-caption">Центр МРТ диагностики "МедСевен"</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.785">
+											<div class="rating-value" style="width: 81.345px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">37 отзывов</div>
+									</div>
+
+									<div title="расстояние: 365 метров" class="clinic-about__metro metro_line_tagansko-krasnopresnenskaya">Улица 1905 года <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">365 м)</span></div>
+									<div title="расстояние: 1164 метров" class="clinic-about__metro metro_line_koltsevaya">Краснопресненская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1164 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>г. Москва, ул. 1905 года, д.7, стр.1</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Центр МРТ диагностики &quot;МедСевен&quot;"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Центр МРТ диагностики &quot;МедСевен&quot;"><a href="tel:">+7(499)110-63-78</a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">3500</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '594', 'мрт головного мозга', '3500-9200');" class="clinic-time-btn book cli_1step bookOneStep" servicename="мрт головного мозга" serviceprice="3500" serviceid="2034" cliid="594" clinic="Центр МРТ диагностики &quot;МедСевен&quot;">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/mrt-24-na-yugo-zapadnoy/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/0c5/0c5b0870e133fe17ea8a808f3c449111.jpg"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/mrt-24-na-yugo-zapadnoy/"><div class="clinic-about__content-caption">МРТ 24 на Юго-западной</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.665">
+											<div class="rating-value" style="width: 79.305px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">18 отзывов</div>
+									</div>
+
+									<div title="расстояние: 1606 метров" class="clinic-about__metro metro_line_sokolnicheskaya">Юго-Западная <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1606 м)</span></div>
+									<div title="расстояние: 2389 метров" class="clinic-about__metro metro_line_kaluzhsko-rizhskaya">Беляево <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">2389 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>ул. Островитянова, д. 1, с. 9</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="МРТ 24 на Юго-западной"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="МРТ 24 на Юго-западной"><a href="tel:">+7(499)638-27-54</a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">3900</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '640', 'мрт головного мозга', '3900-9400');" class="clinic-time-btn book cli_1step bookOneStep" servicename="мрт головного мозга" serviceprice="3900" serviceid="2034" cliid="640" clinic="МРТ 24 на Юго-западной">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/kuntsevskiy_tsentr_open_clinics/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/a5c/a5c391bc7dd481197bf4fa2c0e73a2da.png"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/kuntsevskiy_tsentr_open_clinics/"><div class="clinic-about__content-caption">Кунцевский медико-реабилитационный центр</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.825">
+											<div class="rating-value" style="width: 82.025px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">261 отзыв</div>
+									</div>
+
+									<div title="расстояние: 739 метров" class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Молодёжная <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">739 м)</span></div>
+									<div title="расстояние: 1952 метров" class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Крылатское <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1952 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>г. Москва, ул. Партизанская, д. 41</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Кунцевский медико-реабилитационный центр"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Кунцевский медико-реабилитационный центр"><a href="tel:">+7(499)653-56-74</a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">5000</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '611', 'мрт головного мозга', '4000-10200');" class="clinic-time-btn book cli_1step bookOneStep" servicename="мрт головного мозга" serviceprice="5000" serviceid="2034" cliid="611" clinic="Кунцевский медико-реабилитационный центр">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/diagnosticheskiy-tsentr-medskan-rf-na-leningradskom-shosse/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/ea9/ea968ee49da325a59d6c1cf4b67d802b.png"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/diagnosticheskiy-tsentr-medskan-rf-na-leningradskom-shosse/"><div class="clinic-about__content-caption">Диагностический центр "Медскан РФ" на Ленинградском шоссе</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.775">
+											<div class="rating-value" style="width: 81.175px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">22 отзыва</div>
+									</div>
+
+									<div title="расстояние: 950 метров" class="clinic-about__metro metro_line_zamoskvoretskaya">Водный стадион <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">950 м)</span></div>
+									<div title="расстояние: 1023 метров" class="clinic-about__metro metro_line_zamoskvoretskaya">Речной вокзал <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1023 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>г. Москва, Ленинградское шоссе д. 47А</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Диагностический центр &quot;Медскан РФ&quot; на Ленинградском шоссе"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Диагностический центр &quot;Медскан РФ&quot; на Ленинградском шоссе"><a href="tel:">+7(499)110-34-81</a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">5000</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '148427', 'мрт головного мозга', '5000-8500');" class="clinic-time-btn book cli_1step bookOneStep" servicename="мрт головного мозга" serviceprice="5000" serviceid="2034" cliid="148427" clinic="Диагностический центр &quot;Медскан РФ&quot; на Ленинградском шоссе">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/klinicheskiy-gospital-na-yauze/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/40f/40f82c3f2c5e6779e5aa122d226e9522.png"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/klinicheskiy-gospital-na-yauze/"><div class="clinic-about__content-caption">Клинический госпиталь на Яузе</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.44">
+											<div class="rating-value" style="width: 75.48px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">8 отзывов</div>
+									</div>
+
+									<div title="расстояние: 475 метров" class="clinic-about__metro metro_line_kalininsko-solntsevskaya">Площадь Ильича <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">475 м)</span></div>
+									<div title="расстояние: 1286 метров" class="clinic-about__metro metro_line_lyublinsko-dmitrovskaya">Чкаловская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1286 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>Волочаевская ул. 15 к. 1</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Клинический госпиталь на Яузе"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Клинический госпиталь на Яузе"><a href="tel:">+7(499)322-25-76</a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">5700</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '175003', 'мрт головного мозга', '5700-12900');" class="clinic-time-btn book cli_1step bookOneStep" servicename="мрт головного мозга" serviceprice="5700" serviceid="2034" cliid="175003" clinic="Клинический госпиталь на Яузе">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/sm-klinika-na-ul-klary-tsetkin/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/460/46027f9939805262c727827d72ec718e.png"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/sm-klinika-na-ul-klary-tsetkin/"><div class="clinic-about__content-caption">"СМ-Клиника" на ул. Клары Цеткин</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.505">
+											<div class="rating-value" style="width: 76.585px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">1230 отзывов</div>
+									</div>
+
+									<div title="расстояние: 1407 метров" class="clinic-about__metro metro_line_zamoskvoretskaya">Войковская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1407 м)</span></div>
+									<div title="расстояние: 2182 метров" class="clinic-about__metro metro_line_zamoskvoretskaya">Водный стадион <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">2182 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>ул. Клары Цеткин, д. 33 корп. 28</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="&quot;СМ-Клиника&quot; на ул. Клары Цеткин"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="&quot;СМ-Клиника&quot; на ул. Клары Цеткин"><a href="tel:">+7(499)110-83-96</a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">5040</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '170799', 'мрт головного мозга', '5040-5040');" class="clinic-time-btn book cli_1step bookOneStep" servicename="мрт головного мозга" serviceprice="5040" serviceid="2034" cliid="170799" clinic="&quot;СМ-Клиника&quot; на ул. Клары Цеткин">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/meditsinskiy-tsentr-stolitsa-na-m-babushkinskaya/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/f1e/f1e039d6d81bf177f1222cd13cb145ea.jpg"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/meditsinskiy-tsentr-stolitsa-na-m-babushkinskaya/"><div class="clinic-about__content-caption">Медицинский центр "Столица"  на м. Бабушкинская</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.655">
+											<div class="rating-value" style="width: 79.135px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">48 отзывов</div>
+									</div>
+
+									<div title="расстояние: 1192 метров" class="clinic-about__metro metro_line_kaluzhsko-rizhskaya">Бабушкинская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1192 м)</span></div>
+									<div title="расстояние: 1765 метров" class="clinic-about__metro metro_line_kaluzhsko-rizhskaya">Медведково <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1765 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>Москва, улица Летчика Бабушкина, д. 48 Б</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Медицинский центр &quot;Столица&quot;  на м. Бабушкинская"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Медицинский центр &quot;Столица&quot;  на м. Бабушкинская"><a href="tel:">+7 (499) 110-15-42</a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга и орбит (мц4)														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">7900</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '203732', 'мрт головного мозга', '4500-17300');" class="clinic-time-btn book cli_1step bookOneStep" servicename="" serviceprice="" serviceid="" cliid="203732" clinic="Медицинский центр &quot;Столица&quot;  на м. Бабушкинская">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/klinika-meditsina/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/966/9669eb0a22d4b39f98de0d1cef4bd84e.png"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/klinika-meditsina/"><div class="clinic-about__content-caption">ОАО "Медицина"</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.29">
+											<div class="rating-value" style="width: 72.93px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">568 отзывов</div>
+									</div>
+
+									<div title="расстояние: 414 метров" class="clinic-about__metro metro_line_zamoskvoretskaya">Маяковская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">414 м)</span></div>
+									<div title="расстояние: 667 метров" class="clinic-about__metro metro_line_koltsevaya">Белорусская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">667 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>2-й Тверской-Ямской переулок, дом 10</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="ОАО &quot;Медицина&quot;"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="ОАО &quot;Медицина&quot;"><a href="tel:">+7(499)653-75-65</a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">12515</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '176666', 'мрт головного мозга', '12515-12515');" class="clinic-time-btn book cli_1step bookOneStep" servicename="мрт головного мозга" serviceprice="12515" serviceid="2034" cliid="176666" clinic="ОАО &quot;Медицина&quot;">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/mnogoprofilnyy-meditsinskiy-tsentr-kompleksnaya-klinika/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/cef/cef7765b272fa88b393532e2bbcae599.png"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/mnogoprofilnyy-meditsinskiy-tsentr-kompleksnaya-klinika/"><div class="clinic-about__content-caption">Многопрофильный центр Комплексная клиника</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.43">
+											<div class="rating-value" style="width: 75.31px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">78 отзывов</div>
+									</div>
+
+									<div title="расстояние: 449 метров" class="clinic-about__metro metro_line_serpukhovsko-timiryazevskaya">Владыкино <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">449 м)</span></div>
+									<div title="расстояние: 1169 метров" class="clinic-about__metro metro_line_serpukhovsko-timiryazevskaya">Петровско-Разумовская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1169 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>ул. Ботаническая,  д. 41, корп. 7</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Многопрофильный центр Комплексная клиника"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Многопрофильный центр Комплексная клиника"><a href="tel:">+7(499)110-29-76</a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">5000</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '165201', 'мрт головного мозга', '5000-10000');" class="clinic-time-btn book cli_1step bookOneStep" servicename="мрт головного мозга" serviceprice="5000" serviceid="2034" cliid="165201" clinic="Многопрофильный центр Комплексная клиника">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/evropeyskiy-meditsinskiy-tsentr-ems-na-shchepkina/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/b3d/b3df01284d85c62594078456a6bb9ca2.jpg"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/evropeyskiy-meditsinskiy-tsentr-ems-na-shchepkina/"><div class="clinic-about__content-caption">Европейский Медицинский центр ЕМС на Щепкина</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.67">
+											<div class="rating-value" style="width: 79.39px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">580 отзывов</div>
+									</div>
+
+									<div title="расстояние: 338 метров" class="clinic-about__metro metro_line_koltsevaya">Проспект Мира <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">338 м)</span></div>
+									<div title="расстояние: 888 метров" class="clinic-about__metro metro_line_lyublinsko-dmitrovskaya">Достоевская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">888 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>г. Москва, ул. Щепкина, д. 35</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Европейский Медицинский центр ЕМС на Щепкина"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Европейский Медицинский центр ЕМС на Щепкина"><a href="tel:">+7(499)110-16-78</a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга диагностическая														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">19584</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '601', 'мрт головного мозга', '9600-25600');" class="clinic-time-btn book cli_1step bookOneStep" servicename="" serviceprice="" serviceid="" cliid="601" clinic="Европейский Медицинский центр ЕМС на Щепкина">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/presnenskiy_mediko_reabilitatsionnyy_tsentr/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/646/6463c3119ee4108a687b3cdc984c79ad.png"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/presnenskiy_mediko_reabilitatsionnyy_tsentr/"><div class="clinic-about__content-caption">Пресненский медико-реабилитационный центр</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.685">
+											<div class="rating-value" style="width: 79.645px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">358 отзывов</div>
+									</div>
+
+									<div title="расстояние: 365 метров" class="clinic-about__metro metro_line_tagansko-krasnopresnenskaya">Улица 1905 года <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">365 м)</span></div>
+									<div title="расстояние: 1164 метров" class="clinic-about__metro metro_line_koltsevaya">Краснопресненская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1164 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>г. Москва, ул. 1905 года, д.7, стр.1</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Пресненский медико-реабилитационный центр"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Пресненский медико-реабилитационный центр"><a href="tel:">+7(499)653-56-74</a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">5000</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '616', 'мрт головного мозга', '4000-10200');" class="clinic-time-btn book cli_1step bookOneStep" servicename="мрт головного мозга" serviceprice="5000" serviceid="2034" cliid="616" clinic="Пресненский медико-реабилитационный центр">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/mnogoprofilnyy_meditsinskiy_tsentr_stolitsa_na_arbate/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/2dd/2dd3fe41a8b46c03c238e70484534d5b.jpg"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/mnogoprofilnyy_meditsinskiy_tsentr_stolitsa_na_arbate/"><div class="clinic-about__content-caption">Медицинский центр «Столица» на Арбате</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="3.77">
+											<div class="rating-value" style="width: 64.09px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">117 отзывов</div>
+									</div>
+
+									<div title="расстояние: 445 метров" class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Смоленская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">445 м)</span></div>
+									<div title="расстояние: 830 метров" class="clinic-about__metro metro_line_sokolnicheskaya">Кропоткинская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">830 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>Москва, Большой Власьевский переулок, д. 9</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Медицинский центр «Столица» на Арбате"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Медицинский центр «Столица» на Арбате"><a href="tel:">+7 (499) 110-15-42</a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">5000</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '642', 'мрт головного мозга', '4500-17300');" class="clinic-time-btn book cli_1step bookOneStep" servicename="мрт головного мозга" serviceprice="5000" serviceid="2034" cliid="642" clinic="Медицинский центр «Столица» на Арбате">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/mrt_24_na_paveletskoy/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/9d0/9d0cdac3dd948f7c5b34d0c11d0be80c.jpg"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/mrt_24_na_paveletskoy/"><div class="clinic-about__content-caption">МРТ 24 на Павелецкой</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.43">
+											<div class="rating-value" style="width: 75.31px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">21 отзыв</div>
+									</div>
+
+									<div title="расстояние: 1195 метров" class="clinic-about__metro metro_line_zamoskvoretskaya">Автозаводская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1195 м)</span></div>
+									<div title="расстояние: 1638 метров" class="clinic-about__metro metro_line_serpukhovsko-timiryazevskaya">Тульская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1638 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>Павелецкая набережная, д. 2, с.1</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="МРТ 24 на Павелецкой"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="МРТ 24 на Павелецкой"><a href="tel:">+7(499)638-27-54</a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">4100</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '634', 'мрт головного мозга', '4100-10300');" class="clinic-time-btn book cli_1step bookOneStep" servicename="мрт головного мозга" serviceprice="4100" serviceid="2034" cliid="634" clinic="МРТ 24 на Павелецкой">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/klinika-medlayn/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/dba/dbaebcb40ec2fd06acc02cf6d74315af.jpg"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/klinika-medlayn/"><div class="clinic-about__content-caption">Клиника "Медлайн"</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.555">
+											<div class="rating-value" style="width: 77.435px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">9 отзывов</div>
+									</div>
+
+									<div title="расстояние: 586 метров" class="clinic-about__metro metro_line_lyublinsko-dmitrovskaya">Марьина роща <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">586 м)</span></div>
+									<div title="расстояние: 1208 метров" class="clinic-about__metro metro_line_serpukhovsko-timiryazevskaya">Савёловская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1208 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>2-я Ямская ул., д. 9</a>
+								</div>
+									<div class="clinic-time">
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга														</span>
+												<span> - </span>
+												<span style="font-weight: 800;">4500</span>
+												<span style="font-weight: 800;">
+															   руб.
+														</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '630', 'мрт головного мозга', '4500-4500');" class="clinic-time-btn book cli_1step bookOneStep" servicename="мрт головного мозга" serviceprice="4500" serviceid="2034" cliid="630" clinic="Клиника &quot;Медлайн&quot;">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+								<a target="_blank" href="/clinics/diagnosticheskiy_tsentr_mrt_siti/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/29e/29e7d589637fa1e919e2d4579d4ce78c.png"></a>
+							</div>
+						</div>
+
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="hidden-xs" href="/clinics/diagnosticheskiy_tsentr_mrt_siti/"><div class="clinic-about__content-caption">Диагностический центр "МРТ-Сити"</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.585">
+											<div class="rating-value" style="width: 77.945px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">12 отзывов</div>
+									</div>
+
+									<div title="расстояние: 1041 метров" class="clinic-about__metro metro_line_tagansko-krasnopresnenskaya">Пролетарская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1041 м)</span></div>
+									<div title="расстояние: 1055 метров" class="clinic-about__metro metro_line_lyublinsko-dmitrovskaya">Крестьянская застава <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1055 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>г. Москва, Ул. Дербеневская, Д. 1, Стр. 5</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Диагностический центр &quot;МРТ-Сити&quot;"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Диагностический центр &quot;МРТ-Сити&quot;"><a href="tel:">+7(499)110-78-31 </a>
+									</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="bg-grey hidden-xs">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell">
+														<span>
+															мрт головного мозга														</span>
+												<span> - </span>
+												<span style="font-weight: 800;text-decoration:line-through;">4200</span>
+												<span class="clinic-price__new" style="font-weight: 800;color:#f00;text-decoration:underline;margin-left: 10px;">
+															 3100  руб.
+
+													<!--<span class="tooltip__text">Незамедлительно пройдите обследование у специалиста.</span>-->
+												</span>
+												<div class="tip">
+													Скидка только при записи онлайн
+												</div>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '636', 'мрт головного мозга', '4200-12000');" class="clinic-time-btn book cli_1step bookOneStep" servicename="мрт головного мозга" serviceprice="4200" serviceid="2034" cliid="636" clinic="Диагностический центр &quot;МРТ-Сити&quot;">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Clinics End-->
+					<div class="result-number clearfix">
+						<div class="pagination"><ul><li class="l-arrow inactive-l-arrow"><a rel="prev">назад</a></li><li><a class="active" title="Текущая страница">1</a></li><li><a href="/mrt-v-moskve/golovnogo-mozga/?page=2" title="Страница 2">2</a></li><li><a href="/mrt-v-moskve/golovnogo-mozga/?page=3" title="Страница 3">3</a></li><li class="r-arrow "><a href="/mrt-v-moskve/golovnogo-mozga/?page=2" title="Страница 2" rel="next">вперед</a></li></ul></div>					<div class="result-number__choose hidden-xs">
+						<!--<input type="number" min="10" max="100" step="10" value="10">-->
+						<p> 1-15 из 40</p>
+					</div>
+					</div>
+
+					<div class="clinic-search__title clinic-search__title--bottom">
+						<!--span class="clinic-search__title-caption"></span-->
+
+						<h2>Показания</h2>
+						<p>МРТ головного мозга в Москве проводится по строгим показаниям. К примеру, ими могут быть:</p>
+						<div class="list two-column">
+							<ul class="list__item-pink">
+
+								<li>	частые и сильные головные боли;</li>
+								<li>	нарушения в работе конечностей;</li>
+								<li>	проблемы с памятью и мышлением.</li>
+							</ul>
+						</div>
+
+						<p>Сделать МРТ головного мозга необходимо, если у больного:</p>
+						<div class="list two-column">
+							<ul class="list__item-pink">
+
+								<li>	подозревают раковые образования в головном мозге;</li>
+								<li>	нарушена работа гипофиза;</li>
+								<li>	травмирована голова;</li>
+								<li>	был инсульт;</li>
+								<li>	диагностирован абсцесс головного мозга;</li>
+								<li>	есть признаки рассеянного склероза.</li>
+							</ul>
+						</div>
+
+						<h3>Цена</h3>
+						<p>Окончательная цена на полное МРТ головного мозга складывается из ряда факторов. Имеют значение тип оборудования, его информативность, профессиональные навыки специалистов, выполняющих исследование. На Здоров.Онлайн учтены все эти особенности. Благодаря удобному фильтру вы сможете быстро подобрать адрес клиники, в которой вам сделают МРТ по подходящей цене. </p>
+						<div class="hide_overflow-bottom">
+							<p></p>
+						</div>
+						<div class="more-bottom clearfix">
+							<a class="click-more-bottom" style="border:0;"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--right sidebar-->
+			<div class="right-sidebar clearfix">
+				<div style="display: none;">
+				</div>
+
+				﻿
+
+
+
+
+
+				<div id="rdocs">
+
+					<article class="list-right-sb-search">
+						<div class="list-right-sb-search--wrap">
+							<div class="list-right-sb-search__title">Специальности</div>
+						</div>
+						<ul style="padding-bottom: 15px;">
+							<li><a href="http://zdorov.online/vrach/akusher/">Акушер</a></li>
+							<li><a href="http://zdorov.online/vrach/akusher-ginekolog/">Акушер - гинеколог</a></li>
+							<li><a href="http://zdorov.online/vrach/algolog/">Алголог</a></li>
+							<li><a href="http://zdorov.online/vrach/allergolog/">Аллерголог</a></li>
+							<li><a href="http://zdorov.online/vrach/allergolog-immunolog/">Аллерголог-иммунолог</a></li>
+							<li><a href="http://zdorov.online/vrach/angiolog/">Ангиолог</a></li>
+							<li><a href="http://zdorov.online/vrach/androlog/">Андролог</a></li>
+							<li><a href="http://zdorov.online/vrach/bakteriolog/">Бактериолог</a></li>
+							<li><a href="http://zdorov.online/vrach/venerolog/">Венеролог</a></li>
+							<li><a href="http://zdorov.online/vrach/vertebrolog/">Вертебролог</a></li>
+							<li><a href="http://zdorov.online/vrach/virusolog-immunolog/">Вирусолог-иммунолог</a></li>
+							<li><a href="http://zdorov.online/vrach/lfk/">Врач ЛФК</a></li>
+							<li><a href="http://zdorov.online/vrach/gastroenterolog/">Гастроэнтеролог</a></li>
+							<li><a href="http://zdorov.online/vrach/gematolog/">Гематолог</a></li>
+							<li><a href="http://zdorov.online/vrach/genetik/">Генетик</a></li>
+							<li><a href="http://zdorov.online/vrach/gepatolog/">Гепатолог</a></li>
+							<li><a href="http://zdorov.online/vrach/ginekolog/">Гинеколог</a></li>
+							<li><a href="http://zdorov.online/vrach/girudolog/">Гирудотерапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/gomeopat/">Гомеопат</a></li>
+							<li><a href="http://zdorov.online/vrach/dermatovenerolog/">Дерматовенеролог</a></li>
+							<li><a href="http://zdorov.online/vrach/dermatolog/">Дерматолог</a></li>
+							<li><a href="http://zdorov.online/vrach/dermatolog-venerolog/">Дерматолог-венеролог</a></li>
+							<li><a href="http://zdorov.online/vrach/kosmetolog-dermatolog/">Дерматолог-косметолог</a>
+							</li>
+							<li><a href="http://zdorov.online/vrach/diabetolog/">Диабетолог</a></li>
+							<li><a href="http://zdorov.online/vrach/dietolog/">Диетолог</a></li>
+							<li><a href="http://zdorov.online/vrach/immunolog/">Иммунолог</a></li>
+							<li><a href="http://zdorov.online/vrach/infekcionist/">Инфекционист</a></li>
+							<li><a href="http://zdorov.online/vrach/kardiolog/">Кардиолог</a></li>
+							<li><a href="http://zdorov.online/vrach/kardiohirurg/">Кардиохирург</a></li>
+							<li><a href="http://zdorov.online/vrach/kosmetolog/">Косметолог</a></li>
+							<li><a href="http://zdorov.online/vrach/lor-otolaringolog/">ЛОР</a></li>
+							<li><a href="http://zdorov.online/vrach/logoped/">Логопед</a></li>
+							<li><a href="http://zdorov.online/vrach/mammolog/">Маммолог</a></li>
+							<li><a href="http://zdorov.online/vrach/manualnyy-terapevt/">Мануальный терапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/massazhist/">Массажист</a></li>
+							<li><a href="http://zdorov.online/vrach/narkolog/">Нарколог</a></li>
+							<li><a href="http://zdorov.online/vrach/nevrolog/">Невролог</a></li>
+							<li><a href="http://zdorov.online/vrach/neyrohirurg/">Нейрохирург</a></li>
+							<li><a href="http://zdorov.online/vrach/neonatolog/">Неонатолог</a></li>
+							<li><a href="http://zdorov.online/vrach/nefrolog/">Нефролог</a></li>
+							<li><a href="http://zdorov.online/vrach/onkodermatolog/">Онкодерматолог</a></li>
+							<li><a href="http://zdorov.online/vrach/onkolog/">Онколог</a></li>
+							<li><a href="http://zdorov.online/vrach/onkolog-mammolog/">Онколог маммолог</a></li>
+							<li><a href="http://zdorov.online/vrach/ortoped/">Ортопед</a></li>
+							<li><a href="http://zdorov.online/vrach/osteopat/">Остеопат</a></li>
+							<li><a href="http://zdorov.online/vrach/otolaringolog/">Отоларинголог</a></li>
+							<li><a href="http://zdorov.online/vrach/oftalmolog/">Офтальмолог</a></li>
+							<li><a href="http://zdorov.online/vrach/parodontolog/">Пародонтолог</a></li>
+							<li><a href="http://zdorov.online/vrach/pediatr/">Педиатр</a></li>
+							<li><a href="http://zdorov.online/vrach/plasticheskiy-hirurg/">Пластический хирург</a></li>
+							<li><a href="http://zdorov.online/vrach/proktolog/">Проктолог</a></li>
+							<li><a href="http://zdorov.online/vrach/psikhiatr/">Психиатр</a></li>
+							<li><a href="http://zdorov.online/vrach/psikholog/">Психолог</a></li>
+							<li><a href="http://zdorov.online/vrach/psikhoterapevt/">Психотерапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/pulmonolog/">Пульмонолог</a></li>
+							<li><a href="http://zdorov.online/vrach/revmatolog/">Ревматолог</a></li>
+							<li><a href="http://zdorov.online/vrach/refleksoterapevt/">Рефлексотерапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/seksolog/">Сексолог</a></li>
+							<li><a href="http://zdorov.online/vrach/somnolog/">Сомнолог</a></li>
+							<li><a href="http://zdorov.online/vrach/sosudistii-hirurg/">Сосудистый хирург</a></li>
+							<li><a href="http://zdorov.online/vrach/stomatolog/">Стоматолог</a></li>
+							<li><a href="http://zdorov.online/vrach/stomatolog-ortodont/">Стоматолог-ортодонт</a></li>
+							<li><a href="http://zdorov.online/vrach/stomatolog-terapevt/">Стоматолог-терапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/stomatolog-hirurg/">Стоматолог-хирург</a></li>
+							<li><a href="http://zdorov.online/vrach/surdolog/">Сурдолог</a></li>
+							<li><a href="http://zdorov.online/vrach/terapevt/">Терапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/travmatolog/">Травматолог</a></li>
+							<li><a href="http://zdorov.online/vrach/travmatolog-ortoped/">Травматолог-ортопед</a></li>
+							<li><a href="http://zdorov.online/vrach/transfuziolog/">Трансфузиолог</a></li>
+							<li><a href="http://zdorov.online/vrach/trikholog/">Трихолог</a></li>
+							<li><a href="http://zdorov.online/vrach/urolog/">Уролог</a></li>
+							<li><a href="http://zdorov.online/vrach/urolog-androlog/">Уролог-андролог</a></li>
+							<li><a href="http://zdorov.online/vrach/fizioterapevt/">Физиотерапевт</a></li>
+							<li><a href="http://zdorov.online/vrach/flebolog/">Флеболог</a></li>
+							<li><a href="http://zdorov.online/vrach/ftiziator/">Фтизиатр</a></li>
+							<li><a href="http://zdorov.online/vrach/hirurg/">Хирург</a></li>
+							<li><a href="http://zdorov.online/vrach/hirurg-proktolog/">Хирург проктолог</a></li>
+							<li><a href="http://zdorov.online/vrach/hirurg-flebolog/">Хирург флеболог</a></li>
+							<li><a href="http://zdorov.online/vrach/endokrinolog/">Эндокринолог</a></li>
+						</ul>
+					</article>
+				</div>
+				<article class="about">
+					<div class="about__wrap">
+						<section class="about_contents">
+							<div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+							<ul>
+								<li class="about_contents--pills">
+									<a href="http://zdorov.online/bolezni/"><span>Более 400 болезней</span>
+										Причины, проявления, лечение и профилактика</a></li>
+								<li class="about_contents--clinic">
+									<a href="http://zdorov.online/clinics/"><span>Рейтинг клиник</span>
+										Достоверная информация о качестве лечения на основе посещения клиник</a></li>
+								<li class="about_contents--node">
+									<a href="http://zdorov.online/vrach/"><span>Запись к врачу</span>
+										Очень легко к нужному врачу</a></li>
+								<li class="about_contents--question">
+									<a href="http://zdorov.online/qa/"><span>Задать вопрос</span>
+										Бесплатные консультации врачей</a></li>
+							</ul>
+						</section>
+					</div>
+				</article>
+				<!--<div style="width:240px;">
+					<div style="margin-top:20px;">
+						&lt;!&ndash;AdFox START&ndash;&gt;
+						&lt;!&ndash;il7pro&ndash;&gt;
+						&lt;!&ndash;Площадка: zdorov.online / * / *&ndash;&gt;
+						&lt;!&ndash;Тип баннера: 240x200 баннер справа&ndash;&gt;
+						&lt;!&ndash;Расположение: <середина страницы>&ndash;&gt;
+						&lt;!&ndash; ________________________AdFox Asynchronous code START__________________________ &ndash;&gt;
+						<script type="text/javascript">
+							&lt;!&ndash;
+							if (typeof(pr) == 'undefined') {
+								var pr = Math.floor(Math.random() * 4294967295) + 1;
+							}
+							if (typeof(document.referrer) != 'undefined') {
+								if (typeof(afReferrer) == 'undefined') {
+									afReferrer = encodeURIComponent(document.referrer);
+								}
+							} else {
+								afReferrer = '';
+							}
+							var addate = new Date();
+
+
+							var dl = encodeURIComponent(document.location);
+							var pr1 = Math.floor(Math.random() * 4294967295) + 1;
+
+							document.write('<div id="AdFox_banner_' + pr1 + '"><\/div>');
+							document.write('<div style="visibility:hidden; position:absolute;"><iframe id="AdFox_iframe_' + pr1 + '" width=1 height=1 marginwidth=0 marginheight=0 scrolling=no frameborder=0><\/iframe><\/div>');
+
+							AdFox_getCodeScript(1, pr1, '//ads.adfox.ru/249601/prepareCode?pp=h&amp;ps=citq&amp;p2=fkpj&amp;pct=a&amp;plp=a&amp;pli=a&amp;pop=a&amp;pr=' + pr + '&amp;pt=b&amp;pd=' + addate.getDate() + '&amp;pw=' + addate.getDay() + '&amp;pv=' + addate.getHours() + '&amp;prr=' + afReferrer + '&amp;puid1=&amp;puid2=&amp;puid3=&amp;puid4=&amp;puid5=&amp;puid6=&amp;puid7=&amp;puid8=&amp;puid9=&amp;puid10=&amp;puid11=&amp;puid12=&amp;puid13=&amp;puid14=&amp;puid15=&amp;puid16=&amp;puid17=&amp;puid18=&amp;puid19=&amp;puid20=&amp;puid21=&amp;puid22=&amp;puid23=&amp;puid24=&amp;puid25=&amp;puid26=&amp;puid27=&amp;puid28=&amp;puid29=&amp;puid30=&amp;puid31=&amp;puid32=&amp;puid33=&amp;puid34=&amp;puid35=&amp;puid36=&amp;puid37=&amp;puid38=&amp;puid39=&amp;puid40=&amp;puid41=&amp;puid42=&amp;puid43=&amp;puid44=&amp;puid45=&amp;puid46=&amp;puid47=&amp;puid48=&amp;puid49=&amp;puid50=&amp;puid51=&amp;puid52=&amp;puid53=&amp;puid54=&amp;puid55=&amp;puid56=&amp;puid57=&amp;puid58=&amp;puid59=&amp;puid60=&amp;puid61=&amp;puid62=&amp;puid63=&amp;dl=' + dl + '&amp;pr1=' + pr1);
+							// &ndash;&gt;
+						</script>
+						<div id="AdFox_banner_3366613031"></div>
+						<div style="visibility:hidden; position:absolute;">
+							<iframe id="AdFox_iframe_3366613031" width="1" height="1" marginwidth="0" marginheight="0"
+									scrolling="no" frameborder="0"
+									src="./Болезни и их лечение_files/saved_resource.html"></iframe>
+						</div>
+						&lt;!&ndash; _________________________AdFox Asynchronous code END___________________________ &ndash;&gt;
+					</div>
+					<div style="margin-top:20px;">
+						&lt;!&ndash;AdFox START&ndash;&gt;
+						&lt;!&ndash;il7pro&ndash;&gt;
+						&lt;!&ndash;Площадка: zdorov.online / * / *&ndash;&gt;
+						&lt;!&ndash;Тип баннера: Тизер&ndash;&gt;
+						&lt;!&ndash;Расположение: <середина страницы>&ndash;&gt;
+						&lt;!&ndash; ________________________AdFox Asynchronous code START__________________________ &ndash;&gt;
+						<script type="text/javascript">
+							&lt;!&ndash;
+							if (typeof(pr) == 'undefined') {
+								var pr = Math.floor(Math.random() * 4294967295) + 1;
+							}
+							if (typeof(document.referrer) != 'undefined') {
+								if (typeof(afReferrer) == 'undefined') {
+									afReferrer = encodeURIComponent(document.referrer);
+								}
+							} else {
+								afReferrer = '';
+							}
+							var addate = new Date();
+
+
+							var dl = encodeURIComponent(document.location);
+							var pr1 = Math.floor(Math.random() * 4294967295) + 1;
+
+							document.write('<div id="AdFox_banner_' + pr1 + '"><\/div>');
+							document.write('<div style="visibility:hidden; position:absolute;"><iframe id="AdFox_iframe_' + pr1 + '" width=1 height=1 marginwidth=0 marginheight=0 scrolling=no frameborder=0><\/iframe><\/div>');
+
+							AdFox_getCodeScript(1, pr1, '//ads.adfox.ru/249601/prepareCode?pp=h&amp;ps=citq&amp;p2=flcz&amp;pct=b&amp;plp=a&amp;pli=a&amp;pop=a&amp;pr=' + pr + '&amp;pt=b&amp;pd=' + addate.getDate() + '&amp;pw=' + addate.getDay() + '&amp;pv=' + addate.getHours() + '&amp;prr=' + afReferrer + '&amp;puid1=&amp;puid2=&amp;puid3=&amp;puid4=&amp;puid5=&amp;puid6=&amp;puid7=&amp;puid8=&amp;puid9=&amp;puid10=&amp;puid11=&amp;puid12=&amp;puid13=&amp;puid14=&amp;puid15=&amp;puid16=&amp;puid17=&amp;puid18=&amp;puid19=&amp;puid20=&amp;puid21=&amp;puid22=&amp;puid23=&amp;puid24=&amp;puid25=&amp;puid26=&amp;puid27=&amp;puid28=&amp;puid29=&amp;puid30=&amp;puid31=&amp;puid32=&amp;puid33=&amp;puid34=&amp;puid35=&amp;puid36=&amp;puid37=&amp;puid38=&amp;puid39=&amp;puid40=&amp;puid41=&amp;puid42=&amp;puid43=&amp;puid44=&amp;puid45=&amp;puid46=&amp;puid47=&amp;puid48=&amp;puid49=&amp;puid50=&amp;puid51=&amp;puid52=&amp;puid53=&amp;puid54=&amp;puid55=&amp;puid56=&amp;puid57=&amp;puid58=&amp;puid59=&amp;puid60=&amp;puid61=&amp;puid62=&amp;puid63=&amp;dl=' + dl + '&amp;pr1=' + pr1);
+							// &ndash;&gt;
+						</script>
+						<div id="AdFox_banner_2468407016"></div>
+						<div style="visibility:hidden; position:absolute;">
+							<iframe id="AdFox_iframe_2468407016" width="1" height="1" marginwidth="0" marginheight="0"
+									scrolling="no" frameborder="0"
+									src="./Болезни и их лечение_files/saved_resource(1).html"></iframe>
+						</div>
+						&lt;!&ndash; _________________________AdFox Asynchronous code END___________________________ &ndash;&gt;
+					</div>
+					<div style="margin-top:20px;">
+						&lt;!&ndash;AdFox START&ndash;&gt;
+						&lt;!&ndash;il7pro&ndash;&gt;
+						&lt;!&ndash;Площадка: zdorov.online / * / *&ndash;&gt;
+						&lt;!&ndash;Тип баннера: Тизер&ndash;&gt;
+						&lt;!&ndash;Расположение: <середина страницы>&ndash;&gt;
+						&lt;!&ndash; ________________________AdFox Asynchronous code START__________________________ &ndash;&gt;
+						<script type="text/javascript">
+							&lt;!&ndash;
+							if (typeof(pr) == 'undefined') {
+								var pr = Math.floor(Math.random() * 4294967295) + 1;
+							}
+							if (typeof(document.referrer) != 'undefined') {
+								if (typeof(afReferrer) == 'undefined') {
+									afReferrer = encodeURIComponent(document.referrer);
+								}
+							} else {
+								afReferrer = '';
+							}
+							var addate = new Date();
+
+
+							var dl = encodeURIComponent(document.location);
+							var pr1 = Math.floor(Math.random() * 4294967295) + 1;
+
+							document.write('<div id="AdFox_banner_' + pr1 + '"><\/div>');
+							document.write('<div style="visibility:hidden; position:absolute;"><iframe id="AdFox_iframe_' + pr1 + '" width=1 height=1 marginwidth=0 marginheight=0 scrolling=no frameborder=0><\/iframe><\/div>');
+
+							AdFox_getCodeScript(1, pr1, '//ads.adfox.ru/249601/prepareCode?pp=h&amp;ps=citq&amp;p2=flcz&amp;pct=b&amp;plp=a&amp;pli=a&amp;pop=a&amp;pr=' + pr + '&amp;pt=b&amp;pd=' + addate.getDate() + '&amp;pw=' + addate.getDay() + '&amp;pv=' + addate.getHours() + '&amp;prr=' + afReferrer + '&amp;puid1=&amp;puid2=&amp;puid3=&amp;puid4=&amp;puid5=&amp;puid6=&amp;puid7=&amp;puid8=&amp;puid9=&amp;puid10=&amp;puid11=&amp;puid12=&amp;puid13=&amp;puid14=&amp;puid15=&amp;puid16=&amp;puid17=&amp;puid18=&amp;puid19=&amp;puid20=&amp;puid21=&amp;puid22=&amp;puid23=&amp;puid24=&amp;puid25=&amp;puid26=&amp;puid27=&amp;puid28=&amp;puid29=&amp;puid30=&amp;puid31=&amp;puid32=&amp;puid33=&amp;puid34=&amp;puid35=&amp;puid36=&amp;puid37=&amp;puid38=&amp;puid39=&amp;puid40=&amp;puid41=&amp;puid42=&amp;puid43=&amp;puid44=&amp;puid45=&amp;puid46=&amp;puid47=&amp;puid48=&amp;puid49=&amp;puid50=&amp;puid51=&amp;puid52=&amp;puid53=&amp;puid54=&amp;puid55=&amp;puid56=&amp;puid57=&amp;puid58=&amp;puid59=&amp;puid60=&amp;puid61=&amp;puid62=&amp;puid63=&amp;dl=' + dl + '&amp;pr1=' + pr1);
+							// &ndash;&gt;
+						</script>
+						<div id="AdFox_banner_525203105"></div>
+						<div style="visibility:hidden; position:absolute;">
+							<iframe id="AdFox_iframe_525203105" width="1" height="1" marginwidth="0" marginheight="0"
+									scrolling="no" frameborder="0"
+									src="./Болезни и их лечение_files/saved_resource(2).html"></iframe>
+						</div>
+						&lt;!&ndash; _________________________AdFox Asynchronous code END___________________________ &ndash;&gt;
+					</div>
+					<div style="margin-top:20px;">
+						&lt;!&ndash;AdFox START&ndash;&gt;
+						&lt;!&ndash;il7pro&ndash;&gt;
+						&lt;!&ndash;Площадка: zdorov.online / * / *&ndash;&gt;
+						&lt;!&ndash;Тип баннера: Тизер&ndash;&gt;
+						&lt;!&ndash;Расположение: <середина страницы>&ndash;&gt;
+						&lt;!&ndash; ________________________AdFox Asynchronous code START__________________________ &ndash;&gt;
+						<script type="text/javascript">
+							&lt;!&ndash;
+							if (typeof(pr) == 'undefined') {
+								var pr = Math.floor(Math.random() * 4294967295) + 1;
+							}
+							if (typeof(document.referrer) != 'undefined') {
+								if (typeof(afReferrer) == 'undefined') {
+									afReferrer = encodeURIComponent(document.referrer);
+								}
+							} else {
+								afReferrer = '';
+							}
+							var addate = new Date();
+
+
+							var dl = encodeURIComponent(document.location);
+							var pr1 = Math.floor(Math.random() * 4294967295) + 1;
+
+							document.write('<div id="AdFox_banner_' + pr1 + '"><\/div>');
+							document.write('<div style="visibility:hidden; position:absolute;"><iframe id="AdFox_iframe_' + pr1 + '" width=1 height=1 marginwidth=0 marginheight=0 scrolling=no frameborder=0><\/iframe><\/div>');
+
+							AdFox_getCodeScript(1, pr1, '//ads.adfox.ru/249601/prepareCode?pp=h&amp;ps=citq&amp;p2=flcz&amp;pct=b&amp;plp=a&amp;pli=a&amp;pop=a&amp;pr=' + pr + '&amp;pt=b&amp;pd=' + addate.getDate() + '&amp;pw=' + addate.getDay() + '&amp;pv=' + addate.getHours() + '&amp;prr=' + afReferrer + '&amp;puid1=&amp;puid2=&amp;puid3=&amp;puid4=&amp;puid5=&amp;puid6=&amp;puid7=&amp;puid8=&amp;puid9=&amp;puid10=&amp;puid11=&amp;puid12=&amp;puid13=&amp;puid14=&amp;puid15=&amp;puid16=&amp;puid17=&amp;puid18=&amp;puid19=&amp;puid20=&amp;puid21=&amp;puid22=&amp;puid23=&amp;puid24=&amp;puid25=&amp;puid26=&amp;puid27=&amp;puid28=&amp;puid29=&amp;puid30=&amp;puid31=&amp;puid32=&amp;puid33=&amp;puid34=&amp;puid35=&amp;puid36=&amp;puid37=&amp;puid38=&amp;puid39=&amp;puid40=&amp;puid41=&amp;puid42=&amp;puid43=&amp;puid44=&amp;puid45=&amp;puid46=&amp;puid47=&amp;puid48=&amp;puid49=&amp;puid50=&amp;puid51=&amp;puid52=&amp;puid53=&amp;puid54=&amp;puid55=&amp;puid56=&amp;puid57=&amp;puid58=&amp;puid59=&amp;puid60=&amp;puid61=&amp;puid62=&amp;puid63=&amp;dl=' + dl + '&amp;pr1=' + pr1);
+							// &ndash;&gt;
+						</script>
+						<div id="AdFox_banner_426264"></div>
+						<div style="visibility:hidden; position:absolute;">
+							<iframe id="AdFox_iframe_426264" width="1" height="1" marginwidth="0" marginheight="0"
+									scrolling="no" frameborder="0"
+									src="./Болезни и их лечение_files/saved_resource(3).html"></iframe>
+						</div>
+						&lt;!&ndash; _________________________AdFox Asynchronous code END___________________________ &ndash;&gt;
+					</div>
+				</div>-->
+				<div>
+
+				</div>
+			</div>
+		</main>
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<a href="http://zdorov.online/">
+					<img src="img/logo.png" title="Zdorov.online">
+				</a>
+			</div>
+			<div class="footer-content__article">
+				<a href="http://zdorov.online/articles/">Статьи</a>
+				<a href="http://zdorov.online/vrach/">Врачи </a>
+				<a href="http://zdorov.online/clinics/kliniki-po-diagnostike/">Диагностика</a>
+				<a href="http://zdorov.online/novosti/">Новости</a>
+				<div class="menu-footer__list">
+					<ul>
+						<li><a href="http://zdorov.online/adv/">Реклама на портале</a></li>
+						<li><a href="http://zdorov.online/dlya-klinik/">Для клиник</a></li>
+						<li><a href="http://zdorov.online/about/">О проекте</a></li>
+						<li><a href="http://zdorov.online/contacts/">Контакты</a></li>
+						<li><a href="http://zdorov.online/term/">Пользовательское соглашение</a></li>
+						<!--noindex--><li><a target="_blank" href="http://partners.zdorov.online/">Партнерская программа</a></li><!--/noindex-->
+					</ul>
+				</div>
+			</div>
+
+			<div class="menu-footer-document">
+
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2016. Все права защищены. <a href="http://zdorov.online/karta-saita/">Карта сайта</a></p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем.</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left:50px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="http://mk.ru/" target="_blank"><img src="img/logo-mk-index.png"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script type="text/javascript" src="http://zdorov.online/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://zdorov.online/js/jquery.fancybox.js"></script>
+<script src="http://zdorov.online/js/app.min.js"></script>
+<script src="http://zdorov.online/js/jquery.flexslider-min.js"></script>
+<script src="http://zdorov.online/js/jquery.maskedinput.min.js"></script>
+
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		scrollbar: '.swiper-scrollbar',
+		scrollbarHide: false,
+		slidesPerView: 'auto',
+		centeredSlides: false,
+		grabCursor: false,
+		loop: false
+	});
+	var swiperDoc = new Swiper('.swiperDoc', {
+		scrollbar: '.swiper-scrollbarDoc',
+		scrollbarHide: false,
+		slidesPerView: 'auto',
+		centeredSlides: false,
+		grabCursor: false,
+		loop: false
+	});
+
+	$('.select-qw').select2();
+
+	$('.select-metro').select2();
+
+	$('.select').select2();
+
+	$(document).ready(function() {
+		$('.bxslider-expert').bxSlider({
+			auto: true,
+			speed: 1500
+		});
+	});
+	$('div.rating-js').rating();
+
+	var swiper = new Swiper('.swipper-news-inner', {
+		pagination: '.news-inner-pagination',
+		paginationClickable: true,
+		slidesPerView: 2,
+		scrollbarHide: true,
+		centeredSlides: false,
+		grabCursor: false,
+		loop: true
+
+	});
+	$(document).ready(function() {
+		$('#patient-info').validate({
+			rules: {
+				password: {
+					rangelength: [4, 8]
+				},
+				confirm_password: {
+					equalTo: '#password'
+				}
+
+			},
+			messages: {
+				password: {
+					rangelength: "Пароль должен содержать от 4 до 8 символов"
+				},
+				confirm_password: {
+					required: "Подтвердите пароль",
+					equalTo: "Пароли не совпадают"
+				}
+			}
+		});
+	});
+	$(document).ready(function() {
+		$('#reg-user__form').validate({
+			rules: {
+				name: {
+					required:true
+				},
+				email: {
+					required:true
+				},
+				password:{
+					required:true,
+					rangelength:[4,8]
+				},
+				confirm_password:{
+					equalTo:'#password'
+				}
+
+			},
+			messages:{
+				name: {
+					required: "Поле не заполнено"
+				},
+				email: {
+					required: "Поле не заполнено"
+				},
+				password:{
+					required: "Вы не ввели пароль",
+					rangelength:"Пароль должен содержать от 4 до 8 символов"
+				},
+				confirm_password:{
+					required: "Подтвердите пароль",
+					equalTo:"Пароли не совпадают"
+				}
+			}
+		});
+	});
+	$(document).ready(function(){
+		$('.bxslider-body').bxSlider({
+			mode: 'fade',
+			adaptiveHeight: true,
+			infiniteLoop: true
+		});
+		$('.bxslider-right').bxSlider( {
+			auto: true,
+			speed: 1500
+		});
+	});
+</script>
+</div>
+<script>
+
+
+    $('.clinic-price__new').click(function () {
+        $(this).addClass('is-opened');
+        $(this).closest('.row').find('.clinic-price__btn').addClass('animate');
+        $(this).siblings('.tip').addClass('is-opened');
+
+
+//        var link = $("#test a");
+//        link.click(function(){
+//            link.addClass(function( index, currentClass ) {
+//                var addedClass = '';
+//                if ( currentClass === "actived-1" ) {
+//                    addedClass = "actived-ie";
+//                    setTimeout(function(){
+//                        link.removeClass(addedClass);
+//                    }, 5000);
+//                }
+//                return addedClass;
+//            });
+//        });
+    });
+
+</script>
+</body>
+</html>

@@ -1289,10 +1289,7 @@ $(document).ready(function () {
         //$(this).find('.reason__img-left').css('height', heighList + 15);
         $(this).find('div.reason--note div.reason__list--left').css('width', result);
     });
-
-
 });
-
 
 /**
  * BxSlider v4.1.2 - Fully loaded, responsive content slider
@@ -2667,6 +2664,7 @@ $(document).ready(function () {
  Licensed under the MIT license (http://digitalbush.com/projects/masked-input-plugin/#license)
  Version: 1.4.1
  */
+
 !function (factory) {
     "function" == typeof define && define.amd ? define(["jquery"], factory) : factory("object" == typeof exports ? require("jquery") : jQuery);
 }
@@ -20903,9 +20901,11 @@ function autoWidth() {
         $('.article').removeClass('swiper-container', 'swiper-container-horizontal')
     }
 }
+
 $(function () {
     autoWidth();
 });
+
 $(window).resize(function () {
     autoWidth();
 });
@@ -20996,7 +20996,6 @@ $(function () {
     });
 });
 
-
 $(function () {
     $('.reviews__text').on('click', '.open-review-js', function () {
         var hBlock = $(this).siblings('.sub');
@@ -21005,7 +21004,6 @@ $(function () {
     });
 });
 
-
 $('.js-more-text').on('click', function () {
     $(this).parents('div.cell').find('.js-lechenie').css('height', '100%');
     $(this).parents('p.more-text').remove();
@@ -21013,9 +21011,6 @@ $('.js-more-text').on('click', function () {
 $('.js-open-info').on('click', function () {
     $(this).siblings('div.js-hide-info').css('display', 'block');
 });
-
-
-
 
 $('.textQW').keyup(function () {
     $(this).height(24);
@@ -21027,7 +21022,7 @@ $('.textNote').keyup(function () {
 });
 
 
-Sharen = {
+/*Sharen = {
     vkontakte: function (purl, ptitle, pimg, text) {
         url = 'http://vkontakte.ru/share.php?';
         url += 'url=' + encodeURIComponent(purl);
@@ -21071,7 +21066,7 @@ Sharen = {
     popup: function (url) {
         window.open(url, '', 'toolbar=0,status=0,width=626,height=436');
     }
-};
+};*/
 
 /*
 (function () {
@@ -21393,15 +21388,10 @@ $('.popup-onestep__form-input.docclinic').select2({ maximumSelectionSize: 1 });
 
 $(document).ready(function () {
     $('.select').select2({});
-    console.log('select');
+    // console.log('select');
 });
 
-$(document).ready(function () {
-    $('.bxslider-expert').bxSlider({
-        auto: true,
-        speed: 1500
-    });
-});
+
 $('div.rating-js').rating();
 
 $(document).ready(function () {
@@ -21426,6 +21416,7 @@ $(document).ready(function () {
         }
     });
 });
+
 
 $(document).ready(function () {
     $('#reg-user__form').validate({
@@ -21464,17 +21455,44 @@ $(document).ready(function () {
     });
 });
 
+
 $(document).ready(function () {
-    $('.bxslider-body').bxSlider({
-        mode: 'fade',
-        adaptiveHeight: true,
-        infiniteLoop: true
-    });
-    $('.bxslider-right').bxSlider({
-        auto: true,
-        speed: 1500
-    });
+    if ($('.bxslider-body').length){
+        $('.bxslider-body').bxSlider({
+            mode: 'fade',
+            adaptiveHeight: true,
+            infiniteLoop: true
+        });
+    }
+    if ($('.bxslider-right').length){
+        $('.bxslider-right').bxSlider({
+            auto: true,
+            speed: 1500
+        });
+    }
+    if ($('.bxslider-expert').length){
+        $('.bxslider-expert').bxSlider({
+            auto: true,
+            speed: 1500
+        });
+    }
+    if ($('.clinic-main-about__img-slider').length) {
+        $('.clinic-main-about__img-slider').bxSlider({
+            adaptiveHeight: true,
+            slideWidth: 265,
+            slideMargin: 10,
+            pager: false,
+            controls: true,
+            auto: true,
+            speed: 1000,
+            hideControlOnEnd: true,
+            onSliderLoad: function () {
+                $(".clinic-main-about__img").css("visibility", "visible");
+            }
+        });
+    }
 });
+
 
 $(document).ready(function () {
 
@@ -21514,6 +21532,7 @@ $(document).ready(function () {
 
 });
 
+
 // phone number toggle
 $(".clinic-time__number--main-clinic").click(function(){
     $(this).siblings().toggle();
@@ -21545,20 +21564,44 @@ $(document).ready(function () {
 });
 
 
-$(document).ready(function () {
-    if ($('.clinic-main-about__img-slider').length) {
-        $('.clinic-main-about__img-slider').bxSlider({
-            adaptiveHeight: true,
-            slideWidth: 265,
-            slideMargin: 10,
-            pager: false,
-            controls: true,
-            auto: true,
-            speed: 1000,
-            hideControlOnEnd: true,
-            onSliderLoad: function () {
-                $(".clinic-main-about__img").css("visibility", "visible");
+// кнопка "наверх"
+/*$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+            $('.topbutton').fadeIn();
+        } else {
+            $('.topbutton').fadeOut();
+        }
+    });
+    $('.topbutton').click(function () {
+        $('body,html').animate({scrollTop: 0}, 800);
+    });
+});*/
+
+
+// прилипающее меню
+$(function () {
+    $(window).scroll(function() {
+        if ($('.sticky-anchor').length) {  //исключение, если на странице уже есть прилипающий элемент
+            if ($(this).scrollTop() > 120){ // кнопка "наверх"
+                $('.topbutton').fadeIn();
             }
-        });
-    }
+            else{
+                $('.topbutton').fadeOut();
+            }
+        }
+        else {  //если на странице нет прилипающих элементов
+            if ($(this).scrollTop() > 120){
+                $('.header-main_menu').addClass("sticky"); // закрепление меню
+                $('.topbutton').fadeIn();
+            }
+            else{
+                $('.header-main_menu').removeClass("sticky");
+                $('.topbutton').fadeOut();
+            }
+        }
+    });
+    $('.topbutton').click(function () {
+        $('body,html').animate({scrollTop: 0}, 800);
+    });
 });

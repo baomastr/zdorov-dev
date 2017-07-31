@@ -1125,8 +1125,9 @@ $(function () {
     });
 
 });
+
 $(document).ready(function () {
-    if ($.exists(".st-title")) {
+    if ($(".st-title").length) {
         //var el = $('div.st-title').parent('div.left-side');
         //var offset = el.offset();
         //console.log(offset);

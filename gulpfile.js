@@ -5,7 +5,16 @@ var gulp = require ('gulp'),
   stylus = require ('gulp-stylus'),
   nib = require('nib'),
   spritesmith = require('gulp.spritesmith'),
-  autoprefixer = require('gulp-autoprefixer');
+  // autoprefixer = require('gulp-autoprefixer');
+  uglify = require('gulp-uglifyjs');
+var rename = require("gulp-rename");
+
+gulp.task('js', function() {
+    gulp.src('dist/js/app.js')
+        .pipe(uglify())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('dist/jsmin'))
+});
 
 gulp.task('sprite', function() {
   var spriteData = 
@@ -52,22 +61,13 @@ gulp.task('stylus', function(){
     .pipe(connect.reload())
   });
 
-/*gulp.task('prefix', function() {
-    gulp.src('dist/css/!*.css')
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest('dist/postcss'))
-});*/
-
 gulp.task('watch',function(){
   gulp.watch('stylus/*.styl',['stylus']);
   gulp.watch('jade/*.jade',['jade']);
+    gulp.watch('js/*.js',['js']);
   // gulp.watch('dist/css/*.css',['prefix']);
   gulp.watch('assets/images/sprite/*.*',['sprite']);
   watch('dist/*.').pipe(connect.reload());
 });
 
-gulp.task('default',['connect','jade', 'sprite', 'stylus', 'watch']);
-
+gulp.task('default',['connect', 'jade', 'js', 'sprite', 'stylus', 'watch']);

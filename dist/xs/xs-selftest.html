@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Болезни и их лечение</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<!--<meta name="viewport" content="width=1250">-->
+	<!--<meta name="MobileOptimized" content="1250">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body">
+		<header>
+			<div class="clearfix header-top">
+				<div class="header-top__item menu-burger header-top__btn visible-xs">
+					<a id="nav-icon3" class="visible-xs">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				<a href="/" class="header-logo header-top__item">
+					<img src="http://zdorov.online/img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<a class="header-top__item menu-search header-top__btn visible-xs">
+					<img src="mob/search.png" alt="">
+				</a>
+				<style>
+					.search_block {
+						position: relative;
+					}
+
+					.search_block .search_tips {
+						display: none;
+						position: absolute;
+						top: 50px;
+						left: 280px;
+						background-color: #fff;
+						width: 497px;
+						border: 1px solid #ccc;
+					'
+					}
+
+					.search_block .search_tips .tips {
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+
+					.search_block .search_tips .tips_kato {
+						padding: 4px 8px;
+						background-color: #87CEFA;
+						color: #fff;
+
+					}
+
+					.search_block .search_tips .tips:hover {
+						background-color: #ccc;
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+				</style>
+				<div class="search_block">
+					<div class="header-search">
+						<form action="/search/">
+							<input autocomplete="off" type="search" name="q" placeholder="Например: С какой стороны аппендицит у женщин?" value="">
+							<input type="submit" value="">
+						</form>
+					</div>
+				</div>
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="/auth/">Вход</a>
+						/
+						<a href="/reg/" class="go_to_reg">Регистрация</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list">
+						<a href="/selftest/j/">Самодиагностика</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/articles/">Статьи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/clinics/">Клиники</a>
+						<ul class="main-submenu">
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-lecheniyu/" class="main-submenu__link">
+									По лечению
+								</a>
+							</li>
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-diagnostike/" class="main-submenu__link">
+									По диагностике
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main_menu-list">
+						<a href="/vrach/">Врачи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/bolezni/">Болезни</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/forum/">Форум</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/qa/">Вопросы врачу</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>
+		<!-- end header-->
+		<main>
+			<div class="ratemenu">
+				<div class="ratemenu__title">
+					Рейтинги клиник:
+				</div>
+				<ul class="ratemenu__list">
+					<li class="ratemenu__list-item">
+						<a href="/clinics/reyting-khoroshikh-klinik/">10 лучших клиник Москвы</a>
+					</li>
+				</ul>
+			</div>
+			<div class="crumbs">
+				<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="/">
+							<span itemprop="name">Главная</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<span itemprop="name">Болезни и их лечение</span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+
+			<div class="left-side">
+				<div class="st-title st-title--main clearfix">
+					<!--<a name="top"><span><h1>Самодиагностика</h1></span></a>-->
+					<!--<a class="st-back" href="/selftest/">назад</a>-->
+					<!--<span class="choose-area">Выберите область беспокойства</span>-->
+					<!--<div class="cloud">Выберете область<br> которая вас беспокоит</div>-->
+					<div class="maintitle">
+						<h1>Самодиагностика</h1>
+						<span style="float: none;display: block;text-align: center;padding-top: 0;width: auto;" class="choose-area maintitle__bottom">Выберите область беспокойства</span>
+					</div>
+				</div>
+				<div class="st-main__wrap" style="position: relative;">
+					<div class="st-list" style="display: block;width: 220px;">
+						<div class="st-list__title">
+							<!--<span class="st-list__img">-->
+							<!--</span>-->
+							<div class="st-list__title-text">
+								<p>Вид спереди</p>
+								<!--<p><span>Нажмите на интересующий пункт в списке:</span></p>-->
+								<!--<button class="close_btn"></button>-->
+							</div>
+						</div>
+						<ul class="sidebar_selftest">
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/golova/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины">Голова</a></li>
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/sheya/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Горло женщины">Горло </a></li>
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/grudnaya_kletka/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Грудная клетка женщины">Грудная клетка </a></li>
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/ruki/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Руки женщины">Рука </a></li>
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/jivot/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Живот женщины">Живот</a></li>
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/pah/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Пах женщины">Пах </a></li>
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/nogi/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Ноги женщины">Нога </a></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="otherproblems" style="position: absolute;left: -220px;bottom: 140px;">
+						<p style="color: #2db3e5;">Другие проблемы</p>
+						<ul>
+							<li>
+								<a href="/selftest/drugie_problemi/ozhirenie/">Ожирение </a>
+							</li>
+						</ul>
+					</div>
+					<div class="st-list" style="display: block;width: 220px;">
+						<div class="st-list__title">
+							<!--<span class="st-list__img">-->
+							<!--</span>-->
+							<div class="st-list__title-text">
+								<p>Вид сзади</p>
+								<!--<p><span>Нажмите на интересующий пункт в списке:</span></p>-->
+								<!--<button class="close_btn"></button>-->
+							</div>
+						</div>
+						<ul class="sidebar_selftest">
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/golova/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины">Голова</a></li>
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/sheya-b/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Шея женщины">Шея </a></li>
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/spina/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Спина женщины">Спина </a></li>
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/ruki/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Руки женщины">Рука </a></li>
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/poyastnica/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Поясница женщины">Поясница </a></li>
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/yagodicy/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Ягодицы женщины">Ягодицы </a></li>
+							<!--<li><a class="path-body__link--heir" href="--><!----><!--/">--><!--</a></li>-->
+							<li><a href="/selftest/j/nogi/" data-subject-body="Самодиагностика Женщины" data-loc-subject="Ноги женщины">Нога </a></li>
+						</ul>
+					</div>
+					<div id="preloader" style="display: none;"></div>
+					<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 565px;"><div class="st-bxslider__wrap st-main" id="st-slider" style="width: auto; position: relative;">
+						<!--BEGIN_OF_HTML_FOR_CRM-->
+						<div class="st-pic__wrap" style="float: none; list-style: none; position: absolute; width: 400px; z-index: 50; display: block;">
+							<div class="st-pic">
+								<div class="st-img">
+									<img src="/img/st-woman.jpg">
+									<div class="st-b st-woman-main__head"><a href="/selftest/j/golova/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" title="Голова"></a></div>
+									<div class="st-b st-woman-main__sheya"><a href="/selftest/j/sheya/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Шея женщины" title="Шея"></a></div>
+									<div class="st-b st-woman-main__hand-right"><a href="/selftest/j/ruki/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Руки женщины" title="Руки"></a></div>
+									<div class="st-b st-woman-main__hand-left"><a href="/selftest/j/ruki/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Руки женщины" title="Руки"></a></div>
+									<div class="st-b st-woman-main__grud"><a href="/selftest/j/grudnaya_kletka/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Грудная клетка женщины" title="Грудная клетка"></a></div>
+									<div class="st-b st-woman-main__stomach"><a href="/selftest/j/jivot/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Живот женщины" title="Живот"></a></div>
+									<div class="st-b st-woman-main__legs"><a href="/selftest/j/nogi/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Ноги женщины" title="Ноги"></a></div>
+									<div class="st-b st-woman-main__pah"><a href="/selftest/j/pah/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Пах женщины" title="Паховая область"></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="st-pic__wrap" style="float: none; list-style: none; position: absolute; width: 400px; z-index: 0; display: none;">
+							<div class="st-pic">
+								<div class="st-img">
+									<img src="/img/st-woman-back.jpg">
+									<div class="st-b st-woman-main__head-b"><a href="/selftest/j/golova/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" title="Голова"></a></div>
+									<div class="st-b st-woman-main__sheya-b"><a href="/selftest/j/sheya-b/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Шея женщины" title="Шея"></a></div>
+									<div class="st-b st-woman-main__hand-right-b"><a href="/selftest/j/ruki/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Руки женщины" title="Руки"></a></div>
+									<div class="st-b st-woman-main__hand-left-b"><a href="/selftest/j/ruki/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Руки женщины" title="Руки"></a></div>
+									<div class="st-b st-woman-main__spina"><a href="/selftest/j/spina/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Спина женщины" title="Спина"></a></div>
+									<div class="st-b st-woman-main__poyastnica"><a href="/selftest/j/poyastnica/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Поясница женщины" title="Поясница"></a></div>
+									<div class="st-b st-woman-main__legs-b"><a href="/selftest/j/nogi/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Ноги женщины" title="Ноги"></a></div>
+									<div class="st-b st-woman-main__back"><a href="/selftest/j/yagodicy/#top" data-subject-body="Самодиагностика Женщины" data-loc-subject="Ягодицы женщины" title="Ягодицы"></a></div>
+								</div>
+							</div>
+						</div>
+						<!--END_OF_HTML_FOR_CRM-->
+					</div></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+				</div>
+
+				<div class="st-link">
+					<a href="/selftest/m/#top" class="st-link__blue side">М</a>
+					<a href="/selftest/j/#top" class="st-link__pink center">Ж</a>
+					<a href="/selftest/r/#top" class="st-link__orange side">Р</a>
+				</div>
+				<script>
+				</script>
+				<div class="button-share__SN">
+					<span>Понравилась самодиагностика - лайкни:</span>
+					<section class="share__SN">
+						<ul>
+							<li class="share__SN--vk"><a onclick="return Share.vkontakte('http://zdorov.online/selftest/j/','Самодиагностика - узнай все о своем здоровье!');">Вконтакте</a></li>
+							<li class="share__SN--f"><a onclick="return Share.facebook('http://zdorov.online/selftest/j/','Самодиагностика - узнай все о своем здоровье!');">Facebook</a></li>
+							<li class="share__SN--tw"><a onclick="return Share.twitter('http://zdorov.online/selftest/j/','Самодиагностика - узнай все о своем здоровье!')">Tweeter</a></li>
+							<li class="share__SN--ok"><a onclick="return Share.odnoklassniki('http://zdorov.online/selftest/j/','Самодиагностика - узнай все о своем здоровье!');">Одноклассники</a></li>
+							<li class="share__SN--g"><a onclick="return Share.google('http://zdorov.online/selftest/j/','Самодиагностика - узнай все о своем здоровье!');">GooglPlus</a></li>
+							<li class="share__SN--Lj"><a onclick="return Share.livejornal('http://zdorov.online/selftest/j/','Самодиагностика - узнай все о своем здоровье!');">LiveJournal</a></li>
+						</ul>
+					</section>
+				</div></div>
+
+			<script>
+				$(document).ready(function () {
+					$.post("/include/right_links_docs.php", {"cnt": "30", 'cp': '/bolezni/'}, function (resp) {
+						$('#rdocs').html(resp);
+					});
+				});
+			</script>
+
+			<!--right sidebar-->
+			<div class="right-sidebar clearfix">
+				<div id="rpolis"></div>
+				<div id="rfilter"></div>
+				<div style="display: none;">
+
+				</div>
+				&#65279;
+
+
+				<div id="rdocs">
+
+					<article class="list-right-sb-search">
+						<div class="list-right-sb-search--wrap">
+							<div class="list-right-sb-search__title">Специальности</div>
+						</div>
+						<ul style="padding-bottom: 15px;">
+							<li>
+								<a class="rdocs" href="/vrach/akusher/">Акушер</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/akusher-ginekolog/">Акушер - гинеколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/allergolog/">Аллерголог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/allergolog-immunolog/">Аллерголог-иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/angiolog/">Ангиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/androlog/">Андролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/artrolog/">Артролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/venerolog/">Венеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/vertebrolog/">Вертебролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/virusolog/">Вирусолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/virusolog-immunolog/">Вирусолог-иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/lfk/">Врач ЛФК</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gastroenterolog/">Гастроэнтеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gematolog/">Гематолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/genetik/">Генетик</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gepatolog/">Гепатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ginekolog/">Гинеколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/girudolog/">Гирудотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gomeopat/">Гомеопат</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatovenerolog/">Дерматовенеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatolog/">Дерматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatolog-venerolog/">Дерматолог-венеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kosmetolog-dermatolog/">Дерматолог-косметолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/defektolog/">Дефектолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/diabetolog/">Диабетолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dietolog/">Диетолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/immunolog/">Иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/infekcionist/">Инфекционист</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kardiolog/">Кардиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kardiohirurg/">Кардиохирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kosmetolog/">Косметолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/lor-otolaringolog/">ЛОР</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/logoped/">Логопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/logoped-defektolog/">Логопед дефектолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/mammolog/">Маммолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/manualnyy-terapevt/">Мануальный терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/massazhist/">Массажист</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/narkolog/">Нарколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/nevrolog/">Невролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/neyrohirurg/">Нейрохирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/neonatolog/">Неонатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/nefrolog/">Нефролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkodermatolog/">Онкодерматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkolog/">Онколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkolog-mammolog/">Онколог маммолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ortoped/">Ортопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/osteopat/">Остеопат</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/otolaringolog/">Отоларинголог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/oftalmolog/">Офтальмолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/parodontolog/">Пародонтолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/pediatr/">Педиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/plasticheskiy-hirurg/">Пластический хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/proktolog/">Проктолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikhiatr/">Психиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikholog/">Психолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikhoterapevt/">Психотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/pulmonolog/">Пульмонолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/revmatolog/">Ревматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/refleksoterapevt/">Рефлексотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/seksolog/">Сексолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/seksopatolog/">Сексопатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/somnolog/">Сомнолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/sosudistii-hirurg/">Сосудистый хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog/">Стоматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-ortodont/">Стоматолог-ортодонт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-terapevt/">Стоматолог-терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-hirurg/">Стоматолог-хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/surdolog/">Сурдолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/terapevt/">Терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/travmatolog/">Травматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/travmatolog-ortoped/">Травматолог-ортопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/transfuziolog/">Трансфузиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/trikholog/">Трихолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/urolog/">Уролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/urolog-androlog/">Уролог-андролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/fizioterapevt/">Физиотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/flebolog/">Флеболог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ftiziator/">Фтизиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg/">Хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg-proktolog/">Хирург проктолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg-flebolog/">Хирург флеболог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/endokrinolog/">Эндокринолог</a>
+							</li>
+						</ul>
+					</article>
+					<script>
+						$(document).ready(function () {
+						});
+					</script>
+				</div>
+				<article class="about">
+					<div class="about__wrap">
+						<!--<section class="about__SN">
+							<div class="about__title">ПРИСОЕДИНЯЙТЕСЬ К НАМ В СОЦСЕТЯХ:</div>
+							<ul>
+								<li class="about__SN--vk"><a href="#x">Вконтакте</a></li>
+								<li class="about__SN--f"><a href="#x">Facebook</a></li>
+								<li class="about__SN--tw"><a href="#x">Tweeter</a></li>
+								<li class="about__SN--ok"><a href="#x">Одноклассники</a></li>
+								<li class="about__SN--g"><a href="#x">GooglPlus</a> </li>
+							</ul>
+						</section>-->
+						<section class="about_contents">
+							<div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+							<ul>
+								<li class="about_contents--pills">
+									<!--noindex-->
+									<a href="/bolezni/"><span>Более 400 болезней</span>
+										Причины, проявления, лечение и профилактика
+									</a><!--/noindex--></li>
+								<li class="about_contents--clinic">
+									<!--noindex-->
+									<a href="/clinics/"><span>Рейтинг клиник</span>
+										Достоверная информация о качестве лечения на основе посещения клиник
+									</a><!--/noindex--></li>
+								<li class="about_contents--node">
+									<!--noindex-->
+									<a href="/vrach/"><span>Запись к врачу</span>
+										Очень легко к нужному врачу
+									</a><!--/noindex--></li>
+								<li class="about_contents--question">
+									<!--noindex-->
+									<a href="/qa/"><span>Задать вопрос</span>
+										Бесплатные консультации врачей
+									</a><!--/noindex--></li>
+							</ul>
+						</section>
+					</div>
+				</article>
+				<div id="right_socadd"></div>
+				<div style="width:240px;">
+				</div>
+				<div>
+
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</main>
+
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<div class="clearfix"></div>
+	<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<img src="img/logo.png" title="Zdorov.online">
+			</div>
+			<div class="footer-content__article hidden-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Лучшие врачи Москвы</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Вся диагностика Москвы</a>
+				<a href="/novosti/">Новости</a>
+				<div class="menu-footer__list hidden-xs">
+					<ul>
+						<!--noindex-->
+						<li>
+							<a href="/adv/">Реклама на портале</a>
+						</li>
+						<li>
+							<a href="/dlya-klinik/">Для клиник</a>
+						</li>
+						<li>
+							<a href="/about/">О проекте</a>
+						</li><!--/noindex-->
+						<li>
+							<a href="/contacts/">Контакты</a>
+						</li>
+						<!--noindex-->
+						<li>
+							<a href="/term/">Соглашение с порталом</a>
+						</li><!--/noindex-->
+						<!--noindex-->
+						<li>
+							<a target="_blank" href="http://partners.zdorov.online/">Партнерам</a>
+						</li><!--/noindex-->
+					</ul>
+				</div>
+			</div>
+			<div class="footer-content__article mobile visible-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Врачи</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Клиники</a>
+				<a href="/novosti/">Новости</a>
+			</div>
+
+			<div class="menu-footer-document hidden-xs">
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2017. Все права защищены.
+						<a href="/karta-saita/">Карта сайта</a>
+					</p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем. 16+</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left: 86px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+				</div>
+			</div>
+			<div class="footer-content__right-side mk visible-xs">
+				Информационный партнер портала
+				<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script src="js/app.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#nav-icon3').click(function () {
+				$(this).toggleClass('open');
+				$('.header-main_menu').toggleClass('open');
+			});
+
+			if($('#sticky').length) {
+				/*прилипающая шапка в таблицах start*/
+				var StickyElement = function(node){
+					var doc = $(document),
+							fixed = false,
+							anchor = node.find('.sticky-anchor'),
+							content = node.find('.sticky-content');
+
+					var onScroll = function(e){
+						var docTop = doc.scrollTop(),
+								anchorTop = anchor.offset().top;
+
+						// console.log('scroll', docTop, anchorTop);
+						if(docTop > anchorTop){
+							if(!fixed){
+								anchor.height(content.outerHeight());
+								content.addClass('fixed');
+								fixed = true;
+							}
+						}  else   {
+							if(fixed){
+								anchor.height(0);
+								content.removeClass('fixed');
+								fixed = false;
+							}
+						}
+					};
+
+					$(window).on('scroll', onScroll);
+				};
+
+				var demo = new StickyElement($('#sticky'));
+				/*прилипающая шапка в таблицах end*/
+			}
+//			$('.st-list__title').first().siblings('.content').addClass("open");
+			$('.st-list__title').click(function() {
+				$(this).parent().toggleClass("open").slow();
+			});
+
+//			if($('.content.fadeIn.animated').length){
+//				$('.content.fadeIn.animated').eq(0).addClass('open');
+//				if($('.content__row').eq(0).find('.content__cell').length == 2){
+//					$('.content__cell:nth-child(1)').css('width','92%');
+//				}
+//				if($('.content__row').eq(0).find('.content__cell').length == 4){
+//					$('.content__cell:nth-child(1)').css('width','72%');
+//				}
+//			}
+		});
+	</script>
+</div>
+</body>
+</html>

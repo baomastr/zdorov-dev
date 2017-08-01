@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Болезни и их лечение</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<!--<meta name="viewport" content="width=1250">-->
+	<!--<meta name="MobileOptimized" content="1250">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body">
+		<header>
+			<div class="clearfix header-top">
+				<div class="header-top__item menu-burger header-top__btn visible-xs">
+					<a id="nav-icon3" class="visible-xs">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				<a href="/" class="header-logo header-top__item">
+					<img src="http://zdorov.online/img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<a class="header-top__item menu-search header-top__btn visible-xs">
+					<img src="mob/search.png" alt="">
+				</a>
+				<style>
+					.search_block {
+						position: relative;
+					}
+
+					.search_block .search_tips {
+						display: none;
+						position: absolute;
+						top: 50px;
+						left: 280px;
+						background-color: #fff;
+						width: 497px;
+						border: 1px solid #ccc;
+					'
+					}
+
+					.search_block .search_tips .tips {
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+
+					.search_block .search_tips .tips_kato {
+						padding: 4px 8px;
+						background-color: #87CEFA;
+						color: #fff;
+
+					}
+
+					.search_block .search_tips .tips:hover {
+						background-color: #ccc;
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+				</style>
+				<div class="search_block">
+					<div class="header-search">
+						<form action="/search/">
+							<input autocomplete="off" type="search" name="q" placeholder="Например: С какой стороны аппендицит у женщин?" value="">
+							<input type="submit" value="">
+						</form>
+					</div>
+				</div>
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="/auth/">Вход</a>
+						/
+						<a href="/reg/" class="go_to_reg">Регистрация</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list">
+						<a href="/selftest/j/">Самодиагностика</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/articles/">Статьи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/clinics/">Клиники</a>
+						<ul class="main-submenu">
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-lecheniyu/" class="main-submenu__link">
+									По лечению
+								</a>
+							</li>
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-diagnostike/" class="main-submenu__link">
+									По диагностике
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main_menu-list">
+						<a href="/vrach/">Врачи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/bolezni/">Болезни</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/forum/">Форум</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/qa/">Вопросы врачу</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>
+		<!-- end header-->
+		<main>
+			<div class="ratemenu">
+				<div class="ratemenu__title">
+					Рейтинги клиник:
+				</div>
+				<ul class="ratemenu__list">
+					<li class="ratemenu__list-item">
+						<a href="/clinics/reyting-khoroshikh-klinik/">10 лучших клиник Москвы</a>
+					</li>
+				</ul>
+			</div>
+			<div class="crumbs">
+				<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="/">
+							<span itemprop="name">Главная</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<span itemprop="name">Болезни и их лечение</span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+
+			<div class="left-side">
+				<div class="st-title clearfix">
+					<a name="top"><span><h1>Голова</h1></span></a>
+					<a class="st-back" href="http://zdorov.online/selftest/">назад</a>
+					<div class="cloud" style="display: none;">Выберете область которая вас беспокоит</div>
+					<a name="top"></a>
+				</div>
+				<div class="st-bxslider__wrap">
+					<div class="st-pic__wrap">
+						<div class="st-pic clearfix">
+							<div class="st-img">
+								<img src="./golova_files/head.jpg">
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__volosy">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Волосы</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__volosy">
+									<div class="st-list__title">
+                        <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>волосы</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/zalysiny-u-zhenshchin/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Залысины у женщин">
+												Залысины у женщин			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/sedina-v-molodom-vozraste/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Седина в молодом возрасте">
+												Седина в молодом возрасте			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/lomkost-volos/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Ломкость волос">
+												Ломкость волос			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/redkie-volosy/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Редкие волосы">
+												Редкие волосы			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/tusklye-volosy/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Тусклые волосы">
+												Тусклые волосы			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/volosy-sekutsya/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Секущиеся волосы">
+												Секущиеся волосы			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/vypadenie-volos/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Выпадение волос">
+												Выпадение волос			</a>
+										</li>
+									</ul>                </div>
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__psih">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Психика</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__psih">
+									<div class="st-list__title">
+                      <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>психика</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/narushenie-yasnosti-soznaniya/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Нарушение ясности сознания, ориентировки в месте">
+												Нарушение ясности сознания, ориентировки в месте			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/obmany-vospriyatiya/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Обманы восприятия">
+												Обманы восприятия			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/paranoyya/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Паранойя">
+												Паранойя			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/suitsidalnye-mysli/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Суицидальные мысли">
+												Суицидальные мысли			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/depressiya/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Депрессия">
+												Депрессия			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/snizhenie-pamyati/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Снижение памяти, мыслительной активности, способности к запоминанию, рассеянное внимание">
+												Снижение памяти, мыслительной активности, способности к запоминанию, рассеянное внимание			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/slabost-vyalost/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Слабость, вялость, быстрая утомляемость">
+												Слабость, вялость, быстрая утомляемость			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/chastaya-smena-labilnost-nastroeniya/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Частая смена настроения">
+												Частая смена настроения			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/narushenie-sna/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Нарушение сна (бессонница)">
+												Нарушение сна (бессонница)			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/razdrazhitelnost/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Раздражительность, придирчивость, гневливость, агрессивность">
+												Раздражительность, придирчивость, гневливость, агрессивность			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/trevozhnost/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Тревожность, дискомфорт, внутреннее напряжение, беспокойство, фобии, страх, паника">
+												Тревожность, дискомфорт, внутреннее напряжение, беспокойство, фобии, страх, паника			</a>
+										</li>
+									</ul>                </div>
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__koja">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Кожа лица</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__koja">
+									<div class="st-list__title">
+                       <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>кожа лица</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/zheltushnost-kozhi-litsa/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Желтушность кожи лица">
+												Желтушность кожи лица			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/shishki-pod-kozhey/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Шишки под кожей">
+												Шишки под кожей			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/sukhost/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Сухость">
+												Сухость			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/otek/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Отечность кожи лица">
+												Отечность кожи лица			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/puzyrki-na-lice/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Пузырьки">
+												Пузырьки			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/shelushenie-lica/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Шелушение лица">
+												Шелушение лица			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/zhzhenie/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Жжение">
+												Жжение			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/zud-lica/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Зуд кожи лица">
+												Зуд кожи лица			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/pokrasnenie-lica/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Покраснение">
+												Покраснение			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/borodavki/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Бородавки на лице">
+												Бородавки на лице			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/pryshchi/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Прыщи на лице">
+												Прыщи на лице			</a>
+										</li>
+									</ul>                </div>
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__guby  ">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Губы</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__guby">
+									<div class="st-list__title">
+                       <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>губы</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/zhzhenie-gub/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Жжение губ">
+												Жжение губ			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bolyachki-prostuda-na-gubakh/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Болячки, простуда на губах">
+												Болячки, простуда на губах			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/shchipet-v-ugolkakh-rta/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Болят губы в уголках рта, образование заедов">
+												Болят губы в уголках рта, образование заедов			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bolyat-guby/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Болят губы">
+												Болят губы			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/sukhost-gub/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Сухость, шелушение губ">
+												Сухость, шелушение губ			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/obrazovaniya-na-gubakh/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Подкожные прыщи в губах">
+												Подкожные прыщи в губах			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/treshchiny/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Трещины">
+												Трещины			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/otyek-gub/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Отёк губ">
+												Отёк губ			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/chesutsya-gubi/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Чешутся губы">
+												Чешутся губы			</a>
+										</li>
+									</ul>                </div>
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__zuby">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Зубы</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__zuby">
+									<div class="st-list__title">
+                        <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>зубы</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/nalet-mezhdu-zubom-i-desnoy/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Налет между зубом и десной">
+												Налет между зубом и десной			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/cheshetsya-desna/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Чешется десна">
+												Чешется десна			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/chuvstvitelnost-na-temperaturu-goryachee-i-kholodnoe/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Чувствительность на температуру (горячее и холодное)">
+												Чувствительность на температуру (горячее и холодное)			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bolyat-zuby-mudrosti/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Болят зубы мудрости">
+												Болят зубы мудрости			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/pripukhlost-desny/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Припухлость десны">
+												Припухлость десны			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/izmenenie-tsveta-zuba/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Изменение цвета зуба">
+												Изменение цвета зуба			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/krovotochivost-desen/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Кровоточивость десен">
+												Кровоточивость десен			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/poyavlenie-gnoynikov-na-desne/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Появление гнойников на десне">
+												Появление гнойников на десне			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-v-zube/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Болит зуб">
+												Болит зуб			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bolyat-desny/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Болят десны">
+												Болят десны			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/podvizhnyy-zub/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Подвижный зуб">
+												Подвижный зуб			</a>
+										</li>
+									</ul>                </div>
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__rot">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Рот</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__rot">
+									<div class="st-list__title">
+                        <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>рот</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/opukh-yazyk/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Опух язык">
+												Опух язык			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/izmenenie-tsveta-yazyka/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Изменение цвета языка">
+												Изменение цвета языка			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/yazvochki-na-shchekakh/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Язвочки на щеках">
+												Язвочки на щеках			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/yazvochki-na-yazyke/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Язвочки на языке">
+												Язвочки на языке			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/otek-shcheki/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Отек щеки">
+												Отек щеки			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/zapakh-izo-rta/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Запах изо рта">
+												Запах изо рта			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/malinovyy-yazyk/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Малиновый язык">
+												Малиновый язык			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/temnyy-nalet-na-yazyke/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Темный налет на языке">
+												Темный налет на языке			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/belyy-nalet-na-yazyke/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Белый налет на языке">
+												Белый налет на языке			</a>
+										</li>
+									</ul>                </div>
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__nos">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Нос</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__nos">
+									<div class="st-list__title">
+                       <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>нос</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/nasmork/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Насморк">
+												Насморк			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/chastoe-chikhanie/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Частое чихание">
+												Частое чихание			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/inorodnoe-telo-v-nosu/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Инородное тело в носу">
+												Инородное тело в носу			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-v-nosu/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль в носу">
+												Боль в носу			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/khrap/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Храп">
+												Храп			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-pri-nadavlivanii/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль при надавливании">
+												Боль при надавливании			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/gnusavost/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Гнусавость">
+												Гнусавость			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/cheshetsya-nos/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Чешется нос">
+												Чешется нос			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/sukhost-v-nosu/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Сухость в носу">
+												Сухость в носу			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/poterya-zapakha/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Потеря запаха">
+												Потеря запаха			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/krovyanye-vydeleniya-iz-nosa/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Кровь из носа">
+												Кровь из носа			</a>
+										</li>
+									</ul>                </div>
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__glaz">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Глаз</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__glaz">
+									<div class="st-list__title">
+                        <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>глаз</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/glaza-na-vykate/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Глаза на выкате">
+												Глаза на выкате			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/otechnost-v-oblasti-glaz/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Отечность в области глаз">
+												Отечность в области глаз			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/vospalenie-posle-nosheniya-linz/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Покраснение глаз после линз">
+												Покраснение глаз после линз			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/slezyatsya-glaza/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Слезоточивость глаз">
+												Слезоточивость глаз			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/glaza-gnoyatsya/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Нагноение глаз">
+												Нагноение глаз			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/cheshutsya-glaza/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Глаза чешутся">
+												Глаза чешутся			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/ukhudshaetsya-zrenie/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Ухудшение зрения">
+												Ухудшение зрения			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/ustayut-glaza/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Устают глаза">
+												Устают глаза			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bolit-glaz/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Болит глаз">
+												Болит глаз			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/sukhost-glaz/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Сухость глаз">
+												Сухость глаз			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/oshchushchenie-inorodnogo-tela-v-glazu/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Ощущение инородного тела в глазу">
+												Ощущение инородного тела в глазу			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/krasneyut-glaza/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Краснеют глаза">
+												Краснеют глаза			</a>
+										</li>
+									</ul>                </div>
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__lob">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Лоб</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__lob">
+									<div class="st-list__title">
+                       <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>лоб</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/postoyannaya-bol/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Постоянная боль">
+												Постоянная боль			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/pripukhlost-i-poyavlenie-shishki/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Припухлость и появление шишки">
+												Припухлость и появление шишки			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-nad-glazom/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль над глазом">
+												Боль над глазом			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-ot-povysheniya-davleniya/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль от повышения давления">
+												Боль от повышения давления			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-posle-umstvennogo-napryazheniy/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль после умственного напряжения">
+												Боль после умственного напряжения			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-oblasti-lba/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль в области лба">
+												Боль в области лба			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/tupaya-bol-lob/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Тупая боль">
+												Тупая боль			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/periodicheskaya-bol/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Периодическая боль">
+												Периодическая боль			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/rezkaya-bol/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Резкая боль">
+												Резкая боль			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/pulsiruyushchaya-bol-lob/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Пульсирующая боль">
+												Пульсирующая боль			</a>
+										</li>
+									</ul>                </div>
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__bol">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Головная<br> боль</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__bol">
+									<div class="st-list__title">
+                       <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>Головная боль</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/rezkaya-golovnaya-bol/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Резкая головная боль">
+												Резкая головная боль			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/tupaya-golovnaya-bol/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Тупая головная боль">
+												Тупая головная боль			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/postoyannaya-golovnaya-bol/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Постоянная головная боль">
+												Постоянная головная боль			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/periodicheskaya-golovnaya-bol/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Периодическая головная боль">
+												Периодическая головная боль			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-v-golove-pri-lyubom-dvizhenii/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль в голове при движении">
+												Боль в голове при движении			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/chuvstvo-tyazhesti/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Чувство тяжести в голове">
+												Чувство тяжести в голове			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/golovokruzhenie/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Головокружение">
+												Головокружение			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/pulsiruyushchie-boli/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Пульсирующая боль">
+												Пульсирующая боль			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/migren/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Мигрень">
+												Мигрень			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/golovnaya-bol/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Головная боль">
+												Головная боль			</a>
+										</li>
+									</ul>                </div>
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__yho">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Ухо</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__yho">
+									<div class="st-list__title">
+                       <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>Ухо</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-v-ushakh/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль в ушах">
+												Боль в ушах			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/poyavlenie-yazv/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Прыщи в ушах">
+												Прыщи в ушах			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/oshchushchenie-inorodnogo-tela/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Ощущение инородного тела в ухе">
+												Ощущение инородного тела в ухе			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/pokrasnenie-ushei/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Покраснение">
+												Покраснение			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/zalozhennost/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Заложенность">
+												Заложенность			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/cheshutsya-ushi/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Чешутся уши">
+												Чешутся уши			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/strelyaet-v-ukhe/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Стреляет в ухе">
+												Стреляет в ухе			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/shum-v-ushakh/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Шум в ушах">
+												Шум в ушах			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/poterya-slukha/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Ухудшение слуха">
+												Ухудшение слуха			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/gnoynye-vydeleniya/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Гнойные выделения">
+												Гнойные выделения			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/krovyanye-vydeleniya/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Кровянистые выделения">
+												Кровянистые выделения			</a>
+										</li>
+									</ul>                </div>
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__visok">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Височная<br> область</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__visok">
+									<div class="st-list__title">
+                        <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>Висок</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-reagiruyushchaya-na-dvizheniya-golovy/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль при движении головы">
+												Боль при движении головы			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-pri-stresse/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль при стрессе">
+												Боль при стрессе			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-posle-umstvennogo-napryazheniya/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль после умственного напряжения">
+												Боль после умственного напряжения			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/tupaya-bol/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Тупая боль в висках">
+												Тупая боль в висках			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/sverlyashchie-boli/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Острая боль в висках">
+												Острая боль в висках			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/pripukhlost/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Припухлость, шишка">
+												Припухлость, шишка			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/onemenie/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Онемение в висках">
+												Онемение в висках			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/pulsatsiya-v-viskakh/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Пульсация в висках">
+												Пульсация в висках			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-v-viskakh/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль в висках">
+												Боль в висках			</a>
+										</li>
+									</ul>                </div>
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__zatylok">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Затылок</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__zatylok">
+									<div class="st-list__title">
+                        <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>Затылок</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/periodicheskay-bol/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Периодическая боль">
+												Периодическая боль			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/postoyannaya-bol-v-zatylke/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Постоянная боль в затылке">
+												Постоянная боль в затылке			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/ostraya-bol/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Острая боль в затылке">
+												Острая боль в затылке			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-posle-umstvennogo-perenapryazheniya/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль после умственного напряжения">
+												Боль после умственного напряжения			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/noyushchaya-bol/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Ноющая боль">
+												Ноющая боль			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/poyavlenie-shishek/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Припухлость, шишки">
+												Припухлость, шишки			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-pri-dvizhenii/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль при движении">
+												Боль при движении			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/chuvstvo-onemeniya-v-zatilke/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Чувство онемения затылка">
+												Чувство онемения затылка			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/pulsiruyushchaya-bol/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Пульсирующая боль">
+												Пульсирующая боль			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/bol-v-zatylke/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Боль в затылке">
+												Боль в затылке			</a>
+										</li>
+									</ul>                </div>
+							</div>
+							<div class="st-pic__item-wrap">
+								<div class="st-pic__item st-head__koja-golova">
+									<div class="st-pic__area">
+										<div class="st-pic__circle"></div>
+										<div class="st-pic__area-red"></div>
+										<div class="st-pic__area-text">Кожа головы</div>
+									</div>
+								</div>
+								<div class="st-list open st-list__zatylok">
+									<div class="st-list__title">
+                        <span class="st-list__img">
+                        </span>
+										<div class="st-list__title-text">
+											<p><q>Кожа головы</q></p>
+											<p><span>Нажмите на интересующий пункт в списке:</span></p>
+											<button class="close_btn"></button>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/perkhot/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Перхоть">
+												Перхоть			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/cheshetsya-kozha-golovy/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Зуд кожи головы">
+												Зуд кожи головы			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/yazvochki/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Язвочки">
+												Язвочки			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/korki/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Корки">
+												Корки			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/puzyrki-v-volosah/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Пузырьки">
+												Пузырьки			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/pryshchi-gnoynichki/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Прыщи, гнойнички">
+												Прыщи, гнойнички			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/zhzhenie-kozhi-golovy/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Жжение">
+												Жжение			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/pyatna-na-kozhe-golovy/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Пятна на коже головы">
+												Пятна на коже головы			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/sukhost-kozhi-golovy/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Сухость">
+												Сухость			</a>
+										</li>
+										<li>
+											<a style="cursor:pointer;" onclick="location.assign(location.protocol + &quot;//&quot; + location.host + &quot;/selftest/j/golova/pokrasnenie-kozhi-golovy/&quot;)" data-subject-body="Самодиагностика Женщины" data-loc-subject="Голова женщины" data-fourth-step="Покраснение">
+												Покраснение			</a>
+										</li>
+									</ul>                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<script>
+				$(document).ready(function () {
+					$.post("/include/right_links_docs.php", {"cnt": "30", 'cp': '/bolezni/'}, function (resp) {
+						$('#rdocs').html(resp);
+					});
+				});
+			</script>
+
+			<!--right sidebar-->
+			<div class="right-sidebar clearfix">
+				<div id="rpolis"></div>
+				<div id="rfilter"></div>
+				<div style="display: none;">
+
+				</div>
+				&#65279;
+
+
+				<div id="rdocs">
+
+					<article class="list-right-sb-search">
+						<div class="list-right-sb-search--wrap">
+							<div class="list-right-sb-search__title">Специальности</div>
+						</div>
+						<ul style="padding-bottom: 15px;">
+							<li>
+								<a class="rdocs" href="/vrach/akusher/">Акушер</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/akusher-ginekolog/">Акушер - гинеколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/allergolog/">Аллерголог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/allergolog-immunolog/">Аллерголог-иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/angiolog/">Ангиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/androlog/">Андролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/artrolog/">Артролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/venerolog/">Венеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/vertebrolog/">Вертебролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/virusolog/">Вирусолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/virusolog-immunolog/">Вирусолог-иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/lfk/">Врач ЛФК</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gastroenterolog/">Гастроэнтеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gematolog/">Гематолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/genetik/">Генетик</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gepatolog/">Гепатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ginekolog/">Гинеколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/girudolog/">Гирудотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gomeopat/">Гомеопат</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatovenerolog/">Дерматовенеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatolog/">Дерматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatolog-venerolog/">Дерматолог-венеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kosmetolog-dermatolog/">Дерматолог-косметолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/defektolog/">Дефектолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/diabetolog/">Диабетолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dietolog/">Диетолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/immunolog/">Иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/infekcionist/">Инфекционист</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kardiolog/">Кардиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kardiohirurg/">Кардиохирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kosmetolog/">Косметолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/lor-otolaringolog/">ЛОР</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/logoped/">Логопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/logoped-defektolog/">Логопед дефектолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/mammolog/">Маммолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/manualnyy-terapevt/">Мануальный терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/massazhist/">Массажист</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/narkolog/">Нарколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/nevrolog/">Невролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/neyrohirurg/">Нейрохирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/neonatolog/">Неонатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/nefrolog/">Нефролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkodermatolog/">Онкодерматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkolog/">Онколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkolog-mammolog/">Онколог маммолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ortoped/">Ортопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/osteopat/">Остеопат</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/otolaringolog/">Отоларинголог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/oftalmolog/">Офтальмолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/parodontolog/">Пародонтолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/pediatr/">Педиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/plasticheskiy-hirurg/">Пластический хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/proktolog/">Проктолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikhiatr/">Психиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikholog/">Психолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikhoterapevt/">Психотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/pulmonolog/">Пульмонолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/revmatolog/">Ревматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/refleksoterapevt/">Рефлексотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/seksolog/">Сексолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/seksopatolog/">Сексопатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/somnolog/">Сомнолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/sosudistii-hirurg/">Сосудистый хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog/">Стоматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-ortodont/">Стоматолог-ортодонт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-terapevt/">Стоматолог-терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-hirurg/">Стоматолог-хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/surdolog/">Сурдолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/terapevt/">Терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/travmatolog/">Травматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/travmatolog-ortoped/">Травматолог-ортопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/transfuziolog/">Трансфузиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/trikholog/">Трихолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/urolog/">Уролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/urolog-androlog/">Уролог-андролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/fizioterapevt/">Физиотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/flebolog/">Флеболог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ftiziator/">Фтизиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg/">Хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg-proktolog/">Хирург проктолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg-flebolog/">Хирург флеболог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/endokrinolog/">Эндокринолог</a>
+							</li>
+						</ul>
+					</article>
+					<script>
+						$(document).ready(function () {
+						});
+					</script>
+				</div>
+				<article class="about">
+					<div class="about__wrap">
+						<!--<section class="about__SN">
+							<div class="about__title">ПРИСОЕДИНЯЙТЕСЬ К НАМ В СОЦСЕТЯХ:</div>
+							<ul>
+								<li class="about__SN--vk"><a href="#x">Вконтакте</a></li>
+								<li class="about__SN--f"><a href="#x">Facebook</a></li>
+								<li class="about__SN--tw"><a href="#x">Tweeter</a></li>
+								<li class="about__SN--ok"><a href="#x">Одноклассники</a></li>
+								<li class="about__SN--g"><a href="#x">GooglPlus</a> </li>
+							</ul>
+						</section>-->
+						<section class="about_contents">
+							<div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+							<ul>
+								<li class="about_contents--pills">
+									<!--noindex-->
+									<a href="/bolezni/"><span>Более 400 болезней</span>
+										Причины, проявления, лечение и профилактика
+									</a><!--/noindex--></li>
+								<li class="about_contents--clinic">
+									<!--noindex-->
+									<a href="/clinics/"><span>Рейтинг клиник</span>
+										Достоверная информация о качестве лечения на основе посещения клиник
+									</a><!--/noindex--></li>
+								<li class="about_contents--node">
+									<!--noindex-->
+									<a href="/vrach/"><span>Запись к врачу</span>
+										Очень легко к нужному врачу
+									</a><!--/noindex--></li>
+								<li class="about_contents--question">
+									<!--noindex-->
+									<a href="/qa/"><span>Задать вопрос</span>
+										Бесплатные консультации врачей
+									</a><!--/noindex--></li>
+							</ul>
+						</section>
+					</div>
+				</article>
+				<div id="right_socadd"></div>
+				<div style="width:240px;">
+				</div>
+				<div>
+
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</main>
+
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<div class="clearfix"></div>
+	<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<img src="img/logo.png" title="Zdorov.online">
+			</div>
+			<div class="footer-content__article hidden-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Лучшие врачи Москвы</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Вся диагностика Москвы</a>
+				<a href="/novosti/">Новости</a>
+				<div class="menu-footer__list hidden-xs">
+					<ul>
+						<!--noindex-->
+						<li>
+							<a href="/adv/">Реклама на портале</a>
+						</li>
+						<li>
+							<a href="/dlya-klinik/">Для клиник</a>
+						</li>
+						<li>
+							<a href="/about/">О проекте</a>
+						</li><!--/noindex-->
+						<li>
+							<a href="/contacts/">Контакты</a>
+						</li>
+						<!--noindex-->
+						<li>
+							<a href="/term/">Соглашение с порталом</a>
+						</li><!--/noindex-->
+						<!--noindex-->
+						<li>
+							<a target="_blank" href="http://partners.zdorov.online/">Партнерам</a>
+						</li><!--/noindex-->
+					</ul>
+				</div>
+			</div>
+			<div class="footer-content__article mobile visible-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Врачи</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Клиники</a>
+				<a href="/novosti/">Новости</a>
+			</div>
+
+			<div class="menu-footer-document hidden-xs">
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2017. Все права защищены.
+						<a href="/karta-saita/">Карта сайта</a>
+					</p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем. 16+</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left: 86px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+				</div>
+			</div>
+			<div class="footer-content__right-side mk visible-xs">
+				Информационный партнер портала
+				<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script src="js/app.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#nav-icon3').click(function () {
+				$(this).toggleClass('open');
+				$('.header-main_menu').toggleClass('open');
+			});
+
+
+//			$('.st-list__title').first().siblings('.content').addClass("open");
+			$('.st-list__title').click(function() {
+				$(this).parent().toggleClass("open").slow();
+			});
+
+
+//			$(".st-pic__item").click(function () {
+//				$(".st-pic__item").removeClass("active", 300),
+//				$(".st-pic__item-wrap .st-list").fadeOut(100),
+//				$(this).siblings(".st-list").fadeIn(100),
+//				$(this).addClass("active", 200),
+//				$(this).parents(".st-bxslider__wrap").addClass("move", 500),
+//				$(".st-img").fadeIn(100)
+//				$('html, body').animate({
+//					scrollTop: $(".st-list").offset().top }, 1000);
+//				});
+//			});
+
+//			$(".st-list .st-list__title .st-list__title-text .close_btn").click(function () {
+//				$(this).parents(".st-list").fadeOut(300),
+//				$(this).parents(".st-list").siblings(".st-pic__item").removeClass("active", 500),
+//				$(this).parents(".st-bxslider__wrap").removeClass("move", 500)
+//			});
+
+
+			$('.st-pic__item').click(function () {
+				console.log('click');
+//				$('html, body').animate({
+//					scrollTop: $(".st-pic__item.active .st-list").offset().top }, 'slow');
+				$('html, body').animate({
+					scrollTop: $(window).scrollTop() + 500
+				});
+			});
+		});
+
+
+	</script>
+</div>
+</body>
+</html>

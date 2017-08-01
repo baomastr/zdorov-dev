@@ -120,8 +120,8 @@ $(document).ready(function () {
             }
         });
         
-        $('.kliniki-diagn-raspred__td > p').click(function () {
-            $(this).parent().find('.kliniki-diagn-raspred__td').toggleClass('is-opened');
+        $('.kliniki-diagn-raspred__td').click(function () {
+            $(this).addClass('is-opened');
         });
 
         $('.more-text').click(function () {

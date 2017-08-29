@@ -17825,9 +17825,11 @@ p.listDoc__note {
       border: 1px solid #70ac2c;
       border-radius: 5px;
 
-.clinic-avatar__rating,
-.clinics__wrapper,
+//.clinic-avatar__rating,
+//.clinics__wrapper,
+
 /*.clinic-about__content,*/
+
 .rate
   .rating {
     position: relative;
@@ -17845,10 +17847,6 @@ p.listDoc__note {
     width: 0;
     height: 100%;
     background: url(/img/star-rating.png) left bottom repeat-x;
-    //-webkit-transition: width 0.2s;
-    //-moz-transition: width 0.2s;
-    //-ms-transition: width 0.2s;
-    //-o-transition: width 0.2s;
     transition: width 0.2s;
   }
 
@@ -20766,7 +20764,7 @@ search_block{
   z-index: 9;
   //bottom: 140%;
   //box-shadow: 0 0 9px 1px rgba(0,0,0,0.05);
-  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 30px -5px rgba(0,0,0,0.75)
   background-color: #d6f3f5
   font-family: 'PT Sans',sans-serif;
   font-style: italic;
@@ -20777,6 +20775,21 @@ search_block{
   text-transform: lowercase;
   bottom: 50px;
   left: 120px;
+  &__close
+
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-style: initial;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer
+
+  &__arrow
+    position: absolute
+    bottom: 0
+    right: 0
+
   &.is-opened
     display: block
   &__close
@@ -20796,6 +20809,22 @@ search_block{
 
 .img_discount
   cursor: pointer
+
+    &:before
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #d6f3f5;
+      position: absolute;
+      bottom: -10px;
+      left: 145px;
+
+    //&:after
+    //  content: ''
+    //  position: absolute
+
 
   //&.is-opened
   //  .tip

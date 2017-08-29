@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Болезни и их лечение</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<!--<meta name="viewport" content="width=1250">-->
+	<!--<meta name="MobileOptimized" content="1250">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body">
+		<header>
+			<div class="clearfix header-top">
+				<div class="header-top__item menu-burger header-top__btn visible-xs">
+					<a id="nav-icon3" class="visible-xs">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				<a href="/" class="header-logo header-top__item">
+					<img src="http://zdorov.online/img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<a class="header-top__item menu-search header-top__btn visible-xs">
+					<img src="mob/search.png" alt="">
+				</a>
+				<style>
+					.search_block {
+						position: relative;
+					}
+
+					.search_block .search_tips {
+						display: none;
+						position: absolute;
+						top: 50px;
+						left: 280px;
+						background-color: #fff;
+						width: 497px;
+						border: 1px solid #ccc;
+					'
+					}
+
+					.search_block .search_tips .tips {
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+
+					.search_block .search_tips .tips_kato {
+						padding: 4px 8px;
+						background-color: #87CEFA;
+						color: #fff;
+
+					}
+
+					.search_block .search_tips .tips:hover {
+						background-color: #ccc;
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+				</style>
+				<div class="search_block">
+					<div class="header-search">
+						<form action="/search/">
+							<input autocomplete="off" type="search" name="q" placeholder="Например: С какой стороны аппендицит у женщин?" value="">
+							<input type="submit" value="">
+						</form>
+					</div>
+				</div>
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="/auth/">Вход</a>
+						/
+						<a href="/reg/" class="go_to_reg">Регистрация</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list">
+						<a href="/selftest/j/">Самодиагностика</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/articles/">Статьи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/clinics/">Клиники</a>
+						<ul class="main-submenu">
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-lecheniyu/" class="main-submenu__link">
+									По лечению
+								</a>
+							</li>
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-diagnostike/" class="main-submenu__link">
+									По диагностике
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main_menu-list">
+						<a href="/vrach/">Врачи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/bolezni/">Болезни</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/forum/">Форум</a>
+					</li>
+					<li class="main_menu-list hidden-xs">
+						<a href="/qa/">Вопросы врачу</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>
+		<!-- end header-->
+		<main>
+			<div class="ratemenu">
+				<div class="ratemenu__title">
+					Рейтинги клиник:
+				</div>
+				<ul class="ratemenu__list">
+					<li class="ratemenu__list-item">
+						<a href="/clinics/reyting-khoroshikh-klinik/">10 лучших клиник Москвы</a>
+					</li>
+				</ul>
+			</div>
+			<div class="crumbs">
+				<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="/">
+							<span itemprop="name">Главная</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<span itemprop="name">Болезни и их лечение</span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+
+			<div class="left-side">
+				<h1 class="visible-xs">Врачи</h1>
+				<div class="filter-xs">
+					<div class="main-select visible-xs">
+						<div class="main-select__holder">
+							<select name="" id="" class="main-select__item">
+								<option value="">Выберете специалиста</option>
+								<option value="">2</option>
+								<option value="">3</option>
+								<option value="">4</option>
+								<option value="">5</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="result-clinic">
+					<div class="listDoc__find clearfix">
+						<div class="listDoc__find-text">Найдено <span>2018 врачей </span> в Москве</div>
+					</div>
+
+
+					<div class="clinic-info clinic-info--listDoc spec clearfix " data-special="" data-action="eyJmaW8iOiJcdTA0MjFcdTA0NTFcdTA0M2NcdTA0MzhcdTA0M2RcdTA0MzAgXHUwNDE4XHUwNDQwXHUwNDM4XHUwNDNkXHUwNDMwIFx1MDQxMlx1MDQzOFx1MDQzYVx1MDQ0Mlx1MDQzZVx1MDQ0MFx1MDQzZVx1MDQzMlx1MDQzZFx1MDQzMCIsInJlZ2FsaWkiOiJ5Iiwic3RhZ2UiOiIzNCIsInByaWNlIjoxNTAwLCJyZXZfY250IjoyNDAsInJhdGluZyI6IjMzIiwicG9zaXRpb24iOi05fQ==">
+						<div class="clinic-avatar clearfix" style="width: 35%; margin-right: 2%;">
+							<div class="well-doc__item-name-wrap clearfix">
+								<div class="well-doc__item-img doc_list_avatar" style="width: 100%;height: 100%;">
+									<img src="https://zdorov.online/upload/iblock/852/8526a16cdc9a3672a30fc17c734dbc0d.jpg">
+								</div>
+								<div class="well-doc__item-name" style="margin-top: -5px;width: 100%;">
+									<div class="well-doc__item-rating clearfix">
+										<a target="_blank" href="/vrach/syemina-irina-viktorovna/#reviews">
+											<p class="well-doc__item-rating--pink pink_reviews_list" style="width:50%;"><span>240</span>отзывов
+											</p>
+											<p class="well-doc__item-rating--blue blue_rating_list" style="width:50%;">
+												<span>9<span>.33</span></span>рейтинг</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clinic-about__wrap spec">
+							<div class="clinic-about clinic-about--listDoc border-none">
+								<div class="clinic-about__content">
+									<a target="_blank" href="/vrach/syemina-irina-viktorovna/">
+										<div class="clinic-about__content-caption">Сёмина Ирина Викторовна</div>
+									</a>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Стаж: </span><span class="bg-grey">34 года</span></div>
+									<div class="listDoc__about clearfix">
+										<span class="listDoc-left hidden-xs">Специальность: </span><span class="bg-grey">Гастроэнтеролог, гепатолог, инфекционист</span>
+									</div>
+									<div class="listDoc__coast clearfix"><span class="listDoc-left hidden-xs">Цена приема: </span>
+										<div class="bg-grey" style="float:left;">
+											<div>1500 руб.</div>
+										</div>
+										<div style="float:left;margin-left:20px;color:#6d6d6d;">
+
+										</div>
+
+									</div>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Регалии: </span><span class="bg-grey js-regaliya"> Врач высшей квалификационной категории. Кандидат медицинских наук. Автор научных публикаций.</span>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="listDoc__clinic-item clearfix">
+								<ul class="clinic-about">
+									<li class="clearfix">
+									<span class="bg-grey"><a target="_blank" href="/clinics/klinika-medlayn-servis-na-rechnom-vokzale/" class="adress_clinic_from_vrach">
+										<span>Клиника "Медлайн-Сервис" на Речном вокзале</span></a></span>
+										<span class="clinic-about__metro metro_line_zamoskvoretskaya">Речной вокзал <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">742 м)</span></span>
+
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="clinics-bottom-xs">
+							<a href="" class="clinic-time-btn">Записаться</a>
+							<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Европейский Медицинский центр ЕМС на Щепкина">
+								<a href="tel:">+7(499)110-16-78</a>
+							</span>
+							<div class="clearfix"></div>
+						</div>
+
+
+					</div>
+
+					<div class="clinic-info clinic-info--listDoc spec clearfix " data-special="" data-action="eyJmaW8iOiJcdTA0MjFcdTA0MzBcdTA0MzJcdTA0NDdcdTA0MzVcdTA0M2RcdTA0M2FcdTA0M2UgXHUwNDIxXHUwNDM1XHUwNDQwXHUwNDMzXHUwNDM1XHUwNDM5IFx1MDQxMlx1MDQzYlx1MDQzMFx1MDQzNFx1MDQzOFx1MDQzY1x1MDQzOFx1MDQ0MFx1MDQzZVx1MDQzMlx1MDQzOFx1MDQ0NyIsInJlZ2FsaWkiOiJ5Iiwic3RhZ2UiOiIxOCIsInByaWNlIjoxNTAwLCJyZXZfY250IjoxODYsInJhdGluZyI6IjQ5IiwicG9zaXRpb24iOi04fQ==">
+						<div class="clinic-avatar clearfix" style="width: 35%; margin-right: 2%;">
+							<div class="well-doc__item-name-wrap clearfix">
+								<div class="well-doc__item-img doc_list_avatar" style="width: 100%;height: 100%;">
+									<img src="https://zdorov.online/upload/iblock/ef9/ef9c4ec227636ab4b3a7d2ec1258c2a5.jpg">
+								</div>
+								<div class="well-doc__item-name" style="margin-top: -5px;width: 100%;">
+									<div class="well-doc__item-rating clearfix">
+										<a target="_blank" href="/vrach/savchenko-sergey-vladimirovich/#reviews">
+											<p class="well-doc__item-rating--pink pink_reviews_list" style="width:50%;"><span>186</span>отзывов
+											</p>
+											<p class="well-doc__item-rating--blue blue_rating_list" style="width:50%;">
+												<span>9<span>.49</span></span>рейтинг</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clinic-about__wrap spec">
+							<div class="clinic-about clinic-about--listDoc border-none">
+								<div class="clinic-about__content">
+									<a target="_blank" href="/vrach/savchenko-sergey-vladimirovich/">
+										<div class="clinic-about__content-caption">Савченко Сергей Владимирович</div>
+									</a>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Стаж: </span><span class="bg-grey">18 лет</span></div>
+									<div class="listDoc__about clearfix">
+										<span class="listDoc-left hidden-xs">Специальность: </span><span class="bg-grey">Травматолог-ортопед
+										</s hidden-xspan></div>
+									<div class="listDoc__coast clearfix"><span class="listDoc-left hidden-xs">Цена приема: </span>
+										<div class="bg-grey" style="float:left;">
+											<div>1500 руб.</div>
+										</div>
+										<div style="float:left;margin-left:20px;color:#6d6d6d;">
+
+										</div>
+
+									</div>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Регалии: </span><span class="bg-grey js-regaliya"> Врач высшей категории
+Кандидат медицинских наук</span></div>
+								</div>
+
+							</div>
+
+							<div class="listDoc__clinic-item clearfix">
+								<ul class="clinic-about">
+									<li class="clearfix">
+									<span class="bg-grey"><a target="_blank" href="/clinics/mnogoprofilnaya-klinika-chudo-doktor/" class="adress_clinic_from_vrach">
+										<span>Многопрофильная клиника "Чудо доктор"</span></a></span>
+										<span class="clinic-about__metro metro_line_kalininsko-solntsevskaya">Площадь Ильича <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">297 м)</span></span>
+
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="clinics-bottom-xs visible-xs">
+							<a href="" class="clinic-time-btn">Записаться</a>
+							<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Европейский Медицинский центр ЕМС на Щепкина">
+								<a href="tel:">+7(499)110-16-78</a>
+							</span>
+							<div class="clearfix"></div>
+						</div>
+						<div class="hidden-xs clinic-time clearfix" style="position:relative;">
+								<img src="/img/choise.png" alt="ВЫБОР ПАЦИЕНТОВ" class="clinic-time__choise">
+								<span class="clinic-time__willhelp">Этот врач вам поможет!</span>
+								<a onclick="bookFormTimeShow('112320');" href="#x" class="clinic-time-btn spec book doc1 doclist_boobook bookFormTime" docid="112320" doc="Савченко Сергей Владимирович">
+									Записаться
+								</a>
+								<div>
+										<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Савченко Сергей Владимирович" style="text-align: center;padding-top: 5px;"><a>
+											Показать номер
+										</a></span>
+							<span class="clinic-time__tel  clinic-time__tel--main-clinic spec click_phone_number" data-namethis="Савченко Сергей Владимирович">
+								<a href="tel:+7 (499) 653-74-09">
+									+7 (499) 653-74-09
+								</a>
+							</span>
+								</div>
+							</div>
+
+					</div>
+
+					<div class="clinic-info clinic-info--listDoc spec clearfix " data-special="" data-action="eyJmaW8iOiJcdTA0MTRcdTA0MzBcdTA0M2RcdTA0MzhcdTA0M2JcdTA0M2VcdTA0MzIgXHUwNDEwXHUwNDNkXHUwNDM0XHUwNDQwXHUwNDM1XHUwNDM5IFx1MDQxOFx1MDQzYlx1MDQ0Y1x1MDQzOFx1MDQ0NyIsInJlZ2FsaWkiOiJ5Iiwic3RhZ2UiOiIzNCIsInByaWNlIjoxNzAwLCJyZXZfY250IjoxMzUsInJhdGluZyI6IjUxIiwicG9zaXRpb24iOi03fQ==">
+						<div class="clinic-avatar clearfix" style="width: 35%; margin-right: 2%;">
+							<div class="well-doc__item-name-wrap clearfix">
+								<div class="well-doc__item-img doc_list_avatar" style="width: 100%;height: 100%;">
+									<img src="https://zdorov.online/upload/iblock/9c9/9c96453435c713be700a912d98b229af.png">
+								</div>
+								<div class="well-doc__item-name" style="margin-top: -5px;width: 100%;">
+									<div class="well-doc__item-rating clearfix">
+										<a target="_blank" href="/vrach/danilov-andrey-ilich/#reviews">
+											<p class="well-doc__item-rating--pink pink_reviews_list" style="width:50%;"><span>135</span>отзывов
+											</p>
+											<p class="well-doc__item-rating--blue blue_rating_list" style="width:50%;">
+												<span>9<span>.51</span></span>рейтинг</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clinic-about__wrap spec">
+							<div class="clinic-about clinic-about--listDoc border-none">
+								<div class="clinic-about__content">
+									<a target="_blank" href="/vrach/danilov-andrey-ilich/">
+										<div class="clinic-about__content-caption">Данилов Андрей Ильич</div>
+									</a>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Стаж: </span><span class="bg-grey">34 года</span></div>
+									<div class="listDoc__about clearfix">
+										<span class="listDoc-left hidden-xs">Специальность: </span><span class="bg-grey">Хирург, флеболог, колопроктолог</span>
+									</div>
+									<div class="listDoc__coast clearfix"><span class="listDoc-left hidden-xs">Цена приема: </span>
+										<div class="bg-grey" style="float:left;">
+											<div>1700 руб.</div>
+										</div>
+										<div style="float:left;margin-left:20px;color:#6d6d6d;">
+
+										</div>
+
+									</div>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Регалии: </span><span class="bg-grey js-regaliya"> Врач высшей категории
+Кандидат медицинских наук
+Заведующий хирургическим отделением</span></div>
+								</div>
+
+							</div>
+
+							<div class="listDoc__clinic-item clearfix">
+								<ul class="clinic-about">
+									<li class="clearfix">
+									<span class="bg-grey"><a target="_blank" href="/clinics/mnogoprofilnaya-klinika-chudo-doktor/" class="adress_clinic_from_vrach">
+										<span>Многопрофильная клиника "Чудо доктор"</span></a></span>
+										<span class="clinic-about__metro metro_line_kalininsko-solntsevskaya">Площадь Ильича <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">297 м)</span></span>
+
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="hidden-xs clinic-time clearfix" style="position:relative;">
+								<img src="/img/choise.png" alt="ВЫБОР ПАЦИЕНТОВ" class="clinic-time__choise">
+								<span class="clinic-time__willhelp">Этот врач вам поможет!</span>
+								<a onclick="bookFormTimeShow('109922');" href="#x" class="clinic-time-btn spec book doc1 doclist_boobook bookFormTime" docid="109922" doc="Данилов Андрей Ильич">
+									Записаться
+								</a>
+								<div>
+										<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Данилов Андрей Ильич" style="text-align: center;padding-top: 5px;"><a>
+											Показать номер
+										</a></span>
+							<span class="clinic-time__tel  clinic-time__tel--main-clinic spec click_phone_number" data-namethis="Данилов Андрей Ильич">
+								<a href="tel:+7 (499) 653-74-09">
+									+7 (499) 653-74-09
+								</a>
+							</span>
+								</div>
+							</div>
+						<div class="clinics-bottom-xs visible-xs">
+							<a href="" class="clinic-time-btn">Записаться</a>
+							<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Европейский Медицинский центр ЕМС на Щепкина">
+								<a href="tel:">+7(499)110-16-78</a>
+							</span>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+
+					<div class="clinic-info clinic-info--listDoc  clearfix " data-special="" data-action="eyJmaW8iOiJcdTA0MTVcdTA0M2RcdTA0MzVcdTA0M2RcdTA0M2FcdTA0M2VcdTA0MzJcdTA0MzAgXHUwNDE1XHUwNDNiXHUwNDM1XHUwNDNkXHUwNDMwIFx1MDQxMFx1MDQzYlx1MDQzNVx1MDQzYVx1MDQ0MVx1MDQzNVx1MDQzNVx1MDQzMlx1MDQzZFx1MDQzMCIsInJlZ2FsaWkiOiJ5Iiwic3RhZ2UiOiIyOCIsInByaWNlIjoyMTUwLCJyZXZfY250IjoxMzMsInJhdGluZyI6IjUiLCJwb3NpdGlvbiI6LTZ9">
+						<div class="clinic-avatar clearfix" style="width: 35%; margin-right: 2%;">
+							<div class="well-doc__item-name-wrap clearfix">
+								<div class="well-doc__item-img doc_list_avatar" style="width: 100%;height: 100%;">
+									<img src="https://zdorov.online/upload/iblock/9e3/9e3dceada43d12b29bc8751d98536dc4.jpg">
+								</div>
+								<div class="well-doc__item-name" style="margin-top: -5px;width: 100%;">
+									<div class="well-doc__item-rating clearfix">
+										<a target="_blank" href="/vrach/enenkova-elena-alekseevna/#reviews">
+											<p class="well-doc__item-rating--pink pink_reviews_list" style="width:50%;"><span>133</span>отзыва
+											</p>
+											<p class="well-doc__item-rating--blue blue_rating_list" style="width:50%;">
+												<span>9<span>.5</span></span>рейтинг</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clinic-about__wrap spec">
+							<div class="clinic-about clinic-about--listDoc border-none">
+								<div class="clinic-about__content">
+									<a target="_blank" href="/vrach/enenkova-elena-alekseevna/">
+										<div class="clinic-about__content-caption">Ененкова Елена Алексеевна</div>
+									</a>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Стаж: </span><span class="bg-grey">28 лет</span></div>
+									<div class="listDoc__about clearfix">
+										<span class="listDoc-left hidden-xs">Специальность: </span><span class="bg-grey">Гастроэнтеролог, гепатолог</span>
+									</div>
+									<div class="listDoc__coast clearfix"><span class="listDoc-left hidden-xs">Цена приема: </span>
+										<div class="bg-grey" style="float:left;">
+											<div>2150 руб.</div>
+										</div>
+										<div style="float:left;margin-left:20px;color:#6d6d6d;">
+
+										</div>
+
+									</div>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Регалии: </span><span class="bg-grey js-regaliya js-regaliya-heght"> Врач высшей категории. Кандидат медицинских наук. Автор научных публикаций. Член гастроклуба Российской медицинской академии постдипломного образования. Участник Европейской школы гастроэнтерологов. </span>
+										<p class="more-text bg-grey"><span class="js-more-text">Подробнее</span></p></div>
+								</div>
+
+							</div>
+
+							<div class="listDoc__clinic-item clearfix">
+								<!--				<span class="listDoc-left">Клиника: </span>-->
+								<ul class="clinic-about">
+									<li class="clearfix">
+									<span class="bg-grey"><a href="/clinics/sm-klinika-na-ul-kosmonavta-volkova/" target="_blank" class="adress_clinic_from_vrach" style="max-width: 385px;">
+										<span>"СМ-Клиника" на ул. Космонавта Волкова</span></a></span>
+										<span class="clinic-about__metro metro_line_zamoskvoretskaya">Войковская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">911 м)</span></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="hidden-xs clinic-time clearfix" style="position:relative;">
+								<!--<span class="clinic-time__tel  clinic-time__number--main-clinic"><a>Показать телефон</a></span>-->
+								<div>
+										<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Ененкова Елена Алексеевна" style="text-align: center;"><a>
+											Показать номер
+										</a></span>
+							<span class="clinic-time__tel  clinic-time__tel--main-clinic click_phone_number" data-namethis="Ененкова Елена Алексеевна" style="margin-bottom: 8px;">
+								<a href="tel:+7(499)110-83-96">+7(499)110-83-96</a>
+							</span>
+								</div>
+								<a onclick="bookFormTimeShow('110883');" href="#x" class="clinic-time-btn book doc1 doclist_boobook bookFormTime" docid="110883" doc="Ененкова Елена Алексеевна">
+									Записаться
+								</a>
+								<p class="listDoc__note">
+									Сегодня к доктору записалось 1 человек
+								</p>
+							</div>
+						<div class="clinics-bottom-xs visible-xs">
+							<a href="" class="clinic-time-btn">Записаться</a>
+							<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Европейский Медицинский центр ЕМС на Щепкина">
+								<a href="tel:">+7(499)110-16-78</a>
+							</span>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+
+					<div class="clinic-info clinic-info--listDoc  clearfix " data-special="" data-action="eyJmaW8iOiJcdTA0MjJcdTA0M2FcdTA0MzBcdTA0NDdcdTA0MzVcdTA0M2RcdTA0M2FcdTA0M2UgXHUwNDE4XHUwNDQwXHUwNDM4XHUwNDNkXHUwNDMwIFx1MDQxYlx1MDQzNVx1MDQzZVx1MDQzZFx1MDQzOFx1MDQzNFx1MDQzZVx1MDQzMlx1MDQzZFx1MDQzMCIsInJlZ2FsaWkiOiJ5Iiwic3RhZ2UiOiIzNCIsInByaWNlIjoxMjAwLCJyZXZfY250IjoxMjUsInJhdGluZyI6IjkyIiwicG9zaXRpb24iOi01fQ==">
+						<div class="clinic-avatar clearfix" style="width: 35%; margin-right: 2%;">
+							<div class="well-doc__item-name-wrap clearfix">
+								<div class="well-doc__item-img doc_list_avatar" style="width: 100%;height: 100%;">
+									<img src="https://zdorov.online/upload/iblock/70a/70aed21f5e9a7c9bc1fca61540744e21.jpg">
+								</div>
+								<div class="well-doc__item-name" style="margin-top: -5px;width: 100%;">
+									<div class="well-doc__item-rating clearfix">
+										<a target="_blank" href="/vrach/tkachenko-irina-leonidovna/#reviews">
+											<p class="well-doc__item-rating--pink pink_reviews_list" style="width:50%;"><span>125</span>отзывов
+											</p>
+											<p class="well-doc__item-rating--blue blue_rating_list" style="width:50%;">
+												<span>7<span>.92</span></span>рейтинг</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clinic-about__wrap spec">
+							<div class="clinic-about clinic-about--listDoc border-none">
+								<div class="clinic-about__content">
+									<a target="_blank" href="/vrach/tkachenko-irina-leonidovna/">
+										<div class="clinic-about__content-caption">Ткаченко Ирина Леонидовна</div>
+									</a>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Стаж: </span><span class="bg-grey">34 года</span></div>
+									<div class="listDoc__about clearfix">
+										<span class="listDoc-left hidden-xs">Специальность: </span><span class="bg-grey">Дерматолог, трихолог, миколог
+										</s hidden-xspan></div>
+									<div class="listDoc__coast clearfix"><span class="listDoc-left hidden-xs">Цена приема: </span>
+										<div class="bg-grey" style="float:left;">
+											<div>1200 руб.</div>
+										</div>
+										<div style="float:left;margin-left:20px;color:#6d6d6d;">
+
+										</div>
+
+									</div>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Регалии: </span><span class="bg-grey js-regaliya"> Врач высшей квалификационной категории. Член Европейского трихологического общества.</span>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="listDoc__clinic-item clearfix">
+								<!--				<span class="listDoc-left">Клиника: </span>-->
+								<ul class="clinic-about">
+									<li class="clearfix">
+									<span class="bg-grey"><a href="/clinics/mnogoprofilnyy-meditsinskiy-tsentr-delta-klinik/" target="_blank" class="adress_clinic_from_vrach" style="max-width: 385px;">
+										<span>Многопрофильный медцентр "Дельта клиник"</span></a></span>
+										<span class="clinic-about__metro metro_line_lyublinsko-dmitrovskaya">Чкаловская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">570 м)</span></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="hidden-xs clinic-time clearfix" style="position:relative;">
+								<!--<span class="clinic-time__tel  clinic-time__number--main-clinic"><a>Показать телефон</a></span>-->
+								<div>
+										<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Ткаченко Ирина Леонидовна" style="text-align: center;"><a>
+											Показать номер
+										</a></span>
+							<span class="clinic-time__tel  clinic-time__tel--main-clinic click_phone_number" data-namethis="Ткаченко Ирина Леонидовна" style="margin-bottom: 8px;">
+								<a href="tel:+7(499)110-59-63">+7(499)110-59-63</a>
+							</span>
+								</div>
+								<a onclick="bookFormTimeShow('110080');" href="#x" class="clinic-time-btn book doc1 doclist_boobook bookFormTime" docid="110080" doc="Ткаченко Ирина Леонидовна">
+									Записаться
+								</a>
+								<p class="listDoc__note">
+									Сегодня к доктору записалось 9 человек
+								</p>
+							</div>
+						<div class="clinics-bottom-xs visible-xs">
+							<a href="" class="clinic-time-btn">Записаться</a>
+							<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Европейский Медицинский центр ЕМС на Щепкина">
+								<a href="tel:">+7(499)110-16-78</a>
+							</span>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+
+					<div class="clinic-info clinic-info--listDoc  clearfix " data-special="" data-action="eyJmaW8iOiJcdTA0MWVcdTA0MzJcdTA0NDdcdTA0MzhcdTA0M2RcdTA0M2RcdTA0MzhcdTA0M2FcdTA0M2VcdTA0MzJcdTA0MzAgXHUwNDFkXHUwNDMwXHUwNDQyXHUwNDMwXHUwNDNiXHUwNDRjXHUwNDRmIFx1MDQxOFx1MDQzMlx1MDQzMFx1MDQzZFx1MDQzZVx1MDQzMlx1MDQzZFx1MDQzMCIsInJlZ2FsaWkiOiJ5Iiwic3RhZ2UiOiIyNSIsInByaWNlIjoxNTAwLCJyZXZfY250IjoxMTgsInJhdGluZyI6IjI3IiwicG9zaXRpb24iOi00fQ==">
+						<div class="clinic-avatar clearfix" style="width: 35%; margin-right: 2%;">
+							<div class="well-doc__item-name-wrap clearfix">
+								<div class="well-doc__item-img doc_list_avatar" style="width: 100%;height: 100%;">
+									<img src="https://zdorov.online/upload/iblock/ffe/ffec83ad4f80433f0eb211d2f58b4117.jpeg">
+								</div>
+								<div class="well-doc__item-name" style="margin-top: -5px;width: 100%;">
+									<div class="well-doc__item-rating clearfix">
+										<a target="_blank" href="/vrach/ovchinnikova-natalya-ivanovna/#reviews">
+											<p class="well-doc__item-rating--pink pink_reviews_list" style="width:50%;"><span>118</span>отзывов
+											</p>
+											<p class="well-doc__item-rating--blue blue_rating_list" style="width:50%;">
+												<span>9<span>.27</span></span>рейтинг</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clinic-about__wrap spec">
+							<div class="clinic-about clinic-about--listDoc border-none">
+								<div class="clinic-about__content">
+									<a target="_blank" href="/vrach/ovchinnikova-natalya-ivanovna/">
+										<div class="clinic-about__content-caption">Овчинникова Наталья Ивановна</div>
+									</a>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Стаж: </span><span class="bg-grey">25 лет</span></div>
+									<div class="listDoc__about clearfix">
+										<span class="listDoc-left hidden-xs">Специальность: </span><span class="bg-grey">Гастроэнтеролог, гепатолог, инфекционист</span>
+									</div>
+									<div class="listDoc__coast clearfix"><span class="listDoc-left hidden-xs">Цена приема: </span>
+										<div class="bg-grey" style="float:left;">
+											<div>1500 руб.</div>
+										</div>
+										<div style="float:left;margin-left:20px;color:#6d6d6d;">
+
+										</div>
+
+									</div>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Регалии: </span><span class="bg-grey js-regaliya js-regaliya-heght"> Врач высшей квалификационной категории. Кандидат медицинских наук. Автор научных публикаций. Член Российской гастроэнтерологической ассоциации. Член Общероссийской общественной организации "Российское общество по изучению печени".</span>
+										<p class="more-text bg-grey"><span class="js-more-text">Подробнее</span></p></div>
+								</div>
+
+							</div>
+
+							<div class="listDoc__clinic-item clearfix">
+								<!--				<span class="listDoc-left">Клиника: </span>-->
+								<ul class="clinic-about">
+									<li class="clearfix">
+									<span class="bg-grey"><a href="/clinics/mnogoprofilnyy-kliniko-diagnosticheskiy-tsentr-trastmed/" target="_blank" class="adress_clinic_from_vrach" style="max-width: 385px;">
+										<span>Многопрофильный клинико-диагностический центр "Трастмед"</span></a></span>
+										<span class="clinic-about__metro metro_line_kalininsko-solntsevskaya">Марксистская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">149 м)</span></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="hidden-xs clinic-time clearfix" style="position:relative;">
+								<!--<span class="clinic-time__tel  clinic-time__number--main-clinic"><a>Показать телефон</a></span>-->
+								<div>
+										<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Овчинникова Наталья Ивановна" style="text-align: center;"><a>
+											Показать номер
+										</a></span>
+							<span class="clinic-time__tel  clinic-time__tel--main-clinic click_phone_number" data-namethis="Овчинникова Наталья Ивановна" style="margin-bottom: 8px;">
+								<a href="tel:+7(499)322-45-72">+7(499)322-45-72</a>
+							</span>
+								</div>
+								<a onclick="bookFormTimeShow('110122');" href="#x" class="clinic-time-btn book doc1 doclist_boobook bookFormTime" docid="110122" doc="Овчинникова Наталья Ивановна">
+									Записаться
+								</a>
+								<p class="listDoc__note">
+									Сегодня к доктору записалось 10 человек
+								</p>
+							</div>
+
+					</div>
+
+					<div class="clinic-info clinic-info--listDoc spec clearfix " data-special="" data-action="eyJmaW8iOiJcdTA0MWRcdTA0MzVcdTA0NDJcdTA0NDBcdTA0NDNcdTA0M2RcdTA0MzVcdTA0M2RcdTA0M2FcdTA0M2UgXHUwNDE4XHUwNDQwXHUwNDM4XHUwNDNkXHUwNDMwIFx1MDQyZVx1MDQ0MFx1MDQ0Y1x1MDQzNVx1MDQzMlx1MDQzZFx1MDQzMCIsInJlZ2FsaWkiOiJ5Iiwic3RhZ2UiOiIxMyIsInByaWNlIjoyMTUwLCJyZXZfY250IjoxMDcsInJhdGluZyI6IjM3IiwicG9zaXRpb24iOi0zfQ==">
+						<div class="clinic-avatar clearfix" style="width: 35%; margin-right: 2%;">
+							<div class="well-doc__item-name-wrap clearfix">
+								<div class="well-doc__item-img doc_list_avatar" style="width: 100%;height: 100%;">
+									<img src="https://zdorov.online/upload/iblock/111/111a314a0756fcae3fc08e541616e8b4.jpg">
+								</div>
+								<div class="well-doc__item-name" style="margin-top: -5px;width: 100%;">
+									<div class="well-doc__item-rating clearfix">
+										<a target="_blank" href="/vrach/netrunenko-irina-yurevna/#reviews">
+											<p class="well-doc__item-rating--pink pink_reviews_list" style="width:50%;"><span>107</span>отзывов
+											</p>
+											<p class="well-doc__item-rating--blue blue_rating_list" style="width:50%;">
+												<span>9<span>.37</span></span>рейтинг</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clinic-about__wrap spec">
+							<div class="clinic-about clinic-about--listDoc border-none">
+								<div class="clinic-about__content">
+									<a target="_blank" href="/vrach/netrunenko-irina-yurevna/">
+										<div class="clinic-about__content-caption">Нетруненко Ирина Юрьевна</div>
+									</a>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Стаж: </span><span class="bg-grey">13 лет</span></div>
+									<div class="listDoc__about clearfix">
+										<span class="listDoc-left hidden-xs">Специальность: </span><span class="bg-grey">Дерматолог-венеролог</span>
+									</div>
+									<div class="listDoc__coast clearfix"><span class="listDoc-left hidden-xs">Цена приема: </span>
+										<div class="bg-grey" style="float:left;">
+											<div>2150 руб.</div>
+										</div>
+										<div style="float:left;margin-left:20px;color:#6d6d6d;">
+
+										</div>
+
+									</div>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Регалии: </span><span class="bg-grey js-regaliya"> Врач высшей категории. Кандидат медицинских наук. Автор научных публикаций. </span>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="listDoc__clinic-item clearfix">
+								<ul class="clinic-about">
+									<li class="clearfix">
+									<span class="bg-grey"><a target="_blank" href="/clinics/sm-klinika-na-ul-yartsevskaya/" class="adress_clinic_from_vrach">
+										<span>"СМ-Клиника" на ул. Ярцевская</span></a></span>
+										<span class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Молодёжная <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">672 м)</span></span>
+
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="hidden-xs clinic-time clearfix" style="position:relative;">
+								<img src="/img/choise.png" alt="ВЫБОР ПАЦИЕНТОВ" class="clinic-time__choise">
+								<span class="clinic-time__willhelp">Этот врач вам поможет!</span>
+								<a onclick="bookFormTimeShow('110513');" href="#x" class="clinic-time-btn spec book doc1 doclist_boobook bookFormTime" docid="110513" doc="Нетруненко Ирина Юрьевна">
+									Записаться
+								</a>
+								<div>
+										<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Нетруненко Ирина Юрьевна" style="text-align: center;padding-top: 5px;"><a>
+											Показать номер
+										</a></span>
+							<span class="clinic-time__tel  clinic-time__tel--main-clinic spec click_phone_number" data-namethis="Нетруненко Ирина Юрьевна">
+								<a href="tel:+7(499)110-83-96">
+									+7(499)110-83-96
+								</a>
+							</span>
+								</div>
+							</div>
+
+					</div>
+
+					<div class="clinic-info clinic-info--listDoc  clearfix " data-special="" data-action="eyJmaW8iOiJcdTA0MWNcdTA0NGJcdTA0M2JcdTA0NGNcdTA0NDZcdTA0MzVcdTA0MzIgXHUwNDEwXHUwNDNkXHUwNDM0XHUwNDQwXHUwNDM1XHUwNDM5IFx1MDQxMFx1MDQzZFx1MDQzMFx1MDQ0Mlx1MDQzZVx1MDQzYlx1MDQ0Y1x1MDQzNVx1MDQzMlx1MDQzOFx1MDQ0NyIsInJlZ2FsaWkiOiJ5Iiwic3RhZ2UiOiIzMSIsInByaWNlIjoxNTAwLCJyZXZfY250IjoxMDQsInJhdGluZyI6IjI2IiwicG9zaXRpb24iOi0yfQ==">
+						<div class="clinic-avatar clearfix" style="width: 35%; margin-right: 2%;">
+							<div class="well-doc__item-name-wrap clearfix">
+								<div class="well-doc__item-img doc_list_avatar" style="width: 100%;height: 100%;">
+									<img src="https://zdorov.online/upload/iblock/bc9/bc9cb8bd96cc2609fd7ad478e5555861.png">
+								</div>
+								<div class="well-doc__item-name" style="margin-top: -5px;width: 100%;">
+									<div class="well-doc__item-rating clearfix">
+										<a target="_blank" href="/vrach/myltsev-andrey-anatolevich/#reviews">
+											<p class="well-doc__item-rating--pink pink_reviews_list" style="width:50%;"><span>104</span>отзыва
+											</p>
+											<p class="well-doc__item-rating--blue blue_rating_list" style="width:50%;">
+												<span>9<span>.26</span></span>рейтинг</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clinic-about__wrap spec">
+							<div class="clinic-about clinic-about--listDoc border-none">
+								<div class="clinic-about__content">
+									<a target="_blank" href="/vrach/myltsev-andrey-anatolevich/">
+										<div class="clinic-about__content-caption">Мыльцев Андрей Анатольевич</div>
+									</a>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Стаж: </span><span class="bg-grey">31 год</span></div>
+									<div class="listDoc__about clearfix">
+										<span class="listDoc-left hidden-xs">Специальность: </span><span class="bg-grey">Аллерголог-иммунолог</span>
+									</div>
+									<div class="listDoc__coast clearfix"><span class="listDoc-left hidden-xs">Цена приема: </span>
+										<div class="bg-grey" style="float:left;">
+											<div>1500 руб.</div>
+										</div>
+										<div style="float:left;margin-left:20px;color:#6d6d6d;">
+
+										</div>
+
+									</div>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Регалии: </span><span class="bg-grey js-regaliya"> Врач первой категории. Автор научных публикаций. Член Российской ассоциации аллергологии и клинической иммунологии.</span>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="listDoc__clinic-item clearfix">
+								<!--				<span class="listDoc-left">Клиника: </span>-->
+								<ul class="clinic-about">
+									<li class="clearfix">
+									<span class="bg-grey"><a href="/clinics/mnogoprofilnyy-kliniko-diagnosticheskiy-tsentr-trastmed/" target="_blank" class="adress_clinic_from_vrach" style="max-width: 385px;">
+										<span>Многопрофильный клинико-диагностический центр "Трастмед"</span></a></span>
+										<span class="clinic-about__metro metro_line_kalininsko-solntsevskaya">Марксистская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">149 м)</span></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="hidden-xs clinic-time clearfix" style="position:relative;">
+								<!--<span class="clinic-time__tel  clinic-time__number--main-clinic"><a>Показать телефон</a></span>-->
+								<div>
+										<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Мыльцев Андрей Анатольевич" style="text-align: center;"><a>
+											Показать номер
+										</a></span>
+							<span class="clinic-time__tel  clinic-time__tel--main-clinic click_phone_number" data-namethis="Мыльцев Андрей Анатольевич" style="margin-bottom: 8px;">
+								<a href="tel:+7(499)322-45-72">+7(499)322-45-72</a>
+							</span>
+								</div>
+								<a onclick="bookFormTimeShow('111324');" href="#x" class="clinic-time-btn book doc1 doclist_boobook bookFormTime" docid="111324" doc="Мыльцев Андрей Анатольевич">
+									Записаться
+								</a>
+								<p class="listDoc__note">
+									Сегодня к доктору записалось 5 человек
+								</p>
+							</div>
+
+					</div>
+
+					<div class="clinic-info clinic-info--listDoc spec clearfix " data-special="" data-action="eyJmaW8iOiJcdTA0MjFcdTA0M2VcdTA0NDJcdTA0NDJcdTA0MzBcdTA0MzVcdTA0MzJcdTA0MzAgXHUwNDEyXHUwNDMwXHUwNDNiXHUwNDM1XHUwNDNkXHUwNDQyXHUwNDM4XHUwNDNkXHUwNDMwIFx1MDQyNVx1MDQzMFx1MDQzZFx1MDQzMFx1MDQ0NFx1MDQzOFx1MDQzNVx1MDQzMlx1MDQzZFx1MDQzMCIsInJlZ2FsaWkiOiJ5Iiwic3RhZ2UiOiIxMCIsInByaWNlIjoxMzAwLCJyZXZfY250IjoxMDEsInJhdGluZyI6IjQ0IiwicG9zaXRpb24iOi0xfQ==">
+						<div class="clinic-avatar clearfix" style="width: 35%; margin-right: 2%;">
+							<div class="well-doc__item-name-wrap clearfix">
+								<div class="well-doc__item-img doc_list_avatar" style="width: 100%;height: 100%;">
+									<img src="https://zdorov.online/upload/iblock/3f3/3f3ad440e83f7b8949cda2bd79195c44.jpg">
+								</div>
+								<div class="well-doc__item-name" style="margin-top: -5px;width: 100%;">
+									<div class="well-doc__item-rating clearfix">
+										<a target="_blank" href="/vrach/sottaeva-valentina-khanafievna/#reviews">
+											<p class="well-doc__item-rating--pink pink_reviews_list" style="width:50%;"><span>101</span>отзыв
+											</p>
+											<p class="well-doc__item-rating--blue blue_rating_list" style="width:50%;">
+												<span>9<span>.44</span></span>рейтинг</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clinic-about__wrap spec">
+							<div class="clinic-about clinic-about--listDoc border-none">
+								<div class="clinic-about__content">
+									<a target="_blank" href="/vrach/sottaeva-valentina-khanafievna/">
+										<div class="clinic-about__content-caption">Соттаева Валентина Ханафиевна</div>
+									</a>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Стаж: </span><span class="bg-grey">10 лет</span></div>
+									<div class="listDoc__about clearfix">
+										<span class="listDoc-left hidden-xs">Специальность: </span><span class="bg-grey">Хирург, колопроктолог, флеболог
+										</s hidden-xspan></div>
+									<div class="listDoc__coast clearfix"><span class="listDoc-left hidden-xs">Цена приема: </span>
+										<div class="bg-grey" style="float:left;">
+											<div>1300 руб.</div>
+										</div>
+										<div style="float:left;margin-left:20px;color:#6d6d6d;">
+
+										</div>
+
+									</div>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Регалии: </span><span class="bg-grey js-regaliya"> Кандидат медицинских наук</span>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="listDoc__clinic-item clearfix">
+								<ul class="clinic-about">
+									<li class="clearfix">
+									<span class="bg-grey"><a target="_blank" href="/clinics/mnogoprofilnaya-klinika-chudo-doktor/" class="adress_clinic_from_vrach">
+										<span>Многопрофильная клиника "Чудо доктор"</span></a></span>
+										<span class="clinic-about__metro metro_line_kalininsko-solntsevskaya">Площадь Ильича <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">297 м)</span></span>
+
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="hidden-xs clinic-time clearfix" style="position:relative;">
+								<img src="/img/choise.png" alt="ВЫБОР ПАЦИЕНТОВ" class="clinic-time__choise">
+								<span class="clinic-time__willhelp">Этот врач вам поможет!</span>
+								<a onclick="bookFormTimeShow('112792');" href="#x" class="clinic-time-btn spec book doc1 doclist_boobook bookFormTime" docid="112792" doc="Соттаева Валентина Ханафиевна">
+									Записаться
+								</a>
+								<div>
+										<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Соттаева Валентина Ханафиевна" style="text-align: center;padding-top: 5px;"><a>
+											Показать номер
+										</a></span>
+							<span class="clinic-time__tel  clinic-time__tel--main-clinic spec click_phone_number" data-namethis="Соттаева Валентина Ханафиевна">
+								<a href="tel:+7 (499) 653-74-09">
+									+7 (499) 653-74-09
+								</a>
+							</span>
+								</div>
+							</div>
+
+					</div>
+
+					<div class="clinic-info clinic-info--listDoc  clearfix " data-special="" data-action="eyJmaW8iOiJcdTA0MTRcdTA0MzhcdTA0MzRcdTA0M2VcdTA0NDBcdTA0NDNcdTA0M2EgXHUwNDEyXHUwNDM4XHUwNDQyXHUwNDMwXHUwNDNiXHUwNDM4XHUwNDM5IFx1MDQxMFx1MDQzYlx1MDQzNVx1MDQzYVx1MDQ0MVx1MDQzMFx1MDQzZFx1MDQzNFx1MDQ0MFx1MDQzZVx1MDQzMlx1MDQzOFx1MDQ0NyIsInJlZ2FsaWkiOiJ5Iiwic3RhZ2UiOiIyMCIsInByaWNlIjoxNDUwLCJyZXZfY250Ijo5OCwicmF0aW5nIjoiMTUiLCJwb3NpdGlvbiI6MH0=">
+						<div class="clinic-avatar clearfix" style="width: 35%; margin-right: 2%;">
+							<div class="well-doc__item-name-wrap clearfix">
+								<div class="well-doc__item-img doc_list_avatar" style="width: 100%;height: 100%;">
+									<img src="https://zdorov.online/upload/iblock/9e5/9e595749f2a977ddbe85b99c63eb0c3b.png">
+								</div>
+								<div class="well-doc__item-name" style="margin-top: -5px;width: 100%;">
+									<div class="well-doc__item-rating clearfix">
+										<a target="_blank" href="/vrach/didoruk-vitaliy-aleksandrovich/#reviews">
+											<p class="well-doc__item-rating--pink pink_reviews_list" style="width:50%;"><span>98</span>отзывов
+											</p>
+											<p class="well-doc__item-rating--blue blue_rating_list" style="width:50%;">
+												<span>9<span>.15</span></span>рейтинг</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clinic-about__wrap ">
+							<div class="clinic-about clinic-about--listDoc border-none">
+								<div class="clinic-about__content">
+									<a target="_blank" href="/vrach/didoruk-vitaliy-aleksandrovich/">
+										<div class="clinic-about__content-caption">Дидорук Виталий Александрович</div>
+									</a>
+									<div class="listDoc__about clearfix hidden-xs">
+										<span class="listDoc-left">Стаж: </span><span class="bg-grey">20 лет</span></div>
+									<div class="listDoc__about clearfix">
+										<span class="listDoc-left hidden-xs">Специальность: </span><span class="bg-grey">Дерматолог, венеролог</span>
+									</div>
+									<div class="listDoc__coast clearfix"><span class="listDoc-left hidden-xs">Цена приема: </span>
+										<div class="bg-grey" style="float:left;">
+											<div>1450 руб.</div>
+										</div>
+										<div style="float:left;margin-left:20px;color:#6d6d6d;">
+
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="listDoc__clinic-item clearfix">
+								<!--				<span class="listDoc-left">Клиника: </span>-->
+								<ul class="clinic-about">
+									<li class="clearfix">
+									<span class="bg-grey"><a href="/clinics/sm-klinika-na-ul-yartsevskaya/" target="_blank" class="adress_clinic_from_vrach" style="max-width: 385px;">
+										<span>"СМ-Клиника" на ул. Ярцевская</span></a></span>
+										<span class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Молодёжная <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">672 м)</span></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="hidden-xs clinic-time clearfix" style="position:relative;">
+								<!--<span class="clinic-time__tel  clinic-time__number--main-clinic"><a>Показать телефон</a></span>-->
+								<div>
+										<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Дидорук Виталий Александрович" style="text-align: center;"><a>
+											Показать номер
+										</a></span>
+							<span class="clinic-time__tel  clinic-time__tel--main-clinic click_phone_number" data-namethis="Дидорук Виталий Александрович" style="margin-bottom: 8px;">
+								<a href="tel:+7(499)110-83-96">+7(499)110-83-96</a>
+							</span>
+								</div>
+								<a onclick="bookFormTimeShow('111989');" href="#x" class="clinic-time-btn book doc1 doclist_boobook bookFormTime" docid="111989" doc="Дидорук Виталий Александрович">
+									Записаться
+								</a>
+								<p class="listDoc__note">
+									Сегодня к доктору записалось 9 человек
+								</p>
+							</div>
+
+					</div>
+
+					<br>
+
+					<div class="pagination">
+						<ul>
+							<li class="l-arrow inactive-l-arrow">
+								<a rel="prev">назад</a>
+							</li>
+							<li>
+								<a class="active" title="Текущая страница">1</a>
+							</li>
+							<li>
+								<a href="/clinics/?page=2" title="Страница 2">2</a>
+							</li>
+							<li>
+								<a href="/clinics/?page=3" title="Страница 3">3</a>
+							</li>
+							<li>
+								<a href="/clinics/?page=4" title="Страница 4">4</a>
+							</li>
+							<li>
+								<a href="/clinics/?page=5" title="Страница 5">5</a>
+							</li>
+							<li>
+								<a href="/clinics/?page=6" title="Страница 6">6</a>
+							</li>
+							<li>
+								<a href="/clinics/?page=7" title="Страница 7">7</a>
+							</li>
+							<li>
+								<a href="/clinics/?page=8" title="Страница 8">8</a>
+							</li>
+							<li>
+								<a href="/clinics/?page=9" title="Страница 9">9</a>
+							</li>
+							<li class="r-arrow ">
+								<a href="/clinics/?page=2" title="Страница 2" rel="next">вперед</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="clinic-search__title clinic-search__title--bottom">
+
+						<div class="result-number__choose" style="width:100%;">
+							<div style="float:left;">
+								<div class="pagination">
+									<ul>
+										<li class="l-arrow inactive-l-arrow">
+											<a rel="prev">назад</a>
+										</li>
+										<li>
+											<a class="active" title="Текущая страница">1</a>
+										</li>
+										<li>
+											<a href="/vrach/?page=2" title="Страница 2">2</a>
+										</li>
+										<li>
+											<a href="/vrach/?page=3" title="Страница 3">3</a>
+										</li>
+										<li>
+											<a href="/vrach/?page=4" title="Страница 4">4</a>
+										</li>
+										<li>
+											<a href="/vrach/?page=5" title="Страница 5">5</a>
+										</li>
+										<li>
+											<a href="/vrach/?page=102" title="Страница 102">....</a>
+										</li>
+										<li>
+											<a href="/vrach/?page=201" title="Страница 201">201</a>
+										</li>
+										<li>
+											<a href="/vrach/?page=202" title="Страница 202">202</a>
+										</li>
+										<li class="r-arrow ">
+											<a href="/vrach/?page=2" title="Страница 2" rel="next">вперед</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<p> 1-10 из 2018</p>
+						</div>
+
+
+						<h2>Как найти врача в Москве?</h2>
+						<p>Подбор профильного доктора осуществляется в несколько кликов. Вы выбираете конкретного специалиста, например,
+						   оториноларинголога. Затем указываете удобную для вас остановку метро. И «умный» поиск составит актуальный
+						   перечень специалистов. Рейтинг сформирован и регулярно обновляется на основании реальных отзывов пациентов. </p>
+
+						<h3>Как записаться на прием?</h3>
+						<p>Чтобы попасть на консультацию, нужно записаться к врачу с помощью электронной формы. Достаточно ввести свои
+						   данные:</p>
+						<div class="list two-column">
+							<ul class="list__item-pink">
+
+
+								<li> имя;</li>
+								<li> номер телефона;</li>
+								<li> электронный адрес.</li>
+							</ul>
+						</div>
+						<p>Также записаться на прием к врачу можно, позвонив по указанному контактному номеру. Для удобства пользователей
+						   портала указаны актуальные расценки на первичную консультацию и осмотр.
+						</p>
+						<p></p>
+					</div>
+				</div>
+				<div class="order-xs">
+					<form action="" class="order-xs__form">
+						<div class="order-xs__top">
+							<div class="order-xs__title">
+								Вы записались к:
+							</div>
+							<div class="order-xs__close">
+
+							</div>
+							<div class="order-xs__hr">
+
+							</div>
+							<div class="order-xs__doc">
+								<div class="order-xs__doc-img">
+									<img src="https://zdorov.online/upload/iblock/2b8/2b82f1fb2d43bf4a35ff7500fc106f23.jpg" alt="">
+								</div>
+								<div class="order-xs__doc-info">
+									<div class="order-xs__doc-name">Осипенко Иван Иванович</div>
+									<div class="order-xs__doc-prof">Нарколог</div>
+									<div class="order-xs__doc-price">2500руб.</div>
+								</div>
+							</div>
+						</div>
+						<div class="order-xs__bottom">
+							<input type="text" class="order-xs__input" placeholder="Введите ваше имя">
+							<input type="tel" class="order-xs__input" placeholder="Номер телефона">
+							<input type="submit" class="order-xs__submit">
+						</div>
+					</form>
+				</div>
+			</div>
+			<script>
+				$(document).ready(function () {
+					$.post("/include/right_links_docs.php", {"cnt": "30", 'cp': '/bolezni/'}, function (resp) {
+						$('#rdocs').html(resp);
+					});
+				});
+			</script>
+
+
+			<!--right sidebar-->
+			<div class="right-sidebar clearfix">
+				<div id="rpolis"></div>
+				<div id="rfilter"></div>
+				<div style="display: none;">
+
+				</div>
+				&#65279;
+
+
+				<div id="rdocs">
+
+					<article class="list-right-sb-search">
+						<div class="list-right-sb-search--wrap">
+							<div class="list-right-sb-search__title">Специальности</div>
+						</div>
+						<ul style="padding-bottom: 15px;">
+							<li>
+								<a class="rdocs" href="/vrach/akusher/">Акушер</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/akusher-ginekolog/">Акушер - гинеколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/allergolog/">Аллерголог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/allergolog-immunolog/">Аллерголог-иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/angiolog/">Ангиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/androlog/">Андролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/artrolog/">Артролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/venerolog/">Венеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/vertebrolog/">Вертебролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/virusolog/">Вирусолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/virusolog-immunolog/">Вирусолог-иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/lfk/">Врач ЛФК</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gastroenterolog/">Гастроэнтеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gematolog/">Гематолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/genetik/">Генетик</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gepatolog/">Гепатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ginekolog/">Гинеколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/girudolog/">Гирудотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/gomeopat/">Гомеопат</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatovenerolog/">Дерматовенеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatolog/">Дерматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dermatolog-venerolog/">Дерматолог-венеролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kosmetolog-dermatolog/">Дерматолог-косметолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/defektolog/">Дефектолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/diabetolog/">Диабетолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/dietolog/">Диетолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/immunolog/">Иммунолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/infekcionist/">Инфекционист</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kardiolog/">Кардиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kardiohirurg/">Кардиохирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/kosmetolog/">Косметолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/lor-otolaringolog/">ЛОР</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/logoped/">Логопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/logoped-defektolog/">Логопед дефектолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/mammolog/">Маммолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/manualnyy-terapevt/">Мануальный терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/massazhist/">Массажист</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/narkolog/">Нарколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/nevrolog/">Невролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/neyrohirurg/">Нейрохирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/neonatolog/">Неонатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/nefrolog/">Нефролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkodermatolog/">Онкодерматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkolog/">Онколог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/onkolog-mammolog/">Онколог маммолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ortoped/">Ортопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/osteopat/">Остеопат</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/otolaringolog/">Отоларинголог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/oftalmolog/">Офтальмолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/parodontolog/">Пародонтолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/pediatr/">Педиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/plasticheskiy-hirurg/">Пластический хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/proktolog/">Проктолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikhiatr/">Психиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikholog/">Психолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/psikhoterapevt/">Психотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/pulmonolog/">Пульмонолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/revmatolog/">Ревматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/refleksoterapevt/">Рефлексотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/seksolog/">Сексолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/seksopatolog/">Сексопатолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/somnolog/">Сомнолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/sosudistii-hirurg/">Сосудистый хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog/">Стоматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-ortodont/">Стоматолог-ортодонт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-terapevt/">Стоматолог-терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/stomatolog-hirurg/">Стоматолог-хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/surdolog/">Сурдолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/terapevt/">Терапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/travmatolog/">Травматолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/travmatolog-ortoped/">Травматолог-ортопед</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/transfuziolog/">Трансфузиолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/trikholog/">Трихолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/urolog/">Уролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/urolog-androlog/">Уролог-андролог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/fizioterapevt/">Физиотерапевт</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/flebolog/">Флеболог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/ftiziator/">Фтизиатр</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg/">Хирург</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg-proktolog/">Хирург проктолог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/hirurg-flebolog/">Хирург флеболог</a>
+							</li>
+							<li>
+								<a class="rdocs" href="/vrach/endokrinolog/">Эндокринолог</a>
+							</li>
+						</ul>
+					</article>
+					<script>
+						$(document).ready(function () {
+						});
+					</script>
+				</div>
+				<article class="about">
+					<div class="about__wrap">
+						<!--<section class="about__SN">
+							<div class="about__title">ПРИСОЕДИНЯЙТЕСЬ К НАМ В СОЦСЕТЯХ:</div>
+							<ul>
+								<li class="about__SN--vk"><a href="#x">Вконтакте</a></li>
+								<li class="about__SN--f"><a href="#x">Facebook</a></li>
+								<li class="about__SN--tw"><a href="#x">Tweeter</a></li>
+								<li class="about__SN--ok"><a href="#x">Одноклассники</a></li>
+								<li class="about__SN--g"><a href="#x">GooglPlus</a> </li>
+							</ul>
+						</section>-->
+						<section class="about_contents">
+							<div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+							<ul>
+								<li class="about_contents--pills">
+									<!--noindex-->
+									<a href="/bolezni/"><span>Более 400 болезней</span>
+										Причины, проявления, лечение и профилактика
+									</a><!--/noindex--></li>
+								<li class="about_contents--clinic">
+									<!--noindex-->
+									<a href="/clinics/"><span>Рейтинг клиник</span>
+										Достоверная информация о качестве лечения на основе посещения клиник
+									</a><!--/noindex--></li>
+								<li class="about_contents--node">
+									<!--noindex-->
+									<a href="/vrach/"><span>Запись к врачу</span>
+										Очень легко к нужному врачу
+									</a><!--/noindex--></li>
+								<li class="about_contents--question">
+									<!--noindex-->
+									<a href="/qa/"><span>Задать вопрос</span>
+										Бесплатные консультации врачей
+									</a><!--/noindex--></li>
+							</ul>
+						</section>
+					</div>
+				</article>
+				<div id="right_socadd"></div>
+				<div style="width:240px;">
+				</div>
+				<div>
+
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</main>
+
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<div class="clearfix"></div>
+	<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<img src="img/logo.png" title="Zdorov.online">
+			</div>
+			<div class="footer-content__article hidden-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Лучшие врачи Москвы</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Вся диагностика Москвы</a>
+				<a href="/novosti/">Новости</a>
+				<div class="menu-footer__list hidden-xs">
+					<ul>
+						<!--noindex-->
+						<li>
+							<a href="/adv/">Реклама на портале</a>
+						</li>
+						<li>
+							<a href="/dlya-klinik/">Для клиник</a>
+						</li>
+						<li>
+							<a href="/about/">О проекте</a>
+						</li><!--/noindex-->
+						<li>
+							<a href="/contacts/">Контакты</a>
+						</li>
+						<!--noindex-->
+						<li>
+							<a href="/term/">Соглашение с порталом</a>
+						</li><!--/noindex-->
+						<!--noindex-->
+						<li>
+							<a target="_blank" href="http://partners.zdorov.online/">Партнерам</a>
+						</li><!--/noindex-->
+					</ul>
+				</div>
+			</div>
+			<div class="footer-content__article mobile visible-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Врачи</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Клиники</a>
+				<a href="/novosti/">Новости</a>
+			</div>
+
+			<div class="menu-footer-document hidden-xs">
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2017. Все права защищены.
+						<a href="/karta-saita/">Карта сайта</a>
+					</p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем. 16+</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left: 86px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+				</div>
+			</div>
+			<div class="footer-content__right-side mk visible-xs">
+				Информационный партнер портала
+				<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script src="js/app.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#nav-icon3').click(function () {
+				$(this).toggleClass('open');
+				$('.header-main_menu').toggleClass('open');
+			});
+		});
+	</script>
+</div>
+</body>
+</html>

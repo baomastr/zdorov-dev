@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Болезни и их лечение</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<!--<meta name="viewport" content="width=1250">-->
+	<!--<meta name="MobileOptimized" content="1250">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body">
+		<!--<header>
+			<div class="clearfix header-top">
+				<div class="header-top__item menu-burger header-top__btn visible-xs">
+					<a id="nav-icon3" class="visible-xs">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				<a href="/" class="header-logo header-top__item">
+					<img src="http://zdorov.online/img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<a class="header-top__item menu-search header-top__btn visible-xs">
+					<img src="mob/search.png" alt="">
+				</a>
+				<style>
+					.search_block {
+						position: relative;
+					}
+
+					.search_block .search_tips {
+						display: none;
+						position: absolute;
+						top: 50px;
+						left: 280px;
+						background-color: #fff;
+						width: 497px;
+						border: 1px solid #ccc;
+					'
+					}
+
+					.search_block .search_tips .tips {
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+
+					.search_block .search_tips .tips_kato {
+						padding: 4px 8px;
+						background-color: #87CEFA;
+						color: #fff;
+
+					}
+
+					.search_block .search_tips .tips:hover {
+						background-color: #ccc;
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+				</style>
+				<div class="search_block">
+					<div class="header-search">
+						<form action="/search/">
+							<input autocomplete="off" type="search" name="q" placeholder="Например: С какой стороны аппендицит у женщин?" value="">
+							<input type="submit" value="">
+						</form>
+					</div>
+				</div>
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="/auth/">Вход</a>
+						/
+						<a href="/reg/" class="go_to_reg">Регистрация</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list">
+						<a href="/selftest/j/">Самодиагностика</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/articles/">Статьи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/clinics/">Клиники</a>
+						<ul class="main-submenu">
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-lecheniyu/" class="main-submenu__link">
+									По лечению
+								</a>
+							</li>
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-diagnostike/" class="main-submenu__link">
+									По диагностике
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main_menu-list">
+						<a href="/vrach/">Врачи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/bolezni/">Болезни</a>
+					</li>
+					<li class="main_menu-list ">
+						<a href="/forum/">Форум</a>
+					</li>
+					<li class="main_menu-list ">
+						<a href="/qa/">Вопросы врачу</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>-->
+		<!-- end header-->
+		<main>
+			<div class="ratemenu">
+				<div class="ratemenu__title">
+					Рейтинги клиник:
+				</div>
+				<ul class="ratemenu__list">
+					<li class="ratemenu__list-item">
+						<a href="/clinics/reyting-khoroshikh-klinik/">10 лучших клиник Москвы</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<style>
+				.right-sidebar {
+					display: none;
+				}
+				.spec_name {cursor:pointer;}
+				.left-side {
+					width: 100%;
+				}
+			</style>
+			<div class=" left-side-library left-side">
+				<div class="crumbs">
+					<ul>
+
+						<li>
+							<a href="https://zdorov.online/" title="Главная">
+								<span>Главная</span>
+							</a>
+
+						</li>
+
+
+						<li>
+							<a href="https://zdorov.online/selftest/" title="Самодиагностика">
+								<span>Самодиагностика</span>
+							</a>
+
+						</li>
+
+
+						<li>
+							<a href="https://zdorov.online/selftest/j/" title="Самодиагностика женщины">
+								<span>Самодиагностика женщины</span>
+							</a>
+
+						</li>
+
+
+						<li>
+							<a href="https://zdorov.online/selftest/j/golova/" title="Голова">
+								<span>Голова</span>
+							</a>
+
+						</li>
+
+
+						<li>
+							<section href="https://zdorov.online/selftest/j/golova/shelushenie-lica/">
+								<span>Шелушение лица</span>
+							</section>
+
+						</li>
+
+					</ul>
+				</div>
+				<div class="new_page_selftest2"><div class="firstload" style="display:none;"><p>0</p></div>
+					<div class="c-st-last--modern">
+
+						<div class="scrollspy">
+							<div class="scrollspy__anchor"></div>
+							<div class="scrollspy__circle"></div>
+						</div>
+						<div class="c-symptom">
+							<div class="c-subtitle c-subtitle--pink">Ваш симптом</div>
+							<h1 class="c-title c-title--main">Шелушение лица</h1>
+						</div>
+						<div class="l-backgounded l-backgounded--pills">
+
+							<div class="c-reason">
+								<div class="c-subtitle c-subtitle--pink">Вероятные заболевания</div>
+								<!--div class="c-title c-title--mid">Головная боль</div-->
+								<ul class="c-list-reasons">
+									<li class="c-list-reasons__item">
+										<!--<a href=""></a>-->
+										<a>Анемия</a>                                                                    <span class="c-list-reasons__hidden">
+Анемия — патологическое состояние, которое проявляется снижением концентрации гемоглобина и гематокрита.  Параллельно падает количество эритроцитов.
+							<br>
+							<a target="_blank" href="http://bolezni.zdorov.online/gematologija/anemiya/" class="c-list-reasons__hide">Симптомы анемии</a>
+						</span>
+									</li>
+									<li class="c-list-reasons__item">
+										<!--<a href=""></a>-->
+										Недостаток витаминов и микроэлементов                                                            </li>
+									<li class="c-list-reasons__item">
+										<!--<a href=""></a>-->
+										Аллергический дерматит                                                            </li>
+									<li class="c-list-reasons__item">
+										<!--<a href=""></a>-->
+										Себорейный дерматит                                                            </li>
+									<li class="c-list-reasons__item">
+										<!--<a href=""></a>-->
+										<a>Микоз</a>                                                                    <span class="c-list-reasons__hidden">							 Болезни кожи довольно распространены в наше время.  Одним из наиболее часто диагностируемых недугов во всем мире является микоз — инфекционное заболевание, которое провоцируют микроорганизмы грибкового происхождения.
+							<br>
+							<a target="_blank" href="http://bolezni.zdorov.online/dermatologija/mikoz/" class="c-list-reasons__hide">Симптомы микоза</a>
+						</span>
+									</li>
+									<li class="c-list-reasons__item">
+										<!--<a href=""></a>-->
+										Микроспория                                                             </li>
+								</ul>
+							</div>
+
+						</div>
+
+						<div class="l-pinkbox">
+							<div class="c-subtitle c-subtitle--black">Серьезность проблемы</div>
+							<ul class="l-attentionlist">
+								<li class="c-attention is-active tooltip">Важно и срочно!
+									<span class="tooltiptext">Незамедлительно пройдите обследование у специалиста.</span>
+								</li>
+								<li class="c-attention  tooltip">Важно, но не срочно
+									<span class="tooltiptext">В ближайшее время пройдите обследование у специалиста.</span>
+								</li>
+								<li class="c-attention  tooltip">Не опасно
+									<span class="tooltiptext">Рекомендуем пройти обследование у специалиста по возможности.</span>
+								</li>
+							</ul>
+						</div>
+						<div class="l-backgounded l-backgounded--hipsters">
+							<div class="c-subtitle c-subtitle--pink">Что делать?</div>
+							<div class="c-title c-title--mid">Запишитесь на прием к врачу</div>
+							<br>
+							<div class="c-tabs-doc">
+								<div onclick="loaddoc2(&quot;dermatolog&quot;, &quot;0&quot;)" class="fstd2 c-tabs-doc__item tooltip it0 is-active">Дерматолог							<span class="tooltiptext">Дерматолог занимается лечением пациентов с заболеваниями кожи, ногтей, слизистых оболочек. Врач выдает рекомендации по профилактике кожных заболеваний, занимается реабилитацией больных. <br>
+							<a href="/vrach/dermatolog/">Помотреть всех дерматологов</a>
+							</span>
+								</div>
+								&nbsp;&nbsp;
+							</div>
+							<!--div class="c-title c-title--mid">Головная боль</div-->
+							<div class="l-rel__right">
+								<!--a href="">Все неврологи <span> (136) ></span></a-->
+							</div>
+						</div>
+						<div id="aj_docs2"><script>
+                            $(".clinic-time__number--main-clinic").click(function () {
+                                $(this).siblings(".clinic-time__tel--main-clinic").css("display", "block"), $(this).hide()
+                            });
+						</script>
+							<div class="c-greybox">
+								<div class="well-doc__list swiperDoc">
+									<!--noindex--><ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<div class="well-doc__item art">
+											<div class="well-doc__item-price">
+												<div class="well-doc__item-name-wrap clearfix">
+													<div class="well-doc__item-img">
+														<div style="max-height:100px;overflow:hidden;">
+															<img src="https://zdorov.online/upload/iblock/34a/34a38e3ecf7b0036a820a53e64a996e5.png" alt="">
+														</div>
+														<div class="well-doc__item-rating clearfix">
+															<p class="well-doc__item-rating--pink"><span>133</span>отзывов</p>
+															<p class="well-doc__item-rating--blue"><span>9<span>.45</span></span>рейтинг</p>
+														</div>
+													</div>
+													<div class="well-doc__item-name">
+														<p class="well-doc__item-name-blue">
+															<a style="color:#115c89;padding:0;" href="/vrach/agakhanyan-karen-armenovich/">Агаханян Карен Арменович</a>
+														</p>
+														<p></p>
+														<p>Стаж: 19 лет</p>
+														<p style="font-family:sans-serif;color: green; margin-top: 10px;">
+															Цена приема: <br>
+															<span style="font-weight: 800;">1200</span>
+															руб.
+														</p>
+													</div>
+												</div>
+
+											</div>
+											<div class="well-doc__item-address clinic-about">
+												<div class="well-doc__item-price-btn" style="position:relative">
+													<a onclick="bookOneStepShowDoc('110690');" class="well-doc__item-price-btn-link book doc1 doc_1step bookOneStep" docid="110690" doc="">Записаться онлайн</a>
+												</div>
+												<span class="clinic-about__metro metro_line_kaluzhsko-rizhskaya">Новые Черёмушки</span>
+												<!--<div class="clinic-about__address"><a href="/vrach//"></a></div>-->
+												<div>
+													<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Агаханян Карен Арменович" style="text-align: left;"><a>Показать номер</a></span>
+													<span class="clinic-time__tel  clinic-time__tel--main-clinic click_phone_number hidden-xs" data-namethis="">
+													<a href="tel:+7(499)110-23-58">+7(499)110-23-58</a>
+												</span>
+												</div>
+											</div>
+										</div>
+									</li>
+
+									<li class="swiper-slide">
+										<div class="well-doc__item art">
+											<div class="well-doc__item-price">
+												<div class="well-doc__item-name-wrap clearfix">
+													<div class="well-doc__item-img">
+														<div style="max-height:100px;overflow:hidden;">
+															<img src="https://zdorov.online/upload/iblock/111/111a314a0756fcae3fc08e541616e8b4.jpg" alt="">
+														</div>
+														<div class="well-doc__item-rating clearfix">
+															<p class="well-doc__item-rating--pink"><span>107</span>отзывов</p>
+															<p class="well-doc__item-rating--blue"><span>9<span>.37</span></span>рейтинг</p>
+														</div>
+													</div>
+													<div class="well-doc__item-name">
+														<p class="well-doc__item-name-blue">
+															<a style="color:#115c89;padding:0;" href="/vrach/netrunenko-irina-yurevna/">Нетруненко Ирина Юрьевна</a>
+														</p>
+														<p></p>
+														<p>Стаж: 13 лет</p>
+														<p style="font-family:sans-serif;color: green; margin-top: 10px;">
+															Цена приема: <br>
+															<span style="font-weight: 800;">2150</span>
+															руб.
+														</p>
+													</div>
+												</div>
+
+											</div>
+											<div class="well-doc__item-address clinic-about">
+												<div class="well-doc__item-price-btn" style="position:relative">
+													<a onclick="bookOneStepShowDoc('110513');" class="well-doc__item-price-btn-link book doc1 doc_1step bookOneStep" docid="110513" doc="">Записаться онлайн</a>
+												</div>
+												<span class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Молодёжная</span>
+												<!--<div class="clinic-about__address"><a href="/vrach//"></a></div>-->
+												<div>
+													<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Нетруненко Ирина Юрьевна" style="text-align: left;"><a>Показать номер</a></span>
+													<span class="clinic-time__tel  clinic-time__tel--main-clinic click_phone_number hidden-xs" data-namethis="">
+													<a href="tel:+7(499)110-83-96">+7(499)110-83-96</a>
+												</span>
+												</div>
+											</div>
+										</div>
+									</li>
+
+									<li class="swiper-slide">
+										<div class="well-doc__item art">
+											<div class="well-doc__item-price">
+												<div class="well-doc__item-name-wrap clearfix">
+													<div class="well-doc__item-img">
+														<div style="max-height:100px;overflow:hidden;">
+															<img src="https://zdorov.online/upload/iblock/8c2/8c2c1632ebf69f9cbc0f532e05e77b94.png" alt="">
+														</div>
+														<div class="well-doc__item-rating clearfix">
+															<p class="well-doc__item-rating--pink"><span>64</span>отзывов</p>
+															<p class="well-doc__item-rating--blue"><span>9<span>.55</span></span>рейтинг</p>
+														</div>
+													</div>
+													<div class="well-doc__item-name">
+														<p class="well-doc__item-name-blue">
+															<a style="color:#115c89;padding:0;" href="/vrach/osipova-darya-sergeevna/">Осипова Дарья Сергеевна</a>
+														</p>
+														<p></p>
+														<p>Стаж: 10 лет</p>
+														<p style="font-family:sans-serif;color: green; margin-top: 10px;">
+															Цена приема: <br>
+															<span style="font-weight: 800;">1500</span>
+															руб.
+														</p>
+													</div>
+												</div>
+
+											</div>
+											<div class="well-doc__item-address clinic-about">
+												<div class="well-doc__item-price-btn" style="position:relative">
+													<a onclick="bookOneStepShowDoc('112753');" class="well-doc__item-price-btn-link book doc1 doc_1step bookOneStep" docid="112753" doc="">Записаться онлайн</a>
+												</div>
+												<span class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Славянский бульвар</span>
+												<!--<div class="clinic-about__address"><a href="/vrach//"></a></div>-->
+												<div>
+													<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Осипова Дарья Сергеевна" style="text-align: left;"><a>Показать номер</a></span>
+													<span class="clinic-time__tel  clinic-time__tel--main-clinic click_phone_number hidden-xs" data-namethis="">
+													<a href="tel:+7(499)653-56-74">+7(499)653-56-74</a>
+												</span>
+												</div>
+											</div>
+										</div>
+									</li>
+
+								</ul>
+								</div>
+								<div class="doc-more mnogo_doc">
+									<a class="getmoredocs_from_lastpage" href="/vrach/dermatolog/">Показать всех дерматологов</a>
+								</div>
+							</div>
+							<script>
+                                $(document).ready(function(){
+                                    $('.well-doc__item-name-blue a').click(function(){
+                                        dataLayer.push({
+                                            'event':'autoEvent',
+                                            'eventCategory':'Selftest final page_2',
+                                            'eventAction': 'Врачи. Специальность. ФИО.',
+                                            'eventLabel': '/selftest/j/golova/shelushenie-lica/',
+                                            'yandexEvent':''});
+                                    });
+                                    $('.doc1').click(function(){
+                                        dataLayer.push({
+                                            'event':'autoEvent',
+                                            'eventCategory':'Selftest final page_2',
+                                            'eventAction': 'Врачи. Специальность. Записаться.',
+                                            'eventLabel': '/selftest/j/golova/shelushenie-lica/',
+                                            'yandexEvent':''});
+                                    });
+                                    $('.phone_show').click(function(){
+                                        dataLayer.push({
+                                            'event':'autoEvent',
+                                            'eventCategory':'Selftest final page_2',
+                                            'eventAction': 'Врачи. Специальность. Показать номер.',
+                                            'eventLabel': '/selftest/j/golova/shelushenie-lica/',
+                                            'yandexEvent':''});
+                                    });
+                                    $('.getmoredocs_from_lastpage').click(function(){
+                                        dataLayer.push({
+                                            'event':'autoEvent',
+                                            'eventCategory':'Selftest final page_2',
+                                            'eventAction': 'Врачи. Специальность. Посмотреть всех кнопка.',
+                                            'eventLabel': '/selftest/j/golova/shelushenie-lica/',
+                                            'yandexEvent':''});
+                                    });
+
+                                    setTimeout(function(){
+                                        //	$('.l-rel__right').html('<a href="/vrach/dermatolog/">Все дерматологи (204)</a>');
+                                        //	$('.vam_nuzhen').html('дерматолог');
+                                        //	$('.vam_nuzhen_text').html('Дерматолог занимается лечением пациентов с заболеваниями кожи, ногтей, слизистых оболочек. Врач выдает рекомендации по профилактике кожных заболеваний, занимается реабилитацией больных. ');
+                                    }, 1000);
+
+                                    var mql = window.matchMedia("(min-width: 415px)");
+                                    if (mql.matches) {
+                                        $('.js-selftest-docslider').bxSlider({
+                                            controls: true,
+                                            hideControlOnEnd: true,
+                                            pager: false,
+                                            adaptiveHeight: true,
+                                            minSlides: 5,
+                                            maxSlides: 5,
+                                            slideWidth: 190,
+                                            slideMargin: 20
+                                        });
+                                    } else {
+                                        $('.js-selftest-docslider').bxSlider({
+                                            hideControlOnEnd: true,
+                                            pager: false,
+                                            adaptiveHeight: true,
+                                            minSlides: 1,
+                                            maxSlides: 1,
+                                            slideWidth: 190
+                                        });
+                                    }
+
+
+                                });
+							</script></div>
+						<div class="st-last-block">
+							<div class="c-subtitle c-subtitle--pink">Как понять точную причину недуга?</div>
+							<div class="c-title c-title--mid">Врач назначит диагностику ниже</div>
+							<div class="diagnostic-list">
+								<div class="diagnostic-list__item">
+									<div class="diagnostic-list__name" style="">
+										<a target="_blank" href="/dermatoskopiya/">Дерматоскопия</a>									</div>
+									<div class="diagnostic-list__percent">
+
+									</div>
+									<div class="diagnostic-list__time">
+
+									</div>
+									<div class="diagnostic-list__price">
+										500-3000 руб.									</div>
+								</div>
+								<div class="diagnostic-list__item">
+									<div class="diagnostic-list__name" style="">
+										Клинический анализ крови									</div>
+									<div class="diagnostic-list__percent">
+
+									</div>
+									<div class="diagnostic-list__time">
+
+									</div>
+									<div class="diagnostic-list__price">
+									</div>
+								</div>
+								<div class="diagnostic-list__item">
+									<div class="diagnostic-list__name" style="">
+										Соскоб кожи									</div>
+									<div class="diagnostic-list__percent">
+
+									</div>
+									<div class="diagnostic-list__time">
+
+									</div>
+									<div class="diagnostic-list__price">
+									</div>
+								</div>
+								<div class="diagnostic-list__item">
+									<div class="diagnostic-list__name" style="">
+										Микроскопическое исследование кожи									</div>
+									<div class="diagnostic-list__percent">
+
+									</div>
+									<div class="diagnostic-list__time">
+
+									</div>
+									<div class="diagnostic-list__price">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="st-last-block st-last-block--pink">
+							<form name="st_form2" class="st-form">
+								<div class="c-subtitle c-subtitle--pink">Заключение</div>
+								<div class="c-title c-title--mid">Получить результаты диагностики <br>на почту</div>
+
+								<input type="email2" placeholder="Ваш e-mail" name="st_email2" class="st-form__email">
+								<span>
+								<input style="border-radius:5px;" class="btn-doc-info st-form__submit" id="stsend2" type="submit" onclick="send2(); return false;" value="Получить">
+							</span>
+							</form>
+							<a class="st-last__link again_selftest" href="/selftest/" style="font-weight: bold;text-decoration: underline;">Пройти самодиагностику еще раз</a>
+							<br>
+							<div id="info2" style="text-align: center;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script type="text/javascript" src="https://zdorov.online/js/jquery.bxslider.min.js"></script>
+			<script>
+
+                $('.spec_name').click(function () {
+                    var text = $(this).data('spec_description');
+                    $('.vam_nuzhen_text').html(text);
+                });
+
+                function loaddoc2(doc, i) {
+                    $(document).ready (function () {
+                        $('#slider-prev').html('');
+                        $('#slider-next').html('');
+                        var firstload = $(".firstload p").text();
+                        $('.c-tabs-doc__item').removeClass('is-active');
+                        $('.it' + i).addClass('is-active');
+                        var url = '/selftest/j/golova/shelushenie-lica/';
+                        $.post("/algo/processing/docs_on_selftest2.php", {"doc": doc, "firstload": firstload, "url": url}, function (resp) {
+                            $('#aj_docs2').html(resp);
+                        });
+                        if (firstload =='1') {
+
+                            setTimeout(function () {
+                                $('.c-card-doc__img-wrap').each(function () {
+                                    var image = $(this).find('img');
+                                    var src = $(this).data("src");
+                                    var time = $(this).data("time");
+                                    image.fadeOut(function(){
+                                        image.attr('src', src).fadeIn(time);
+                                        $('.c-card-doc__img-wrap').css('width','100%').css('padding','0px').css('height','190px');
+                                        $(this).css('width','200px').css('height','200px');
+                                    },0);
+                                }).removeAttr('data-src');
+                            }, 4000);
+                            $(".firstload p").html('0');
+                        }
+                    });
+
+                }
+                function show_pp() {
+                    $('#pop-up-selftest').show();
+                    $('input[name=st_name], input[name=st_email]').val('');
+                }
+                function send() {
+                    var ok = true;
+                    var fname = $('input[name=st_name]');
+                    var feml = $('input[name=st_email]');
+                    var fio = fname.val();
+                    var email = feml.val();
+
+                    if (fio == '') {
+                        fname.css('border', '1px solid red');
+                        ok = false;
+                    }
+                    if (email == '') {
+                        feml.css('border', '1px solid red');
+                        ok = false;
+                    }
+                    if (ok == true) {
+                        $('#stsend').attr('onclick', 'return false;');
+                        var url = location.href;
+                        $.post('/algo/processing/selftest_email.php', {'fio': fio, 'email': email, 'url': url}, function (resp) {
+                            //alert(resp);
+                            $('#pop-up-selftest').fadeOut(300);
+                        });
+                    }
+
+                }
+                function send2() {
+                    var ok = true;
+                    var feml = $('input[name=st_email2]');
+                    var email = feml.val();
+
+                    if (email == '') {
+                        feml.css('border', '1px solid red');
+                        ok = false;
+                    }
+                    if (ok == true) {
+                        $('#stsend2').attr('onclick', 'return false;');
+                        var url = location.href;
+                        $.post('/algo/processing/selftest_email.php', {'fio': email, 'email': email, 'url': url}, function (resp) {
+                            $('#info2').html('Результат Вашей проверки отправлен. Пожалуйста, проверьте свою почту.');
+                            $('.st-form').hide();
+                            $('#info2').click();
+                        });
+                    }
+                }
+                function send1() {
+                    var ok = true;
+                    var feml = $('input[name=st_email1]');
+                    var email = feml.val();
+
+                    if (email == '') {
+                        feml.css('border', '1px solid red');
+                        ok = false;
+                    }
+                    if (ok == true) {
+                        $('#stsend1').attr('onclick', 'return false;');
+                        var url = location.href;
+                        $.post('/algo/processing/selftest_email.php', {'fio': email, 'email': email, 'url': url}, function (resp) {
+                            $('#info1').html('Результат Вашей проверки отправлен. Пожалуйста, проверьте свою почту.');
+                            $('.email-form').hide();
+                            $('#info1').click();
+                        });
+                    }
+
+                }
+                $(document).ready(function () {
+                    $('.fstd').click();
+                    $('.fstd2').click();
+                    $('.btn_close').click(function () {
+                        $('#pop-up-selftest').fadeOut(300);
+                        $("#pop-up-selftest").removeClass("pop-up");
+                    });
+                    $('input').keyup(function () {
+                        var that = $(this);
+                        if (that.val() == '')
+                            that.css('border', '1px solid red');
+                        else
+                            that.css('border', '1px solid #d6d6d6');
+                    });
+                    $('#prsd').click(function () {
+                        $('#stsend').attr('onclick', 'send(); return false;');
+                        $("#pop-up-selftest").addClass("pop-up");
+                        $('input[name=st_name]').val('');
+                        $('input[name=st_email]').val('');
+                        setTimeout(function () {
+                            $('#pop-up-selftest').fadeIn(500);
+                        }, 100);
+                    });
+                });
+                $(document).ready(function () {
+                    var onScroll = function (e) {
+                        var container = $('.scrollspy'),
+                            circle = $('.scrollspy__circle'),
+                            anchor = $('.scrollspy__anchor'),
+                            height = container.outerHeight(),
+                            fromTop = circle.offset().top,
+                            anchorFromTop = anchor.offset().top;
+                        if (anchorFromTop > (height - 200)) {
+                            circle.addClass('is-static');
+                            console.log('is-static');
+                        } else {
+                            circle.removeClass('is-static');
+                            console.log('not-static');
+                        }
+                    };
+
+                    $(window).on('scroll', onScroll);
+
+                    $('.c-list-reasons__item').click(function () {
+                        $(this).find('.c-list-reasons__hidden').addClass('is-visible');
+                    });
+
+                    $('.c-list-reasons__hide').click(function (e) {
+                        e.stopPropagation();
+                        $(this).parent().removeClass('is-visible');
+                    });
+
+                    $('.content-more__btn').click(function () {
+                        $(this).hide();
+                        $('.content-more__text').addClass('is-opened');
+                    });
+
+                });
+
+			</script>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+			<script>
+                $(document).ready(function(){
+
+                });
+			</script>
+			<!--right sidebar-->
+			<div class="right-sidebar clearfix">
+				<div id="rpolis"></div>
+				<div id="rfilter"></div>
+				<div style="display: none;">
+
+				</div>
+				&#65279;
+
+				<div id="rdocs"></div>
+				<article class="about">
+					<div class="about__wrap">
+						<section class="about__SN" style="margin-top: 10px;">
+							<div class="about__title" style="font-size:12px">ПРИСОЕДИНЯЙТЕСЬ К НАМ В СОЦСЕТЯХ:</div>
+							<ul style="margin-top: -10px;">
+								<li class="about__SN--vk"><a href="/goto.php?l=https://vk.com/zdorov.online" target="_blank">Вконтакте</a></li>
+								<li class="about__SN--f"><a href="/goto.php?l=https://www.facebook.com/zdorovdotonline/" target="_blank" "="">Facebook</a></li>
+								<!--<li class="about__SN--tw"><a href="#x">Twitter</a></li>-->
+								<li class="about__SN--ok"><a href="/goto.php?l=https://ok.ru/group/54335368790253" target="_blank">Одноклассники</a></li>
+								<!--<li class="about__SN--g"><a href="#x">GooglPlus</a> </li>-->
+							</ul>
+						</section>
+						<section class="about_contents">
+							<div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+							<ul>
+								<li class="about_contents--pills">
+									<!--noindex--><a href="http://bolezni.zdorov.online"><span>Более 400 болезней</span>
+									Причины, проявления, лечение и профилактика</a><!--/noindex--></li>
+								<li class="about_contents--clinic">
+									<!--noindex--><a href="/clinics/"><span>Рейтинг клиник</span>
+									Достоверная информация о качестве лечения на основе посещения клиник</a><!--/noindex--></li>
+								<li class="about_contents--node">
+									<!--noindex--><a href="/vrach/"><span>Запись к врачу</span>
+									Очень легко к нужному врачу</a><!--/noindex--></li>
+								<li class="about_contents--question">
+									<!--noindex--><a href="/qa/"><span>Задать вопрос</span>
+									Бесплатные консультации врачей</a><!--/noindex--></li>
+							</ul>
+						</section>
+					</div>
+				</article>
+				<div id="right_socadd"></div>
+				<div style="width:240px;">
+				</div>
+				<div>
+
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</main>
+
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<div class="clearfix"></div>
+	<!--<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<img src="img/logo.png" title="Zdorov.online">
+			</div>
+			<div class="footer-content__article ">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Лучшие врачи Москвы</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Вся диагностика Москвы</a>
+				<a href="/novosti/">Новости</a>
+				<div class="menu-footer__list ">
+					<ul>
+						&lt;!&ndash;noindex&ndash;&gt;
+						<li>
+							<a href="/adv/">Реклама на портале</a>
+						</li>
+						<li>
+							<a href="/dlya-klinik/">Для клиник</a>
+						</li>
+						<li>
+							<a href="/about/">О проекте</a>
+						</li>&lt;!&ndash;/noindex&ndash;&gt;
+						<li>
+							<a href="/contacts/">Контакты</a>
+						</li>
+						&lt;!&ndash;noindex&ndash;&gt;
+						<li>
+							<a href="/term/">Соглашение с порталом</a>
+						</li>&lt;!&ndash;/noindex&ndash;&gt;
+						&lt;!&ndash;noindex&ndash;&gt;
+						<li>
+							<a target="_blank" href="http://partners.zdorov.online/">Партнерам</a>
+						</li>&lt;!&ndash;/noindex&ndash;&gt;
+					</ul>
+				</div>
+			</div>
+			<div class="footer-content__article mobile visible-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Врачи</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Клиники</a>
+				<a href="/novosti/">Новости</a>
+			</div>
+
+			<div class="menu-footer-document ">
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2017. Все права защищены.
+						<a href="/karta-saita/">Карта сайта</a>
+					</p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем. 16+</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left: 86px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+				</div>
+			</div>
+			<div class="footer-content__right-side mk visible-xs">
+				Информационный партнер портала
+				<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+			</div>
+		</div>
+	</footer>-->
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script src="js/app.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#nav-icon3').click(function () {
+				$(this).toggleClass('open');
+				$('.header-main_menu').toggleClass('open');
+			});
+		});
+	</script>
+</div>
+</body>
+</html>

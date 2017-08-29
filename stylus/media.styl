@@ -1,7 +1,5 @@
 @import nib
 
-
-
 @media only screen and (max-width: 414px)
 
   h1
@@ -48,13 +46,93 @@
   .self-test
   .button-share__SN
   .forum
-  .clinics__wrapper
+  //.clinics__wrapper
   .doc-information-map__wrap
   .doc-information__review
   .how-to
   .phone_show_more_clinics
   #formTimeContainer
     display: none
+
+  /*clinics start*/
+  .clinic__leftside
+    width: 100%
+  .clinic__rightside
+    width: 100%
+    float: none
+  .clinics__doclist
+    position: initial
+    width: 100%
+  /*.clinic_main_front start*/
+  .clinic_main_front
+    .clinics-top__wrap .clinic-about__content-caption
+      width: 70%;
+      box-sizing: border-box;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    .clinics__wrapper .clinic-about__content
+      padding-left: 10px
+    .clinics-top__wrap .clinic-about__address
+      width: 100%
+
+    .clinic__leftside-center
+      height: auto
+
+    //.clinic-time__tel--main-clinic a
+    //  font-size: 13px
+    .clinic__leftside-bottom .bottom-item
+      font-size: 12px
+    .timetable
+      font-size: 9px
+    .clinics__doclist .clinic-time-btn
+      width: 40%
+  /*.clinic_main_front end*/
+
+
+  /*clinics-diagnos*/
+  .result-clinic
+    .listClinic .clinic-about__content .clinic-about__content-caption
+      position: absolute
+      top: -70px
+      left: 120px
+
+    .listClinic .row .cell
+      max-width: 100%
+    .result-clinic.listClinic .clinic-price__btn
+      margin: auto;
+      float: none;
+  /*clinics-diagnos end*/
+
+
+
+  /*clinics-lechenie start*/
+  .left-side-library
+    .clinics__wrapper
+      display: flex
+      flex-direction: column
+    .clinic__leftside
+      order:2
+    .clinics__wrapper .clinic__doc
+      width: 100%
+    .clinics__wrapper .well-doc__item-name-wrap
+      width: 100%
+    .clinics__wrapper .well-doc__item-name
+      width: 30%
+    .clinic__leftside-top
+      display: flex
+      overflow: hidden;
+    .clinic__leftside-center
+      display: none
+    .clinic__logo img
+      padding: 0
+    .clinics__wrapper .clinic-about__content
+      padding-left: 20px
+
+  /*clinics-lechenie end*/
+
+
+  /*clinics end*/
+
 
   .pagination-qw
     margin-top: 20px
@@ -1224,7 +1302,7 @@
     .clinic-about__wrap
       width: 100%
     .clinic-about__address
-    .clinic-price__btn
+    //.clinic-price__btn
       display: none
     .click_phone_number
       margin-left: 0
@@ -1384,6 +1462,28 @@
     margin-left: auto
     margin-right: auto
     margin-top: 20px
+
+
+  /*selftest-last*/
+  .st-last-block
+
+    padding: 20px
+  .c-greybox
+    padding: 20px
+  .st-last-block--pink
+    height: auto
+  .diagnostic-list__item
+    width: 80px
+  /*selftest-last*/
+
+
+  /*doc new*/
+  .doc-information .table-info-doc .cell span
+    background-color: transparent
+  .doc-information .table-info-doc .cell p.more-text
+    background-color: transparent
+  /*doc new*/
+
 
 
 @media only screen and (max-width: 360px)

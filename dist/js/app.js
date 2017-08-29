@@ -1268,28 +1268,7 @@
 
 }).call(this);
 
-$(document).ready(function () {
-    $('.reason').ready(function () {
-        var heighList = $(this).find('.reason__list').innerHeight();
-        $(this).find('.reason__img-left').css('height', heighList + 15);
-        console.log(heighList);
-        var pHeight = $(this).find('.js-reason-p-h').innerHeight();
-        $(this).find('.reason__img-left').css('top', pHeight);
-    });
-    $('.doctor').ready(function () {
-        var widthImg = $(this).find('div.doctor img').innerWidth();
-        var leftSide = $(this).find('div.left-side').innerWidth();
-        var result = leftSide - widthImg - 30;
-        $(this).find('div.doctor div.doctor__list-item').css('width', result);
-    });
-    $('.reason--note').ready(function () {
-        var widthImg = $(this).find('div.reason--note img').innerWidth();
-        var leftSide = $(this).find('div.left-side').innerWidth();
-        var result = leftSide - widthImg - 130;
-        //$(this).find('.reason__img-left').css('height', heighList + 15);
-        $(this).find('div.reason--note div.reason__list--left').css('width', result);
-    });
-});
+
 
 /**
  * BxSlider v4.1.2 - Fully loaded, responsive content slider
@@ -21605,3 +21584,32 @@ $(function () {
         $('body,html').animate({scrollTop: 0}, 800);
     });
 });
+
+function func() {
+    $(document).ready(function () {
+        $('.reason').ready(function () {
+            var heighList = $(this).find('.reason__list').innerHeight();
+            $(this).find('.reason__img-left').css('height', heighList);
+            console.log(heighList);
+            var pHeight = $(this).find('.js-reason-p-h').innerHeight();
+            $(this).find('.reason__img-left').css('top', pHeight);
+            console.log(pHeight);
+        });
+        $('.doctor').ready(function () {
+            var widthImg = $(this).find('div.doctor img').innerWidth();
+            var leftSide = $(this).find('div.left-side').innerWidth();
+            var result = leftSide - widthImg - 30;
+            $(this).find('div.doctor div.doctor__list-item').css('width', result);
+        });
+        $('.reason--note').ready(function () {
+            var widthImg = $(this).find('div.reason--note img').innerWidth();
+            var leftSide = $(this).find('div.left-side').innerWidth();
+            var result = leftSide - widthImg - 130;
+            //$(this).find('.reason__img-left').css('height', heighList + 15);
+            $(this).find('div.reason--note div.reason__list--left').css('width', result);
+        });
+    });
+}
+
+setTimeout(func, 1000);
+

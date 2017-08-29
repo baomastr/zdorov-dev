@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html class="">
+<head lang="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Болезни и их лечение</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<!--<meta name="viewport" content="width=1250">-->
+	<!--<meta name="MobileOptimized" content="1250">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="wrapper">
+	<div id="panel"></div>
+	<div class="bg-body">
+		<header>
+			<div class="clearfix header-top">
+				<div class="header-top__item menu-burger header-top__btn visible-xs">
+					<a id="nav-icon3" class="visible-xs">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				<a href="/" class="header-logo header-top__item">
+					<img src="http://zdorov.online/img/logo.png" title="Zdorov.Online">
+					<span>Энциклопедия здоровой жизни</span>
+				</a>
+				<a class="header-top__item menu-search header-top__btn visible-xs">
+					<img src="mob/search.png" alt="">
+				</a>
+				<style>
+					.search_block {
+						position: relative;
+					}
+
+					.search_block .search_tips {
+						display: none;
+						position: absolute;
+						top: 50px;
+						left: 280px;
+						background-color: #fff;
+						width: 497px;
+						border: 1px solid #ccc;
+					'
+					}
+
+					.search_block .search_tips .tips {
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+
+					.search_block .search_tips .tips_kato {
+						padding: 4px 8px;
+						background-color: #87CEFA;
+						color: #fff;
+
+					}
+
+					.search_block .search_tips .tips:hover {
+						background-color: #ccc;
+						padding: 4px 8px;
+						cursor: pointer;
+					}
+				</style>
+				<div class="search_block">
+					<div class="header-search">
+						<form action="/search/">
+							<input autocomplete="off" type="search" name="q" placeholder="Например: С какой стороны аппендицит у женщин?" value="">
+							<input type="submit" value="">
+						</form>
+					</div>
+				</div>
+				<div class="panel">
+
+					<div class="panel__enter">
+						<a href="/auth/">Вход</a>
+						/
+						<a href="/reg/" class="go_to_reg">Регистрация</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-main_menu">
+				<ul class="main_menu-item">
+					<li class="main_menu-list">
+						<a href="/selftest/j/">Самодиагностика</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/articles/">Статьи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/clinics/">Клиники</a>
+						<ul class="main-submenu">
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-lecheniyu/" class="main-submenu__link">
+									По лечению
+								</a>
+							</li>
+							<li class="main-submenu__item">
+								<a href="https://zdorov.online/clinics/kliniki-po-diagnostike/" class="main-submenu__link">
+									По диагностике
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main_menu-list">
+						<a href="/vrach/">Врачи</a>
+					</li>
+					<li class="main_menu-list">
+						<a href="/bolezni/">Болезни</a>
+					</li>
+					<li class="main_menu-list ">
+						<a href="/forum/">Форум</a>
+					</li>
+					<li class="main_menu-list ">
+						<a href="/qa/">Вопросы врачу</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<button class="btn-menu-find">Меню</button>
+			</div>
+		</header>
+		<!-- end header-->
+		<main>
+			<div class="ratemenu">
+				<div class="ratemenu__title">
+					Рейтинги клиник:
+				</div>
+				<ul class="ratemenu__list">
+					<li class="ratemenu__list-item">
+						<a href="/clinics/reyting-khoroshikh-klinik/">10 лучших клиник Москвы</a>
+					</li>
+				</ul>
+			</div>
+			<div class="crumbs">
+				<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="/">
+							<span itemprop="name">Главная</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<span itemprop="name">Болезни и их лечение</span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+
+			<div class="left-side">
+				<div class="clinics__map-xs visible-xs" id="map" style="height:60vh;"></div>
+				<div class="result-clinic listClinic">
+					<!--Clinics Begin-->
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+
+								<a target="_blank" href="/clinics/mejdunarodnii-hirurgicheskii-centr/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/e76/e765ee3044a2d50fdbcfecce5320ef33.png"></a>
+							</div>
+						</div>
+						<!--новый блок для мобильного-->
+						<!--<div class="clinic-name-xs visible-xs">
+							<a target="_blank" href="/clinics/mejdunarodnii-hirurgicheskii-centr/"><div class="clinic-about__content-caption">Медико-Хирургический Центр на Пресне</div></a>
+						</div>-->
+						<!--новый блок для мобильного конец-->
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="" href="/clinics/mejdunarodnii-hirurgicheskii-centr/"><div class="clinic-about__content-caption">Медико-Хирургический Центр на Пресне</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.79">
+											<div class="rating-value" style="width: 81.43px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">280 отзывов</div>
+									</div>
+
+									<div title="расстояние: 365 метров" class="clinic-about__metro metro_line_tagansko-krasnopresnenskaya">Улица 1905 года <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">365 м)</span></div>
+									<div title="расстояние: 365 метров" class="clinic-about__metro metro_line_tagansko-krasnopresnenskaya">Улица 1905 года <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">365 м)</span></div>
+									<div title="расстояние: 1164 метров" class="clinic-about__metro metro_line_koltsevaya">Краснопресненская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1164 м)</span></div>
+									<div title="расстояние: 1164 метров" class="clinic-about__metro metro_line_koltsevaya">Краснопресненская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1164 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>г. Москва, ул. 1905 года, д.7, с.1</a>
+								</div>
+									<div class="clinic-time">
+										<div>
+											<span class="clinic-time__number--main-clinic clinic-time__tel phone_show" data-namethis="Медико-Хирургический Центр на Пресне"><a>Показать номер</a></span>
+											<span class="clinic-time__tel clinic-time__tel--main-clinic click_phone_number" data-namethis="Медико-Хирургический Центр на Пресне"><a href="tel:">+7(499)653-56-74</a>
+									</span>
+										</div>
+									</div>
+									<!--новый блок для мобильного-->
+									<!--<div class="price-xs visible-xs">
+										<span>Артроскопия </span>
+										<strong>от 35 000													до 80 000 руб.</strong>
+									</div>-->
+									<!--<div class="rate-xs visible-xs">
+										<span class="rate-xs__text">рейтинг</span>
+										<span class="rate-xs__num">9.6</span>
+									</div>-->
+									<!--новый блок для мобильного конец-->
+								</div>
+								<div class="bg-grey ">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell" style="position:relative;">
+												<span>артроскопия</span>
+												<span> - </span>
+												<span>
+																											от 35 000 руб.
+														до 80 000 руб.
+																										</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '61887', 'артроскопия', '35000-80000');" class="clinic-time-btn book cli_1step bookOneStep" servicename="" serviceprice="" serviceid="" cliid="61887" clinic="Медико-Хирургический Центр на Пресне">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+
+								<a target="_blank" href="/clinics/pervaya-universitetskaya-klinika/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/dc4/dc4d139596c2b83c76734eeeccbdbd4f.jpg"></a>
+							</div>
+						</div>
+						<!--новый блок для мобильного-->
+						<!--<div class="clinic-name-xs visible-xs">
+							<a target="_blank" href="/clinics/pervaya-universitetskaya-klinika/"><div class="clinic-about__content-caption">Первая Университетская Клиника</div></a>
+						</div>-->
+						<!--новый блок для мобильного конец-->
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="" href="/clinics/pervaya-universitetskaya-klinika/"><div class="clinic-about__content-caption">Первая Университетская Клиника</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.125">
+											<div class="rating-value" style="width: 70.125px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">4 отзыва</div>
+									</div>
+
+									<div title="расстояние: 1918 метров" class="clinic-about__metro metro_line_sokolnicheskaya">Университет <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1918 м)</span></div>
+									<div title="расстояние: 1918 метров" class="clinic-about__metro metro_line_sokolnicheskaya">Университет <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1918 м)</span></div>
+									<div title="расстояние: 2559 метров" class="clinic-about__metro metro_line_sokolnicheskaya">Проспект Вернадского <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">2559 м)</span></div>
+									<div title="расстояние: 2559 метров" class="clinic-about__metro metro_line_sokolnicheskaya">Проспект Вернадского <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">2559 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>Москва, Мичуринский проспект, д. 9, к. 5</a>
+								</div>
+									<div class="clinic-time">
+									</div>
+									<!--новый блок для мобильного-->
+									<!--<div class="price-xs visible-xs">
+										<span>Артроскопия </span>
+
+										<strong> 15 380  руб.</strong>
+									</div>-->
+									<!--<div class="rate-xs visible-xs">
+										<span class="rate-xs__text">рейтинг</span>
+										<span class="rate-xs__num">8.3</span>
+									</div>-->
+									<!--новый блок для мобильного конец-->
+								</div>
+								<div class="bg-grey ">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell" style="position:relative;">
+												<span>артроскопия</span>
+												<span> - </span>
+												<span>
+
+														<span style="font-weight: 800;top:0px;">
+															15380
+														</span> &nbsp;  руб.
+																										</span>
+											</div>
+											<div class="clinic-price__btn clinic1"><a onclick="bookOneStepShow(0, '204777', 'артроскопия', '15380-15380');" class="clinic-time-btn book cli_1step bookOneStep" servicename="" serviceprice="" serviceid="" cliid="204777" clinic="Первая Университетская Клиника">Записаться</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+
+								<a target="_blank" href="/clinics/mezhdunarodnaya_klinika_medsi/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/a4b/a4bf8a952f6aa4c29447b3aeb853246d.png"></a>
+							</div>
+						</div>
+						<!--новый блок для мобильного-->
+						<!--<div class="clinic-name-xs visible-xs">
+							<a target="_blank" href="/clinics/mezhdunarodnaya_klinika_medsi/"><div class="clinic-about__content-caption">Клиника МЕДСИ на проспекте мира</div></a>
+						</div>-->
+						<!--новый блок для мобильного конец-->
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="" href="/clinics/mezhdunarodnaya_klinika_medsi/"><div class="clinic-about__content-caption">Клиника МЕДСИ на проспекте мира</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.415">
+											<div class="rating-value" style="width: 75.055px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">18 отзывов</div>
+									</div>
+
+									<div title="расстояние: 511 метров" class="clinic-about__metro metro_line_koltsevaya">Проспект Мира <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">511 м)</span></div>
+									<div title="расстояние: 511 метров" class="clinic-about__metro metro_line_koltsevaya">Проспект Мира <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">511 м)</span></div>
+									<div title="расстояние: 575 метров" class="clinic-about__metro metro_line_kaluzhsko-rizhskaya">Сухаревская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">575 м)</span></div>
+									<div title="расстояние: 575 метров" class="clinic-about__metro metro_line_kaluzhsko-rizhskaya">Сухаревская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">575 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>Проспект Мира, д. 26, стр. 6</a>
+								</div>
+									<div class="clinic-time">
+									</div>
+									<!--новый блок для мобильного-->
+									<!--<div class="price-xs visible-xs">
+										<span>Артроскопия </span>
+
+										<strong> 7 450  руб.</strong>
+									</div>-->
+									<!--<div class="rate-xs visible-xs">
+										<span class="rate-xs__text">рейтинг</span>
+										<span class="rate-xs__num">8.8</span>
+									</div>-->
+									<!--новый блок для мобильного конец-->
+								</div>
+								<div class="bg-grey ">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell" style="position:relative;">
+												<span>артроскопия</span>
+												<span> - </span>
+												<span>
+
+														<span style="font-weight: 800;top:0px;">
+															7450
+														</span> &nbsp;  руб.
+																										</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+
+								<a target="_blank" href="/clinics/klinika_medsi_na_prechistenke/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/bf2/bf253b2af3d0d2f5fe8887349c870b31.png"></a>
+							</div>
+						</div>
+						<!--новый блок для мобильного-->
+						<!--<div class="clinic-name-xs visible-xs">
+							<a target="_blank" href="/clinics/klinika_medsi_na_prechistenke/"><div class="clinic-about__content-caption">Клиника МЕДСИ на Пречистенке</div></a>
+						</div>-->
+						<!--новый блок для мобильного конец-->
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="" href="/clinics/klinika_medsi_na_prechistenke/"><div class="clinic-about__content-caption">Клиника МЕДСИ на Пречистенке</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.5">
+											<div class="rating-value" style="width: 76.5px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">36 отзывов</div>
+									</div>
+
+									<div title="расстояние: 558 метров" class="clinic-about__metro metro_line_koltsevaya">Парк культуры <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">558 м)</span></div>
+									<div title="расстояние: 558 метров" class="clinic-about__metro metro_line_koltsevaya">Парк культуры <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">558 м)</span></div>
+									<div title="расстояние: 1030 метров" class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Смоленская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1030 м)</span></div>
+									<div title="расстояние: 1030 метров" class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Смоленская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">1030 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>Зубовский бульвар, д. 22/39</a>
+								</div>
+									<div class="clinic-time">
+									</div>
+									<!--новый блок для мобильного-->
+									<!--<div class="price-xs visible-xs">
+										<span>Артроскопия </span>
+
+										<strong> 7 450  руб.</strong>
+									</div>-->
+									<!--<div class="rate-xs visible-xs">
+										<span class="rate-xs__text">рейтинг</span>
+										<span class="rate-xs__num">9</span>
+									</div>-->
+									<!--новый блок для мобильного конец-->
+								</div>
+								<div class="bg-grey ">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell" style="position:relative;">
+												<span>артроскопия</span>
+												<span> - </span>
+												<span>
+
+														<span style="font-weight: 800;top:0px;">
+															7450
+														</span> &nbsp;  руб.
+																										</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clinic-info clearfix">
+						<div class="clinic-avatar">
+							<div class="clinic-avatar__img">
+
+								<a target="_blank" href="/clinics/evromedklinik_v_mitino/"><img width="200" height="200" src="https://zdorov.online/upload/iblock/f93/f93aba4f0ddadb5c9a05c909d6c163e9.png"></a>
+							</div>
+						</div>
+						<!--новый блок для мобильного-->
+						<!--<div class="clinic-name-xs visible-xs">
+							<a target="_blank" href="/clinics/evromedklinik_v_mitino/"><div class="clinic-about__content-caption">Клиника МЕДСИ в Митино</div></a>
+						</div>-->
+						<!--новый блок для мобильного конец-->
+						<div class="clinic-about__wrap">
+							<div class="clinic-about">
+								<div class="clinic-about__content">
+									<a target="_blank" class="" href="/clinics/evromedklinik_v_mitino/"><div class="clinic-about__content-caption">Клиника МЕДСИ в Митино</div></a>
+									<div class="clinic-avatar__rating">
+										<span>Рейтинг</span>
+										<div class="rating" data-value="4.225">
+											<div class="rating-value" style="width: 71.825px;"></div>
+										</div>
+										<div class="clinic-avatar__review" style="float:none">11 отзывов</div>
+									</div>
+
+									<div title="расстояние: 992 метров" class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Митино <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">992 м)</span></div>
+									<div title="расстояние: 992 метров" class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Митино <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">992 м)</span></div>
+									<div title="расстояние: 2590 метров" class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Волоколамская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">2590 м)</span></div>
+									<div title="расстояние: 2590 метров" class="clinic-about__metro metro_line_arbatsko-pokrovskaya">Волоколамская <span class="metro_distance">(<img src="https://zdorov.online/upload/userwalk.png" style="color: grey;height: 12px;padding: 0px 3px;padding-top: 0px;">2590 м)</span></div>
+									<br><div class="clinic-about__address">
+									<a>Пятницкое шоссе, д. 37</a>
+								</div>
+									<div class="clinic-time">
+									</div>
+									<!--новый блок для мобильного-->
+									<!--<div class="price-xs visible-xs">
+										<span>Артроскопия </span>
+
+										<strong> 7 450  руб.</strong>
+									</div>-->
+									<!--<div class="rate-xs visible-xs">
+										<span class="rate-xs__text">рейтинг</span>
+										<span class="rate-xs__num">8.5</span>
+									</div>-->
+									<!--новый блок для мобильного конец-->
+								</div>
+								<div class="bg-grey ">
+									<div class="clinic-price table">
+										<div class="row">
+											<div class=" clinic-price__cell cell" style="position:relative;">
+												<span>артроскопия</span>
+												<span> - </span>
+												<span>
+
+														<span style="font-weight: 800;top:0px;">
+															7450
+														</span> &nbsp;  руб.
+																										</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Clinics End-->
+					<div class="result-number clearfix">
+						<div class="result-number__choose ">
+							<!--<input type="number" min="10" max="100" step="10" value="10">-->
+							<p> 1-5 из 5</p>
+						</div>
+					</div>
+
+					<div class="clinic-search__title clinic-search__title--bottom">
+						<!--span class="clinic-search__title-caption"></span-->
+
+						<h2> Где сделать с расшифровкой?</h2>
+						<p>Провести обследование могут в разных клиниках столицы. Если вы ищете, где расшифровка будет сделана максимально быстро и качественно, то обратите внимание на рейтинг медцентров на сайте Здоров.Онлайн. Мы подготовили информацию, основанную на реальных отзывах тех, кому была назначена артроскопия. </p>
+
+						<h3>Цены</h3>
+						<p>Стоимость процедуры колеблется от 10 до 20 тыс. рублей. Значение имеет то, какие суставы изучаются, нужно ли проводить также определенные хирургические манипуляции. При этом доступна и артроскопия суставов за 6-7 тыс. рублей.</p>
+						<div class="hide_overflow-bottom">
+							<p></p>
+						</div>
+						<div class="more-bottom clearfix">
+							<a class="click-more-bottom" style="border:0;"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-sidebar clearfix">
+				<div id="rpolis"></div>
+				<div id="rfilter">
+					<article class="filters">
+
+						<div class="filters__wrap">
+							<form name="rfilter" action="/" class="filters__form" method="post">
+								<div class="filters__form-row filters__form-row--title">
+				<span class="filters__title">
+					Клиника
+				</span>
+								</div>
+								<div class="filters__form-row">
+									<select name="level_1" id="">
+										<option value="all">Вид исследований</option>
+										<option sname="artroskopiya" selected="" value="12397_Артроскопия">Артроскопия</option><option sname="biopsiya" value="12719_биопсия">биопсия</option><option sname="gastroskopiya" value="12385_гастроскопия">гастроскопия</option><option sname="gisteroskopiya" value="12395_гистероскопия">гистероскопия</option><option sname="dermatoskopiya" value="12710_дерматоскопия">дерматоскопия</option><option sname="dopplerografiya" value="12691_допплерография">допплерография</option><option sname="duktografiya" value="12698_дуктография">дуктография</option><option sname="dupleksnoe-skanirovanie" value="12374_дуплексное сканирование">дуплексное сканирование</option><option sname="irrigoskopiya-v-moskve" value="12069_ирригоскопия">ирригоскопия</option><option sname="kolonoskopiya" value="12369_колоноскопия">колоноскопия</option><option sname="kolposkopiya" value="12392_кольпоскопия">кольпоскопия</option><option sname="kt" value="11972_кт">кт</option><option sname="mammografiya-v-moskve" value="12046_маммография">маммография</option><option sname="mrt-v-moskve" value="12073_мрт">мрт</option><option sname="mskt" value="12326_мскт">мскт</option><option sname="punktsiya" value="13296_пункция">пункция</option><option sname="rentgen-v-moskve" value="12013_рентген">рентген</option><option sname="manualnaya-terapiya" value="13078_сеанс мануальной терапии">сеанс мануальной терапии</option><option sname="uzi" value="12579_узи">узи</option><option sname="fgds" value="12401_фгдс">фгдс</option><option sname="fluorografiya-v-moskve" value="12042_флюорография">флюорография</option><option sname="cistoskopiya" value="12355_цистоскопия">цистоскопия</option><option sname="ekg" value="12379_экг">экг</option><option sname="elektroneiromiografiya" value="12702_электронейромиография">электронейромиография</option><option sname="ehoeg" value="12364_эхо эг">эхо эг</option><option sname="ehokg" value="12366_эхокардиография">эхокардиография</option><option sname="eeg" value="12357_ээг">ээг</option><option value="others">Другие виды исследований</option>				</select>
+								</div>
+								<div class="filters__form-row rf_di">
+									<select name="rf_diagnoctic" id="" style="border: 1px solid rgb(170, 170, 170);"><option value="all">Выберите услугу</option><option sid="12398" value="/artroskopiya/kolena/">Артроскопия колена</option><option sid="12399" value="/artroskopiya/plecha/">Артроскопия плеча</option></select>
+								</div>
+								<div class="filters__form-row">
+									<select name="rf_metro" id=""><option>Метро</option><option value="aviamotornaya">Авиамоторная</option><option value="avtozavodskaya">Автозаводская</option><option value="akademicheskaya">Академическая</option><option value="aleksandrovskiy-sad">Александровский сад</option><option value="alekseevskaya">Алексеевская</option><option value="alma-atinskaya">Алма-Атинская</option><option value="altufevo">Алтуфьево</option><option value="annino">Аннино</option><option value="arbatskaya">Арбатская</option><option value="arbatskaya">Арбатская</option><option value="aeroport">Аэропорт</option><option value="babushkinskaya">Бабушкинская</option><option value="bagrationovskaya">Багратионовская</option><option value="barrikadnaya">Баррикадная</option><option value="baumanskaya">Бауманская</option><option value="begovaya">Беговая</option><option value="belorusskaya">Белорусская</option><option value="belorusskaya">Белорусская</option><option value="belyaevo">Беляево</option><option value="bibirevo">Бибирево</option><option value="biblioteka-imeni-lenina">Библиотека имени Ленина</option><option value="borisovo">Борисово</option><option value="borovitskaya">Боровицкая</option><option value="botanicheskiy-sad">Ботанический сад</option><option value="bratislavskaya">Братиславская</option><option value="bulvar-admirala-ushakova">Бульвар адмирала Ушакова</option><option value="bulvar-dmitriya-donskogo">Бульвар Дмитрия Донского</option><option value="buninskaya-alleya">Бунинская аллея</option><option value="varshavskaya">Варшавская</option><option value="vdnkh">ВДНХ</option><option value="vladykino">Владыкино</option><option value="vodnyy-stadion">Водный стадион</option><option value="voykovskaya">Войковская</option><option value="volgogradskiy-prospekt">Волгоградский проспект</option><option value="volzhskaya">Волжская</option><option value="volokolamskaya">Волоколамская</option><option value="vorobyevy-gory">Воробьёвы горы</option><option value="vystavochnaya">Выставочная</option><option value="vykhino">Выхино</option><option value="dinamo">Динамо</option><option value="dmitrovskaya">Дмитровская</option><option value="dobryninskaya">Добрынинская</option><option value="domodedovskaya">Домодедовская</option><option value="dostoevskaya">Достоевская</option><option value="dubrovka">Дубровка</option><option value="zhulebino">Жулебино</option><option value="zyablikovo">Зябликово</option><option value="izmaylovskaya">Измайловская</option><option value="kaluzhskaya">Калужская</option><option value="kantemirovskaya">Кантемировская</option><option value="kakhovskaya">Каховская</option><option value="kashirskaya">Каширская</option><option value="kashirskaya">Каширская</option><option value="kievskaya">Киевская</option><option value="kievskaya">Киевская</option><option value="kievskaya">Киевская</option><option value="kitay-gorod">Китай-город</option><option value="kitay-gorod">Китай-город</option><option value="kozhukhovskaya">Кожуховская</option><option value="kolomenskaya">Коломенская</option><option value="komsomolskaya">Комсомольская</option><option value="komsomolskaya">Комсомольская</option><option value="konkovo">Коньково</option><option value="kotelniki">Котельники</option><option value="krasnogvardeyskaya">Красногвардейская</option><option value="krasnopresnenskaya">Краснопресненская</option><option value="krasnoselskaya">Красносельская</option><option value="krasnye-vorota">Красные ворота</option><option value="krestyanskaya-zastava">Крестьянская застава</option><option value="kropotkinskaya">Кропоткинская</option><option value="krylatskoe">Крылатское</option><option value="kuzminki">Кузьминки</option><option value="kuntsevskaya">Кунцевская</option><option value="kuntsevskaya">Кунцевская</option><option value="kurskaya">Курская</option><option value="kurskaya">Курская</option><option value="kutuzovskaya">Кутузовская</option><option value="leninskiy-prospekt">Ленинский проспект</option><option value="lermontovskiy-prospekt">Лермонтовский проспект</option><option value="lubyanka">Лубянка</option><option value="lyublino">Люблино</option><option value="marksistskaya">Марксистская</option><option value="marina-roshcha">Марьина роща</option><option value="marino">Марьино</option><option value="mayakovskaya">Маяковская</option><option value="medvedkovo">Медведково</option><option value="mezhdunarodnaya">Международная</option><option value="mendeleevskaya">Менделеевская</option><option value="mitino">Митино</option><option value="molodyezhnaya">Молодёжная</option><option value="myakinino">Мякинино</option><option value="nagatinskaya">Нагатинская</option><option value="nagornaya">Нагорная</option><option value="nakhimovskiy-prospekt">Нахимовский проспект</option><option value="novogireevo">Новогиреево</option><option value="novokosino">Новокосино</option><option value="novokuznetskaya">Новокузнецкая</option><option value="novoslobodskaya">Новослободская</option><option value="novoyasenevskaya">Новоясеневская</option><option value="novye-cheryemushki">Новые Черёмушки</option><option value="oktyabrskaya">Октябрьская</option><option value="oktyabrskaya">Октябрьская</option><option value="oktyabrskoe-pole">Октябрьское поле</option><option value="otradnoe">Отрадное</option><option value="okhotnyy-ryad">Охотный ряд</option><option value="paveletskaya">Павелецкая</option><option value="paveletskaya">Павелецкая</option><option value="park-kultury">Парк культуры</option><option value="park-kultury">Парк культуры</option><option value="park-pobedy">Парк Победы</option><option value="partizanskaya">Партизанская</option><option value="pervomayskaya">Первомайская</option><option value="perovo">Перово</option><option value="petrovsko-razumovskaya">Петровско-Разумовская</option><option value="pechatniki">Печатники</option><option value="pionerskaya">Пионерская</option><option value="planernaya">Планерная</option><option value="ploshchad-ilicha">Площадь Ильича</option><option value="ploshchad-revolyutsii">Площадь Революции</option><option value="polezhaevskaya">Полежаевская</option><option value="polyanka">Полянка</option><option value="prazhskaya">Пражская</option><option value="preobrazhenskaya-ploshchad">Преображенская площадь</option><option value="proletarskaya">Пролетарская</option><option value="prospekt-vernadskogo">Проспект Вернадского</option><option value="prospekt-mira">Проспект Мира</option><option value="prospekt-mira">Проспект Мира</option><option value="profsoyuznaya">Профсоюзная</option><option value="pushkinskaya">Пушкинская</option><option value="rechnoy-vokzal">Речной вокзал</option><option value="rizhskaya">Рижская</option><option value="ryazanskiy-prospekt">Рязанский проспект</option><option value="savyelovskaya">Савёловская</option><option value="sviblovo">Свиблово</option><option value="sevastopolskaya">Севастопольская</option><option value="semyenovskaya">Семёновская</option><option value="serpukhovskaya">Серпуховская</option><option value="slavyanskiy-bulvar">Славянский бульвар</option><option value="smolenskaya">Смоленская</option><option value="smolenskaya">Смоленская</option><option value="sokol">Сокол</option><option value="sokolniki">Сокольники</option><option value="sportivnaya">Спортивная</option><option value="sretenskiy-bulvar">Сретенский бульвар</option><option value="strogino">Строгино</option><option value="studencheskaya">Студенческая</option><option value="sukharevskaya">Сухаревская</option><option value="skhodnenskaya">Сходненская</option><option value="taganskaya">Таганская</option><option value="taganskaya">Таганская</option><option value="tverskaya">Тверская</option><option value="teatralnaya">Театральная</option><option value="tekstilshchiki">Текстильщики</option><option value="tyeplyy-stan">Тёплый стан</option><option value="timiryazevskaya">Тимирязевская</option><option value="tretyakovskaya">Третьяковская</option><option value="tretyakovskaya">Третьяковская</option><option value="trubnaya">Трубная</option><option value="tulskaya">Тульская</option><option value="turgenevskaya">Тургеневская</option><option value="tushinskaya">Тушинская</option><option value="ulitsa-1905-goda">Улица 1905 года</option><option value="ulitsa-akademika-yangelya">Улица академика Янгеля</option><option value="ulitsa-gorchakova">Улица Горчакова</option><option value="ulitsa-podbelskogo">Улица Подбельского</option><option value="ulitsa-skobelevskaya">Улица Скобелевская</option><option value="ulitsa-starokachalovskaya">Улица Старокачаловская</option><option value="universitet">Университет</option><option value="filyevskiy-park">Филёвский парк</option><option value="fili">Фили</option><option value="frunzenskaya">Фрунзенская</option><option value="tsaritsyno">Царицыно</option><option value="tsvetnoy-bulvar">Цветной бульвар</option><option value="cherkizovskaya">Черкизовская</option><option value="chertanovskaya">Чертановская</option><option value="chekhovskaya">Чеховская</option><option value="chistye-prudy">Чистые пруды</option><option value="chkalovskaya">Чкаловская</option><option value="shabolovskaya">Шаболовская</option><option value="shipilovskaya">Шипиловская</option><option value="shosse-entuziastov">Шоссе Энтузиастов</option><option value="shchyelkovskaya">Щёлковская</option><option value="shchukinskaya">Щукинская</option><option value="elektrozavodskaya">Электрозаводская</option><option value="yugo-zapadnaya">Юго-Западная</option><option value="yuzhnaya">Южная</option><option value="yasenevo">Ясенево</option>[]</select>
+								</div>
+								<!--div class="filters__form-row">
+									<select name="rf_children" id="">
+										<option  value="n">Детский/взрослый</option>
+										<option  value="c">Детский</option>
+										<option  value="a">Взрослый</option>
+									</select>
+								</div-->
+
+								<div class="filters__form-row">
+									<select name="rf_sort" id="">
+										<option value="n">Сортировка</option>
+										<option value="price_up">По цене ⬆</option>
+										<option value="price_dn">По цене ⬇</option>
+										<option value="rating_up">По рейтингу ⬆</option>
+										<option value="rating_dn">По рейтингу ⬇</option>
+									</select>
+								</div>
+								<div class="filters__form-row">
+									<button onclick="return checkSpec();" type="submit" value="Найти">Найти</button>
+								</div>
+							</form>
+							<script type="text/javascript">
+                                function loadDiagnoctic(select)
+                                {
+                                    var diagnocticSelect = $('select[name="diagnoctic"]');
+                                }
+
+                                function checkSpec()
+                                {
+                                    var path = '';
+                                    var diagnostic = $('select[name=rf_diagnoctic] option:selected').val();
+                                    var sort = $('select[name=rf_sort] option:selected').val();
+                                    var burl = $('select[name=level_1] option:selected').attr('sname');
+                                    //console.log(burl);
+                                    if(diagnostic == 'all')
+                                    {
+                                        if(burl)
+                                            path = '/' + burl + '/';
+                                        else
+                                            path = '/clinics/';
+                                    }
+                                    else
+                                        path = diagnostic;
+                                    //console.log(path);
+                                    //path = (diagnostic == 'all')? '/clinics/' : diagnostic;
+
+                                    dataLayer.push({
+                                        'event':'autoEvent',
+                                        'eventCategory':'Фильтр в разделе клиники',
+                                        'eventAction': 'Найти',
+                                        'eventLabel': location.href,
+                                        'yandexEvent':''});
+
+                                    switch(sort)
+                                    {
+                                        case 'price_up':
+                                            path += '?price=asc';
+                                            break;
+
+                                        case 'price_dn':
+                                            path += '?price=desc';
+                                            break;
+
+                                        case 'rating_dn':
+                                            path += '?rating=desc';
+                                            break;
+
+                                        case 'rating_up':
+                                            path += '?price=asc';
+                                            break;
+
+                                        default:
+                                            break;
+                                    }
+
+                                    $('form[name=rfilter]').attr('action', path);
+                                    if($('.rf_di').css('display') != 'none' && diagnostic == 'all' && !burl)
+                                    {
+                                        $('select[name=rf_diagnoctic]').css('border','1px solid red');
+                                        return false;
+                                    }
+                                    else
+                                        return true;
+
+
+                                }
+                                $(document).ready(function(){
+                                    var flag_level_1 = true;
+                                    $('select[name=rf_metro]').change(function(){
+                                        var mtr =  $('select[name=rf_metro] option:selected').text();
+                                        dataLayer.push({
+                                            'event':'autoEvent',
+                                            'eventCategory':'Фильтр в разделе клиники',
+                                            'eventAction': 'Метро',
+                                            'eventLabel': mtr,
+                                            'yandexEvent':''});
+                                    });
+
+                                    $('select[name=rf_sort]').change(function(){
+                                        var srt =  $('select[name=rf_sort] option:selected').text();
+                                        dataLayer.push({
+                                            'event':'autoEvent',
+                                            'eventCategory':'Фильтр в разделе клиники',
+                                            'eventAction': 'Сортировка',
+                                            'eventLabel': srt,
+                                            'yandexEvent':''});
+                                    });
+
+                                    $('select[name=rf_diagnoctic]').change(function(){
+                                        $(this).css('border','1px solid #aaa');
+                                        var serv = $('select[name=rf_diagnoctic] option:selected').attr('sid');
+
+                                        var metro = '';
+                                        $.post("/algo/processing/clinic/rfilter_select.php", {'text':serv, 'target':'metro'}, function(resp){
+                                            $('select[name=rf_metro]').html(resp);
+                                        });
+
+                                        if(metro.length == 0)
+                                        {
+                                            var serv_name = $('select[name=rf_diagnoctic] option:selected').text();
+                                            if(serv_name != 'Выберите услугу')
+                                            {
+                                                dataLayer.push({
+                                                    'event':'autoEvent',
+                                                    'eventCategory':'Фильтр в разделе клиники',
+                                                    'eventAction': 'Услуга',
+                                                    'eventLabel': serv_name,
+                                                    'yandexEvent':''});
+                                                $.post("/algo/processing/clinic/rfilter_select.php", {'serv':serv}, function(resp){
+                                                    var r = JSON.parse(resp);
+                                                    if(r.metro != '')
+                                                        $('select[name=rf_metro]').html(r.metro);
+                                                });
+                                            }
+                                        }
+                                    });
+
+                                    var diagnocticSelect = $('select[name="level_1"]');
+                                    setTimeout(function(){
+                                        flag_level_1 = false;
+                                        diagnocticSelect.change();
+                                        flag_level_1 = true;
+                                    },300);
+                                    diagnocticSelect.change(function(){
+                                        var text =  $('select[name="level_1"] option:selected').val();
+                                        var level_1_text = $('select[name="level_1"] option:selected').text();
+                                        $.post("/algo/processing/clinic/rfilter_select.php", {'text':text, 'target':'metro'}, function(resp){
+                                            $('select[name=rf_metro]').html(resp);
+                                        });
+                                        //аналитика
+                                        if(level_1_text != 'Вид исследований' && flag_level_1 == true)
+                                        {
+                                            dataLayer.push({
+                                                'event':'autoEvent',
+                                                'eventCategory':'Фильтр в разделе клиники',
+                                                'eventAction': 'Вид исследования',
+                                                'eventLabel': level_1_text,
+                                                'yandexEvent':''});
+                                        }
+                                        if(text == 'others')
+                                        {
+                                            $('select[name=rf_diagnoctic]').html('<option value="all">Выберите услугу.</option><option  value="/audiogramma/">Аудиограмма</option><option  value="/audiometriya/">Аудиометрия</option><option  value="/bronhoskopiya/">бронхоскопия</option><option  value="/veloergometriya/">велоэргометрия</option><option  value="/vulvoskopiya/">вульвоскопия</option><option  value="/densitometriya/">денситометрия</option><option  value="/ktg/">ктг</option><option  value="/otoskopiya/">отоскопия</option><option  value="/oftalmoskopiya/">офтальмоскопия</option><option  value="/rektoromanoskopiya/">ректороманоскопия</option><option  value="/reoencefalografiya/">реоэнцефалография</option><option  value="/refraktometriya/">рефрактометрия</option><option  value="/rinoskopiya/">риноскопия</option><option  value="/spermogramma/">спермограмма</option><option  value="/spirografiya/">спирография</option><option  value="/spirometriya/">спирометрия</option><option  value="/sutochnoe-manitorirovanie/">суточное мониторирование ад</option><option  value="/timpanometriya/">тимпанометрия</option><option  value="/tonometriya/">тонометрия</option><option  value="/tredmil-test/">тредмил тест</option><option  value="/trihoskopiya/">трихоскопия</option><option  value="/fototrihogramma/">фототрихограмма</option><option  value="/holterovskoe-manitorirovanie/">холтеровское мониторирование</option><option  value="/egds/">эгдс</option><option  value="/ezofagogastroduodenoskopiya/">эзофагогастродуоденоскопия</option><option  value="/elektrokardiografiya/">электрокардиография</option><option  value="/elektromiografiya/">электромиография</option><option  value="/elektroencefalografiya/">электроэнцефалография</option><option  value="/emg/">эмг</option><option  value="/efgds/">эфгдс</option><option  value="/eho-kg/">эхо кг</option><option  value="/ehoencifalografiya/">эхоэнцефалография</option>');
+                                            $('select[name=rf_diagnoctic]').parent().slideDown(300);
+                                        }
+                                        else if(text != 'all')
+                                        {
+                                            $.post("/algo/processing/clinic/rfilter_select.php", {'text':text, 'l2':'/artroskopiya/'}, function(resp){
+                                                var r = JSON.parse(resp);
+                                                if(r.servs2 != '')
+                                                {
+                                                    $('select[name=rf_diagnoctic]').html(r.servs2);
+                                                    $('select[name=rf_diagnoctic]').parent().slideDown(300);
+                                                    $('select[name=rf_diagnoctic]').change();
+                                                }
+                                            });
+                                        }
+                                        else
+                                        {
+                                            $('select[name=rf_diagnoctic]').parent().slideUp(300);
+                                            $('select[name=rf_diagnoctic]').html('<option value="all">Вид диагностики</option>');
+                                            //$('select[name=diagnoctic]').html('<option value="">Вид диагностики</option>');
+                                            //$('select[name="diagnoctic"]').prop('disabled', true);
+                                        }
+                                    });
+                                });
+							</script>
+						</div>
+					</article>
+
+
+
+
+
+
+				</div>
+				<div style="display: none;">
+
+				</div>
+				&#65279;
+
+
+				<article class="list-right-sb-search">
+					<div class="list-right-sb-search--wrap">
+						<div class="list-right-sb-search__title">Виды функциональной диагностики</div>
+					</div>
+					<ul>
+						<li><a href="/audiogramma/">Аудиограмма</a></li>
+						<li><a href="/artroskopiya/kolena/">Артроскопия коленного сустава</a></li>
+						<li><a href="/artroskopiya/plecha/">Артроскопия плечевого сустава</a></li>
+						<li><a href="/audiometriya/">Аудиометрия</a></li>
+						<li><a href="/bronhoskopiya/">Бронхоскопия</a></li>
+						<li><a href="/vulvoskopiya/">Вульвоскопия</a></li>
+						<li><a href="/duktografiya/">Дуктография</a></li>
+						<li><a href="/dermatoskopiya/">Дерматоскопия</a></li>
+						<li><a href="/otoskopiya/">Отоскопия</a></li>
+						<li><a href="/oftalmoskopiya/">Офтальмоскопия</a></li>
+
+						<li><a href="/rinoskopiya/">Риноскопия</a></li>
+						<li><a href="/refraktometriya/">Рефрактометрия</a></li>
+						<li><a href="/spirometriya/">Спирометрия</a></li>
+						<li><a href="/spirografiya/">Спирография</a></li>
+
+						<li><a href="/tonometriya/">Тонометрия</a></li>
+						<li><a href="/timpanometriya/">Тимпанометрия</a></li>
+						<li><a href="/trihoskopiya/">Трихоскопия</a></li>
+						<li><a href="/fototrihogramma/">Фототрихограмма</a></li>
+						<li><a href="/cistoskopiya/">Цистоскопия</a></li>
+					</ul>
+				</article>
+				<div id="rdocs"></div>
+				<article class="about">
+					<div class="about__wrap">
+						<section class="about__SN" style="margin-top: 10px;">
+							<div class="about__title" style="font-size:12px">ПРИСОЕДИНЯЙТЕСЬ К НАМ В СОЦСЕТЯХ:</div>
+							<ul style="margin-top: -10px;">
+								<li class="about__SN--vk"><a href="/goto.php?l=https://vk.com/zdorov.online" target="_blank">Вконтакте</a></li>
+								<li class="about__SN--f"><a href="/goto.php?l=https://www.facebook.com/groups/534609793399918/" target="_blank" "="">Facebook</a></li>
+								<!--<li class="about__SN--tw"><a href="#x">Twitter</a></li>-->
+								<li class="about__SN--ok"><a href="/goto.php?l=https://ok.ru/group/54335368790253" target="_blank">Одноклассники</a></li>
+								<!--<li class="about__SN--g"><a href="#x">GooglPlus</a> </li>-->
+							</ul>
+						</section>
+						<section class="about_contents">
+							<div class="about_contents__title">НА НАШЕМ ПРОЕКТЕ</div>
+							<ul>
+								<li class="about_contents--pills">
+									<!--noindex--><a href="/bolezni/"><span>Более 400 болезней</span>
+									Причины, проявления, лечение и профилактика</a><!--/noindex--></li>
+								<li class="about_contents--clinic">
+									<!--noindex--><a href="/clinics/"><span>Рейтинг клиник</span>
+									Достоверная информация о качестве лечения на основе посещения клиник</a><!--/noindex--></li>
+								<li class="about_contents--node">
+									<!--noindex--><a href="/vrach/"><span>Запись к врачу</span>
+									Очень легко к нужному врачу</a><!--/noindex--></li>
+								<li class="about_contents--question">
+									<!--noindex--><a href="/qa/"><span>Задать вопрос</span>
+									Бесплатные консультации врачей</a><!--/noindex--></li>
+							</ul>
+						</section>
+					</div>
+				</article>
+				<div id="right_socadd"></div>
+				<div style="width:240px;">
+				</div>
+				<div>
+
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</main>
+
+		<!-- end content -->
+		<!--footer -->
+	</div>
+	<div class="clearfix"></div>
+	<footer class="clearfix" style="background:#fff;">
+		<div class="footer-content">
+			<div class="footer-content__right-side">
+				<img src="img/logo.png" title="Zdorov.online">
+			</div>
+			<div class="footer-content__article ">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Лучшие врачи Москвы</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Вся диагностика Москвы</a>
+				<a href="/novosti/">Новости</a>
+				<div class="menu-footer__list ">
+					<ul>
+						<!--noindex-->
+						<li>
+							<a href="/adv/">Реклама на портале</a>
+						</li>
+						<li>
+							<a href="/dlya-klinik/">Для клиник</a>
+						</li>
+						<li>
+							<a href="/about/">О проекте</a>
+						</li><!--/noindex-->
+						<li>
+							<a href="/contacts/">Контакты</a>
+						</li>
+						<!--noindex-->
+						<li>
+							<a href="/term/">Соглашение с порталом</a>
+						</li><!--/noindex-->
+						<!--noindex-->
+						<li>
+							<a target="_blank" href="http://partners.zdorov.online/">Партнерам</a>
+						</li><!--/noindex-->
+					</ul>
+				</div>
+			</div>
+			<div class="footer-content__article mobile visible-xs">
+				<a href="/articles/">Статьи</a>
+				<a href="/vrach/">Врачи</a>
+				<a href="/clinics/kliniki-po-diagnostike/">Клиники</a>
+				<a href="/novosti/">Новости</a>
+			</div>
+
+			<div class="menu-footer-document ">
+				<div class="copiryght">
+					<p>Copyright © <q>zdorov.online</q> 2015-2017. Все права защищены.
+						<a href="/karta-saita/">Карта сайта</a>
+					</p>
+					<p>Материалы с портала могут быть использованы только по согласованию с правообладателем. 16+</p>
+				</div>
+				<div class="copiryght_mk" style="margin-left: 86px;">
+					<p>Проект создан совместно с издательским домом</p>
+					<p>"Московский комсомолец"</p>
+				</div>
+				<div class="footer-content__right-side mk">
+					<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+				</div>
+			</div>
+			<div class="footer-content__right-side mk visible-xs">
+				Информационный партнер портала
+				<a href="/goto.php?l=http://mk.ru" target="_blank"><img src="img/logo-mk-index.png"></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script src="js/app.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#nav-icon3').click(function () {
+				$(this).toggleClass('open');
+				$('.header-main_menu').toggleClass('open');
+			});
+		});
+	</script>
+</div>
+</body>
+</html>

@@ -4306,7 +4306,8 @@ li a {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #125c89;
-    line-height: 1.2em;
+    //line-height: 1.2em;
+    line-height: .9em;
     padding: 10px 0;
     //display: block;
     display: inline-block;
@@ -4380,6 +4381,9 @@ li a {
 
 .clinic-avatar__rating {
   white-space: nowrap;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   //font-weight: 700;
   //width: 164px;
 }
@@ -12633,7 +12637,7 @@ p.js-height-img {
 }
 
 .well-doc__item-rating {
-  margin-top: -5px;
+  margin-top: -3px;
 }
 
 .well-doc__item-rating p {
@@ -16309,6 +16313,8 @@ span.forum-page-current {
   vertical-align: top;
   white-space: normal;
   line-height: 16px;
+  display: -webkit-inline-flex;
+
 }
 
 .result-clinic.listClinic .clinic-avatar {
@@ -17820,7 +17826,9 @@ p.listDoc__note {
       border-radius: 5px;
 
 .clinic-avatar__rating,
-.clinics__wrapper
+.clinics__wrapper,
+/*.clinic-about__content,*/
+.rate
   .rating {
     position: relative;
     top: 1px;
@@ -20554,7 +20562,7 @@ search_block{
   display: none
   position: fixed;
   bottom: 0
-  right: 7%;
+  left: 7%;
   z-index: 5;
   cursor:pointer;
 
@@ -20631,7 +20639,7 @@ search_block{
   border: 3px solid #d4d4d4;
   &__header
     font-family: 'PT Sans',arial,sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1em;
     /* padding-bottom: 10px; */
     font-weight: 300;
@@ -20771,6 +20779,23 @@ search_block{
   left: 120px;
   &.is-opened
     display: block
+  &__close
+    cursor: pointer
+    position: absolute;
+    right: 6px;
+    top: 0;
+    font-style: normal;
+  &__arrow-svg
+    position: absolute;
+    bottom: -5px;
+    right: 8px;
+    height: 40px;
+    width: 23px;
+    transform: rotate(-65deg);
+    height: 40px
+
+.img_discount
+  cursor: pointer
 
   //&.is-opened
   //  .tip
@@ -20780,3 +20805,28 @@ search_block{
   color: white;
   text-align: left!important
   //margin: 110px 0;
+
+.bx-wrapper .bx-controls-direction a
+  z-index: 999
+
+.footer-content
+  .main_diagnostics_list
+    ul
+      column-count: 6;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px dashed;
+    li
+      font-size: 13px;
+      padding-left: 5px;
+      &:before
+        top: 6px;
+        width: 5px;
+        height: 5px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: #f97ca4;
+      a
+        display: inline-block
+
+
